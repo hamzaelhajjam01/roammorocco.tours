@@ -1,3 +1,28 @@
+# robots.txt for Roam Morocco Tours (roammorocco.tours)
+
+# Standard Search Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI Search & Answer Engines (Explicitly Allowed for GEO Citations)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Default Rule
 User-agent: *
 Allow: /
+
+# Sitemap
 Sitemap: https://roammorocco.tours/sitemap.xml
