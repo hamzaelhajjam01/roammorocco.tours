@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/trip-concierge.css">
-  <link rel="stylesheet" href="../css/roam-theme.css">
+  <link rel="stylesheet" href="../css/roam-theme.css?v=20260926e">
 
   <!-- Open Graph -->
   <meta property="og:title" content="How to Plan a Sahara Desert Tour: Merzouga vs Zagora &amp; Luxury Camp Guide (2026)">
@@ -156,8 +156,10 @@
       --red: #f10b18;
     }
 
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
+    }
+    article, .roam-day-card, .roam-tour-cta-box, .roam-toolkit-box, .roam-callout-ai, .table-container, table, th, td, figure, img, .roam-area-card {
       border-radius: 0 !important;
     }
 
@@ -170,183 +172,6 @@
       font-size: 17px;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
-    }
-
-    /* Announcement Bar */
-    .announcement-bar {
-      background: #ffffff;
-      color: #000000;
-      border-bottom: 1px solid var(--border);
-      font-size: 11px;
-      font-family: "Courier New", monospace;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: 8px 0;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .announcement-track {
-      display: inline-flex;
-      animation: marquee 35s linear infinite;
-    }
-
-    .announcement-content {
-      display: inline-flex;
-      align-items: center;
-      gap: 24px;
-      padding-right: 24px;
-    }
-
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* Floating Navigation Capsule */
-    .top {
-      position: fixed;
-      left: 32px;
-      right: 32px;
-      z-index: 100;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      pointer-events: none;
-      transition: all .35s ease;
-    }
-
-    .top.at-top {
-      top: 48px;
-    }
-
-    .top.at-bottom {
-      top: auto;
-      bottom: 24px;
-      left: 50%;
-      right: auto;
-      transform: translateX(-50%);
-      justify-content: center;
-      gap: 12px;
-      width: max-content;
-    }
-
-    .navbox, .latest {
-      pointer-events: auto;
-      display: flex;
-      align-items: center;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-      min-height: 52px;
-    }
-
-    .navbox {
-      padding: 8px 16px;
-      gap: 20px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-      color: #000000;
-      font-weight: 800;
-      font-size: 15px;
-      letter-spacing: -.02em;
-    }
-
-    .brand img {
-      height: 28px;
-      width: auto;
-    }
-
-    .desktop-nav {
-      display: flex;
-      gap: 16px;
-    }
-
-    .desktop-nav a {
-      color: #000000;
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 600;
-      transition: opacity .2s;
-    }
-
-    .desktop-nav a:hover {
-      opacity: 0.6;
-    }
-
-    .latest {
-      padding: 0 20px;
-      text-decoration: none;
-      color: #ffffff !important;
-      background: #000000 !important;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      transition: opacity .2s;
-    }
-
-    .latest:hover {
-      opacity: 0.85;
-    }
-
-    .burger-btn {
-      display: none;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 4px;
-    }
-
-    @media (max-width: 900px) {
-      .top.at-top, .top.at-bottom {
-        left: 16px !important;
-        right: 16px !important;
-        width: auto !important;
-        transform: none !important;
-        top: 16px !important;
-        bottom: auto !important;
-      }
-      .desktop-nav { display: none; }
-      .burger-btn { display: block; }
-    }
-
-    /* Mobile Drawer */
-    .mobile-nav-drawer {
-      position: fixed;
-      top: 76px;
-      left: 16px;
-      right: 16px;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      padding: 24px;
-      z-index: 101;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
-      display: none;
-    }
-
-    .mobile-nav-drawer.open {
-      display: block;
-    }
-
-    .mobile-drawer-inner {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .mobile-drawer-inner a {
-      color: #000000;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 700;
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     }
 
     /* Main Article Container */
@@ -880,69 +705,76 @@
 </head>
 <body>
 
-  <!-- Announcement Bar -->
+    <!-- Announcement Bar -->
   <div class="announcement-bar">
     <div class="announcement-track">
       <div class="announcement-content">
         <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span>Tailored Private Journeys Across Sahara &amp; High Atlas</span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span><strong>LUXURY RIADS &amp; DESERT CAMPS</strong></span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span>Custom Circuits From Marrakech, Fes &amp; Casablanca</span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span><strong>FEEL THE KINGDOM</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Private Drivers, Expert Local Guides &amp; Unhurried Pacing</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
       </div>
       <div class="announcement-content" aria-hidden="true">
         <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span>Tailored Private Journeys Across Sahara &amp; High Atlas</span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span><strong>LUXURY RIADS &amp; DESERT CAMPS</strong></span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span>Custom Circuits From Marrakech, Fes &amp; Casablanca</span>
-        <span>•</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
         <span><strong>FEEL THE KINGDOM</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Private Drivers, Expert Local Guides &amp; Unhurried Pacing</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
       </div>
     </div>
   </div>
 
-  <!-- Floating Navigation -->
-  <header class="top at-top" id="siteHeader">
+  <!-- Dynamic Morphing Navigation -->
+  <header class="top at-top">
     <div class="navbox">
-      <a href="../index.html" class="brand">
-        <img src="../images/Logos/newlogo-roammorocco.png" alt="Roam Morocco Logo">
-        <span>ROAM MOROCCO</span>
+      <a class="wordmark" href="../index.html#top">
+        <img id="navLogo" src="../img/logo-for-dark-bg.png" alt="Roam Morocco Tours">
       </a>
+      <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
       <nav class="desktop-nav">
         <a href="../destinations.html">Destinations</a>
         <a href="../experiences.html">Experiences</a>
-        <a href="../custom-morocco-tour.html">Custom Tour</a>
+        <a href="../custom-morocco-tour.html">Custom Morocco</a>
         <a href="../travel-deals.html">Travel Deals</a>
         <a href="../about.html">About</a>
         <a href="../blog.html">Blog</a>
       </nav>
-      <button class="burger-btn" onclick="toggleDrawer()" aria-label="Toggle Navigation">
-        <svg viewBox="0 0 24 24" width="22" height="22" stroke="#000000" stroke-width="2" fill="none"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-      </button>
     </div>
-    <a href="../custom-morocco-tour.html" class="latest">Plan Your Journey &rarr;</a>
+    <a class="latest" href="../custom-morocco-tour.html">Plan Trip <span class="dot"></span></a>
+    <a class="back-top-btn" href="#top" aria-label="Back to top" onclick="scrollToTop(event)">
+      <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
   </header>
 
-  <!-- Mobile Drawer -->
+  <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div class="mobile-drawer-inner">
-      <a href="../destinations.html">Destinations</a>
-      <a href="../experiences.html">Experiences</a>
-      <a href="../custom-morocco-tour.html">Custom Morocco Tour</a>
-      <a href="../travel-deals.html">Travel Deals</a>
-      <a href="../about.html">About Us</a>
-      <a href="../blog.html">Journal &amp; Guides</a>
+      <a href="../destinations.html" onclick="closeDrawer()">Destinations</a>
+      <a href="../experiences.html" onclick="closeDrawer()">Experiences</a>
+      <a href="../custom-morocco-tour.html" onclick="closeDrawer()">Custom Morocco</a>
+      <a href="../travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
+      <a href="../about.html" onclick="closeDrawer()">About</a>
+      <a href="../blog.html" onclick="closeDrawer()">Blog</a>
     </div>
   </div>
 
-  <!-- Main Article -->
   <article class="article-wrap">
 
     <!-- Breadcrumb -->
@@ -1482,24 +1314,8 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script>
-    function toggleDrawer() {
-      const drawer = document.getElementById('mobileDrawer');
-      drawer.classList.toggle('open');
-    }
-
-    // Scroll Header Behavior
-    window.addEventListener('scroll', () => {
-      const header = document.getElementById('siteHeader');
-      if (window.scrollY > 120) {
-        header.classList.remove('at-top');
-        header.classList.add('at-bottom');
-      } else {
-        header.classList.remove('at-bottom');
-        header.classList.add('at-top');
-      }
-    });
-  </script>
+    <!-- Scripts -->
+  <script src="../js/trip-concierge.js" defer></script>
+  <script src="../js/roam-nav.js" defer></script>
 </body>
 </html>
