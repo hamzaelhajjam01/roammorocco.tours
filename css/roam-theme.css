@@ -700,13 +700,13 @@ a.roam-btn-wa:hover,
   text-decoration: none !important;
 }
 
-/* Deals Toolkit Box */
+/* Deals Toolkit Box: Luxury Light Editorial System */
 .roam-toolkit-box {
   background: #ffffff !important;
   border: 1px solid rgba(0, 0, 0, 0.14) !important;
-  padding: 32px !important;
+  padding: 36px 32px !important;
   margin: 48px 0 !important;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
   border-radius: 0 !important;
 }
 
@@ -717,35 +717,57 @@ a.roam-btn-wa:hover,
   letter-spacing: -.02em !important;
   text-transform: uppercase !important;
   color: #000000 !important;
-  margin-bottom: 18px !important;
+  margin-bottom: 20px !important;
 }
 
 .roam-toolkit-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 14px;
 }
 
-.roam-toolkit-link {
+.roam-toolkit-link,
+.roam-article-body a.roam-toolkit-link,
+a.roam-toolkit-link {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  padding: 14px 16px !important;
-  background: #f9f8f6 !important;
-  border: 1px solid rgba(0, 0, 0, 0.09) !important;
+  padding: 16px 20px !important;
+  background: #fdfbf7 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
   color: #000000 !important;
   text-decoration: none !important;
   font-family: Helvetica, Arial, sans-serif !important;
   font-size: 13px !important;
   font-weight: 700 !important;
   border-radius: 0 !important;
+  cursor: pointer !important;
   transition: all .2s ease !important;
 }
 
-.roam-toolkit-link:hover {
-  background: #000000 !important;
-  color: #ffffff !important;
+.roam-toolkit-link span,
+.roam-article-body a.roam-toolkit-link span,
+a.roam-toolkit-link span {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+.roam-toolkit-link:hover,
+.roam-article-body a.roam-toolkit-link:hover,
+a.roam-toolkit-link:hover {
+  background: #f2eee6 !important;
   border-color: #000000 !important;
+  color: #000000 !important;
+  text-decoration: none !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.roam-toolkit-link:hover span,
+.roam-article-body a.roam-toolkit-link:hover span,
+a.roam-toolkit-link:hover span {
+  color: #000000 !important;
+  text-decoration: none !important;
 }
 
 /* ── TOUR PACKAGES LIGHT EDITORIAL SYSTEM ── */

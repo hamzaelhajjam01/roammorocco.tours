@@ -62,7 +62,7 @@
         document.head.appendChild(script);
     })();
   </script>
-  <link rel="stylesheet" href="../css/roam-theme.css?v=20260926d">
+  <link rel="stylesheet" href="../css/roam-theme.css?v=20260926e">
   <style>
     :root {
       --bg-cream: #f2eee6;
@@ -195,14 +195,83 @@
       font-weight: 700;
     }
 
-    .roam-article-body a:not([class*="roam-btn"]):not([class*="btn"]) {
+    /* Prose links inside article content */
+    .roam-article-body p a:not([class]),
+    .roam-article-body li a:not([class]),
+    .roam-article-body td a:not([class]) {
       color: #000000 !important;
       text-decoration: underline;
       text-underline-offset: 3px;
       font-weight: 600;
     }
-    .roam-article-body a:not([class*="roam-btn"]):not([class*="btn"]):hover {
+    .roam-article-body p a:not([class]):hover,
+    .roam-article-body li a:not([class]):hover,
+    .roam-article-body td a:not([class]):hover {
       opacity: 0.75;
+    }
+
+    /* Deals Toolkit Box: Luxury Light Editorial System */
+    .roam-toolkit-box {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.14) !important;
+      padding: 36px 32px !important;
+      margin: 48px 0 !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
+      border-radius: 0 !important;
+    }
+    .roam-toolkit-title {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: 18px !important;
+      font-weight: 800 !important;
+      letter-spacing: -.02em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin-bottom: 20px !important;
+    }
+    .roam-toolkit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .roam-toolkit-link,
+    .roam-article-body a.roam-toolkit-link,
+    a.roam-toolkit-link {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 16px 20px !important;
+      background: #fdfbf7 !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      color: #000000 !important;
+      text-decoration: none !important;
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      border-radius: 0 !important;
+      cursor: pointer !important;
+      transition: all .2s ease !important;
+    }
+    .roam-toolkit-link span,
+    .roam-article-body a.roam-toolkit-link span,
+    a.roam-toolkit-link span {
+      color: #000000 !important;
+      text-decoration: none !important;
+    }
+    .roam-toolkit-link:hover,
+    .roam-article-body a.roam-toolkit-link:hover,
+    a.roam-toolkit-link:hover {
+      background: #f2eee6 !important;
+      border-color: #000000 !important;
+      color: #000000 !important;
+      text-decoration: none !important;
+      transform: translateY(-2px) !important;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08) !important;
+    }
+    .roam-toolkit-link:hover span,
+    .roam-article-body a.roam-toolkit-link:hover span,
+    a.roam-toolkit-link:hover span {
+      color: #000000 !important;
+      text-decoration: none !important;
     }
 
     /* Action Buttons Inside Articles */
