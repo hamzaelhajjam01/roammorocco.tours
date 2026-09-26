@@ -243,44 +243,7 @@
   <link rel="stylesheet" href="css/trip-concierge.css">
   <link rel="stylesheet" href="css/roam-theme.css">
 </head>
-<body style="position:relative; min-height:100%; top:0px; margin:0; background:#0a0908; color:white; font-family:'Inter',sans-serif;">
-
-
-    <style>
-      .rm-nav-desktop { display:none; align-items:center; gap:32px; z-index:10; }
-      .rm-nav-logo { z-index:10; flex-shrink:0; }
-      .rm-nav-cta { display:none; z-index:10; }
-      .rm-nav-mobile-btn { display:flex; align-items:center; justify-content:center; width:40px; height:40px; color:white; background:none; border:none; cursor:pointer; z-index:10; transition:transform 0.3s; }
-      .rm-nav-mobile-btn:hover { transform:scale(1.1); }
-      .rm-nav-link { font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); text-decoration:none; transition:color 0.3s; }
-      .rm-nav-link:hover { color:#C8A45C; }
-      .rm-nav-link-active { color:#C8A45C !important; }
-      .rm-nav-cta-btn { display:inline-flex; align-items:center; gap:8px; background:#C8A45C; color:#0A0908; font-weight:500; padding:10px 20px; border-radius:9999px; font-size:14px; text-decoration:none; transition:all 0.3s; }
-      .rm-nav-cta-btn:hover { background:#D4B76A; transform:scale(1.05); box-shadow:0 0 30px rgba(200,164,92,0.3); }
-      /* Mobile dropdown animation */
-      .rm-mobile-dropdown { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease, padding 0.4s ease; background:#0a0908; border-top:1px solid rgba(255,255,255,0.1); width:100%; flex-direction:column; padding:0 24px; gap:0; box-shadow:0 10px 40px rgba(0,0,0,0.5); z-index:50; }
-      .rm-mobile-dropdown.open { max-height:500px; opacity:1; padding:16px 24px; gap:16px; }
-      .rm-mobile-dropdown a { font-size:18px; font-weight:500; text-decoration:none; display:block; padding:8px 0; opacity:0; transform:translateY(-8px); transition:opacity 0.3s ease, transform 0.3s ease; }
-      .rm-mobile-dropdown.open a { opacity:1; transform:translateY(0); }
-      .rm-mobile-dropdown.open a:nth-child(1) { transition-delay:0.05s; }
-      .rm-mobile-dropdown.open a:nth-child(2) { transition-delay:0.1s; }
-      .rm-mobile-dropdown.open a:nth-child(3) { transition-delay:0.15s; }
-      .rm-mobile-dropdown.open a:nth-child(4) { transition-delay:0.2s; }
-      .rm-mobile-dropdown.open a:nth-child(5) { transition-delay:0.25s; }
-      .rm-mobile-dropdown.open a:nth-child(6) { transition-delay:0.3s; }
-      /* Hamburger to X animation */
-      .rm-hamburger-line { transition:transform 0.3s ease, opacity 0.2s ease; transform-origin:center; }
-      .rm-nav-mobile-btn.active .rm-line1 { transform:translateY(7px) rotate(45deg); }
-      .rm-nav-mobile-btn.active .rm-line2 { opacity:0; }
-      .rm-nav-mobile-btn.active .rm-line3 { transform:translateY(-7px) rotate(-45deg); }
-      @media (min-width: 1024px) {
-        .rm-nav-desktop { display:flex; }
-        .rm-nav-logo { position:absolute; left:50%; transform:translateX(-50%); }
-        .rm-nav-cta { display:flex; }
-        .rm-nav-mobile-btn { display:none; }
-        .rm-mobile-dropdown { display:none !important; }
-      }
-    </style>
+<body class="roam-light-theme" id="top">
       <!-- Announcement Bar -->
   <div class="announcement-bar">
     <div class="announcement-track">
@@ -351,59 +314,120 @@
     </div>
   </div>
 
-<main style="background:#0a0908; color:white; padding:40px 24px 80px;">
-  <div style="max-width:896px; margin:0 auto;">
-    <h1 style="font-size:clamp(2rem, 5vw, 3rem); font-family:'Playfair Display',serif; margin-bottom:32px; color:#C8A45C;">Heritage & Cinema: The Hollywood of Africa</h1>
-    <div style="color:rgba(255,255,255,0.8); line-height:1.8; font-size:18px;">
-      <div style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.85); font-size: 1.125rem; line-height: 1.8;">
-  <p style="margin-bottom: 24px; font-size: 1.25rem;">Embark on the ultimate journey through Morocco's cinematic history and ancient caravan routes. The <strong>Heritage & Cinema Tour</strong> takes you across the spectacular High Atlas Mountains to explore legendary Kasbahs, including the famous <strong>Ait Benhaddou</strong>, and the <strong>Ouarzazate film studios</strong>—the true Hollywood of Africa.</p>
+<main class="roam-tour-main" style="padding: 120px 24px 80px;">
+  <div class="roam-tour-wrapper">
+    <div class="roam-tour-badge">1-DAY PRIVATE EXCURSION // ATLAS &amp; CINEMA STUDIOS</div>
+    <h1 class="roam-tour-title">Heritage &amp; Cinema: The Hollywood of Africa</h1>
+    
+    <div class="roam-tour-meta-bar">
+      <span class="roam-tour-meta-item">📍 START/FINISH: MARRAKECH</span>
+      <span class="roam-tour-meta-item">⏱ DURATION: FULL DAY (11-12 HRS)</span>
+      <span class="roam-tour-meta-item">🏛 UNESCO: KASBAH AIT BENHADDOU</span>
+      <span class="roam-tour-meta-item">🛡 100% PRIVATE 4X4 TRANSPORT &amp; DRIVER</span>
+    </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Why Take an Ait Benhaddou Tour?</h2>
-  <p style="margin-bottom: 24px;">If you are researching the best <strong>Morocco day trips</strong> or multi-day excursions, an <strong>Ait Benhaddou tour</strong> is absolutely essential. Designated as a UNESCO World Heritage site since 1987, the Ksar of Ait Benhaddou is a striking example of southern Moroccan architecture. Wandering through its earthen clay walls is like stepping back in time to when the trans-Saharan trade routes flourished.</p>
-  <p style="margin-bottom: 24px;">Beyond its historical significance, it is a mecca for film buffs. If you've ever wanted to visit the <strong>Game of Thrones Morocco filming locations</strong> (Yunkai) or see where Russell Crowe fought in <em>Gladiator</em>, this <strong>Ouarzazate tour</strong> brings those cinematic fantasies to life.</p>
+    <div style="margin-bottom: 40px; border: 1px solid rgba(0,0,0,0.12); overflow: hidden;">
+      <img src="images/pol-kasbah.jpg" alt="Kasbah Ait Benhaddou and Ouarzazate Tour" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; display: block;">
+    </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #ffffff;">Tour Highlights</h2>
-  <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Tizi n'Tichka Pass:</strong> Cross the High Atlas Mountains at a breathtaking 2,260m elevation.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Ait Benhaddou:</strong> Enjoy a private, guided walking tour of the iconic UNESCO Kasbah.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Atlas Film Studios:</strong> Go behind the scenes at the massive <strong>Ouarzazate film studios</strong>.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Kasbah Taourirt:</strong> Discover the beautifully restored 19th-century palace in the heart of Ouarzazate.</li>
-  </ul>
+    <div class="roam-article-body">
+      <p style="font-size: 1.25rem; font-weight: 500; line-height: 1.7; margin-bottom: 28px;">Embark on the ultimate journey through Morocco's cinematic history and ancient caravan routes. The <strong>Heritage &amp; Cinema Tour</strong> takes you across the spectacular High Atlas Mountains to explore legendary Kasbahs, including the iconic <strong>Ait Benhaddou</strong>, and the <strong>Ouarzazate film studios</strong>—the true Hollywood of Africa.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Detailed Itinerary</h2>
+      <h2>Why Take an Ait Benhaddou Tour?</h2>
+      <p>If you are researching the best <strong>Morocco day trips</strong> from Marrakech, an <strong>Ait Benhaddou tour</strong> is an essential rite of passage. Designated as a UNESCO World Heritage site since 1987, the fortified clay village (Ksar) of Ait Benhaddou represents the apex of southern Moroccan earthen architecture. Wandering through its towering red-earthen gates feels like stepping hundreds of years back into the trans-Saharan salt and gold caravan era.</p>
+      
+      <p>Beyond its deep historical roots, Ait Benhaddou is a global cinematic pilgrimage. If you have ever wanted to visit the real-world filming sets of <em>Gladiator</em>, <em>Game of Thrones</em> (the yellow city of Yunkai), <em>Lawrence of Arabia</em>, or <em>Kingdom of Heaven</em>, this private expedition brings those legendary scenes to life.</p>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">The Journey Across the High Atlas</h3>
-    <p style="margin-bottom: 16px;">We depart early in a luxury 4x4 or private van, ascending the winding roads of the <strong>High Atlas Mountains</strong>. We'll stop frequently at panoramic viewpoints overlooking lush Berber villages and deep valleys before conquering the famous Tizi n'Tichka pass.</p>
-  </div>
+      <!-- Highlights Box -->
+      <div class="roam-highlights-box">
+        <h3 class="roam-highlights-title">Tour Highlights</h3>
+        <ul class="roam-highlight-list">
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Tizi n'Tichka Mountain Pass:</strong> Cross the High Atlas at 2,260m elevation with dramatic stops at scenic mountain lookouts.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>UNESCO Kasbah Ait Benhaddou:</strong> In-depth private guided walking tour of the ancient mudbrick granaries and towers.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Atlas Film Studios:</strong> Go behind the scenes at the world's largest desert film lot in Ouarzazate.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Kasbah Taourirt:</strong> Discover the restored 19th-century Glaoui palace decorated with intricate stucco and cedar woodwork.</div>
+          </li>
+        </ul>
+      </div>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Exploring Kasbah Ait Benhaddou</h3>
-    <p style="margin-bottom: 16px;">Arriving at the edge of the Ounila River, you'll cross over to the ancient fortified village. Your expert local guide will lead you through the labyrinthine alleys of <strong>Ait Benhaddou</strong>, explaining the traditional mud-brick building techniques and the rich history of the Glaoui family. Don't forget your camera—every corner looks like a movie set.</p>
-  </div>
+      <h2>Detailed Day-Trip Itinerary</h2>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Ouarzazate: The Hollywood of Africa</h3>
-    <p style="margin-bottom: 16px;">After a traditional Moroccan tagine lunch, we drive a short distance to <strong>Ouarzazate</strong>. Here, you get exclusive access to the <strong>Atlas Film Studios</strong>. Walk past towering Egyptian statues and ancient Roman temples abandoned in the desert after filming wrapped. We conclude the day with a visit to the intricately decorated Kasbah Taourirt before driving back.</p>
-  </div>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">LEG 01 // 07:30 AM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">Crossing the High Atlas Mountains via Tizi n'Tichka</h3>
+        <p class="roam-itinerary-desc">Your private driver picks you up from your Marrakech riad in a comfortable, climate-controlled 4x4 or executive Mercedes van. Ascend the twisting engineering marvel of the Tizi n'Tichka pass (2,260m). Stop for sweeping photos across deep valleys, dramatic gorges, and red-clay Berber hamlets clinging to the mountainsides.</p>
+      </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">FAQ: Ouarzazate & Ait Benhaddou</h2>
-  
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">What movies were filmed at Ait Benhaddou?</h3>
-  <p style="margin-bottom: 24px;">A staggering number of blockbuster films and TV shows have used the Kasbah as a backdrop. Some of the most famous include <em>Gladiator</em>, <em>Game of Thrones</em> (as the city of Yunkai), <em>The Mummy</em>, <em>Lawrence of Arabia</em>, and <em>Kingdom of Heaven</em>.</p>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">LEG 02 // MIDDAY EXPLORATION</span>
+        <h3 class="roam-itinerary-title">Kasbah Ait Benhaddou UNESCO World Heritage Site</h3>
+        <p class="roam-itinerary-desc">Cross the shallow Ounila River stepping-stones to enter Ait Benhaddou. With your private local expert, explore the ancient granary atop the hill, navigate the maze of earthen passageways, and admire the defensive towers that stood watch over historic desert merchants. Enjoy a panoramic lunch on a shaded terrace facing the fortress.</p>
+      </div>
 
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">How far is Ouarzazate from Marrakech?</h3>
-  <p style="margin-bottom: 24px;">The drive from Marrakech to Ouarzazate takes approximately 4 hours, crossing the High Atlas Mountains. While the distance is only about 190 kilometers (118 miles), the winding mountain roads dictate a slower, scenic pace.</p>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">LEG 03 // AFTERNOON CINEMA</span>
+        <h3 class="roam-itinerary-title">Ouarzazate: Atlas Film Studios &amp; Kasbah Taourirt</h3>
+        <p class="roam-itinerary-desc">Drive 30 minutes south into Ouarzazate, the gateway to the Sahara. Tour the famous Atlas Film Studios where sets from Cleopatra, Kingdom of Heaven, and Gladiator stand preserved in the desert sun. Tour the labyrinthine chambers of Kasbah Taourirt before relaxing on your private evening drive back to Marrakech.</p>
+      </div>
 
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">Can you visit the Atlas Film Studios?</h3>
-  <p style="margin-bottom: 24px;">Yes! The <strong>Atlas Film Studios</strong> in Ouarzazate are open to the public. Our tour includes guided access where you can walk through massive, intact movie sets from famous historical epics.</p>
+      <h2>Frequently Asked Questions: Ait Benhaddou &amp; Ouarzazate</h2>
+      
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">What movies were filmed at Ait Benhaddou?</h3>
+        <p>Over 20 Hollywood blockbusters and prestige television series have filmed at Ait Benhaddou. Key titles include Ridley Scott's <em>Gladiator</em> (1999) and <em>Gladiator II</em> (2024), <em>Game of Thrones</em> (Season 3 as Yunkai), <em>The Mummy</em>, <em>Kingdom of Heaven</em>, <em>Prince of Persia</em>, and David Lean's timeless masterpiece <em>Lawrence of Arabia</em>.</p>
+      </div>
 
-  <div style="margin-top: 64px; padding: 40px; background-color: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 16px; text-align: center;">
-    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #C8A45C; margin-top: 0;">Step Onto the Movie Set</h3>
-    <p style="margin-bottom: 24px; font-size: 18px; color: rgba(255, 255, 255, 0.8);">Ready to explore ancient kasbahs and cinematic history? Book our Heritage & Cinema tour for an unforgettable journey to Ait Benhaddou and Ouarzazate.</p>
-    <a href="#booking" style="display: inline-block; background-color: #C8A45C; color: #0A0908; font-weight: bold; padding: 16px 32px; border-radius: 9999px; text-decoration: none; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#C8A45C'">Book the Heritage & Cinema Tour</a>
-  </div>
-</div>
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">How long is the drive from Marrakech to Ait Benhaddou?</h3>
+        <p>The distance is approximately 180 km (112 miles), taking about 3.5 to 4 hours each way. Because the route traverses the high mountain passes of the Atlas, having an experienced private chauffeur allows you to relax, stop whenever you wish for coffee and photography, and avoid the stress of rental car navigation.</p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Can I extend this into a multi-day Sahara tour?</h3>
+        <p>Absolutely! Ait Benhaddou is the natural first gateway on the road to the Merzouga Sahara sand dunes (Erg Chebbi). We frequently customize this itinerary into a 3-day or 4-day private desert expedition with luxury glamping.</p>
+      </div>
+
+      <!-- Driver Concierge Lead Gen -->
+      <div class="roam-driver-box">
+        <h4>Want a Private Chauffeur &amp; Custom Schedule?</h4>
+        <p>Avoid cramped tour buses. Enjoy door-to-door riad pickup in a private Prado 4x4 or Mercedes V-Class with total itinerary flexibility, professional photography stops, and your own dedicated local driver.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="custom-morocco-tour.html" class="roam-btn-black">Book Private Chauffeur &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%20Heritage%20%26%20Cinema%20tour." target="_blank" rel="noopener" class="roam-btn-wa">WhatsApp Direct Guide</a>
+        </div>
+      </div>
+
+      <!-- Travel Deals Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">Trip Planning &amp; Gear Toolkit</div>
+        <div class="roam-toolkit-grid">
+          <a href="travel-deals.html#flights" class="roam-toolkit-link"><span>✈️ Flights to Marrakech</span><span>&rarr;</span></a>
+          <a href="travel-deals.html#hotels" class="roam-toolkit-link"><span>🏨 Ouarzazate Kasbah Hotels</span><span>&rarr;</span></a>
+          <a href="travel-deals.html#esim" class="roam-toolkit-link"><span>📶 Unlimited Morocco eSIM</span><span>&rarr;</span></a>
+          <a href="custom-morocco-tour.html" class="roam-toolkit-link"><span>🚐 Custom 4x4 &amp; Chauffeur</span><span>&rarr;</span></a>
+        </div>
+      </div>
+
+      <!-- Tour Bottom CTA Box -->
+      <div class="roam-tour-cta-box">
+        <h3 class="roam-tour-cta-title">Step Onto the Legendary Movie Sets</h3>
+        <p class="roam-tour-cta-desc">Ready to explore ancient earthen fortresses and cinematic Hollywood history? Book our private Heritage &amp; Cinema day excursion for an unforgettable Moroccan experience.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="custom-morocco-tour.html" class="roam-btn-black">Reserve Private Tour &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20inquiring%20about%20the%20Ait%20Benhaddou%20day%20trip." target="_blank" rel="noopener" class="roam-btn-wa">WhatsApp Direct Guide</a>
+        </div>
+      </div>
 
     </div>
   </div>

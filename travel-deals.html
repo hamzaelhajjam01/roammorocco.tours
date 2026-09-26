@@ -49,102 +49,86 @@
 
   <style>
     :root {
-      --gold: #C8A45C;
-      --gold-light: #D4B76A;
-      --bg-dark: #0A0908;
-      --bg-card: #141311;
-      --border-subtle: rgba(200, 164, 92, 0.22);
-      --border-strong: rgba(200, 164, 92, 0.45);
-      --text: #F8F8F8;
-      --text-muted: rgba(255, 255, 255, 0.65);
+      --bg-cream: #f2eee6;
+      --card-bg: #ffffff;
+      --border-subtle: rgba(0, 0, 0, 0.12);
+      --border-strong: rgba(0, 0, 0, 0.22);
+      --text-main: #000000;
+      --text-muted: rgba(0, 0, 0, 0.65);
+      --red: #f10b18;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after, [class], [id] {
+      box-sizing: border-box;
+      border-radius: 0 !important;
+    }
+
     body {
-      background-color: var(--bg-dark);
-      color: var(--text);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: Helvetica, Arial, sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
     }
 
     a { text-decoration: none; color: inherit; }
 
-    /* Navigation */
-    .d-nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(10, 9, 8, 0.92);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 16px 32px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .d-logo img { height: 38px; width: auto; display: block; }
-    .d-nav-links { display: flex; align-items: center; gap: 28px; }
-    .d-nav-link { font-size: 14px; font-weight: 500; color: var(--text-muted); transition: color 0.2s; }
-    .d-nav-link:hover, .d-nav-link.active { color: var(--gold); }
-    .d-nav-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      color: #0A0908;
-      font-weight: 700;
-      font-size: 13px;
-      padding: 10px 22px;
-      border-radius: 9999px;
-      transition: all 0.25s ease;
-    }
-    .d-nav-cta:hover { transform: scale(1.04); box-shadow: 0 0 24px rgba(200, 164, 92, 0.4); }
-
     /* Hero */
     .d-hero {
-      padding: 90px 24px 70px;
+      padding: 130px 24px 60px;
       text-align: center;
-      background: radial-gradient(circle at 50% 20%, rgba(200, 164, 92, 0.14) 0%, transparent 60%),
-                  linear-gradient(180deg, #0A0908 0%, #12100d 100%);
+      background: var(--bg-cream);
       border-bottom: 1px solid var(--border-subtle);
     }
 
     .d-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
       padding: 6px 16px;
-      background: rgba(200, 164, 92, 0.12);
+      background: #ffffff;
       border: 1px solid var(--border-strong);
-      border-radius: 9999px;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--gold-light);
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--text-main);
       text-transform: uppercase;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       margin-bottom: 20px;
+    }
+    .d-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--red);
     }
 
     .d-hero h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(32px, 5vw, 56px);
-      line-height: 1.18;
-      color: #fff;
-      max-width: 900px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(34px, 5.5vw, 62px);
+      line-height: 0.98;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+      max-width: 960px;
       margin: 0 auto 20px;
+      color: #000000;
     }
 
     .d-hero h1 span {
-      background: linear-gradient(135deg, var(--gold) 0%, #FFF3D6 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      display: block;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 0.62em;
+      letter-spacing: -0.03em;
+      margin-top: 10px;
     }
 
     .d-hero p {
-      font-size: clamp(16px, 1.8vw, 19px);
+      font-family: Georgia, serif;
+      font-size: clamp(17px, 2vw, 20px);
       color: var(--text-muted);
       max-width: 720px;
       margin: 0 auto 30px;
@@ -154,49 +138,55 @@
     .d-cat-bar {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
-      margin-top: 30px;
+      margin-top: 24px;
     }
 
     .d-cat-pill {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 9999px;
-      padding: 10px 20px;
-      font-size: 13px;
-      font-weight: 600;
-      color: #fff;
-      transition: all 0.2s;
+      background: #ffffff;
+      border: 1px solid var(--border-strong);
+      padding: 10px 18px;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #000000;
+      transition: all 0.2s ease;
     }
 
     .d-cat-pill:hover {
-      background: rgba(200, 164, 92, 0.2);
-      border-color: var(--gold);
-      color: var(--gold-light);
+      background: #000000;
+      border-color: #000000;
+      color: #ffffff;
     }
 
     /* Section Styles */
     .d-section {
-      padding: 70px 24px;
+      padding: 60px 24px;
       max-width: 1240px;
       margin: 0 auto;
     }
 
     .d-section-header {
-      margin-bottom: 36px;
+      margin-bottom: 32px;
     }
 
     .d-section-header h2 {
-      font-family: 'Playfair Display', Georgia, serif;
+      font-family: Helvetica, Arial, sans-serif;
       font-size: clamp(26px, 3.5vw, 38px);
-      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      color: #000000;
       margin-bottom: 8px;
     }
 
     .d-section-header p {
+      font-family: Georgia, serif;
       color: var(--text-muted);
-      font-size: 15px;
+      font-size: 16px;
     }
 
     /* Deals Grid */
@@ -207,36 +197,36 @@
     }
 
     .d-card {
-      background: var(--bg-card);
+      background: var(--card-bg);
       border: 1px solid var(--border-subtle);
-      border-radius: 14px;
       padding: 28px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       transition: all 0.25s ease;
       position: relative;
-      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
     }
 
     .d-card:hover {
       transform: translateY(-4px);
-      border-color: var(--gold);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(200, 164, 92, 0.12);
+      border-color: #000000;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.07);
     }
 
     .d-card-badge {
       position: absolute;
       top: 16px;
       right: 16px;
-      background: rgba(200, 164, 92, 0.15);
-      border: 1px solid var(--gold);
-      color: var(--gold-light);
-      font-size: 11px;
-      font-weight: 700;
-      padding: 4px 10px;
-      border-radius: 9999px;
+      background: #f8f6f0;
+      border: 1px solid rgba(0, 0, 0, 0.18);
+      color: var(--red);
+      font-family: "Courier New", monospace;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 4px 8px;
       text-transform: uppercase;
+      letter-spacing: 0.06em;
     }
 
     .d-card-icon {
@@ -246,17 +236,21 @@
     }
 
     .d-card h3 {
+      font-family: Helvetica, Arial, sans-serif;
       font-size: 20px;
-      font-weight: 700;
-      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: #000000;
       margin-bottom: 10px;
     }
 
     .d-card p {
-      font-size: 14px;
+      font-family: Georgia, serif;
+      font-size: 15px;
       color: var(--text-muted);
-      margin-bottom: 20px;
-      line-height: 1.5;
+      margin-bottom: 24px;
+      line-height: 1.6;
     }
 
     .d-card-btn {
@@ -264,19 +258,21 @@
       align-items: center;
       justify-content: center;
       gap: 8px;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      color: #0A0908;
-      font-weight: 700;
-      font-size: 13px;
-      padding: 12px 18px;
-      border-radius: 8px;
+      background: #000000;
+      color: #ffffff;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 13px 18px;
       transition: all 0.2s ease;
       text-align: center;
     }
 
     .d-card-btn:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 16px rgba(200, 164, 92, 0.4);
+      background: #333333;
+      transform: translateY(-2px);
     }
 
     /* Worldwide Hotspots Showcase */
@@ -287,33 +283,37 @@
     }
 
     .d-world-card {
-      background: var(--bg-card);
+      background: var(--card-bg);
       border: 1px solid var(--border-subtle);
-      border-radius: 14px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       transition: transform 0.25s ease, border-color 0.25s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
     }
 
     .d-world-card:hover {
       transform: translateY(-4px);
-      border-color: var(--gold);
+      border-color: #000000;
     }
 
     .d-world-header {
-      padding: 20px 24px;
-      background: rgba(255, 255, 255, 0.03);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 18px 24px;
+      background: #f8f6f0;
+      border-bottom: 1px solid var(--border-subtle);
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
 
     .d-world-header h3 {
-      font-size: 18px;
-      font-weight: 700;
-      color: #fff;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin: 0;
     }
 
     .d-world-flag { font-size: 24px; }
@@ -323,52 +323,57 @@
       flex-grow: 1;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .d-world-link {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 10px 14px;
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
+      padding: 11px 16px;
+      background: #faf9f6;
+      border: 1px solid var(--border-subtle);
+      font-family: Helvetica, Arial, sans-serif;
       font-size: 13px;
-      color: #fff;
-      transition: all 0.2s;
+      font-weight: 700;
+      color: #000000;
+      transition: all 0.2s ease;
     }
 
     .d-world-link:hover {
-      background: rgba(200, 164, 92, 0.15);
-      border-color: var(--gold);
-      color: var(--gold-light);
+      background: #000000;
+      border-color: #000000;
+      color: #ffffff;
     }
 
     /* Chauffeur Bridge Banner */
     .d-bridge-banner {
-      background: linear-gradient(135deg, rgba(200, 164, 92, 0.15) 0%, rgba(30, 25, 20, 0.6) 100%);
-      border: 1px solid var(--border-strong);
-      border-radius: 16px;
-      padding: 40px;
+      background: #ffffff;
+      border: 2px solid #000000;
+      padding: 48px 36px;
       margin: 60px auto 0;
       text-align: center;
       max-width: 1000px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
     }
 
     .d-bridge-banner h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(24px, 3.5vw, 34px);
-      color: var(--gold-light);
-      margin-bottom: 12px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      color: #000000;
+      margin-top: 0;
+      margin-bottom: 14px;
     }
 
     .d-bridge-banner p {
-      font-size: 16px;
-      color: rgba(255, 255, 255, 0.85);
+      font-family: Georgia, serif;
+      font-size: 17px;
+      color: var(--text-muted);
       max-width: 680px;
-      margin: 0 auto 24px;
+      margin: 0 auto 28px;
     }
 
     .d-bridge-btns {
@@ -382,55 +387,44 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      color: #0A0908;
-      font-weight: 700;
-      font-size: 14px;
-      padding: 12px 24px;
-      border-radius: 9999px;
-      transition: all 0.2s;
+      background: #000000;
+      color: #ffffff;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 13px 26px;
+      transition: all 0.2s ease;
     }
 
-    .d-btn-gold:hover { transform: scale(1.03); }
+    .d-btn-gold:hover {
+      background: #333333;
+      transform: translateY(-2px);
+    }
 
     .d-btn-wa {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       background: #25D366;
-      color: #0A0908;
-      font-weight: 700;
-      font-size: 14px;
-      padding: 12px 24px;
-      border-radius: 9999px;
-      transition: all 0.2s;
-    }
-
-    .d-btn-wa:hover { background: #20BA59; transform: scale(1.03); }
-
-    /* Footer */
-    .d-footer {
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 60px 24px 30px;
-      text-align: center;
-      background: #070605;
+      color: #000000;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 800;
       font-size: 13px;
-      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 13px 26px;
+      transition: all 0.2s ease;
     }
 
-    .d-footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-      margin-bottom: 24px;
+    .d-btn-wa:hover {
+      background: #20BA59;
+      transform: translateY(-2px);
     }
-
-    .d-footer-links a:hover { color: var(--gold); }
 
     @media (max-width: 768px) {
-      .d-nav-links { display: none; }
-      .d-bridge-banner { padding: 28px 16px; }
+      .d-bridge-banner { padding: 32px 20px; }
     }
   </style>
 
@@ -446,7 +440,7 @@
   </script>
   <link rel="stylesheet" href="css/roam-theme.css">
 </head>
-<body>
+<body class="roam-light-theme" id="top">
 
   <!-- Navigation -->
     <!-- Announcement Bar -->

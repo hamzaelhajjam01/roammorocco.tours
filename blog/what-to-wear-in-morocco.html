@@ -210,44 +210,8 @@
   <link rel="stylesheet" href="../css/trip-concierge.css">
   <link rel="stylesheet" href="../css/roam-theme.css">
 </head>
-<body style="position:relative; min-height:100%; top:0px; margin:0; background:#0a0908; color:white; font-family:'Inter',sans-serif;">
+<body class="roam-light-theme" id="top">
 
-
-    <style>
-      .rm-nav-desktop { display:none; align-items:center; gap:32px; z-index:10; }
-      .rm-nav-logo { z-index:10; flex-shrink:0; }
-      .rm-nav-cta { display:none; z-index:10; }
-      .rm-nav-mobile-btn { display:flex; align-items:center; justify-content:center; width:40px; height:40px; color:white; background:none; border:none; cursor:pointer; z-index:10; transition:transform 0.3s; }
-      .rm-nav-mobile-btn:hover { transform:scale(1.1); }
-      .rm-nav-link { font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); text-decoration:none; transition:color 0.3s; }
-      .rm-nav-link:hover { color:#C8A45C; }
-      .rm-nav-link-active { color:#C8A45C !important; }
-      .rm-nav-cta-btn { display:inline-flex; align-items:center; gap:8px; background:#C8A45C; color:#0A0908; font-weight:500; padding:10px 20px; border-radius:9999px; font-size:14px; text-decoration:none; transition:all 0.3s; }
-      .rm-nav-cta-btn:hover { background:#D4B76A; transform:scale(1.05); box-shadow:0 0 30px rgba(200,164,92,0.3); }
-      /* Mobile dropdown animation */
-      .rm-mobile-dropdown { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease, padding 0.4s ease; background:#0a0908; border-top:1px solid rgba(255,255,255,0.1); width:100%; flex-direction:column; padding:0 24px; gap:0; box-shadow:0 10px 40px rgba(0,0,0,0.5); z-index:50; }
-      .rm-mobile-dropdown.open { max-height:500px; opacity:1; padding:16px 24px; gap:16px; }
-      .rm-mobile-dropdown a { font-size:18px; font-weight:500; text-decoration:none; display:block; padding:8px 0; opacity:0; transform:translateY(-8px); transition:opacity 0.3s ease, transform 0.3s ease; }
-      .rm-mobile-dropdown.open a { opacity:1; transform:translateY(0); }
-      .rm-mobile-dropdown.open a:nth-child(1) { transition-delay:0.05s; }
-      .rm-mobile-dropdown.open a:nth-child(2) { transition-delay:0.1s; }
-      .rm-mobile-dropdown.open a:nth-child(3) { transition-delay:0.15s; }
-      .rm-mobile-dropdown.open a:nth-child(4) { transition-delay:0.2s; }
-      .rm-mobile-dropdown.open a:nth-child(5) { transition-delay:0.25s; }
-      .rm-mobile-dropdown.open a:nth-child(6) { transition-delay:0.3s; }
-      /* Hamburger to X animation */
-      .rm-hamburger-line { transition:transform 0.3s ease, opacity 0.2s ease; transform-origin:center; }
-      .rm-nav-mobile-btn.active .rm-line1 { transform:translateY(7px) rotate(45deg); }
-      .rm-nav-mobile-btn.active .rm-line2 { opacity:0; }
-      .rm-nav-mobile-btn.active .rm-line3 { transform:translateY(-7px) rotate(-45deg); }
-      @media (min-width: 1024px) {
-        .rm-nav-desktop { display:flex; }
-        .rm-nav-logo { position:absolute; left:50%; transform:translateX(-50%); }
-        .rm-nav-cta { display:flex; }
-        .rm-nav-mobile-btn { display:none; }
-        .rm-mobile-dropdown { display:none !important; }
-      }
-    </style>
       <!-- Announcement Bar -->
   <div class="announcement-bar">
     <div class="announcement-track">
@@ -318,100 +282,93 @@
     </div>
   </div>
 
-<main style="background:#0a0908; color:white; padding:40px 24px 80px;">
-  <div style="max-width:896px; margin:0 auto;">
-    <h1 style="font-size:clamp(2rem, 5vw, 3rem); font-family:'Playfair Display',serif; margin-bottom:32px; color:#C8A45C;">What to Wear in Morocco: The Complete Guide</h1>
-    <div style="color:rgba(255,255,255,0.8); line-height:1.8; font-size:18px;">
-      <img src="../images/morocco_packing_hero.webp" alt="A stylish female traveler in the Marrakech medina wearing appropriate flowy clothes" style="width:100%; height:auto; border-radius:16px; margin-bottom:32px; box-shadow:0 10px 30px rgba(0,0,0,0.5);" /><article style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.85); font-size: 1.125rem; line-height: 1.8;">
-  <p style="margin-bottom: 24px; font-size: 1.25rem;">If you are packing for an upcoming trip, your very first question is likely: <em>"What should I dress as a woman when travelling to Morocco?"</em> As a Muslim country with deeply rooted local customs, packing can feel intimidating for <strong>female travelers</strong>. But it doesn't have to be.</p>
+<main class="roam-article-main">
+  <div class="roam-article-wrapper">
+    <div class="roam-article-badge">PACKING INTELLIGENCE // CULTURE & ATTIRE</div>
+    <h1 class="roam-article-title">What to Wear in Morocco: The Complete Guide</h1>
+    <div class="roam-article-meta">
+      <span>BY ROAM MOROCCO EDITORIAL</span>
+      <span>•</span>
+      <span>UPDATED FOR 2026</span>
+      <span>•</span>
+      <span>9 MIN READ</span>
+    </div>
+
+    <img class="roam-article-hero-img" src="../images/morocco_packing_hero.webp" alt="A stylish female traveler in the Marrakech medina wearing appropriate flowy clothes" />
+
+    <article class="roam-article-body">
+      <p style="font-size: 1.25rem;">If you are packing for an upcoming trip, your very first question is likely: <em>"What should I dress as a woman when travelling to Morocco?"</em> As a Muslim country with deeply rooted local customs, packing can feel intimidating for <strong>female travelers</strong>. But it doesn't have to be.</p>
   
-  <p class="mb-8">The general rule of thumb for <strong>what to wear in Morocco as a woman</strong> is to <strong>dress conservatively</strong>. However, this does not mean you have to be completely covered from head to toe or wear a hijab. This comprehensive guide breaks down the Moroccan <strong>dress code</strong>, what to pack to <strong>stay cool</strong>, and how to avoid <strong>unwanted attention</strong> while still looking stylish.</p>
+      <p>The general rule of thumb for <strong>what to wear in Morocco as a woman</strong> is to <strong>dress conservatively</strong>. However, this does not mean you have to be completely covered from head to toe or wear a hijab. This comprehensive guide breaks down the Moroccan <strong>dress code</strong>, what to pack to <strong>stay cool</strong>, and how to avoid <strong>unwanted attention</strong> while still looking stylish.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Understanding the Morocco Dress Code for Female Tourists</h2>
-  <p style="margin-bottom: 16px;">Morocco is one of the more progressive <strong>conservative countries</strong> in North Africa, but modesty is still highly valued. The basic principle is to cover your shoulders, cleavage, and knees.</p>
-  <ul style="list-style: disc; padding-left: 24px; margin-bottom: 24px;">
-    <li><strong>What to Avoid:</strong> Leave the <strong>tank tops</strong>, <strong>crop tops</strong>, <strong>short skirts</strong>, and hot pants at home. Wearing these will not get you arrested, but it will draw heavy, uncomfortable stares and <strong>unwanted attention</strong>. (For more details on staying safe, read our <a href="is-morocco-safe-for-tourists.html" style="color:#C8A45C; text-decoration:underline;">guide on whether Morocco is safe for tourists</a>).</li>
-    <li><strong>The Golden Rule:</strong> Opt for loose-fitting, breathable fabrics. Think <strong>maxi dresses</strong>, <strong>flowy pants</strong>, <strong>long sleeves</strong> (or at least t-shirts that cover the shoulder), and linen shirts.</li>
-  </ul>
+      <h2>Understanding the Morocco Dress Code for Female Tourists</h2>
+      <p>Morocco is one of the more progressive <strong>conservative countries</strong> in North Africa, but modesty is still highly valued. The basic principle is to cover your shoulders, cleavage, and knees.</p>
+      <ul>
+        <li><strong>What to Avoid:</strong> Leave the <strong>tank tops</strong>, <strong>crop tops</strong>, <strong>short skirts</strong>, and hot pants at home. Wearing these will not get you arrested, but it will draw heavy, uncomfortable stares and <strong>unwanted attention</strong>. (For more details on staying safe, read our <a href="is-morocco-safe-for-tourists.html">guide on whether Morocco is safe for tourists</a>).</li>
+        <li><strong>The Golden Rule:</strong> Opt for loose-fitting, breathable fabrics. Think <strong>maxi dresses</strong>, <strong>flowy pants</strong>, <strong>long sleeves</strong> (or at least t-shirts that cover the shoulder), and linen shirts.</li>
+      </ul>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">What to Wear in Marrakech vs. Rural Areas</h2>
-  <p style="margin-bottom: 24px;">It is important to understand that the dress code fluctuates depending on exactly where you are in the country.</p>
-  
-  <h3 style="font-size: 1.5rem; color: white; margin-bottom: 16px;">What to Wear in Marrakech</h3>
-  <p style="margin-bottom: 24px;">Marrakech is highly accustomed to Western tourists. In the newer parts of the city (Gueliz) or inside your private luxury riad, the rules are very relaxed. However, when exploring the medieval medina or the souks, it is still best to wear a <strong>long shirt</strong>, a high-necked t-shirt, and pants or a <strong>maxi skirt</strong>. You want to <strong>feel comfortable</strong> navigating the crowded alleys without feeling self-conscious.</p>
+      <h2>What to Wear in Marrakech vs. Rural Areas</h2>
+      <p>It is important to understand that the dress code fluctuates depending on exactly where you are in the country.</p>
+      
+      <h3>What to Wear in Marrakech</h3>
+      <p>Marrakech is highly accustomed to Western tourists. In the newer parts of the city (Gueliz) or inside your private luxury riad, the rules are very relaxed. However, when exploring the medieval medina or the souks, it is still best to wear a <strong>long shirt</strong>, a high-necked t-shirt, and pants or a <strong>maxi skirt</strong>. You want to <strong>feel comfortable</strong> navigating the crowded alleys without feeling self-conscious.</p>
 
-  <h3 style="font-size: 1.5rem; color: white; margin-bottom: 16px;">What to Wear in Rural Areas & The Atlas Mountains</h3>
-  <p style="margin-bottom: 24px;">If your itinerary takes you into the <strong>Atlas Mountains</strong>, Berber villages, or deep into the Sahara Desert, the culture becomes much more traditional. When visiting <strong>rural areas</strong>, it is a sign of immense respect to cover up more fully. A loose tunic over <strong>flowy pants</strong> is perfect. If you are hiking, ensure you have sturdy <strong>walking shoes</strong> or <strong>closed toe</strong> boots.</p>
+      <h3>What to Wear in Rural Areas & The Atlas Mountains</h3>
+      <p>If your itinerary takes you into the <strong>Atlas Mountains</strong>, Berber villages, or deep into the Sahara Desert, the culture becomes much more traditional. When visiting <strong>rural areas</strong>, it is a sign of immense respect to cover up more fully. A loose tunic over <strong>flowy pants</strong> is perfect. If you are hiking, ensure you have sturdy <strong>walking shoes</strong> or <strong>closed toe</strong> boots.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Do I Need to Wear a Scarf?</h2>
-  <p style="margin-bottom: 24px;">Non-Muslim women are <em>not</em> required by law or custom to cover their hair in Morocco. However, we highly recommend that you <strong>wear a scarf</strong> or pack a lightweight pashmina in your day bag for two reasons:</p>
-  <ol style="list-style: decimal; padding-left: 24px; margin-bottom: 24px;">
-    <li style="margin-bottom: 8px;"><strong>Mosque Visits:</strong> If you plan to enter the Hassan II Mosque in Casablanca (one of the only mosques open to non-Muslims), you will be required to cover your hair.</li>
-    <li style="margin-bottom: 8px;"><strong>Desert Protection:</strong> A scarf is the ultimate multi-tool in the Sahara. It protects your neck from sunburn and can be wrapped around your face to block blowing sand during a camel ride.</li>
-  </ol>
+      <h2>Do I Need to Wear a Scarf?</h2>
+      <p>Non-Muslim women are <em>not</em> required by law or custom to cover their hair in Morocco. However, we highly recommend that you <strong>wear a scarf</strong> or pack a lightweight pashmina in your day bag for two reasons:</p>
+      <ol>
+        <li><strong>Mosque Visits:</strong> If you plan to enter the Hassan II Mosque in Casablanca (one of the only mosques open to non-Muslims), you will be required to cover your hair.</li>
+        <li><strong>Desert Protection:</strong> A scarf is the ultimate multi-tool in the Sahara. It protects your neck from sunburn and can be wrapped around your face to block blowing sand during a camel ride.</li>
+      </ol>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Seasonal Packing: Autumn and Winter</h2>
-  <p style="margin-bottom: 24px;">A common misconception is that Morocco is boiling hot year-round. If you are researching <strong>what to wear in Morocco in October female</strong>, <strong>November</strong>, or <strong>December</strong>, you must prepare for drastic temperature drops.</p>
-  <ul style="list-style: disc; padding-left: 24px; margin-bottom: 24px;">
-    <li><strong>October & November:</strong> The days are pleasantly warm (perfect for a <strong>maxi dress</strong> with a denim jacket), but the evenings get chilly. Bring layers.</li>
-    <li><strong>December & January:</strong> If you are wondering <strong>what to wear in Morocco in December female</strong>, pack a warm jacket, thick sweaters, and closed-toe shoes. The Atlas Mountains will be <strong>snow capped</strong>, and desert nights drop to near freezing!</li>
-  </ul>
+      <h2>Seasonal Packing: Autumn and Winter</h2>
+      <p>A common misconception is that Morocco is boiling hot year-round. If you are researching <strong>what to wear in Morocco in October female</strong>, <strong>November</strong>, or <strong>December</strong>, you must prepare for drastic temperature drops.</p>
+      <ul>
+        <li><strong>October & November:</strong> The days are pleasantly warm (perfect for a <strong>maxi dress</strong> with a denim jacket), but the evenings get chilly. Bring layers.</li>
+        <li><strong>December & January:</strong> If you are wondering <strong>what to wear in Morocco in December female</strong>, pack a warm jacket, thick sweaters, and closed-toe shoes. The Atlas Mountains will be <strong>snow capped</strong>, and desert nights drop to near freezing!</li>
+      </ul>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">What to Wear in Morocco as a Man</h2>
-  <p style="margin-bottom: 24px;">While women face more scrutiny, men should also respect <strong>local customs</strong>. <strong>What to wear in Morocco as a man</strong> is simple: avoid walking around shirtless under any circumstances, and skip the ultra-short athletic shorts. Tailored shorts that hit near the knee are acceptable in Marrakech, but lightweight trousers or jeans are preferred by locals, especially in the evenings or in rural areas.</p>
+      <h2>What to Wear in Morocco as a Man</h2>
+      <p>While women face more scrutiny, men should also respect <strong>local customs</strong>. <strong>What to wear in Morocco as a man</strong> is simple: avoid walking around shirtless under any circumstances, and skip the ultra-short athletic shorts. Tailored shorts that hit near the knee are acceptable in Marrakech, but lightweight trousers or jeans are preferred by locals, especially in the evenings or in rural areas.</p>
 
-  <div style="margin-top: 64px; padding: 40px; background-color: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 16px; text-align: center;">
-    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #C8A45C; margin-top: 0;">Travel with Confidence</h3>
-    <p style="margin-bottom: 24px; font-size: 18px; color: rgba(255, 255, 255, 0.8);">One of the best ways to ensure you feel safe, comfortable, and respected is to travel with a local expert. Our private drivers at RoamMorocco ensure you navigate the souks and rural villages with ease.</p>
-    <a href="../index.html#destinations" style="display: inline-block; background-color: #C8A45C; color: #0A0908; font-weight: bold; padding: 16px 32px; border-radius: 9999px; text-decoration: none; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#C8A45C'">View Our Private Tours</a>
-  </div>
+      <!-- Private Driver Callout -->
+      <div class="roam-driver-box">
+        <h4>🚗 Prefer Not to Drive in Morocco? Let Roam Morocco Chauffeur You</h4>
+        <p>Avoid winding mountain passes and busy medina traffic. Explore Morocco with a licensed, English-speaking local driver in an air-conditioned 4x4 Prado or luxury Mercedes van.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="../custom-morocco-tour.html" class="roam-btn-black">✨ Plan a Custom Private Tour</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" class="roam-btn-wa">💬 Chat on WhatsApp (+212 653-506441)</a>
+        </div>
+      </div>
 
-  <!-- Private Driver Callout -->
-  <div style="background: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 14px; padding: 28px; margin: 40px 0;">
-    <h4 style="color: #C8A45C; font-size: 20px; font-weight: 700; margin-bottom: 8px;">
-      🚗 Prefer Not to Drive in Morocco? Let Roam Morocco Chauffeur You
-    </h4>
-    <p style="font-size: 15px; color: rgba(255, 255, 255, 0.85); margin-bottom: 16px;">
-      Avoid winding mountain passes and busy medina traffic. Explore Morocco with a licensed, English-speaking local driver in an air-conditioned 4x4 Prado or luxury Mercedes van.
-    </p>
-    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-      <a href="../custom-morocco-tour.html" style="background: #C8A45C; color: #0A0908; font-weight: 700; padding: 10px 20px; border-radius: 9999px; text-decoration: none; font-size: 13px;">
-        ✨ Plan a Custom Private Tour
-      </a>
-      <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" style="background: #25D366; color: #0A0908; font-weight: 700; padding: 10px 20px; border-radius: 9999px; text-decoration: none; font-size: 13px;">
-        💬 Chat on WhatsApp (+212 653-506441)
-      </a>
-    </div>
-  </div>
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
 
-  <!-- Morocco Travel Essentials Toolkit -->
-  <div style="background: #141311; border: 1px solid rgba(200, 164, 92, 0.25); border-radius: 14px; padding: 28px; margin: 40px 0;">
-    <h4 style="color: #D4B76A; font-size: 18px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
-      <span>✈️</span> Essential Morocco Travel Deals & Resources
-    </h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
-      <a href="https://trip.tp.st/qDkE2101?destination=RAK" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>✈️ Cheap Flights to Marrakech</span>
-        <span style="color: #C8A45C;">Trip.com →</span>
-      </a>
-      <a href="https://airalo.tp.st/V5fK8Y92" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>📱 Morocco 4G/5G eSIM</span>
-        <span style="color: #C8A45C;">Airalo from $8 →</span>
-      </a>
-      <a href="https://booking.tp.st/zXgP7811" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>🏨 Best Riad Deals</span>
-        <span style="color: #C8A45C;">Booking.com →</span>
-      </a>
-      <a href="https://discovercars.tp.st/u9HjL334" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>🚗 Compare Car Rentals</span>
-        <span style="color: #C8A45C;">DiscoverCars →</span>
-      </a>
-    </div>
-  </div>
-
-</article>
-
-    </div>
+      <!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals & Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://trip.tp.st/qDkE2101?destination=RAK" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>✈️ Cheap Flights to Marrakech</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Trip.com →</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>📱 Morocco 4G/5G eSIM</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Airalo from $8 →</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🏨 Best Riad Deals</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Booking.com →</span>
+          </a>
+          <a href="https://discovercars.tp.st/u9HjL334" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🚗 Compare Car Rentals</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">DiscoverCars →</span>
+          </a>
+        </div>
+      </div>
+    </article>
   </div>
 </main>
 

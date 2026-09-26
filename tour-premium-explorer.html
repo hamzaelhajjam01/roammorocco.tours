@@ -243,44 +243,7 @@
   <link rel="stylesheet" href="css/trip-concierge.css">
   <link rel="stylesheet" href="css/roam-theme.css">
 </head>
-<body style="position:relative; min-height:100%; top:0px; margin:0; background:#0a0908; color:white; font-family:'Inter',sans-serif;">
-
-
-    <style>
-      .rm-nav-desktop { display:none; align-items:center; gap:32px; z-index:10; }
-      .rm-nav-logo { z-index:10; flex-shrink:0; }
-      .rm-nav-cta { display:none; z-index:10; }
-      .rm-nav-mobile-btn { display:flex; align-items:center; justify-content:center; width:40px; height:40px; color:white; background:none; border:none; cursor:pointer; z-index:10; transition:transform 0.3s; }
-      .rm-nav-mobile-btn:hover { transform:scale(1.1); }
-      .rm-nav-link { font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); text-decoration:none; transition:color 0.3s; }
-      .rm-nav-link:hover { color:#C8A45C; }
-      .rm-nav-link-active { color:#C8A45C !important; }
-      .rm-nav-cta-btn { display:inline-flex; align-items:center; gap:8px; background:#C8A45C; color:#0A0908; font-weight:500; padding:10px 20px; border-radius:9999px; font-size:14px; text-decoration:none; transition:all 0.3s; }
-      .rm-nav-cta-btn:hover { background:#D4B76A; transform:scale(1.05); box-shadow:0 0 30px rgba(200,164,92,0.3); }
-      /* Mobile dropdown animation */
-      .rm-mobile-dropdown { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease, padding 0.4s ease; background:#0a0908; border-top:1px solid rgba(255,255,255,0.1); width:100%; flex-direction:column; padding:0 24px; gap:0; box-shadow:0 10px 40px rgba(0,0,0,0.5); z-index:50; }
-      .rm-mobile-dropdown.open { max-height:500px; opacity:1; padding:16px 24px; gap:16px; }
-      .rm-mobile-dropdown a { font-size:18px; font-weight:500; text-decoration:none; display:block; padding:8px 0; opacity:0; transform:translateY(-8px); transition:opacity 0.3s ease, transform 0.3s ease; }
-      .rm-mobile-dropdown.open a { opacity:1; transform:translateY(0); }
-      .rm-mobile-dropdown.open a:nth-child(1) { transition-delay:0.05s; }
-      .rm-mobile-dropdown.open a:nth-child(2) { transition-delay:0.1s; }
-      .rm-mobile-dropdown.open a:nth-child(3) { transition-delay:0.15s; }
-      .rm-mobile-dropdown.open a:nth-child(4) { transition-delay:0.2s; }
-      .rm-mobile-dropdown.open a:nth-child(5) { transition-delay:0.25s; }
-      .rm-mobile-dropdown.open a:nth-child(6) { transition-delay:0.3s; }
-      /* Hamburger to X animation */
-      .rm-hamburger-line { transition:transform 0.3s ease, opacity 0.2s ease; transform-origin:center; }
-      .rm-nav-mobile-btn.active .rm-line1 { transform:translateY(7px) rotate(45deg); }
-      .rm-nav-mobile-btn.active .rm-line2 { opacity:0; }
-      .rm-nav-mobile-btn.active .rm-line3 { transform:translateY(-7px) rotate(-45deg); }
-      @media (min-width: 1024px) {
-        .rm-nav-desktop { display:flex; }
-        .rm-nav-logo { position:absolute; left:50%; transform:translateX(-50%); }
-        .rm-nav-cta { display:flex; }
-        .rm-nav-mobile-btn { display:none; }
-        .rm-mobile-dropdown { display:none !important; }
-      }
-    </style>
+<body class="roam-light-theme" id="top">
       <!-- Announcement Bar -->
   <div class="announcement-bar">
     <div class="announcement-track">
@@ -351,65 +314,115 @@
     </div>
   </div>
 
-<main style="background:#0a0908; color:white; padding:40px 24px 80px;">
-  <div style="max-width:896px; margin:0 auto;">
-    <h1 style="font-size:clamp(2rem, 5vw, 3rem); font-family:'Playfair Display',serif; margin-bottom:32px; color:#C8A45C;">3-Day Premium Explorer</h1>
-    <div style="color:rgba(255,255,255,0.8); line-height:1.8; font-size:18px;">
-      <div style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.85); font-size: 1.125rem; line-height: 1.8;">
-  <p style="margin-bottom: 24px; font-size: 1.25rem;">If you are planning to <strong>visit Marrakech</strong> and wondering <strong>what to do in Marrakech</strong>, our 3-Day Premium Explorer is the ultimate itinerary. We have designed this private circuit for travelers who want to experience the absolute <strong>best of Marrakech</strong> and its surrounding landscapes without the hassle of changing hotels.</p>
+<main class="roam-tour-main" style="padding: 120px 24px 80px;">
+  <div class="roam-tour-wrapper">
+    <div class="roam-tour-badge">3-DAY CURATED CIRCUIT // ZERO HOTEL CHANGES</div>
+    <h1 class="roam-tour-title">3-Day Premium Explorer</h1>
+    
+    <div class="roam-tour-meta-bar">
+      <span class="roam-tour-meta-item">📍 BASE: MARRAKECH LUXURY RIAD</span>
+      <span class="roam-tour-meta-item">⏱ DURATION: 3 DAYS / 3 DAY-TRIPS</span>
+      <span class="roam-tour-meta-item">🌊 HIGHLIGHTS: ESSAOUIRA, OURIKA &amp; AGAFAY</span>
+      <span class="roam-tour-meta-item">🛡 100% PRIVATE CHAUFFEUR &amp; 4X4</span>
+    </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">The Ultimate Marrakech Travel Guide</h2>
-  <p style="margin-bottom: 24px;">When people search for <em>"where to go in Marrakech"</em> or <em>"what to see in Marrakech Morocco"</em>, they often get overwhelmed by the bustling souks and the frenetic energy of the <strong>Marrakech city centre</strong>. While exploring the <strong>Marrakech old town</strong> (the Medina) is a must, the true magic of <strong>holidaying in Marrakech</strong> lies in its strategic location. <strong>Marrakech city</strong> sits at the crossroads of the Atlantic coast, the soaring Atlas Mountains, and the sweeping stone deserts.</p>
-  <p style="margin-bottom: 24px;">Our Premium Explorer tour solves the biggest problem for a <strong>Marrakech vacation</strong>: logistics. You stay in your preferred luxury riad in the <strong>centre of Marrakech</strong>, and we pick you up each morning in a private, air-conditioned 8-seater van for three iconic day-trips.</p>
+    <div style="margin-bottom: 40px; border: 1px solid rgba(0,0,0,0.12); overflow: hidden;">
+      <img src="images/dest-marrakech.jpg" alt="3-Day Premium Marrakech Explorer Tour" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; display: block;">
+    </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #ffffff;">Tour Highlights: Top Attractions in Marrakech Region</h2>
-  <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Zero Hotel Changes:</strong> Travel out from <strong>Marrakech Morocco</strong> each day and return to your own bed.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Essaouira Coastal Escape:</strong> Leave the heat of <strong>Marrakech city</strong> for the breezy Atlantic coast.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Ourika Valley Trek:</strong> Hike the Atlas Mountains and dine by the river.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Agafay Desert Sunset:</strong> Experience luxury stargazing just 45 minutes from <strong>Marrakech</strong>.</li>
-  </ul>
+    <div class="roam-article-body">
+      <p style="font-size: 1.25rem; font-weight: 500; line-height: 1.7; margin-bottom: 28px;">If you are planning to <strong>visit Marrakech</strong> and wondering <strong>what to do in Marrakech</strong>, our 3-Day Premium Explorer is the ultimate private itinerary. We designed this circuit specifically for discerning travelers who want to experience the absolute <strong>best of Marrakech</strong> and its surrounding landscapes without the daily exhaustion of repacking suitcases and changing hotels.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">3-Day Itinerary: Things to Do in Marrakech Morocco</h2>
+      <h2>The Ultimate Marrakech Travel Experience</h2>
+      <p>When travelers search for <em>"where to go in Marrakech"</em> or <em>"what to see in Marrakech Morocco"</em>, they often get caught in the bustling souks and intense energy of the <strong>Marrakech city centre</strong>. While the ancient medina is magical, the true luxury of <strong>holidaying in Marrakech</strong> lies in its geographic diversity. Within a short private drive, you have the breezy Atlantic ocean, snow-capped Atlas peaks, and the sweeping lunar landscapes of the stone desert.</p>
+      
+      <p>Our Premium Explorer circuit solves the biggest logistical friction in Moroccan travel: <strong>zero hotel changes</strong>. You stay in your chosen luxury riad in the heart of Marrakech, and your private English-speaking chauffeur picks you up each morning in an executive air-conditioned vehicle for three curated, unhurried day excursions.</p>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Day 1: The Coastal Escape to Essaouira</h3>
-    <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: #C8A45C; margin-bottom: 12px;">07:00 AM DEPARTURE • ESSAOUIRA COAST</span>
-    <p style="margin-bottom: 16px;">Depart <strong>Marrakech</strong> early to beat the crowds. Essaouira is one of the most <strong>beautiful Marrakech</strong> day trips. We wander the blue-and-white medina, watch local fishermen at the historic port, and enjoy fresh Atlantic seafood. On the way back to <strong>Marrakech city</strong>, we stop at a women's cooperative to see how Argan oil is traditionally produced.</p>
-  </div>
+      <!-- Highlights Box -->
+      <div class="roam-highlights-box">
+        <h3 class="roam-highlights-title">Tour Highlights: Best of the Marrakech Region</h3>
+        <ul class="roam-highlight-list">
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Zero Hotel Repacking:</strong> Base yourself in one luxury Marrakech riad while experiencing coast, mountains, and desert.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Essaouira Coastal Escape:</strong> Stroll the breezy 18th-century Portuguese ramparts, taste freshly caught grilled sea bass, and visit artisan argan oil cooperatives.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Ourika Valley Foothills:</strong> Hike up to the Setti Fatma waterfalls with a local guide and dine on slow-cooked Berber tagine beside the river.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Secluded Agafay Desert Sunset:</strong> Avoid the noisy bus crowds. Enjoy a private sunset camel walk, candlelit eco-camp dinner, and laser constellation stargazing.</div>
+          </li>
+        </ul>
+      </div>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Day 2: Ourika Valley & Berber Villages</h3>
-    <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: #C8A45C; margin-bottom: 12px;">08:30 AM DEPARTURE • ATLAS MOUNTAINS</span>
-    <p style="margin-bottom: 16px;">If you are researching <strong>things to see in Marrakech Morocco</strong>, the High Atlas Mountains must be on your list. We head into the lush Ourika Valley foothills. You will trek up to the famous Setti Fatma waterfalls alongside an expert mountain guide, enjoy a traditional slow-cooked tagine by the river, and visit an authentic Berber home to learn about their enduring culture.</p>
-  </div>
+      <h2>3-Day Detailed Itinerary</h2>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Day 3: The "Quiet" Agafay Sunset & Stargazing</h3>
-    <span style="display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: #C8A45C; margin-bottom: 12px;">03:30 PM DEPARTURE • SECLUDED AGAFAY</span>
-    <p style="margin-bottom: 16px;">Flee the loud, noisy tourist conveyor-belt dinner shows that host hundreds of people at once. We take you to a secluded, pristine sector of the stony Agafay desert in the late afternoon. Embark on a sunset camel trek across the dunes as the sun drops over the snow-capped Atlas range. Savor a high-quality, quiet Moroccan dinner at a boutique eco-camp, and end your 3-day adventure with a professional, laser-guided stargazing session mapping out the clear desert constellations over warm mint tea.</p>
-  </div>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 01 // 07:30 AM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">The Atlantic Coastal Escape to Essaouira</h3>
+        <p class="roam-itinerary-desc">Depart Marrakech early in a private executive van. Travel through rolling argan forests, stopping at an organic women's cooperative to discover how liquid gold argan oil is cold-pressed. Arriving in breezy Essaouira (Mogador), wander the UNESCO-listed blue and white medina, explore the Skala du Port ramparts where Orson Welles filmed <em>Othello</em>, and enjoy lunch at a waterfront seafood stall before returning in the evening.</p>
+      </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">FAQ: Travelling to Marrakech</h2>
-  
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">Where is Marrakech located?</h3>
-  <p style="margin-bottom: 24px;">A common query is <em>"where is Marrakech city?"</em> It is situated in the western part of Morocco, just north of the foothills of the snow-capped High Atlas Mountains. It is a few hours inland from the coastal city of Casablanca.</p>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 02 // 08:30 AM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">Ourika Valley, Setti Fatma Falls &amp; Berber Heritage</h3>
+        <p class="roam-itinerary-desc">Journey south into the lush foothills of the High Atlas Mountains. Trek along shaded mountain paths up to the seven cascades of Setti Fatma with an expert local mountain guide. Afterward, cross wooden footbridges to enjoy a traditional Moroccan feast served right at tables set into the shallow cooling mountain stream. Return to Marrakech with late afternoon free for riad spa treatments.</p>
+      </div>
 
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">Marrakesh or Marrakech: Which is correct?</h3>
-  <p style="margin-bottom: 24px;">Both are correct! <em>"Marrakech"</em> is the French spelling and is most commonly used in Morocco, while <em>"Marrakesh"</em> is the traditional English spelling.</p>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 03 // 03:30 PM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">The Secluded Agafay Desert Sunset &amp; Laser Stargazing</h3>
+        <p class="roam-itinerary-desc">Sleep in and spend your morning exploring the Yves Saint Laurent Museum and Majorelle Gardens. In the mid-afternoon, your driver whisks you into the serene stone dunes of the Agafay Desert (just 45 minutes from town). Embark on a peaceful golden-hour camel trek, dine under luxury nomadic tents, and finish the night with a guided astronomical laser presentation tracing Jupiter, Saturn, and desert constellations.</p>
+      </div>
 
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">What are the must-see places in Marrakech?</h3>
-  <p style="margin-bottom: 24px;">If you're looking for <strong>Marrakech top attractions</strong> within the city walls, do not miss the Jardin Majorelle, the Bahia Palace, the Saadian Tombs, and the world-famous Jemaa el-Fnaa square in the <strong>Marrakech old town</strong>.</p>
+      <h2>Frequently Asked Questions: Marrakech &amp; Beyond</h2>
+      
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Is Marrakech safe for international travelers?</h3>
+        <p>Marrakech is one of the most welcoming, highly visited cities in Africa. Tourism police are present throughout the medina, violent crime is exceptionally rare, and Moroccan hospitality is legendary. Having a dedicated private driver also eliminates any hassle with taxi bargaining or unfamiliar navigation.</p>
+      </div>
 
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">Is Marrakech safe for tourists?</h3>
-  <p style="margin-bottom: 24px;">Yes, <strong>Marrakech tourism</strong> is heavily protected. Violent crime is extremely rare. As with any major tourist destination, visitors should be aware of petty theft (pickpocketing) in crowded areas like the souks and politely but firmly decline unsolicited "guides" offering directions.</p>
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Can the destinations on this 3-day tour be customized?</h3>
+        <p>100% yes! Because this is a private circuit, we can easily swap Essaouira for an expedition to Ait Benhaddou, or add hot air balloon flights over the Marrakech palm groves at sunrise. Just let our team know your preferences on WhatsApp.</p>
+      </div>
 
-  <div style="margin-top: 64px; padding: 40px; background-color: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 16px; text-align: center;">
-    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #C8A45C; margin-top: 0;">Ready to Visit Marrakech?</h3>
-    <p style="margin-bottom: 24px; font-size: 18px; color: rgba(255, 255, 255, 0.8);">Let our local experts handle all the logistics. Book the 3-Day Premium Explorer to see the <strong>best places in Marrakech</strong> and its breathtaking surroundings in total comfort.</p>
-    <a href="#booking" style="display: inline-block; background-color: #C8A45C; color: #0A0908; font-weight: bold; padding: 16px 32px; border-radius: 9999px; text-decoration: none; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#C8A45C'">Book the Premium Explorer</a>
-  </div>
-</div>
+      <!-- Driver Concierge Lead Gen -->
+      <div class="roam-driver-box">
+        <h4>Need Custom Day Excursions or Airport Transfer?</h4>
+        <p>Have specific sights you want to see? Book our English-speaking private driver service with premium modern vehicles for airport pickups, custom day trips, and medina transfers on your schedule.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="custom-morocco-tour.html" class="roam-btn-black">Book Custom Driver &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20customize%20the%203-Day%20Premium%20Explorer." target="_blank" rel="noopener" class="roam-btn-wa">WhatsApp Direct Guide</a>
+        </div>
+      </div>
+
+      <!-- Travel Deals Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">Trip Planning &amp; Booking Toolkit</div>
+        <div class="roam-toolkit-grid">
+          <a href="travel-deals.html#flights" class="roam-toolkit-link"><span>✈️ Best Flights to Marrakech</span><span>&rarr;</span></a>
+          <a href="travel-deals.html#hotels" class="roam-toolkit-link"><span>🏨 Boutique Marrakech Riads</span><span>&rarr;</span></a>
+          <a href="travel-deals.html#esim" class="roam-toolkit-link"><span>📶 Fast Morocco eSIM</span><span>&rarr;</span></a>
+          <a href="custom-morocco-tour.html" class="roam-toolkit-link"><span>🚐 Custom 4x4 &amp; Chauffeur</span><span>&rarr;</span></a>
+        </div>
+      </div>
+
+      <!-- Tour Bottom CTA Box -->
+      <div class="roam-tour-cta-box">
+        <h3 class="roam-tour-cta-title">Ready for the Ultimate Marrakech Holiday?</h3>
+        <p class="roam-tour-cta-desc">Let our local team handle every detail while you unwind and soak in the beauty of Morocco. Private transport, certified guides, and unforgettable memories guaranteed.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="custom-morocco-tour.html" class="roam-btn-black">Book Premium Explorer &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I%20want%20to%20book%20the%203-Day%20Premium%20Explorer%20circuit." target="_blank" rel="noopener" class="roam-btn-wa">WhatsApp Direct Guide</a>
+        </div>
+      </div>
 
     </div>
   </div>

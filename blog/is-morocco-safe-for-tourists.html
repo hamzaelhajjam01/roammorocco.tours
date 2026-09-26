@@ -210,44 +210,8 @@
   <link rel="stylesheet" href="../css/trip-concierge.css">
   <link rel="stylesheet" href="../css/roam-theme.css">
 </head>
-<body style="position:relative; min-height:100%; top:0px; margin:0; background:#0a0908; color:white; font-family:'Inter',sans-serif;">
+<body class="roam-light-theme" id="top">
 
-
-    <style>
-      .rm-nav-desktop { display:none; align-items:center; gap:32px; z-index:10; }
-      .rm-nav-logo { z-index:10; flex-shrink:0; }
-      .rm-nav-cta { display:none; z-index:10; }
-      .rm-nav-mobile-btn { display:flex; align-items:center; justify-content:center; width:40px; height:40px; color:white; background:none; border:none; cursor:pointer; z-index:10; transition:transform 0.3s; }
-      .rm-nav-mobile-btn:hover { transform:scale(1.1); }
-      .rm-nav-link { font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); text-decoration:none; transition:color 0.3s; }
-      .rm-nav-link:hover { color:#C8A45C; }
-      .rm-nav-link-active { color:#C8A45C !important; }
-      .rm-nav-cta-btn { display:inline-flex; align-items:center; gap:8px; background:#C8A45C; color:#0A0908; font-weight:500; padding:10px 20px; border-radius:9999px; font-size:14px; text-decoration:none; transition:all 0.3s; }
-      .rm-nav-cta-btn:hover { background:#D4B76A; transform:scale(1.05); box-shadow:0 0 30px rgba(200,164,92,0.3); }
-      /* Mobile dropdown animation */
-      .rm-mobile-dropdown { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease, padding 0.4s ease; background:#0a0908; border-top:1px solid rgba(255,255,255,0.1); width:100%; flex-direction:column; padding:0 24px; gap:0; box-shadow:0 10px 40px rgba(0,0,0,0.5); z-index:50; }
-      .rm-mobile-dropdown.open { max-height:500px; opacity:1; padding:16px 24px; gap:16px; }
-      .rm-mobile-dropdown a { font-size:18px; font-weight:500; text-decoration:none; display:block; padding:8px 0; opacity:0; transform:translateY(-8px); transition:opacity 0.3s ease, transform 0.3s ease; }
-      .rm-mobile-dropdown.open a { opacity:1; transform:translateY(0); }
-      .rm-mobile-dropdown.open a:nth-child(1) { transition-delay:0.05s; }
-      .rm-mobile-dropdown.open a:nth-child(2) { transition-delay:0.1s; }
-      .rm-mobile-dropdown.open a:nth-child(3) { transition-delay:0.15s; }
-      .rm-mobile-dropdown.open a:nth-child(4) { transition-delay:0.2s; }
-      .rm-mobile-dropdown.open a:nth-child(5) { transition-delay:0.25s; }
-      .rm-mobile-dropdown.open a:nth-child(6) { transition-delay:0.3s; }
-      /* Hamburger to X animation */
-      .rm-hamburger-line { transition:transform 0.3s ease, opacity 0.2s ease; transform-origin:center; }
-      .rm-nav-mobile-btn.active .rm-line1 { transform:translateY(7px) rotate(45deg); }
-      .rm-nav-mobile-btn.active .rm-line2 { opacity:0; }
-      .rm-nav-mobile-btn.active .rm-line3 { transform:translateY(-7px) rotate(-45deg); }
-      @media (min-width: 1024px) {
-        .rm-nav-desktop { display:flex; }
-        .rm-nav-logo { position:absolute; left:50%; transform:translateX(-50%); }
-        .rm-nav-cta { display:flex; }
-        .rm-nav-mobile-btn { display:none; }
-        .rm-mobile-dropdown { display:none !important; }
-      }
-    </style>
       <!-- Announcement Bar -->
   <div class="announcement-bar">
     <div class="announcement-track">
@@ -318,98 +282,91 @@
     </div>
   </div>
 
-<main style="background:#0a0908; color:white; padding:40px 24px 80px;">
-  <div style="max-width:896px; margin:0 auto;">
-    <h1 style="font-size:clamp(2rem, 5vw, 3rem); font-family:'Playfair Display',serif; margin-bottom:32px; color:#C8A45C;">Is Morocco Safe for Tourists?</h1>
-    <div style="color:rgba(255,255,255,0.8); line-height:1.8; font-size:18px;">
-      <img src="../images/morocco_safety_hero.webp" alt="Tourists and locals happily mingling and drinking mint tea in a safe, vibrant Moroccan plaza" style="width:100%; height:auto; border-radius:16px; margin-bottom:32px; box-shadow:0 10px 30px rgba(0,0,0,0.5);" /><article style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.85); font-size: 1.125rem; line-height: 1.8;">
-  <p style="margin-bottom: 24px; font-size: 1.25rem;">As you prepare for your trip to North Africa, the most common question you and your family will likely ask is: <em>"Is it safe to travel to Morocco right now?"</em> Whether you are wondering <strong>is Morocco safe for Americans</strong>, checking the latest travel advisories, or asking <strong>is Morocco safe for tourists from UK</strong>, we have the straightforward, honest answers you need.</p>
+<main class="roam-article-main">
+  <div class="roam-article-wrapper">
+    <div class="roam-article-badge">TRAVEL ADVISORY // VISITOR SAFETY GUIDE</div>
+    <h1 class="roam-article-title">Is Morocco Safe for Tourists?</h1>
+    <div class="roam-article-meta">
+      <span>BY ROAM MOROCCO EDITORIAL</span>
+      <span>•</span>
+      <span>UPDATED FOR 2026</span>
+      <span>•</span>
+      <span>8 MIN READ</span>
+    </div>
+
+    <img class="roam-article-hero-img" src="../images/morocco_safety_hero.webp" alt="Tourists and locals happily mingling and drinking mint tea in a safe, vibrant Moroccan plaza" />
+
+    <article class="roam-article-body">
+      <p style="font-size: 1.25rem;">As you prepare for your trip to North Africa, the most common question you and your family will likely ask is: <em>"Is it safe to travel to Morocco right now?"</em> Whether you are wondering <strong>is Morocco safe for Americans</strong>, checking the latest travel advisories, or asking <strong>is Morocco safe for tourists from UK</strong>, we have the straightforward, honest answers you need.</p>
   
-  <p class="mb-8">The short answer is yes. Morocco is one of the most stable, secure, and tourist-friendly countries in the Middle East and North Africa (MENA) region. However, like any popular international destination, understanding the local laws, culture, and common scams is the key to a stress-free vacation.</p>
+      <p>The short answer is yes. Morocco is one of the most stable, secure, and tourist-friendly countries in the Middle East and North Africa (MENA) region. However, like any popular international destination, understanding the local laws, culture, and common scams is the key to a stress-free vacation.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Violent Crime vs. Petty Crimes</h2>
-  <p style="margin-bottom: 16px;">One of the biggest reassurances for travelers is that <strong>violent crime</strong> against tourists in Morocco is incredibly rare. You are far safer walking the streets of Marrakech at night than in many major American or European cities.</p>
-  <p style="margin-bottom: 24px;">What you do need to watch out for is <strong>petty crimes</strong>. In <strong>crowded areas</strong>, such as the Jemaa el-Fna square in Marrakech or the medinas of <strong>major cities</strong> like Fes, pickpocketing and <strong>bag snatching</strong> can occur. Always keep your valuables secure in a cross-body bag, and avoid flashing large amounts of cash or expensive jewelry in dense <strong>tourist areas</strong>.</p>
+      <h2>Violent Crime vs. Petty Crimes</h2>
+      <p>One of the biggest reassurances for travelers is that <strong>violent crime</strong> against tourists in Morocco is incredibly rare. You are far safer walking the streets of Marrakech at night than in many major American or European cities.</p>
+      <p>What you do need to watch out for is <strong>petty crimes</strong>. In <strong>crowded areas</strong>, such as the Jemaa el-Fna square in Marrakech or the medinas of <strong>major cities</strong> like Fes, pickpocketing and <strong>bag snatching</strong> can occur. Always keep your valuables secure in a cross-body bag, and avoid flashing large amounts of cash or expensive jewelry in dense <strong>tourist areas</strong>.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Terrorism and Security: Is Morocco Safe from ISIS?</h2>
-  <p style="margin-bottom: 24px;">A common search query from concerned travelers is regarding the threat of a <strong>terrorist attack</strong> or wondering <em>"is Morocco safe from ISIS?"</em></p>
-  <p style="margin-bottom: 24px;">Morocco takes its national security and the protection of its tourism industry extremely seriously. Following rare, isolated incidents in the past, the <strong>Moroccan authorities</strong> established the Central Bureau of Judicial Investigations (BCIJ)—the equivalent of the FBI. Their aggressive counter-terrorism measures and deep intelligence network make Morocco one of the safest countries in the region. You will frequently see highly visible security personnel and tourist police patrolling major hubs to ensure your safety.</p>
+      <h2>Terrorism and Security: Is Morocco Safe from ISIS?</h2>
+      <p>A common search query from concerned travelers is regarding the threat of a <strong>terrorist attack</strong> or wondering <em>"is Morocco safe from ISIS?"</em></p>
+      <p>Morocco takes its national security and the protection of its tourism industry extremely seriously. Following rare, isolated incidents in the past, the <strong>Moroccan authorities</strong> established the Central Bureau of Judicial Investigations (BCIJ)—the equivalent of the FBI. Their aggressive counter-terrorism measures and deep intelligence network make Morocco one of the safest countries in the region. You will frequently see highly visible security personnel and tourist police patrolling major hubs to ensure your safety.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Is Morocco Safe for Tourist Women?</h2>
-  <p style="margin-bottom: 24px;">For <strong>female travellers</strong>, Morocco requires a bit more situational awareness. The primary issue female tourists face is not physical danger, but rather <strong>unwanted attention</strong> or catcalling from local men.</p>
-  <ul style="list-style: disc; padding-left: 24px; margin-bottom: 24px;">
-    <li><strong>Dress Code:</strong> The best way to mitigate this is by <strong>wearing loose fitting clothing</strong> that covers the shoulders and knees. Respecting the local Islamic culture goes a long way.</li>
-    <li><strong>Confidence:</strong> Walk with purpose. If someone offers unsolicited directions (a common scam to demand a tip later), firmly say "No, thank you" (or "La, shukran" in Arabic) and keep walking.</li>
-    <li><strong>Tour Guides:</strong> Hiring official, licensed <strong>tour guides</strong> or traveling with a private driver instantly eliminates harassment, as locals will not bother you when you are accompanied by a Moroccan professional.</li>
-  </ul>
+      <h2>Is Morocco Safe for Tourist Women?</h2>
+      <p>For <strong>female travellers</strong>, Morocco requires a bit more situational awareness. The primary issue female tourists face is not physical danger, but rather <strong>unwanted attention</strong> or catcalling from local men.</p>
+      <ul>
+        <li><strong>Dress Code:</strong> The best way to mitigate this is by <strong>wearing loose fitting clothing</strong> that covers the shoulders and knees. Respecting the local Islamic culture goes a long way.</li>
+        <li><strong>Confidence:</strong> Walk with purpose. If someone offers unsolicited directions (a common scam to demand a tip later), firmly say "No, thank you" (or "La, shukran" in Arabic) and keep walking.</li>
+        <li><strong>Tour Guides:</strong> Hiring official, licensed <strong>tour guides</strong> or traveling with a private driver instantly eliminates harassment, as locals will not bother you when you are accompanied by a Moroccan professional.</li>
+      </ul>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">What is Illegal in Morocco for Tourists?</h2>
-  <p style="margin-bottom: 16px;">To ensure a smooth trip, you must be aware of Moroccan laws. While tourists are given some leeway, certain actions are strictly forbidden:</p>
-  <ul style="list-style: disc; padding-left: 24px; margin-bottom: 24px;">
-    <li><strong>Public Displays of Affection:</strong> Holding hands is generally acceptable for married couples, but kissing or heavy <strong>public displays of affection</strong> are highly frowned upon and technically against the law.</li>
-    <li><strong>Disrespecting the Monarchy:</strong> It is illegal to mock, deface, or speak poorly of the Moroccan King or the royal family.</li>
-    <li><strong>Drones:</strong> Do not bring a drone to Morocco. They are strictly illegal for security reasons and will be confiscated at the airport upon arrival.</li>
-  </ul>
+      <h2>What is Illegal in Morocco for Tourists?</h2>
+      <p>To ensure a smooth trip, you must be aware of Moroccan laws. While tourists are given some leeway, certain actions are strictly forbidden:</p>
+      <ul>
+        <li><strong>Public Displays of Affection:</strong> Holding hands is generally acceptable for married couples, but kissing or heavy <strong>public displays of affection</strong> are highly frowned upon and technically against the law.</li>
+        <li><strong>Disrespecting the Monarchy:</strong> It is illegal to mock, deface, or speak poorly of the Moroccan King or the royal family.</li>
+        <li><strong>Drones:</strong> Do not bring a drone to Morocco. They are strictly illegal for security reasons and will be confiscated at the airport upon arrival.</li>
+      </ul>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Health and Practical Safety Tips</h2>
-  <p style="margin-bottom: 24px;">Beyond physical security, protecting your health and finances is crucial for a good trip.</p>
-  <ol style="list-style: decimal; padding-left: 24px; margin-bottom: 24px;">
-    <li style="margin-bottom: 8px;"><strong>Drink Bottled Water:</strong> Tap water in Morocco is generally safe for locals, but the different mineral content can upset a tourist's stomach. Always stick to sealed <strong>bottled water</strong>, even for brushing your teeth.</li>
-    <li style="margin-bottom: 8px;"><strong>Credit Card Safety:</strong> While high-end hotels and restaurants accept plastic, Morocco remains a cash-heavy society. When using a <strong>credit card</strong>, ensure the machine is brought to your table to protect your <strong>personal information</strong>. Avoid isolated ATMs at night.</li>
-  </ol>
+      <h2>Health and Practical Safety Tips</h2>
+      <p>Beyond physical security, protecting your health and finances is crucial for a good trip.</p>
+      <ol>
+        <li><strong>Drink Bottled Water:</strong> Tap water in Morocco is generally safe for locals, but the different mineral content can upset a tourist's stomach. Always stick to sealed <strong>bottled water</strong>, even for brushing your teeth.</li>
+        <li><strong>Credit Card Safety:</strong> While high-end hotels and restaurants accept plastic, Morocco remains a cash-heavy society. When using a <strong>credit card</strong>, ensure the machine is brought to your table to protect your <strong>personal information</strong>. Avoid isolated ATMs at night.</li>
+      </ol>
 
-  <div style="margin-top: 64px; padding: 40px; background-color: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 16px; text-align: center;">
-    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #C8A45C; margin-top: 0;">The Safest Way to Explore Morocco</h3>
-    <p style="margin-bottom: 24px; font-size: 18px; color: rgba(255, 255, 255, 0.8);">If you want to experience the magic of the medinas, the Atlas Mountains, and the Sahara Desert without the stress of navigating scams or aggressive vendors, booking a private tour is a <strong>good idea</strong>. With RoamMorocco, your dedicated driver acts as your local guardian from the moment you arrive.</p>
-    <a href="../index.html#destinations" style="display: inline-block; background-color: #C8A45C; color: #0A0908; font-weight: bold; padding: 16px 32px; border-radius: 9999px; text-decoration: none; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#C8A45C'">Explore Our Secure Private Tours</a>
-  </div>
+      <!-- Private Driver Callout -->
+      <div class="roam-driver-box">
+        <h4>🚗 Prefer Not to Drive in Morocco? Let Roam Morocco Chauffeur You</h4>
+        <p>Avoid winding mountain passes and busy medina traffic. Explore Morocco with a licensed, English-speaking local driver in an air-conditioned 4x4 Prado or luxury Mercedes van.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="../custom-morocco-tour.html" class="roam-btn-black">✨ Plan a Custom Private Tour</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" class="roam-btn-wa">💬 Chat on WhatsApp (+212 653-506441)</a>
+        </div>
+      </div>
 
-  <!-- Private Driver Callout -->
-  <div style="background: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 14px; padding: 28px; margin: 40px 0;">
-    <h4 style="color: #C8A45C; font-size: 20px; font-weight: 700; margin-bottom: 8px;">
-      🚗 Prefer Not to Drive in Morocco? Let Roam Morocco Chauffeur You
-    </h4>
-    <p style="font-size: 15px; color: rgba(255, 255, 255, 0.85); margin-bottom: 16px;">
-      Avoid winding mountain passes and busy medina traffic. Explore Morocco with a licensed, English-speaking local driver in an air-conditioned 4x4 Prado or luxury Mercedes van.
-    </p>
-    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-      <a href="../custom-morocco-tour.html" style="background: #C8A45C; color: #0A0908; font-weight: 700; padding: 10px 20px; border-radius: 9999px; text-decoration: none; font-size: 13px;">
-        ✨ Plan a Custom Private Tour
-      </a>
-      <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" style="background: #25D366; color: #0A0908; font-weight: 700; padding: 10px 20px; border-radius: 9999px; text-decoration: none; font-size: 13px;">
-        💬 Chat on WhatsApp (+212 653-506441)
-      </a>
-    </div>
-  </div>
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
 
-  <!-- Morocco Travel Essentials Toolkit -->
-  <div style="background: #141311; border: 1px solid rgba(200, 164, 92, 0.25); border-radius: 14px; padding: 28px; margin: 40px 0;">
-    <h4 style="color: #D4B76A; font-size: 18px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
-      <span>✈️</span> Essential Morocco Travel Deals & Resources
-    </h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
-      <a href="https://trip.tp.st/qDkE2101?destination=RAK" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>✈️ Cheap Flights to Marrakech</span>
-        <span style="color: #C8A45C;">Trip.com →</span>
-      </a>
-      <a href="https://airalo.tp.st/V5fK8Y92" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>📱 Morocco 4G/5G eSIM</span>
-        <span style="color: #C8A45C;">Airalo from $8 →</span>
-      </a>
-      <a href="https://booking.tp.st/zXgP7811" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>🏨 Best Riad Deals</span>
-        <span style="color: #C8A45C;">Booking.com →</span>
-      </a>
-      <a href="https://discovercars.tp.st/u9HjL334" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>🚗 Compare Car Rentals</span>
-        <span style="color: #C8A45C;">DiscoverCars →</span>
-      </a>
-    </div>
-  </div>
-
-</article>
-
-    </div>
+      <!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals & Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://trip.tp.st/qDkE2101?destination=RAK" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>✈️ Cheap Flights to Marrakech</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Trip.com →</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>📱 Morocco 4G/5G eSIM</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Airalo from $8 →</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🏨 Best Riad Deals</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Booking.com →</span>
+          </a>
+          <a href="https://discovercars.tp.st/u9HjL334" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🚗 Compare Car Rentals</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">DiscoverCars →</span>
+          </a>
+        </div>
+      </div>
+    </article>
   </div>
 </main>
 

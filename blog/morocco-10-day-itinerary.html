@@ -210,44 +210,8 @@
   <link rel="stylesheet" href="../css/trip-concierge.css">
   <link rel="stylesheet" href="../css/roam-theme.css">
 </head>
-<body style="position:relative; min-height:100%; top:0px; margin:0; background:#0a0908; color:white; font-family:'Inter',sans-serif;">
+<body class="roam-light-theme" id="top">
 
-
-    <style>
-      .rm-nav-desktop { display:none; align-items:center; gap:32px; z-index:10; }
-      .rm-nav-logo { z-index:10; flex-shrink:0; }
-      .rm-nav-cta { display:none; z-index:10; }
-      .rm-nav-mobile-btn { display:flex; align-items:center; justify-content:center; width:40px; height:40px; color:white; background:none; border:none; cursor:pointer; z-index:10; transition:transform 0.3s; }
-      .rm-nav-mobile-btn:hover { transform:scale(1.1); }
-      .rm-nav-link { font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); text-decoration:none; transition:color 0.3s; }
-      .rm-nav-link:hover { color:#C8A45C; }
-      .rm-nav-link-active { color:#C8A45C !important; }
-      .rm-nav-cta-btn { display:inline-flex; align-items:center; gap:8px; background:#C8A45C; color:#0A0908; font-weight:500; padding:10px 20px; border-radius:9999px; font-size:14px; text-decoration:none; transition:all 0.3s; }
-      .rm-nav-cta-btn:hover { background:#D4B76A; transform:scale(1.05); box-shadow:0 0 30px rgba(200,164,92,0.3); }
-      /* Mobile dropdown animation */
-      .rm-mobile-dropdown { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease, padding 0.4s ease; background:#0a0908; border-top:1px solid rgba(255,255,255,0.1); width:100%; flex-direction:column; padding:0 24px; gap:0; box-shadow:0 10px 40px rgba(0,0,0,0.5); z-index:50; }
-      .rm-mobile-dropdown.open { max-height:500px; opacity:1; padding:16px 24px; gap:16px; }
-      .rm-mobile-dropdown a { font-size:18px; font-weight:500; text-decoration:none; display:block; padding:8px 0; opacity:0; transform:translateY(-8px); transition:opacity 0.3s ease, transform 0.3s ease; }
-      .rm-mobile-dropdown.open a { opacity:1; transform:translateY(0); }
-      .rm-mobile-dropdown.open a:nth-child(1) { transition-delay:0.05s; }
-      .rm-mobile-dropdown.open a:nth-child(2) { transition-delay:0.1s; }
-      .rm-mobile-dropdown.open a:nth-child(3) { transition-delay:0.15s; }
-      .rm-mobile-dropdown.open a:nth-child(4) { transition-delay:0.2s; }
-      .rm-mobile-dropdown.open a:nth-child(5) { transition-delay:0.25s; }
-      .rm-mobile-dropdown.open a:nth-child(6) { transition-delay:0.3s; }
-      /* Hamburger to X animation */
-      .rm-hamburger-line { transition:transform 0.3s ease, opacity 0.2s ease; transform-origin:center; }
-      .rm-nav-mobile-btn.active .rm-line1 { transform:translateY(7px) rotate(45deg); }
-      .rm-nav-mobile-btn.active .rm-line2 { opacity:0; }
-      .rm-nav-mobile-btn.active .rm-line3 { transform:translateY(-7px) rotate(-45deg); }
-      @media (min-width: 1024px) {
-        .rm-nav-desktop { display:flex; }
-        .rm-nav-logo { position:absolute; left:50%; transform:translateX(-50%); }
-        .rm-nav-cta { display:flex; }
-        .rm-nav-mobile-btn { display:none; }
-        .rm-mobile-dropdown { display:none !important; }
-      }
-    </style>
       <!-- Announcement Bar -->
   <div class="announcement-bar">
     <div class="announcement-track">
@@ -318,105 +282,96 @@
     </div>
   </div>
 
-<main style="background:#0a0908; color:white; padding:40px 24px 80px;">
-  <div style="max-width:896px; margin:0 auto;">
-    <h1 style="font-size:clamp(2rem, 5vw, 3rem); font-family:'Playfair Display',serif; margin-bottom:32px; color:#C8A45C;">The Ultimate 10-Day Morocco Itinerary</h1>
-    <div style="color:rgba(255,255,255,0.8); line-height:1.8; font-size:18px;">
-      <img src="../images/morocco_10_day_hero.webp" alt="A breathtaking panoramic landscape of Morocco showcasing a diverse 10-day road trip itinerary" style="width:100%; height:auto; border-radius:16px; margin-bottom:32px; box-shadow:0 10px 30px rgba(0,0,0,0.5);" /><article style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.85); font-size: 1.125rem; line-height: 1.8;">
-  <p style="margin-bottom: 24px; font-size: 1.25rem;">So, you have booked your flights and are wondering: <em>"What is a good itinerary for a 10-day trip in Morocco?"</em> Whether you are searching for a <strong>Morocco road trip 10 days</strong> route, or the classic <strong>10 day itinerary from Marrakech to Fes</strong>, you have landed in exactly the right place.</p>
+<main class="roam-article-main">
+  <div class="roam-article-wrapper">
+    <div class="roam-article-badge">FIELD GUIDE // 10-DAY MOROCCO EXPEDITION</div>
+    <h1 class="roam-article-title">The Ultimate 10-Day Morocco Itinerary</h1>
+    <div class="roam-article-meta">
+      <span>BY ROAM MOROCCO EDITORIAL</span>
+      <span>•</span>
+      <span>MARRAKECH TO FES VIA SAHARA DESERT</span>
+      <span>•</span>
+      <span>12 MIN READ</span>
+    </div>
+
+    <img class="roam-article-hero-img" src="../images/morocco_10_day_hero.webp" alt="A breathtaking panoramic landscape of Morocco showcasing a diverse 10-day road trip itinerary" />
+
+    <article class="roam-article-body">
+      <p style="font-size: 1.25rem;">So, you have booked your flights and are wondering: <em>"What is a good itinerary for a 10-day trip in Morocco?"</em> Whether you are searching for a <strong>Morocco road trip 10 days</strong> route, or the classic <strong>10 day itinerary from Marrakech to Fes</strong>, you have landed in exactly the right place.</p>
   
-  <p class="mb-8">Morocco is a country of staggering contrasts. In just ten days, you can wander the car-free, medieval medina of Fes, cross the snow-capped High Atlas Mountains, and ride a camel into the shifting sand dunes of the Sahara Desert. This guide outlines our absolute favorite <strong>Morocco 10-day itinerary</strong>.</p>
+      <p>Morocco is a country of staggering contrasts. In just ten days, you can wander the car-free, medieval medina of Fes, cross the snow-capped High Atlas Mountains, and ride a camel into the shifting sand dunes of the Sahara Desert. This guide outlines our absolute favorite <strong>Morocco 10-day itinerary</strong>.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Days 1-2: Arriving in Marrakech & Jemaa el Fna</h2>
-  <p style="margin-bottom: 16px;">Your 10 days in Morocco begin in the vibrant "Red City." <strong>Marrakech</strong> is an assault on the senses in the best possible way. Spend your first day getting lost in the winding, maze-like alleys of the old medina.</p>
-  <ul style="list-style: disc; padding-left: 24px; margin-bottom: 24px;">
-    <li><strong>Jemaa el Fna:</strong> As evening approaches, head to the world-famous Jemaa el Fnaa square. The air fills with the smoke of food stalls, the sounds of snake charmers, and the calls of merchants.</li>
-    <li><strong>Royal Palaces & Tombs:</strong> Dedicate your second day to history. Visit the intricately carved <em>Bahia Palace</em>, the peaceful <em>Menara Gardens</em>, and the ancient <em>Saadian Tombs</em>. End your day sipping mint tea overlooking the imposing <em>Koutoubia Mosque</em>.</li>
-  </ul>
+      <h2>Days 1-2: Arriving in Marrakech & Jemaa el Fna</h2>
+      <p>Your 10 days in Morocco begin in the vibrant "Red City." <strong>Marrakech</strong> is an assault on the senses in the best possible way. Spend your first day getting lost in the winding, maze-like alleys of the old medina.</p>
+      <ul>
+        <li><strong>Jemaa el Fna:</strong> As evening approaches, head to the world-famous Jemaa el Fnaa square. The air fills with the smoke of food stalls, the sounds of snake charmers, and the calls of merchants.</li>
+        <li><strong>Royal Palaces & Tombs:</strong> Dedicate your second day to history. Visit the intricately carved <em>Bahia Palace</em>, the peaceful <em>Menara Gardens</em>, and the ancient <em>Saadian Tombs</em>. End your day sipping mint tea overlooking the imposing <em>Koutoubia Mosque</em>.</li>
+      </ul>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Day 3: The High Atlas Mountains & Tizi n'Tichka Pass</h2>
-  <p style="margin-bottom: 24px;">Leave the chaotic energy of the city behind and begin your scenic route into the <strong>High Atlas Mountains</strong>. The drive via the sweeping <strong>Tizi n Tichka pass</strong> (reaching 2,260m) is one of the most stunning mountain roads in Africa. Stop frequently to take photos of the mud-brick Berber villages clinging to the steep canyon walls.</p>
+      <h2>Day 3: The High Atlas Mountains & Tizi n'Tichka Pass</h2>
+      <p>Leave the chaotic energy of the city behind and begin your scenic route into the <strong>High Atlas Mountains</strong>. The drive via the sweeping <strong>Tizi n Tichka pass</strong> (reaching 2,260m) is one of the most stunning mountain roads in Africa. Stop frequently to take photos of the mud-brick Berber villages clinging to the steep canyon walls.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Day 4: Ait Benhaddou & The Thousand Kasbahs</h2>
-  <p style="margin-bottom: 24px;">Descend from the mountains to explore a true <strong>UNESCO World Heritage site</strong>: the Ksar of <a href="../tour-heritage-cinema.html" style="color:#C8A45C; text-decoration:underline;"><strong>Ait Benhaddou</strong></a>. This ancient fortified village was a crucial stop on the former caravan route between the Sahara and Marrakech.</p>
-  <p style="margin-bottom: 24px;">Film lovers will instantly recognize it. If you've ever watched <em>Gladiator</em>, <em>Game of Thrones</em>, or <em>Lawrence of Arabia</em>, you've seen this stunning mud-brick fortress. From here, continue the short drive to Ouarzazate to visit the massive <strong>Atlas Studios</strong> (the Hollywood of Africa) and the historic Taourirt Kasbah, once home to the powerful Glaoui family.</p>
+      <h2>Day 4: Ait Benhaddou & The Thousand Kasbahs</h2>
+      <p>Descend from the mountains to explore a true <strong>UNESCO World Heritage site</strong>: the Ksar of <a href="../tour-heritage-cinema.html"><strong>Ait Benhaddou</strong></a>. This ancient fortified village was a crucial stop on the former caravan route between the Sahara and Marrakech.</p>
+      <p>Film lovers will instantly recognize it. If you've ever watched <em>Gladiator</em>, <em>Game of Thrones</em>, or <em>Lawrence of Arabia</em>, you've seen this stunning mud-brick fortress. From here, continue the short drive to Ouarzazate to visit the massive <strong>Atlas Studios</strong> (the Hollywood of Africa) and the historic Taourirt Kasbah, once home to the powerful Glaoui family.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Day 5: Dades Gorge & Todra Gorge</h2>
-  <p style="margin-bottom: 24px;">As you drive along the "Route of 1000 Kasbahs", the landscape dramatically changes. You'll pass through the lush, palm-filled <strong>Draa Valley</strong> before arriving at the towering limestone river canyons of the <strong>Todra Gorge</strong>. These massive cliff walls reach up to 300 meters high. Spend the night near the <strong>Dades Gorge</strong>, where the winding roads ("monkey fingers" rock formations) offer incredible sunset views.</p>
+      <h2>Day 5: Dades Gorge & Todra Gorge</h2>
+      <p>As you drive along the "Route of 1000 Kasbahs", the landscape dramatically changes. You'll pass through the lush, palm-filled <strong>Draa Valley</strong> before arriving at the towering limestone river canyons of the <strong>Todra Gorge</strong>. These massive cliff walls reach up to 300 meters high. Spend the night near the <strong>Dades Gorge</strong>, where the winding roads ("monkey fingers" rock formations) offer incredible sunset views.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Days 6-7: The Sahara Desert & Erg Chebbi Sand Dunes</h2>
-  <p style="margin-bottom: 24px;">No <strong>Morocco itinerary (7, 10 & 14 days)</strong> is complete without the <strong>Sahara Desert</strong>. The long drive to Merzouga is entirely worth it.</p>
-  <p style="margin-bottom: 24px;">Upon arriving at the edge of the <strong>Erg Chebbi</strong> sand dunes, you will leave your vehicle behind and embark on a traditional <strong>camel ride</strong> into the deep desert. Watch the sunset turn the dunes from gold to deep crimson. Spend the night at a luxury <strong>desert camp</strong> under a blanket of stars, eating traditional Berber food and listening to drum music around the campfire. It is the highlight of most travelers' <strong>desert nights</strong>.</p>
+      <h2>Days 6-7: The Sahara Desert & Erg Chebbi Sand Dunes</h2>
+      <p>No <strong>Morocco itinerary (7, 10 & 14 days)</strong> is complete without the <strong>Sahara Desert</strong>. The long drive to Merzouga is entirely worth it.</p>
+      <p>Upon arriving at the edge of the <strong>Erg Chebbi</strong> sand dunes, you will leave your vehicle behind and embark on a traditional <strong>camel ride</strong> into the deep desert. Watch the sunset turn the dunes from gold to deep crimson. Spend the night at a luxury <strong>desert camp</strong> under a blanket of stars, eating traditional Berber food and listening to drum music around the campfire. It is the highlight of most travelers' <strong>desert nights</strong>.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Days 8-9: Arriving in Fes & The Medieval Medina</h2>
-  <p style="margin-bottom: 24px;">After an early start to watch the desert sunrise, begin the drive north toward the imperial city of Fes. The landscape shifts again, passing through the cedar forests of the Middle Atlas (keep an eye out for Barbary macaques).</p>
-  <p style="margin-bottom: 24px;">Fes is the spiritual and cultural heart of Morocco. Its <strong>car free, medieval medina</strong> (Fes el-Bali) is a labyrinth of over 9,000 narrow alleys. We highly recommend you <strong>hire a guide</strong> here, as Google Maps will not save you in the maze of alleys. Visit the famous Chouara <strong>tanneries in Fes</strong>, the stunning Bou Inania Madrasa, and shop for exquisite local leather goods and ceramics along the "blue streets".</p>
+      <h2>Days 8-9: Arriving in Fes & The Medieval Medina</h2>
+      <p>After an early start to watch the desert sunrise, begin the drive north toward the imperial city of Fes. The landscape shifts again, passing through the cedar forests of the Middle Atlas (keep an eye out for Barbary macaques).</p>
+      <p>Fes is the spiritual and cultural heart of Morocco. Its <strong>car free, medieval medina</strong> (Fes el-Bali) is a labyrinth of over 9,000 narrow alleys. We highly recommend you <strong>hire a guide</strong> here, as Google Maps will not save you in the maze of alleys. Visit the famous Chouara <strong>tanneries in Fes</strong>, the stunning Bou Inania Madrasa, and shop for exquisite local leather goods and ceramics along the "blue streets".</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Day 10: Casablanca or Return to Marrakech</h2>
-  <p style="margin-bottom: 24px;">Depending on where your departure flight leaves from, Day 10 is your transit day. If you are flying out of Casablanca, a <strong>10 day Morocco itinerary from Casablanca</strong> usually involves taking the fast train from Fes. If you do pass through Casablanca, ensure you visit the monumental <strong>Hassan II Mosque</strong>, one of the few mosques in Morocco open to non-Muslims. If your flight is out of Marrakech, it's a straight drive down the newly built highway to conclude your epic 10 days.</p>
+      <h2>Day 10: Casablanca or Return to Marrakech</h2>
+      <p>Depending on where your departure flight leaves from, Day 10 is your transit day. If you are flying out of Casablanca, a <strong>10 day Morocco itinerary from Casablanca</strong> usually involves taking the fast train from Fes. If you do pass through Casablanca, ensure you visit the monumental <strong>Hassan II Mosque</strong>, one of the few mosques in Morocco open to non-Muslims. If your flight is out of Marrakech, it's a straight drive down the newly built highway to conclude your epic 10 days.</p>
 
-  <div style="margin-top: 64px; padding: 40px; background-color: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 16px; text-align: center;">
-    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #C8A45C; margin-top: 0;">Don't Want to Drive Yourself?</h3>
-    <p style="margin-bottom: 24px; font-size: 18px; color: rgba(255, 255, 255, 0.8);">While a <strong>Morocco road trip 10 days</strong> sounds adventurous, navigating the winding mountain passes and aggressive city traffic can be stressful. Let RoamMorocco handle the logistics. Our luxury private tours provide you with an English-speaking driver, an air-conditioned 4x4, and pre-booked luxury stays.</p>
-    <a href="../index.html#destinations" style="display: inline-block; background-color: #C8A45C; color: #0A0908; font-weight: bold; padding: 16px 32px; border-radius: 9999px; text-decoration: none; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#C8A45C'">Plan Your Custom Itinerary</a>
-  </div>
+      <!-- Private Driver Callout -->
+      <div class="roam-driver-box">
+        <h4>🚗 Prefer Not to Drive in Morocco? Let Roam Morocco Chauffeur You</h4>
+        <p>Avoid winding mountain passes and busy medina traffic. Explore Morocco with a licensed, English-speaking local driver in an air-conditioned 4x4 Prado or luxury Mercedes van.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="../custom-morocco-tour.html" class="roam-btn-black">✨ Plan a Custom Private Tour</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" class="roam-btn-wa">💬 Chat on WhatsApp (+212 653-506441)</a>
+        </div>
+      </div>
 
-  <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 64px 0;" />
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 0 0 24px; color: white;">Frequently Asked Questions</h2>
-  
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">What is a great 4-5 day itinerary for first time visit to Morocco?</h3>
-  <p style="margin-bottom: 24px;">If you only have 4-5 days, focus solely on Marrakech and the immediate surroundings. You can spend 2 days in the city and take our <strong>3-Day Premium Explorer</strong> to visit the Agafay Desert, Ourika Valley, and the Essaouira coast without wasting time on long bus rides.</p>
+      <h2>Frequently Asked Questions</h2>
+      
+      <h3>What is a great 4-5 day itinerary for first time visit to Morocco?</h3>
+      <p>If you only have 4-5 days, focus solely on Marrakech and the immediate surroundings. You can spend 2 days in the city and take our <strong>3-Day Premium Explorer</strong> to visit the Agafay Desert, Ourika Valley, and the Essaouira coast without wasting time on long bus rides.</p>
 
-  <h3 style="font-size: 1.25rem; font-weight: bold; color: white;">Is 10 days in Morocco enough time?</h3>
-  <p style="margin-bottom: 24px;">Yes, 10 days is the "sweet spot" for a Moroccan vacation. It gives you enough time to comfortably visit the imperial cities (Marrakech and Fes), cross the High Atlas Mountains, and spend a night in the deep Sahara Desert without feeling utterly exhausted.</p>
+      <h3>Is 10 days in Morocco enough time?</h3>
+      <p>Yes, 10 days is the "sweet spot" for a Moroccan vacation. It gives you enough time to comfortably visit the imperial cities (Marrakech and Fes), cross the High Atlas Mountains, and spend a night in the deep Sahara Desert without feeling utterly exhausted.</p>
 
-  <!-- Private Driver Callout -->
-  <div style="background: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 14px; padding: 28px; margin: 40px 0;">
-    <h4 style="color: #C8A45C; font-size: 20px; font-weight: 700; margin-bottom: 8px;">
-      🚗 Prefer Not to Drive in Morocco? Let Roam Morocco Chauffeur You
-    </h4>
-    <p style="font-size: 15px; color: rgba(255, 255, 255, 0.85); margin-bottom: 16px;">
-      Avoid winding mountain passes and busy medina traffic. Explore Morocco with a licensed, English-speaking local driver in an air-conditioned 4x4 Prado or luxury Mercedes van.
-    </p>
-    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-      <a href="../custom-morocco-tour.html" style="background: #C8A45C; color: #0A0908; font-weight: 700; padding: 10px 20px; border-radius: 9999px; text-decoration: none; font-size: 13px;">
-        ✨ Plan a Custom Private Tour
-      </a>
-      <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" style="background: #25D366; color: #0A0908; font-weight: 700; padding: 10px 20px; border-radius: 9999px; text-decoration: none; font-size: 13px;">
-        💬 Chat on WhatsApp (+212 653-506441)
-      </a>
-    </div>
-  </div>
-
-  <!-- Morocco Travel Essentials Toolkit -->
-  <div style="background: #141311; border: 1px solid rgba(200, 164, 92, 0.25); border-radius: 14px; padding: 28px; margin: 40px 0;">
-    <h4 style="color: #D4B76A; font-size: 18px; font-weight: 700; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
-      <span>✈️</span> Essential Morocco Travel Deals & Resources
-    </h4>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
-      <a href="https://trip.tp.st/qDkE2101?destination=RAK" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>✈️ Cheap Flights to Marrakech</span>
-        <span style="color: #C8A45C;">Trip.com →</span>
-      </a>
-      <a href="https://airalo.tp.st/V5fK8Y92" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>📱 Morocco 4G/5G eSIM</span>
-        <span style="color: #C8A45C;">Airalo from $8 →</span>
-      </a>
-      <a href="https://booking.tp.st/zXgP7811" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>🏨 Best Riad Deals</span>
-        <span style="color: #C8A45C;">Booking.com →</span>
-      </a>
-      <a href="https://discovercars.tp.st/u9HjL334" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; color: #fff; text-decoration: none; font-size: 13px;">
-        <span>🚗 Compare Car Rentals</span>
-        <span style="color: #C8A45C;">DiscoverCars →</span>
-      </a>
-    </div>
-  </div>
-
-</article>
-
-    </div>
+      <!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals & Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://trip.tp.st/qDkE2101?destination=RAK" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>✈️ Cheap Flights to Marrakech</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Trip.com →</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>📱 Morocco 4G/5G eSIM</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Airalo from $8 →</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🏨 Best Riad Deals</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">Booking.com →</span>
+          </a>
+          <a href="https://discovercars.tp.st/u9HjL334" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🚗 Compare Car Rentals</span>
+            <span style="color: var(--red, #f10b18); font-weight: 800;">DiscoverCars →</span>
+          </a>
+        </div>
+      </div>
+    </article>
   </div>
 </main>
 

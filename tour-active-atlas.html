@@ -243,44 +243,7 @@
   <link rel="stylesheet" href="css/trip-concierge.css">
   <link rel="stylesheet" href="css/roam-theme.css">
 </head>
-<body style="position:relative; min-height:100%; top:0px; margin:0; background:#0a0908; color:white; font-family:'Inter',sans-serif;">
-
-
-    <style>
-      .rm-nav-desktop { display:none; align-items:center; gap:32px; z-index:10; }
-      .rm-nav-logo { z-index:10; flex-shrink:0; }
-      .rm-nav-cta { display:none; z-index:10; }
-      .rm-nav-mobile-btn { display:flex; align-items:center; justify-content:center; width:40px; height:40px; color:white; background:none; border:none; cursor:pointer; z-index:10; transition:transform 0.3s; }
-      .rm-nav-mobile-btn:hover { transform:scale(1.1); }
-      .rm-nav-link { font-size:14px; font-weight:500; color:rgba(255,255,255,0.65); text-decoration:none; transition:color 0.3s; }
-      .rm-nav-link:hover { color:#C8A45C; }
-      .rm-nav-link-active { color:#C8A45C !important; }
-      .rm-nav-cta-btn { display:inline-flex; align-items:center; gap:8px; background:#C8A45C; color:#0A0908; font-weight:500; padding:10px 20px; border-radius:9999px; font-size:14px; text-decoration:none; transition:all 0.3s; }
-      .rm-nav-cta-btn:hover { background:#D4B76A; transform:scale(1.05); box-shadow:0 0 30px rgba(200,164,92,0.3); }
-      /* Mobile dropdown animation */
-      .rm-mobile-dropdown { overflow:hidden; max-height:0; opacity:0; transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease, padding 0.4s ease; background:#0a0908; border-top:1px solid rgba(255,255,255,0.1); width:100%; flex-direction:column; padding:0 24px; gap:0; box-shadow:0 10px 40px rgba(0,0,0,0.5); z-index:50; }
-      .rm-mobile-dropdown.open { max-height:500px; opacity:1; padding:16px 24px; gap:16px; }
-      .rm-mobile-dropdown a { font-size:18px; font-weight:500; text-decoration:none; display:block; padding:8px 0; opacity:0; transform:translateY(-8px); transition:opacity 0.3s ease, transform 0.3s ease; }
-      .rm-mobile-dropdown.open a { opacity:1; transform:translateY(0); }
-      .rm-mobile-dropdown.open a:nth-child(1) { transition-delay:0.05s; }
-      .rm-mobile-dropdown.open a:nth-child(2) { transition-delay:0.1s; }
-      .rm-mobile-dropdown.open a:nth-child(3) { transition-delay:0.15s; }
-      .rm-mobile-dropdown.open a:nth-child(4) { transition-delay:0.2s; }
-      .rm-mobile-dropdown.open a:nth-child(5) { transition-delay:0.25s; }
-      .rm-mobile-dropdown.open a:nth-child(6) { transition-delay:0.3s; }
-      /* Hamburger to X animation */
-      .rm-hamburger-line { transition:transform 0.3s ease, opacity 0.2s ease; transform-origin:center; }
-      .rm-nav-mobile-btn.active .rm-line1 { transform:translateY(7px) rotate(45deg); }
-      .rm-nav-mobile-btn.active .rm-line2 { opacity:0; }
-      .rm-nav-mobile-btn.active .rm-line3 { transform:translateY(-7px) rotate(-45deg); }
-      @media (min-width: 1024px) {
-        .rm-nav-desktop { display:flex; }
-        .rm-nav-logo { position:absolute; left:50%; transform:translateX(-50%); }
-        .rm-nav-cta { display:flex; }
-        .rm-nav-mobile-btn { display:none; }
-        .rm-mobile-dropdown { display:none !important; }
-      }
-    </style>
+<body class="roam-light-theme" id="top">
       <!-- Announcement Bar -->
   <div class="announcement-bar">
     <div class="announcement-track">
@@ -351,74 +314,118 @@
     </div>
   </div>
 
-<main style="background:#0a0908; color:white; padding:40px 24px 80px;">
-  <div style="max-width:896px; margin:0 auto;">
-    <h1 style="font-size:clamp(2rem, 5vw, 3rem); font-family:'Playfair Display',serif; margin-bottom:32px; color:#C8A45C;">Active High Atlas Adventure</h1>
-    <div style="color:rgba(255,255,255,0.8); line-height:1.8; font-size:18px;">
-      <div style="max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.85); font-size: 1.125rem; line-height: 1.8;">
-  <p style="margin-bottom: 24px; font-size: 1.25rem;">Leave the bustling city of Marrakech behind and breathe the crisp mountain air. Designed for active travelers and adventure seekers, our <strong>Jebel Toubkal trek</strong> takes you deep into the heart of the High Atlas range to conquer North Africa's highest peak.</p>
+<main class="roam-tour-main" style="padding: 120px 24px 80px;">
+  <div class="roam-tour-wrapper">
+    <div class="roam-tour-badge">3-DAY ADVENTURE // HIGH ATLAS EXPEDITION</div>
+    <h1 class="roam-tour-title">Active High Atlas Adventure</h1>
+    
+    <div class="roam-tour-meta-bar">
+      <span class="roam-tour-meta-item">📍 START/FINISH: MARRAKECH</span>
+      <span class="roam-tour-meta-item">⏱ DURATION: 3 DAYS / 2 NIGHTS</span>
+      <span class="roam-tour-meta-item">🏔 SUMMIT: MOUNT TOUBKAL (4,167M)</span>
+      <span class="roam-tour-meta-item">🛡 100% PRIVATE CERTIFIED BERBER GUIDES</span>
+    </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Why Climb Mount Toubkal with RoamMorocco?</h2>
-  <p style="margin-bottom: 24px;"><strong>Mount Toubkal</strong> (often spelled <em>Mt Toubkal</em> or <em>Mont Toubkal</em>) stands as a majestic sentinel over the Moroccan landscape. <strong>Climbing Toubkal</strong> is a bucket-list achievement for hikers worldwide, offering panoramic views that stretch all the way to the Sahara on a clear day.</p>
-  <p style="margin-bottom: 24px;">While <strong>climbing Mount Toubkal without a guide</strong> used to be an option, local regulations and safety standards now strongly encourage (and often require) a certified local guide. Our private tours ensure you are led by experienced, English-speaking Berber mountaineers who know the <strong>Toubkal mountain</strong> like the back of their hand.</p>
+    <div style="margin-bottom: 40px; border: 1px solid rgba(0,0,0,0.12); overflow: hidden;">
+      <img src="images/wall-atlas.jpg" alt="Active High Atlas Adventure - Mount Toubkal Trek" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; display: block;">
+    </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #ffffff;">Tour Highlights</h2>
-  <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Summit Jebel Toubkal:</strong> Stand at the roof of North Africa.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Authentic Berber Culture:</strong> Trek through Imlil and share mint tea with local families.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Toubkal Refuge:</strong> Spend a cozy night at the famous basecamp before the summit push.</li>
-    <li style="margin-bottom: 12px; display: flex; align-items: flex-start;"><span style="color: #C8A45C; margin-right: 12px;">✦</span> <strong>Private & Flexible:</strong> Pace the <strong>Toubkal hike</strong> according to your own fitness level.</li>
-  </ul>
+    <div class="roam-article-body">
+      <p style="font-size: 1.25rem; font-weight: 500; line-height: 1.7; margin-bottom: 28px;">Leave the bustling medinas of Marrakech behind and breathe the crisp mountain air. Designed for active travelers and outdoor enthusiasts, our <strong>Jebel Toubkal trek</strong> takes you deep into the heart of the High Atlas range to conquer North Africa's highest peak.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">How High is Mount Toubkal? (Altitude & Specs)</h2>
-  <p style="margin-bottom: 24px;">One of the most common questions we get is: <em>How high is Toubkal?</em> The <strong>Mount Toubkal height</strong> is exactly <strong>4,167 meters (13,671 feet)</strong> above sea level. While it is a towering peak, the ascent is primarily a non-technical hike rather than a sheer rock climb, making it highly accessible to fit hikers. However, the <strong>altitude of Mont Toubkal</strong> means that acclimatization is key, which is why our 3-day itinerary is paced to prevent altitude sickness.</p>
+      <h2>Why Climb Mount Toubkal with RoamMorocco?</h2>
+      <p><strong>Mount Toubkal</strong> (often spelled <em>Mt Toubkal</em> or <em>Mont Toubkal</em>) stands as a majestic sentinel over the Moroccan landscape at <strong>4,167 meters (13,671 feet)</strong>. <strong>Climbing Toubkal</strong> is a bucket-list achievement for hikers worldwide, offering 360-degree panoramic views that stretch all the way across the Anti-Atlas to the fringes of the Sahara on a clear dawn.</p>
+      
+      <p>While climbing without a guide used to be common decades ago, modern Moroccan safety regulations require all trekkers to be accompanied by a licensed mountain guide. Our private tours ensure you are led by experienced, English-speaking Berber mountaineers from the valley of Imlil who know every scree trail, snow pack, and refuge condition intimately.</p>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #ffffff;">3-Day Jebel Toubkal Trek Itinerary</h2>
+      <!-- Highlights Box -->
+      <div class="roam-highlights-box">
+        <h3 class="roam-highlights-title">Tour Highlights</h3>
+        <ul class="roam-highlight-list">
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Summit Jebel Toubkal:</strong> Stand on the roof of North Africa at 4,167m at sunrise.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Authentic Berber Culture:</strong> Trek through terraced walnut groves and share steaming mint tea with local families in Imlil and Aroumd.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Toubkal Refuge Basecamp:</strong> Spend two nights at the historic stone basecamp (3,207m) acclimatizing before the summit push.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Private Pacing &amp; Mule Support:</strong> Travel with your dedicated muleteer team who transport your luggage while you carry only a light daypack.</div>
+          </li>
+        </ul>
+      </div>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Day 1: Marrakech to Imlil & The Trek to Toubkal Refuge</h3>
-    <p style="margin-bottom: 16px;">We pick you up from your Marrakech riad and drive into the <strong>Atlas Mountains</strong> to the village of Imlil (1,740m). Here, you meet your muleteer crew who will carry your main luggage. You'll begin your <strong>Toubkal trek</strong> ascending through the Mizane Valley, passing the shrine of Sidi Chamharouch. By late afternoon, we reach the <strong>Toubkal Refuge</strong> (3,207m) where we enjoy a hot Moroccan dinner and rest for the night.</p>
-  </div>
+      <h2>How High is Mount Toubkal? (Altitude &amp; Technical Specs)</h2>
+      <p>The <strong>Mount Toubkal height</strong> is exactly <strong>4,167 meters (13,671 feet)</strong> above sea level. While it is a towering alpine mountain, the standard summer and autumn ascent is primarily a non-technical, steep mountain trek rather than a vertical rock climb. Ropes and harnesses are not required during non-snow months.</p>
+      <p>However, the <strong>altitude of Mont Toubkal</strong> means that acclimatization and steady pacing are paramount. Our 3-day itinerary is purposefully paced with an overnight stay at 3,207m before the summit assault to minimize altitude fatigue and maximize summit success rates.</p>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Day 2: The Mount Toubkal Summit Push</h3>
-    <p style="margin-bottom: 16px;">We wake up before dawn for an alpine start. Headlamps on, we navigate the steep zig-zag path up the scree slopes. The <strong>Mount Toubkal difficulty</strong> peaks here, requiring stamina and mental grit. As the sun rises over the Sahara, you will reach the summit at 4,167m. Celebrate, take photos of the staggering <strong>Atlas Mountains Toubkal</strong> panoramas, and then carefully descend back to the refuge for a second night of celebration and rest.</p>
-  </div>
+      <h2>3-Day Jebel Toubkal Trek Itinerary</h2>
 
-  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
-    <h3 style="font-size: 1.5rem; color: #C8A45C; margin-bottom: 16px;">Day 3: Descent to Imlil & Return to Marrakech</h3>
-    <p style="margin-bottom: 16px;">After breakfast, enjoy a relaxed, scenic descent back to Imlil. With the hard work behind you, you can fully appreciate the lush walnut groves and Berber villages. After a celebratory lunch in Imlil, your private transfer will whisk you back to your hotel in Marrakech by late afternoon.</p>
-  </div>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 01 // VALLEY ASCENT</span>
+        <h3 class="roam-itinerary-title">Marrakech to Imlil &amp; Trek to Toubkal Refuge (3,207m)</h3>
+        <p class="roam-itinerary-desc">Your private driver picks you up from your Marrakech riad at 08:00 AM for the scenic 90-minute transfer into the High Atlas foothills. In the Berber trailhead village of Imlil (1,740m), you meet your certified mountain guide and mule team. Begin trekking along the Mizane Valley, following crystalline streams past the pilgrimage hamlet of Sidi Chamharouch. Arrive at the Toubkal Refuge in the late afternoon for a hearty communal Moroccan tagine dinner and early alpine rest.</p>
+      </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Mount Toubkal Difficulty: Is It Hard?</h2>
-  <p style="margin-bottom: 24px;">The <strong>Mount Toubkal difficulty</strong> is generally rated as moderate to challenging. In the summer months, it is a demanding uphill trek that requires no technical climbing gear (no ropes or harnesses). If you are reasonably fit and hike regularly, you can complete the <strong>Mount Toubkal hike</strong>. The biggest challenge for most is the altitude. Walking slowly and staying hydrated are the best strategies.</p>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 02 // SUMMIT PUSH</span>
+        <h3 class="roam-itinerary-title">Mount Toubkal Summit Assault (4,167m) &amp; Sunrise</h3>
+        <p class="roam-itinerary-desc">Alpine start at 04:30 AM under a canopy of mountain stars. With headlamps lit, navigate the South Cirque scree trail, taking steady, measured steps as daylight breaks over the Atlas ridge. By mid-morning, cross the summit ridge and touch the triangular metal pyramid at 4,167m. Drink in the breathtaking views spanning the Anti-Atlas, the Sirwa plateau, and Marrakech plain. Carefully descend back to the refuge for a celebratory lunch and relaxing afternoon.</p>
+      </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #ffffff;">The Best Time to Climb Mount Toubkal</h2>
-  <p style="margin-bottom: 24px;">When planning your <strong>morocco mount toubkal trek</strong>, timing is everything.</p>
-  <ul style="list-style: none; padding: 0; margin-bottom: 32px;">
-    <li style="margin-bottom: 16px;"><strong>Spring (April to May):</strong> This is arguably the <strong>best time to climb mount toubkal</strong>. The weather is warming up, the valleys are lush and green, and the snow on the upper peaks begins to melt, making for spectacular photos. <em>Climbing Mount Toubkal in April</em> is incredibly popular.</li>
-    <li style="margin-bottom: 16px;"><strong>Autumn (September to November):</strong> Crisp, clear air makes autumn ideal. <em>Climbing Mount Toubkal in October</em> or <em>November</em> guarantees excellent visibility and mild hiking temperatures before the deep winter snow arrives.</li>
-    <li style="margin-bottom: 16px;"><strong>Winter (December to March):</strong> <em>Climbing Mount Toubkal winter</em> expeditions are only for the adventurous! If you are <em>climbing Mount Toubkal in December, January, or February</em>, the mountain transforms into an alpine wonderland. Crampons and ice axes are absolutely mandatory (which we provide). The <strong>Toubkal winter itinerary</strong> is tough but immensely rewarding.</li>
-    <li style="margin-bottom: 16px;"><strong>Summer (June to August):</strong> The valleys are incredibly hot, but the high <strong>altitude mont Toubkal</strong> provides a cool escape. Early morning starts are essential to beat the midday sun.</li>
-  </ul>
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 03 // SCENIC DESCENT &amp; RETURN</span>
+        <h3 class="roam-itinerary-title">Descent to Imlil &amp; Private Marrakech Return</h3>
+        <p class="roam-itinerary-desc">Awake to fresh mountain bread, local honey, and coffee. Enjoy a leisurely descent down the Mizane gorge back to Imlil village. Celebrate your summit with an authentic Berber lunch on a panoramic rooftop overlooking the walnut groves. Your private Mercedes van or 4x4 will transport you smoothly back to your Marrakech hotel by late afternoon.</p>
+      </div>
 
-  <h2 style="font-size: 2rem; font-weight: bold; margin: 48px 0 24px; color: #C8A45C;">Essential Packing List for Climbing Toubkal</h2>
-  <p style="margin-bottom: 16px;">Whether you are <strong>trekking Toubkal</strong> in spring or tackling a winter ascent, proper gear is crucial:</p>
-  <ul style="list-style: disc; padding-left: 24px; margin-bottom: 32px;">
-    <li style="margin-bottom: 8px;">Sturdy, broken-in hiking boots with good ankle support.</li>
-    <li style="margin-bottom: 8px;">A warm sleeping bag (the <strong>Toubkal refuge</strong> provides blankets, but a sleeping bag is highly recommended).</li>
-    <li style="margin-bottom: 8px;">Thermal base layers and a high-quality down jacket (temperatures at the 4,167m summit drop below freezing even in summer).</li>
-    <li style="margin-bottom: 8px;">A 30L daypack (your main luggage goes on the mules).</li>
-    <li style="margin-bottom: 8px;">Headlamp with spare batteries for the 4:00 AM summit push.</li>
-    <li style="margin-bottom: 8px;">Sun protection: high SPF sunscreen, sunglasses, and a wide-brimmed hat.</li>
-  </ul>
+      <h2>Mount Toubkal Difficulty: Is It Hard?</h2>
+      <p>The <strong>Mount Toubkal difficulty</strong> is graded as <em>moderate to strenuous</em>. In the warmer months (May through October), it is an endurance mountain hike on loose rock and scree paths. If you have decent cardiovascular stamina and hike regularly, you can successfully reach the peak. The primary challenge is the elevation gain and thin alpine air, which is why hydration and steady pacing are key.</p>
 
-  <div style="margin-top: 64px; padding: 40px; background-color: rgba(200, 164, 92, 0.1); border: 1px solid rgba(200, 164, 92, 0.3); border-radius: 16px; text-align: center;">
-    <h3 style="font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #C8A45C; margin-top: 0;">Ready to Conquer Mount Toubkal?</h3>
-    <p style="margin-bottom: 24px; font-size: 18px; color: rgba(255, 255, 255, 0.8);">Join our expert Berber guides for the ultimate <strong>Jebel Toubkal Morocco</strong> experience. We handle the logistics, mules, refuge bookings, and food—you just bring your boots and your sense of adventure.</p>
-    <a href="#booking" style="display: inline-block; background-color: #C8A45C; color: #0A0908; font-weight: bold; padding: 16px 32px; border-radius: 9999px; text-decoration: none; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#ffffff'" onmouseout="this.style.backgroundColor='#C8A45C'">Request Your Custom Trek</a>
-  </div>
-</div>
+      <h2>The Best Time to Climb Mount Toubkal</h2>
+      <ul>
+        <li><strong>Spring (April to May):</strong> Ideal temperatures, lush green valleys, and melting summit snowpacks. One of the most scenic periods of the year.</li>
+        <li><strong>Autumn (September to November):</strong> Crisp mountain visibility, mild hiking temperatures, and stable weather windows. Perfect conditions for photography.</li>
+        <li><strong>Summer (June to August):</strong> Hot in the Marrakech plains, but pleasantly cool at 3,000m+ altitudes. Requires early morning starts to beat peak midday heat.</li>
+        <li><strong>Winter (December to March):</strong> Pure alpine mountaineering. Snow transforms the peak into a technical winter route requiring crampons and ice axes (guided winter gear provided).</li>
+      </ul>
+
+      <!-- Driver Concierge Lead Gen -->
+      <div class="roam-driver-box">
+        <h4>Need Private Transport from Marrakech to Imlil?</h4>
+        <p>Planning a day hike or independent trek? Book a licensed, English-speaking driver in a modern 4x4 or Mercedes van with doorstep pickup at your riad, luggage storage, and return transfer.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="custom-morocco-tour.html" class="roam-btn-black">Book Private Transfer &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I%20need%20private%20transfer%20from%20Marrakech%20to%20Imlil." target="_blank" rel="noopener" class="roam-btn-wa">WhatsApp Direct Guide</a>
+        </div>
+      </div>
+
+      <!-- Travel Deals Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">Trip Planning &amp; Gear Toolkit</div>
+        <div class="roam-toolkit-grid">
+          <a href="travel-deals.html#flights" class="roam-toolkit-link"><span>✈️ Cheap Flights to Marrakech</span><span>&rarr;</span></a>
+          <a href="travel-deals.html#hotels" class="roam-toolkit-link"><span>🏨 Top Marrakech Riads</span><span>&rarr;</span></a>
+          <a href="travel-deals.html#esim" class="roam-toolkit-link"><span>📶 Unlimited Morocco eSIM</span><span>&rarr;</span></a>
+          <a href="custom-morocco-tour.html" class="roam-toolkit-link"><span>🚐 Custom 4x4 &amp; Chauffeur</span><span>&rarr;</span></a>
+        </div>
+      </div>
+
+      <!-- Tour Bottom CTA Box -->
+      <div class="roam-tour-cta-box">
+        <h3 class="roam-tour-cta-title">Ready to Conquer Mount Toubkal?</h3>
+        <p class="roam-tour-cta-desc">Join our expert Berber guides for the ultimate High Atlas trekking adventure. We handle mountain permits, refuge reservations, pack mules, meals, and private Marrakech transport—you bring the boots and spirit of adventure.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="custom-morocco-tour.html" class="roam-btn-black">Request Custom Itinerary &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%20Active%20High%20Atlas%20Tour." target="_blank" rel="noopener" class="roam-btn-wa">WhatsApp Direct Guide</a>
+        </div>
+      </div>
 
     </div>
   </div>
