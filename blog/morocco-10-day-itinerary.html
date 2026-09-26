@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%;">
+<html lang="en">
 <head>
 
     <meta charset="UTF-8">
@@ -219,8 +219,10 @@
       --red: #f10b18;
     }
 
-    *, *::before, *::after, [class], [id] {
+    *, *::before, *::after {
       box-sizing: border-box;
+    }
+    article, .roam-day-card, .roam-tour-cta-box, .roam-toolkit-box, .roam-callout-ai, table, th, td, img {
       border-radius: 0 !important;
     }
 
@@ -230,7 +232,6 @@
       font-family: Helvetica, Arial, sans-serif;
       background: #f2eee6 !important;
       color: #000000 !important;
-      overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
 

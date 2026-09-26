@@ -147,18 +147,36 @@
     const closeBtn = modal.querySelector("#roamTocModalClose");
     if (closeBtn) closeBtn.addEventListener("click", closeMobileTOC);
 
+    // Close on Escape key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal.classList.contains("open")) {
+        closeMobileTOC();
+      }
+    });
+
     // 7. ScrollSpy & Reading Progress via IntersectionObserver & scroll event
     const desktopLinks = desktopList.querySelectorAll(".roam-toc-link");
     const mobileLinks = mobileList.querySelectorAll("a");
     const progressBar = document.getElementById("roamTocBar");
     const progressText = document.getElementById("roamTocProgress");
 
+    // Safe helper: scroll link inside sidebar list WITHOUT affecting window scroll
+    function scrollActiveIntoSidebarList(link) {
+      if (!desktopList || !link) return;
+      const listRect = desktopList.getBoundingClientRect();
+      const linkRect = link.getBoundingClientRect();
+      if (linkRect.top < listRect.top) {
+        desktopList.scrollTop -= (listRect.top - linkRect.top + 8);
+      } else if (linkRect.bottom > listRect.bottom) {
+        desktopList.scrollTop += (linkRect.bottom - listRect.bottom + 8);
+      }
+    }
+
     function setActiveHeading(id) {
       desktopLinks.forEach((link) => {
         if (link.getAttribute("href") === "#" + id) {
           link.classList.add("active");
-          // Keep active link visible within sidebar scroll
-          link.scrollIntoView({ block: "nearest", inline: "nearest" });
+          scrollActiveIntoSidebarList(link);
         } else {
           link.classList.remove("active");
         }
@@ -200,6 +218,10 @@
 
       if (progressBar) progressBar.style.width = pct + "%";
       if (progressText) progressText.textContent = pct + "%";
+
+      if (rect.top > 80 && tocItems.length > 0) {
+        setActiveHeading(tocItems[0].id);
+      }
     }
 
     window.addEventListener("scroll", updateProgress, { passive: true });
