@@ -586,11 +586,14 @@ main.roam-tour-main {
   font-weight: 700;
 }
 
-.roam-article-body a {
+.roam-article-body a:not([class*="roam-btn"]):not([class*="btn"]) {
   color: #000000;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-weight: 600;
+}
+.roam-article-body a:not([class*="roam-btn"]):not([class*="btn"]):hover {
+  opacity: 0.75;
 }
 
 /* Callout Box: Light Editorial Driver Box */
@@ -621,9 +624,15 @@ main.roam-tour-main {
   margin-bottom: 22px !important;
 }
 
-.roam-btn-black {
+.roam-btn-black,
+a.roam-btn-black,
+.roam-article-body a.roam-btn-black,
+.roam-tour-content a.roam-btn-black,
+.roam-tour-cta-box a.roam-btn-black,
+.roam-driver-box a.roam-btn-black {
   display: inline-flex !important;
   align-items: center !important;
+  justify-content: center !important;
   gap: 8px !important;
   background: #000000 !important;
   color: #ffffff !important;
@@ -631,20 +640,37 @@ main.roam-tour-main {
   font-weight: 800 !important;
   font-size: 13px !important;
   text-transform: uppercase !important;
-  letter-spacing: .03em !important;
-  padding: 12px 24px !important;
+  letter-spacing: .05em !important;
+  padding: 14px 28px !important;
+  border: 1px solid #000000 !important;
   border-radius: 0 !important;
   text-decoration: none !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
   transition: all .25s ease !important;
 }
-.roam-btn-black:hover {
-  background: #333333 !important;
+.roam-btn-black:hover,
+a.roam-btn-black:hover,
+.roam-article-body a.roam-btn-black:hover,
+.roam-tour-content a.roam-btn-black:hover,
+.roam-tour-cta-box a.roam-btn-black:hover,
+.roam-driver-box a.roam-btn-black:hover {
+  background: #262626 !important;
+  color: #ffffff !important;
+  border-color: #262626 !important;
   transform: translateY(-2px) !important;
+  text-decoration: none !important;
 }
 
-.roam-btn-wa {
+.roam-btn-wa,
+a.roam-btn-wa,
+.roam-article-body a.roam-btn-wa,
+.roam-tour-content a.roam-btn-wa,
+.roam-tour-cta-box a.roam-btn-wa,
+.roam-driver-box a.roam-btn-wa {
   display: inline-flex !important;
   align-items: center !important;
+  justify-content: center !important;
   gap: 8px !important;
   background: #25D366 !important;
   color: #000000 !important;
@@ -652,15 +678,26 @@ main.roam-tour-main {
   font-weight: 800 !important;
   font-size: 13px !important;
   text-transform: uppercase !important;
-  letter-spacing: .03em !important;
-  padding: 12px 24px !important;
+  letter-spacing: .05em !important;
+  padding: 14px 28px !important;
+  border: 1px solid #25D366 !important;
   border-radius: 0 !important;
   text-decoration: none !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
   transition: all .25s ease !important;
 }
-.roam-btn-wa:hover {
+.roam-btn-wa:hover,
+a.roam-btn-wa:hover,
+.roam-article-body a.roam-btn-wa:hover,
+.roam-tour-content a.roam-btn-wa:hover,
+.roam-tour-cta-box a.roam-btn-wa:hover,
+.roam-driver-box a.roam-btn-wa:hover {
   background: #20BA59 !important;
+  color: #000000 !important;
+  border-color: #20BA59 !important;
   transform: translateY(-2px) !important;
+  text-decoration: none !important;
 }
 
 /* Deals Toolkit Box */
