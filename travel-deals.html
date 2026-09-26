@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Deals: Cheap Flights, Hotels, eSIM & Worldwide Hotspots | RoamMorocco</title>
+  <meta name="description" content="Discover verified travel deals: Cheap flights to Marrakech and Casablanca, best hotel rates, high-speed Morocco eSIMs, car rentals, and deals for top worldwide destinations.">
+  <link rel="canonical" href="https://roammorocco.tours/travel-deals.html">
+  <link rel="alternate" hreflang="en" href="https://roammorocco.tours/travel-deals.html">
+  <link rel="alternate" hreflang="x-default" href="https://roammorocco.tours/travel-deals.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://roammorocco.tours/travel-deals.html">
+  <meta property="og:title" content="Travel Deals & Toolkit | RoamMorocco">
+  <meta property="og:description" content="Save on flights, hotels, eSIM cards, and car rentals in Morocco and top global destinations.">
+  <meta property="og:image" content="https://roammorocco.tours/images/hero-desert.jpg">
+  <meta property="og:site_name" content="Roam Morocco Tours">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Travel Deals & Toolkit | RoamMorocco">
+  <meta name="twitter:description" content="Save on flights, hotels, eSIM cards, and car rentals in Morocco and top global destinations.">
+  <meta name="twitter:image" content="https://roammorocco.tours/images/hero-desert.jpg">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/trip-concierge.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Travel Deals & Booking Toolkit - Roam Morocco",
+    "url": "https://roammorocco.tours/travel-deals.html",
+    "description": "Comprehensive travel toolkit and verified discounts for flights, hotels, eSIM mobile data, and car rentals in Morocco and worldwide.",
+    "publisher": {
+      "@type": "TravelAgency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --gold: #C8A45C;
+      --gold-light: #D4B76A;
+      --bg-dark: #0A0908;
+      --bg-card: #141311;
+      --border-subtle: rgba(200, 164, 92, 0.22);
+      --border-strong: rgba(200, 164, 92, 0.45);
+      --text: #F8F8F8;
+      --text-muted: rgba(255, 255, 255, 0.65);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Navigation */
+    .d-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 9, 8, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .d-logo img { height: 38px; width: auto; display: block; }
+    .d-nav-links { display: flex; align-items: center; gap: 28px; }
+    .d-nav-link { font-size: 14px; font-weight: 500; color: var(--text-muted); transition: color 0.2s; }
+    .d-nav-link:hover, .d-nav-link.active { color: var(--gold); }
+    .d-nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: #0A0908;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      transition: all 0.25s ease;
+    }
+    .d-nav-cta:hover { transform: scale(1.04); box-shadow: 0 0 24px rgba(200, 164, 92, 0.4); }
+
+    /* Hero */
+    .d-hero {
+      padding: 90px 24px 70px;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, rgba(200, 164, 92, 0.14) 0%, transparent 60%),
+                  linear-gradient(180deg, #0A0908 0%, #12100d 100%);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .d-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid var(--border-strong);
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+
+    .d-hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.18;
+      color: #fff;
+      max-width: 900px;
+      margin: 0 auto 20px;
+    }
+
+    .d-hero h1 span {
+      background: linear-gradient(135deg, var(--gold) 0%, #FFF3D6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .d-hero p {
+      font-size: clamp(16px, 1.8vw, 19px);
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    /* Category Nav Bar */
+    .d-cat-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .d-cat-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+      padding: 10px 20px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      transition: all 0.2s;
+    }
+
+    .d-cat-pill:hover {
+      background: rgba(200, 164, 92, 0.2);
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* Section Styles */
+    .d-section {
+      padding: 70px 24px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .d-section-header {
+      margin-bottom: 36px;
+    }
+
+    .d-section-header h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 3.5vw, 38px);
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .d-section-header p {
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    /* Deals Grid */
+    .d-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .d-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .d-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(200, 164, 92, 0.12);
+    }
+
+    .d-card-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(200, 164, 92, 0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+    }
+
+    .d-card-icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .d-card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .d-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .d-card-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: #0A0908;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .d-card-btn:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 16px rgba(200, 164, 92, 0.4);
+    }
+
+    /* Worldwide Hotspots Showcase */
+    .d-world-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .d-world-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .d-world-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+
+    .d-world-header {
+      padding: 20px 24px;
+      background: rgba(255, 255, 255, 0.03);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .d-world-header h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .d-world-flag { font-size: 24px; }
+
+    .d-world-body {
+      padding: 24px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .d-world-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      font-size: 13px;
+      color: #fff;
+      transition: all 0.2s;
+    }
+
+    .d-world-link:hover {
+      background: rgba(200, 164, 92, 0.15);
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    /* Chauffeur Bridge Banner */
+    .d-bridge-banner {
+      background: linear-gradient(135deg, rgba(200, 164, 92, 0.15) 0%, rgba(30, 25, 20, 0.6) 100%);
+      border: 1px solid var(--border-strong);
+      border-radius: 16px;
+      padding: 40px;
+      margin: 60px auto 0;
+      text-align: center;
+      max-width: 1000px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    .d-bridge-banner h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(24px, 3.5vw, 34px);
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+
+    .d-bridge-banner p {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 680px;
+      margin: 0 auto 24px;
+    }
+
+    .d-bridge-btns {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .d-btn-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
+      color: #0A0908;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      transition: all 0.2s;
+    }
+
+    .d-btn-gold:hover { transform: scale(1.03); }
+
+    .d-btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25D366;
+      color: #0A0908;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 24px;
+      border-radius: 9999px;
+      transition: all 0.2s;
+    }
+
+    .d-btn-wa:hover { background: #20BA59; transform: scale(1.03); }
+
+    /* Footer */
+    .d-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 60px 24px 30px;
+      text-align: center;
+      background: #070605;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .d-footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .d-footer-links a:hover { color: var(--gold); }
+
+    @media (max-width: 768px) {
+      .d-nav-links { display: none; }
+      .d-bridge-banner { padding: 28px 16px; }
+    }
+  </style>
+
+  <!-- Travelpayouts Drive -->
+  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+    (function () {
+        var script = document.createElement("script");
+        script.async = 1;
+        script.setAttribute("data-cmp-ab","2");
+        script.src = 'https://emrldtp.cc/NTc4Mjg3.js?t=578287';
+        document.head.appendChild(script);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="d-nav">
+    <a href="index.html" class="d-logo">
+      <img src="images/Logos/newlogo-roammorocco.png" alt="Roam Morocco Tours">
+    </a>
+    <nav class="d-nav-links">
+      <a href="index.html" class="d-nav-link">Home</a>
+      <a href="destinations.html" class="d-nav-link">Destinations</a>
+      <a href="custom-morocco-tour.html" class="d-nav-link">Custom Morocco</a>
+      <a href="travel-deals.html" class="d-nav-link active">Travel Deals</a>
+      <a href="blog.html" class="d-nav-link">Blog</a>
+    </nav>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20planning%20a%20trip%20and%20looking%20for%20tour%20options." class="d-nav-cta" target="_blank" rel="noopener">
+      <span>💬 WhatsApp Us</span>
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="d-hero">
+    <div class="d-badge">✈️ Global Travel Partners & Savings</div>
+    <h1>Curated Travel Deals & Essential Toolkit<br><span>Flights, Stays, eSIMs & Worldwide Hotspots</span></h1>
+    <p>Everything you need for seamless travel in Morocco and top global destinations. Handpicked flight search, luxury hotel rates, high-speed mobile eSIMs, and car rentals.</p>
+
+    <!-- Quick Jump Bar -->
+    <div class="d-cat-bar">
+      <a href="#flights" class="d-cat-pill">✈️ Cheap Flights</a>
+      <a href="#hotels" class="d-cat-pill">🏨 Hotel & Riad Deals</a>
+      <a href="#esim" class="d-cat-pill">📱 Travel eSIMs</a>
+      <a href="#cars" class="d-cat-pill">🚗 Car Rentals</a>
+      <a href="#worldwide" class="d-cat-pill">🌍 Worldwide Hotspots</a>
+    </div>
+  </section>
+
+  <!-- Essential Toolkit Grid -->
+  <section class="d-section" id="tools">
+    <div class="d-section-header">
+      <h2>Essential Travel Toolkit</h2>
+      <p>Save time and money with our verified travel booking partners:</p>
+    </div>
+
+    <div class="d-grid">
+      <!-- Flights Card -->
+      <div class="d-card" id="flights">
+        <span class="d-card-badge">Best Rates</span>
+        <div>
+          <span class="d-card-icon">✈️</span>
+          <h3>Cheap Flights Comparison</h3>
+          <p>Compare real-time fares to Marrakech (RAK), Casablanca (CMN), and global routes across 1,000+ airlines. Find error fares and seasonal discounts.</p>
+        </div>
+        <a href="https://trip.tp.st/qDkE2101" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Search Flights on Trip.com →</span>
+        </a>
+      </div>
+
+      <!-- eSIM Card -->
+      <div class="d-card" id="esim">
+        <span class="d-card-badge">Must-Have</span>
+        <div>
+          <span class="d-card-icon">📱</span>
+          <h3>Instant Travel eSIM (Airalo)</h3>
+          <p>Don't pay $10/day carrier roaming. Download an instant Morocco or global eSIM before takeoff and get instant 4G/5G data the second your plane touches down.</p>
+        </div>
+        <a href="https://airalo.tp.st/V5fK8Y92" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Get Morocco eSIM from $8 →</span>
+        </a>
+      </div>
+
+      <!-- Hotel Card -->
+      <div class="d-card" id="hotels">
+        <span class="d-card-badge">Verified Stays</span>
+        <div>
+          <span class="d-card-icon">🏨</span>
+          <h3>Luxury Riads & Hotels</h3>
+          <p>Explore curated riads in Marrakech, medina palaces in Fes, and beachfront resorts in Essaouira with free cancellation and price-match guarantees.</p>
+        </div>
+        <a href="https://booking.tp.st/zXgP7811" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Find Riad & Hotel Deals →</span>
+        </a>
+      </div>
+
+      <!-- Car Rental Card -->
+      <div class="d-card" id="cars">
+        <span class="d-card-badge">Self-Drive</span>
+        <div>
+          <span class="d-card-icon">🚗</span>
+          <h3>Car Rentals (DiscoverCars)</h3>
+          <p>Planning a self-drive trip? Compare local and international rental companies in Morocco with zero hidden fees and full insurance coverage.</p>
+        </div>
+        <a href="https://discovercars.tp.st/u9HjL334" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Compare Car Rentals →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Worldwide Destinations Grid -->
+  <section class="d-section" id="worldwide" style="border-top: 1px solid var(--border-subtle);">
+    <div class="d-section-header">
+      <h2>Worldwide High-Demand Hotspots</h2>
+      <p>Dreaming beyond Morocco? Explore curated flight, stay, and attraction deals for the world's most sought-after travel destinations:</p>
+    </div>
+
+    <div class="d-world-grid">
+      <!-- Dubai -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Dubai, UAE</h3>
+          <span class="d-world-flag">🇦🇪</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://trip.tp.st/qDkE2101?destination=Dubai" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Cheap Flights to Dubai (DXB)</span>
+            <span>→</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811?destination=Dubai" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Luxury Resorts & Jumeirah Stays</span>
+            <span>→</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92?country=uae" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 UAE High-Speed eSIM</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Paris -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Paris, France</h3>
+          <span class="d-world-flag">🇫🇷</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://trip.tp.st/qDkE2101?destination=Paris" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Paris Flight Deals (CDG / ORY)</span>
+            <span>→</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811?destination=Paris" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Boutique Hotels in Le Marais</span>
+            <span>→</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92?country=france" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 France & Europe eSIM</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bali -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Bali, Indonesia</h3>
+          <span class="d-world-flag">🇮🇩</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://trip.tp.st/qDkE2101?destination=Bali" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Flight Deals to Denpasar (DPS)</span>
+            <span>→</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811?destination=Bali" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Private Pool Villas in Ubud & Canggu</span>
+            <span>→</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92?country=indonesia" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Indonesia Unlimited eSIM</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Rome -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Rome, Italy</h3>
+          <span class="d-world-flag">🇮🇹</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://trip.tp.st/qDkE2101?destination=Rome" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Rome Flight Specials (FCO)</span>
+            <span>→</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811?destination=Rome" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Historic Center Boutique Stays</span>
+            <span>→</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92?country=italy" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Italy & EU eSIM Card</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tokyo -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Tokyo, Japan</h3>
+          <span class="d-world-flag">🇯🇵</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://trip.tp.st/qDkE2101?destination=Tokyo" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Flights to Tokyo (HND / NRT)</span>
+            <span>→</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811?destination=Tokyo" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Shinjuku & Shibuya Top Hotels</span>
+            <span>→</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92?country=japan" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Japan High-Speed eSIM</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Istanbul -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Istanbul, Turkey</h3>
+          <span class="d-world-flag">🇹🇷</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://trip.tp.st/qDkE2101?destination=Istanbul" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Flights to Istanbul Hub (IST)</span>
+            <span>→</span>
+          </a>
+          <a href="https://booking.tp.st/zXgP7811?destination=Istanbul" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Bosphorus Waterfront Hotels</span>
+            <span>→</span>
+          </a>
+          <a href="https://airalo.tp.st/V5fK8Y92?country=turkey" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Turkey 4G/5G eSIM</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bridge Banner to Roam Morocco Direct Tours -->
+    <div class="d-bridge-banner">
+      <h3>Traveling to Morocco? Let Us Do the Driving</h3>
+      <p>While self-driving works in Europe, navigating Morocco's Tizi n'Tichka mountain switchbacks and desert roads is exhausting. Experience the Kingdom in a private luxury 4x4 Prado with your own licensed English-speaking local chauffeur.</p>
+      <div class="d-bridge-btns">
+        <a href="custom-morocco-tour.html" class="d-btn-gold">
+          <span>✨ Build a Custom Morocco Tour</span>
+        </a>
+        <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." class="d-btn-wa" target="_blank" rel="noopener">
+          <span>💬 Chat with Driver Coordinator on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="d-footer">
+    <div class="d-footer-links">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="custom-morocco-tour.html">Custom Morocco Tours</a>
+      <a href="travel-deals.html">Travel Deals & Tools</a>
+      <a href="blog.html">Blog</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-conditions.html">Terms & Conditions</a>
+    </div>
+    <p>© 2026 Roam Morocco Tours. Partnered with global travel operators to deliver verified rates.</p>
+  </footer>
+
+  <!-- Concierge Chatbot Widget Script -->
+  <script src="js/trip-concierge.js" defer></script>
+</body>
+</html>
