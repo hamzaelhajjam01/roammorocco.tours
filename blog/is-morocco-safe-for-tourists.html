@@ -208,6 +208,7 @@
     })();
   </script>
   <link rel="stylesheet" href="../css/trip-concierge.css">
+  <link rel="stylesheet" href="../css/roam-theme.css">
 </head>
 <body style="position:relative; min-height:100%; top:0px; margin:0; background:#0a0908; color:white; font-family:'Inter',sans-serif;">
 
@@ -247,51 +248,75 @@
         .rm-mobile-dropdown { display:none !important; }
       }
     </style>
-    <header style="background:#0a0908; border-bottom:1px solid rgba(255,255,255,0.1); position:sticky; top:0; z-index:50;">
-      <nav style="display:flex; align-items:center; justify-content:space-between; padding:16px 24px; position:relative;">
-        
-        <!-- Desktop Nav (Left) -->
-        <div class="rm-nav-desktop">
-          <a href="../index.html" class="rm-nav-link">Home</a>
-          <a href="../destinations.html" class="rm-nav-link">Destinations</a>
-          <a href="../custom-morocco-tour.html" class="rm-nav-link">Custom Morocco</a>
-          <a href="../travel-deals.html" class="rm-nav-link">Travel Deals</a>
-          <a href="../about.html" class="rm-nav-link">About</a>
-          <a href="../blog.html" class="rm-nav-link">Blog</a>
-        </div>
-        
-        <!-- Logo (Center on desktop, left on mobile) -->
-        <div class="rm-nav-logo">
-          <a href="../index.html">
-            <img src="../images/Logos/newlogo-roammorocco.png" alt="RoamMorocco.tours" style="height:64px; width:auto; object-fit:contain; transition:transform 0.5s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" />
-          </a>
-        </div>
-        
-        <!-- Desktop CTA (Right) -->
-        <div class="rm-nav-cta">
-          <a href="../index.html#destinations" class="rm-nav-cta-btn">Plan Your Trip</a>
-        </div>
-        
-        <!-- Mobile Toggle Button -->
-        <button id="mobile-menu-btn" class="rm-nav-mobile-btn" aria-label="Open menu">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path class="rm-hamburger-line rm-line1" d="M4 5h16"></path>
-            <path class="rm-hamburger-line rm-line2" d="M4 12h16"></path>
-            <path class="rm-hamburger-line rm-line3" d="M4 19h16"></path>
-          </svg>
-        </button>
-      </nav>
-      
-      <!-- Mobile Dropdown Menu -->
-      <div id="mobile-dropdown" class="rm-mobile-dropdown">
-        <a href="../index.html" style="color:white;">Home</a>
-        <a href="../index.html#destinations" style="color:white;">Destinations</a>
-        <a href="../index.html#experiences" style="color:white;">Experiences</a>
-        <a href="../index.html#about" style="color:white;">About</a>
-        <a href="../blog.html" style="color:#C8A45C;">Blog</a>
-        <a href="../index.html#destinations" style="margin-top:8px; display:flex; justify-content:center; align-items:center; gap:8px; background:#C8A45C; color:#0A0908; font-weight:500; padding:12px 20px; border-radius:9999px;">Plan Your Trip</a>
+      <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <div class="announcement-content">
+        <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Tailored Private Journeys Across Sahara &amp; High Atlas</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>LUXURY RIADS &amp; DESERT CAMPS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Custom Circuits From Marrakech, Fes &amp; Casablanca</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>FEEL THE KINGDOM</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Private Drivers, Expert Local Guides &amp; Unhurried Pacing</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
       </div>
-    </header>
+      <div class="announcement-content" aria-hidden="true">
+        <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Tailored Private Journeys Across Sahara &amp; High Atlas</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>LUXURY RIADS &amp; DESERT CAMPS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Custom Circuits From Marrakech, Fes &amp; Casablanca</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>FEEL THE KINGDOM</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Private Drivers, Expert Local Guides &amp; Unhurried Pacing</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Morphing Navigation -->
+  <header class="top at-top">
+    <div class="navbox">
+      <a class="wordmark" href="../index.html#top">
+        <img id="navLogo" src="../img/logo-for-dark-bg.png" alt="Roam Morocco Tours">
+      </a>
+      <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+      <nav class="desktop-nav">
+        <a href="../destinations.html">Destinations</a>
+        <a href="../experiences.html">Experiences</a>
+        <a href="../custom-morocco-tour.html">Custom Morocco</a>
+        <a href="../travel-deals.html">Travel Deals</a>
+        <a href="../about.html">About</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </div>
+    <a class="latest" href="../custom-morocco-tour.html">Plan Trip <span class="dot"></span></a>
+    <a class="back-top-btn" href="#top" aria-label="Back to top" onclick="scrollToTop(event)">
+      <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-inner">
+      <a href="../destinations.html" onclick="closeDrawer()">Destinations</a>
+      <a href="../experiences.html" onclick="closeDrawer()">Experiences</a>
+      <a href="../custom-morocco-tour.html" onclick="closeDrawer()">Custom Morocco</a>
+      <a href="../travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
+      <a href="../about.html" onclick="closeDrawer()">About</a>
+      <a href="../blog.html" onclick="closeDrawer()">Blog</a>
+    </div>
+  </div>
 
 <main style="background:#0a0908; color:white; padding:40px 24px 80px;">
   <div style="max-width:896px; margin:0 auto;">
@@ -388,69 +413,46 @@
   </div>
 </main>
 
-<div id="root"><div class="relative w-full overflow-x-hidden" style="background:rgb(10,9,8);">
-<footer code-path="src/sections/Footer.tsx:78:5" class="relative w-full overflow-hidden" style="z-index: 10;"><div code-path="src/sections/Footer.tsx:79:7" class="absolute inset-0"><div code-path="src/sections/Footer.tsx:80:9" class="absolute inset-0 bg-cover bg-center" style="background-image: url(&quot;/images/hero-desert.jpg&quot;);"></div><div code-path="src/sections/Footer.tsx:81:9" class="absolute inset-0" style="background: linear-gradient(to top, rgba(5, 4, 3, 0.95) 0%, rgba(5, 4, 3, 0.7) 40%, rgba(10, 9, 8, 0.5) 100%);"></div><div code-path="src/sections/Footer.tsx:82:9" class="absolute inset-0 pointer-events-none" style="background: radial-gradient(at 50% 30%, transparent 15%, rgba(0, 0, 0, 0.5) 100%);"></div></div><div code-path="src/sections/Footer.tsx:86:7" class="f-brand relative z-10 pt-28 pb-8 px-6 text-center"><div code-path="src/sections/Footer.tsx:87:9" class="max-w-[1400px] mx-auto"><img code-path="src/sections/Footer.tsx:88:11" alt="RoamMorocco.tours" class="h-24 sm:h-32 md:h-40 lg:h-48 w-auto mx-auto object-contain" src="/images/Logos/newlogo-roammorocco.png"><div code-path="src/sections/Footer.tsx:93:11" class="mt-8 flex justify-center"><div code-path="src/sections/Footer.tsx:94:13" class="f-glow h-px w-[45%] origin-center" style="background: linear-gradient(90deg, transparent, rgb(200, 164, 92), rgb(212, 183, 106), rgb(200, 164, 92), transparent); box-shadow: rgba(200, 164, 92, 0.4) 0px 0px 30px, rgba(200, 164, 92, 0.15) 0px 0px 60px; transform:scale(1,1);"></div></div><p code-path="src/sections/Footer.tsx:97:11" class="mt-8 text-white/30 text-sm font-light max-w-sm mx-auto leading-relaxed" >Your journey through Morocco begins with a single step into the unknown.</p></div></div><div code-path="src/sections/Footer.tsx:103:7" class="relative z-10 px-6 pb-10"><div code-path="src/sections/Footer.tsx:104:9" class="max-w-[1400px] mx-auto"><div code-path="src/sections/Footer.tsx:105:11" class="f-links footer-grid grid grid-cols-2 md:grid-cols-4 gap-10 py-14 border-t border-white/[0.05]"><div code-path="src/sections/Footer.tsx:108:13"><h3 code-path="src/sections/Footer.tsx:109:15" class="text-[#C8A45C] text-xs uppercase tracking-wider font-medium mb-5">Policies</h3><a code-path="src/sections/Footer.tsx:111:17" href="/privacy-policy.html" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Privacy Policy</a><a code-path="src/sections/Footer.tsx:111:17" href="/terms-conditions.html" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Terms &amp; Conditions</a><a code-path="src/sections/Footer.tsx:111:17" href="/refund-policy.html" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Refund Policy</a><a code-path="src/sections/Footer.tsx:111:17" href="/travel-policy.html" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Travel Policy</a></div><div code-path="src/sections/Footer.tsx:116:13"><h3 code-path="src/sections/Footer.tsx:117:15" class="text-[#C8A45C] text-xs uppercase tracking-wider font-medium mb-5">Destinations</h3><a code-path="src/sections/Footer.tsx:119:17" href="#destinations" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Marrakech</a><a code-path="src/sections/Footer.tsx:119:17" href="#destinations" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Essaouira</a><a code-path="src/sections/Footer.tsx:119:17" href="#destinations" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Agafay Desert</a><a code-path="src/sections/Footer.tsx:119:17" href="#destinations" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Atlas Mountains</a><a code-path="src/sections/Footer.tsx:119:17" href="#destinations" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Ait Ben Haddou</a><a code-path="src/sections/Footer.tsx:119:17" href="#destinations" class="f-link block text-white/35 text-sm hover:text-white transition-colors duration-300 mb-2.5" >Oualidia</a></div><div code-path="src/sections/Footer.tsx:124:13"><h3 code-path="src/sections/Footer.tsx:125:15" class="text-[#C8A45C] text-xs uppercase tracking-wider font-medium mb-5">Newsletter</h3><div code-path="src/sections/Footer.tsx:126:15" class="f-newsletter" ><p code-path="src/sections/Footer.tsx:127:17" class="text-white/35 text-xs leading-relaxed mb-4">Get Morocco travel inspiration, private tour updates, and exclusive offers.</p><div code-path="src/sections/Footer.tsx:130:17" class="flex flex-col gap-2"><input code-path="src/sections/Footer.tsx:131:19" placeholder="Enter your email" class="w-full px-4 py-2.5 rounded-xl text-xs text-white placeholder-white/25 outline-none transition-all focus:border-[#C8A45C]/40" type="email" value="" style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.08);"><button code-path="src/sections/Footer.tsx:142:19" class="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-semibold transition-all hover:scale-[1.02] active:scale-[0.98] group" style="background: linear-gradient(135deg, rgb(200, 164, 92) 0%, rgb(212, 183, 106) 100%); color: rgb(10, 9, 8);"><span code-path="src/sections/Footer.tsx:149:21">Subscribe</span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right transition-transform group-hover:translate-x-0.5" aria-hidden="true" code-path="src/sections/Footer.tsx:150:21"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></button></div></div></div><div code-path="src/sections/Footer.tsx:157:13" class="footer-connect"><h3 code-path="src/sections/Footer.tsx:158:15" class="text-[#C8A45C] text-xs uppercase tracking-wider font-medium mb-5">Connect</h3><div code-path="src/sections/Footer.tsx:179:15" class="footer-contact space-y-2.5"><div code-path="src/sections/Footer.tsx:180:17" class="footer-contact-item flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail text-[#C8A45C]/50 flex-shrink-0" aria-hidden="true" code-path="src/sections/Footer.tsx:181:19"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg><span code-path="src/sections/Footer.tsx:182:19" class="text-white/45 text-xs">contact@roammorocco.tours</span></div><div code-path="src/sections/Footer.tsx:184:17" class="footer-contact-item flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone text-[#C8A45C]/50 flex-shrink-0" aria-hidden="true" code-path="src/sections/Footer.tsx:185:19"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg><span code-path="src/sections/Footer.tsx:186:19" class="text-white/45 text-xs">+212 653-506441</span></div><div code-path="src/sections/Footer.tsx:188:17" class="footer-contact-item flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-[#C8A45C]/50 flex-shrink-0" aria-hidden="true" code-path="src/sections/Footer.tsx:189:19"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span code-path="src/sections/Footer.tsx:190:19" class="text-white/45 text-xs">N4, Immeuble, 38 Rue Tariq Bnou Ziad, Marrakech 40000</span></div></div></div></div><div code-path="src/sections/Footer.tsx:197:11" class="f-bottom border-t border-white/[0.04] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-white/20 text-xs" ><p code-path="src/sections/Footer.tsx:198:13">© 2025 RoamMorocco.tours | Privacy Policy</p><p code-path="src/sections/Footer.tsx:199:13">Crafted with passion for the Kingdom of Morocco</p></div></div></div><style code-path="src/sections/Footer.tsx:203:7">
-        @media (max-width: 768px) {
-          .footer-grid {
-            grid-template-columns: 1fr 1fr !important;
-            column-gap: 32px !important;
-            row-gap: 56px !important;
-          }
-
-          .footer-connect {
-            grid-column: 1 / -1;
-            width: 100% !important;
-            max-width: 100% !important;
-            overflow: hidden;
-          }
-
-          .footer-socials {
-            justify-content: flex-start !important;
-            gap: 22px !important;
-            margin-bottom: 28px !important;
-          }
-
-          .footer-contact {
-            width: 100% !important;
-            max-width: 100% !important;
-          }
-
-          .footer-contact-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            max-width: 100%;
-          }
-
-          .footer-contact-item span {
-            max-width: 100%;
-            overflow-wrap: anywhere;
-            word-break: break-word;
-            line-height: 1.5;
-          }
-        }
-      </style></footer></div></div>
-</div></div>
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+  <footer id="contact">
+    <div class="footer-wrap">
+      <div class="footer-header-row">
+        <div class="footer-contact-block">
+          <p class="footer-tagline">Let's feel Morocco together</p>
+          <a href="mailto:hello@roammoroccotours.com" class="footer-email-link">hello@roammoroccotours.com</a>
+        </div>
+        <div class="footer-nav-columns">
+          <div class="footer-col">
+            <span class="footer-col-title">Connect On</span>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour." target="_blank" rel="noopener">WhatsApp</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://x.com" target="_blank" rel="noopener">X</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- BRAND FOOTER LOGO IMAGE (MATCHING HOMEPAGE) -->
+      <div class="footer-giant-brand">
+        <img src="../img/roam-morocco-tours-footer-logo.png" alt="Roam Morocco Tours" class="footer-logo-img">
+      </div>
+      
+      <!-- LEGAL BOTTOM BAR DIRECTLY UNDER LOGO IMAGE -->
+      <div class="footer-bottom-bar">
+        <div class="footer-legal">
+          <span>© 2026 Roam Morocco Tours. All Rights Reserved.</span>
+          <a href="../terms-conditions.html">Terms of Service</a>
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../refund-policy.html">Refund Policy</a>
+          <a href="../travel-policy.html">Travel Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var menuBtn = document.getElementById('mobile-menu-btn');
-    var dropdown = document.getElementById('mobile-dropdown');
-    if (menuBtn && dropdown) {
-      menuBtn.addEventListener('click', function() {
-        var isOpen = dropdown.classList.contains('open');
-        if (isOpen) {
-          dropdown.classList.remove('open');
-          menuBtn.classList.remove('active');
-        } else {
-          dropdown.classList.add('open');
-          menuBtn.classList.add('active');
-        }
-      });
-    }
-  });
-</script>
+
   <script src="../js/trip-concierge.js" defer></script>
+  <script src="../js/roam-nav.js" defer></script>
 </body>
 </html>
