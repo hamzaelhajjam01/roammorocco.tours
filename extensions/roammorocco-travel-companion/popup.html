@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roam Morocco Travel Companion</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="extension-container">
+    <!-- Header -->
+    <header class="ext-header">
+      <div class="ext-brand">
+        <img src="icons/icon32.png" alt="Roam Morocco" class="ext-logo">
+        <div class="ext-brand-text">
+          <span class="ext-title">ROAM MOROCCO</span>
+          <span class="ext-subtitle">TRAVEL COMPANION // MARRAKECH</span>
+        </div>
+      </div>
+      <a href="https://roammorocco.tours/" target="_blank" class="ext-badge-link" title="Visit Roam Morocco Official Website">
+        <span class="ext-badge-dot"></span>
+        <span>VISIT SITE</span>
+      </a>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="ext-tabs">
+      <button class="ext-tab-btn active" data-tab="currency">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        <span>Dirham (MAD)</span>
+      </button>
+      <button class="ext-tab-btn" data-tab="tipping">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 12V8H6a2 2 0 01-2-2c0-1.1.9-2 2-2h12v4"/><path d="M4 6v12a2 2 0 002 2h14v-4"/><circle cx="14" cy="12" r="2"/></svg>
+        <span>Tips & Souks</span>
+      </button>
+      <button class="ext-tab-btn" data-tab="guides">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        <span>Trip Guides</span>
+      </button>
+    </nav>
+
+    <!-- Tab 1: Currency Converter -->
+    <main class="ext-content">
+      <section id="tab-currency" class="ext-tab-panel active">
+        <div class="ext-card">
+          <div class="input-group">
+            <div class="input-header">
+              <label for="foreignAmount">Foreign Currency</label>
+              <select id="currencySelect" class="currency-select">
+                <option value="USD" selected>USD ($) — US Dollar</option>
+                <option value="EUR">EUR (€) — Euro</option>
+                <option value="GBP">GBP (£) — British Pound</option>
+                <option value="CAD">CAD ($) — Canadian Dollar</option>
+                <option value="AUD">AUD ($) — Australian Dollar</option>
+                <option value="CHF">CHF (Fr) — Swiss Franc</option>
+              </select>
+            </div>
+            <div class="input-field-wrap">
+              <span class="currency-symbol" id="foreignSymbol">$</span>
+              <input type="number" id="foreignAmount" value="50" min="0" step="any" placeholder="0.00">
+            </div>
+          </div>
+
+          <div class="swap-divider">
+            <button id="swapBtn" class="swap-btn" title="Swap Conversion Direction">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 16V4M7 4L3 8M7 4l4 4M17 8v12M17 20l4-4M17 20l-4-4"/></svg>
+            </button>
+            <span class="rate-indicator" id="rateDisplay">1 USD ≈ 9.95 MAD</span>
+          </div>
+
+          <div class="input-group">
+            <div class="input-header">
+              <label for="madAmount">Moroccan Dirham (MAD)</label>
+              <span class="mad-badge">د.م. MOROCCO</span>
+            </div>
+            <div class="input-field-wrap">
+              <span class="currency-symbol">MAD</span>
+              <input type="number" id="madAmount" min="0" step="any" placeholder="0.00">
+            </div>
+          </div>
+
+          <!-- Quick Presets -->
+          <div class="presets-row">
+            <span class="presets-label">Quick:</span>
+            <button class="preset-btn" data-val="10">$10</button>
+            <button class="preset-btn" data-val="25">$25</button>
+            <button class="preset-btn" data-val="50">$50</button>
+            <button class="preset-btn" data-val="100">$100</button>
+            <button class="preset-btn" data-val="250">$250</button>
+          </div>
+        </div>
+
+        <div class="info-callout">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <span>Offline ready. Benchmark market exchange rate.</span>
+        </div>
+      </section>
+
+      <!-- Tab 2: Tipping & Souks -->
+      <section id="tab-tipping" class="ext-tab-panel">
+        <div class="ext-card">
+          <div class="tip-calc-header">
+            <span class="section-tag">CALCULATOR</span>
+            <span class="section-title">Moroccan Tipping Guide</span>
+          </div>
+
+          <div class="tip-selector">
+            <button class="tip-option active" data-tip="restaurant">
+              <span class="tip-name">Cafe / Dining</span>
+              <span class="tip-rate">10%</span>
+            </button>
+            <button class="tip-option" data-tip="luggage">
+              <span class="tip-name">Riad Luggage</span>
+              <span class="tip-rate">20 MAD</span>
+            </button>
+            <button class="tip-option" data-tip="driver">
+              <span class="tip-name">Private Driver</span>
+              <span class="tip-rate">150–200/day</span>
+            </button>
+          </div>
+
+          <div id="tipCalcBox" class="tip-calc-box">
+            <label for="billInput" class="small-label">Bill / Total in Dirhams (MAD):</label>
+            <div class="input-field-wrap small">
+              <span class="currency-symbol">MAD</span>
+              <input type="number" id="billInput" value="300" placeholder="0">
+            </div>
+            <div class="tip-result">
+              <span>Suggested Tip:</span>
+              <strong id="tipResultAmount">30 MAD</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="ext-card rules-card">
+          <div class="rules-header">
+            <span class="section-tag">ETIQUETTE</span>
+            <span class="section-title">Medina Bargaining Rules</span>
+          </div>
+          <ul class="rules-list">
+            <li>
+              <strong>Offer 50% First:</strong> In medina souks, vendors usually quote 40–50% above fair value. Offer half and meet in the middle.
+            </li>
+            <li>
+              <strong>Keep Small Cash:</strong> Vendors often don't have change for 200 MAD notes. Carry 20, 50, and 100 MAD bills.
+            </li>
+            <li>
+              <strong>Walk Away Politely:</strong> If a price feels too high, smile, say <em>"Shukran"</em> (thank you), and walk away. They will often call you back with the real price!
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Tab 3: Trip Guides & Shortcuts -->
+      <section id="tab-guides" class="ext-tab-panel">
+        <div class="links-list">
+          <a href="https://roammorocco.tours/custom-morocco-tour.html" target="_blank" class="guide-link-card featured">
+            <div class="guide-badge">FEATURED // PRIVATE TOURS</div>
+            <div class="guide-title">Design Your Custom Morocco Tour ➔</div>
+            <div class="guide-desc">Private English-speaking driver, luxury 4x4, bespoke Sahara camps, and curated riads.</div>
+          </a>
+
+          <a href="https://roammorocco.tours/blog/sahara-desert-tour-merzouga-vs-zagora.html" target="_blank" class="guide-link-card">
+            <div class="guide-badge">EXPEDITION INTEL</div>
+            <div class="guide-title">Merzouga vs. Zagora Desert Guide ➔</div>
+            <div class="guide-desc">Dune height, drive times from Marrakech, and luxury camp comparisons.</div>
+          </a>
+
+          <a href="https://roammorocco.tours/blog/morocco-private-driver-cost.html" target="_blank" class="guide-link-card">
+            <div class="guide-badge">2026 PRICING</div>
+            <div class="guide-title">Morocco Private Driver Cost Guide ➔</div>
+            <div class="guide-desc">Daily chauffeur rates, vehicle specs, fuel, tolls, and tipping benchmarks.</div>
+          </a>
+
+          <a href="https://roammorocco.tours/blog/morocco-10-day-itinerary.html" target="_blank" class="guide-link-card">
+            <div class="guide-badge">ROUTE MAP</div>
+            <div class="guide-title">Ultimate 10-Day Morocco Itinerary ➔</div>
+            <div class="guide-desc">Casablanca, Chefchaouen, Fes, Merzouga, and Marrakech route.</div>
+          </a>
+
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20using%20your%20companion%20extension%20and%20would%20like%20to%20ask%20a%20travel%20question." target="_blank" class="guide-wa-btn">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2z"/></svg>
+            <span>Ask a Local Concierge on WhatsApp</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ext-footer">
+      <a href="https://roammorocco.tours/" target="_blank" class="footer-link">
+        <span>Roam Morocco Tours • Marrakech</span>
+        <span class="footer-arrow">roammorocco.tours ↗</span>
+      </a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
