@@ -207,16 +207,22 @@
   gap: 10px;
   padding: 10px 22px;
   min-height: 52px;
-  background: #fff !important;
-  color: #000 !important;
+  background: var(--glass-bg-dark) !important;
+  color: #ffffff !important;
   font-size: 12px;
-  font-weight: 900;
-  border: none !important;
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25) !important;
+  font-weight: 700;
+  border: var(--glass-border-dark) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.32) !important;
+  backdrop-filter: var(--glass-blur-strong);
+  -webkit-backdrop-filter: var(--glass-blur-strong);
+  border-radius: 9999px !important;
   text-decoration: none !important;
+  transition: all .3s cubic-bezier(.16,1,.3,1) !important;
 }
 .top.at-bottom .latest:hover {
-  background: #f0f0f0 !important;
+  background: rgba(28, 28, 28, 0.98) !important;
+  border-color: rgba(200, 164, 92, 0.45) !important;
+  color: #ffffff !important;
   transform: translateY(-2px) !important;
 }
 
@@ -245,49 +251,93 @@
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
   }
   .top.at-bottom .burger-btn svg { stroke: #fff !important; }
-  .top.at-bottom .navbox,
-  .top.at-bottom .latest,
+  
+  /* Two-column mobile layout: Menu on left, Arrow & Plan Trip on right */
+  .top.at-top .latest,
+  .top.at-bottom .latest {
+    display: none !important;
+  }
+  
+  .top.at-bottom .navbox {
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+    box-sizing: border-box !important;
+    gap: 8px !important;
+    padding: 0 14px !important;
+    border-radius: 9999px !important;
+    white-space: nowrap !important;
+  }
   .top.at-bottom .back-top-btn {
-    height: 48px !important;
-    min-height: 48px !important;
-    max-height: 48px !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+    max-width: 46px !important;
+    max-height: 46px !important;
+    border-radius: 50% !important;
     box-sizing: border-box !important;
   }
-  .top.at-bottom .back-top-btn {
-    width: 48px !important;
-    min-width: 48px !important;
-    max-width: 48px !important;
-  }
-  .top.at-top, .top.at-bottom {
+  .top.at-top {
     left: 16px !important;
     right: 16px !important;
+    top: 50px !important;
+    bottom: auto !important;
     transform: none !important;
     width: auto !important;
+    display: flex !important;
     justify-content: space-between !important;
+    box-sizing: border-box !important;
   }
-  .top.at-top { top: 16px !important; bottom: auto !important; }
-  .top.at-bottom { bottom: 16px !important; top: auto !important; }
+  .top.at-top .navbox {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
+    padding: 0 16px 0 18px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    border-radius: 9999px !important;
+  }
+  .top.at-bottom {
+    left: 16px !important;
+    right: 16px !important;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px)) !important;
+    top: auto !important;
+    transform: none !important;
+    width: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    z-index: 200 !important;
+  }
   nav.desktop-nav { display: none !important; }
-  .navbox { gap: 12px; padding: 8px 14px; min-height: 48px; }
-  .latest { min-height: 48px; padding: 0 18px; font-size: 11px; }
+  .top.at-bottom .navbox { gap: 8px !important; padding: 0 14px !important; min-height: 46px !important; border-radius: 9999px !important; white-space: nowrap !important; }
+  .mobile-nav-drawer {
+    bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
+    left: 16px !important;
+    right: 16px !important;
+  }
 }
 
 .dot {
-  width: 6px;
-  height: 6px;
-  background: var(--red);
+  width: 7px;
+  height: 7px;
+  background: #C8A45C !important;
   border-radius: 50% !important;
   display: inline-block;
-  animation: blink 1.2s infinite;
+  box-shadow: 0 0 8px rgba(200, 164, 92, 0.8), 0 0 14px rgba(200, 164, 92, 0.4) !important;
+  animation: blink-gold 1.5s infinite;
 }
-@keyframes blink { 50% { opacity: .22; transform: scale(.72); } }
+@keyframes blink-gold { 50% { opacity: .28; transform: scale(.7); box-shadow: 0 0 4px rgba(200, 164, 92, 0.4); } }
 
 /* Back To Top Button */
 .back-top-btn {
   pointer-events: auto;
   width: 52px;
   height: 52px;
-  border-radius: 18px !important;
+  border-radius: 50% !important;
   background: rgba(18, 18, 18, 0.92);
   backdrop-filter: var(--glass-blur-strong);
   -webkit-backdrop-filter: var(--glass-blur-strong);
@@ -907,41 +957,98 @@ a.roam-toolkit-link:hover span {
 }
 
 .roam-tour-cta-box {
-  background: #ffffff !important;
-  border: 1px solid rgba(0, 0, 0, 0.14) !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(200, 164, 92, 0.45) !important;
   padding: 48px 36px !important;
   margin-top: 60px !important;
+  margin-bottom: 60px !important;
   text-align: center !important;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 0 24px rgba(200, 164, 92, 0.12) !important;
+}
+
+.roam-tour-cta-kicker {
+  display: inline-block !important;
+  font-family: "Courier New", monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .14em !important;
+  color: var(--gold, #C8A45C) !important;
+  margin-bottom: 12px !important;
 }
 
 .roam-tour-cta-title {
-  font-family: Helvetica, Arial, sans-serif !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
   font-size: clamp(24px, 3.2vw, 36px) !important;
-  font-weight: 800 !important;
-  letter-spacing: -.045em !important;
-  text-transform: uppercase !important;
-  color: #000000 !important;
+  font-weight: 700 !important;
+  letter-spacing: -.01em !important;
+  text-transform: none !important;
+  color: #ffffff !important;
   margin: 0 0 14px !important;
 }
 
 .roam-tour-cta-desc {
-  font-family: Georgia, serif !important;
-  font-size: 18px !important;
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-size: 16.5px !important;
   line-height: 1.65 !important;
-  color: rgba(0, 0, 0, 0.76) !important;
-  max-width: 650px !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  max-width: 680px !important;
   margin: 0 auto 28px !important;
 }
 
 /* ── EDITORIAL TABLES ── */
-.roam-article-body table,
-.roam-tour-main table {
+.table-container,
+.roam-table-wrapper {
   width: 100% !important;
-  border-collapse: collapse !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
   margin: 32px 0 !important;
-  background: #ffffff !important;
   border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+  display: block !important;
+}
+
+.table-container::-webkit-scrollbar,
+.roam-table-wrapper::-webkit-scrollbar {
+  height: 6px !important;
+}
+.table-container::-webkit-scrollbar-track,
+.roam-table-wrapper::-webkit-scrollbar-track {
+  background: #f4f1ea !important;
+  border-radius: 9999px !important;
+}
+.table-container::-webkit-scrollbar-thumb,
+.roam-table-wrapper::-webkit-scrollbar-thumb {
+  background: #c8a45c !important;
+  border-radius: 9999px !important;
+}
+
+.roam-article-body table,
+.roam-tour-main table,
+.table-container table,
+.roam-table-wrapper table {
+  width: 100% !important;
+  min-width: 580px !important;
+  border-collapse: collapse !important;
+  margin: 0 !important;
+  background: #ffffff !important;
+  border: none !important;
+}
+
+/* Fallback if a table has no wrapper container */
+.roam-article-body > table,
+.roam-tour-main > table {
+  display: block !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 12px !important;
+  margin: 32px 0 !important;
 }
 
 .roam-article-body th,
@@ -1000,3 +1107,13 @@ a.roam-toolkit-link:hover span {
 .roam-tour-main [class*="bg-white/"] {
   background: #ffffff !important;
 }
+
+/* Mobile bottom clearance to avoid floating elements overlapping content */
+@media (max-width: 850px) {
+  main.roam-article-main,
+  .article-wrap,
+  .page-container {
+    padding-bottom: 120px !important;
+  }
+}
+

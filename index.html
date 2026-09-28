@@ -74,6 +74,7 @@
 
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
@@ -380,19 +381,23 @@
       gap:10px;
       padding:10px 22px;
       min-height:52px;
-      background:#fff!important;
-      color:#000!important;
+      background:var(--glass-bg-dark)!important;
+      color:#ffffff!important;
       font-size:12px;
-      font-weight:900;
-      border:none!important;
-      box-shadow:0 12px 36px rgba(0,0,0,0.25)!important;
-      border-radius:0!important;
+      font-weight:700;
+      border:var(--glass-border-dark)!important;
+      box-shadow:0 16px 48px rgba(0,0,0,0.32)!important;
+      backdrop-filter:var(--glass-blur-strong);
+      -webkit-backdrop-filter:var(--glass-blur-strong);
+      border-radius:9999px!important;
       text-decoration:none!important;
+      transition:all .3s cubic-bezier(.16,1,.3,1)!important;
     }
     .top.at-bottom .latest:hover{
-      background:#f0f0f0!important;
+      background:rgba(28,28,28,0.98)!important;
+      border-color:rgba(200,164,92,0.45)!important;
+      color:#ffffff!important;
       transform:translateY(-2px)!important;
-      color:#000!important;
     }
 
     .burger-btn{
@@ -429,15 +434,16 @@
       .top.at-bottom .navbox,
       .top.at-bottom .latest,
       .top.at-bottom .back-top-btn {
-        height:48px!important;
-        min-height:48px!important;
-        max-height:48px!important;
+        height:44px!important;
+        min-height:44px!important;
+        max-height:44px!important;
         box-sizing:border-box!important;
       }
       .top.at-bottom .back-top-btn {
-        width:48px!important;
-        min-width:48px!important;
-        max-width:48px!important;
+        width:44px!important;
+        min-width:44px!important;
+        max-width:44px!important;
+        border-radius:50%!important;
       }
     }
 
@@ -446,7 +452,7 @@
       pointer-events:auto;
       width:52px;
       height:52px;
-      border-radius:18px;
+      border-radius:50%!important;
       background:rgba(18,18,18,0.92);
       backdrop-filter:blur(30px) saturate(1.8);
       -webkit-backdrop-filter:blur(30px) saturate(1.8);
@@ -480,10 +486,10 @@
 
     .mobile-nav-drawer{
       position:fixed;
-      bottom:84px;
+      bottom:calc(68px + env(safe-area-inset-bottom, 0px))!important;
       top:auto;
-      left:16px;
-      right:16px;
+      left:12px!important;
+      right:12px!important;
       z-index:190;
       background:rgba(18,18,18,0.95);
       backdrop-filter:blur(40px);
@@ -501,22 +507,40 @@
     .mobile-drawer-inner{display:flex;flex-direction:column;gap:12px}
     .mobile-drawer-inner a{color:#fff;font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:12px 18px;border-radius:9999px;background:rgba(255,255,255,0.08)}
     @media (max-width:900px){
-      .top.at-top,.top.at-bottom{
+      .top.at-top .latest,
+      .top.at-bottom .latest{
+        display:none!important;
+      }
+      .top.at-top{
         left:16px!important;
         right:16px!important;
+        top:16px!important;
+        bottom:auto!important;
         transform:none!important;
         width:auto!important;
         justify-content:space-between!important;
       }
-      .top.at-top{top:16px!important;bottom:auto!important}
-      .top.at-bottom{bottom:16px!important;top:auto!important}
+      .top.at-bottom{
+        left:16px!important;
+        right:16px!important;
+        bottom:calc(16px + env(safe-area-inset-bottom, 0px))!important;
+        top:auto!important;
+        transform:none!important;
+        width:auto!important;
+        display:flex!important;
+        align-items:center!important;
+        justify-content:space-between!important;
+        z-index:200!important;
+      }
       .top.hide-during-video{transform:translateY(100px)!important}
       nav.desktop-nav{display:none!important}
       .burger-btn{display:inline-flex!important}
-      .navbox{gap:12px;padding:8px 14px;min-height:48px}
-      .latest{min-height:48px;padding:0 18px;font-size:11px}
+      .navbox{gap:8px!important;padding:0 14px!important;min-height:46px!important;height:46px!important;border-radius:9999px!important;white-space:nowrap!important;}
+      .top.at-bottom .back-top-btn{width:46px!important;height:46px!important;min-width:46px!important;min-height:46px!important;max-width:46px!important;max-height:46px!important;border-radius:50%!important;}
+      .mobile-nav-drawer{bottom:calc(72px + env(safe-area-inset-bottom, 0px))!important;left:16px!important;right:16px!important;}
     }
-    .dot{width:6px;height:6px;background:var(--red);border-radius:50%;display:inline-block;animation:blink 1.2s infinite}
+    .dot{width:7px;height:7px;background:#C8A45C!important;border-radius:50%!important;display:inline-block;box-shadow:0 0 8px rgba(200,164,92,0.8),0 0 14px rgba(200,164,92,0.4)!important;animation:blink-gold 1.5s infinite}
+    @keyframes blink-gold{50%{opacity:.28;transform:scale(.7);box-shadow:0 0 4px rgba(200,164,92,0.4);}}
     @keyframes blink{50%{opacity:.22;transform:scale(.72)}}
     .hero{min-height:auto;padding:120px 48px 48px;display:flex;flex-direction:column;gap:16px;position:relative;background:var(--white);overflow:hidden;z-index:1}
     .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;padding-top:0;will-change:transform}
@@ -1018,34 +1042,11 @@
         overflow-x: clip !important;
         max-width: 100vw;
       }
-      .top{
-        left:10px!important;
-        right:10px!important;
-        transition:transform .42s cubic-bezier(.16,1,.3,1),opacity .35s ease!important;
-      }
-      .top.at-top{
-        top:48px!important;
-        left:10px!important;
-        right:10px!important;
-      }
-      .top.at-bottom{
-        bottom:16px!important;
-        top:auto!important;
-        left:10px!important;
-        right:10px!important;
-      }
       .top.hide-mobile-header{
         transform:translateY(-140%)!important;
         opacity:0!important;
         pointer-events:none!important;
       }
-      .navbox{display:flex!important;gap:6px!important;padding:5px 10px!important;min-height:44px!important;justify-content:space-between!important;width:100%!important;}
-      .wordmark{display:flex!important;align-items:center!important;}
-      .wordmark img{height:26px!important;}
-      .burger-btn{display:none!important;}
-      nav.desktop-nav{display:flex!important;gap:6px!important;}
-      nav.desktop-nav a{font-size:11px!important;letter-spacing:.02em!important;padding:4px 8px!important;}
-      .latest{display:none!important;}
 
       .hero{padding:84px 16px 8px!important}
       .hero-grid{display:flex;flex-direction:column;gap:4px;padding-top:8px}
@@ -1414,7 +1415,7 @@
         document.head.appendChild(script);
     })();
   </script>
-  <link rel="stylesheet" href="css/trip-concierge.css">
+  <link rel="stylesheet" href="css/trip-concierge.css?v=20260928_gold2">
   <link rel="stylesheet" href="css/roam-theme.css?v=20260926e">
 </head>
 <body>
@@ -1695,20 +1696,20 @@
         </aside>
         <div class="news-list">
           <a href="./blog/best-time-to-visit-sahara-morocco.html" class="news-entry">
-            <div class="news-media"><img src="img/marrakech.webp" alt="Best time to visit Morocco travel guide" loading="lazy" decoding="async"></div>
-            <div class="news-entry-copy"><div class="news-entry-meta"><span>Travel Planning</span><span class="news-date">Roam Journal</span></div><strong>Best Time to Visit Morocco: Spring & Autumn Guide</strong></div>
+            <div class="news-media"><img src="images/sahara_camp.webp" alt="Best time to visit Sahara Morocco luxury camp" loading="lazy" decoding="async"></div>
+            <div class="news-entry-copy"><div class="news-entry-meta"><span>Travel Planning</span><span class="news-date">Roam Journal</span></div><strong>Best Time to Visit Sahara Morocco: Seasonal Guide</strong></div>
           </a>
           <a href="./blog/is-morocco-safe-for-tourists.html" class="news-entry">
-            <div class="news-media"><img src="img/hero-desert.jpg" alt="Sahara desert luxury camping guide" loading="lazy" decoding="async"></div>
-            <div class="news-entry-copy"><div class="news-entry-meta"><span>Sahara Guide</span><span class="news-date">Roam Journal</span></div><strong>Private Sahara Desert Camping: What to Expect Under the Stars</strong></div>
+            <div class="news-media"><img src="images/morocco_safety_hero.webp" alt="Is Morocco safe for tourists travel guide" loading="lazy" decoding="async"></div>
+            <div class="news-entry-copy"><div class="news-entry-meta"><span>Safety Guide</span><span class="news-date">Roam Journal</span></div><strong>Is Morocco Safe for Tourists? 2026 Travel Safety Reality</strong></div>
           </a>
           <a href="./blog/what-to-wear-in-morocco.html" class="news-entry">
-            <div class="news-media"><img src="img/dest-chefchaouen.jpg" alt="What to wear in Morocco etiquette guide" loading="lazy" decoding="async"></div>
-            <div class="news-entry-copy"><div class="news-entry-meta"><span>Cultural Tips</span><span class="news-date">Roam Journal</span></div><strong>What to Wear in Morocco: Etiquette & Essential Tips for Travelers</strong></div>
+            <div class="news-media"><img src="images/morocco_packing_hero.webp" alt="What to wear in Morocco etiquette guide" loading="lazy" decoding="async"></div>
+            <div class="news-entry-copy"><div class="news-entry-meta"><span>Cultural Tips</span><span class="news-date">Roam Journal</span></div><strong>What to Wear in Morocco: Etiquette &amp; Packing Tips</strong></div>
           </a>
           <a href="./blog/morocco-10-day-itinerary.html" class="news-entry">
-            <div class="news-media"><img src="img/carlos-leret-kiYzznir-uo-unsplash.jpg" alt="Marrakech to Fes 10-day overland itinerary" loading="lazy" decoding="async"></div>
-            <div class="news-entry-copy"><div class="news-entry-meta"><span>Itineraries</span><span class="news-date">Roam Journal</span></div><strong>Marrakech to Fes: The Ultimate 3-Day Sahara Overland Route</strong></div>
+            <div class="news-media"><img src="images/morocco_10_day_hero.webp" alt="Marrakech to Fes 10-day overland itinerary" loading="lazy" decoding="async"></div>
+            <div class="news-entry-copy"><div class="news-entry-meta"><span>Itineraries</span><span class="news-date">Roam Journal</span></div><strong>The Ultimate 10-Day Morocco Itinerary: Grand Circuit</strong></div>
           </a>
         </div>
       </div>
@@ -2488,6 +2489,6 @@
       }
     })();
   </script>
-  <script src="js/trip-concierge.js" defer></script>
+  <script src="js/trip-concierge.js?v=20260928_gold2" defer></script>
 </body>
 </html>

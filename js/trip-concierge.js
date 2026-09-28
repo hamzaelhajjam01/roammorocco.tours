@@ -20,31 +20,40 @@
   function initWidget() {
     if (document.getElementById('rm-concierge-root')) return;
 
+    // Ensure trip-concierge.css is loaded dynamically if missing
+    const isSub = window.location.pathname.includes('/blog/');
+    const cssHref = isSub ? '../css/trip-concierge.css?v=20260928_plantrip' : 'css/trip-concierge.css?v=20260928_plantrip';
+    if (!document.querySelector('link[href*="trip-concierge.css"]')) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = cssHref;
+      document.head.appendChild(link);
+    }
+
     const root = document.createElement('div');
     root.id = 'rm-concierge-root';
     root.innerHTML = `
-      <!-- Floating Trigger Button -->
-      <div class="rm-concierge-trigger" id="rm-trigger-btn" aria-label="Open Trip Concierge">
-        <div class="rm-trigger-avatar">
-          <span>✨</span>
-          <span class="rm-trigger-pulse"></span>
-        </div>
-        <div class="rm-trigger-text">
-          <span class="rm-trigger-title">Plan Your Trip</span>
-          <span class="rm-trigger-sub">Morocco & Global Deals</span>
-        </div>
-      </div>
+      <!-- Luxury Edge Tab: Plan a Trip Trigger (Pinned Right-Center) -->
+      <button class="rm-concierge-trigger" id="rm-trigger-btn" type="button" aria-label="Plan a Trip" title="Plan a Trip">
+        <span class="rm-trigger-label">Plan a Trip</span>
+        <span class="rm-trigger-dot" aria-hidden="true"></span>
+      </button>
 
       <!-- Chatbot Modal -->
       <div class="rm-concierge-modal" id="rm-modal" role="dialog" aria-hidden="true">
         <div class="rm-modal-header">
           <div class="rm-header-left">
-            <div class="rm-trigger-avatar" style="width:32px; height:32px; font-size:15px;">
-              <span>🐪</span>
+            <div class="rm-trigger-avatar" style="width:30px; height:30px; border-radius:50%; background:rgba(200,164,92,0.12); border:1px solid rgba(200,164,92,0.4); display:flex; align-items:center; justify-content:center;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#d4b76a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                <circle cx="8.5" cy="12" r="1" fill="#d4b76a"></circle>
+                <circle cx="12" cy="12" r="1" fill="#d4b76a"></circle>
+                <circle cx="15.5" cy="12" r="1" fill="#d4b76a"></circle>
+              </svg>
             </div>
             <div class="rm-header-info">
-              <h4>Roam Morocco Concierge</h4>
-              <p>Online & Ready to Help</p>
+              <h4>ROAM AI CONCIERGE</h4>
+              <p>Marrakech Operations</p>
             </div>
           </div>
           <button class="rm-close-btn" id="rm-close-btn" aria-label="Close Concierge">✕</button>
@@ -72,28 +81,60 @@
     const resetBtn = document.getElementById('rm-reset-btn');
     const modal = document.getElementById('rm-modal');
 
-    triggerBtn.addEventListener('click', () => {
-      const isActive = modal.classList.contains('active');
-      if (isActive) {
-        modal.classList.remove('active');
-        modal.setAttribute('aria-hidden', 'true');
-      } else {
-        modal.classList.add('active');
-        modal.setAttribute('aria-hidden', 'false');
+    function openModal() {
+      if (!modal) return;
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+      if (triggerBtn) triggerBtn.classList.add('rm-hidden');
+    }
+
+    function closeModal() {
+      if (!modal) return;
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+      if (triggerBtn) triggerBtn.classList.remove('rm-hidden');
+    }
+
+    if (triggerBtn) {
+      triggerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openModal();
+      });
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        closeModal();
+      });
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+        closeModal();
       }
     });
 
-    closeBtn.addEventListener('click', () => {
-      modal.classList.remove('active');
-      modal.setAttribute('aria-hidden', 'true');
+    // Close on clicking outside modal
+    document.addEventListener('click', (e) => {
+      if (modal && modal.classList.contains('active') && !modal.contains(e.target) && triggerBtn && !triggerBtn.contains(e.target)) {
+        closeModal();
+      }
     });
 
-    resetBtn.addEventListener('click', () => {
-      tripState = { mode: null, destinations: [], duration: '', style: '', group: '', worldDest: '' };
-      const stream = document.getElementById('rm-chat-stream');
-      stream.innerHTML = '';
-      renderWelcome();
-    });
+    // Global hooks
+    window.openTripConcierge = openModal;
+    window.closeTripConcierge = closeModal;
+
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        tripState = { mode: null, destinations: [], duration: '', style: '', group: '', worldDest: '' };
+        const stream = document.getElementById('rm-chat-stream');
+        if (stream) stream.innerHTML = '';
+        renderWelcome();
+      });
+    }
   }
 
   function addBotMessage(html) {
@@ -101,8 +142,8 @@
     const msg = document.createElement('div');
     msg.className = 'rm-bot-msg';
     msg.innerHTML = `
-      <div class="rm-trigger-avatar" style="width:28px; height:28px; font-size:13px; margin-top:2px;">
-        <span>🇲🇦</span>
+      <div class="rm-trigger-avatar" style="width:26px; height:26px; border-radius:50%; font-size:10px; font-weight:800; font-family:Helvetica,Arial,sans-serif; color:#d4b76a; background:rgba(200,164,92,0.12); border:1px solid rgba(200,164,92,0.35); display:flex; align-items:center; justify-content:center;">
+        RM
       </div>
       <div class="rm-msg-bubble">${html}</div>
     `;
@@ -126,11 +167,11 @@
       I'm your 24/7 personal travel concierge. What would you like to plan today?
       <div class="rm-options-grid">
         <button class="rm-chip-btn primary" data-action="mode-morocco">
-          <span>🇲🇦 <strong>Custom Morocco Tour</strong> (Private Driver & Guides)</span>
+          <span><strong>Custom Morocco Tour</strong> (Private Driver & Concierge)</span>
           <span>→</span>
         </button>
         <button class="rm-chip-btn" data-action="mode-worldwide">
-          <span>🌍 <strong>Worldwide Deals</strong> (Dubai, Paris, Bali, Flights)</span>
+          <span><strong>Travel Deals & Flights</strong> (Global Routes & Airfare)</span>
           <span>→</span>
         </button>
       </div>
@@ -142,25 +183,25 @@
   // MOROCCO FLOW: Step 2: Destinations
   function renderMoroccoDestinations() {
     tripState.mode = 'morocco';
-    addUserMessage("🇲🇦 Plan a Custom Morocco Tour with Private Driver");
+    addUserMessage("Plan a Custom Morocco Tour with Private Driver");
     setTimeout(() => {
       addBotMessage(`
-        Wonderful! Which places would you love to explore in Morocco?
+        Which landscapes or circuits would you like to experience?
         <div class="rm-options-grid">
           <button class="rm-chip-btn" data-dest="Sahara Desert & Erg Chebbi Dunes">
-            <span>🐫 Sahara Desert & Luxury Camp (Merzouga)</span>
+            <span>Sahara Desert & Luxury Camp (Merzouga)</span>
           </button>
           <button class="rm-chip-btn" data-dest="Marrakech & Imperial Cities (Fes, Rabat)">
-            <span>🏰 Imperial Cities (Marrakech, Fes, Rabat)</span>
+            <span>Imperial Cities (Marrakech, Fes, Rabat)</span>
           </button>
           <button class="rm-chip-btn" data-dest="High Atlas Mountains & Berber Villages">
-            <span>🏔️ High Atlas Mountains & Berber Villages</span>
+            <span>High Atlas Mountains & Berber Valleys</span>
           </button>
           <button class="rm-chip-btn" data-dest="Chefchaouen Blue City & North">
-            <span>💙 Chefchaouen Blue Pearl & Tangier</span>
+            <span>Chefchaouen Blue City & Tangier</span>
           </button>
           <button class="rm-chip-btn primary" data-dest="Complete Grand Morocco Circuit">
-            <span>✨ Complete Grand Morocco Circuit (All Highlights)</span>
+            <span>Grand Morocco Circuit (Complete Route)</span>
           </button>
         </div>
       `);
@@ -174,16 +215,16 @@
     addUserMessage(selectedDest);
     setTimeout(() => {
       addBotMessage(`
-        Excellent choice! How many days are you planning for your Morocco journey?
+        Excellent choice. How many days are you planning for your Morocco journey?
         <div class="rm-options-grid">
           <button class="rm-chip-btn" data-dur="3 to 5 Days (Quick Highlight)">
-            <span>⏱️ 3 to 5 Days (Short Gateway)</span>
+            <span>3 to 5 Days (Short Gateway)</span>
           </button>
           <button class="rm-chip-btn primary" data-dur="7 to 10 Days (The Sweet Spot)">
-            <span>⭐ 7 to 10 Days (Recommended for Sahara)</span>
+            <span>7 to 10 Days (Recommended for Sahara)</span>
           </button>
           <button class="rm-chip-btn" data-dur="12 to 14+ Days (Grand Circuit)">
-            <span>🗺️ 12 to 14+ Days (In-Depth Grand Tour)</span>
+            <span>12 to 14+ Days (In-Depth Grand Tour)</span>
           </button>
         </div>
       `);
@@ -197,19 +238,19 @@
     addUserMessage(selectedDur);
     setTimeout(() => {
       addBotMessage(`
-        Got it! What style of accommodation and travel do you prefer?
+        Understood. What style of accommodation and travel do you prefer?
         <div class="rm-options-grid">
           <button class="rm-chip-btn primary" data-style="Luxury Riads & 5-Star Glamping">
-            <span>✨ Luxury Riads & 5-Star Desert Glamping</span>
+            <span>Luxury Riads & 5-Star Desert Glamping</span>
           </button>
           <button class="rm-chip-btn" data-style="Authentic Boutique & Cultural">
-            <span>🏺 Authentic Boutique & Cultural Riads</span>
+            <span>Authentic Boutique & Historic Riads</span>
           </button>
           <button class="rm-chip-btn" data-style="Family-Friendly & Relaxed">
-            <span>👨‍👩‍👧 Family-Friendly & Relaxed Pace</span>
+            <span>Family-Friendly & Relaxed Pace</span>
           </button>
           <button class="rm-chip-btn" data-style="Active Trekking & Adventure">
-            <span>🥾 Active Trekking & Quad Adventure</span>
+            <span>Active Trekking & Sahara Expedition</span>
           </button>
         </div>
       `);
@@ -373,10 +414,27 @@
     });
   }
 
+  // Auto-wrap editorial tables in responsive scroll container
+  function makeTablesScrollable() {
+    document.querySelectorAll('.roam-article-body table, .roam-tour-main table, .article-content table, article table, main table').forEach(tbl => {
+      if (!tbl.closest('.table-container') && !tbl.closest('.roam-table-wrapper')) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'table-container';
+        tbl.parentNode.insertBefore(wrapper, tbl);
+        wrapper.appendChild(tbl);
+      }
+    });
+  }
+
   // Initialize on DOM load
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initWidget);
-  } else {
+  function boot() {
     initWidget();
+    makeTablesScrollable();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
   }
 })();

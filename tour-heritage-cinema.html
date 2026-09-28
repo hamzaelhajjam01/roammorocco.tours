@@ -4,7 +4,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./images/Logos/roammorocco-favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
     <title>Heritage & Cinema Tour: Ait Benhaddou & Ouarzazate | RoamMorocco</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -88,11 +89,18 @@
             "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
           }
         ],
-        "founder": {
-          "@type": "Person",
-          "name": "RoamMorocco Local Experts",
-          "jobTitle": "Lead Guide & Founder"
-        },
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Hamza",
+            "jobTitle": "Co-Founder & Expedition Curator"
+          },
+          {
+            "@type": "Person",
+            "name": "Abdelhakim",
+            "jobTitle": "Co-Founder & Operations Lead"
+          }
+        ],
         "offers": {
           "@type": "Offer",
           "url": "https://roammorocco.tours/",
@@ -238,7 +246,7 @@
         document.head.appendChild(script);
     })();
   </script>
-  <link rel="stylesheet" href="css/trip-concierge.css">
+  <link rel="stylesheet" href="css/trip-concierge.css?v=20260928_gold2">
   <link rel="stylesheet" href="css/roam-theme.css?v=20260926e">
   <style>
     :root {
@@ -568,6 +576,42 @@
       color: #000000 !important;
       text-decoration: none !important;
     }
+
+    /* Human-Centered Storytelling: Bourdain Field Note Card */
+    .roam-field-note {
+      background: #faf8f5 !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      border-left: 3px solid var(--red, #f10b18) !important;
+      padding: 24px 28px !important;
+      margin: 24px 0 28px !important;
+    }
+    .roam-field-note-kicker {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: var(--red, #f10b18) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .12em !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    .roam-field-note-quote {
+      font-family: Georgia, serif !important;
+      font-style: italic !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.8) !important;
+      margin: 0 0 10px !important;
+    }
+    .roam-field-note-author {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: rgba(0, 0, 0, 0.55) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      margin: 0 !important;
+    }
   </style>
 </head>
 <body class="roam-light-theme" id="top">
@@ -694,18 +738,33 @@
         <span class="roam-day-badge">LEG 01 // 07:30 AM DEPARTURE</span>
         <h3 class="roam-itinerary-title">Crossing the High Atlas Mountains via Tizi n'Tichka</h3>
         <p class="roam-itinerary-desc">Your private driver picks you up from your Marrakech riad in a comfortable, climate-controlled 4x4 or executive Mercedes van. Ascend the twisting engineering marvel of the Tizi n'Tichka pass (2,260m). Stop for sweeping photos across deep valleys, dramatic gorges, and red-clay Berber hamlets clinging to the mountainsides.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Tizi n'Tichka Summit (2,260m)</span>
+          <p class="roam-field-note-quote">&ldquo;At the cold, windy pass where commercial minivans race past to shave twenty minutes off their drive, there is a stone shelter where Daoud bakes round khobz bread buried under hot olive charcoal. We stop. Daoud hands you bread so warm you have to toss it from hand to hand, paired with peppery unfiltered mountain olive oil. That single bite at two thousand meters explains why you take the high road.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Route Specialist</p>
+        </div>
       </div>
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">LEG 02 // MIDDAY EXPLORATION</span>
         <h3 class="roam-itinerary-title">Kasbah Ait Benhaddou UNESCO World Heritage Site</h3>
         <p class="roam-itinerary-desc">Cross the shallow Ounila River stepping-stones to enter Ait Benhaddou. With your private local expert, explore the ancient granary atop the hill, navigate the maze of earthen passageways, and admire the defensive towers that stood watch over historic desert merchants. Enjoy a panoramic lunch on a shaded terrace facing the fortress.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Inside the Upper Ksar</span>
+          <p class="roam-field-note-quote">&ldquo;Tour groups take three photos by the Roman arena set and turn back. But if you climb the mudbrick switchbacks to the upper granary where Mokhtar and just four families still live, Mokhtar paints desert scenes using saffron, tea, and cobalt indigo—then holds the paper over a gas flame so the sugar browns into golden caramel. The scent of scorched sugar, river mud, and baking sun is the true soul of this place.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Route Specialist</p>
+        </div>
       </div>
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">LEG 03 // AFTERNOON CINEMA</span>
         <h3 class="roam-itinerary-title">Ouarzazate: Atlas Film Studios &amp; Kasbah Taourirt</h3>
         <p class="roam-itinerary-desc">Drive 30 minutes south into Ouarzazate, the gateway to the Sahara. Tour the famous Atlas Film Studios where sets from Cleopatra, Kingdom of Heaven, and Gladiator stand preserved in the desert sun. Tour the labyrinthine chambers of Kasbah Taourirt before relaxing on your private evening drive back to Marrakech.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Atlas Studios Backlot</span>
+          <p class="roam-field-note-quote">&ldquo;Standing in front of a crumbling fiberglass Egyptian temple in the middle of the Moroccan desert should feel ridiculous, but it doesn&rsquo;t. You meet elders here who worked as extras for David Lean in 1962 and Ridley Scott in 2000. They speak four languages, have died on camera thirty times, and return home every night to irrigate date palms. Morocco holds cinema and antiquity in the very same hand.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Route Specialist</p>
+        </div>
       </div>
 
       <h2>Frequently Asked Questions: Ait Benhaddou &amp; Ouarzazate</h2>
@@ -799,7 +858,7 @@
 
 
 
-  <script src="js/trip-concierge.js" defer></script>
+  <script src="js/trip-concierge.js?v=20260928_gold2" defer></script>
   <script src="js/roam-nav.js" defer></script>
 </body>
 </html>

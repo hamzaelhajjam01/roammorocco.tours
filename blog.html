@@ -21,6 +21,7 @@
   <meta name="twitter:image" content="https://roammorocco.tours/img/hero-desert.jpg">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
@@ -98,8 +99,8 @@
     .top.at-bottom nav.desktop-nav{display:flex;gap:4px}
     .top.at-bottom nav.desktop-nav a{ font-size:12px; font-weight:700; letter-spacing:.01em; color:rgba(255,255,255,0.85); padding:8px 14px; border-radius:9999px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.08); transition:all .25s ease; }
     .top.at-bottom nav.desktop-nav a:hover, .top.at-bottom nav.desktop-nav a.active{ background:rgba(255,255,255,0.22); color:#fff; transform:translateY(-1px); }
-    .top.at-bottom .latest{ gap:10px; padding:10px 22px; min-height:52px; background:#fff!important; color:#000!important; font-size:12px; font-weight:900; border:none!important; box-shadow:0 12px 36px rgba(0,0,0,0.25)!important; border-radius:0!important; text-decoration:none!important; }
-    .top.at-bottom .latest:hover{ background:#f0f0f0!important; transform:translateY(-2px)!important; color:#000!important; }
+    .top.at-bottom .latest{ gap:10px; padding:10px 22px; min-height:52px; background:var(--glass-bg-dark)!important; color:#ffffff!important; font-size:12px; font-weight:700; border:var(--glass-border-dark)!important; box-shadow:0 16px 48px rgba(0,0,0,0.32)!important; border-radius:9999px!important; text-decoration:none!important; backdrop-filter:var(--glass-blur-strong); -webkit-backdrop-filter:var(--glass-blur-strong); transition:all .3s cubic-bezier(.16,1,.3,1)!important; }
+    .top.at-bottom .latest:hover{ background:rgba(28,28,28,0.98)!important; border-color:rgba(200,164,92,0.45)!important; transform:translateY(-2px)!important; color:#ffffff!important; }
 
     .burger-btn{ display:none!important; background:transparent!important; border:none!important; padding:6px!important; cursor:pointer!important; align-items:center!important; justify-content:center!important; border-radius:10px!important; transition:all .25s ease!important; }
     @media (max-width:900px){
@@ -108,26 +109,28 @@
       .top.at-top .burger-btn svg{ stroke:#000!important; }
       .top.at-bottom .burger-btn{ color:#fff!important; background:rgba(255,255,255,0.12)!important; border:1px solid rgba(255,255,255,0.18)!important; }
       .top.at-bottom .burger-btn svg{ stroke:#fff!important; }
-      .top.at-bottom .navbox, .top.at-bottom .latest, .top.at-bottom .back-top-btn { height:48px!important; min-height:48px!important; max-height:48px!important; box-sizing:border-box!important; }
-      .top.at-bottom .back-top-btn { width:48px!important; min-width:48px!important; max-width:48px!important; }
-      .top.at-top, .top.at-bottom{ left:16px!important; right:16px!important; transform:none!important; width:auto!important; justify-content:space-between!important; }
-      .top.at-top{top:16px!important;bottom:auto!important}
-      .top.at-bottom{bottom:16px!important;top:auto!important}
+      .top.at-top .latest,
+      .top.at-bottom .latest{
+        display:none!important;
+      }
+      .top.at-top{ left:16px!important; right:16px!important; top:16px!important; bottom:auto!important; transform:none!important; width:auto!important; justify-content:space-between!important; }
+      .top.at-bottom{ left:16px!important; right:16px!important; bottom:calc(16px + env(safe-area-inset-bottom, 0px))!important; top:auto!important; transform:none!important; width:auto!important; display:flex!important; align-items:center!important; justify-content:space-between!important; z-index:200!important; }
       nav.desktop-nav{display:none!important}
-      .navbox{gap:12px;padding:8px 14px;min-height:48px}
-      .latest{min-height:48px;padding:0 18px;font-size:11px}
+      .navbox{gap:8px!important;padding:0 14px!important;min-height:46px!important;height:46px!important;border-radius:9999px!important;white-space:nowrap!important;}
+      .top.at-bottom .back-top-btn{ width:46px!important; height:46px!important; min-width:46px!important; min-height:46px!important; max-width:46px!important; max-height:46px!important; border-radius:50%!important; }
+      .mobile-nav-drawer{ position:fixed; bottom:calc(72px + env(safe-area-inset-bottom, 0px))!important; top:auto; left:16px!important; right:16px!important; z-index:190; }
     }
-    .dot{width:6px;height:6px;background:var(--red);border-radius:50%;display:inline-block;animation:blink 1.2s infinite}
-    @keyframes blink{50%{opacity:.22;transform:scale(.72)}}
+    .dot{width:7px;height:7px;background:#C8A45C!important;border-radius:50%!important;display:inline-block;box-shadow:0 0 8px rgba(200,164,92,0.8),0 0 14px rgba(200,164,92,0.4)!important;animation:blink-gold 1.5s infinite}
+    @keyframes blink-gold{50%{opacity:.28;transform:scale(.7);box-shadow:0 0 4px rgba(200,164,92,0.4);}}
 
     /* Back To Top Button */
-    .back-top-btn{ pointer-events:auto; width:52px; height:52px; border-radius:18px; background:rgba(18,18,18,0.92); backdrop-filter:blur(30px) saturate(1.8); -webkit-backdrop-filter:blur(30px) saturate(1.8); border:1px solid rgba(255,255,255,0.16); box-shadow:0 12px 36px rgba(0,0,0,0.25); color:#fff; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; transition:all .3s cubic-bezier(.16,1,.3,1); }
+    .back-top-btn{ pointer-events:auto; width:52px; height:52px; border-radius:50%!important; background:rgba(18,18,18,0.92); backdrop-filter:blur(30px) saturate(1.8); -webkit-backdrop-filter:blur(30px) saturate(1.8); border:1px solid rgba(255,255,255,0.16); box-shadow:0 12px 36px rgba(0,0,0,0.25); color:#fff; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; transition:all .3s cubic-bezier(.16,1,.3,1); }
     .back-top-btn:hover{ background:#222; transform:translateY(-2px); box-shadow:0 16px 44px rgba(0,0,0,0.35); color:#fff; }
     .top.at-top .back-top-btn{ display:none!important; }
     .top.at-bottom .back-top-btn{ display:inline-flex!important; }
 
     /* Mobile Drawer */
-    .mobile-nav-drawer{ position:fixed; bottom:84px; top:auto; left:16px; right:16px; z-index:190; background:rgba(18,18,18,0.95); backdrop-filter:blur(40px); -webkit-backdrop-filter:blur(40px); border-radius:32px; padding:24px 20px; opacity:0; transform:translateY(20px) scale(.96); pointer-events:none; transition:opacity .3s ease,transform .3s ease; box-shadow:0 24px 60px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.18); }
+    .mobile-nav-drawer{ position:fixed; bottom:calc(68px + env(safe-area-inset-bottom, 0px))!important; top:auto; left:12px!important; right:12px!important; z-index:190; background:rgba(18,18,18,0.95); backdrop-filter:blur(40px); -webkit-backdrop-filter:blur(40px); border-radius:32px; padding:24px 20px; opacity:0; transform:translateY(20px) scale(.96); pointer-events:none; transition:opacity .3s ease,transform .3s ease; box-shadow:0 24px 60px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.18); }
     .mobile-nav-drawer.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
     .mobile-drawer-inner{display:flex;flex-direction:column;gap:12px}
     .mobile-drawer-inner a{color:#fff;font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:12px 18px;border-radius:9999px;background:rgba(255,255,255,0.08)}
@@ -151,7 +154,7 @@
       color: rgba(0,0,0,.54);
       margin-bottom: 24px;
     }
-    .section-badge::before { content:""; width:7px; height:7px; background:var(--red,#f10b18); }
+    .section-badge::before { content:""; width:7px; height:7px; background:#C8A45C; }
 
     .section-title {
       font-size: clamp(52px, 8vw, 118px);
@@ -290,7 +293,7 @@
         document.head.appendChild(script);
     })();
   </script>
-  <link rel="stylesheet" href="css/trip-concierge.css">
+  <link rel="stylesheet" href="css/trip-concierge.css?v=20260928_gold2">
   <link rel="stylesheet" href="css/roam-theme.css?v=20260926e">
 </head>
 <body id="top">
@@ -372,6 +375,48 @@
       <div class="blog-grid">
         <article class="blog-card reveal">
           <div class="blog-media">
+            <img src="images/dest-chefchaouen.jpg" alt="From Al-Andalus to the Medina: The 14-Day Spain &amp; Morocco Itinerary">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-meta">MULTI-COUNTRY • 13 MIN READ</div>
+              <h3>From Al-Andalus to the Medina: The 14-Day Spain &amp; Morocco Itinerary</h3>
+              <p>Trace 800 years of shared Moorish civilization from Seville and Granada across the Strait of Gibraltar to Chefchaouen, Fes, and the Sahara dunes.</p>
+            </div>
+            <a href="blog/spain-morocco-itinerary.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-media">
+            <img src="images/dest-merzouga.jpg" alt="Agafay Desert vs Merzouga: Which Morocco Desert Experience is Right for You?">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-meta">DESERT EXPEDITIONS • 11 MIN READ</div>
+              <h3>Agafay Desert vs Merzouga: Which Morocco Desert Trip is Right for You?</h3>
+              <p>Marrakech's 45-minute stone desert glamping vs the 9-hour mountain odyssey to the 150m golden sand dunes of Erg Chebbi. An honest guide to distance and scenery.</p>
+            </div>
+            <a href="blog/agafay-desert-vs-merzouga.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-media">
+            <img src="images/souk-bargaining-art.webp" alt="The Art of the Souk: Why Bargaining in Marrakech is a Conversation, Not Combat">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-meta">CULTURAL ETIQUETTE • 9 MIN READ</div>
+              <h3>The Art of the Souk: Why Bargaining in Marrakech is a Conversation, Not Combat</h3>
+              <p>Forget what Western guidebooks teach you about haggling. Discover the ancient ritual of mint tea, decoding Berber carpet knots, and navigating the souks with dignity.</p>
+            </div>
+            <a href="blog/the-art-of-the-souk-bargaining-etiquette.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal">
+          <div class="blog-media">
             <img src="images/dubai-skyline-hero.jpg" alt="Dubai Travel Guide 2026: Where to Stay, Cheap Flights & Luxury on a Budget">
           </div>
           <div class="blog-body">
@@ -414,7 +459,7 @@
 
         <article class="blog-card reveal">
           <div class="blog-media">
-            <img src="images/hero-desert.jpg" alt="How Much Does a Private Driver in Morocco Cost">
+            <img src="images/morocco_private_driver.webp" alt="How Much Does a Private Driver in Morocco Cost? (2026 Price Guide)">
           </div>
           <div class="blog-body">
             <div>
@@ -428,7 +473,7 @@
 
         <article class="blog-card reveal">
           <div class="blog-media">
-            <img src="images/hero-desert.jpg" alt="How to find cheap flights to Morocco">
+            <img src="images/cheap_flights_morocco.webp" alt="How to Find Cheap Flights to Morocco (2026 Insider Guide)">
           </div>
           <div class="blog-body">
             <div>
@@ -442,7 +487,7 @@
 
         <article class="blog-card reveal">
           <div class="blog-media">
-            <img src="img/hero-desert.jpg" alt="Best time to visit Sahara Morocco">
+            <img src="images/sahara_camp.webp" alt="Best Time to Visit Sahara Morocco: Berber Luxury Camp Under Desert Stars">
           </div>
           <div class="blog-body">
             <div>
@@ -456,7 +501,7 @@
 
         <article class="blog-card reveal">
           <div class="blog-media">
-            <img src="img/dest-marrakech.jpg" alt="Is Morocco Safe for Tourists">
+            <img src="images/morocco_safety_hero.webp" alt="Is Morocco Safe for Tourists: Travel Safety Guide">
           </div>
           <div class="blog-body">
             <div>
@@ -470,7 +515,7 @@
 
         <article class="blog-card reveal">
           <div class="blog-media">
-            <img src="img/dest-chefchaouen.jpg" alt="What to wear in Morocco">
+            <img src="images/morocco_packing_hero.webp" alt="What to Wear in Morocco: Etiquette &amp; Packing Tips">
           </div>
           <div class="blog-body">
             <div>
@@ -484,7 +529,7 @@
 
         <article class="blog-card reveal">
           <div class="blog-media">
-            <img src="img/carlos-leret-kiYzznir-uo-unsplash.jpg" alt="Marrakech to Fes route">
+            <img src="images/morocco_10_day_hero.webp" alt="The Ultimate 10-Day Morocco Itinerary: Marrakech, Sahara &amp; Fes">
           </div>
           <div class="blog-body">
             <div>
@@ -498,7 +543,7 @@
 
         <article class="blog-card reveal">
           <div class="blog-media">
-            <img src="img/marrakech.webp" alt="Marrakech vs Fes">
+            <img src="images/marrakech_vs_fes_hero.webp" alt="Marrakech vs Fes: Which Imperial City Should You Visit?">
           </div>
           <div class="blog-body">
             <div>
@@ -762,6 +807,6 @@
       }
     })();
   </script>
-  <script src="js/trip-concierge.js" defer></script>
+  <script src="js/trip-concierge.js?v=20260928_gold2" defer></script>
 </body>
 </html>

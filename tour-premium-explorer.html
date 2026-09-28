@@ -4,7 +4,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./images/Logos/roammorocco-favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
     <title>3-Day Premium Explorer Tour | RoamMorocco</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -88,11 +89,18 @@
             "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
           }
         ],
-        "founder": {
-          "@type": "Person",
-          "name": "RoamMorocco Local Experts",
-          "jobTitle": "Lead Guide & Founder"
-        },
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Hamza",
+            "jobTitle": "Co-Founder & Expedition Curator"
+          },
+          {
+            "@type": "Person",
+            "name": "Abdelhakim",
+            "jobTitle": "Co-Founder & Operations Lead"
+          }
+        ],
         "offers": {
           "@type": "Offer",
           "url": "https://roammorocco.tours/",
@@ -238,7 +246,7 @@
         document.head.appendChild(script);
     })();
   </script>
-  <link rel="stylesheet" href="css/trip-concierge.css">
+  <link rel="stylesheet" href="css/trip-concierge.css?v=20260928_gold2">
   <link rel="stylesheet" href="css/roam-theme.css?v=20260926e">
   <style>
     :root {
@@ -568,6 +576,42 @@
       color: #000000 !important;
       text-decoration: none !important;
     }
+
+    /* Human-Centered Storytelling: Bourdain Field Note Card */
+    .roam-field-note {
+      background: #faf8f5 !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      border-left: 3px solid var(--red, #f10b18) !important;
+      padding: 24px 28px !important;
+      margin: 24px 0 28px !important;
+    }
+    .roam-field-note-kicker {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: var(--red, #f10b18) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .12em !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    .roam-field-note-quote {
+      font-family: Georgia, serif !important;
+      font-style: italic !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.8) !important;
+      margin: 0 0 10px !important;
+    }
+    .roam-field-note-author {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: rgba(0, 0, 0, 0.55) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      margin: 0 !important;
+    }
   </style>
 </head>
 <body class="roam-light-theme" id="top">
@@ -694,18 +738,33 @@
         <span class="roam-day-badge">DAY 01 // 07:30 AM DEPARTURE</span>
         <h3 class="roam-itinerary-title">The Atlantic Coastal Escape to Essaouira</h3>
         <p class="roam-itinerary-desc">Depart Marrakech early in a private executive van. Travel through rolling argan forests, stopping at an organic women's cooperative to discover how liquid gold argan oil is cold-pressed. Arriving in breezy Essaouira (Mogador), wander the UNESCO-listed blue and white medina, explore the Skala du Port ramparts where Orson Welles filmed <em>Othello</em>, and enjoy lunch at a waterfront seafood stall before returning in the evening.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Chichaoua Plain</span>
+          <p class="roam-field-note-quote">&ldquo;Near Chichaoua, the big tour buses pull into concrete gift barns with diesel exhaust in the air. We pull off the highway into a cooperative where Fatima and her sister still crack argan nuts between two river stones by hand. When you taste fresh culinary argan oil scooped with warm khobz—nutty, toasted, unrefined—you immediately understand how much of Morocco gets sanitized for mass travel.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Route Specialist</p>
+        </div>
       </div>
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">DAY 02 // 08:30 AM DEPARTURE</span>
         <h3 class="roam-itinerary-title">Ourika Valley, Setti Fatma Falls &amp; Berber Heritage</h3>
         <p class="roam-itinerary-desc">Journey south into the lush foothills of the High Atlas Mountains. Trek along shaded mountain paths up to the seven cascades of Setti Fatma with an expert local mountain guide. Afterward, cross wooden footbridges to enjoy a traditional Moroccan feast served right at tables set into the shallow cooling mountain stream. Return to Marrakech with late afternoon free for riad spa treatments.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Setti Fatma Stream</span>
+          <p class="roam-field-note-quote">&ldquo;The real tagine in the valley isn&rsquo;t on the roadside terraces with laminated English menus. It&rsquo;s tucked under walnut trees where Rachid simmers mountain lamb over wild olive embers in an unglazed clay dish seasoned by twenty seasons of cumin and wild thyme. You tear the crust of warm bread with your fingers while snowmelt from Toubkal rushes across the river stones below.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Route Specialist</p>
+        </div>
       </div>
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">DAY 03 // 03:30 PM DEPARTURE</span>
         <h3 class="roam-itinerary-title">The Secluded Agafay Desert Sunset &amp; Laser Stargazing</h3>
         <p class="roam-itinerary-desc">Sleep in and spend your morning exploring the Yves Saint Laurent Museum and Majorelle Gardens. In the mid-afternoon, your driver whisks you into the serene stone dunes of the Agafay Desert (just 45 minutes from town). Embark on a peaceful golden-hour camel trek, dine under luxury nomadic tents, and finish the night with a guided astronomical laser presentation tracing Jupiter, Saturn, and desert constellations.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Agafay Stone Dunes at Dusk</span>
+          <p class="roam-field-note-quote">&ldquo;People call Agafay a desert, but it is a plateau of bleached stone sculpted by wind. Once the day-tripper quad bikes roar back to Marrakech at five, an absolute silence falls across the plains like heavy linen. The High Atlas turns deep violet in the rear mirror, and the only sound is the desert breeze through wild scrub.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Lahcen, Roam Morocco Desert Specialist</p>
+        </div>
       </div>
 
       <h2>Frequently Asked Questions: Marrakech &amp; Beyond</h2>
@@ -794,7 +853,7 @@
 
 
 
-  <script src="js/trip-concierge.js" defer></script>
+  <script src="js/trip-concierge.js?v=20260928_gold2" defer></script>
   <script src="js/roam-nav.js" defer></script>
 </body>
 </html>

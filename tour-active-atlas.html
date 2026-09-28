@@ -4,7 +4,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="./images/Logos/roammorocco-favicon.png">
+    <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
     <title>Active High Atlas Trekking Tour | RoamMorocco</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -88,11 +89,18 @@
             "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
           }
         ],
-        "founder": {
-          "@type": "Person",
-          "name": "RoamMorocco Local Experts",
-          "jobTitle": "Lead Guide & Founder"
-        },
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Hamza",
+            "jobTitle": "Co-Founder & Expedition Curator"
+          },
+          {
+            "@type": "Person",
+            "name": "Abdelhakim",
+            "jobTitle": "Co-Founder & Operations Lead"
+          }
+        ],
         "offers": {
           "@type": "Offer",
           "url": "https://roammorocco.tours/",
@@ -238,7 +246,7 @@
         document.head.appendChild(script);
     })();
   </script>
-  <link rel="stylesheet" href="css/trip-concierge.css">
+  <link rel="stylesheet" href="css/trip-concierge.css?v=20260928_gold2">
   <link rel="stylesheet" href="css/roam-theme.css?v=20260926e">
   <style>
     :root {
@@ -568,6 +576,42 @@
       color: #000000 !important;
       text-decoration: none !important;
     }
+
+    /* Human-Centered Storytelling: Bourdain Field Note Card */
+    .roam-field-note {
+      background: #faf8f5 !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      border-left: 3px solid var(--red, #f10b18) !important;
+      padding: 24px 28px !important;
+      margin: 24px 0 28px !important;
+    }
+    .roam-field-note-kicker {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: var(--red, #f10b18) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .12em !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    .roam-field-note-quote {
+      font-family: Georgia, serif !important;
+      font-style: italic !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.8) !important;
+      margin: 0 0 10px !important;
+    }
+    .roam-field-note-author {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: rgba(0, 0, 0, 0.55) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      margin: 0 !important;
+    }
   </style>
 </head>
 <body class="roam-light-theme" id="top">
@@ -698,18 +742,33 @@
         <span class="roam-day-badge">DAY 01 // VALLEY ASCENT</span>
         <h3 class="roam-itinerary-title">Marrakech to Imlil &amp; Trek to Toubkal Refuge (3,207m)</h3>
         <p class="roam-itinerary-desc">Your private driver picks you up from your Marrakech riad at 08:00 AM for the scenic 90-minute transfer into the High Atlas foothills. In the Berber trailhead village of Imlil (1,740m), you meet your certified mountain guide and mule team. Begin trekking along the Mizane Valley, following crystalline streams past the pilgrimage hamlet of Sidi Chamharouch. Arrive at the Toubkal Refuge in the late afternoon for a hearty communal Moroccan tagine dinner and early alpine rest.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Sidi Chamharouch Hamlet</span>
+          <p class="roam-field-note-quote">&ldquo;At the white boulder of Sidi Chamharouch, commercial groups rush past to log altitude. We sit on wool rugs with Mohamed, who boils wild mountain thyme picked from the ravines above using icy stream water. He points up to the cliff face: &lsquo;The mountain does not care how fast your watch ticks. Drink your tea, listen to the river, and step only when your breath is ready.&rsquo;&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Mountain Route Lead</p>
+        </div>
       </div>
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">DAY 02 // SUMMIT PUSH</span>
         <h3 class="roam-itinerary-title">Mount Toubkal Summit Assault (4,167m) &amp; Sunrise</h3>
         <p class="roam-itinerary-desc">Alpine start at 04:30 AM under a canopy of mountain stars. With headlamps lit, navigate the South Cirque scree trail, taking steady, measured steps as daylight breaks over the Atlas ridge. By mid-morning, cross the summit ridge and touch the triangular metal pyramid at 4,167m. Drink in the breathtaking views spanning the Anti-Atlas, the Sirwa plateau, and Marrakech plain. Carefully descend back to the refuge for a celebratory lunch and relaxing afternoon.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // South Cirque at 05:00 AM</span>
+          <p class="roam-field-note-quote">&ldquo;In the pitch black at 3,800 meters, there is no small talk. Just the crunch of scree under Vibram soles and the rhythmic exhale of guides who have climbed this ridge five hundred times. When dawn hits the metal summit pyramid, Toubkal casts a shadow that stretches thirty miles across the plains toward the Sahara. It is a humbling, silent, beautiful moment.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Mountain Route Lead</p>
+        </div>
       </div>
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">DAY 03 // SCENIC DESCENT &amp; RETURN</span>
         <h3 class="roam-itinerary-title">Descent to Imlil &amp; Private Marrakech Return</h3>
         <p class="roam-itinerary-desc">Awake to fresh mountain bread, local honey, and coffee. Enjoy a leisurely descent down the Mizane gorge back to Imlil village. Celebrate your summit with an authentic Berber lunch on a panoramic rooftop overlooking the walnut groves. Your private Mercedes van or 4x4 will transport you smoothly back to your Marrakech hotel by late afternoon.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Aroumd Walnut Groves</span>
+          <p class="roam-field-note-quote">&ldquo;Descending into the terraced orchards of Aroumd, you hear long willow poles thwacking walnut trees. Hassan pulls us into his earthen family home: hot flatbread straight off clay coals, raw forest honey, and pressed walnut oil. After days of altitude freeze, tearing hot bread with your hands at an elder&rsquo;s table is what travel actually means.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Mountain Route Lead</p>
+        </div>
       </div>
 
       <h2>Mount Toubkal Difficulty: Is It Hard?</h2>
@@ -797,7 +856,7 @@
 
 
 
-  <script src="js/trip-concierge.js" defer></script>
+  <script src="js/trip-concierge.js?v=20260928_gold2" defer></script>
   <script src="js/roam-nav.js" defer></script>
 </body>
 </html>
