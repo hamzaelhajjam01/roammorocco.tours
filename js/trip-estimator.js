@@ -50,31 +50,31 @@
     }
   };
 
-  // Pricing Parameters in EUR
+  // Pricing Parameters in EUR (Calibrated for competitive Morocco market rates)
   const STYLE_PARAMS = {
     'boutique': {
       label: 'Authentic Boutique',
-      roomPerNight: 85,
-      foodPerPersonDay: 25,
-      expPerPersonTotal: 60,
-      transportDailyPrado: 170,
-      transportDailyVan: 220
+      roomPerNight: 55,
+      foodPerPersonDay: 15,
+      expPerPersonTotal: 30,
+      transportDailyPrado: 135,
+      transportDailyVan: 175
     },
     'luxury': {
       label: 'Curated Luxury',
-      roomPerNight: 195,
-      foodPerPersonDay: 45,
-      expPerPersonTotal: 120,
-      transportDailyPrado: 200,
-      transportDailyVan: 260
+      roomPerNight: 115,
+      foodPerPersonDay: 25,
+      expPerPersonTotal: 65,
+      transportDailyPrado: 155,
+      transportDailyVan: 200
     },
     'palace': {
       label: 'Royal Palace & VIP',
-      roomPerNight: 450,
-      foodPerPersonDay: 90,
-      expPerPersonTotal: 250,
-      transportDailyPrado: 260,
-      transportDailyVan: 340
+      roomPerNight: 280,
+      foodPerPersonDay: 50,
+      expPerPersonTotal: 140,
+      transportDailyPrado: 195,
+      transportDailyVan: 250
     }
   };
 
@@ -252,8 +252,8 @@
 
     // Totals in EUR
     const totalEUR = costTransportEUR + costLodgingEUR + costExpEUR + costFoodEUR;
-    const lowEUR = Math.round(totalEUR * 0.94);
-    const highEUR = Math.round(totalEUR * 1.08);
+    const lowEUR = Math.round(totalEUR * 0.95);
+    const highEUR = Math.round(totalEUR * 1.05);
 
     const perPersonDayEUR = Math.round(totalEUR / (travelers * days));
 
