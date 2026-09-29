@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2EBSDKVZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G2EBSDKVZM');
+
+    // Auto-track WhatsApp, Contact & Booking Conversions
+    document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('click', function(e) {
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+        if (a.href.includes('wa.me')) {
+          gtag('event', 'contact_whatsapp', { 'event_category': 'conversion', 'event_label': a.textContent.trim() || 'WhatsApp' });
+        } else if (a.href.startsWith('mailto:') || a.href.startsWith('tel:')) {
+          gtag('event', 'contact_direct', { 'event_category': 'engagement', 'event_label': a.href });
+        } else if (a.href.includes('airalo.com') || a.href.includes('discovercars.com') || a.href.includes('booking.com') || a.href.includes('trip.com')) {
+          gtag('event', 'affiliate_click', { 'event_category': 'outbound', 'event_label': a.href });
+        }
+      });
+      document.addEventListener('submit', function(e) {
+        gtag('event', 'generate_lead', { 'event_category': 'conversion', 'event_label': e.target.id || 'booking_form' });
+      });
+    });
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="../favicon.png">
