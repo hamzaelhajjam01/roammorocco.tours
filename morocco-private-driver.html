@@ -1480,10 +1480,11 @@
               </div>
             </div>
 
-            <!-- Submit Button Triggering WhatsApp Instant Quote -->
-            <button type="submit" class="btn-gold-primary" style="width: 100%; font-size: 15px; padding: 18px 24px;">
-              Request Instant Quote via WhatsApp &rarr;
+            <!-- Submit Button & Feedback -->
+            <button type="submit" id="submitQuoteBtn" class="btn-gold-primary" style="width: 100%; font-size: 15px; padding: 18px 24px;">
+              Request Instant Driver Quote &rarr;
             </button>
+            <div id="quoteStatusBox" style="display:none; margin-top:20px; padding:20px; border-radius:2px; font-size:14px; line-height:1.6;"></div>
             <p style="text-align: center; font-size: 12px; color: #777; margin-top: 12px; font-family: 'Courier New', monospace;">
               🔒 We respect your privacy. No spam. You will connect directly with our Marrakech operations desk.
             </p>
@@ -1679,8 +1680,11 @@
     });
 
     // Driver Quote Form Handler
-    function handleDriverQuoteSubmit(e) {
+    async function handleDriverQuoteSubmit(e) {
       e.preventDefault();
+      const btn = document.getElementById('submitQuoteBtn');
+      const statusBox = document.getElementById('quoteStatusBox');
+      
       const pickup = document.getElementById('pickupLocation').value;
       const service = document.getElementById('serviceType').value;
       const date = document.getElementById('startDate').value;
@@ -1692,7 +1696,25 @@
       const email = document.getElementById('emailAddress').value;
       const notes = document.getElementById('specialNotes').value;
 
-      const message = `Salam Roam Morocco! I would like to request a private driver quote:%0A%0A` +
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        pickup: pickup,
+        service: service,
+        date: date,
+        duration: days,
+        passengers: pax,
+        vehicle: vehicle,
+        notes: notes
+      };
+
+      btn.disabled = true;
+      btn.style.opacity = '0.7';
+      btn.innerHTML = 'Sending Your Inquiry...';
+
+      // WhatsApp message URL for direct messaging option
+      const message = `Salam Roam Morocco! I just submitted a private driver quote request:%0A%0A` +
         `👤 *Name:* ${encodeURIComponent(name)}%0A` +
         `📍 *Pickup:* ${encodeURIComponent(pickup)}%0A` +
         `🛣 *Route/Service:* ${encodeURIComponent(service)}%0A` +
@@ -1703,9 +1725,43 @@
         `📱 *WhatsApp:* ${encodeURIComponent(phone)}%0A` +
         `✉️ *Email:* ${encodeURIComponent(email)}%0A` +
         (notes ? `📝 *Notes:* ${encodeURIComponent(notes)}%0A` : '');
-
       const waUrl = `https://wa.me/212653506441?text=${message}`;
-      window.open(waUrl, '_blank');
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.style.background = '#f0fdf4';
+        statusBox.style.border = '1px solid #86efac';
+        statusBox.style.borderLeft = '4px solid #16a34a';
+        statusBox.style.color = '#14532d';
+        statusBox.innerHTML = `<strong>✓ Quote Request Received!</strong><br>Thank you, ${name}. Your inquiry has been sent to our operations desk. We will review your route and reply directly to <strong>${email}</strong> within 30 minutes.<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; margin-top:8px; padding:12px 20px; font-size:12px;">💬 Or Chat on WhatsApp Now (+212 653-506441) &rarr;</a>`;
+
+        btn.innerHTML = '✓ Request Sent to Our Team';
+        btn.style.background = '#16a34a';
+        btn.style.borderColor = '#16a34a';
+
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            'event_category': 'conversion',
+            'event_label': 'private_driver_form',
+            'value': 180,
+            'currency': 'EUR'
+          });
+        }
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.style.background = '#fefce8';
+        statusBox.style.border = '1px solid #fde047';
+        statusBox.style.borderLeft = '4px solid #ca8a04';
+        statusBox.style.color = '#713f12';
+        statusBox.innerHTML = `Connecting directly to our WhatsApp operations desk...<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; margin-top:8px; padding:12px 20px; font-size:12px;">Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
     }
   </script>
 </body>
