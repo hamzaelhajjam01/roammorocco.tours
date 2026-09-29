@@ -13,7 +13,8 @@
 
 @media (min-width: 1025px) {
   .article-wrap,
-  .roam-article-wrapper {
+  .roam-article-wrapper,
+  .roam-tour-wrapper {
     max-width: 1220px !important;
   }
 }
@@ -90,7 +91,7 @@ h2[id], h3[id] {
   display: inline-block;
   width: 6px;
   height: 6px;
-  background: var(--red, #f10b18);
+  background: var(--gold, #C8A45C);
 }
 
 .roam-toc-progress-text {

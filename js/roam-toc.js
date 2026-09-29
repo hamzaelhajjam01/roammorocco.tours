@@ -6,8 +6,8 @@
 
 (function () {
   function initDynamicTOC() {
-    // 1. Identify article content
-    const content = document.querySelector(".article-content") || document.querySelector(".roam-article-body");
+    // 1. Identify article or guide content
+    const content = document.querySelector(".article-content") || document.querySelector(".roam-article-body") || document.querySelector(".article-body") || document.querySelector(".roam-tour-wrapper");
     if (!content) return;
 
     // 2. Query all h2 headings
