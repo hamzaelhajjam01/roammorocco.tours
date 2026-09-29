@@ -24,7 +24,7 @@
         }
       });
       document.addEventListener('submit', function(e) {
-        gtag('event', 'generate_lead', { 'event_category': 'conversion', 'event_label': e.target.id || 'booking_form' });
+        gtag('event', 'generateLead', { 'event_category': 'conversion', 'event_label': e.target.id || 'booking_form' });
       });
     });
   </script>
@@ -32,21 +32,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Morocco Travel Blog & Guides | RoamMorocco</title>
-  <meta name="description" content="Explore Roam Journal: Essential Morocco travel guides, seasonal desert advice, cultural etiquette tips, and official FAQ answers for planning your trip.">
+  <meta name="description" content="Explore Roam Journal: Essential Morocco travel guides, seasonal desert advice, cultural etiquette tips, and official travel intelligence for planning your trip.">
   <meta name="author" content="RoamMorocco">
   <meta name="p:domain_verify" content="e7f5b5b5937165b3d00e989862119cfd"/>
   <link rel="canonical" href="https://roammorocco.tours/blog.html">
   <link rel="alternate" hreflang="en" href="https://roammorocco.tours/blog.html">
   <link rel="alternate" hreflang="x-default" href="https://roammorocco.tours/blog.html">
   <meta property="og:title" content="Morocco Travel Blog & Guides | RoamMorocco">
-  <meta property="og:description" content="Explore Roam Journal: Essential Morocco travel guides, seasonal desert advice, cultural etiquette tips, and official FAQ answers for planning your trip.">
-  <meta property="og:image" content="https://roammorocco.tours/img/hero-desert.jpg">
+  <meta property="og:description" content="Explore Roam Journal: Essential Morocco travel guides, seasonal desert advice, cultural etiquette tips, and official travel intelligence for planning your trip.">
+  <meta property="og:image" content="https://roammorocco.tours/images/dest-merzouga.jpg">
   <meta property="og:url" content="https://roammorocco.tours/blog.html">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Morocco Travel Blog & Guides | RoamMorocco">
   <meta name="twitter:description" content="Explore Roam Journal: Essential Morocco travel guides and tips.">
-  <meta name="twitter:image" content="https://roammorocco.tours/img/hero-desert.jpg">
+  <meta name="twitter:image" content="https://roammorocco.tours/images/dest-merzouga.jpg">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
   
@@ -64,7 +64,7 @@
   </script>
   <style>
     :root{
-      --white:#fff;--black:#000;--soft:#f4f4f4;--muted:#d9d9d9;--red:#f10b18;
+      --white:#fff;--black:#000;--soft:#f4f4f4;--muted:#d9d9d9;--gold:#C8A45C;
     }
     *, *::before, *::after, [class], [id] {
       box-sizing: border-box;
@@ -163,15 +163,26 @@
     .mobile-drawer-inner{display:flex;flex-direction:column;gap:12px}
     .mobile-drawer-inner a{color:#fff;font-size:16px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:12px 18px;border-radius:9999px;background:rgba(255,255,255,0.08)}
 
-    /* ── PAGE CONTAINER (MAX WIDTH 1380PX MATCHING HOME PAGE) ── */
-    .page-container {
-      max-width: 1380px;
-      margin: 0 auto;
-      padding: 140px 48px 0;
+    /* ── EXACT HOMEPAGE EDITORIAL BLOG SECTION (.news) ── */
+    .news {
+      background: #ffffff;
+      border-top: 1px solid rgba(0,0,0,0.12);
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+      color: #000000;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+      position: relative;
+      box-sizing: border-box;
     }
-
-    .section-badge {
-      display: inline-flex;
+    .news-head {
+      padding: 140px max(48px, calc((100vw - 1120px)/2)) 48px;
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+    }
+    .journeys-badge {
+      display: flex;
       align-items: center;
       gap: 10px;
       font-family: "Courier New", monospace;
@@ -180,85 +191,213 @@
       text-transform: uppercase;
       letter-spacing: .12em;
       color: rgba(0,0,0,.54);
-      margin-bottom: 24px;
+      margin: 0 0 20px;
     }
-    .section-badge::before { content:""; width:7px; height:7px; background:#C8A45C; }
-
-    .section-title {
-      font-size: clamp(52px, 8vw, 118px);
+    .journeys-badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: #C8A45C;
+    }
+    .news h1, .news h2 {
+      max-width: 1120px;
+      font-size: clamp(48px, 4.6vw, 76px);
       font-weight: 800;
-      letter-spacing: -.078em;
-      line-height: .84;
+      letter-spacing: -.05em;
+      line-height: .9;
       text-transform: uppercase;
-      margin: 0 0 48px;
+      margin: 0;
       color: #000;
-      user-select: none;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -webkit-tap-highlight-color: transparent;
-      touch-action: manipulation;
     }
-    .split-line { display: block; overflow: hidden; padding-bottom: .08em; }
-    .split-word {
-      display: block;
-      transform: translate3d(0, 115%, 0);
-      transition: transform .9s cubic-bezier(.16,1,.3,1);
+    .news-stream {
+      width: auto;
+      margin: 0 max(80px, calc((100vw - 1120px)/2));
+      padding: 48px 0 120px;
+      display: flex;
+      align-items: flex-start;
+      gap: 48px;
     }
-    .split-line:nth-child(2) .split-word { transition-delay: .12s; }
-    .split-line:nth-child(3) .split-word { transition-delay: .24s; }
-    .reveal-block.in .split-word, .reveal.in .split-word { transform: translate3d(0,0,0); }
-
-    /* Blog Grid */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 40px;
-      margin-bottom: 80px;
+    .news-intro {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 96px;
+      width: 320px;
+      flex: 0 0 320px;
+      align-self: flex-start;
     }
-    .blog-card {
-      background: #fff;
-      border: 1px solid rgba(0,0,0,0.14);
+    .news-intro p {
+      font-family: Georgia, serif;
+      font-size: 22px;
+      letter-spacing: -.02em;
+      line-height: 1.35;
+      margin: 0;
+      color: rgba(0,0,0,0.78);
+    }
+    .news-filter-box {
+      margin-top: 36px;
       display: flex;
       flex-direction: column;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
+      gap: 8px;
     }
-    .blog-card.in { opacity: 1; transform: translateY(0); }
-    .blog-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.14); }
-    .blog-media { height: 260px; overflow: hidden; position: relative; }
-    .blog-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.16,1,.3,1); }
-    .blog-card:hover .blog-media img { transform: scale(1.08); }
-    .blog-body { padding: 28px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
-    .blog-meta { font-family: "Courier New", monospace; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(0,0,0,0.48); margin-bottom: 12px; }
-    .blog-body h3 { font-size: 24px; font-weight: 800; letter-spacing: -.03em; line-height: 1.15; margin: 0 0 14px; text-transform: uppercase; }
-    .blog-body p { font-family: Georgia, serif; font-size: 15px; line-height: 1.5; color: rgba(0,0,0,0.76); margin: 0 0 24px; }
-    .see-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; color: #000; }
+    .filter-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 12px 16px;
+      background: transparent;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 0 !important;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      color: rgba(0,0,0,0.65);
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover {
+      background: rgba(0,0,0,0.03);
+      color: #000;
+      border-color: #000;
+    }
+    .filter-btn.active {
+      background: #000;
+      color: #fff;
+      border-color: #000;
+    }
 
-    /* FAQ Section */
-    .faq-wrapper {
+    .news-list {
+      flex: 1;
+      min-width: 0;
+    }
+    .news-entry {
+      display: grid;
+      grid-template-columns: 54px 313px minmax(0, 1fr);
+      align-items: start;
+      min-height: 360px;
+      padding: 32px 0;
+      margin: 0;
+      color: #000;
+      text-decoration: none;
       background: #fff;
-      border: 1px solid rgba(0,0,0,0.14);
-      padding: 48px;
-      margin-bottom: 96px;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      border-top: 1px solid rgba(0,0,0,0.12);
+      transition: opacity 0.25s ease;
     }
-    .faq-wrapper h2 { font-size: clamp(32px, 5vw, 64px); font-weight: 800; letter-spacing: -.06em; text-transform: uppercase; margin: 0 0 36px; }
-    .faq-list { display: grid; gap: 16px; }
-    .faq-card { border: 1px solid rgba(0,0,0,0.12); padding: 24px; cursor: pointer; transition: background .25s ease; }
-    .faq-card:hover { background: rgba(0,0,0,0.02); }
-    .faq-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-    .faq-head h4 { font-size: 20px; font-weight: 800; letter-spacing: -.03em; margin: 0; }
-    .faq-icon { font-size: 20px; font-weight: 700; transition: transform .3s ease; }
-    .faq-card.open .faq-icon { transform: rotate(45deg); }
-    .faq-body { font-family: Georgia, serif; font-size: 16px; line-height: 1.55; color: rgba(0,0,0,0.76); margin-top: 14px; display: none; }
-    .faq-card.open .faq-body { display: block; }
+    .news-entry:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+    .news-index {
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(0,0,0,0.4);
+      padding-top: 4px;
+    }
+    .news-media {
+      grid-column: 2;
+      height: 330px;
+      overflow: hidden;
+      background: #eee;
+    }
+    .news-media img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      filter: none;
+      transition: transform .55s cubic-bezier(.16,1,.3,1);
+    }
+    .news-entry:hover .news-media img {
+      transform: scale(1.035);
+    }
+    .news-entry-copy {
+      grid-column: 3;
+      min-width: 0;
+      padding: 4px 0 0 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .news-entry-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(0,0,0,0.55);
+    }
+    .news-cat-tag {
+      color: #C8A45C;
+      font-weight: 800;
+    }
+    .news-date {
+      opacity: .6;
+    }
+    .news-entry strong {
+      display: block;
+      font-size: clamp(20px, 2vw, 26px);
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      color: #000;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+    .news-entry:hover strong {
+      color: #444;
+    }
+    .news-entry p {
+      font-family: Georgia, serif;
+      font-size: 15.5px;
+      line-height: 1.55;
+      color: rgba(0,0,0,0.72);
+      margin: 0;
+      max-width: 580px;
+    }
 
-    /* Motion Scroll Classes */
-    .reveal { opacity: 0; transform: translateY(40px); transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1); }
-    .reveal.in { opacity: 1; transform: translateY(0); }
+    /* ── GLOBAL SIGNATURE BENT-ARROW BUTTON STYLE (MATCHING USER REFERENCE) ── */
+    .see-more-btn {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      font-size: 15px !important;
+      font-weight: 700 !important;
+      letter-spacing: -.02em !important;
+      color: #000 !important;
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+      padding: 6px 0 !important;
+      cursor: pointer !important;
+      text-decoration: none !important;
+      margin-top: 6px;
+      transition: color .25s ease, transform .25s ease !important;
+    }
+    .see-more-btn svg {
+      transition: transform .25s ease !important;
+      flex-shrink: 0 !important;
+      color: currentColor !important;
+    }
+    .news-entry:hover .see-more-btn {
+      color: #666 !important;
+    }
+    .news-entry:hover .see-more-btn svg {
+      transform: translateX(4px) !important;
+    }
 
-    /* ── EXACT HOME PAGE RESERVE BANNER (1-TO-1 MATCH) ── */
+    /* ── EXACT HOME PAGE RESERVE BANNER ── */
     .journeys-reserve-banner {
       margin: 0;
       padding: 80px max(48px, calc((100vw - 1120px)/2));
@@ -271,46 +410,99 @@
       align-items: end;
       gap: 64px;
       box-shadow: none;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1);
     }
-    .journeys-reserve-banner.in { opacity: 1; transform: translateY(0); }
     .journeys-reserve-copy { display: grid; gap: 12px; }
     .journeys-reserve-kicker { font-family: "Courier New", monospace; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.54); }
     .journeys-reserve-banner h3 { font-size: clamp(44px, 6.4vw, 92px); font-weight: 800; letter-spacing: -.07em; line-height: .86; text-transform: uppercase; margin: 0; max-width: 920px; }
     .journeys-reserve-banner p { font-family: Georgia, serif; color: rgba(255,255,255,.72); font-size: 18px; margin: 4px 0 0; max-width: 620px; line-height: 1.35; }
-    .j-reserve-btn { color: #fff!important; border-top: 1px solid rgba(255,255,255,.35)!important; border-bottom: 1px solid rgba(255,255,255,.35)!important; padding: 18px 0!important; min-width: 230px; justify-content: space-between!important; font-size: 15px!important; display: inline-flex!important; align-items: center!important; }
+    .j-reserve-btn { color: #fff!important; border-top: 1px solid rgba(255,255,255,.35)!important; border-bottom: 1px solid rgba(255,255,255,.35)!important; padding: 18px 0!important; min-width: 230px; justify-content: space-between!important; font-size: 15px!important; display: inline-flex!important; align-items: center!important; text-decoration: none!important; font-weight: 700!important; }
     .j-reserve-arrow { font-size: 22px; transition: transform .25s ease; }
     .j-reserve-btn:hover .j-reserve-arrow { transform: translateX(5px); }
 
-    @media(max-width:850px){
-      .page-container { padding: 110px 16px 0; }
-      .blog-grid { grid-template-columns: 1fr; }
-      .faq-wrapper { padding: 24px 16px; }
-      .journeys-reserve-banner { padding: 40px 16px!important; grid-template-columns: 1fr!important; gap: 24px!important; }
-      .j-reserve-btn { width: 100%!important; justify-content: center!important; }
+    /* ── FAQ SECTION (ARCHITECTURAL LUXURY) ── */
+    .news-faq-section {
+      background: #f2eee6;
+      border-top: 1px solid rgba(0,0,0,0.12);
+      border-bottom: 1px solid rgba(0,0,0,0.12);
+      padding: 96px max(48px, calc((100vw - 1120px)/2));
+    }
+    .news-faq-head h2 {
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 800;
+      letter-spacing: -.05em;
+      text-transform: uppercase;
+      margin: 0 0 40px;
+    }
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 980px;
+    }
+    .faq-card {
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.12);
+      padding: 24px 28px;
+      cursor: pointer;
+      transition: border-color 0.25s ease, background 0.25s ease;
+    }
+    .faq-card:hover {
+      border-color: #000;
+    }
+    .faq-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-head h4 {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin: 0;
+      color: #000;
+    }
+    .faq-icon {
+      font-size: 20px;
+      font-weight: 700;
+      color: #C8A45C;
+      transition: transform 0.3s ease;
+    }
+    .faq-card.open .faq-icon {
+      transform: rotate(45deg);
+    }
+    .faq-body {
+      font-family: Georgia, serif;
+      font-size: 15.5px;
+      line-height: 1.6;
+      color: rgba(0,0,0,0.76);
+      margin-top: 14px;
+      display: none;
+    }
+    .faq-card.open .faq-body {
+      display: block;
     }
 
-    /* FOOTER MATCHING HOME PAGE EXACTLY */
-    footer{ background:#fff; color:#000; padding:100px 48px 48px; position:relative; z-index:2; border-top:1px solid rgba(0,0,0,0.12); }
-    .footer-wrap{ max-width:1380px; margin:0 auto; display:flex; flex-direction:column; gap:36px; user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent; }
-    .footer-header-row{ display:grid; grid-template-columns:1.4fr 1fr; gap:60px; align-items:start; }
-    .footer-tagline{ font-size:clamp(16px,1.8vw,24px); font-weight:700; color:#999; margin:0 0 10px; }
-    .footer-email-link{ font-size:clamp(20px,2.8vw,40px); font-weight:900; color:#000; transition:color .25s ease,transform .25s ease; }
-    .footer-email-link:hover{ color:#666; transform:translateX(6px); }
-    .footer-nav-columns{ display:flex; justify-content:flex-end; }
-    .footer-col{ display:flex; flex-direction:column; align-items:flex-end; text-align:right; gap:10px; }
-    .footer-giant-brand{ width:100%; padding:16px 0 8px; display:flex; justify-content:center; align-items:center; overflow:hidden; user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent; }
-    .footer-logo-img{ width:100%; max-width:100%; height:auto; display:block; object-fit:contain; user-select:none; -webkit-user-select:none; -webkit-user-drag:none; -webkit-tap-highlight-color:transparent; touch-action:manipulation; }
-    .footer-bottom-bar{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; padding-top:24px; border-top:1px solid rgba(0,0,0,0.08); font-size:12px; color:#777; }
-    .footer-legal{ display:flex; gap:24px; flex-wrap:wrap; }
     @media(max-width:850px){
-      footer{padding:60px 16px 32px!important}
-      .footer-header-row{grid-template-columns:1fr!important;gap:24px!important}
-      .footer-col{align-items:flex-start!important;text-align:left!important}
+      .news-head { padding: 80px 16px 36px; }
+      .news h1, .news h2 { font-size: clamp(34px, 8.5vw, 48px); }
+      .news-stream { display: block; width: auto; margin: 0; padding: 28px 16px 80px; }
+      .news-intro { position: relative; top: auto; width: 100%; margin-bottom: 36px; }
+      .news-intro p { font-size: 18px; max-width: none; }
+      .news-filter-box { flex-direction: row; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+      .filter-btn { width: auto; padding: 8px 14px; font-size: 12px; }
+      .news-entry { grid-template-columns: 1fr; min-height: auto; padding: 28px 0; }
+      .news-index { display: none; }
+      .news-media { grid-column: 1; height: auto; aspect-ratio: 313/240; }
+      .news-entry-copy { grid-column: 1; padding: 16px 0 0; }
+      .news-entry strong { font-size: 20px; }
+      .journeys-reserve-banner { padding: 48px 16px !important; grid-template-columns: 1fr !important; gap: 28px !important; }
+      .news-faq-section { padding: 60px 16px; }
+      .news-faq-head h2 { font-size: clamp(28px, 7vw, 40px); margin-bottom: 24px; }
+      .faq-card { padding: 18px 20px; }
     }
   </style>
+
   <!-- Travelpayouts Drive -->
   <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
     (function () {
@@ -322,7 +514,7 @@
     })();
   </script>
   <link rel="stylesheet" href="css/trip-concierge.css?v=20260928_gold2">
-  <link rel="stylesheet" href="css/roam-theme.css?v=20260926e">
+  <link rel="stylesheet" href="css/roam-theme.css?v=20260928_footer">
 </head>
 <body id="top">
 
@@ -332,22 +524,22 @@
       <div class="announcement-content">
         <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
         <span>•</span>
-        <span>Tailored Private Journeys Across Sahara & High Atlas</span>
+        <span>Tailored Private Journeys Across Sahara &amp; High Atlas</span>
         <span>•</span>
-        <span><strong>LUXURY RIADS & DESERT CAMPS</strong></span>
+        <span><strong>LUXURY RIADS &amp; DESERT CAMPS</strong></span>
         <span>•</span>
-        <span>Custom Circuits From Marrakech, Fes & Casablanca</span>
+        <span>Custom Circuits From Marrakech, Fes &amp; Casablanca</span>
         <span>•</span>
         <span><strong>FEEL THE KINGDOM</strong></span>
       </div>
       <div class="announcement-content" aria-hidden="true">
         <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
         <span>•</span>
-        <span>Tailored Private Journeys Across Sahara & High Atlas</span>
+        <span>Tailored Private Journeys Across Sahara &amp; High Atlas</span>
         <span>•</span>
-        <span><strong>LUXURY RIADS & DESERT CAMPS</strong></span>
+        <span><strong>LUXURY RIADS &amp; DESERT CAMPS</strong></span>
         <span>•</span>
-        <span>Custom Circuits From Marrakech, Fes & Casablanca</span>
+        <span>Custom Circuits From Marrakech, Fes &amp; Casablanca</span>
         <span>•</span>
         <span><strong>FEEL THE KINGDOM</strong></span>
       </div>
@@ -369,10 +561,10 @@
         <a href="custom-morocco-tour.html">Custom Morocco</a>
         <a href="travel-deals.html">Travel Deals</a>
         <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
+        <a href="blog.html" class="active">Blog</a>
       </nav>
     </div>
-    <a class="latest" href="index.html#contact">Latest Trips <span class="dot"></span></a>
+    <a class="latest" href="index.html#contact">Plan Trip <span class="dot"></span></a>
     <a class="back-top-btn" href="#top" aria-label="Back to top" onclick="scrollToTop(event)">
       <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </a>
@@ -391,285 +583,387 @@
   </div>
 
   <main>
-    <div class="page-container reveal-block">
-      <div class="section-badge">04 / ROAM JOURNAL & TRAVEL GUIDES</div>
-
-      <h1 class="section-title">
-        <span class="split-line"><span class="split-word">ROAM JOURNAL &</span></span>
-        <span class="split-line"><span class="split-word">PRIVATE MOROCCO</span></span>
-        <span class="split-line"><span class="split-word">TRAVEL GUIDES.</span></span>
-      </h1>
-
-      <div class="blog-grid">
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/dest-chefchaouen.jpg" alt="From Al-Andalus to the Medina: The 14-Day Spain &amp; Morocco Itinerary">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">MULTI-COUNTRY • 13 MIN READ</div>
-              <h3>From Al-Andalus to the Medina: The 14-Day Spain &amp; Morocco Itinerary</h3>
-              <p>Trace 800 years of shared Moorish civilization from Seville and Granada across the Strait of Gibraltar to Chefchaouen, Fes, and the Sahara dunes.</p>
-            </div>
-            <a href="blog/spain-morocco-itinerary.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/dest-merzouga.jpg" alt="Agafay Desert vs Merzouga: Which Morocco Desert Experience is Right for You?">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">DESERT EXPEDITIONS • 11 MIN READ</div>
-              <h3>Agafay Desert vs Merzouga: Which Morocco Desert Trip is Right for You?</h3>
-              <p>Marrakech's 45-minute stone desert glamping vs the 9-hour mountain odyssey to the 150m golden sand dunes of Erg Chebbi. An honest guide to distance and scenery.</p>
-            </div>
-            <a href="blog/agafay-desert-vs-merzouga.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/souk-bargaining-art.webp" alt="The Art of the Souk: Why Bargaining in Marrakech is a Conversation, Not Combat">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">CULTURAL ETIQUETTE • 9 MIN READ</div>
-              <h3>The Art of the Souk: Why Bargaining in Marrakech is a Conversation, Not Combat</h3>
-              <p>Forget what Western guidebooks teach you about haggling. Discover the ancient ritual of mint tea, decoding Berber carpet knots, and navigating the souks with dignity.</p>
-            </div>
-            <a href="blog/the-art-of-the-souk-bargaining-etiquette.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/tokyo-skyline-hero.jpg" alt="Where to Stay in Tokyo 2026: Best Neighborhoods for First-Timers & Stays">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">GLOBAL DESTINATIONS • 16 MIN READ</div>
-              <h3>Where to Stay in Tokyo (2026): The Ultimate First-Timer Neighborhood Guide</h3>
-              <p>Shinjuku vs Shibuya head-to-head, Asakusa ryokan charm, Ginza luxury, JR Yamanote loop cheat sheet, and essential flight hacks.</p>
-            </div>
-            <a href="blog/tokyo-travel-guide.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/dubai-skyline-hero.jpg" alt="Dubai Travel Guide 2026: Where to Stay, Cheap Flights & Luxury on a Budget">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">GLOBAL DESTINATIONS • 15 MIN READ</div>
-              <h3>The Ultimate Dubai Travel Guide (2026): Where to Stay &amp; Cheap Flights</h3>
-              <p>Downtown vs Marina hotel picks, DXB flight hacks, desert safaris, and how to experience 5-star Dubai luxury on a realistic budget.</p>
-            </div>
-            <a href="blog/dubai-travel-guide.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/hero-desert.jpg" alt="How to Plan a Sahara Desert Tour: Merzouga vs Zagora">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">SAHARA PLANNING • 16 MIN READ</div>
-              <h3>How to Plan a Sahara Desert Tour: Merzouga vs Zagora &amp; Luxury Camp Guide</h3>
-              <p>Erg Chebbi's 150m orange dunes vs Zagora's gravel plains, realistic 3-day circuits from Marrakech, 5-star camp amenities, and 2026 pricing.</p>
-            </div>
-            <a href="blog/sahara-desert-tour-merzouga-vs-zagora.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/review-atlas.jpg" alt="Renting a Car in Morocco vs Hiring a Private Driver">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">TRANSPORTATION &amp; SAFETY • 14 MIN READ</div>
-              <h3>Renting a Car in Morocco vs Private Driver: 2026 Safety &amp; Cost Guide</h3>
-              <p>Transparent pricing, hidden fees, Tizi n'Tichka mountain switchbacks, police radar traps, and whether self-driving fits your itinerary.</p>
-            </div>
-            <a href="blog/renting-a-car-in-morocco-vs-private-driver.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/morocco_private_driver.webp" alt="How Much Does a Private Driver in Morocco Cost? (2026 Price Guide)">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">PRICING &amp; LOGISTICS • 12 MIN READ</div>
-              <h3>How Much Does a Private Driver in Morocco Cost? (2026 Price Guide)</h3>
-              <p>Transparent daily rates, 4x4 Prado vs Mercedes van pricing, fuel inclusions, tipping etiquette, and route breakdowns.</p>
-            </div>
-            <a href="blog/morocco-private-driver-cost.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/cheap_flights_morocco.webp" alt="How to Find Cheap Flights to Morocco (2026 Insider Guide)">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">FLIGHTS & DEALS • 7 MIN READ</div>
-              <h3>How to Find Cheap Flights to Morocco (2026 Insider Guide)</h3>
-              <p>Top budget airlines, comparing Marrakech (RAK) vs Casablanca (CMN), and timing tricks for sub-$50 flights.</p>
-            </div>
-            <a href="blog/cheap-flights-to-morocco.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/sahara_camp.webp" alt="Best Time to Visit Sahara Morocco: Berber Luxury Camp Under Desert Stars">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">SEASONALITY • 5 MIN READ</div>
-              <h3>Best Time to Visit Sahara Morocco</h3>
-              <p>Mid-March to May and September to October offer mild temperatures, blooming mountain valleys, and comfortable desert nights.</p>
-            </div>
-            <a href="blog/best-time-to-visit-sahara-morocco.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/morocco_safety_hero.webp" alt="Is Morocco Safe for Tourists: Travel Safety Guide">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">SAFETY & ADVICE • 6 MIN READ</div>
-              <h3>Is Morocco Safe for Tourists?: Complete Travel Safety Guide</h3>
-              <p>Honest safety tips, female solo travel advice, medina navigation, and avoiding common tourist scams in Morocco.</p>
-            </div>
-            <a href="blog/is-morocco-safe-for-tourists.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/morocco_packing_hero.webp" alt="What to Wear in Morocco: Etiquette &amp; Packing Tips">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">CULTURE & STYLE • 4 MIN READ</div>
-              <h3>What to Wear in Morocco: Etiquette & Packing Tips</h3>
-              <p>Essential advice for modest, comfortable dressing across ancient medinas, high mountain trails, and desert camps.</p>
-            </div>
-            <a href="blog/what-to-wear-in-morocco.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/morocco_10_day_hero.webp" alt="The Ultimate 10-Day Morocco Itinerary: Marrakech, Sahara &amp; Fes">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">ITINERARIES • 7 MIN READ</div>
-              <h3>The Ultimate 10-Day Morocco Itinerary: Marrakech, Sahara & Fes</h3>
-              <p>Explore Tizi n'Tichka pass, Ait Ben Haddou, Todra Gorges, Erg Chebbi dunes, and Ziz Valley in one seamless private journey.</p>
-            </div>
-            <a href="blog/morocco-10-day-itinerary.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
-
-        <article class="blog-card reveal">
-          <div class="blog-media">
-            <img src="images/marrakech_vs_fes_hero.webp" alt="Marrakech vs Fes: Which Imperial City Should You Visit?">
-          </div>
-          <div class="blog-body">
-            <div>
-              <div class="blog-meta">CITY COMPARISON • 5 MIN READ</div>
-              <h3>Marrakech vs Fes: Which Imperial City Should You Visit?</h3>
-              <p>Compare Morocco's two greatest imperial cities to find the perfect match for your culture, food, and souk adventure.</p>
-            </div>
-            <a href="blog/marrakech-vs-fes.html" class="see-more-btn"><span>Read Article</span> <span>↳</span></a>
-          </div>
-        </article>
+    <!-- EXACT HOMEPAGE STYLE BLOG SECTION (.news) -->
+    <section id="blog" class="news">
+      <div class="news-head">
+        <p class="journeys-badge">04 // ROAM JOURNAL &amp; TRAVEL GUIDES</p>
+        <h1>Roam Journal — Morocco Travel Guides &amp; Insights</h1>
       </div>
 
-      <div class="faq-wrapper reveal">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <div class="faq-card" onclick="toggleFaq(this)">
-            <div class="faq-head">
-              <h4>What is the best time to visit Morocco?</h4>
-              <span class="faq-icon">+</span>
-            </div>
-            <div class="faq-body">
-              Spring (mid-March to May) and autumn (September to October) are ideal, offering pleasant warm weather ideal for medinas and the Sahara.
-            </div>
+      <div class="news-stream">
+        <aside class="news-intro">
+          <p>Practical tips, seasonal guides, local etiquette, and private route ideas from Marrakech experts.</p>
+          <div class="news-filter-box">
+            <button class="filter-btn active" data-category="all" onclick="filterCategory('all', this)">All Guides (14)</button>
+            <button class="filter-btn" data-category="desert" onclick="filterCategory('desert', this)">Sahara &amp; Desert (3)</button>
+            <button class="filter-btn" data-category="itineraries" onclick="filterCategory('itineraries', this)">Itineraries (3)</button>
+            <button class="filter-btn" data-category="culture" onclick="filterCategory('culture', this)">Culture &amp; Advice (4)</button>
+            <button class="filter-btn" data-category="global" onclick="filterCategory('global', this)">Global Intelligence (2)</button>
+            <button class="filter-btn" data-category="logistics" onclick="filterCategory('logistics', this)">Transport &amp; Flights (2)</button>
           </div>
-          <div class="faq-card" onclick="toggleFaq(this)">
-            <div class="faq-head">
-              <h4>Do I need a visa to visit Morocco?</h4>
-              <span class="faq-icon">+</span>
+        </aside>
+
+        <div class="news-list" id="articlesList">
+
+          <!-- 01: Spain & Morocco -->
+          <a href="blog/spain-morocco-itinerary.html" class="news-entry" data-category="itineraries">
+            <span class="news-index">01</span>
+            <div class="news-media">
+              <img src="images/dest-chefchaouen.jpg" alt="14-Day Spain &amp; Morocco Itinerary" loading="lazy" decoding="async">
             </div>
-            <div class="faq-body">
-              Citizens of the US, UK, Canada, Australia, and EU countries do not require a visa for stays up to 90 days. Always verify passport validity.
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">MULTI-COUNTRY</span>
+                <span class="news-date">13 MIN READ</span>
+              </div>
+              <strong>From Al-Andalus to the Medina: The 14-Day Spain &amp; Morocco Itinerary</strong>
+              <p>Trace 800 years of shared Moorish civilization from Seville and Granada across the Strait of Gibraltar to Chefchaouen, Fes, and the Sahara dunes.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
             </div>
-          </div>
-          <div class="faq-card" onclick="toggleFaq(this)">
-            <div class="faq-head">
-              <h4>Is Morocco safe for tourists?</h4>
-              <span class="faq-icon">+</span>
+          </a>
+
+          <!-- 02: Agafay vs Merzouga -->
+          <a href="blog/agafay-desert-vs-merzouga.html" class="news-entry" data-category="desert">
+            <span class="news-index">02</span>
+            <div class="news-media">
+              <img src="images/dest-merzouga.jpg" alt="Agafay Desert vs Merzouga" loading="lazy" decoding="async">
             </div>
-            <div class="faq-body">
-              Yes, Morocco is considered very safe for international travelers. The local government prioritizes tourism safety and hospitality.
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">DESERT EXPEDITIONS</span>
+                <span class="news-date">11 MIN READ</span>
+              </div>
+              <strong>Agafay Desert vs Merzouga: Which Morocco Desert Trip is Right for You?</strong>
+              <p>Marrakech's 45-minute stone desert glamping vs the 9-hour mountain odyssey to the 150m golden sand dunes of Erg Chebbi. An honest guide to distance and scenery.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
             </div>
-          </div>
-          <div class="faq-card" onclick="toggleFaq(this)">
-            <div class="faq-head">
-              <h4>What should female travelers wear in Morocco?</h4>
-              <span class="faq-icon">+</span>
+          </a>
+
+          <!-- 03: Art of the Souk -->
+          <a href="blog/the-art-of-the-souk-bargaining-etiquette.html" class="news-entry" data-category="culture">
+            <span class="news-index">03</span>
+            <div class="news-media">
+              <img src="images/souk-bargaining-art.webp" alt="The Art of the Souk Bargaining Etiquette" loading="lazy" decoding="async">
             </div>
-            <div class="faq-body">
-              Dressing modestly (covering shoulders and knees) is recommended out of respect for local customs, especially in historical medinas and rural villages.
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">CULTURAL ETIQUETTE</span>
+                <span class="news-date">9 MIN READ</span>
+              </div>
+              <strong>The Art of the Souk: Why Bargaining in Marrakech is a Conversation, Not Combat</strong>
+              <p>Forget what Western guidebooks teach you about haggling. Discover the ancient ritual of mint tea, decoding Berber carpet knots, and navigating the souks with dignity.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
             </div>
-          </div>
-          <div class="faq-card" onclick="toggleFaq(this)">
-            <div class="faq-head">
-              <h4>Can you drink alcohol in Morocco?</h4>
-              <span class="faq-icon">+</span>
+          </a>
+
+          <!-- 04: Tokyo Guide -->
+          <a href="blog/tokyo-travel-guide.html" class="news-entry" data-category="global">
+            <span class="news-index">04</span>
+            <div class="news-media">
+              <img src="images/tokyo-skyline-hero.jpg" alt="Where to Stay in Tokyo 2026" loading="lazy" decoding="async">
             </div>
-            <div class="faq-body">
-              Alcohol is available in licensed hotels, boutique riads, bars, and tourist restaurants, though drinking in public streets is prohibited.
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">GLOBAL DESTINATIONS</span>
+                <span class="news-date">16 MIN READ</span>
+              </div>
+              <strong>Where to Stay in Tokyo (2026): The Ultimate First-Timer Neighborhood Guide</strong>
+              <p>Shinjuku vs Shibuya head-to-head, Asakusa ryokan charm, Ginza luxury, JR Yamanote loop cheat sheet, and essential flight hacks.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
             </div>
-          </div>
-          <div class="faq-card" onclick="toggleFaq(this)">
-            <div class="faq-head">
-              <h4>What is the currency in Morocco?</h4>
-              <span class="faq-icon">+</span>
+          </a>
+
+          <!-- 05: Dubai Guide -->
+          <a href="blog/dubai-travel-guide.html" class="news-entry" data-category="global">
+            <span class="news-index">05</span>
+            <div class="news-media">
+              <img src="images/dubai-skyline-hero.jpg" alt="Dubai Travel Guide 2026" loading="lazy" decoding="async">
             </div>
-            <div class="faq-body">
-              The Moroccan Dirham (MAD). While major hotels accept credit cards, carrying cash is recommended for souk purchases and small cafes.
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">GLOBAL DESTINATIONS</span>
+                <span class="news-date">15 MIN READ</span>
+              </div>
+              <strong>The Ultimate Dubai Travel Guide (2026): Where to Stay &amp; Cheap Flights</strong>
+              <p>Downtown vs Marina hotel picks, DXB flight hacks, desert safaris, and how to experience 5-star Dubai luxury on a realistic budget.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
             </div>
-          </div>
+          </a>
+
+          <!-- 06: Sahara Planning: Merzouga vs Zagora -->
+          <a href="blog/sahara-desert-tour-merzouga-vs-zagora.html" class="news-entry" data-category="desert">
+            <span class="news-index">06</span>
+            <div class="news-media">
+              <img src="images/hero-desert.jpg" alt="How to Plan a Sahara Desert Tour: Merzouga vs Zagora" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">SAHARA PLANNING</span>
+                <span class="news-date">16 MIN READ</span>
+              </div>
+              <strong>How to Plan a Sahara Desert Tour: Merzouga vs Zagora &amp; Luxury Camp Guide</strong>
+              <p>Erg Chebbi's 150m orange dunes vs Zagora's gravel plains, realistic 3-day circuits from Marrakech, 5-star camp amenities, and 2026 pricing.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 07: Renting a Car vs Private Driver -->
+          <a href="blog/renting-a-car-in-morocco-vs-private-driver.html" class="news-entry" data-category="logistics">
+            <span class="news-index">07</span>
+            <div class="news-media">
+              <img src="images/review-atlas.jpg" alt="Renting a Car in Morocco vs Hiring a Private Driver" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">TRANSPORTATION</span>
+                <span class="news-date">14 MIN READ</span>
+              </div>
+              <strong>Renting a Car in Morocco vs Private Driver: 2026 Safety &amp; Cost Guide</strong>
+              <p>Transparent pricing, hidden fees, Tizi n'Tichka mountain switchbacks, police radar traps, and whether self-driving fits your itinerary.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 08: Private Driver Cost -->
+          <a href="blog/morocco-private-driver-cost.html" class="news-entry" data-category="logistics">
+            <span class="news-index">08</span>
+            <div class="news-media">
+              <img src="images/morocco_private_driver.webp" alt="How Much Does a Private Driver in Morocco Cost?" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">PRICING &amp; LOGISTICS</span>
+                <span class="news-date">12 MIN READ</span>
+              </div>
+              <strong>How Much Does a Private Driver in Morocco Cost? (2026 Price Guide)</strong>
+              <p>Transparent daily rates, 4x4 Prado vs Mercedes van pricing, fuel inclusions, tipping etiquette, and route breakdowns.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 09: Cheap Flights -->
+          <a href="blog/cheap-flights-to-morocco.html" class="news-entry" data-category="logistics">
+            <span class="news-index">09</span>
+            <div class="news-media">
+              <img src="images/cheap_flights_morocco.webp" alt="How to Find Cheap Flights to Morocco" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">FLIGHTS &amp; DEALS</span>
+                <span class="news-date">7 MIN READ</span>
+              </div>
+              <strong>How to Find Cheap Flights to Morocco (2026 Insider Guide)</strong>
+              <p>Top budget airlines, comparing Marrakech (RAK) vs Casablanca (CMN), and timing tricks for sub-$50 flights.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 10: Best Time to Visit Sahara -->
+          <a href="blog/best-time-to-visit-sahara-morocco.html" class="news-entry" data-category="desert">
+            <span class="news-index">10</span>
+            <div class="news-media">
+              <img src="images/sahara_camp.webp" alt="Best Time to Visit Sahara Morocco" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">SEASONALITY</span>
+                <span class="news-date">5 MIN READ</span>
+              </div>
+              <strong>Best Time to Visit Sahara Morocco: Seasonal Guide &amp; Desert Advice</strong>
+              <p>Mid-March to May and September to October offer mild temperatures, blooming mountain valleys, and comfortable desert nights.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 11: Safety Guide -->
+          <a href="blog/is-morocco-safe-for-tourists.html" class="news-entry" data-category="culture">
+            <span class="news-index">11</span>
+            <div class="news-media">
+              <img src="images/morocco_safety_hero.webp" alt="Is Morocco Safe for Tourists" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">SAFETY &amp; ADVICE</span>
+                <span class="news-date">6 MIN READ</span>
+              </div>
+              <strong>Is Morocco Safe for Tourists?: 2026 Travel Safety Reality</strong>
+              <p>Honest safety tips, female solo travel advice, medina navigation, and avoiding common tourist scams in Morocco.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 12: What to Wear -->
+          <a href="blog/what-to-wear-in-morocco.html" class="news-entry" data-category="culture">
+            <span class="news-index">12</span>
+            <div class="news-media">
+              <img src="images/morocco_packing_hero.webp" alt="What to Wear in Morocco: Etiquette &amp; Packing Tips" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">CULTURE &amp; STYLE</span>
+                <span class="news-date">4 MIN READ</span>
+              </div>
+              <strong>What to Wear in Morocco: Etiquette &amp; Packing Tips</strong>
+              <p>Essential advice for modest, comfortable dressing across ancient medinas, high mountain trails, and desert camps.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 13: 10-Day Itinerary -->
+          <a href="blog/morocco-10-day-itinerary.html" class="news-entry" data-category="itineraries">
+            <span class="news-index">13</span>
+            <div class="news-media">
+              <img src="images/morocco_10_day_hero.webp" alt="The Ultimate 10-Day Morocco Itinerary" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">ITINERARIES</span>
+                <span class="news-date">7 MIN READ</span>
+              </div>
+              <strong>The Ultimate 10-Day Morocco Itinerary: Marrakech, Sahara &amp; Fes</strong>
+              <p>Explore Tizi n'Tichka pass, Ait Ben Haddou, Todra Gorges, Erg Chebbi dunes, and Ziz Valley in one seamless private journey.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
+          <!-- 14: Marrakech vs Fes -->
+          <a href="blog/marrakech-vs-fes.html" class="news-entry" data-category="culture">
+            <span class="news-index">14</span>
+            <div class="news-media">
+              <img src="images/marrakech_vs_fes_hero.webp" alt="Marrakech vs Fes: Which Imperial City Should You Visit?" loading="lazy" decoding="async">
+            </div>
+            <div class="news-entry-copy">
+              <div class="news-entry-meta">
+                <span class="news-cat-tag">CITY COMPARISON</span>
+                <span class="news-date">5 MIN READ</span>
+              </div>
+              <strong>Marrakech vs Fes: Which Imperial City Should You Visit?</strong>
+              <p>Compare Morocco's two greatest imperial cities to find the perfect match for your culture, food, and souk adventure.</p>
+              <span class="see-more-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
+                <span>Read Guide</span>
+              </span>
+            </div>
+          </a>
+
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Exact Home Page Reserve Banner (Full Width Outside Max-Width Container) -->
-    <div class="journeys-reserve-banner reveal">
+    <!-- EXACT HOME PAGE RESERVE BANNER -->
+    <div class="journeys-reserve-banner">
       <div class="journeys-reserve-copy">
         <span class="journeys-reserve-kicker">Not sure where to begin?</span>
         <h3>Tell us your Morocco dream. We’ll design the road.</h3>
         <p>Share your dates, travel style, and must-see places. We’ll turn them into one private, workable Morocco itinerary.</p>
       </div>
-      <a href="index.html#contact" class="see-more-btn j-reserve-btn">
+      <a href="custom-morocco-tour.html" class="j-reserve-btn">
         <span>Start planning</span><span class="j-reserve-arrow" aria-hidden="true">→</span>
       </a>
     </div>
+
+    <!-- FAQ SECTION (ARCHITECTURAL LUXURY) -->
+    <section class="news-faq-section">
+      <div class="news-faq-head">
+        <p class="journeys-badge" style="margin-bottom: 16px;">FAQ // ESSENTIAL TRAVEL ADVICE</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-card" onclick="toggleFaq(this)">
+          <div class="faq-head">
+            <h4>What is the best time to visit Morocco?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            Spring (mid-March to May) and autumn (September to October) are ideal, offering pleasant warm weather ideal for medinas and the Sahara.
+          </div>
+        </div>
+        <div class="faq-card" onclick="toggleFaq(this)">
+          <div class="faq-head">
+            <h4>Do I need a visa to visit Morocco?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            Citizens of the US, UK, Canada, Australia, and EU countries do not require a visa for stays up to 90 days. Always verify passport validity.
+          </div>
+        </div>
+        <div class="faq-card" onclick="toggleFaq(this)">
+          <div class="faq-head">
+            <h4>Is Morocco safe for tourists?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            Yes, Morocco is considered very safe for international travelers. The local government prioritizes tourism safety and hospitality.
+          </div>
+        </div>
+        <div class="faq-card" onclick="toggleFaq(this)">
+          <div class="faq-head">
+            <h4>What should female travelers wear in Morocco?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            Dressing modestly (covering shoulders and knees) is recommended out of respect for local customs, especially in historical medinas and rural villages.
+          </div>
+        </div>
+        <div class="faq-card" onclick="toggleFaq(this)">
+          <div class="faq-head">
+            <h4>Can you drink alcohol in Morocco?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            Alcohol is available in licensed hotels, boutique riads, bars, and tourist restaurants, though drinking in public streets is prohibited.
+          </div>
+        </div>
+        <div class="faq-card" onclick="toggleFaq(this)">
+          <div class="faq-head">
+            <h4>What is the currency in Morocco?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            The Moroccan Dirham (MAD). While major hotels accept credit cards, carrying cash is recommended for souk purchases and small cafes.
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
@@ -728,138 +1022,46 @@
       const topEl = document.querySelector(".top");
       if(topEl){
         if(currentY < 70){
-          topEl.classList.add("at-top");
           topEl.classList.remove("at-bottom");
-          const logo = document.getElementById('navLogo');
-          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+          topEl.classList.add("at-top");
         } else {
-          topEl.classList.add("at-bottom");
           topEl.classList.remove("at-top");
-          const logo = document.getElementById('navLogo');
-          if(logo) logo.src = 'img/logo-for-light-bg.png';
+          topEl.classList.add("at-bottom");
         }
       }
     }
-    addEventListener("scroll", onScroll, {passive: true});
+    window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal, .reveal-block').forEach(el => observer.observe(el));
-
-    function toggleFaq(card){
+    // FAQ Accordion
+    function toggleFaq(card) {
       card.classList.toggle('open');
     }
 
-    /* ── CLICK & TAP STICKER POPUP (DESKTOP & MOBILE) ── */
-    (function(){
-      const stickers = [
-        "stickers/ait-ben-haddou-sticker.png",
-        "stickers/al-qarawiyyin-sticker.png",
-        "stickers/argan-oil-making-sticker.png",
-        "stickers/bab-mansour-sticker.png",
-        "stickers/essaouira-sqala-sticker.png",
-        "stickers/gnawa-maalem-sticker.png",
-        "stickers/hassan-tower-sticker.png",
-        "stickers/jemaa-el-fnaa-sticker.png",
-        "stickers/koutoubia-sticker.png",
-        "stickers/moroccan-caftan-sticker.png",
-        "stickers/tbourida-sticker.png",
-        "stickers/volubilis-sticker.png"
-      ];
-      let stickerIdx = 0;
-      let activeTimer = null;
+    // Category Filter Functionality
+    function filterCategory(cat, btn) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      if(btn) btn.classList.add('active');
 
-      function dismissAllStickers(fast) {
-        if (activeTimer) { clearTimeout(activeTimer); activeTimer = null; }
-        const activeStickers = document.querySelectorAll('.click-pop-sticker');
-        activeStickers.forEach(img => {
-          if (fast) {
-            img.remove();
-          } else {
-            img.style.opacity = "0";
-            img.style.transform = "translate(-50%, -50%) scale(0.6)";
-            setTimeout(() => { if (img.parentNode) img.remove(); }, 200);
+      const entries = document.querySelectorAll('.news-entry');
+      let visibleIdx = 1;
+      entries.forEach(entry => {
+        const itemCat = entry.getAttribute('data-category');
+        if (cat === 'all' || itemCat === cat) {
+          entry.style.display = 'grid';
+          const idxEl = entry.querySelector('.news-index');
+          if (idxEl) {
+            idxEl.textContent = (visibleIdx < 10 ? '0' : '') + visibleIdx;
           }
-        });
-      }
-
-      window.addEventListener('scroll', () => dismissAllStickers(false), { passive: true });
-
-      function spawnSticker(e) {
-        if (e.target.closest('a') || e.target.closest('button')) return;
-
-        dismissAllStickers(true);
-
-        const src = stickers[stickerIdx];
-        stickerIdx = (stickerIdx + 1) % stickers.length;
-
-        const img = document.createElement("img");
-        img.src = src;
-        img.alt = "";
-        img.className = "click-pop-sticker";
-        
-        let x = e.clientX;
-        let y = e.clientY;
-        if ((!x && x !== 0) && e.touches && e.touches[0]) {
-          x = e.touches[0].clientX;
-          y = e.touches[0].clientY;
+          visibleIdx++;
+        } else {
+          entry.style.display = 'none';
         }
-
-        const isMobile = window.innerWidth <= 900;
-        const stickerWidth = isMobile ? 115 : 170;
-        const rot = (Math.random() * 26 - 13).toFixed(1);
-
-        img.style.cssText = `
-          position: fixed;
-          left: ${x}px;
-          top: ${y}px;
-          width: ${stickerWidth}px;
-          height: auto;
-          pointer-events: none;
-          z-index: 99999;
-          transform: translate(-50%, -50%) scale(0.3) rotate(${rot}deg);
-          opacity: 0;
-          transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.25s ease;
-          filter: drop-shadow(0 12px 24px rgba(0,0,0,0.3));
-        `;
-
-        document.body.appendChild(img);
-
-        requestAnimationFrame(() => {
-          img.style.transform = `translate(-50%, -50%) scale(1) rotate(${rot}deg)`;
-          img.style.opacity = "1";
-        });
-
-        activeTimer = setTimeout(() => {
-          if (img.parentNode) {
-            img.style.transform = `translate(-50%, -50%) scale(0.7) rotate(${rot}deg)`;
-            img.style.opacity = "0";
-            setTimeout(() => { if (img.parentNode) img.remove(); }, 350);
-          }
-        }, 2000);
-      }
-
-      function attachStickerClick() {
-        const targets = document.querySelectorAll('.section-title, .journeys-header h1, .footer-logo-img, .footer-giant-brand, .footer-header-row, .footer-wrap');
-        targets.forEach(el => {
-          el.style.cursor = 'pointer';
-          el.addEventListener('click', spawnSticker);
-        });
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', attachStickerClick);
-      } else {
-        attachStickerClick();
-      }
-    })();
+      });
+    }
   </script>
   <script src="js/trip-concierge.js?v=20260928_gold2" defer></script>
+  <script src="js/roam-nav.js" defer></script>
 </body>
 </html>
