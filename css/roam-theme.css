@@ -453,6 +453,7 @@ footer#contact {
 .footer-nav-columns {
   display: flex;
   justify-content: flex-end;
+  gap: 36px;
 }
 .footer-col {
   display: flex;
@@ -465,16 +466,21 @@ footer#contact {
   font-size: 12px;
   font-weight: 700;
   color: #888888;
+  letter-spacing: -0.01em;
   margin-bottom: 8px;
 }
 .footer-col a {
   font-size: 14px;
   font-weight: 700;
   color: #000000;
+  letter-spacing: -0.02em;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
-.footer-col a:hover { color: #666666; }
+.footer-col a:hover {
+  color: #666666;
+  transform: translateX(4px);
+}
 .footer-giant-brand {
   width: 100%;
   padding: 16px 0 8px;
@@ -489,6 +495,8 @@ footer#contact {
   height: auto;
   display: block;
   object-fit: contain;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .footer-bottom-bar {
   display: flex;
@@ -509,13 +517,21 @@ footer#contact {
 .footer-legal a {
   color: #777777;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 .footer-legal a:hover { color: #000000; }
 
 @media (max-width: 850px) {
-  footer#contact { padding: 60px 16px 32px !important; }
-  .footer-header-row { grid-template-columns: 1fr !important; gap: 24px !important; }
+  footer#contact, footer { padding: 60px 16px 36px !important; }
+  .footer-wrap { gap: 28px !important; }
+  .footer-header-row { grid-template-columns: 1fr !important; gap: 28px !important; }
+  .footer-tagline { font-size: 16px !important; }
+  .footer-email-link { font-size: clamp(20px, 6.5vw, 32px) !important; word-break: break-all !important; }
+  .footer-nav-columns { justify-content: flex-start !important; flex-wrap: wrap !important; gap: 32px !important; }
   .footer-col { align-items: flex-start !important; text-align: left !important; }
+  .footer-giant-brand { padding: 12px 0 !important; }
+  .footer-bottom-bar { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; padding-top: 20px !important; }
+  .footer-legal { flex-direction: column !important; gap: 8px !important; font-size: 12px !important; }
 }
 
 /* ── EDITORIAL ARTICLE & TOUR PAGE LIGHT LUXURY THEME (MATCHING HOMEPAGE) ── */
