@@ -519,65 +519,51 @@
       color: var(--gold);
     }
 
-    /* Toolkit Box */
+    /* Travel Toolkit Box */
     .roam-toolkit-box {
-      background: #000000;
-      color: #ffffff;
-      padding: 36px 30px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 36px;
       margin: 48px 0;
-      border: 1px solid #000000;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
     }
 
-    .roam-toolkit-box h3 {
-      color: #ffffff;
-      margin-top: 0;
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 26px;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-      padding-bottom: 14px;
+    .roam-toolkit-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #000000;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
     }
 
     .roam-toolkit-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
     }
 
-    .roam-tool-item {
-      background: rgba(255,255,255,0.08);
-      padding: 20px;
-      border: 1px solid rgba(255,255,255,0.15);
-    }
-
-    .roam-tool-item h4 {
-      margin: 0 0 8px 0;
-      font-size: 17px;
-      color: var(--gold);
-    }
-
-    .roam-tool-item p {
+    .roam-toolkit-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background: #faf8f5;
+      border: 1px solid var(--border);
+      color: #000000 !important;
+      text-decoration: none !important;
       font-size: 14px;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.85);
-      margin: 0 0 16px 0;
+      font-weight: 700;
+      transition: all .2s ease;
     }
 
-    .roam-tool-btn {
-      display: inline-block;
-      background: var(--gold);
-      color: #000000 !important;
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
-
-    .roam-tool-btn:hover {
+    .roam-toolkit-link:hover {
       background: #ffffff;
-      color: #000000 !important;
+      border-color: #000000;
+      transform: translateY(-2px);
     }
 
     /* Callout & Field Note */
@@ -663,65 +649,7 @@
       display: block;
     }
 
-    /* Cross-sell CTA Box */
-    .roam-tour-cta-box {
-      background: #000000;
-      color: #ffffff;
-      padding: 40px 32px;
-      margin: 50px 0;
-      text-align: center;
-    }
 
-    .roam-tour-cta-box h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 30px;
-      margin: 0 0 16px;
-      color: #ffffff;
-    }
-
-    .roam-tour-cta-box p {
-      max-width: 680px;
-      margin: 0 auto 28px;
-      color: rgba(255,255,255,0.85);
-      font-size: 17px;
-    }
-
-    .roam-tour-cta-actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    .roam-btn-gold {
-      background: var(--gold);
-      color: #000000 !important;
-      font-size: 13px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      padding: 14px 26px;
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    .roam-btn-white {
-      background: transparent;
-      border: 1px solid #ffffff;
-      color: #ffffff !important;
-      font-size: 13px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      padding: 14px 26px;
-      display: inline-block;
-      text-decoration: none;
-    }
-
-    .roam-btn-white:hover {
-      background: #ffffff;
-      color: #000000 !important;
-    }
 
     /* Footer */
     footer {
@@ -1189,46 +1117,26 @@
       </div>
 
       <!-- Essential Travel Toolkit (Monetization Engine) -->
+      <!-- Essential Travel Toolkit (Monetization Engine) -->
       <div class="roam-toolkit-box" id="toolkit">
-        <h3>🧰 The 2026 Tokyo Essential Travel Toolkit</h3>
-        <p>Before you depart, set up these essential tools to eliminate friction across airports, trains, and mobile connectivity:</p>
-
+        <div class="roam-toolkit-title">Tokyo Trip Planning &amp; Booking Toolkit</div>
         <div class="roam-toolkit-grid">
-          <!-- Tool 1: Airalo eSIM -->
-          <div class="roam-tool-item">
-            <h4>📱 1. Japan High-Speed eSIM (Airalo)</h4>
-            <p>
-              Forget standing in long airport queues or carrying clunky pocket WiFi routers that need nightly charging. Install an <strong>Airalo Japan "Moshi Moshi" eSIM</strong> in 2 minutes for instant, reliable 4G/5G data on SoftBank and KDDI networks across Japan.
-            </p>
-            <a href="https://www.airalo.com/japan-esim" target="_blank" rel="noopener" class="roam-tool-btn">Get Japan eSIM from $4.50 &rarr;</a>
-          </div>
-
-          <!-- Tool 2: Trip.com Flights -->
-          <div class="roam-tool-item">
-            <h4>✈️ 2. Haneda (HND) Flight Hacks (Trip.com)</h4>
-            <p>
-              Flying into Haneda (HND) instead of Narita (NRT) saves you 90 minutes of round-trip transit and ¥5,000 in train fares. Use Trip.com’s fare calendar to find flash international airline deals directly into Haneda.
-            </p>
-            <a href="https://www.trip.com/flights/to-tokyo/" target="_blank" rel="noopener" class="roam-tool-btn">Compare Tokyo Flights &rarr;</a>
-          </div>
-
-          <!-- Tool 3: Booking.com -->
-          <div class="roam-tool-item">
-            <h4>🏨 3. Verified Boutique Stays (Booking.com)</h4>
-            <p>
-              Tokyo hotels fill up 3 to 6 months in advance during cherry blossom season (late March–April) and autumn foliage (November). Secure properties with flexible free cancellation options.
-            </p>
-            <a href="https://www.booking.com/city/jp/tokyo.html" target="_blank" rel="noopener" class="roam-tool-btn">Search Tokyo Hotels &rarr;</a>
-          </div>
-
-          <!-- Tool 4: Digital IC Cards -->
-          <div class="roam-tool-item">
-            <h4>💳 4. Digital Suica / Pasmo IC Cards</h4>
-            <p>
-              Physical Suica cards face periodic semiconductor chip shortages. If you use an iPhone, simply add a digital Suica or Pasmo directly via Apple Wallet (Settings &gt; Wallet &gt; Transit Card &gt; Suica) and tap through turnstiles seamlessly.
-            </p>
-            <span style="font-size: 11px; text-transform: uppercase; color: var(--gold); font-weight: bold;">Built Into Apple Wallet</span>
-          </div>
+          <a href="https://www.airalo.com/japan-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>📱 Airalo Japan High-Speed eSIM (From $4.50)</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://www.trip.com/flights/to-tokyo/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>✈️ Search Cheap Flights to Tokyo (HND &amp; NRT)</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://www.booking.com/city/jp/tokyo.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🏨 Compare Top Tokyo Hotels &amp; Ryokans (Booking.com)</span>
+            <span>&rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🚗 Compare Japan Car Rentals &amp; Mt. Fuji Trips</span>
+            <span>&rarr;</span>
+          </a>
         </div>
       </div>
 
@@ -1293,14 +1201,20 @@
 
       <!-- Cross-sell Bridge CTA -->
       <div class="roam-tour-cta-box">
-        <h3>Dreaming of Your Next Adventure Beyond Tokyo?</h3>
-        <p>
+        <span class="roam-tour-cta-kicker">★ PRIVATE EXPEDITIONS &amp; CHAUFFEURED TOURS</span>
+        <h3 class="roam-tour-cta-title">Dreaming of Your Next Adventure Beyond Tokyo?</h3>
+        <p class="roam-tour-cta-desc">
           From the futuristic skylines of Tokyo to the towering golden dunes of the Moroccan Sahara. Discover bespoke, private luxury journeys crafted by our Marrakech curators.
         </p>
         <div class="roam-tour-cta-actions">
-          <a href="../travel-deals.html#tokyo" class="roam-btn-gold">View Tokyo Deals Toolkit &rarr;</a>
-          <a href="../morocco-trip-cost-calculator.html" class="roam-btn-white">Calculate Morocco Trip Cost</a>
-          <a href="../custom-morocco-tour.html" class="roam-btn-white">Design Custom Morocco Journey</a>
+          <a href="../travel-deals.html#tokyo" class="roam-btn-white">View Tokyo Deals Toolkit &rarr;</a>
+          <a href="../morocco-trip-cost-calculator.html" class="roam-btn-white">Calculate Morocco Trip Cost &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20private%20tour." target="_blank" rel="noopener" class="roam-btn-wa">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:inline-block; vertical-align:middle; margin-right:6px;">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+            </svg>
+            WhatsApp Travel Concierge
+          </a>
         </div>
       </div>
 
