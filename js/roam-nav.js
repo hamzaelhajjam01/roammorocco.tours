@@ -55,6 +55,23 @@
     window.closeDrawer = function () {
       if (mDraw) mDraw.classList.remove("open");
     };
+
+    // Global Accordion Handler (.faq-item / .faq-question)
+    document.addEventListener("click", function (e) {
+      const q = e.target.closest(".faq-question");
+      if (!q) return;
+      const item = q.closest(".faq-item");
+      if (!item) return;
+      const parent = item.parentElement;
+      const isActive = item.classList.contains("active");
+      if (parent && parent.classList.contains("faq-accordion")) {
+        const siblings = parent.querySelectorAll(".faq-item");
+        siblings.forEach(function (s) { s.classList.remove("active"); });
+      }
+      if (!isActive) {
+        item.classList.add("active");
+      }
+    });
   }
 
   if (document.readyState === 'loading') {

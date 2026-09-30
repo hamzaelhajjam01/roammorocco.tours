@@ -1212,3 +1212,52 @@ a.roam-toolkit-link:hover span {
   }
 }
 
+/* ── UNIVERSAL ACCORDION FAQ STYLING ── */
+.faq-accordion {
+  margin: 36px 0;
+}
+.faq-item {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-bottom: 12px;
+  transition: border-color 0.2s ease;
+}
+.faq-question {
+  padding: 18px 22px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  user-select: none;
+  font-family: inherit;
+  color: #000000;
+}
+.faq-question::after {
+  content: "+";
+  font-size: 22px;
+  font-weight: 400;
+  color: #C8A45C;
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+.faq-item.active .faq-question::after {
+  content: "\2212";
+}
+.faq-answer {
+  display: none;
+  padding: 0 22px 22px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.72);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-answer p {
+  margin: 14px 0 0;
+}
+
