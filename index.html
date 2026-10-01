@@ -43,13 +43,19 @@
   <meta property="og:title" content="Roam Morocco Tours | Private Luxury & Adventure Tours Morocco">
   <meta property="og:description" content="Custom luxury Sahara desert expeditions, Atlas Mountains trekking, and private tours crafted by local Marrakech experts.">
   <meta property="og:image" content="https://roammorocco.tours/images/hero-desert.jpg">
+  <meta property="og:image:secure_url" content="https://roammorocco.tours/images/hero-desert.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Roam Morocco Tours - Sahara Desert Luxury Expeditions and Private Tours">
   <meta property="og:site_name" content="Roam Morocco Tours">
 
-  <!-- Twitter Cards -->
+  <!-- Search Engine Thumbnail & Twitter Cards -->
+  <meta name="thumbnail" content="https://roammorocco.tours/images/hero-desert.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Roam Morocco Tours | Private Luxury & Adventure Tours Morocco">
   <meta name="twitter:description" content="Custom luxury Sahara desert expeditions, Atlas Mountains trekking, and private tours crafted by local Marrakech experts.">
   <meta name="twitter:image" content="https://roammorocco.tours/images/hero-desert.jpg">
+  <meta name="twitter:image:alt" content="Roam Morocco Tours - Sahara Desert Luxury Expeditions and Private Tours">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -64,12 +70,40 @@
         "description": "Premier Morocco travel agency offering custom private tours across the Sahara Desert, ancient medinas, and Atlas Mountains."
       },
       {
+        "@type": "WebPage",
+        "@id": "https://roammorocco.tours/#webpage",
+        "url": "https://roammorocco.tours/",
+        "name": "Roam Morocco Tours | Private Luxury & Adventure Tours Morocco",
+        "description": "Custom luxury Sahara desert expeditions, Atlas Mountains trekking, and private tours crafted by local Marrakech experts.",
+        "isPartOf": {
+          "@id": "https://roammorocco.tours/#website"
+        },
+        "about": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://roammorocco.tours/#primaryimage",
+          "url": "https://roammorocco.tours/images/hero-desert.jpg",
+          "caption": "Luxury Sahara Desert camel trekking and golden dunes in Erg Chebbi, Morocco"
+        }
+      },
+      {
         "@type": "TravelAgency",
         "@id": "https://roammorocco.tours/#agency",
         "name": "Roam Morocco Tours",
         "url": "https://roammorocco.tours/",
-        "image": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
-        "logo": "https://roammorocco.tours/images/Logos/roammorocco-favicon.png",
+        "image": [
+          "https://roammorocco.tours/images/hero-desert.jpg",
+          "https://roammorocco.tours/img/wall-camp.jpg",
+          "https://roammorocco.tours/img/safari-sahara-fjlSCoiv_qM-unsplash.jpg"
+        ],
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
+          "width": "600",
+          "height": "600"
+        },
         "telephone": "+212 653-506441",
         "priceRange": "$$",
         "address": {
@@ -84,11 +118,50 @@
           "latitude": "31.6295",
           "longitude": "-7.9811"
         },
+        "sameAs": [
+          "https://www.facebook.com/roammorocco",
+          "https://www.instagram.com/roammorocco",
+          "https://chromewebstore.google.com/detail/roam-morocco-%E2%80%94-dirham-mad/flngffoeefehejlapaoaompgeomnnion",
+          "https://addons.mozilla.org/en-US/firefox/addon/roam-morocco-travel-guide/"
+        ]
+      },
+      {
+        "@type": ["TouristTrip", "Product"],
+        "@id": "https://roammorocco.tours/#privatetours",
+        "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+        "description": "Bespoke private tours across Morocco, including luxury Sahara desert glamping in Merzouga, High Atlas Mountains trekking, and Imperial Cities heritage journeys.",
+        "provider": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "brand": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "touristType": [
+          "Luxury Traveler",
+          "Adventure Traveler",
+          "Cultural Traveler",
+          "Family Traveler"
+        ],
+        "image": [
+          "https://roammorocco.tours/images/hero-desert.jpg",
+          "https://roammorocco.tours/img/wall-camp.jpg",
+          "https://roammorocco.tours/img/safari-sahara-fjlSCoiv_qM-unsplash.jpg"
+        ],
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "195",
+          "highPrice": "2850",
+          "offerCount": "24",
+          "availability": "https://schema.org/InStock",
+          "url": "https://roammorocco.tours/#services"
+        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5.0",
           "bestRating": "5",
           "worstRating": "1",
+          "ratingCount": "985",
           "reviewCount": "985"
         },
         "review": [
@@ -162,10 +235,6 @@
               "bestRating": "5"
             }
           }
-        ],
-        "sameAs": [
-          "https://www.facebook.com/roammorocco",
-          "https://www.instagram.com/roammorocco"
         ]
       }
     ]
@@ -790,25 +859,25 @@
     .ticker{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);display:flex;gap:7px;align-items:end}
     .ticker i{display:block;width:1px;background:#000;height:var(--bar-h,14px);opacity:var(--bar-o,.28);transform-origin:bottom;transform:scaleY(var(--bar-s,1));transition:height .18s linear,opacity .18s linear,transform .18s linear}
     .services{height:430vh;background:#fff}
-    .services-sticky{position:sticky;top:0;height:100vh;background:#fff;border-top:1px solid rgba(0,0,0,0.12);border-bottom:1px solid rgba(0,0,0,0.12);display:grid;grid-template-rows:auto 1fr auto;padding:24px 80px 20px;overflow:hidden}
+    .services-sticky{position:sticky;top:0;height:100vh;background:#fff;border-top:1px solid rgba(0,0,0,0.12);border-bottom:1px solid rgba(0,0,0,0.12);display:grid;grid-template-rows:auto 1fr auto;padding:clamp(20px, 3vh, 36px) clamp(24px, 5vw, 80px) 20px;overflow:hidden}
     .services h2{font-size:clamp(40px,5.8vw,80px);font-weight:800;letter-spacing:-.07em;line-height:.9;text-transform:uppercase;margin:0 0 20px;max-width:1120px}
-    .service-body{border-top:1px solid rgba(0,0,0,0.12);display:grid;grid-template-columns:160px minmax(390px,1fr) 260px 190px;gap:24px;padding-top:10px;align-items:start}
-    .label,.service-items li,.news-label,.meta{font-size:12px;letter-spacing:-.01em;line-height:1.2}
-    .service-list-viewport{height:150px;overflow:hidden;align-self:start;min-width:0}
-    .service-list{display:grid;grid-auto-rows:25px;gap:0;min-width:0;transform:translate3d(0,var(--service-list-y,0px),0);transition:transform .62s cubic-bezier(.16,1,.3,1);will-change:transform}
-    .service-choice{height:25px;border:0;background:transparent;text-align:left;padding:0;display:grid;grid-template-columns:54px minmax(0,1fr);align-items:baseline;color:#d3d3d3;cursor:pointer;font:inherit;transition:color .34s ease,opacity .34s ease}
+    .service-body{border-top:1px solid rgba(0,0,0,0.12);display:grid;grid-template-columns:130px minmax(320px,1.15fr) clamp(320px,26vw,440px) minmax(180px,1fr);gap:clamp(24px,3vw,56px);padding-top:clamp(16px,2.5vh,32px);align-items:start}
+    .label,.news-label,.meta{font-size:12px;letter-spacing:-.01em;line-height:1.2}
+    .service-list-viewport{height:252px;overflow:hidden;align-self:start;min-width:0}
+    .service-list{display:grid;grid-auto-rows:42px;gap:0;min-width:0;transform:translate3d(0,var(--service-list-y,0px),0);transition:transform .62s cubic-bezier(.16,1,.3,1);will-change:transform}
+    .service-choice{height:42px;border:0;background:transparent;text-align:left;padding:0;display:grid;grid-template-columns:56px minmax(0,1fr);align-items:baseline;color:#d3d3d3;cursor:pointer;font:inherit;transition:color .34s ease,opacity .34s ease}
     .service-choice:hover,.service-choice.active{color:#000}
     .service-choice:not(.active){opacity:.74}
     .service-choice.active{transform:none}
-    .service-index{font-size:24px;font-weight:800;letter-spacing:-.05em;line-height:.92;font-variant-numeric:tabular-nums}
-    .service-name{font-size:27px;font-weight:800;letter-spacing:-.065em;line-height:.9;white-space:nowrap;text-transform:none}
-    .service-image-wrap{position:relative;width:230px;height:270px;overflow:hidden;border-radius:0!important;justify-self:center;background:#eee;clip-path:none!important;transform:translateY(16px) scale(.94);transition:transform .8s cubic-bezier(.16,1,.3,1);border:1px solid rgba(0,0,0,0.06)}
+    .service-index{font-size:clamp(28px,2.5vw,36px);font-weight:800;letter-spacing:-.05em;line-height:.92;font-variant-numeric:tabular-nums}
+    .service-name{font-size:clamp(32px,3vw,44px);font-weight:800;letter-spacing:-.06em;line-height:.9;white-space:nowrap;text-transform:none}
+    .service-image-wrap{position:relative;width:clamp(320px,26vw,440px);height:clamp(360px,44vh,480px);overflow:hidden;border-radius:0!important;justify-self:center;background:#eee;clip-path:none!important;transform:translateY(16px) scale(.94);transition:transform .8s cubic-bezier(.16,1,.3,1);border:1px solid rgba(0,0,0,0.06)}
     .services-sticky.in .service-image-wrap{clip-path:none!important;transform:translateY(0) scale(1)}
     .service-image-layer{position:absolute;inset:0;overflow:hidden;clip-path:inset(50%);z-index:0;will-change:clip-path}
     .service-image-layer:first-child{clip-path:inset(0%)}
     .service-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;border-radius:0!important;clip-path:none!important;transform:none}
-    .service-items{list-style:none;margin:0;padding:0}
-    .service-items li{margin:0 0 6px;transform:translateY(var(--item-y,0px));opacity:var(--item-alpha,1);transition:transform .42s cubic-bezier(.16,1,.3,1),opacity .32s ease;animation:serviceDetailIn .55s cubic-bezier(.16,1,.3,1) both}
+    .service-items{list-style:none;margin:0;padding:8px 0 0}
+    .service-items li{font-size:clamp(14px,1.1vw,16px);line-height:1.6;margin:0 0 10px;color:rgba(0,0,0,0.78);font-weight:500;letter-spacing:-.01em;transform:translateY(var(--item-y,0px));opacity:var(--item-alpha,1);transition:transform .42s cubic-bezier(.16,1,.3,1),opacity .32s ease;animation:serviceDetailIn .55s cubic-bezier(.16,1,.3,1) both}
     .service-items li:nth-child(2){animation-delay:.035s}.service-items li:nth-child(3){animation-delay:.07s}.service-items li:nth-child(4){animation-delay:.105s}
     @keyframes serviceDetailIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(var(--item-y,0px))}}
     .logos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:clamp(32px,6vw,96px);padding:22px 0 14px;overflow:visible}
@@ -2007,7 +2076,8 @@
       if(active===activeService)return;
       activeService=active;
       serviceList.innerHTML=services.map((s,i)=>`<button class="service-choice ${i===active?'active':''}" data-i="${i}"><span class="service-index">${i+1}</span><span class="service-name">${s[0]}</span></button>`).join("");
-      serviceList.style.setProperty("--service-list-y",`${-active*25}px`);
+      const choiceH = window.innerWidth <= 900 ? 25 : 42;
+      serviceList.style.setProperty("--service-list-y",`${-active*choiceH}px`);
       items.innerHTML=services[active][2].map(x=>`<li>${x}</li>`).join("");
       serviceWrap.setAttribute("aria-label",services[active][0]);
       serviceLayers.forEach((layer,i)=>layer.setAttribute("aria-hidden",i===active?"false":"true"));
