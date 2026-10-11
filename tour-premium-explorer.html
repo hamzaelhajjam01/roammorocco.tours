@@ -509,121 +509,6 @@
       margin: 0 auto 26px !important;
     }
 
-    /* Deals Toolkit Box: Luxury Light Editorial System */
-    .roam-toolkit-box {
-      background: #ffffff !important;
-      border: 1px solid rgba(0, 0, 0, 0.14) !important;
-      padding: 36px 32px !important;
-      margin: 48px 0 !important;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04) !important;
-      border-radius: 0 !important;
-    }
-    .roam-toolkit-title {
-      font-family: Helvetica, Arial, sans-serif !important;
-      font-size: 18px !important;
-      font-weight: 800 !important;
-      letter-spacing: -.02em !important;
-      text-transform: uppercase !important;
-      color: #000000 !important;
-      margin-bottom: 20px !important;
-    }
-        .roam-toolkit-grid {
-      display: grid !important;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
-      gap: 16px !important;
-    }
-    .roam-toolkit-link,
-    .roam-tour-content a.roam-toolkit-link,
-    a.roam-toolkit-link {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      gap: 14px !important;
-      padding: 16px 20px !important;
-      background: #fdfcf9 !important;
-      border: 1px solid rgba(0, 0, 0, 0.12) !important;
-      border-left: 4px solid var(--gold, #C8A45C) !important;
-      border-radius: 6px !important;
-      color: #000000 !important;
-      text-decoration: none !important;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02) !important;
-      transition: all .25s ease !important;
-      cursor: pointer !important;
-    }
-    .roam-toolkit-link:hover,
-    .roam-tour-content a.roam-toolkit-link:hover,
-    a.roam-toolkit-link:hover {
-      background: #ffffff !important;
-      border-color: rgba(0, 0, 0, 0.25) !important;
-      border-left-color: #000000 !important;
-      transform: translateY(-2px) !important;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
-    }
-    .roam-toolkit-link span:first-child,
-    .roam-tour-content a.roam-toolkit-link span:first-child,
-    a.roam-toolkit-link span:first-child {
-      font-size: 14px !important;
-      font-weight: 700 !important;
-      line-height: 1.4 !important;
-      color: #111111 !important;
-      flex: 1 1 auto !important;
-      text-decoration: none !important;
-    }
-    .roam-toolkit-link span:last-child:not(:only-child),
-    .roam-tour-content a.roam-toolkit-link span:last-child:not(:only-child),
-    a.roam-toolkit-link span:last-child:not(:only-child) {
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 6px !important;
-      padding: 8px 14px !important;
-      background: #000000 !important;
-      color: #ffffff !important;
-      border: 1px solid #000000 !important;
-      border-radius: 4px !important;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
-      font-size: 12px !important;
-      font-weight: 800 !important;
-      letter-spacing: 0.03em !important;
-      text-transform: uppercase !important;
-      white-space: nowrap !important;
-      flex-shrink: 0 !important;
-      text-decoration: none !important;
-      transition: all 0.2s ease !important;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) !important;
-    }
-    .roam-toolkit-link:hover span:last-child:not(:only-child),
-    .roam-tour-content a.roam-toolkit-link:hover span:last-child:not(:only-child),
-    a.roam-toolkit-link:hover span:last-child:not(:only-child) {
-      background: var(--gold, #C8A45C) !important;
-      border-color: var(--gold, #C8A45C) !important;
-      color: #000000 !important;
-      box-shadow: 0 4px 12px rgba(200, 164, 92, 0.35) !important;
-    }
-    @media (max-width: 580px) {
-      .roam-toolkit-grid {
-        grid-template-columns: 1fr !important;
-        gap: 12px !important;
-      }
-      .roam-toolkit-link,
-      .roam-tour-content a.roam-toolkit-link,
-      a.roam-toolkit-link {
-        flex-direction: column !important;
-        align-items: stretch !important;
-        gap: 12px !important;
-        padding: 16px 18px !important;
-      }
-      .roam-toolkit-link span:last-child:not(:only-child),
-      .roam-tour-content a.roam-toolkit-link span:last-child:not(:only-child),
-      a.roam-toolkit-link span:last-child:not(:only-child) {
-        width: 100% !important;
-        text-align: center !important;
-        justify-content: center !important;
-        padding: 10px 14px !important;
-      }
-    }
-
     /* Human-Centered Storytelling: Bourdain Field Note Card */
     .roam-field-note {
       background: #faf8f5 !important;
@@ -833,12 +718,24 @@
 
       <!-- Travel Deals Toolkit -->
       <div class="roam-toolkit-box">
-        <div class="roam-toolkit-title">Trip Planning &amp; Booking Toolkit</div>
+        <div class="roam-toolkit-title">✈️ Trip Planning &amp; Booking Toolkit</div>
         <div class="roam-toolkit-grid">
-          <a href="travel-deals.html#flights" class="roam-toolkit-link"><span>✈️ Best Flights to Marrakech</span><span>&rarr;</span></a>
-          <a href="travel-deals.html#hotels" class="roam-toolkit-link"><span>🏨 Boutique Marrakech Riads</span><span>&rarr;</span></a>
-          <a href="travel-deals.html#esim" class="roam-toolkit-link"><span>📶 Fast Morocco eSIM</span><span>&rarr;</span></a>
-          <a href="custom-morocco-tour.html" class="roam-toolkit-link"><span>🚐 Custom 4x4 &amp; Chauffeur</span><span>&rarr;</span></a>
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Best Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Boutique Marrakech Riads</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Fast Morocco eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="custom-morocco-tour.html" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚐 Custom 4x4 &amp; Chauffeur</span>
+            <span class="roam-toolkit-btn">Plan Route &rarr;</span>
+          </a>
         </div>
       </div>
 
