@@ -7,7 +7,7 @@ This repository contains the static production website for **Roam Morocco** ([ht
 - **Business Type:** Travel Agency / Tourism Services (Local & Inbound)
 - **Target Audience:** English-speaking international travelers (US, UK, Canada, Australia, EU)
 - **Primary Service Offerings:** Custom Morocco Private Tours, Sahara Desert Expeditions (Merzouga/Erg Chebbi), Imperial Cities, Atlas Mountains Trekking, Luxury Riads.
-- **Top Competitors:** Authentic Morocco Tours, Morocco Explored, Desert Luxury Camp.
+- **Top Competitors:** Authentic Morocco (authentic-morocco.com), Sun Trails (sun-trails.com), Travel Exploration (travel-exploration.com), Mint Tea Tours (mintteatours.com), Desert Luxury Camp (desertluxurycamp.com).
 - **Key Landing Pages:**
   - `index.html` — Homepage
   - `tour-active-atlas.html`, `tour-heritage-cinema.html`, `tour-premium-explorer.html` — Signature tour packages
