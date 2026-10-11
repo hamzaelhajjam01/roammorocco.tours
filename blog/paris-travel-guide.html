@@ -540,9 +540,9 @@
       padding-bottom: 10px;
     }
 
-    .roam-toolkit-grid {
+        .roam-toolkit-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 16px;
     }
 
@@ -550,21 +550,79 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 14px;
       padding: 16px 20px;
-      background: #faf8f5;
+      background: #fdfcf9;
       border: 1px solid var(--border);
+      border-left: 4px solid var(--gold, #C8A45C);
+      border-radius: 6px;
       color: #000000 !important;
       text-decoration: none !important;
-      font-size: 14px;
-      font-weight: 700;
-      transition: all .2s ease;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      transition: all .25s ease;
     }
 
     .roam-toolkit-link:hover {
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.25);
+      border-left-color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .roam-toolkit-link span:first-child {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111111;
+      flex: 1 1 auto;
+    }
+
+    .roam-toolkit-link span:last-child:not(:only-child) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
       background: #000000;
       color: #ffffff !important;
-      border-color: #000000;
-      transform: translateY(-2px);
+      border: 1px solid #000000;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .roam-toolkit-link:hover span:last-child:not(:only-child) {
+      background: var(--gold, #C8A45C);
+      border-color: var(--gold, #C8A45C);
+      color: #000000 !important;
+      box-shadow: 0 4px 12px rgba(200, 164, 92, 0.35);
+    }
+
+    @media (max-width: 580px) {
+      .roam-toolkit-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .roam-toolkit-link {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 16px 18px;
+      }
+      .roam-toolkit-link span:last-child:not(:only-child) {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 14px;
+      }
     }
 
     /* Callout & Field Note */
