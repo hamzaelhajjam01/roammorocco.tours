@@ -31,8 +31,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Roam Morocco Tours | Private Luxury & Adventure Tours Morocco</title>
-  <meta name="description" content="Discover Morocco with Roam Morocco Tours. Custom luxury Sahara desert expeditions, Atlas Mountains trekking, and private imperial city tours crafted by local Marrakech experts.">
+  <title>Roam Morocco Tours | Luxury Private Tours &amp; Sahara Expeditions</title>
+  <meta name="description" content="Discover Morocco with Roam Morocco Tours. Custom luxury Sahara desert expeditions, Atlas trekking, and private tours crafted by local Marrakech experts.">
   <link rel="canonical" href="https://roammorocco.tours/">
   <link rel="alternate" hreflang="en" href="https://roammorocco.tours/">
   <link rel="alternate" hreflang="x-default" href="https://roammorocco.tours/">
@@ -751,9 +751,8 @@
     @keyframes blink{50%{opacity:.22;transform:scale(.72)}}
     .hero{min-height:auto;padding:120px 48px 48px;display:flex;flex-direction:column;gap:16px;position:relative;background:var(--white);overflow:hidden;z-index:1}
     .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;padding-top:0;will-change:transform}
-    .hero h1{font-size:clamp(64px,8.35vw,138px);font-weight:900;letter-spacing:-.085em;line-height:.78;margin:0;text-transform:uppercase;will-change:transform}
-    .hero h1{font-size:clamp(64px,8.35vw,138px);font-weight:900;letter-spacing:-.085em;line-height:.78;margin:0;text-transform:uppercase;will-change:transform;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
-    .hero h1.right{text-align:right}
+    .hero h1, .hero .hero-h1-sub{font-size:clamp(64px,8.35vw,138px);font-weight:900;letter-spacing:-.085em;line-height:.78;margin:0;text-transform:uppercase;will-change:transform;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
+    .hero h1.right, .hero .hero-h1-sub.right{text-align:right}
     .split{display:block;overflow:hidden}
     .split>span{display:block;transform:translateY(112%) rotate(.6deg);transition:transform .95s cubic-bezier(.16,1,.3,1)}
     .loaded .split>span,.in .split>span{transform:translateY(0) rotate(0)}
@@ -765,7 +764,7 @@
     @media (max-width:900px){
       .hero{min-height:auto!important;padding:84px 16px 0!important;gap:12px!important}
       .hero-grid{display:flex!important;flex-direction:column!important;gap:12px!important}
-      .hero h1{font-size:clamp(36px,9.5vw,52px)!important;line-height:.86!important}
+      .hero h1, .hero .hero-h1-sub{font-size:clamp(36px,9.5vw,52px)!important;line-height:.86!important}
       .stats{display:flex!important;flex-direction:column!important;gap:6px!important;padding-bottom:8px!important;margin-top:8px!important}
       .stats p{font-size:13px!important;text-align:left!important}
       .stats p:nth-child(2),.stats p:nth-child(3){text-align:left!important}
@@ -1257,8 +1256,8 @@
 
       .hero{padding:84px 16px 8px!important}
       .hero-grid{display:flex;flex-direction:column;gap:4px;padding-top:8px}
-      .hero h1.right{text-align:right;align-self:flex-end;font-size:clamp(30px,8vw,44px);line-height:.88}
-      .hero h1:not(.right){text-align:left;align-self:flex-start;font-size:clamp(30px,8vw,44px);line-height:.88;margin-top:0}
+      .hero h1.right, .hero .hero-h1-sub.right{text-align:right;align-self:flex-end;font-size:clamp(30px,8vw,44px);line-height:.88}
+      .hero h1:not(.right), .hero .hero-h1-sub:not(.right){text-align:left;align-self:flex-start;font-size:clamp(30px,8vw,44px);line-height:.88;margin-top:0}
       .stats{grid-template-columns:1fr;gap:6px;margin-top:8px;padding-bottom:0!important}.stats p,.stats p:nth-child(2),.stats p:nth-child(3){text-align:left}
 
       .showcase{padding:0!important;margin:0!important;}
@@ -1712,7 +1711,7 @@
       <p class="hero-tagline" style="font-size: clamp(0.85rem, 1.5vw, 1.05rem); color: #C8A45C; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600;">Custom Luxury &amp; Adventure Tours Across Morocco • Marrakech</p>
       <div class="hero-grid">
         <h1><span class="split"><span>FEEL MOROCCO</span></span></h1>
-        <h1 class="right"><span class="split"><span>REMEMBER FOREVER</span></span></h1>
+        <div class="hero-h1-sub right"><span class="split"><span>REMEMBER FOREVER</span></span></div>
       </div>
 
       <!-- AI TRIP PROMPT — below titles, above stats, desktop & mobile -->
@@ -2744,7 +2743,7 @@
       }
 
       function attachStickerClick() {
-        const targets = document.querySelectorAll('.hero h1, .footer-logo-img, .footer-giant-brand, .footer-header-row, .footer-wrap');
+        const targets = document.querySelectorAll('.hero h1, .hero .hero-h1-sub, .footer-logo-img, .footer-giant-brand, .footer-header-row, .footer-wrap');
         targets.forEach(el => {
           el.style.cursor = 'pointer';
           el.addEventListener('click', spawnSticker);
