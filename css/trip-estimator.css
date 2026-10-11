@@ -148,7 +148,7 @@
 }
 
 .est-route-desc {
-  font-family: Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 12.5px;
   line-height: 1.5;
   color: var(--calc-text-muted);
@@ -307,7 +307,7 @@
 }
 
 .est-per-person {
-  font-family: Georgia, serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: var(--calc-text-muted);
   margin-bottom: 24px;

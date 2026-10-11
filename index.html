@@ -284,7 +284,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
   <style>
     :root{
       --white:#fff;--black:#000;--soft:#f4f4f4;--muted:#d9d9d9;--red:#f10b18;
@@ -406,7 +406,7 @@
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;background:var(--white);color:var(--black);font-family:Helvetica,Arial,sans-serif;overflow-x:hidden}
+    body{margin:0;background:var(--white);color:var(--black);font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;overflow-x:hidden}
     main{position:relative;z-index:10;background:var(--white)}
     a{color:inherit;text-decoration:none}
     img,video{display:block;max-width:100%}
@@ -874,7 +874,7 @@
     .showcase-wide video,.showcase-wide img{width:100%;height:100%;object-fit:cover}
     .showcase-wide video.clean-generated{transform:scale(1.2);transform-origin:center;object-position:center}
     .serif-break{padding:60px 24px 16px;height:auto;background:#fff;display:grid;place-items:center;text-align:center}
-    .serif-break p{font-family:Georgia,serif;font-size:clamp(22px,2.3vw,34px);letter-spacing:-.045em;margin:0;color:#000;transform:translateY(20px);opacity:0;transition:transform .8s cubic-bezier(.16,1,.3,1),opacity .8s}
+    .serif-break p{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:clamp(22px,2.3vw,34px);letter-spacing:-.045em;margin:0;color:#000;transform:translateY(20px);opacity:0;transition:transform .8s cubic-bezier(.16,1,.3,1),opacity .8s}
     .serif-break.in p{transform:translateY(0);opacity:1}
     .big-feel{padding:16px 24px 60px;height:auto;background:#fff;display:grid;place-items:center;text-align:center;overflow:hidden}
     .big-feel h2{font-size:clamp(44px,9vw,128px);font-weight:900;letter-spacing:-.085em;line-height:.85;text-transform:uppercase;margin:0;color:#000;transform:translateY(30px) scale(.95);opacity:0;transition:transform 1s cubic-bezier(.16,1,.3,1),opacity 1s}
@@ -926,7 +926,7 @@
     .feature-copy{padding:20px 0}
     .feature-copy .meta{font-family:"Courier New",monospace;font-size:12px;text-transform:uppercase;margin:0 0 18px}
     .feature-copy h2{font-size:clamp(58px,8.2vw,136px);font-weight:800;letter-spacing:-.085em;line-height:.78;text-transform:uppercase;margin:0}
-    .feature-copy p{font-family:Georgia,serif;font-size:clamp(22px,2.2vw,34px);letter-spacing:-.035em;line-height:1.13;margin:26px 0 0;max-width:560px}
+    .feature-copy p{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:clamp(22px,2.2vw,34px);letter-spacing:-.035em;line-height:1.13;margin:26px 0 0;max-width:560px}
     .feature-media{height:68vh;overflow:hidden;background:#11100d;border-radius:32px;position:relative;border:1px solid rgba(0,0,0,0.08);box-shadow:0 20px 60px rgba(0,0,0,0.08)}
     .feature-media video,.feature-media img{width:100%;height:100%;min-height:100%;object-fit:cover;transform:scale(1.25)}
     .feature-row.reverse .feature-copy{order:2}
@@ -939,14 +939,14 @@
     .about-card{min-height:calc(36vh - 8px);border:1px solid rgba(0,0,0,0.06);border-radius:28px;background:rgba(255,255,255,0.72);backdrop-filter:blur(36px) saturate(1.8);-webkit-backdrop-filter:blur(36px) saturate(1.8);box-shadow:0 16px 48px rgba(0,0,0,0.05);display:grid;align-content:space-between;padding:32px 28px;position:relative;overflow:hidden;word-break:break-word}
     .about-card:after{content:"";position:absolute;right:24px;top:24px;width:8px;height:8px;background:var(--red);border-radius:50%}
     .about-card h3{font-size:clamp(32px,3.6vw,52px);font-weight:800;letter-spacing:-.05em;line-height:.92;margin:0 0 16px;text-transform:uppercase;word-wrap:break-word}
-    .about-card p{font-family:Georgia,serif;font-size:clamp(16px,1.35vw,19px);letter-spacing:-.02em;line-height:1.45;margin:0;max-width:100%}
+    .about-card p{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:clamp(16px,1.35vw,19px);letter-spacing:-.02em;line-height:1.45;margin:0;max-width:100%}
     .news{background:#fff;border-top:1px solid rgba(0,0,0,0.12);border-bottom:1px solid rgba(0,0,0,0.12);color:#000;width:100%;max-width:none;margin:0;padding:0;display:block;position:relative;box-sizing:border-box}
     .news:before{display:none}
     .news-head{padding:128px max(48px,calc((100vw - 1120px)/2));border-bottom:1px solid rgba(0,0,0,0.12)}
     .news h2{max-width:1120px;font-size:clamp(48px,4.6vw,72px);font-weight:800;letter-spacing:-.05em;line-height:.9;text-transform:uppercase;margin:0}
     .news-stream{width:auto;margin:0 max(80px,calc((100vw - 1120px)/2));padding:32px 0 128px;display:flex;align-items:flex-start}
     .news-intro{position:sticky;top:96px;width:340px;flex:0 0 340px;align-self:flex-start}
-    .news p{font-family:Georgia,serif;font-size:24px;letter-spacing:-.02em;line-height:1.2;margin:0;max-width:340px}
+    .news p{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:24px;letter-spacing:-.02em;line-height:1.2;margin:0;max-width:340px}
     .see-more-btn{
       display:inline-flex;
       align-items:center;
@@ -1035,7 +1035,7 @@
       max-width:340px;
     }
     .dp-tagline{
-      font-family:Georgia, serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-style:italic;
       font-size:24px;
       color:#000000;
@@ -1413,7 +1413,7 @@
     .journey-head-line:nth-child(3) .journey-head-word{transition-delay:.22s}
     .journeys-section.in .journey-head-word{transform:translate3d(0,0,0)}
     .journeys-header-bottom{display:grid;grid-template-columns:minmax(260px,430px) 1fr;gap:64px;align-items:end;border-top:1px solid rgba(0,0,0,.18);padding-top:22px}
-    .journeys-subtitle{font-family:Georgia,serif;font-size:clamp(19px,1.8vw,25px);letter-spacing:-.03em;line-height:1.22;color:rgba(0,0,0,.82);margin:0}
+    .journeys-subtitle{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:clamp(19px,1.8vw,25px);letter-spacing:-.03em;line-height:1.22;color:rgba(0,0,0,.82);margin:0}
     .journeys-principles{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
     .journey-principle{display:grid;gap:7px;font-size:12px;line-height:1.2}
     .journey-principle span{font-family:"Courier New",monospace;color:rgba(0,0,0,.42)}
@@ -1429,7 +1429,7 @@
     .j-tab-index{font-family:"Courier New",monospace;font-size:11px;padding-top:4px}
     .j-tab-copy{display:grid;gap:5px}
     .j-tab-copy strong{font-size:18px;line-height:1;letter-spacing:-.04em;text-transform:uppercase}
-    .j-tab-copy small{font-family:Georgia,serif;font-size:13px;line-height:1.25;color:inherit}
+    .j-tab-copy small{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;color:inherit}
     .j-tab-arrow{font-size:18px;line-height:1;opacity:0;transform:translate(-6px,6px);transition:opacity .3s ease,transform .3s ease}
     .j-tab.active .j-tab-arrow,.j-tab:hover .j-tab-arrow{opacity:1;transform:translate(0,0)}
 
@@ -1456,7 +1456,7 @@
     .j-card-head{margin:0 0 16px}
     .j-time-badge{display:block;font-family:"Courier New",monospace;font-size:10px;font-weight:700;letter-spacing:.1em;line-height:1.35;text-transform:uppercase;color:var(--red,#f10b18);margin:0 0 12px}
     .journey-card h3{font-size:clamp(30px,3vw,46px);font-weight:800;letter-spacing:-.055em;line-height:.92;color:#000;margin:0;text-transform:uppercase}
-    .j-card-desc{font-family:Georgia,serif;font-size:17px;line-height:1.48;color:rgba(0,0,0,.76);margin:0 0 24px;max-width:520px}
+    .j-card-desc{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:17px;line-height:1.48;color:rgba(0,0,0,.76);margin:0 0 24px;max-width:520px}
     .j-card-footer{display:grid;gap:24px;padding-top:20px;border-top:1px solid rgba(0,0,0,.13)}
     .j-card-tags{display:grid;grid-template-columns:1fr;gap:8px}
     .j-tag{display:flex;align-items:center;gap:9px;padding:0;border:0;border-radius:0;background:transparent;font-size:12px;font-weight:700;color:rgba(0,0,0,.68)}
@@ -1500,7 +1500,7 @@
     .journeys-reserve-copy{display:grid;gap:12px}
     .journeys-reserve-kicker{font-family:"Courier New",monospace;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.54)}
     .journeys-reserve-banner h3{font-size:clamp(44px,6.4vw,92px);font-weight:800;letter-spacing:-.07em;line-height:.86;text-transform:uppercase;margin:0;max-width:920px}
-    .journeys-reserve-banner p{font-family:Georgia,serif;color:rgba(255,255,255,.72);font-size:18px;margin:4px 0 0;max-width:620px;line-height:1.35}
+    .journeys-reserve-banner p{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;color:rgba(255,255,255,.72);font-size:18px;margin:4px 0 0;max-width:620px;line-height:1.35}
     .journeys-section .j-reserve-btn{color:#fff!important;border-top:1px solid rgba(255,255,255,.35)!important;border-bottom:1px solid rgba(255,255,255,.35)!important;padding:18px 0!important;min-width:230px;justify-content:space-between!important;font-size:15px!important}
     .journeys-section .j-reserve-btn:hover{color:#fff!important}
     .j-reserve-arrow{font-size:22px;transition:transform .25s ease}
@@ -1957,7 +1957,7 @@
               <span>What is the best time of year to visit Morocco?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
-            <p style="margin: 16px 0 0; font-family: Georgia, serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
+            <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
               The optimal time to visit Morocco is during spring (mid-March to May) and autumn (September to November). The days are comfortably warm (22°C–28°C / 72°F–82°F) and desert nights in Merzouga are pleasant, avoiding the extreme 45°C (113°F) midsummer heat.
             </p>
           </details>
@@ -1967,7 +1967,7 @@
               <span>How much do private Morocco tours and desert expeditions cost?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
-            <p style="margin: 16px 0 0; font-family: Georgia, serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
+            <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
               Bespoke private tours typically range from $195 to $385 USD per person per day depending on party size and accommodation tier. Packages include private Toyota Prado 4x4 or Mercedes minivan transport, dedicated English-speaking chauffeur, boutique riads, luxury Sahara glamping, and guided historic medina tours with all fuel and tolls included.
             </p>
           </details>
@@ -1977,7 +1977,7 @@
               <span>Is Morocco safe for international tourists and solo female travelers?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
-            <p style="margin: 16px 0 0; font-family: Georgia, serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
+            <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
               Yes, Morocco is recognized as one of the safest travel destinations in North Africa, backed by a dedicated Tourist Police (Brigade Touristique) presence across all major medinas. Private chauffeured tours provide seamless door-to-door security, luggage assistance, and local cultural mediation.
             </p>
           </details>
@@ -1987,7 +1987,7 @@
               <span>Do US, UK, Canadian, or EU citizens need a visa for Morocco?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
-            <p style="margin: 16px 0 0; font-family: Georgia, serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
+            <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">
               No tourist visa is required for citizens of the United States, United Kingdom, Canada, European Union, Australia, or New Zealand for stays up to 90 days. A valid passport with at least six months validity is all that is required upon arrival.
             </p>
           </details>
