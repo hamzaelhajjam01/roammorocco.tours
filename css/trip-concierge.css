@@ -13,6 +13,9 @@
 }
 
 /* Pinned Right-Center Luxury Vertical Edge Tab: "Plan a Trip" */
+html body #rm-concierge-root .rm-concierge-trigger,
+html body .rm-concierge-trigger,
+button.rm-concierge-trigger,
 .rm-concierge-trigger {
   position: fixed !important;
   right: 0 !important;
@@ -90,6 +93,8 @@
   line-height: 1 !important;
 }
 
+html body #rm-concierge-root .rm-trigger-dot,
+html body .rm-trigger-dot,
 .rm-trigger-dot {
   position: static !important;
   width: 7px !important;
@@ -449,6 +454,9 @@
 /* ── MOBILE RESPONSIVENESS ── */
 @media (max-width: 850px) {
   /* Plan a Trip right-center vertical tab on mobile */
+  html body #rm-concierge-root .rm-concierge-trigger,
+  html body .rm-concierge-trigger,
+  button.rm-concierge-trigger,
   .rm-concierge-trigger {
     right: 0 !important;
     top: 50% !important;
