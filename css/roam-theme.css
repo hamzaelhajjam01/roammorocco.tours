@@ -175,6 +175,19 @@
   transform: translateY(-2px) !important;
 }
 
+.top .latest img,
+.nav-wa-btn img,
+.wa-btn-icon {
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  min-height: 22px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
 .top .latest svg,
 .nav-wa-btn svg {
   width: 17px !important;
@@ -261,6 +274,13 @@
 .mobile-wa-cta:hover {
   background: #20BA59 !important;
   color: #ffffff !important;
+}
+.mobile-wa-cta img,
+.mobile-wa-cta .wa-btn-icon {
+  width: 22px !important;
+  height: 22px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
 }
 .mobile-wa-cta svg {
   width: 18px !important;
