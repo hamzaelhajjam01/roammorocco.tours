@@ -1070,7 +1070,15 @@ a.roam-btn-wa,
 .roam-article-body a.roam-btn-wa,
 .roam-tour-content a.roam-btn-wa,
 .roam-tour-cta-box a.roam-btn-wa,
-.roam-driver-box a.roam-btn-wa {
+.roam-driver-box a.roam-btn-wa,
+.d-btn-wa,
+a.d-btn-wa,
+.rm-wa-btn,
+a.rm-wa-btn,
+.btn-wa-solid,
+a.btn-wa-solid,
+.c-wa-trigger-btn,
+button.c-wa-trigger-btn {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1090,17 +1098,49 @@ a.roam-btn-wa,
   line-height: 1 !important;
   transition: all .25s ease !important;
 }
+.roam-btn-wa span,
+.d-btn-wa span,
+.rm-wa-btn span,
+.btn-wa-solid span,
+.c-wa-trigger-btn span {
+  color: #ffffff !important;
+}
 .roam-btn-wa:hover,
 a.roam-btn-wa:hover,
 .roam-article-body a.roam-btn-wa:hover,
 .roam-tour-content a.roam-btn-wa:hover,
 .roam-tour-cta-box a.roam-btn-wa:hover,
-.roam-driver-box a.roam-btn-wa:hover {
+.roam-driver-box a.roam-btn-wa:hover,
+.d-btn-wa:hover,
+a.d-btn-wa:hover,
+.rm-wa-btn:hover,
+a.rm-wa-btn:hover,
+.btn-wa-solid:hover,
+a.btn-wa-solid:hover,
+.c-wa-trigger-btn:hover,
+button.c-wa-trigger-btn:hover {
   background: #20BA59 !important;
   color: #ffffff !important;
   border-color: #20BA59 !important;
   transform: translateY(-2px) !important;
   text-decoration: none !important;
+}
+.roam-btn-wa:hover span,
+.d-btn-wa:hover span,
+.rm-wa-btn:hover span,
+.btn-wa-solid:hover span,
+.c-wa-trigger-btn:hover span {
+  color: #ffffff !important;
+}
+.roam-btn-wa .wa-btn-icon,
+.d-btn-wa .wa-btn-icon,
+.rm-wa-btn .wa-btn-icon,
+.btn-wa-solid .wa-btn-icon,
+.c-wa-trigger-btn .wa-btn-icon {
+  width: 20px !important;
+  height: 20px !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
 }
 
 /* Deals Toolkit Box: Luxury Light Editorial System */

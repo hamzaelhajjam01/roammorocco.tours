@@ -371,8 +371,7 @@
       msg.style.display = 'block';
       msg.style.background = '#fefce8';
       msg.style.border = '1px solid #fde047';
-      msg.style.color = '#713f12';
-      msg.innerHTML = `Connecting directly to our WhatsApp concierge...<br><br><a href="${waUrl}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:6px; font-weight:800; color:#000;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="18" height="18"> Open WhatsApp Chat &rarr;</a>`;
+      msg.innerHTML = `Connecting directly to our WhatsApp concierge...<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="roam-btn-wa" style="display:inline-flex; align-items:center; gap:8px; font-weight:800; background:#25D366; color:#ffffff !important; padding:12px 24px; border-radius:9999px; text-decoration:none;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;"><span style="color:#ffffff !important;">Plan on WhatsApp</span></a>`;
       window.open(waUrl, '_blank');
     }
   }

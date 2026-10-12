@@ -173,17 +173,53 @@
       }
     }
 
-    // Ensure all WhatsApp buttons on the page display the official logo
-    document.querySelectorAll('.roam-btn-wa, .d-btn-wa, .btn-wa-solid, .c-wa-trigger-btn').forEach(function (btn) {
-      if (!btn.querySelector('.wa-btn-icon') && !btn.querySelector('img[src*="whatsapp"]')) {
-        const icon = document.createElement('img');
-        icon.src = waLogoSrc;
-        icon.alt = 'WhatsApp';
-        icon.className = 'wa-btn-icon';
-        icon.width = 20;
-        icon.height = 20;
-        btn.insertBefore(icon, btn.firstChild);
+    // Ensure all WhatsApp buttons on the page display ONLY the official logo and white text
+    document.querySelectorAll('.roam-btn-wa, .d-btn-wa, .btn-wa-solid, .c-wa-trigger-btn, .rm-wa-btn').forEach(function (btn) {
+      // Remove any stray SVG icons (chat bubbles, speech icons, etc.)
+      const svgs = btn.querySelectorAll('svg');
+      svgs.forEach(function (s) { s.remove(); });
+
+      // Remove any chat emojis or stray characters
+      if (btn.innerHTML.includes('💬')) {
+        btn.innerHTML = btn.innerHTML.replace(/💬/g, '').trim();
       }
+
+      // Check if button has the official WhatsApp image logo
+      let img = btn.querySelector('.wa-btn-icon') || btn.querySelector('img[src*="whatsapp"]');
+      if (!img) {
+        img = document.createElement('img');
+        img.src = waLogoSrc;
+        img.alt = 'WhatsApp';
+        img.className = 'wa-btn-icon';
+        img.width = 20;
+        img.height = 20;
+        img.style.verticalAlign = 'middle';
+        img.style.marginRight = '8px';
+        btn.insertBefore(img, btn.firstChild);
+      } else {
+        img.style.verticalAlign = 'middle';
+        img.style.marginRight = '8px';
+      }
+
+      // Normalize action text to "Plan on WhatsApp" in clean white
+      const rawText = btn.textContent.trim().toLowerCase();
+      if (!rawText.includes('plan on whatsapp')) {
+        btn.innerHTML = '';
+        btn.appendChild(img);
+        const span = document.createElement('span');
+        span.textContent = 'Plan on WhatsApp';
+        span.style.color = '#ffffff';
+        btn.appendChild(span);
+      } else {
+        let span = btn.querySelector('span');
+        if (span) {
+          span.style.color = '#ffffff';
+        }
+      }
+
+      // Enforce white text styling on the button itself
+      btn.style.setProperty('color', '#ffffff', 'important');
+      btn.style.setProperty('text-decoration', 'none', 'important');
     });
 
     const darkLogo = isSubfolder ? '../img/logo-for-dark-bg.png?v=20261012_nav4' : 'img/logo-for-dark-bg.png?v=20261012_nav4';

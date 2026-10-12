@@ -509,6 +509,18 @@ tbody td:last-child {
   transform: translateY(-2px) !important;
 }
 
+.roam-btn-wa span,
+.roam-btn-wa:hover span {
+  color: #ffffff !important;
+}
+
+.roam-btn-wa .wa-btn-icon {
+  width: 20px !important;
+  height: 20px !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
+}
+
 .roam-btn-black {
   display: inline-flex !important;
   align-items: center !important;
