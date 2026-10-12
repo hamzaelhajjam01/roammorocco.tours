@@ -142,7 +142,35 @@ $headers[] = 'X-Mailer: PHP/' . phpversion();
 
 $mailSent = @mail($to, $subject, $htmlBody, implode("\r\n", $headers));
 
-// Optional Google Apps Script Webhook forwarding
+// 1. Automatic Lead Storage to data/leads.csv
+$csvDir = __DIR__ . '/data';
+if (!is_dir($csvDir)) {
+    @mkdir($csvDir, 0755, true);
+}
+$csvFile = $csvDir . '/leads.csv';
+$isNew = !file_exists($csvFile);
+$fp = @fopen($csvFile, 'a');
+if ($fp) {
+    if ($isNew) {
+        fputcsv($fp, ['Timestamp', 'Source', 'Customer Name', 'Email Address', 'Phone WhatsApp', 'Pickup Route', 'Travel Dates', 'Guests', 'Vehicle', 'Notes', 'Page Source']);
+    }
+    fputcsv($fp, [
+        date('Y-m-d H:i:s'),
+        $service,
+        $name,
+        $email,
+        $phone,
+        $pickup,
+        $date . (!empty($duration) ? ' (' . $duration . ')' : ''),
+        $passengers,
+        $vehicle,
+        $notes,
+        $source
+    ]);
+    fclose($fp);
+}
+
+// 2. Optional Google Apps Script Webhook forwarding
 $googleWebhookUrl = '';
 $configPath = __DIR__ . '/webhook-config.json';
 if (file_exists($configPath)) {
