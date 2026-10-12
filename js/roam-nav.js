@@ -8,22 +8,113 @@
     const bBtn = document.getElementById("burgerBtn");
     const mDraw = document.getElementById("mobileDrawer");
 
-    if (bBtn && mDraw) {
-      bBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        mDraw.classList.toggle("open");
-      });
+    // Create backdrop overlay if not present
+    let backdrop = document.getElementById("mobileDrawerBackdrop");
+    if (!backdrop) {
+      backdrop = document.createElement("div");
+      backdrop.id = "mobileDrawerBackdrop";
+      backdrop.className = "mobile-drawer-backdrop";
+      document.body.appendChild(backdrop);
+    }
 
-      document.addEventListener("click", (e) => {
-        if (!mDraw.contains(e.target) && !bBtn.contains(e.target)) {
-          mDraw.classList.remove("open");
-        }
+    function updateDrawerPosition() {
+      if (!mDraw) return;
+      const topEl = document.querySelector(".top");
+      if (!topEl) return;
+      if (topEl.classList.contains("at-top")) {
+        const rect = topEl.getBoundingClientRect();
+        mDraw.style.top = Math.round(rect.bottom + 10) + "px";
+        mDraw.style.bottom = "auto";
+      } else {
+        mDraw.style.top = "auto";
+        mDraw.style.bottom = "calc(72px + env(safe-area-inset-bottom, 0px))";
+      }
+    }
+
+    function openDrawer() {
+      if (!mDraw) return;
+      updateDrawerPosition();
+      mDraw.classList.add("open");
+      if (backdrop) backdrop.classList.add("active");
+    }
+
+    function closeDrawer() {
+      if (!mDraw) return;
+      mDraw.classList.remove("open");
+      if (backdrop) backdrop.classList.remove("active");
+    }
+
+    function toggleDrawer(e) {
+      if (e) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+      if (!mDraw) return;
+      if (mDraw.classList.contains("open")) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    }
+
+    // Expose global methods
+    window.toggleDrawer = toggleDrawer;
+    window.closeDrawer = closeDrawer;
+
+    if (bBtn && mDraw) {
+      // Direct onclick ensures precedence over any inline duplicate handlers
+      bBtn.onclick = toggleDrawer;
+
+      // Passive false touchend for instantaneous mobile responsiveness
+      bBtn.addEventListener("touchend", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        toggleDrawer();
+      }, { passive: false });
+    }
+
+    if (backdrop) {
+      backdrop.addEventListener("click", closeDrawer);
+      backdrop.addEventListener("touchstart", function (e) {
+        e.preventDefault();
+        closeDrawer();
+      }, { passive: false });
+    }
+
+    // Close when clicking any link inside drawer
+    if (mDraw) {
+      mDraw.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          closeDrawer();
+        });
       });
     }
 
+    // Close when clicking outside drawer
+    document.addEventListener("click", function (e) {
+      if (mDraw && mDraw.classList.contains("open")) {
+        if (!mDraw.contains(e.target) && (!bBtn || !bBtn.contains(e.target))) {
+          closeDrawer();
+        }
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && mDraw && mDraw.classList.contains("open")) {
+        closeDrawer();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (mDraw && mDraw.classList.contains("open")) {
+        updateDrawerPosition();
+      }
+    });
+
     const isSubfolder = window.location.pathname.includes('/blog/');
     const waLogoSrc = isSubfolder ? '../img/whatsapp-logo.png' : 'img/whatsapp-logo.png';
-    const WA_IMG = `<img src="${waLogoSrc}" alt="WhatsApp" width="22" height="22" class="wa-btn-icon">`;
+    const WA_IMG = `<img src="${waLogoSrc}" alt="WhatsApp" width="20" height="20" class="wa-btn-icon">`;
     
     function getContextWhatsAppMessage() {
       const path = (window.location.pathname || '').toLowerCase();
@@ -74,7 +165,7 @@
           mobWa.className = "mobile-wa-cta";
           mobWa.target = "_blank";
           mobWa.rel = "noopener";
-          mobWa.onclick = window.closeDrawer;
+          mobWa.onclick = closeDrawer;
           drawerInner.appendChild(mobWa);
         }
         mobWa.href = waUrl;
@@ -83,7 +174,7 @@
     }
 
     // Ensure all WhatsApp buttons on the page display the official logo
-    document.querySelectorAll('.roam-btn-wa, .d-btn-wa, .btn-wa-solid, .c-wa-trigger-btn').forEach(btn => {
+    document.querySelectorAll('.roam-btn-wa, .d-btn-wa, .btn-wa-solid, .c-wa-trigger-btn').forEach(function (btn) {
       if (!btn.querySelector('.wa-btn-icon') && !btn.querySelector('img[src*="whatsapp"]')) {
         const icon = document.createElement('img');
         icon.src = waLogoSrc;
@@ -113,6 +204,9 @@
           topEl.classList.remove("at-top");
           if (logo) logo.src = lightLogo;
         }
+        if (mDraw && mDraw.classList.contains("open")) {
+          updateDrawerPosition();
+        }
       }
     }
 
@@ -123,10 +217,6 @@
     window.scrollToTop = function (e) {
       if (e) e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-
-    window.closeDrawer = function () {
-      if (mDraw) mDraw.classList.remove("open");
     };
 
     // Global Accordion Handler (.faq-item / .faq-question)

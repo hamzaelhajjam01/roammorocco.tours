@@ -140,16 +140,6 @@
       .top.at-top .burger-btn svg{ stroke:#000!important; }
       .top.at-bottom .burger-btn{ color:#fff!important; background:rgba(255,255,255,0.12)!important; border:1px solid rgba(255,255,255,0.18)!important; }
       .top.at-bottom .burger-btn svg{ stroke:#fff!important; }
-      .top.at-top .latest,
-      .top.at-bottom .latest{
-        display:none!important;
-      }
-      .top.at-top{ left:16px!important; right:16px!important; top:16px!important; bottom:auto!important; transform:none!important; width:auto!important; justify-content:space-between!important; }
-      .top.at-bottom{ left:16px!important; right:16px!important; bottom:calc(16px + env(safe-area-inset-bottom, 0px))!important; top:auto!important; transform:none!important; width:auto!important; display:flex!important; align-items:center!important; justify-content:space-between!important; z-index:200!important; }
-      nav.desktop-nav{display:none!important}
-      .navbox{gap:8px!important;padding:0 14px!important;min-height:46px!important;height:46px!important;border-radius:9999px!important;white-space:nowrap!important;}
-      .top.at-bottom .back-top-btn{ width:46px!important; height:46px!important; min-width:46px!important; min-height:46px!important; max-width:46px!important; max-height:46px!important; border-radius:50%!important; }
-      .mobile-nav-drawer{ position:fixed; bottom:calc(72px + env(safe-area-inset-bottom, 0px))!important; top:auto; left:16px!important; right:16px!important; z-index:190; }
     }
     .dot{width:7px;height:7px;background:#C8A45C!important;border-radius:50%!important;display:inline-block;box-shadow:0 0 8px rgba(200,164,92,0.8),0 0 14px rgba(200,164,92,0.4)!important;animation:blink-gold 1.5s infinite}
     @keyframes blink-gold{50%{opacity:.28;transform:scale(.7);box-shadow:0 0 4px rgba(200,164,92,0.4);}}
@@ -336,7 +326,7 @@
     })();
   </script>
   <link rel="stylesheet" href="css/trip-concierge.css?v=20260928_gold2">
-  <link rel="stylesheet" href="css/roam-theme.css?v=20261012_wa">
+  <link rel="stylesheet" href="css/roam-theme.css?v=20261012_nav2">
 </head>
 <body id="top">
 
@@ -583,9 +573,7 @@
   </footer>
 
   <script>
-    const bBtn = document.getElementById("burgerBtn"), mDraw = document.getElementById("mobileDrawer");
-    if(bBtn && mDraw){ bBtn.addEventListener("click", () => mDraw.classList.toggle("open")); }
-    function closeDrawer(){ if(mDraw) mDraw.classList.remove("open"); }
+    // Mobile navigation drawer toggle handled by js/roam-nav.js
 
     function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
 
@@ -734,7 +722,7 @@
       }
     })();
   </script>
-  <script src="js/roam-nav.js?v=20261012_wa" defer></script>
+  <script src="js/roam-nav.js?v=20261012_nav2" defer></script>
   <script src="js/trip-concierge.js?v=20260928_gold2" defer></script>
 </body>
 </html>
