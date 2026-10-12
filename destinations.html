@@ -60,12 +60,14 @@
     "name": "Morocco Travel Destinations",
     "url": "https://roammorocco.tours/destinations.html",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Sahara Desert & Erg Chebbi" },
-      { "@type": "ListItem", "position": 2, "name": "Marrakech Medina & Souks" },
-      { "@type": "ListItem", "position": 3, "name": "Fes el-Bali Medina" },
-      { "@type": "ListItem", "position": 4, "name": "High Atlas Mountains & Toubkal" },
-      { "@type": "ListItem", "position": 5, "name": "Chefchaouen Blue City" },
-      { "@type": "ListItem", "position": 6, "name": "Essaouira Atlantic Coast" }
+      { "@type": "ListItem", "position": 1, "name": "Sahara Desert & Erg Chebbi", "url": "https://roammorocco.tours/destination-sahara-desert.html" },
+      { "@type": "ListItem", "position": 2, "name": "Marrakech Medina & Souks", "url": "https://roammorocco.tours/destination-marrakech.html" },
+      { "@type": "ListItem", "position": 3, "name": "Fes el-Bali Medina", "url": "https://roammorocco.tours/destination-fes.html" },
+      { "@type": "ListItem", "position": 4, "name": "High Atlas Mountains & Toubkal", "url": "https://roammorocco.tours/destination-high-atlas.html" },
+      { "@type": "ListItem", "position": 5, "name": "Chefchaouen Blue City", "url": "https://roammorocco.tours/destination-chefchaouen.html" },
+      { "@type": "ListItem", "position": 6, "name": "Essaouira Atlantic Coast", "url": "https://roammorocco.tours/destination-essaouira.html" },
+      { "@type": "ListItem", "position": 7, "name": "Casablanca & Imperial Gateway", "url": "https://roammorocco.tours/destination-casablanca.html" },
+      { "@type": "ListItem", "position": 8, "name": "Aït Benhaddou & Ouarzazate", "url": "https://roammorocco.tours/destination-ait-benhaddou.html" }
     ]
   }
   </script>
@@ -418,14 +420,15 @@
       <!-- Filter Bar -->
       <div class="filter-bar">
         <button class="filter-btn active" onclick="filterDest('all', this)">All Destinations</button>
-        <button class="filter-btn" onclick="filterDest('desert', this)">Sahara & Desert</button>
+        <button class="filter-btn" onclick="filterDest('desert', this)">Sahara & South</button>
         <button class="filter-btn" onclick="filterDest('imperial', this)">Imperial Cities</button>
         <button class="filter-btn" onclick="filterDest('atlas', this)">High Atlas</button>
-        <button class="filter-btn" onclick="filterDest('coast', this)">Atlantic Coast</button>
+        <button class="filter-btn" onclick="filterDest('coast-north', this)">Coast & North</button>
       </div>
 
       <!-- Destinations Grid -->
       <div class="dest-grid">
+        <!-- 1. Sahara Desert -->
         <article class="dest-card reveal" data-cat="desert">
           <div class="dest-media">
             <span class="dest-badge-tag">SAHARA DESERT</span>
@@ -436,11 +439,12 @@
             <p>Endless golden dunes, sunset camel treks, and luxury nomad camps under starry Saharan skies.</p>
             <div class="dest-footer-meta">
               <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: OCT – MAY</span>
-              <a href="index.html#contact" class="see-more-btn"><span>Plan Route</span> <span>↳</span></a>
+              <a href="destination-sahara-desert.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
         </article>
 
+        <!-- 2. Marrakech -->
         <article class="dest-card reveal" data-cat="imperial">
           <div class="dest-media">
             <span class="dest-badge-tag">IMPERIAL CITY</span>
@@ -451,12 +455,13 @@
             <p>The vibrant Red City, secret riad courtyards, Majorelle Gardens, and Jemaa el-Fnaa square.</p>
             <div class="dest-footer-meta">
               <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: YEAR-ROUND</span>
-              <a href="index.html#contact" class="see-more-btn"><span>Plan Route</span> <span>↳</span></a>
+              <a href="destination-marrakech.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
         </article>
 
-        <article class="dest-card reveal" data-cat="atlas">
+        <!-- 3. Chefchaouen -->
+        <article class="dest-card reveal" data-cat="coast-north">
           <div class="dest-media">
             <span class="dest-badge-tag">RIF MOUNTAINS</span>
             <img src="img/dest-chefchaouen.jpg" alt="Chefchaouen Blue Streets">
@@ -466,11 +471,12 @@
             <p>The iconic Blue Pearl nestled in the Rif Mountains, famous for serene cobblestone alleys and artisan craft.</p>
             <div class="dest-footer-meta">
               <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: SPRING & FALL</span>
-              <a href="index.html#contact" class="see-more-btn"><span>Plan Route</span> <span>↳</span></a>
+              <a href="destination-chefchaouen.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
         </article>
 
+        <!-- 4. Fes -->
         <article class="dest-card reveal" data-cat="imperial">
           <div class="dest-media">
             <span class="dest-badge-tag">UNESCO MEDINA</span>
@@ -481,37 +487,71 @@
             <p>The spiritual capital, 9,000 car-free medina alleys, ancient leather tanneries, and 9th-century mosques.</p>
             <div class="dest-footer-meta">
               <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: SEPT – MAY</span>
-              <a href="index.html#contact" class="see-more-btn"><span>Plan Route</span> <span>↳</span></a>
+              <a href="destination-fes.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
         </article>
 
+        <!-- 5. High Atlas -->
         <article class="dest-card reveal" data-cat="atlas">
           <div class="dest-media">
             <span class="dest-badge-tag">HIGH ATLAS</span>
-            <img src="img/soufiane-koraichi-zLWxuxUqrDk-unsplash.jpg" alt="Imlil Berber Village">
+            <img src="img/tour_active_atlas_toubkal.jpg" alt="Imlil Berber Village and Toubkal">
           </div>
           <div class="dest-body">
             <h3>High Atlas & Imlil</h3>
             <p>Mount Toubkal mountain trails, ancient earthen Berber villages, terraced valleys, and panoramic lunches.</p>
             <div class="dest-footer-meta">
               <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: APRIL – NOV</span>
-              <a href="index.html#contact" class="see-more-btn"><span>Plan Route</span> <span>↳</span></a>
+              <a href="destination-high-atlas.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
         </article>
 
-        <article class="dest-card reveal" data-cat="coast">
+        <!-- 6. Casablanca -->
+        <article class="dest-card reveal" data-cat="imperial">
+          <div class="dest-media">
+            <span class="dest-badge-tag">ARRIVAL GATEWAY</span>
+            <img src="img/dest-casablanca.jpg" alt="Hassan II Mosque in Casablanca">
+          </div>
+          <div class="dest-body">
+            <h3>Casablanca & Beyond</h3>
+            <p>The monumental Hassan II Mosque over the Atlantic ocean, and seamless private circuits from CMN airport.</p>
+            <div class="dest-footer-meta">
+              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: YEAR-ROUND</span>
+              <a href="destination-casablanca.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Aït Benhaddou & Ouarzazate -->
+        <article class="dest-card reveal" data-cat="desert">
+          <div class="dest-media">
+            <span class="dest-badge-tag">UNESCO KASBAH</span>
+            <img src="img/tour_cinema_ait_benhaddou.jpg" alt="Aït Benhaddou UNESCO Fortress">
+          </div>
+          <div class="dest-body">
+            <h3>Aït Benhaddou & Ouarzazate</h3>
+            <p>Ancient clay towers, Gladiator movie sets, and the majestic gateway fortress to the Sahara Desert.</p>
+            <div class="dest-footer-meta">
+              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: OCT – MAY</span>
+              <a href="destination-ait-benhaddou.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Essaouira -->
+        <article class="dest-card reveal" data-cat="coast-north">
           <div class="dest-media">
             <span class="dest-badge-tag">ATLANTIC COAST</span>
-            <img src="img/rigel-ibisQEDxODo-unsplash.jpg" alt="Essaouira Coast">
+            <img src="img/rigel-ibisQEDxODo-unsplash.jpg" alt="Essaouira Coast and Ramparts">
           </div>
           <div class="dest-body">
             <h3>Essaouira</h3>
-            <p>Historic sea walls, bustling fish market harbor, thuya wood artisans, and relaxing coastal breezes.</p>
+            <p>Historic Portuguese sea walls, bustling blue boat harbor, thuya wood artisans, and refreshing coastal breezes.</p>
             <div class="dest-footer-meta">
               <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: YEAR-ROUND</span>
-              <a href="index.html#contact" class="see-more-btn"><span>Plan Route</span> <span>↳</span></a>
+              <a href="destination-essaouira.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
         </article>
