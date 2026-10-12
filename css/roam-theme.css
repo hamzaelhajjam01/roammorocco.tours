@@ -342,9 +342,9 @@
     justify-content: space-between !important;
     box-sizing: border-box !important;
     padding: 0 12px 0 16px !important;
-    height: 46px !important;
-    min-height: 46px !important;
-    max-height: 46px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
     border-radius: 9999px !important;
   }
 
@@ -356,10 +356,10 @@
   }
 
   .top.at-top .navbox .wordmark img {
-    height: 22px !important;
-    max-height: 22px !important;
+    height: 26px !important;
+    max-height: 26px !important;
     width: auto !important;
-    max-width: 130px !important;
+    max-width: 140px !important;
     object-fit: contain !important;
   }
 
@@ -376,22 +376,29 @@
     min-width: 0 !important;
     display: flex !important;
     align-items: center !important;
-    gap: 8px !important;
-    padding: 0 12px 0 14px !important;
-    height: 46px !important;
-    min-height: 46px !important;
-    max-height: 46px !important;
+    gap: 12px !important;
+    padding: 0 12px 0 16px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
     border-radius: 9999px !important;
     white-space: nowrap !important;
     box-sizing: border-box !important;
   }
 
+  .top.at-bottom .navbox .wordmark {
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 1 auto !important;
+  }
+
   .top.at-bottom .navbox .wordmark img {
-    height: 18px !important;
-    max-height: 18px !important;
+    height: 26px !important;
+    max-height: 26px !important;
     width: auto !important;
-    max-width: 95px !important;
+    max-width: 130px !important;
     object-fit: contain !important;
+    display: block !important;
   }
 
   /* WhatsApp CTA Button on Mobile — Top Menu: Pill with logo + WhatsApp text */
@@ -401,10 +408,10 @@
     align-items: center !important;
     justify-content: center !important;
     gap: 6px !important;
-    height: 46px !important;
-    min-height: 46px !important;
-    max-height: 46px !important;
-    padding: 0 14px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    max-height: 48px !important;
+    padding: 0 16px !important;
     font-size: 13px !important;
     font-weight: 700 !important;
     letter-spacing: 0.02em !important;
@@ -444,20 +451,18 @@
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 46px !important;
-    height: 46px !important;
-    min-width: 46px !important;
-    min-height: 46px !important;
-    max-width: 46px !important;
-    max-height: 46px !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
     padding: 0 !important;
     border-radius: 50% !important;
     background: #25D366 !important;
     border: 1px solid #20BA59 !important;
-    color: #ffffff !important;
-    text-decoration: none !important;
     box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4) !important;
-    flex: 0 0 46px !important;
+    flex: 0 0 48px !important;
     flex-shrink: 0 !important;
     box-sizing: border-box !important;
     pointer-events: auto !important;
@@ -480,12 +485,12 @@
 
   .top.at-bottom .latest .wa-btn-icon,
   .top.at-bottom .latest img {
-    width: 24px !important;
-    height: 24px !important;
-    min-width: 24px !important;
-    min-height: 24px !important;
-    max-width: 24px !important;
-    max-height: 24px !important;
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+    min-height: 26px !important;
+    max-width: 26px !important;
+    max-height: 26px !important;
     display: block !important;
     object-fit: contain !important;
     margin: 0 !important;
@@ -493,15 +498,15 @@
   }
 
   .top.at-bottom .back-top-btn {
-    width: 46px !important;
-    height: 46px !important;
-    min-width: 46px !important;
-    min-height: 46px !important;
-    max-width: 46px !important;
-    max-height: 46px !important;
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
     border-radius: 50% !important;
     box-sizing: border-box !important;
-    flex: 0 0 46px !important;
+    flex: 0 0 48px !important;
     flex-shrink: 0 !important;
     margin-left: 8px !important;
   }

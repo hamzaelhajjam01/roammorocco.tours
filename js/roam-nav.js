@@ -186,8 +186,8 @@
       }
     });
 
-    const darkLogo = isSubfolder ? '../img/logo-for-dark-bg.png' : 'img/logo-for-dark-bg.png';
-    const lightLogo = isSubfolder ? '../img/logo-for-light-bg.png' : 'img/logo-for-light-bg.png';
+    const darkLogo = isSubfolder ? '../img/logo-for-dark-bg.png?v=20261012_nav4' : 'img/logo-for-dark-bg.png?v=20261012_nav4';
+    const lightLogo = isSubfolder ? '../img/logo-for-light-bg.png?v=20261012_nav4' : 'img/logo-for-light-bg.png?v=20261012_nav4';
 
     function onScroll() {
       const currentY = window.scrollY;
