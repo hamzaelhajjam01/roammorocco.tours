@@ -468,7 +468,7 @@
       justify-content: center;
       gap: 10px;
       background: #25D366;
-      color: #000000;
+      color: #ffffff !important;
       border: 1px solid #1fa851;
       font-family: Helvetica, Arial, sans-serif;
       font-size: 13px;
@@ -482,6 +482,7 @@
 
     .btn-wa-solid:hover {
       background: #20BA59;
+      color: #ffffff !important;
       transform: translateY(-2px);
     }
 
@@ -1095,7 +1096,7 @@
       <a href="#inquireForm" class="btn-gold-primary">Get Instant Driver Quote &rarr;</a>
       <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20inquire%20about%20hiring%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" class="btn-wa-solid">
         <img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
-        WhatsApp Concierge (+212 653-506441)
+        Plan on WhatsApp
       </a>
     </div>
   </header>
@@ -2049,7 +2050,7 @@
         statusBox.style.border = '1px solid #86efac';
         statusBox.style.borderLeft = '4px solid #16a34a';
         statusBox.style.color = '#14532d';
-        statusBox.innerHTML = `<strong>✓ Quote Request Received!</strong><br>Thank you, ${name}. Your inquiry has been sent to our operations desk. We will review your route and reply directly to <strong>${email}</strong> within 30 minutes.<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; align-items:center; margin-top:8px; padding:12px 20px; font-size:12px;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="18" height="18" style="vertical-align:middle; margin-right:8px;"> Or Chat on WhatsApp Now (+212 653-506441) &rarr;</a>`;
+        statusBox.innerHTML = `<strong>✓ Quote Request Received!</strong><br>Thank you, ${name}. Your inquiry has been sent to our operations desk. We will review your route and reply directly to <strong>${email}</strong> within 30 minutes.<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; align-items:center; margin-top:8px; padding:12px 20px; font-size:12px; color:#ffffff !important;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="18" height="18" style="vertical-align:middle; margin-right:8px;"> Plan on WhatsApp Now &rarr;</a>`;
 
         btn.innerHTML = '✓ Request Sent to Our Team';
         btn.style.background = '#16a34a';
@@ -2069,7 +2070,7 @@
         statusBox.style.border = '1px solid #fde047';
         statusBox.style.borderLeft = '4px solid #ca8a04';
         statusBox.style.color = '#713f12';
-        statusBox.innerHTML = `Connecting directly to our WhatsApp operations desk...<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; align-items:center; margin-top:8px; padding:12px 20px; font-size:12px;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="18" height="18" style="vertical-align:middle; margin-right:8px;"> Open WhatsApp &rarr;</a>`;
+        statusBox.innerHTML = `Connecting directly to our WhatsApp operations desk...<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; align-items:center; margin-top:8px; padding:12px 20px; font-size:12px; color:#ffffff !important;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="18" height="18" style="vertical-align:middle; margin-right:8px;"> Open WhatsApp &rarr;</a>`;
         window.open(waUrl, '_blank');
       }
     }

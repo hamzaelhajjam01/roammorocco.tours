@@ -68,7 +68,7 @@
         <a href="${btnUrl}" class="roam-btn-white">${btnText}</a>
         <a href="${waLink}" target="_blank" rel="noopener" class="roam-btn-wa">
           <img src="${isSub ? '../img/whatsapp-logo.png' : 'img/whatsapp-logo.png'}" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
-          Chat on WhatsApp (+212 653-506441)
+          Plan on WhatsApp
         </a>
       </div>
     `;

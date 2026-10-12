@@ -505,6 +505,7 @@ tbody td:last-child {
 
 .roam-btn-wa:hover {
   background: #1da851 !important;
+  color: #ffffff !important;
   transform: translateY(-2px) !important;
 }
 

@@ -342,7 +342,7 @@
           <p>Send your custom itinerary draft directly to our Marrakech headquarters for a fast, tailored quote with transparent pricing.</p>
           <a href="${waLink}" target="_blank" rel="noopener" class="rm-wa-btn">
             <img src="${window.location.pathname.includes('/blog/') ? '../img/whatsapp-logo.png' : 'img/whatsapp-logo.png'}" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
-            <span>Request Quote on WhatsApp (+212 653-506441)</span>
+            <span>Plan on WhatsApp</span>
           </a>
         </div>
 
