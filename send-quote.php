@@ -42,6 +42,18 @@ $vehicle    = clean($data['vehicle'] ?? $data['vehicleClass'] ?? $data['style'] 
 $notes      = clean($data['notes'] ?? $data['specialNotes'] ?? 'None');
 $source     = clean($data['source'] ?? $data['page'] ?? ($_SERVER['HTTP_REFERER'] ?? 'roammorocco.tours'));
 
+// Ensure clean, non-empty values for Google Sheets & operations
+if (empty($vehicle) || $vehicle === 'Recommended') {
+    if (strpos(strtolower($passengers), '5+') !== false || strpos(strtolower($passengers), 'minivan') !== false) {
+        $vehicle = 'Private Minivan (Mercedes)';
+    } else {
+        $vehicle = 'Private 4x4 Toyota Prado';
+    }
+}
+if (empty($pickup) || $pickup === 'Not specified') {
+    $pickup = $service;
+}
+
 if (empty($email) && empty($phone)) {
     http_response_code(400);
     echo json_encode(["status" => "error", "message" => "Email or phone number is required"]);

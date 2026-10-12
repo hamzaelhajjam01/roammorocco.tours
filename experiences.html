@@ -462,6 +462,26 @@
             </div>
           </div>
 
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expPickupLocation" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Pickup Location</label>
+              <select class="dest-form-select" id="expPickupLocation" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); background:#fff; box-sizing:border-box;">
+                <option value="Marrakech (Riad / Hotel / Airport)">Marrakech (Riad / Hotel / Airport)</option>
+                <option value="Casablanca (CMN Airport / City)">Casablanca (CMN Airport / City)</option>
+                <option value="Fes (Medina / Airport)">Fes (Medina / Airport)</option>
+                <option value="Flexible / Other Moroccan City">Flexible / Other Moroccan City</option>
+              </select>
+            </div>
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expVehicleStyle" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Vehicle &amp; Accommodation Tier</label>
+              <select class="dest-form-select" id="expVehicleStyle" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); background:#fff; box-sizing:border-box;">
+                <option value="Luxury (Private 4x4 Prado + 5-Star Camp)">Luxury (Private 4x4 Prado + 5-Star Camp)</option>
+                <option value="Boutique Riads (Private 4x4 Prado)">Boutique Riads (Private 4x4 Prado)</option>
+                <option value="VIP Royal / Palace (Mercedes Chauffeur)">VIP Royal / Palace (Mercedes Chauffeur)</option>
+              </select>
+            </div>
+          </div>
+
           <div class="dest-form-field">
             <label class="dest-form-label" for="expNotes" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Special Requests / Desired Activities</label>
             <textarea class="dest-form-textarea" id="expNotes" placeholder="e.g. Sunset camel trek in Agafay, high-end boutique riads, private guide for medina souks..." style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); min-height:85px; box-sizing:border-box;"></textarea>
@@ -673,6 +693,8 @@
       const expTour = (document.getElementById('expSelectedTour')?.value || 'Morocco Experience').trim();
       const dates = (document.getElementById('expTravelDates')?.value || '').trim();
       const guests = (document.getElementById('expGroupSize')?.value || '').trim();
+      const pickup = (document.getElementById('expPickupLocation')?.value || 'Marrakech').trim();
+      const vehicle = (document.getElementById('expVehicleStyle')?.value || 'Luxury (Private 4x4 Prado)').trim();
       const notes = (document.getElementById('expNotes')?.value || '').trim();
 
       const payload = {
@@ -680,9 +702,10 @@
         email: email,
         phone: phone,
         service: expTour,
-        pickup: 'Experiences Page',
+        pickup: pickup,
         date: dates,
         passengers: guests,
+        vehicle: vehicle,
         notes: notes,
         source: '/experiences.html'
       };
@@ -691,6 +714,8 @@
         `👤 Name: ${name}\n` +
         `✉️ Email: ${email}\n` +
         `📱 WhatsApp: ${phone}\n` +
+        `📍 Pickup: ${pickup}\n` +
+        `🚗 Style/Vehicle: ${vehicle}\n` +
         (dates ? `📅 Travel Dates: ${dates}\n` : '') +
         (guests ? `👥 Group Size: ${guests}\n` : '') +
         (notes ? `📝 Special Requests: ${notes}\n` : '') +
