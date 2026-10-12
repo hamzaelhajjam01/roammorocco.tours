@@ -1,2 +1,0 @@
-# Prevent direct public HTTP access to lead storage
-Deny from all

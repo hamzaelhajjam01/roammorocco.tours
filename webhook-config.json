@@ -1,4 +1,3 @@
 {
-  "google_sheet_webhook": "",
-  "_comment": "To connect Google Sheets: 1) Create a Google Sheet, 2) Add the Apps Script code from lead_capture_and_dispatch_plan.md, 3) Deploy as Web App (Access: Anyone), 4) Paste the Web App URL into 'google_sheet_webhook' above."
+  "google_sheet_webhook": "https://script.google.com/macros/s/AKfycbw-fLCWMYFo5I1EGHx556TkTAGLK2cZC9Ji30yzgHGbO_6I8kzwj2lC4GDzqqadDY1RLw/exec"
 }
