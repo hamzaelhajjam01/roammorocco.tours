@@ -941,15 +941,21 @@
   transform: translateY(2px) !important;
 }
 
-/* Hidden at top, shown only when scrolled at bottom */
-.top.at-top .dest-scroll-cta-btn {
-  display: none !important;
-}
+/* Hidden on desktop (> 900px): Booking widget is already sticky in right sidebar */
+.dest-scroll-cta-btn,
+.top.at-top .dest-scroll-cta-btn,
 .top.at-bottom .dest-scroll-cta-btn {
-  display: inline-flex !important;
+  display: none !important;
 }
 
 @media (max-width: 900px) {
+  /* On mobile (<= 900px), display "Book It Now" when docked at bottom */
+  .top.at-top .dest-scroll-cta-btn {
+    display: none !important;
+  }
+  .top.at-bottom .dest-scroll-cta-btn {
+    display: inline-flex !important;
+  }
   .top.at-bottom {
     display: flex !important;
     align-items: center !important;
