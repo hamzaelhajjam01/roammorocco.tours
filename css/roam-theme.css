@@ -1566,13 +1566,18 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   margin-bottom: 12px;
+  border-radius: 4px;
+  overflow: hidden;
   transition: border-color 0.2s ease;
+}
+.faq-item.active {
+  border-color: #C8A45C !important;
 }
 .faq-question {
   padding: 18px 22px;
   font-size: 18px;
   font-weight: 700;
-  cursor: pointer;
+  cursor: pointer !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1590,7 +1595,7 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
   line-height: 1;
 }
 .faq-item.active .faq-question::after {
-  content: "\2212";
+  content: "\2212" !important;
 }
 .faq-answer {
   display: none;
@@ -1601,7 +1606,7 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 .faq-item.active .faq-answer {
-  display: block;
+  display: block !important;
 }
 .faq-answer p {
   margin: 14px 0 0;

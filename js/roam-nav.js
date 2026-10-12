@@ -221,17 +221,23 @@
 
     // Global Accordion Handler (.faq-item / .faq-question)
     document.addEventListener("click", function (e) {
-      const q = e.target.closest(".faq-question");
+      const q = e.target.closest(".faq-question, .roam-faq-q, .roam-faq-question");
       if (!q) return;
-      const item = q.closest(".faq-item");
+      if (e.__faqHandled) return;
+      e.__faqHandled = true;
+
+      const item = q.closest(".faq-item, .roam-faq-item");
       if (!item) return;
-      const parent = item.parentElement;
-      const isActive = item.classList.contains("active");
-      if (parent && parent.classList.contains("faq-accordion")) {
-        const siblings = parent.querySelectorAll(".faq-item");
+
+      const container = item.closest(".faq-accordion, .roam-faq-section, .roam-faq-block") || item.parentElement;
+      const wasActive = item.classList.contains("active");
+
+      if (container) {
+        const siblings = container.querySelectorAll(".faq-item, .roam-faq-item");
         siblings.forEach(function (s) { s.classList.remove("active"); });
       }
-      if (!isActive) {
+
+      if (!wasActive) {
         item.classList.add("active");
       }
     });
