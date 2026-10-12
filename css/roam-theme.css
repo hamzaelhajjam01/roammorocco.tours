@@ -394,11 +394,9 @@
     object-fit: contain !important;
   }
 
-  /* WhatsApp CTA Button on Mobile (displayed in BOTH menus) */
+  /* WhatsApp CTA Button on Mobile — Top Menu: Pill with logo + WhatsApp text */
   .top.at-top .latest,
-  .top.at-bottom .latest,
-  .top.at-top .nav-wa-btn,
-  .top.at-bottom .nav-wa-btn {
+  .top.at-top .nav-wa-btn {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -423,24 +421,74 @@
   }
 
   .top.at-top .latest:hover,
-  .top.at-bottom .latest:hover,
-  .top.at-top .nav-wa-btn:hover,
-  .top.at-bottom .nav-wa-btn:hover {
+  .top.at-top .nav-wa-btn:hover {
     background: #20BA59 !important;
     color: #ffffff !important;
     transform: translateY(-1px) !important;
   }
 
   .top.at-top .latest .wa-btn-icon,
-  .top.at-bottom .latest .wa-btn-icon,
-  .top.at-top .latest img,
-  .top.at-bottom .latest img {
+  .top.at-top .latest img {
     width: 20px !important;
     height: 20px !important;
     min-width: 20px !important;
     min-height: 20px !important;
     display: inline-block !important;
     object-fit: contain !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* WhatsApp CTA Button on Mobile — Scrolled Bottom Menu: Clean circular icon-only button without text */
+  .top.at-bottom .latest,
+  .top.at-bottom .nav-wa-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+    max-width: 46px !important;
+    max-height: 46px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+    background: #25D366 !important;
+    border: 1px solid #20BA59 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4) !important;
+    flex: 0 0 46px !important;
+    flex-shrink: 0 !important;
+    box-sizing: border-box !important;
+    pointer-events: auto !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    transition: all .25s ease !important;
+  }
+
+  .top.at-bottom .latest:hover,
+  .top.at-bottom .nav-wa-btn:hover {
+    background: #20BA59 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5) !important;
+  }
+
+  .top.at-bottom .latest span,
+  .top.at-bottom .nav-wa-btn span {
+    display: none !important;
+  }
+
+  .top.at-bottom .latest .wa-btn-icon,
+  .top.at-bottom .latest img {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    max-width: 24px !important;
+    max-height: 24px !important;
+    display: block !important;
+    object-fit: contain !important;
+    margin: 0 !important;
     flex-shrink: 0 !important;
   }
 
@@ -453,7 +501,9 @@
     max-height: 46px !important;
     border-radius: 50% !important;
     box-sizing: border-box !important;
+    flex: 0 0 46px !important;
     flex-shrink: 0 !important;
+    margin-left: 8px !important;
   }
 
   nav.desktop-nav { display: none !important; }
