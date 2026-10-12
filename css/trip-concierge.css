@@ -427,6 +427,64 @@ html body .rm-trigger-dot,
   box-shadow: 0 4px 16px rgba(200, 164, 92, 0.3);
 }
 
+/* ── LUXURY TYPING INDICATOR ── */
+.rm-typing-msg {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  animation: rmFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rm-typing-bubble {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 12px 18px !important;
+  background: var(--rm-bg-bubble) !important;
+  border: 1px solid rgba(200, 164, 92, 0.25) !important;
+  border-radius: 18px 18px 18px 4px !important;
+  width: fit-content !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 0 12px rgba(200, 164, 92, 0.08) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+.rm-typing-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--rm-gold-light);
+  border-radius: 50% !important;
+  display: inline-block;
+  opacity: 0.35;
+  animation: rmTypingPulse 1.4s infinite ease-in-out both;
+}
+
+.rm-typing-dot:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.rm-typing-dot:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+.rm-typing-dot:nth-child(3) {
+  animation-delay: 0s;
+}
+
+@keyframes rmTypingPulse {
+  0%, 80%, 100% {
+    transform: scale(0.8);
+    opacity: 0.35;
+  }
+  40% {
+    transform: scale(1.25);
+    opacity: 1;
+    background: #faebd0;
+    box-shadow: 0 0 6px rgba(224, 202, 146, 0.6);
+  }
+}
+
 /* ── MODERN INTERACTIVE CHOICE CARDS ── */
 .rm-options-grid {
   display: flex;
