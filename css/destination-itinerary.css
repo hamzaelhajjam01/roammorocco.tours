@@ -615,6 +615,54 @@
   flex-shrink: 0;
 }
 
+/* FORM SUBMISSION STATUS / CONFIRMATION */
+.dest-form-status {
+  display: none;
+  margin-top: 14px;
+  padding: 16px;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-left: 4px solid #16a34a;
+  border-radius: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #14532d;
+  box-sizing: border-box;
+}
+.dest-form-status strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #166534;
+}
+.dest-form-status .dest-status-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  background: #25D366;
+  color: #000000 !important;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 10px 16px;
+  text-decoration: none;
+  border: 1px solid #1fa851;
+  transition: all 0.2s ease;
+}
+.dest-form-status .dest-status-wa:hover {
+  background: #20BA59;
+  transform: translateY(-1px);
+}
+.dest-form-status .dest-status-wa img {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
 /* SIDEBAR TRUST PROMISES */
 .dest-widget-trust {
   margin-top: 20px;
