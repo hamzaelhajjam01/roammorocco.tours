@@ -41,7 +41,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/roam-theme.css?v=20261012">
-  <link rel="stylesheet" href="css/destination-itinerary.css?v=20261012_v2">
+  <link rel="stylesheet" href="css/destination-itinerary.css?v=20261012_v3">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -158,6 +158,10 @@
         <a href="blog.html">Blog</a>
       </nav>
     </div>
+        <button class="dest-scroll-cta-btn" onclick="scrollToBookingForm(event)" aria-label="Book it now">
+      <span>Book it now</span>
+      <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-left:2px;"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </button>
     <a class="latest nav-wa-btn" href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20a%20Private%20Fes%20Tour." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
       <img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
       <span>WhatsApp</span>
@@ -450,6 +454,21 @@
   </footer>
 
   <script>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
     function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
 
     function onScroll(){
