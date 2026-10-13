@@ -206,6 +206,48 @@
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
             "validFrom": "2026-01-01"
+          },
+          {
+            "@type": "Offer",
+            "name": "4-Day High Atlas & Merzouga Sahara Circuit (Private Chauffeur & 4x4)",
+            "price": "720.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-01-01"
+          },
+          {
+            "@type": "Offer",
+            "name": "7-Day Imperial Cities & Sahara Odyssey (Private Chauffeur)",
+            "price": "1225.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-01-01"
+          },
+          {
+            "@type": "Offer",
+            "name": "10-Day Grand Kingdom Explorer (Executive Chauffeur & Vehicle)",
+            "price": "1700.00",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2026-01-01"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://roammorocco.tours/morocco-private-driver.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://roammorocco.tours/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Private Driver Morocco",
+            "item": "https://roammorocco.tours/morocco-private-driver.html"
           }
         ]
       },
@@ -243,6 +285,46 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. Every booking with Roam Morocco is 100% all-inclusive. Your quote covers the professional licensed driver, vehicle rental, all diesel/petrol fuel, highway tolls (Autoroutes du Maroc), parking fees, passenger transport insurance, and the driver's own overnight accommodation and meals on multi-day itineraries."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the legal difference between a private driver and an official city tour guide in Morocco?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Moroccan tourism law (enforced strictly by the Ministry of Tourism), there is an essential distinction between a private tourist chauffeur (Transport Touristique) and a licensed municipal tour guide (guide des villes et circuits). A private driver is licensed to navigate national highways, mountain passes, airport corridors, translate Darija and Berber, recommend authentic culinary stops, and share cultural context during road travel. However, by law, private chauffeurs cannot conduct guided historical tours inside enclosed heritage monuments and medinas (such as Bahia Palace, Medersa Ben Youssef, or Volubilis). For enclosed historical landmarks, Roam Morocco seamlessly arranges licensed, badge-holding municipal guides on demand to ensure full legal compliance and an enriching historical experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is hiring an officially licensed Transport Touristique vehicle critical over an unlicensed taxi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Official tourist transport vehicles in Morocco operate under a strict Ministry of Tourism permit (Agrément de Transport Touristique), recognizable by green or blue commercial plates, comprehensive commercial passenger insurance (Assurance Transport), and an official mission manifest (Ordre de Mission). Royal Gendarmerie and Sûreté Nationale highway checkpoints strictly inspect these credentials on all routes. Unlicensed private cars or informal pirate taxis recruited off street corners lack commercial passenger liability insurance and face immediate vehicle impoundment at police checkpoints, stranding travelers on rural mountain roads. Roam Morocco operates 100% legally compliant, accredited vehicles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe for solo female travelers to hire a private driver in Morocco?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, absolutely. Roam Morocco is deeply trusted by solo female travelers. All our chauffeurs are vetted, experienced Berber and Moroccan hospitality professionals with clean criminal background records. Your chauffeur acts as your dedicated local guardian—meeting you inside airport arrivals, escorting you on foot to your riad's inner doorway at night so you never walk through unfamiliar medina alleys alone, shielding you from aggressive market touts, and maintaining respectful professional boundaries throughout your trip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do your drivers handle mountain roads and motion sickness over the High Atlas Tizi n'Tichka pass?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Crossing the High Atlas via the 2,260-meter Tizi n'Tichka pass requires seasoned mountain driving skill. Our chauffeurs have decades of experience navigating these mountain curves with gentle acceleration, smooth engine braking, and a calm, unhurried pace. We schedule frequent scenic photo pauses at panoramic viewpoints, carry fresh bottled water and complimentary natural ginger candies/remedies, and tailor driving speed immediately to passenger comfort."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if our flight into Casablanca or Marrakech airport is delayed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All Roam Morocco airport pickups include complimentary live flight radar tracking. Whether your flight into Casablanca Mohammed V (CMN) or Marrakech Menara (RAK) lands early or is delayed by several hours, your chauffeur tracks your actual arrival time and will be waiting curbside at the terminal with a personalized name board at no additional charge."
             }
           },
           {
@@ -938,6 +1020,295 @@
 
 
 
+    /* Legal Distinction & Checkpoint Security */
+    .legal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+      margin-bottom: 28px;
+    }
+
+    .legal-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-top: 4px solid var(--gold);
+      padding: 32px 28px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .legal-badge {
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-dark);
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .legal-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      margin: 0 0 14px;
+      color: #000000;
+    }
+
+    .legal-desc {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .legal-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 13.5px;
+      color: #222;
+    }
+
+    .legal-list li {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .legal-list li span.badge-dot {
+      color: var(--gold);
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .checkpoint-box {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-left: 4px solid #000000;
+      padding: 28px 30px;
+      margin-top: 28px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .checkpoint-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      color: #000000;
+      letter-spacing: 0.02em;
+    }
+
+    .checkpoint-desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #444;
+      margin: 0;
+    }
+
+    /* Curated Multi-Day Circuits */
+    .circuits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 28px;
+      margin-top: 36px;
+    }
+
+    .circuit-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      border-top: 4px solid var(--gold);
+      padding: 32px 28px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .circuit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+      border-color: #000000;
+    }
+
+    .circuit-badge {
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold-dark);
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+
+    .circuit-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 21px;
+      font-weight: 800;
+      margin: 0 0 12px;
+      color: #000000;
+      letter-spacing: -0.02em;
+    }
+
+    .circuit-route-path {
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      color: #555;
+      background: #faf8f5;
+      border: 1px solid var(--border-subtle);
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .circuit-desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    .circuit-highlights {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      font-size: 13px;
+      color: #222;
+    }
+
+    .circuit-highlights li {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .circuit-highlights li span.chk {
+      color: var(--gold);
+      font-weight: 900;
+    }
+
+    .circuit-footer {
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+
+    .circuit-price {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: #000000;
+    }
+
+    .circuit-price span {
+      font-size: 12px;
+      font-weight: 400;
+      color: #666;
+    }
+
+    /* Safety & Comfort Pillars Grid */
+    .safety-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .safety-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 28px 24px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.02);
+      transition: transform 0.2s ease;
+    }
+
+    .safety-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .safety-icon-wrap {
+      width: 44px;
+      height: 44px;
+      background: #faf8f5;
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .safety-card-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      margin: 0 0 10px;
+      color: #000000;
+    }
+
+    .safety-card-desc {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #555;
+      margin: 0;
+    }
+
+    /* 4-Step Booking Process */
+    .booking-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin: 36px 0 20px;
+    }
+
+    .booking-step-card {
+      background: #ffffff;
+      border: 1px solid var(--border-subtle);
+      padding: 28px 22px;
+      position: relative;
+    }
+
+    .step-number {
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      color: #000000;
+      letter-spacing: -0.01em;
+    }
+
+    .step-desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #555;
+      margin: 0;
+    }
+
     /* Mobile Tweaks */
     @media (max-width: 768px) {
       .driver-hero {
@@ -957,6 +1328,9 @@
       }
       .inclusions-banner {
         padding: 24px 20px;
+      }
+      .legal-card, .checkpoint-box, .circuit-card, .safety-card, .booking-step-card {
+        padding: 24px 18px;
       }
     }
   </style>
@@ -1305,6 +1679,61 @@
       </div>
     </section>
 
+    <!-- SECTION 2B: LEGAL STANDARDS & E-E-A-T INTELLIGENCE -->
+    <section class="driver-section-wrap" style="padding-top: 60px; padding-bottom: 60px;" id="licensing-and-guides">
+      <div class="driver-section-head">
+        <span class="driver-sec-kicker">MOROCCAN TOURISM LAW &amp; E-E-A-T INTEGRITY</span>
+        <h2 class="driver-sec-title">Private Chauffeur vs. Official Tour Guide</h2>
+        <p class="driver-sec-desc">
+          Understanding Moroccan Ministry of Tourism regulations ensures a seamless, scam-free journey. Here is exactly what your private chauffeur handles—and when a licensed municipal guide is legally required.
+        </p>
+      </div>
+
+      <div class="legal-grid">
+        <!-- Card 1: Private Chauffeur -->
+        <div class="legal-card">
+          <span class="legal-badge">TRANSPORT TOURISTIQUE PERMIT</span>
+          <h3 class="legal-title">Your Private Chauffeur</h3>
+          <p class="legal-desc">
+            Your chauffeur is your dedicated road captain, logistics coordinator, and cultural bridge between cities, mountain passes, and desert valleys across Morocco.
+          </p>
+          <ul class="legal-list">
+            <li><span class="badge-dot">✓</span> <strong>National Transit:</strong> Licensed for cross-country highways, Atlas mountain passes (Tizi n'Tichka), and remote desert tracks.</li>
+            <li><span class="badge-dot">✓</span> <strong>Cultural Context &amp; Road Translation:</strong> Recommends scenic viewpoints, translates Moroccan Arabic (Darija) and Berber, orders authentic roadside meals.</li>
+            <li><span class="badge-dot">✓</span> <strong>Medina &amp; Riad Concierge:</strong> Coordinates luggage porters and liaises with riad managers at pedestrian medina gates.</li>
+            <li><span class="badge-dot">✓</span> <strong>Pacing Autonomy:</strong> Stops for photography, coffee, and rest breaks whenever you wish without rigid schedules.</li>
+            <li><span class="badge-dot" style="color:#d97706;">ℹ</span> <em>Legal Boundary:</em> Under Moroccan tourism law, drivers are not licensed to guide inside enclosed historical monuments (palaces, medersas, ruins).</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Official City Tour Guide -->
+        <div class="legal-card">
+          <span class="legal-badge">GUIDE DES VILLES ET CIRCUITS</span>
+          <h3 class="legal-title">Official Municipal City Guide</h3>
+          <p class="legal-desc">
+            Municipal tour guides carry an official metal badge issued by the Moroccan Ministry of Tourism. They are legally authorized to deliver historical interpretation within specific cities.
+          </p>
+          <ul class="legal-list">
+            <li><span class="badge-dot">✓</span> <strong>Enclosed Heritage Monuments:</strong> Legally required for in-depth visits inside Bahia Palace, Saadian Tombs, Volubilis Roman ruins, and Fes Bou Inania.</li>
+            <li><span class="badge-dot">✓</span> <strong>Historical Deep Dives:</strong> Expert architectural and genealogical breakdowns of Moorish arches, zellij tile geometry, and dynastic heritage.</li>
+            <li><span class="badge-dot">✓</span> <strong>Labyrinth Navigation:</strong> Navigates the 9,000+ car-free alleys of the Fes el-Bali medina and Marrakech souks without getting lost.</li>
+            <li><span class="badge-dot">✓</span> <strong>Seamless Roam Morocco Coordination:</strong> We arrange vetted, badge-holding municipal guides on demand so you never deal with aggressive unlicensed street touts.</li>
+            <li><span class="badge-dot" style="color:#16a34a;">★</span> <em>Tip:</em> Combine your private chauffeur with half-day local city guides in Marrakech and Fes for the ultimate seamless experience.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Royal Gendarmerie Checkpoints Banner -->
+      <div class="checkpoint-box">
+        <h4 class="checkpoint-title">🛡 Why Official "Transport Touristique" Licensing Protects You at Police Checkpoints</h4>
+        <p class="checkpoint-desc">
+          Morocco strictly enforces passenger safety through Royal Gendarmerie and Sûreté Nationale highway checkpoints. Legitimate tourist transport vehicles display official <strong>green or blue commercial license plates</strong> and carry a stamped <strong>Ordre de Mission</strong> alongside commercial passenger liability insurance (<em>Assurance Transport</em>).
+          <br><br>
+          Hiring informal private cars or street-corner "pirate" taxis carries severe risks: police intercept unlicensed operators at mountain roadblocks, issue heavy fines, and impound the vehicle on the spot—leaving foreign travelers stranded without transport in remote regions. With Roam Morocco Tours, every vehicle and driver holds active Ministry of Tourism accreditation and full commercial passenger coverage.
+        </p>
+      </div>
+    </section>
+
     <!-- SECTION 3: POPULAR ROUTES -->
     <section class="driver-section-wrap" id="routes">
       <div class="driver-section-head">
@@ -1608,6 +2037,216 @@
 
     </section>
 
+    <!-- SECTION 3B: CURATED MULTI-DAY PRIVATE DRIVER CIRCUITS -->
+    <section style="background: #faf8f5; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 80px 24px;" id="circuits">
+      <div style="max-width: 1080px; margin: 0 auto;">
+        <div class="driver-section-head">
+          <span class="driver-sec-kicker">TURNKEY KINGDOM EXPEDITIONS</span>
+          <h2 class="driver-sec-title">Curated Multi-Day Private Driver Circuits</h2>
+          <p class="driver-sec-desc">
+            Experience Morocco's most dramatic landscapes at your own rhythm. Every multi-day circuit includes a dedicated English-speaking Berber chauffeur, fuel, highway tolls, parking fees, passenger insurance, and driver accommodation.
+          </p>
+        </div>
+
+        <div class="circuits-grid">
+          <!-- Circuit 1: 4-Day Desert & Atlas -->
+          <div class="circuit-card">
+            <div>
+              <span class="circuit-badge">SIGNATURE SAHARA EXPEDITION</span>
+              <h3 class="circuit-title">4-Day High Atlas &amp; Merzouga Sahara Circuit</h3>
+              <div class="circuit-route-path">
+                Marrakech &rarr; Tizi n'Tichka (2,260m) &rarr; Ait Benhaddou &rarr; Dades Gorge &rarr; Todra Gorge &rarr; Erg Chebbi Dunes &rarr; Fes (or return Marrakech)
+              </div>
+              <p class="circuit-desc">
+                The quintessential overland journey linking imperial Marrakech with ancient Fes. Wind through high mountain switchbacks, walk among centuries-old mud kasbahs, and sleep under a canopy of stars in the deep dunes of Merzouga.
+              </p>
+              <ul class="circuit-highlights">
+                <li><span class="chk">✓</span> UNESCO Ksar Ait Benhaddou &amp; Ouarzazate film kasbahs</li>
+                <li><span class="chk">✓</span> Dramatic 300m rock walls of Todra and Dades Gorges</li>
+                <li><span class="chk">✓</span> Sunset camel trek to luxury private Berber desert camp</li>
+                <li><span class="chk">✓</span> Ziz Valley palm groves and Middle Atlas cedar forests</li>
+                <li><span class="chk">✓</span> Toyota Land Cruiser Prado 4x4 heavily recommended</li>
+              </ul>
+            </div>
+            <div class="circuit-footer">
+              <div>
+                <div class="circuit-price">€180 – €220 <span>/ day</span></div>
+                <div style="font-size:11px; color:#777; font-family:'Courier New', monospace;">Flat rate per vehicle (1–4 guests)</div>
+              </div>
+              <a href="#inquireForm" class="route-btn">Inquire Circuit &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Circuit 2: 7-Day Imperial & Desert -->
+          <div class="circuit-card">
+            <div>
+              <span class="circuit-badge">IMPERIAL CAPITALS &amp; SAHARA</span>
+              <h3 class="circuit-title">7-Day Imperial Cities &amp; Desert Odyssey</h3>
+              <div class="circuit-route-path">
+                Casablanca &rarr; Rabat &rarr; Chefchaouen &rarr; Volubilis Roman Ruins &rarr; Fes &rarr; Midelt &rarr; Merzouga Desert &rarr; Dades &rarr; Marrakech
+              </div>
+              <p class="circuit-desc">
+                A grand loop designed for travelers wanting the full kaleidoscope of Morocco. From the Atlantic grandeur of Hassan II Mosque to the blue alleys of Chefchaouen, ancient Roman mosaics, and the golden dunes of Erg Chebbi.
+              </p>
+              <ul class="circuit-highlights">
+                <li><span class="chk">✓</span> Hassan II Mosque &amp; Rabat royal coastal ramparts</li>
+                <li><span class="chk">✓</span> Blue-washed medina of Chefchaouen in the Rif Mountains</li>
+                <li><span class="chk">✓</span> UNESCO Roman mosaics at Volubilis &amp; historic Meknes</li>
+                <li><span class="chk">✓</span> 2 full days in Fes with optional municipal monument guide</li>
+                <li><span class="chk">✓</span> High Atlas mountain crossing down into lively Marrakech</li>
+              </ul>
+            </div>
+            <div class="circuit-footer">
+              <div>
+                <div class="circuit-price">€175 – €240 <span>/ day</span></div>
+                <div style="font-size:11px; color:#777; font-family:'Courier New', monospace;">Flat rate per vehicle (1–6 guests)</div>
+              </div>
+              <a href="#inquireForm" class="route-btn">Inquire Circuit &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Circuit 3: 10-Day Grand Kingdom Explorer -->
+          <div class="circuit-card">
+            <div>
+              <span class="circuit-badge">THE ULTIMATE EXPEDITION</span>
+              <h3 class="circuit-title">10-Day Grand Kingdom Explorer</h3>
+              <div class="circuit-route-path">
+                Tangier / Casablanca &rarr; Chefchaouen &rarr; Fes &rarr; Merzouga Dunes &rarr; Todra &amp; Dades &rarr; Ouarzazate &rarr; Marrakech &rarr; Essaouira Coast &rarr; Casablanca
+              </div>
+              <p class="circuit-desc">
+                An unhurried masterpiece taking you from northern Mediterranean shores to deep desert dunes, high mountain passes, and Atlantic ramparts. Balanced with multi-night stops so you never feel rushed.
+              </p>
+              <ul class="circuit-highlights">
+                <li><span class="chk">✓</span> Seamless ferry port pickup in Tangier or airport meet in Casablanca</li>
+                <li><span class="chk">✓</span> Chefchaouen, Volubilis, Fes medina &amp; Middle Atlas cedar woods</li>
+                <li><span class="chk">✓</span> 2 nights in the Sahara with 4x4 dune excursion &amp; nomad tea</li>
+                <li><span class="chk">✓</span> Ouarzazate, Ait Benhaddou &amp; lush High Atlas mountain valleys</li>
+                <li><span class="chk">✓</span> 2 nights in Marrakech + Atlantic seafood day in Essaouira</li>
+              </ul>
+            </div>
+            <div class="circuit-footer">
+              <div>
+                <div class="circuit-price">€170 – €230 <span>/ day</span></div>
+                <div style="font-size:11px; color:#777; font-family:'Courier New', monospace;">Flat rate per vehicle (1–7 guests)</div>
+              </div>
+              <a href="#inquireForm" class="route-btn">Inquire Circuit &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bespoke Itinerary Helper Callout -->
+        <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-left: 4px solid var(--gold); padding: 24px 28px; margin-top: 36px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+          <div style="max-width: 680px;">
+            <h4 style="margin: 0 0 6px; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; text-transform: uppercase; color: #000000;">Need a 100% Bespoke Circuit with Handpicked Riads?</h4>
+            <p style="margin: 0; font-size: 13.5px; color: #555; line-height: 1.5;">
+              Explore our comprehensive <a href="custom-morocco-tour.html" style="color: #000000; font-weight: 700; text-decoration: underline;">Custom Morocco Tour Designer</a> for turnkey boutique riad bookings, or use our <a href="morocco-trip-cost-calculator.html" style="color: #000000; font-weight: 700; text-decoration: underline;">Morocco Trip Cost Calculator</a> to estimate your complete budget in real time.
+            </p>
+          </div>
+          <a href="custom-morocco-tour.html" class="btn-gold-primary" style="padding: 12px 22px; font-size: 11px;">Design Custom Tour &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3C: SAFETY, COMFORT & SPECIALIZED TRAVEL STANDARDS -->
+    <section class="driver-section-wrap" id="safety-standards">
+      <div class="driver-section-head">
+        <span class="driver-sec-kicker">UNCOMPROMISING REPUTATION &amp; CARE</span>
+        <h2 class="driver-sec-title">Safety, Comfort &amp; Specialized Travel Care</h2>
+        <p class="driver-sec-desc">
+          Traveling through unfamiliar mountain passes and desert valleys demands total trust. Here is how Roam Morocco guarantees your security and comfort across every kilometer.
+        </p>
+      </div>
+
+      <div class="safety-grid">
+        <!-- Safety Pillar 1 -->
+        <div class="safety-card">
+          <div class="safety-icon-wrap">🛡️</div>
+          <h3 class="safety-card-title">Solo Female Traveler Security</h3>
+          <p class="safety-card-desc">
+            All chauffeurs are vetted, background-checked Berber and Moroccan hospitality professionals. Your driver escorts you on foot directly to your riad's inner doorway at night so you never walk through unfamiliar medina alleys alone, shields you from aggressive street touts, and maintains strict professional respect.
+          </p>
+        </div>
+
+        <!-- Safety Pillar 2 -->
+        <div class="safety-card">
+          <div class="safety-icon-wrap">⛰️</div>
+          <h3 class="safety-card-title">Tizi n'Tichka Mountain Pacing</h3>
+          <p class="safety-card-desc">
+            Navigating the 2,260m Tizi n'Tichka mountain pass requires seasoned skill. Our chauffeurs use smooth engine braking, avoid abrupt acceleration, pause at panoramic roadside cafés, and carry complimentary natural ginger lozenges, motion sickness remedies, and fresh chilled water.
+          </p>
+        </div>
+
+        <!-- Safety Pillar 3 -->
+        <div class="safety-card">
+          <div class="safety-icon-wrap">👶</div>
+          <h3 class="safety-card-title">Free European ISOFIX Car Seats</h3>
+          <p class="safety-card-desc">
+            Traveling with infants or young children? We provide sanitized, European safety standard (ECE R44/04 / i-Size) infant capsules, rear/front-facing toddler car seats, and booster seats completely free of charge upon advance booking request.
+          </p>
+        </div>
+
+        <!-- Safety Pillar 4 -->
+        <div class="safety-card">
+          <div class="safety-icon-wrap">✈️</div>
+          <h3 class="safety-card-title">Guaranteed Flight Radar Tracking</h3>
+          <p class="safety-card-desc">
+            We monitor live commercial flight radar for all Casablanca (CMN) and Marrakech (RAK) arrivals. If your flight is delayed by 45 minutes or 3 hours, your chauffeur tracks your actual touchdown time and greets you inside arrivals with a personalized name board at zero extra charge.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3D: 4-STEP BOOKING PROCESS -->
+    <section style="background: #ffffff; border-top: 1px solid var(--border-subtle); padding: 70px 24px 20px;" id="how-to-book">
+      <div style="max-width: 1080px; margin: 0 auto;">
+        <div class="driver-section-head" style="margin-bottom: 36px;">
+          <span class="driver-sec-kicker">TRANSPARENT &amp; STRESS-FREE</span>
+          <h2 class="driver-sec-title">How Booking Your Private Chauffeur Works</h2>
+          <p class="driver-sec-desc">
+            From your first route inquiry to curbside arrival at your riad, our 4-step process ensures complete clarity and reliable execution.
+          </p>
+        </div>
+
+        <div class="booking-steps-grid">
+          <!-- Step 1 -->
+          <div class="booking-step-card">
+            <span class="step-number">STEP 01</span>
+            <h4 class="step-title">Submit Route &amp; Dates</h4>
+            <p class="step-desc">
+              Tell us your travel dates, passenger count, pickup point, and route ideas via our fast quote form below or directly on WhatsApp.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="booking-step-card">
+            <span class="step-number">STEP 02</span>
+            <h4 class="step-title">30-Min Consultation</h4>
+            <p class="step-desc">
+              Our Marrakech operations desk reviews drive times, mountain pass weather, and delivers an exact all-inclusive flat quote with zero hidden extras.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="booking-step-card">
+            <span class="step-number">STEP 03</span>
+            <h4 class="step-title">Confirm &amp; Chauffeur Match</h4>
+            <p class="step-desc">
+              Lock in your reservation with a flexible deposit. Receive your assigned chauffeur's name, WhatsApp contact, and vehicle details in advance.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="booking-step-card">
+            <span class="step-number">STEP 04</span>
+            <h4 class="step-title">VIP Curbside Welcome</h4>
+            <p class="step-desc">
+              Your chauffeur greets you curbside at the airport arrivals terminal or your hotel lobby with a personalized name sign and assists with all luggage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- SECTION 4: INQUIRY & BOOKING FORM -->
     <section style="background: #ffffff; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 80px 24px;" id="inquireForm">
       <div style="max-width: 920px; margin: 0 auto;">
@@ -1639,8 +2278,11 @@
               <div class="form-group">
                 <label for="serviceType">Service / Route *</label>
                 <select id="serviceType" required>
-                  <option value="Multi-Day Custom Circuit">Multi-Day Custom Circuit (Atlas &amp; Sahara)</option>
-                  <option value="Airport Transfer">Point-to-Point Airport Transfer</option>
+                  <option value="4-Day Desert &amp; Atlas Circuit">4-Day High Atlas &amp; Sahara Circuit</option>
+                  <option value="7-Day Imperial &amp; Desert Odyssey">7-Day Imperial Cities &amp; Sahara Odyssey</option>
+                  <option value="10-Day Grand Kingdom Explorer">10-Day Grand Kingdom Explorer</option>
+                  <option value="Multi-Day Custom Circuit">Multi-Day Custom Circuit (Bespoke Route)</option>
+                  <option value="Airport Transfer">Point-to-Point Airport Transfer (CMN / RAK)</option>
                   <option value="Day Excursion (Essaouira)">Day Excursion: Essaouira Coastal</option>
                   <option value="Day Excursion (Ourika / Atlas)">Day Excursion: Ourika Valley &amp; Atlas</option>
                   <option value="Day Excursion (Agafay Dinner)">Evening: Agafay Desert Dinner Transfer</option>
@@ -1775,6 +2417,65 @@
           <div class="faq-answer">
             <p>
               <strong>Yes, 100%.</strong> Every booking with Roam Morocco is completely all-inclusive. You never have to hand over cash for diesel at gas stations, pay highway toll booths, or cover your driver's hotel room and dinners on the road. We handle all logistics behind the scenes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q-Legal -->
+        <div class="faq-item">
+          <h4 class="faq-question">What is the legal difference between a private driver and an official city tour guide in Morocco?</h4>
+          <div class="faq-answer">
+            <p>
+              Under Moroccan tourism regulations (Law 05-12 enforced by the Ministry of Tourism), there is a strict legal distinction between a private tourist chauffeur (<em>Transport Touristique</em>) and a licensed municipal tour guide (<em>guide des villes et circuits</em>). A private driver is licensed to navigate national highways, mountain passes, airport corridors, manage luggage, translate Darija and Berber, recommend authentic culinary stops, and share cultural context during road travel.
+            </p>
+            <p style="margin-top: 10px;">
+              However, by law, private chauffeurs cannot conduct guided historical tours inside enclosed heritage monuments and medinas (such as Bahia Palace, Medersa Ben Youssef, Volubilis, or the Fes Tanneries). For enclosed historical landmarks, Roam Morocco seamlessly arranges licensed, badge-holding municipal guides on demand to ensure full legal compliance and an enriching historical experience without street tout interference.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q-Licensing -->
+        <div class="faq-item">
+          <h4 class="faq-question">Why is hiring an officially licensed Transport Touristique vehicle critical over an unlicensed taxi?</h4>
+          <div class="faq-answer">
+            <p>
+              Official tourist transport vehicles in Morocco operate under a strict Ministry of Tourism permit (<em>Agrément de Transport Touristique</em>), recognizable by green or blue commercial plates, comprehensive commercial passenger insurance (<em>Assurance Transport</em>), and an official mission manifest (<em>Ordre de Mission</em>). Royal Gendarmerie and Sûreté Nationale highway checkpoints strictly inspect these credentials on all routes.
+            </p>
+            <p style="margin-top: 10px;">
+              Unlicensed private cars or informal pirate taxis recruited off street corners or social media lack commercial passenger liability insurance and face immediate vehicle impoundment at police checkpoints, stranding travelers on rural mountain roads. Roam Morocco operates 100% legally compliant, accredited vehicles with full passenger liability protection.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q-SoloFemale -->
+        <div class="faq-item">
+          <h4 class="faq-question">Is it safe for solo female travelers to hire a private driver in Morocco?</h4>
+          <div class="faq-answer">
+            <p>
+              <strong>Yes, absolutely.</strong> Roam Morocco is deeply trusted by solo female travelers from around the world. All our chauffeurs are vetted, experienced Berber and Moroccan hospitality professionals with clean criminal background records.
+            </p>
+            <p style="margin-top: 10px;">
+              Your chauffeur acts as your dedicated local guardian—meeting you inside airport arrivals, escorting you on foot directly to your riad's inner doorway at night so you never walk through unfamiliar medina alleys alone, shielding you from aggressive market touts, and maintaining respectful professional boundaries throughout your trip.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q-MotionSickness -->
+        <div class="faq-item">
+          <h4 class="faq-question">How do your drivers handle mountain roads and motion sickness over the High Atlas Tizi n'Tichka pass?</h4>
+          <div class="faq-answer">
+            <p>
+              Crossing the High Atlas via the 2,260-meter Tizi n'Tichka pass requires seasoned mountain driving skill. Our chauffeurs have decades of experience navigating these mountain curves with gentle acceleration, smooth engine braking, and a calm, unhurried pace. We schedule frequent scenic photo pauses at panoramic viewpoints, carry fresh bottled water and complimentary natural ginger candies/remedies, and tailor driving speed immediately to passenger comfort.
+            </p>
+          </div>
+        </div>
+
+        <!-- Q-FlightDelay -->
+        <div class="faq-item">
+          <h4 class="faq-question">What happens if our flight into Casablanca or Marrakech airport is delayed?</h4>
+          <div class="faq-answer">
+            <p>
+              All Roam Morocco airport pickups include complimentary live flight radar tracking. Whether your flight into Casablanca Mohammed V (CMN) or Marrakech Menara (RAK) lands early or is delayed by several hours, your chauffeur tracks your actual arrival time and will be waiting curbside at the terminal with a personalized name board at no additional charge.
             </p>
           </div>
         </div>
