@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
@@ -420,6 +420,7 @@
       <!-- Filter Bar -->
       <div class="filter-bar">
         <button class="filter-btn active" onclick="filterDest('all', this)">All Destinations</button>
+        <button class="filter-btn" onclick="filterDest('free', this)">Free Tour</button>
         <button class="filter-btn" onclick="filterDest('desert', this)">Sahara & South</button>
         <button class="filter-btn" onclick="filterDest('imperial', this)">Imperial Cities</button>
         <button class="filter-btn" onclick="filterDest('atlas', this)">High Atlas</button>
@@ -460,7 +461,26 @@
           </div>
         </article>
 
-        <!-- 3. Chefchaouen -->
+        <!-- 3. Marrakech Medina Sunset Free Tour -->
+        <article class="dest-card reveal" data-cat="imperial free">
+          <div class="dest-media">
+            <span class="dest-badge-tag" style="background:#16a34a;color:#ffffff;font-weight:700;">★ 100% FREE TOUR</span>
+            <img src="img/marrakech.webp" alt="Marrakech Medina Sunset Free Walking Tour" loading="lazy" decoding="async">
+          </div>
+          <div class="dest-body">
+            <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+              <span style="font-size:11px;font-weight:800;letter-spacing:1px;color:#16a34a;text-transform:uppercase;">OFFICIAL CIVITATIS PARTNER</span>
+            </div>
+            <h3>Marrakech Medina Sunset Free Tour</h3>
+            <p>Daily 2-hour guided walking tour from Koutoubia Mosque through the souks &amp; Saadian quarters, ending at sunset over Jemaa el-Fna.</p>
+            <div class="dest-footer-meta">
+              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">DAILY: 5PM / 6PM</span>
+              <a href="marrakech-medina-sunset-free-tour.html" class="see-more-btn"><span>View Free Tour</span> <span>↳</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Chefchaouen -->
         <article class="dest-card reveal" data-cat="coast-north">
           <div class="dest-media">
             <span class="dest-badge-tag">RIF MOUNTAINS</span>
@@ -656,7 +676,8 @@
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       document.querySelectorAll('.dest-card').forEach(card => {
-        if(cat === 'all' || card.dataset.cat === cat) {
+        const cats = (card.dataset.cat || '').split(' ');
+        if(cat === 'all' || cats.includes(cat) || card.dataset.cat === cat) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';
