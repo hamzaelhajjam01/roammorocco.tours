@@ -2,6 +2,11 @@
    Directly modeled on premier private tour layouts with sticky lead capture, 
    highlights callout, day-by-day narratives, route map, and inclusions checklist. ── */
 
+.announcement-bar .mobile-wa-cta,
+.announcement-track .mobile-wa-cta {
+  display: none !important;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

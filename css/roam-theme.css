@@ -44,6 +44,10 @@
 .announcement-bar:hover .announcement-track {
   animation-play-state: paused;
 }
+.announcement-bar .mobile-wa-cta,
+.announcement-track .mobile-wa-cta {
+  display: none !important;
+}
 .announcement-content {
   display: flex;
   align-items: center;
