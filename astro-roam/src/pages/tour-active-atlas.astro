@@ -1,0 +1,784 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Active High Atlas Trekking Tour | RoamMorocco";
+const description = "Embark on an adventure in the High Atlas Mountains. Trek through Imlil, visit remote Berber villages, and experience authentic Moroccan hospitality.";
+const canonical = "https://roammorocco.tours/tour-active-atlas.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "RoamMorocco",
+    "url": "https://roammorocco.tours/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://roammorocco.tours/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "RoamMorocco",
+    "url": "https://roammorocco.tours/",
+    "description": "Premier Morocco travel agency offering custom tours across the Sahara Desert, ancient medinas, and Atlas Mountains.",
+    "image": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
+    "logo": "https://roammorocco.tours/images/Logos/roammorocco-favicon.png",
+    "telephone": "+212 653-506441",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/roammorocco",
+      "https://www.instagram.com/roammorocco"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
+      "addressLocality": "Marrakech",
+      "postalCode": "40000",
+      "addressCountry": "MA"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "reviewCount": "985"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Sarah M."
+        },
+        "datePublished": "2026-03-15",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "James T."
+        },
+        "datePublished": "2026-05-22",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "RoamMorocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
+      },
+      {
+        "@type": "Review",
+        "author": {
+          "@type": "Person",
+          "name": "Elena R."
+        },
+        "datePublished": "2026-06-10",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5"
+        },
+        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
+      }
+    ],
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Hamza",
+        "jobTitle": "Co-Founder & Expedition Curator"
+      },
+      {
+        "@type": "Person",
+        "name": "Abdelhakim",
+        "jobTitle": "Co-Founder & Operations Lead"
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "url": "https://roammorocco.tours/",
+      "availability": "https://schema.org/InStock",
+      "priceCurrency": "USD",
+      "price": "100.00",
+      "priceValidUntil": "2027-12-31"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What fitness level is required for the Active Atlas Mountain trek?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Active Atlas day trek is moderate and can be tailored to your preferred pace. Most travelers with average physical fitness comfortably complete the 3 to 4-hour guided hike through the Imlil Valley and Armed village. If you prefer a gentle nature walk or a more challenging summit ascent, your private mountain guide customizes the trail elevation on the spot."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do we visit authentic Berber villages during the Atlas hike?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You hike through terraced walnut orchards, apple groves, and centuries-old Amazigh (Berber) villages like Armed, Tamatert, and Imlil clinging to the High Atlas slopes. You will enjoy a freshly prepared 3-course traditional Berber lunch on a panoramic rooftop terrace hosted by a local family, overlooking Mount Toubkal (4,167m)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What gear and footwear should I wear for the Atlas Mountains?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sturdy walking sneakers or lightweight hiking boots with good traction are essential for uneven dirt and cobblestone trails. Dress in comfortable layers (breathable shirt, fleece jacket or windbreaker), as mountain temperatures can be 5\u00b0C to 10\u00b0C cooler than Marrakech. Sunglasses, sunscreen, and a small daypack are recommended."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is private transport from Marrakech included in the Atlas tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your private English-speaking chauffeur picks you up directly from your Marrakech riad or hotel at 08:30 AM in an air-conditioned 4x4 or executive Mercedes minivan, driving 90 minutes through Asni and the Moulay Brahim Gorge to Imlil, and returning you to your door by 05:30 PM."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Active Atlas tour available year-round?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Imlil Valley is accessible all 12 months. Spring (March to May) brings lush green terraces and blooming apple blossoms; summer (June to August) offers a cool escape from Marrakech's desert heat; autumn (September to November) features crisp golden walnut foliage; and winter (December to February) treats you to stunning snow-capped views of Mount Toubkal."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "@id": "https://roammorocco.tours/tour-active-atlas.html#trip",
+    "name": "Active High Atlas Adventure: 3-Day Mount Toubkal Trek",
+    "description": "Summit Mount Toubkal (4,167m) in the High Atlas Mountains. Includes certified Berber mountain guides, Toubkal Refuge stay, mule support, and private Marrakech transfers.",
+    "url": "https://roammorocco.tours/tour-active-atlas.html",
+    "image": "https://roammorocco.tours/images/wall-atlas.jpg",
+    "touristType": [
+      "Hikers",
+      "Adventure Travelers",
+      "Outdoor Enthusiasts"
+    ],
+    "duration": "P3D",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "RoamMorocco",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://roammorocco.tours/tour-active-atlas.html",
+      "priceCurrency": "USD",
+      "price": "290.00",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2027-12-31"
+    },
+    "itinerary": {
+      "@type": "ItemList",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Day 1: Marrakech to Imlil & Trek to Toubkal Refuge (3,207m)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Day 2: Mount Toubkal Summit Push (4,167m) & Sunrise"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Day 3: Scenic Descent to Imlil & Return Transfer to Marrakech"
+        }
+      ]
+    }
+  }
+];
+---
+<Layout title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg-cream: #f2eee6;
+      --card-bg: #ffffff;
+      --border-subtle: rgba(0, 0, 0, 0.12);
+      --border-strong: rgba(0, 0, 0, 0.22);
+      --text-main: #000000;
+      --text-muted: rgba(0, 0, 0, 0.72);
+      --red: #f10b18;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main.roam-tour-main {
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      padding: 120px 24px 80px !important;
+    }
+
+    .roam-tour-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .roam-tour-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Courier New", monospace;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: rgba(0, 0, 0, .54);
+      margin-bottom: 20px;
+    }
+    .roam-tour-badge::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      background: var(--red);
+    }
+
+    .roam-tour-title {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: clamp(34px, 5.5vw, 62px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -.055em !important;
+      line-height: .96 !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 20px !important;
+    }
+
+    .roam-tour-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 36px;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.55);
+    }
+
+    .roam-tour-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 6px 14px;
+    }
+
+    .roam-itinerary-card {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      padding: 32px 36px !important;
+      margin-bottom: 24px !important;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03) !important;
+    }
+
+    .roam-day-badge {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .12em !important;
+      color: var(--red) !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+
+    .roam-itinerary-title {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: 22px !important;
+      font-weight: 800 !important;
+      letter-spacing: -.03em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 14px !important;
+    }
+
+    .roam-itinerary-desc {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 17px !important;
+      line-height: 1.75 !important;
+      color: rgba(0, 0, 0, 0.82) !important;
+      margin: 0 !important;
+    }
+
+    .roam-highlights-box {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 32px 36px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-highlights-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -.03em;
+      color: #000000;
+      margin: 0 0 20px;
+    }
+
+    .roam-highlight-list {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: grid;
+      gap: 14px;
+    }
+
+    .roam-highlight-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.84);
+    }
+
+    .roam-highlight-bullet {
+      color: var(--red);
+      font-weight: 900;
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: -1px;
+    }
+  
+    /* Action Buttons in Tour Pages */
+    .roam-btn-black,
+    .roam-tour-content a.roam-btn-black,
+    a.roam-btn-black {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #000000 !important;
+      color: #ffffff !important;
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border: 1px solid #000000 !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      line-height: 1 !important;
+      transition: all .25s ease !important;
+    }
+    .roam-btn-black:hover,
+    .roam-tour-content a.roam-btn-black:hover,
+    a.roam-btn-black:hover {
+      background: #262626 !important;
+      color: #ffffff !important;
+      border-color: #262626 !important;
+      transform: translateY(-2px) !important;
+      text-decoration: none !important;
+    }
+
+    .roam-btn-wa,
+    .roam-tour-content a.roam-btn-wa,
+    a.roam-btn-wa {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #25D366 !important;
+      color: #000000 !important;
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border: 1px solid #25D366 !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      line-height: 1 !important;
+      transition: all .25s ease !important;
+    }
+    .roam-btn-wa:hover,
+    .roam-tour-content a.roam-btn-wa:hover,
+    a.roam-btn-wa:hover {
+      background: #20BA59 !important;
+      color: #000000 !important;
+      border-color: #20BA59 !important;
+      transform: translateY(-2px) !important;
+      text-decoration: none !important;
+    }
+
+    .roam-tour-cta-box,
+    .roam-driver-box {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.14) !important;
+      padding: 44px 32px !important;
+      margin: 48px 0 !important;
+      text-align: center !important;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
+      border-radius: 24px !important;
+    }
+    .roam-tour-cta-title,
+    .roam-driver-box h4 {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: clamp(20px, 3.2vw, 28px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -.03em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 14px !important;
+    }
+    .roam-tour-cta-desc,
+    .roam-driver-box p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 16px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.76) !important;
+      max-width: 680px !important;
+      margin: 0 auto 26px !important;
+    }
+
+    /* Human-Centered Storytelling: Bourdain Field Note Card */
+    .roam-field-note {
+      background: #faf8f5 !important;
+      border: 1px solid rgba(0, 0, 0, 0.12) !important;
+      border-left: 3px solid var(--red, #f10b18) !important;
+      padding: 24px 28px !important;
+      margin: 24px 0 28px !important;
+    }
+    .roam-field-note-kicker {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: var(--red, #f10b18) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .12em !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    .roam-field-note-quote {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-style: italic !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.8) !important;
+      margin: 0 0 10px !important;
+    }
+    .roam-field-note-author {
+      font-family: "Courier New", monospace !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: rgba(0, 0, 0, 0.55) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      margin: 0 !important;
+    }
+  
+  </style>
+
+  <main class="roam-tour-main" style="padding: 120px 24px 80px;">
+  <div class="roam-tour-wrapper">
+    <div class="roam-tour-badge">3-DAY ADVENTURE // HIGH ATLAS EXPEDITION</div>
+    <h1 class="roam-tour-title">Active High Atlas Adventure</h1>
+    
+    <div class="roam-tour-meta-bar">
+      <span class="roam-tour-meta-item">📍 START/FINISH: MARRAKECH</span>
+      <span class="roam-tour-meta-item">⏱ DURATION: 3 DAYS / 2 NIGHTS</span>
+      <span class="roam-tour-meta-item">🏔 SUMMIT: MOUNT TOUBKAL (4,167M)</span>
+      <span class="roam-tour-meta-item">🛡 100% PRIVATE CERTIFIED BERBER GUIDES</span>
+    </div>
+
+    <div style="margin-bottom: 40px; border: 1px solid rgba(0,0,0,0.12); overflow: hidden;">
+      <img src="/images/wall-atlas.jpg" alt="Active High Atlas Adventure - Mount Toubkal Trek" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; display: block;">
+    </div>
+
+    <div class="roam-article-body">
+      <p style="font-size: 1.25rem; font-weight: 500; line-height: 1.7; margin-bottom: 28px;">Leave the bustling medinas of Marrakech behind and breathe the crisp mountain air. Designed for active travelers and outdoor enthusiasts, our <strong>Jebel Toubkal trek</strong> takes you deep into the heart of the High Atlas range to conquer North Africa's highest peak.</p>
+
+      <h2>Why Climb Mount Toubkal with RoamMorocco?</h2>
+      <p><strong>Mount Toubkal</strong> (often spelled <em>Mt Toubkal</em> or <em>Mont Toubkal</em>) stands as a majestic sentinel over the Moroccan landscape at <strong>4,167 meters (13,671 feet)</strong>. <strong>Climbing Toubkal</strong> is a bucket-list achievement for hikers worldwide, offering 360-degree panoramic views that stretch all the way across the Anti-Atlas to the fringes of the Sahara on a clear dawn.</p>
+      
+      <p>While climbing without a guide used to be common decades ago, modern Moroccan safety regulations require all trekkers to be accompanied by a licensed mountain guide. Our private tours ensure you are led by experienced, English-speaking Berber mountaineers from the valley of Imlil who know every scree trail, snow pack, and refuge condition intimately.</p>
+
+      <!-- Highlights Box -->
+      <div class="roam-highlights-box">
+        <h3 class="roam-highlights-title">Tour Highlights</h3>
+        <ul class="roam-highlight-list">
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Summit Jebel Toubkal:</strong> Stand on the roof of North Africa at 4,167m at sunrise.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Authentic Berber Culture:</strong> Trek through terraced walnut groves and share steaming mint tea with local families in Imlil and Aroumd.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Toubkal Refuge Basecamp:</strong> Spend two nights at the historic stone basecamp (3,207m) acclimatizing before the summit push.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Private Pacing &amp; Mule Support:</strong> Travel with your dedicated muleteer team who transport your luggage while you carry only a light daypack.</div>
+          </li>
+        </ul>
+      </div>
+
+      <h2>How High is Mount Toubkal? (Altitude &amp; Technical Specs)</h2>
+      <p>The <strong>Mount Toubkal height</strong> is exactly <strong>4,167 meters (13,671 feet)</strong> above sea level. While it is a towering alpine mountain, the standard summer and autumn ascent is primarily a non-technical, steep mountain trek rather than a vertical rock climb. Ropes and harnesses are not required during non-snow months.</p>
+      <p>However, the <strong>altitude of Mont Toubkal</strong> means that acclimatization and steady pacing are paramount. Our 3-day itinerary is purposefully paced with an overnight stay at 3,207m before the summit assault to minimize altitude fatigue and maximize summit success rates.</p>
+
+      <h2>3-Day Jebel Toubkal Trek Itinerary</h2>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 01 // VALLEY ASCENT</span>
+        <h3 class="roam-itinerary-title">Marrakech to Imlil &amp; Trek to Toubkal Refuge (3,207m)</h3>
+        <p class="roam-itinerary-desc">Your private driver picks you up from your Marrakech riad at 08:00 AM for the scenic 90-minute transfer into the High Atlas foothills. In the Berber trailhead village of Imlil (1,740m), you meet your certified mountain guide and mule team. Begin trekking along the Mizane Valley, following crystalline streams past the pilgrimage hamlet of Sidi Chamharouch. Arrive at the Toubkal Refuge in the late afternoon for a hearty communal Moroccan tagine dinner and early alpine rest.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Sidi Chamharouch Hamlet</span>
+          <p class="roam-field-note-quote">&ldquo;At the white boulder of Sidi Chamharouch, commercial groups rush past to log altitude. We sit on wool rugs with Mohamed, who boils wild mountain thyme picked from the ravines above using icy stream water. He points up to the cliff face: &lsquo;The mountain does not care how fast your watch ticks. Drink your tea, listen to the river, and step only when your breath is ready.&rsquo;&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Mountain Route Lead</p>
+        </div>
+      </div>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 02 // SUMMIT PUSH</span>
+        <h3 class="roam-itinerary-title">Mount Toubkal Summit Assault (4,167m) &amp; Sunrise</h3>
+        <p class="roam-itinerary-desc">Alpine start at 04:30 AM under a canopy of mountain stars. With headlamps lit, navigate the South Cirque scree trail, taking steady, measured steps as daylight breaks over the Atlas ridge. By mid-morning, cross the summit ridge and touch the triangular metal pyramid at 4,167m. Drink in the breathtaking views spanning the Anti-Atlas, the Sirwa plateau, and Marrakech plain. Carefully descend back to the refuge for a celebratory lunch and relaxing afternoon.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // South Cirque at 05:00 AM</span>
+          <p class="roam-field-note-quote">&ldquo;In the pitch black at 3,800 meters, there is no small talk. Just the crunch of scree under Vibram soles and the rhythmic exhale of guides who have climbed this ridge five hundred times. When dawn hits the metal summit pyramid, Toubkal casts a shadow that stretches thirty miles across the plains toward the Sahara. It is a humbling, silent, beautiful moment.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Mountain Route Lead</p>
+        </div>
+      </div>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 03 // SCENIC DESCENT &amp; RETURN</span>
+        <h3 class="roam-itinerary-title">Descent to Imlil &amp; Private Marrakech Return</h3>
+        <p class="roam-itinerary-desc">Awake to fresh mountain bread, local honey, and coffee. Enjoy a leisurely descent down the Mizane gorge back to Imlil village. Celebrate your summit with an authentic Berber lunch on a panoramic rooftop overlooking the walnut groves. Your private Mercedes van or 4x4 will transport you smoothly back to your Marrakech hotel by late afternoon.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Aroumd Walnut Groves</span>
+          <p class="roam-field-note-quote">&ldquo;Descending into the terraced orchards of Aroumd, you hear long willow poles thwacking walnut trees. Hassan pulls us into his earthen family home: hot flatbread straight off clay coals, raw forest honey, and pressed walnut oil. After days of altitude freeze, tearing hot bread with your hands at an elder&rsquo;s table is what travel actually means.&rdquo;</p>
+          <p class="roam-field-note-author">&mdash; Brahim, Roam Morocco Mountain Route Lead</p>
+        </div>
+      </div>
+
+      <h2>Mount Toubkal Difficulty: Is It Hard?</h2>
+      <p>The <strong>Mount Toubkal difficulty</strong> is graded as <em>moderate to strenuous</em>. In the warmer months (May through October), it is an endurance mountain hike on loose rock and scree paths. If you have decent cardiovascular stamina and hike regularly, you can successfully reach the peak. The primary challenge is the elevation gain and thin alpine air, which is why hydration and steady pacing are key.</p>
+
+      <h2>The Best Time to Climb Mount Toubkal</h2>
+      <ul>
+        <li><strong>Spring (April to May):</strong> Ideal temperatures, lush green valleys, and melting summit snowpacks. One of the most scenic periods of the year.</li>
+        <li><strong>Autumn (September to November):</strong> Crisp mountain visibility, mild hiking temperatures, and stable weather windows. Perfect conditions for photography.</li>
+        <li><strong>Summer (June to August):</strong> Hot in the Marrakech plains, but pleasantly cool at 3,000m+ altitudes. Requires early morning starts to beat peak midday heat.</li>
+        <li><strong>Winter (December to March):</strong> Pure alpine mountaineering. Snow transforms the peak into a technical winter route requiring crampons and ice axes (guided winter gear provided).</li>
+      </ul>
+
+      <!-- Driver Concierge Lead Gen -->
+      <div class="roam-driver-box">
+        <h4>Need Private Transport from Marrakech to Imlil?</h4>
+        <p>Planning a day hike or independent trek? Book a licensed, English-speaking driver in a modern 4x4 or Mercedes van with doorstep pickup at your riad, luggage storage, and return transfer.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="/custom-morocco-tour.html" class="roam-btn-black">Book Private Transfer &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I%20need%20private%20transfer%20from%20Marrakech%20to%20Imlil." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Travel Deals Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Trip Planning &amp; Gear Toolkit</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Top Marrakech Riads</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Unlimited Morocco eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="/custom-morocco-tour.html" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚐 Custom 4x4 &amp; Chauffeur</span>
+            <span class="roam-toolkit-btn">Plan Route &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Frequently Asked Questions Accordion -->
+      <section style="margin: 48px 0 32px;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(24px, 3.5vw, 36px); margin-bottom: 24px; color: #000000;">Frequently Asked Questions: Active Atlas Mountain Trek</h2>
+        
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <h3 class="faq-question">What fitness level is required for the Active Atlas Mountain trek?</h3>
+            <div class="faq-answer">
+              <p>The Active Atlas day trek is moderate and can be tailored to your preferred pace. Most travelers with average physical fitness comfortably complete the 3 to 4-hour guided hike through the Imlil Valley and Armed village. If you prefer a gentle nature walk or a more challenging summit ascent, your private mountain guide customizes the trail elevation on the spot.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Do we visit authentic Berber villages during the Atlas hike?</h3>
+            <div class="faq-answer">
+              <p>Yes. You hike through terraced walnut orchards, apple groves, and centuries-old Amazigh (Berber) villages like Armed, Tamatert, and Imlil clinging to the High Atlas slopes. You will enjoy a freshly prepared 3-course traditional Berber lunch on a panoramic rooftop terrace hosted by a local family, overlooking Mount Toubkal (4,167m).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">What gear and footwear should I wear for the Atlas Mountains?</h3>
+            <div class="faq-answer">
+              <p>Sturdy walking sneakers or lightweight hiking boots with good traction are essential for uneven dirt and cobblestone trails. Dress in comfortable layers (breathable shirt, fleece jacket or windbreaker), as mountain temperatures can be 5°C to 10°C cooler than Marrakech. Sunglasses, sunscreen, and a small daypack are recommended.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Is private transport from Marrakech included in the Atlas tour?</h3>
+            <div class="faq-answer">
+              <p>Yes. Your private English-speaking chauffeur picks you up directly from your Marrakech riad or hotel at 08:30 AM in an air-conditioned 4x4 or executive Mercedes minivan, driving 90 minutes through Asni and the Moulay Brahim Gorge to Imlil, and returning you to your door by 05:30 PM.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Is the Active Atlas tour available year-round?</h3>
+            <div class="faq-answer">
+              <p>Yes. The Imlil Valley is accessible all 12 months. Spring (March to May) brings lush green terraces and blooming apple blossoms; summer (June to August) offers a cool escape from Marrakech's desert heat; autumn (September to November) features crisp golden walnut foliage; and winter (December to February) treats you to stunning snow-capped views of Mount Toubkal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Bottom CTA Box -->
+            <!-- Pre-Locked Route Booking Card -->
+      <div style="max-width: 680px; margin: 40px auto 24px;">
+        <div class="dest-prelocked-widget"
+             data-tour-name="Active High Atlas & Mount Toubkal 3-Day Trek"
+             data-price-1-4="390"
+             data-price-5-7="520"
+             data-price-8-12="720"
+             data-tour-sub="Guided mountain trek · Mule support · High altitude mountain refuge">
+          
+          <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+          <h3 class="dest-prelocked-title">Active High Atlas & Mount Toubkal 3-Day Trek</h3>
+          <p class="dest-prelocked-sub">Guided mountain trek · Mule support · High altitude mountain refuge</p>
+
+          <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+          <div class="dest-tier-grid">
+            <button type="button" class="dest-tier-btn active" data-tier="1_4">
+              <span class="dest-tier-pax">1–4 Pax</span>
+              <span class="dest-tier-veh">Sedan / 4x4</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="5_7">
+              <span class="dest-tier-pax">5–7 Pax</span>
+              <span class="dest-tier-veh">VIP Van</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="8_12">
+              <span class="dest-tier-pax">8–12 Pax</span>
+              <span class="dest-tier-veh">Minibus</span>
+            </button>
+          </div>
+
+          <div class="dest-prelocked-fields">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="pickupCityActiveAtlas">Departure City</label>
+              <select class="dest-form-select dest-prelocked-city" id="pickupCityActiveAtlas">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
+              </select>
+            </div>
+
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="travelDateActiveAtlas">Approx. Travel Date</label>
+              <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateActiveAtlas">
+            </div>
+          </div>
+
+          <div class="dest-prelocked-price-box">
+            <div class="dest-prelocked-price-num">390€</div>
+            <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+            <p class="dest-prelocked-price-note">Includes certified Berber mountain guide, mule support, Toubkal refuge stay, meals & private Marrakech transfers.</p>
+          </div>
+
+          <a href="#" class="dest-prelocked-wa-btn">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+            <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 390€</span></span>
+          </a>
+
+          <div class="dest-prelocked-trust">
+            <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+            <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+            <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+          </div>
+        </div>
+      </div>
+<div class="roam-tour-cta-box">
+        <h3 class="roam-tour-cta-title">Ready to Conquer Mount Toubkal?</h3>
+        <p class="roam-tour-cta-desc">Join our expert Berber guides for the ultimate High Atlas trekking adventure. We handle mountain permits, refuge reservations, pack mules, meals, and private Marrakech transport—you bring the boots and spirit of adventure.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/custom-morocco-tour.html" class="roam-btn-black">Request Custom Itinerary &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%20Active%20High%20Atlas%20Tour." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Active High Atlas & Toubkal</div>
+      <div class="smt-price">From <span class="smt-price-num">390€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Active%20High%20Atlas%20&%20Mount%20Toubkal%203-Day%20Trek." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

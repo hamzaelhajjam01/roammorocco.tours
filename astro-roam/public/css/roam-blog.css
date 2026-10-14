@@ -1,0 +1,862 @@
+/* ==========================================================================
+   Roam Morocco — Unified Editorial Blog Design System (Template B)
+   High-Authority Magazine Aesthetics: Playfair Display + Inter Typography
+   ========================================================================== */
+
+:root {
+  --bg: #f2eee6;
+  --card-bg: #ffffff;
+  --text: #000000;
+  --text-muted: rgba(0, 0, 0, 0.68);
+  --border: rgba(0, 0, 0, 0.12);
+  --border-strong: rgba(0, 0, 0, 0.22);
+  --red: #f10b18;
+  --gold: #C8A45C;
+  --gold-light: #D4B76A;
+  --gold-dark: #9A7836;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Sharp architectural corners on editorial components */
+article,
+.article-wrap,
+.roam-day-card,
+.roam-tour-cta-box,
+.roam-toolkit-box,
+.roam-callout-ai,
+.roam-field-note,
+.table-container,
+table,
+th,
+td,
+figure,
+.featured-image-box,
+.featured-image-box img,
+.roam-area-card,
+.takeaway-box {
+  border-radius: 0 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Main Article Container */
+.article-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 130px 24px 80px;
+}
+
+@media (min-width: 1025px) {
+  .article-wrap {
+    max-width: 1220px !important; /* Matches TOC sidebar grid width */
+  }
+}
+
+/* Breadcrumbs Navigation */
+.roam-breadcrumbs {
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.roam-breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.roam-breadcrumbs a:hover {
+  color: var(--red);
+}
+
+/* Hero Typography */
+.article-header {
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 32px;
+}
+
+.category-badge {
+  display: inline-block;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #ffffff;
+  background: #000000;
+  padding: 4px 10px;
+  margin-bottom: 18px;
+}
+
+h1.article-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(34px, 4.8vw, 54px) !important;
+  line-height: 1.15 !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  margin: 0 0 20px !important;
+  letter-spacing: -.02em !important;
+  text-transform: none !important;
+}
+
+.article-subtitle {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-size: clamp(17px, 2.2vw, 21px) !important;
+  line-height: 1.55 !important;
+  color: var(--text-muted) !important;
+  font-weight: 400 !important;
+  margin: 0 0 24px !important;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.article-meta span strong {
+  color: #000000;
+}
+
+/* Featured Hero Image Frame */
+.featured-image-box {
+  margin: 0 0 48px;
+  border: 1px solid var(--border);
+  background: #000000;
+  overflow: hidden;
+}
+
+.featured-image-box img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-image-box figcaption {
+  padding: 12px 18px;
+  background: #ffffff;
+  font-size: 12.5px;
+  font-family: "Courier New", monospace;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  line-height: 1.5;
+}
+
+/* Article Editorial Prose */
+.article-content {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #1a1a1a;
+}
+
+.article-content h2 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(26px, 3.4vw, 36px) !important;
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  margin: 54px 0 20px !important;
+  color: #000000 !important;
+  letter-spacing: -.01em !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding-bottom: 12px !important;
+  text-transform: none !important;
+}
+
+.article-content h3 {
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .02em !important;
+  margin: 36px 0 14px !important;
+  color: #000000 !important;
+}
+
+.article-content p {
+  margin: 0 0 22px;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 0 0 24px;
+  padding-left: 26px;
+}
+
+.article-content li {
+  margin-bottom: 10px;
+}
+
+.article-content a {
+  color: #000000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.article-content a:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: #000000;
+}
+
+/* Key Takeaway / AI Overview Box */
+.roam-callout-ai {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-left: 6px solid #000000;
+  padding: 26px 30px;
+  margin: 36px 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.03);
+}
+
+.roam-callout-ai h4 {
+  margin: 0 0 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.roam-callout-ai p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Responsive Comparison Data Tables */
+.table-container,
+.roam-table-wrapper {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  margin: 36px 0 !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  background: #ffffff !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+  display: block !important;
+  position: relative !important;
+}
+
+.table-container::-webkit-scrollbar,
+.roam-table-wrapper::-webkit-scrollbar {
+  height: 6px !important;
+}
+
+.table-container::-webkit-scrollbar-track,
+.roam-table-wrapper::-webkit-scrollbar-track {
+  background: #f4f1ea !important;
+  border-radius: 9999px !important;
+}
+
+.table-container::-webkit-scrollbar-thumb,
+.roam-table-wrapper::-webkit-scrollbar-thumb {
+  background: #c8a45c !important;
+  border-radius: 9999px !important;
+}
+
+.table-container table,
+.roam-table-wrapper table,
+table {
+  width: 100% !important;
+  min-width: 580px !important; /* Guarantees readable columns and horizontal scrolling on mobile */
+  border-collapse: collapse !important;
+  font-size: 15px !important;
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+/* Fallback if a table has no wrapper container */
+.article-content > table,
+.roam-article-body > table,
+article > table {
+  display: block !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 12px !important;
+  margin: 36px 0 !important;
+}
+
+thead th {
+  background: #000000;
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: 14px 18px;
+  border: 1px solid #000000;
+}
+
+tbody td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  color: rgba(0, 0, 0, 0.88);
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background: #faf8f5;
+}
+
+tbody td:last-child {
+  border-right: none;
+}
+
+/* Day Itinerary Cards */
+.roam-day-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 28px 32px;
+  margin: 28px 0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+}
+
+.roam-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.roam-day-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: #000000;
+  margin: 0;
+}
+
+.roam-day-stat {
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Human-Centered Storytelling: Bourdain Field Note Card */
+.roam-field-note {
+  background: #faf8f5 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-left: 4px solid var(--red, #f10b18) !important;
+  padding: 28px 32px !important;
+  margin: 36px 0 !important;
+}
+
+.roam-field-note-kicker {
+  font-family: "Courier New", monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: var(--red, #f10b18) !important;
+  text-transform: uppercase !important;
+  letter-spacing: .12em !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+}
+
+.roam-field-note-quote {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  font-style: italic !important;
+  font-size: 16.5px !important;
+  line-height: 1.7 !important;
+  color: rgba(0, 0, 0, 0.82) !important;
+  margin: 0 0 12px !important;
+}
+
+.roam-field-note-author {
+  font-family: "Courier New", monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: rgba(0, 0, 0, 0.55) !important;
+  text-transform: uppercase !important;
+  letter-spacing: .08em !important;
+  margin: 0 !important;
+}
+
+/* High-Contrast Luxury Tour Box */
+.roam-tour-cta-box {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(200, 164, 92, 0.45) !important;
+  padding: 48px 36px !important;
+  margin: 54px 0 !important;
+  text-align: center !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 0 24px rgba(200, 164, 92, 0.12) !important;
+}
+
+.roam-tour-cta-kicker {
+  display: inline-block !important;
+  font-family: "Courier New", monospace !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .14em !important;
+  color: var(--gold, #C8A45C) !important;
+  margin-bottom: 12px !important;
+}
+
+.roam-tour-cta-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(24px, 3.2vw, 36px) !important;
+  font-weight: 700 !important;
+  margin: 0 0 14px !important;
+  color: #ffffff !important;
+  letter-spacing: -.01em !important;
+  text-transform: none !important;
+}
+
+.roam-tour-cta-desc {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-size: 16.5px !important;
+  line-height: 1.65 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  max-width: 680px !important;
+  margin: 0 auto 28px !important;
+}
+
+.roam-tour-cta-actions {
+  display: flex !important;
+  gap: 14px !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+}
+
+.roam-btn-white {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .08em !important;
+  padding: 16px 28px !important;
+  text-decoration: none !important;
+  transition: all .25s ease !important;
+}
+
+.roam-btn-white:hover {
+  background: #e6e0d4 !important;
+  transform: translateY(-2px) !important;
+}
+
+.roam-btn-wa {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #25D366 !important;
+  color: #ffffff !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .08em !important;
+  padding: 16px 28px !important;
+  text-decoration: none !important;
+  transition: all .25s ease !important;
+}
+
+.roam-btn-wa:hover {
+  background: #1da851 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+.roam-btn-wa span,
+.roam-btn-wa:hover span {
+  color: #ffffff !important;
+}
+
+.roam-btn-wa .wa-btn-icon {
+  width: 20px !important;
+  height: 20px !important;
+  vertical-align: middle !important;
+  flex-shrink: 0 !important;
+}
+
+.roam-btn-black {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+  letter-spacing: .08em !important;
+  padding: 16px 28px !important;
+  text-decoration: none !important;
+  transition: all .25s ease !important;
+}
+
+.roam-btn-black:hover {
+  background: #333333 !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Travel Toolkit Box: Luxury Light Editorial System */
+.roam-toolkit-box {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.09) !important;
+  border-radius: 14px !important;
+  padding: 32px 28px !important;
+  margin: 44px 0 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+}
+
+.roam-toolkit-title {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #111111 !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.roam-toolkit-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+.roam-toolkit-link {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  padding: 16px 20px !important;
+  background: #fdfcf9 !important;
+  border: 1px solid rgba(0, 0, 0, 0.09) !important;
+  border-left: 4px solid var(--gold, #C8A45C) !important;
+  border-radius: 12px !important;
+  color: #111111 !important;
+  text-decoration: none !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  cursor: pointer !important;
+}
+
+.roam-toolkit-link:hover {
+  background: #ffffff !important;
+  border-color: rgba(200, 164, 92, 0.5) !important;
+  border-left-color: #000000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.roam-toolkit-link span:first-child,
+.roam-toolkit-label {
+  font-size: 14.5px !important;
+  font-weight: 700 !important;
+  line-height: 1.4 !important;
+  color: #111111 !important;
+  flex: 1 1 auto !important;
+  text-decoration: none !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.roam-toolkit-btn,
+.roam-toolkit-link span:last-child:not(:only-child) {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  padding: 9px 18px !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #000000 !important;
+  border-radius: 9999px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.roam-toolkit-link:hover .roam-toolkit-btn,
+.roam-toolkit-link:hover span:last-child:not(:only-child) {
+  background: var(--gold, #C8A45C) !important;
+  border-color: var(--gold, #C8A45C) !important;
+  color: #000000 !important;
+  box-shadow: 0 4px 14px rgba(200, 164, 92, 0.35) !important;
+  transform: translateX(2px) !important;
+}
+
+@media (max-width: 768px) {
+  .roam-toolkit-box {
+    padding: 24px 18px !important;
+    margin: 36px 0 !important;
+    border-radius: 12px !important;
+  }
+  .roam-toolkit-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .roam-toolkit-link {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    padding: 14px 16px !important;
+  }
+  .roam-toolkit-link span:first-child,
+  .roam-toolkit-label {
+    font-size: 13.5px !important;
+  }
+  .roam-toolkit-btn,
+  .roam-toolkit-link span:last-child:not(:only-child) {
+    padding: 7px 14px !important;
+    font-size: 11.5px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .roam-toolkit-link {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+  .roam-toolkit-btn,
+  .roam-toolkit-link span:last-child:not(:only-child) {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}
+
+/* FAQ Interactive Accordion */
+.roam-faq-section,
+.roam-faq-block {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  padding: 40px;
+  margin: 54px 0;
+}
+
+.roam-faq-section h2,
+.roam-faq-block h2 {
+  border: none !important;
+  margin-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.roam-faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+}
+
+.roam-faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.roam-faq-q,
+.roam-faq-question {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.roam-faq-a,
+.roam-faq-answer {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .article-wrap {
+    padding: 100px 16px 60px;
+  }
+  .roam-tour-cta-box {
+    padding: 32px 20px;
+  }
+  .roam-faq-section,
+  .roam-faq-block {
+    padding: 24px 16px;
+  }
+}
+
+/* E-E-A-T Curator Bio Card Component */
+.roam-author-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-left: 4px solid #C8A45C;
+  padding: 32px 28px;
+  margin: 48px 0;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03);
+}
+
+.roam-author-avatar {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #C8A45C;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid #C8A45C;
+  box-shadow: 0 4px 12px rgba(200, 164, 92, 0.2);
+}
+
+.roam-author-content {
+  flex: 1;
+  min-width: 260px;
+}
+
+.roam-author-kicker {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #C8A45C;
+  font-family: 'Courier New', monospace;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.roam-author-title {
+  margin: 0 0 8px;
+  font-size: 19px;
+  font-weight: 800;
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.roam-author-title span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.roam-author-bio {
+  margin: 0 0 14px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #444444;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.roam-author-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.roam-author-badges span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.roam-author-badges .badge-check {
+  color: #C8A45C;
+  font-weight: 900;
+}
+
+.roam-author-link {
+  color: #C8A45C !important;
+  text-decoration: underline !important;
+  font-weight: 700 !important;
+  transition: color .2s ease;
+}
+
+.roam-author-link:hover {
+  color: #b08d47 !important;
+}
+
+@media (max-width: 600px) {
+  .roam-author-card {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+  .roam-author-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+

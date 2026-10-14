@@ -14,3 +14,11 @@ desktop.ini
 .temp/
 .tmp/
 scratch/
+
+# Node / Astro
+node_modules/
+.astro/
+dist/
+astro-roam/node_modules/
+astro-roam/.astro/
+astro-roam/dist/

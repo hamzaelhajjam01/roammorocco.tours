@@ -244,6 +244,7 @@
   </script>
   <link rel="stylesheet" href="css/trip-concierge.css?v=20261012_gold4">
   <link rel="stylesheet" href="css/roam-theme.css?v=20261012_nav5">
+  <link rel="stylesheet" href="css/destination-itinerary.css">
   <link rel="stylesheet" href="css/roam-toc.css?v=20260928_gold2">
   <style>
     :root {
@@ -431,7 +432,7 @@
       letter-spacing: .05em !important;
       padding: 14px 28px !important;
       border: 1px solid #000000 !important;
-      border-radius: 0 !important;
+      border-radius: 9999px !important;
       text-decoration: none !important;
       cursor: pointer !important;
       line-height: 1 !important;
@@ -463,7 +464,7 @@
       letter-spacing: .05em !important;
       padding: 14px 28px !important;
       border: 1px solid #25D366 !important;
-      border-radius: 0 !important;
+      border-radius: 9999px !important;
       text-decoration: none !important;
       cursor: pointer !important;
       line-height: 1 !important;
@@ -487,7 +488,7 @@
       margin: 48px 0 !important;
       text-align: center !important;
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
-      border-radius: 0 !important;
+      border-radius: 24px !important;
     }
     .roam-tour-cta-title,
     .roam-driver-box h4 {
@@ -594,7 +595,12 @@
       <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu">
         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
-      <nav class="desktop-nav"><a href="destinations.html">Destinations</a><a href="experiences.html">Experiences</a><a href="morocco-private-driver.html">Private Driver</a><a href="custom-morocco-tour.html">Custom Morocco</a><a href="morocco-trip-cost-calculator.html">Cost Calculator</a><a href="travel-deals.html">Travel Deals</a><a href="about.html">About</a><a href="blog.html">Blog</a></nav>
+      <nav class="desktop-nav">
+        <a href="index.html#transfers">Transfers</a>
+        <a href="experiences.html" class="active">Tours &amp; Day Trips</a>
+        <a href="morocco-private-driver.html">Private Chauffeur</a>
+        <a href="destinations.html">Destinations</a>
+      </nav>
     </div>
     <a class="latest nav-wa-btn" href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I%27m%20interested%20in%20booking%20the%20Active%20High%20Atlas%20&%20Toubkal%20Tour." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
       <img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
@@ -608,13 +614,13 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div class="mobile-drawer-inner">
+      <a href="index.html#transfers" onclick="closeDrawer()">Transfers</a>
+      <a href="experiences.html" onclick="closeDrawer()" class="active">Tours &amp; Day Trips</a>
+      <a href="morocco-private-driver.html" onclick="closeDrawer()">Private Chauffeur</a>
       <a href="destinations.html" onclick="closeDrawer()">Destinations</a>
-      <a href="experiences.html" onclick="closeDrawer()">Experiences</a>
-      <a href="morocco-private-driver.html" onclick="closeDrawer()">Private Driver</a>
-      <a href="custom-morocco-tour.html" onclick="closeDrawer()">Custom Morocco</a>
       <a href="morocco-trip-cost-calculator.html" onclick="closeDrawer()">Cost Calculator</a>
       <a href="travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
-      <a href="about.html" onclick="closeDrawer()">About</a>
+      <a href="about.html" onclick="closeDrawer()">About Us</a>
       <a href="blog.html" onclick="closeDrawer()">Blog</a>
     </div>
   </div>
@@ -795,7 +801,69 @@
       </section>
 
       <!-- Tour Bottom CTA Box -->
-      <div class="roam-tour-cta-box">
+            <!-- Pre-Locked Route Booking Card -->
+      <div style="max-width: 680px; margin: 40px auto 24px;">
+        <div class="dest-prelocked-widget"
+             data-tour-name="Active High Atlas & Mount Toubkal 3-Day Trek"
+             data-price-1-4="390"
+             data-price-5-7="520"
+             data-price-8-12="720"
+             data-tour-sub="Guided mountain trek · Mule support · High altitude mountain refuge">
+          
+          <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+          <h3 class="dest-prelocked-title">Active High Atlas & Mount Toubkal 3-Day Trek</h3>
+          <p class="dest-prelocked-sub">Guided mountain trek · Mule support · High altitude mountain refuge</p>
+
+          <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+          <div class="dest-tier-grid">
+            <button type="button" class="dest-tier-btn active" data-tier="1_4">
+              <span class="dest-tier-pax">1–4 Pax</span>
+              <span class="dest-tier-veh">Sedan / 4x4</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="5_7">
+              <span class="dest-tier-pax">5–7 Pax</span>
+              <span class="dest-tier-veh">VIP Van</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="8_12">
+              <span class="dest-tier-pax">8–12 Pax</span>
+              <span class="dest-tier-veh">Minibus</span>
+            </button>
+          </div>
+
+          <div class="dest-prelocked-fields">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="pickupCityActiveAtlas">Departure City</label>
+              <select class="dest-form-select dest-prelocked-city" id="pickupCityActiveAtlas">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
+              </select>
+            </div>
+
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="travelDateActiveAtlas">Approx. Travel Date</label>
+              <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateActiveAtlas">
+            </div>
+          </div>
+
+          <div class="dest-prelocked-price-box">
+            <div class="dest-prelocked-price-num">390€</div>
+            <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+            <p class="dest-prelocked-price-note">Includes certified Berber mountain guide, mule support, Toubkal refuge stay, meals & private Marrakech transfers.</p>
+          </div>
+
+          <a href="#" class="dest-prelocked-wa-btn">
+            <img src="img/whatsapp-logo.png" alt="WhatsApp">
+            <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 390€</span></span>
+          </a>
+
+          <div class="dest-prelocked-trust">
+            <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+            <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+            <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+          </div>
+        </div>
+      </div>
+<div class="roam-tour-cta-box">
         <h3 class="roam-tour-cta-title">Ready to Conquer Mount Toubkal?</h3>
         <p class="roam-tour-cta-desc">Join our expert Berber guides for the ultimate High Atlas trekking adventure. We handle mountain permits, refuge reservations, pack mules, meals, and private Marrakech transport—you bring the boots and spirit of adventure.</p>
         <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
@@ -863,5 +931,19 @@
   <script src="js/trip-concierge.js?v=20261012_gold4" defer></script>
   <script src="js/roam-nav.js?v=20261012_nav6" defer></script>
   <script src="js/roam-toc.js?v=20260928_gold2" defer></script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Active High Atlas & Toubkal</div>
+      <div class="smt-price">From <span class="smt-price-num">390€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Active%20High%20Atlas%20&%20Mount%20Toubkal%203-Day%20Trek." target="_blank" rel="noopener" class="smt-btn">
+      <img src="img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="js/booking-wizard.js?v=20261014" defer></script>
 </body>
 </html>

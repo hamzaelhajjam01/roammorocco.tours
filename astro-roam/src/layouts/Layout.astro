@@ -1,0 +1,534 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonical?: string;
+  ogImage?: string;
+  schema?: string | object | any[];
+  bodyClass?: string;
+  showLoader?: boolean;
+  showHeader?: boolean;
+  showFooter?: boolean;
+  extraStyles?: string[];
+}
+
+const {
+  title = "Private Morocco Tours: Luxury Sahara Expeditions & Drivers",
+  description = "Discover Morocco with Roam Morocco Tours. Custom luxury Sahara desert expeditions, Atlas trekking, and private tours crafted by local Marrakech experts.",
+  canonical = "https://roammorocco.tours/",
+  ogImage = "https://roammorocco.tours/images/hero-desert.jpg",
+  schema,
+  bodyClass = "roam-light-theme",
+  showLoader = false,
+  showHeader = true,
+  showFooter = true,
+  extraStyles = []
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-G2EBSDKVZM"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G2EBSDKVZM');
+
+    // Auto-track WhatsApp, Contact & Booking Conversions
+    document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('click', function(e) {
+        var a = e.target.closest('a');
+        if (!a || !a.href) return;
+        if (a.href.includes('wa.me')) {
+          gtag('event', 'contact_whatsapp', { 'event_category': 'conversion', 'event_label': a.textContent.trim() || 'WhatsApp' });
+        } else if (a.href.startsWith('mailto:') || a.href.startsWith('tel:')) {
+          gtag('event', 'contact_direct', { 'event_category': 'engagement', 'event_label': a.href });
+        } else if (a.href.includes('airalo.com') || a.href.includes('discovercars.com') || a.href.includes('booking.com') || a.href.includes('trip.com')) {
+          gtag('event', 'affiliate_click', { 'event_category': 'outbound', 'event_label': a.href });
+        }
+      });
+      document.addEventListener('submit', function(e) {
+        gtag('event', 'generatelead', { 'event_category': 'conversion', 'event_label': e.target.id || 'booking_form' });
+      });
+    });
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <link rel="alternate" hreflang="en" href={canonical}>
+  <link rel="alternate" hreflang="x-default" href={canonical}>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content={canonical}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:image:secure_url" content={ogImage}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content={title}>
+  <meta property="og:site_name" content="Roam Morocco Tours">
+
+  <!-- Search Engine Thumbnail & Twitter Cards -->
+  <meta name="thumbnail" content={ogImage}>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+  <meta name="twitter:image:alt" content={title}>
+
+  <!-- Schema.org Structured Data -->
+  {schema ? (
+    <script type="application/ld+json" set:html={typeof schema === 'string' ? schema : JSON.stringify(schema, null, 2)} />
+  ) : (
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://roammorocco.tours/#website",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "description": "Premier Morocco travel agency offering custom private tours across the Sahara Desert, ancient medinas, and Atlas Mountains."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://roammorocco.tours/#webpage",
+        "url": "https://roammorocco.tours/",
+        "name": "Roam Morocco Tours | Private Luxury & Adventure Tours Morocco",
+        "description": "Custom luxury Sahara desert expeditions, Atlas Mountains trekking, and private tours crafted by local Marrakech experts.",
+        "isPartOf": {
+          "@id": "https://roammorocco.tours/#website"
+        },
+        "about": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://roammorocco.tours/#primaryimage",
+          "url": "https://roammorocco.tours/images/hero-desert.jpg",
+          "caption": "Luxury Sahara Desert camel trekking and golden dunes in Erg Chebbi, Morocco"
+        }
+      },
+      {
+        "@type": "TravelAgency",
+        "@id": "https://roammorocco.tours/#agency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "image": [
+          "https://roammorocco.tours/images/hero-desert.jpg",
+          "https://roammorocco.tours/img/wall-camp.jpg",
+          "https://roammorocco.tours/img/safari-sahara-fjlSCoiv_qM-unsplash.jpg"
+        ],
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
+          "width": "600",
+          "height": "600"
+        },
+        "telephone": "+212 653-506441",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
+          "addressLocality": "Marrakech",
+          "postalCode": "40000",
+          "addressCountry": "MA"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.6295",
+          "longitude": "-7.9811"
+        },
+        "sameAs": [
+          "https://www.facebook.com/roammorocco",
+          "https://www.instagram.com/roammorocco",
+          "https://chromewebstore.google.com/detail/roam-morocco-%E2%80%94-dirham-mad/flngffoeefehejlapaoaompgeomnnion",
+          "https://addons.mozilla.org/en-US/firefox/addon/roam-morocco-travel-guide/"
+        ]
+      },
+      {
+        "@type": ["TouristTrip", "Product"],
+        "@id": "https://roammorocco.tours/#privatetours",
+        "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+        "description": "Bespoke private tours across Morocco, including luxury Sahara desert glamping in Merzouga, High Atlas Mountains trekking, and Imperial Cities heritage journeys.",
+        "provider": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "brand": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "touristType": [
+          "Luxury Traveler",
+          "Adventure Traveler",
+          "Cultural Traveler",
+          "Family Traveler"
+        ],
+        "image": [
+          "https://roammorocco.tours/images/hero-desert.jpg",
+          "https://roammorocco.tours/img/wall-camp.jpg",
+          "https://roammorocco.tours/img/safari-sahara-fjlSCoiv_qM-unsplash.jpg"
+        ],
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "195",
+          "highPrice": "2850",
+          "offerCount": "24",
+          "availability": "https://schema.org/InStock",
+          "url": "https://roammorocco.tours/#services"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "985",
+          "reviewCount": "985"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "David & Eleanor Vance"
+            },
+            "datePublished": "2025-11-14",
+            "reviewBody": "Roam Morocco curated an unforgettable 10-day private journey from Casablanca to Merzouga and Marrakech. Our driver and guide were phenomenal, navigating mountain passes effortlessly while sharing deep cultural context.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Charlotte Davies"
+            },
+            "datePublished": "2025-12-02",
+            "reviewBody": "Traveling as a solo female traveler, safety and comfort were my top priorities. Hamza and his team delivered beyond expectations. The private desert glamping experience under the Erg Chebbi stars was pure magic.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Marcus & Julian Thorne"
+            },
+            "datePublished": "2026-01-18",
+            "reviewBody": "Flawless logistics, pristine Prado 4x4, and genuine Berber hospitality throughout our Atlas trekking and Fes exploration. No tourist traps, just authentic artisan encounters and extraordinary riads.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Dr. Robert Sterling"
+            },
+            "datePublished": "2026-02-09",
+            "reviewBody": "The custom historical itinerary crafted by Roam Morocco exceeded our expectations. The depth of knowledge of the imperial cities and the seamless private driver service made this the trip of a lifetime.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          },
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Sophie & Liam Miller"
+            },
+            "datePublished": "2026-03-01",
+            "reviewBody": "From airport pickup to the farewell dinner in Marrakech, every single detail was handled with precision and warmth. Transparent pricing, no hidden costs, and exceptional personalized care.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://roammorocco.tours/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best time of year to visit Morocco?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The best time to visit Morocco is during spring (March to May) and autumn (September to November), when weather across Marrakech, the Atlas Mountains, and the Sahara Desert is comfortably warm (22°C–28°C / 72°F–82°F) without extreme summer heat."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do private Morocco tours and desert expeditions cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bespoke private tours typically range from $195 to $385 USD per person per day depending on party size and accommodation tier. Packages include private Toyota Prado 4x4 or Mercedes minivan transport, dedicated English-speaking chauffeur, boutique riads, luxury Sahara glamping, and guided historic medina tours with all fuel and tolls included."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Morocco safe for international tourists and solo female travelers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Morocco is recognized as one of the safest travel destinations in North Africa, backed by a dedicated Tourist Police (Brigade Touristique) presence across all major medinas. Private chauffeured tours provide seamless door-to-door security, luggage assistance, and local cultural mediation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do US, UK, Canadian, or EU citizens need a visa for Morocco?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No tourist visa is required for citizens of the United States, United Kingdom, Canada, European Union, Australia, or New Zealand for stays up to 90 days. A valid passport with at least six months validity is all that is required."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  )}
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Travelpayouts Drive -->
+  <script is:inline nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+    (function () {
+        var script = document.createElement("script");
+        script.async = 1;
+        script.setAttribute("data-cmp-ab","2");
+        script.src = 'https://emrldtp.cc/NTc4Mjg3.js?t=578287';
+        document.head.appendChild(script);
+    })();
+  </script>
+  <link rel="stylesheet" href="/css/trip-concierge.css?v=20261012_gold4">
+  <link rel="stylesheet" href="/css/roam-theme.css?v=20261014_goldtheme">
+  {extraStyles && extraStyles.map((href) => (
+    <link rel="stylesheet" href={href} />
+  ))}
+  <slot name="head" />
+</head>
+<body class={bodyClass} id="top">
+  {showHeader && <Header showLoader={showLoader} />}
+  <slot />
+  {showFooter && <Footer />}
+
+  <!-- Client-side Interactive Scripts -->
+  <script is:inline>
+    window.addEventListener("load",()=>document.body.classList.add("loaded"));
+
+/* ── PAGE LOADER CONTROLLER — STICKER SLAP (INITIAL VISIT ONLY) ── */
+    (function(){
+      const loader = document.getElementById('page-loader');
+      if(!loader) return;
+
+      // Fail-safe timeout: Always dismiss loader within 2.5s max under any condition
+      const failSafe = setTimeout(() => {
+        if(loader && loader.parentNode) {
+          loader.classList.add('done');
+          setTimeout(() => loader.remove(), 400);
+        }
+      }, 2500);
+
+      if(sessionStorage.getItem('hasLoadedBefore')){
+        clearTimeout(failSafe);
+        loader.remove();
+        return;
+      }
+      sessionStorage.setItem('hasLoadedBefore', 'true');
+
+      const baseSlapMs   = 320;   // base animation-duration of stickerSlap
+      const baseHoldMs   = 380;   // base hold duration before peeling
+      const basePeelMs   = 180;   // base animation-duration of stickerPeel
+      const stickers     = Array.from(document.querySelectorAll('.loader-item'));
+      const logo         = document.getElementById('loader-final-logo');
+
+      function rnd(min,max){ return (Math.random()*(max-min)+min).toFixed(1); }
+
+      function slap(idx){
+        const currentSpeed = 1 + idx * 0.2; // increase speed per sticker
+        const slapMs = baseSlapMs / currentSpeed;
+        const holdMs = baseHoldMs / currentSpeed;
+        const peelMs = basePeelMs / currentSpeed;
+        if(idx >= stickers.length){
+          logo.classList.add('stamp');
+          // After stamping the logo, pause briefly before completing the loader
+          setTimeout(() => {
+            loader.classList.add('done');
+            // Hold on the logo for 3 seconds before removing the loader
+            setTimeout(() => loader.remove(), 3000);
+          }, 1500);
+          return;
+        }
+
+        const s = stickers[idx];
+        const r1   = rnd(-10, 10);
+        const r0   = (+r1 + parseFloat(rnd(20,35)) * (Math.random()>.5?1:-1)).toFixed(1);
+        const tx   = rnd(-60, 60);
+        const ty   = rnd(-80, -30);
+        const rp   = rnd(15, 30) * (Math.random()>.5?1:-1);
+        const px   = rnd(-50, 50);
+        const py   = rnd(20, 60);
+
+        s.style.setProperty('--r0',  `${r0}deg`);
+        s.style.setProperty('--r1',  `${r1}deg`);
+        s.style.setProperty('--tx',  `${tx}px`);
+        s.style.setProperty('--ty',  `${ty}px`);
+        s.style.setProperty('--rp',  `${rp}deg`);
+        s.style.setProperty('--px',  `${px}px`);
+        s.style.setProperty('--py',  `${py}px`);
+        s.style.setProperty('--dur', `${slapMs}ms`);
+
+        s.classList.remove('peel-off');
+        void s.offsetWidth;
+        s.classList.add('slap-in');
+
+        setTimeout(()=>{
+          s.classList.remove('slap-in');
+          void s.offsetWidth;
+          s.classList.add('peel-off');
+          setTimeout(()=>{ s.classList.remove('peel-off'); slap(idx+1); }, peelMs);
+        }, slapMs + holdMs);
+      }
+
+      slap(0);
+    })();
+
+    /* ── CLICK & TAP STICKER POPUP (DESKTOP & MOBILE) ── */
+    (function(){
+      const stickers = [
+        "stickers/ait-ben-haddou-sticker.webp",
+        "stickers/al-qarawiyyin-sticker.webp",
+        "stickers/argan-oil-making-sticker.webp",
+        "stickers/bab-mansour-sticker.webp",
+        "stickers/essaouira-sqala-sticker.webp",
+        "stickers/gnawa-maalem-sticker.webp",
+        "stickers/hassan-tower-sticker.webp",
+        "stickers/jemaa-el-fnaa-sticker.webp",
+        "stickers/koutoubia-sticker.webp",
+        "stickers/moroccan-caftan-sticker.webp",
+        "stickers/tbourida-sticker.webp",
+        "stickers/volubilis-sticker.webp"
+      ];
+      let stickerIdx = 0;
+      let activeTimer = null;
+
+      function dismissAllStickers(fast) {
+        if (activeTimer) { clearTimeout(activeTimer); activeTimer = null; }
+        const activeStickers = document.querySelectorAll('.click-pop-sticker');
+        activeStickers.forEach(img => {
+          if (fast) {
+            img.remove();
+          } else {
+            img.style.opacity = "0";
+            img.style.transform = "translate(-50%, -50%) scale(0.6)";
+            setTimeout(() => { if (img.parentNode) img.remove(); }, 200);
+          }
+        });
+      }
+
+      window.addEventListener('scroll', () => dismissAllStickers(false), { passive: true });
+
+      function spawnSticker(e) {
+        if (e.target.closest('a') || e.target.closest('button')) return;
+
+        dismissAllStickers(true);
+
+        const src = stickers[stickerIdx];
+        stickerIdx = (stickerIdx + 1) % stickers.length;
+
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = "";
+        img.className = "click-pop-sticker";
+        
+        let x = e.clientX;
+        let y = e.clientY;
+        if ((!x && x !== 0) && e.touches && e.touches[0]) {
+          x = e.touches[0].clientX;
+          y = e.touches[0].clientY;
+        }
+
+        const isMobile = window.innerWidth <= 900;
+        const stickerWidth = isMobile ? 115 : 170;
+        const rot = (Math.random() * 26 - 13).toFixed(1);
+
+        img.style.cssText = `
+          position: fixed;
+          left: ${x}px;
+          top: ${y}px;
+          width: ${stickerWidth}px;
+          height: auto;
+          pointer-events: none;
+          z-index: 99999;
+          transform: translate(-50%, -50%) scale(0.3) rotate(${rot}deg);
+          opacity: 0;
+          transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.25s ease;
+          filter: drop-shadow(0 12px 24px rgba(0,0,0,0.3));
+        `;
+
+        document.body.appendChild(img);
+
+        requestAnimationFrame(() => {
+          img.style.transform = `translate(-50%, -50%) scale(1) rotate(${rot}deg)`;
+          img.style.opacity = "1";
+        });
+
+        activeTimer = setTimeout(() => {
+          if (img.parentNode) {
+            img.style.transform = `translate(-50%, -50%) scale(0.7) rotate(${rot}deg)`;
+            img.style.opacity = "0";
+            setTimeout(() => { if (img.parentNode) img.remove(); }, 350);
+          }
+        }, 2000);
+      }
+
+      function attachStickerClick() {
+        const targets = document.querySelectorAll('.hero h1, .hero .hero-h1-sub, .footer-logo-img, .footer-giant-brand, .footer-header-row, .footer-wrap');
+        targets.forEach(el => {
+          el.style.cursor = 'pointer';
+          el.addEventListener('click', spawnSticker);
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', attachStickerClick);
+      } else {
+        attachStickerClick();
+      }
+    })();
+  </script>
+  <script is:inline src="/js/roam-nav.js?v=20261012_nav6" defer></script>
+  <script is:inline src="/js/trip-concierge.js?v=20261012_gold4" defer></script>
+  <script is:inline src="/js/booking-wizard.js?v=20261014_goldtheme" defer></script>
+</body>
+</html>

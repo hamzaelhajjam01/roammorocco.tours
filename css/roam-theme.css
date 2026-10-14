@@ -1656,3 +1656,1240 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
   margin: 14px 0 0;
 }
 
+/* ══════════════════════════════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════════════
+   ── HERO EDITORIAL LEAD DESCRIPTIONS (BALANCED 2-COLUMN SEO COPY) ──
+   ══════════════════════════════════════════════════════════════════ */
+.hero-lead-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+  margin-top: 18px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-lead-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-lead-col.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-lead-text {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: clamp(14px, 1.12vw, 15.5px);
+  line-height: 1.65;
+  color: #4b5563;
+  margin: 0;
+  max-width: 520px;
+  font-weight: 450;
+  letter-spacing: -0.01em;
+}
+
+.hero-lead-text.right {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .hero-lead-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 14px;
+  }
+  .hero-lead-col.right {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .hero-lead-text.right {
+    text-align: left;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   ── HERO PRIMARY CALL-TO-ACTIONS (GOLD & BLACK DESIGN SYSTEM) ──
+   ══════════════════════════════════════════════════════════════════ */
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin: 22px 0 0;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 6;
+}
+
+.hero-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: 50px;
+  padding: 0 28px;
+  border-radius: 9999px !important;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* 1. Browse routes & book (Gold background from design system) */
+.hero-cta-gold {
+  background: var(--gold, #C8A45C) !important;
+  background: linear-gradient(135deg, #d8bc74 0%, #C8A45C 50%, #b89344 100%) !important;
+  color: #000000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 10px 24px -4px rgba(200, 164, 92, 0.45), 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+.hero-cta-gold:hover {
+  background: linear-gradient(135deg, #e4c985 0%, #d4b266 50%, #c49d4c 100%) !important;
+  color: #000000 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -4px rgba(200, 164, 92, 0.6), 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.hero-cta-gold.is-active {
+  background: #0f172a !important;
+  color: #ffffff !important;
+  border-color: #0f172a !important;
+  box-shadow: 0 10px 24px -4px rgba(15, 23, 42, 0.35);
+}
+
+/* 2. Get a quote (Black background, WhatsApp direct) */
+.hero-cta-black {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #000000 !important;
+  box-shadow: 0 10px 24px -4px rgba(0, 0, 0, 0.25), 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.hero-cta-black:hover {
+  background: #222222 !important;
+  border-color: #222222 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px -4px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 900px) {
+  .hero-cta-group {
+    margin: 20px 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 10px;
+    margin: 18px 0 0;
+  }
+  .hero-cta-btn {
+    width: 100%;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   ── HERO BOOKING WIZARD & PRICE CALCULATOR (ALWAYS VISIBLE & ANIMATED) ──
+   ══════════════════════════════════════════════════════════════════ */
+.hero-wizard-collapse {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 100%;
+  margin: 26px 0 10px 0 !important;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-wizard-collapse-inner {
+  overflow: visible !important;
+  min-height: 0;
+}
+
+/* Hero Booking Wizard Card with Animated Gold-to-White Gradient Border */
+.hero-booking-wizard {
+  display: block !important;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  position: relative;
+  border-radius: 36px !important;
+  background: #ffffff !important;
+  padding: 26px 30px 24px;
+  box-sizing: border-box;
+  text-align: left;
+  z-index: 1;
+  opacity: 1 !important;
+  transform: none !important;
+  box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.07), 
+              0 12px 30px -8px rgba(200, 164, 92, 0.16), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Dynamic Animated Gold-to-White Gradient Border */
+.hero-booking-wizard::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 38px;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    #C8A45C 0%,
+    #ffffff 20%,
+    #d8bc74 40%,
+    #ffffff 60%,
+    #b89344 80%,
+    #C8A45C 100%
+  );
+  background-size: 300% 300%;
+  animation: hbwBorderFlow 6s ease-in-out infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+}
+
+@keyframes hbwBorderFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-wizard-collapse.is-open .hero-booking-wizard,
+.hero-booking-wizard.is-open {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+/* Close button hidden (widget is a permanent hero feature) */
+.hbw-close-btn {
+  display: none !important;
+}
+
+/* Header */
+.hbw-header {
+  margin-bottom: 14px;
+}
+.hbw-title {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.hbw-subtitle {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  color: #64748b;
+  line-height: 1.4;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* COMPACT SEARCH BAR (AIRBNB / BOOKING STYLE) */
+.hbw-search-bar {
+  display: grid;
+  grid-template-columns: 1.15fr 1.15fr 1.35fr;
+  gap: 10px;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 10px;
+  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.06);
+}
+.hbw-field-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 10px 14px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  box-sizing: border-box;
+}
+.hbw-field-group:focus-within,
+.hbw-field-group:hover {
+  background: #ffffff;
+  border-color: var(--gold, #C8A45C);
+  box-shadow: 0 0 0 3px rgba(200, 164, 92, 0.16);
+}
+.hbw-field-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #475569;
+  margin-bottom: 4px;
+  user-select: none;
+}
+.hbw-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.hbw-dot-green {
+  background: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+}
+.hbw-dot-red {
+  background: #ef4444;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25);
+}
+.hbw-select-wrap {
+  position: relative;
+  width: 100%;
+}
+.hbw-select {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+  outline: none;
+  cursor: pointer;
+  padding: 2px 22px 2px 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  background-size: 13px 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.hbw-select:invalid,
+.hbw-select option[value=""][disabled] {
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Passenger counter & vehicle tabs */
+.hbw-pax-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.hbw-pax-top .hbw-field-label,
+.hbw-pax-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #475569;
+  user-select: none;
+}
+.hbw-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #ffffff;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 1px 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.hbw-counter-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f5f9;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+  padding: 0;
+}
+.hbw-counter-btn:hover {
+  background: #0f172a;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+.hbw-counter-val {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #0f172a;
+  min-width: 16px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.hbw-tier-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  background: #e2e8f0;
+  padding: 3px;
+  border-radius: 12px;
+  margin-top: 2px;
+}
+.hbw-tab-btn {
+  border: none;
+  background: transparent;
+  border-radius: 9px;
+  padding: 4px 2px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-tap-highlight-color: transparent;
+}
+.hbw-tab-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.55);
+}
+.hbw-tab-pax {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  line-height: 1.1;
+  transition: color 0.18s ease;
+}
+.hbw-tab-veh {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 9.5px;
+  font-weight: 500;
+  color: #64748b;
+  text-transform: capitalize;
+  line-height: 1.1;
+  transition: color 0.18s ease;
+}
+/* ACTIVE VEHICLE TAB: BRAND GOLD ACCENT */
+.hbw-tab-btn.active {
+  background: linear-gradient(135deg, #d8bc74 0%, #C8A45C 50%, #b89344 100%) !important;
+  box-shadow: 0 3px 10px rgba(200, 164, 92, 0.42);
+}
+.hbw-tab-btn.active .hbw-tab-pax,
+.hbw-tab-btn.active .hbw-tab-veh {
+  color: #000000 !important;
+  font-weight: 800;
+}
+
+/* UNFILLED HINT */
+.hbw-unfilled-hint {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  font-size: 12.5px;
+  color: #64748b;
+  transition: all 0.35s ease;
+  opacity: 1;
+  max-height: 120px;
+  overflow: hidden;
+}
+.hbw-unfilled-hint.is-hidden {
+  opacity: 0;
+  max-height: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  pointer-events: none;
+}
+.hbw-hint-trust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #0f172a;
+  flex-wrap: wrap;
+}
+
+/* AUTO-APPENDED CONTAINER (ANIMATED SLIDE-DOWN) */
+.hbw-appended-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  margin-top: 0;
+  transition: grid-template-rows 0.45s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.38s ease, margin-top 0.4s ease;
+}
+.hbw-appended-container.is-visible {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 14px;
+}
+.hbw-appended-inner {
+  overflow: hidden;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Route swap & Round trip row */
+.hbw-route-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 2px 2px;
+}
+.hbw-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hbw-action-pill:hover {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+  transform: translateY(-1px);
+}
+.hbw-action-pill.active {
+  background: linear-gradient(135deg, #d8bc74 0%, #C8A45C 100%);
+  color: #000000;
+  border-color: #C8A45C;
+  font-weight: 700;
+}
+.hbw-action-pill.active .hbw-pill-discount {
+  color: #000000;
+}
+.hbw-pill-discount {
+  color: var(--gold, #C8A45C);
+  font-weight: 700;
+}
+
+/* PRICE & ROUTE METRICS CARD — BRAND DARK BACKGROUND & SIGNATURE GOLD */
+.hbw-price-card {
+  background: #111111 !important;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 16px 22px;
+  box-shadow: none !important;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(200, 164, 92, 0.32) !important;
+}
+.hbw-price-card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.hbw-price-main {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.hbw-price-amount {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--gold, #C8A45C) !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.hbw-price-for {
+  font-size: 13px;
+  font-weight: 500;
+  color: #94a3b8;
+  text-transform: lowercase;
+}
+.hbw-route-metric {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.hbw-price-card-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #cbd5e1;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  margin-top: 4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hbw-card-sub-veh {
+  font-weight: 600;
+  color: #f1f5f9;
+}
+.hbw-bullet-sep {
+  color: var(--gold, #C8A45C);
+  margin: 0 4px;
+}
+
+/* EXTENDED INPUTS — 3 IN ONE SINGLE LINE (DATE, TIME, FLIGHT NUMBER) */
+.hbw-extra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.35fr;
+  gap: 12px;
+}
+.hbw-extra-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hbw-extra-label {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #475569;
+}
+.hbw-extra-input,
+.hbw-extra-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #0f172a;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  outline: none;
+  transition: all 0.2s ease;
+}
+.hbw-extra-input:focus,
+.hbw-extra-textarea:focus {
+  background: #ffffff;
+  border-color: var(--gold, #C8A45C);
+  box-shadow: 0 0 0 3px rgba(200, 164, 92, 0.18);
+}
+.hbw-field-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 2px;
+}
+.hbw-extra-textarea {
+  resize: vertical;
+  min-height: 42px;
+  line-height: 1.35;
+}
+
+/* OPTIONS ROW & PAYMENT METHOD */
+.hbw-options-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hbw-option-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hbw-option-pill:hover {
+  border-color: var(--gold, #C8A45C);
+  color: #0f172a;
+}
+.hbw-option-pill.active {
+  background: rgba(200, 164, 92, 0.14);
+  border-color: var(--gold, #C8A45C);
+  color: #8c6a28;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(200, 164, 92, 0.2);
+}
+.hbw-pill-icon {
+  font-weight: 700;
+}
+.hbw-payment-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.hbw-pay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hbw-pay-btn:hover {
+  border-color: var(--gold, #C8A45C);
+}
+.hbw-pay-btn.active {
+  background: #0f172a;
+  border-color: #0f172a;
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+}
+
+/* MICRO NOTE */
+.hbw-micro-note {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  color: #475569;
+  background: #fdfcf9;
+  padding: 7px 12px;
+  border-radius: 10px;
+  border-left: 3px solid var(--gold, #C8A45C);
+  line-height: 1.4;
+}
+
+/* TRUST GUARANTEES — SINGLE LINE FLIGHT TRACKING TEXT & BRAND GOLD ICONS */
+.hbw-trust-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 4px 0;
+}
+.hbw-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #334155;
+  line-height: 1.35;
+}
+.hbw-trust-item svg {
+  stroke: var(--gold, #C8A45C) !important;
+  flex-shrink: 0;
+}
+.hbw-trust-flight {
+  width: 100%;
+}
+.hbw-trust-flight .hbw-flight-text {
+  white-space: nowrap;
+}
+
+/* PRIMARY CTA BUTTON: SIGNATURE LUXURY BRAND GOLD */
+.hbw-book-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #d8bc74 0%, #C8A45C 50%, #b89344 100%) !important;
+  color: #000000 !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 16px;
+  padding: 16px 22px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 15.5px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 26px -4px rgba(200, 164, 92, 0.45), 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: 0.02em;
+}
+.hbw-book-btn:hover {
+  background: linear-gradient(135deg, #e4c985 0%, #d4b266 50%, #c49d4c 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px -4px rgba(200, 164, 92, 0.6), 0 4px 10px rgba(0, 0, 0, 0.08);
+  color: #000000 !important;
+}
+.hbw-book-btn:active {
+  transform: translateY(0);
+}
+.hbw-book-btn svg {
+  flex-shrink: 0;
+}
+
+/* BOTTOM NOTE */
+.hbw-bottom-note {
+  text-align: center;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 11px;
+  color: #64748b;
+  margin-top: -4px;
+}
+
+/* RESPONSIVE OVERRIDES */
+@media (max-width: 1024px) {
+  .hbw-trust-flight .hbw-flight-text {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+  .hero h1,
+  .hero .hero-h1-sub,
+  .hero h1.right,
+  .hero .hero-h1-sub.right {
+    text-align: left !important;
+    align-self: flex-start !important;
+  }
+  .hero-wizard-collapse {
+    margin: 18px 0 8px 0 !important;
+  }
+  .hero-booking-wizard {
+    padding: 18px 14px;
+    border-radius: 24px !important;
+    margin: 0 !important;
+  }
+  .hero-booking-wizard::before {
+    border-radius: 26px !important;
+  }
+  .hbw-header {
+    padding-right: 0;
+  }
+  .hbw-title {
+    font-size: 18px;
+  }
+  .hbw-search-bar {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  .hbw-field-group {
+    border-radius: 14px;
+    padding: 9px 12px;
+  }
+  .hbw-unfilled-hint {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .hbw-route-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .hbw-price-card {
+    padding: 14px 16px;
+    border-radius: 16px;
+  }
+  .hbw-price-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .hbw-price-amount {
+    font-size: 28px;
+  }
+  .hbw-extra-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .hbw-options-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .hbw-option-pill {
+    justify-content: center;
+  }
+  .hbw-payment-group {
+    justify-content: flex-start;
+  }
+  .hbw-pay-btn {
+    flex: 1;
+    justify-content: center;
+  }
+  .hbw-trust-flight .hbw-flight-text {
+    white-space: normal;
+  }
+  .hbw-book-btn {
+    font-size: 14px;
+    padding: 14px 16px;
+    border-radius: 14px;
+  }
+}
+
+/* Desktop QR Code Modal */
+.wizard-qr-modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  z-index: 999999;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.wizard-qr-modal-overlay.open {
+  display: flex;
+}
+.wizard-qr-modal-card {
+  background: #ffffff;
+  border-radius: 28px !important;
+  padding: 26px 24px;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  animation: modalScale .3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes modalScale {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+.wizard-qr-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f3f4f6;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  transition: all 0.2s;
+}
+.wizard-qr-close:hover {
+  background: #e5e7eb;
+  color: #000000;
+}
+.wizard-qr-img {
+  width: 180px;
+  height: 180px;
+  margin: 12px auto;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.wizard-web-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #25D366;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.wizard-web-link:hover {
+  background: #20BA59;
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   ── HERO TRUST & ACCREDITATION PARTNERS (ASTA, OPULENCE, IATA) ──
+   ══════════════════════════════════════════════════════════════════ */
+.hero-partners {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin-top: 18px;
+  padding: 22px 0 0 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: none !important;
+  background: #ffffff;
+  box-sizing: border-box;
+  will-change: transform;
+}
+
+.hero-partners .logos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: clamp(24px, 5vw, 72px);
+  padding: 0 !important;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-partners .logo-mark {
+  min-width: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero-partners .logo-mark img {
+  display: block;
+  width: min(100%, 260px);
+  max-height: 52px;
+  object-fit: contain;
+  filter: brightness(0);
+  opacity: 0.95;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.hero-partners .logo-mark img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .hero-partners {
+    margin-top: 14px;
+    padding: 14px 0 0 !important;
+    margin-bottom: 0;
+    border-bottom: none !important;
+  }
+  .hero-partners .logos {
+    gap: 12px !important;
+    padding: 0 !important;
+  }
+  .hero-partners .logo-mark {
+    height: 46px !important;
+  }
+  .hero-partners .logo-mark img {
+    max-height: 38px !important;
+    width: 100% !important;
+    object-position: center !important;
+  }
+}
+
+/* ── HERO TRUST ASSURANCES & MOST BOOKED ROUTES (BRAND GOLD THEME) ── */
+.hero-trust-routes {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 4px 0 32px 0 !important;
+  padding: 0 4px !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  text-align: left !important;
+  position: relative !important;
+  z-index: 2 !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.htr-trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.htr-trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.htr-check-icon {
+  width: 18px;
+  height: 18px;
+  color: var(--gold, #C8A45C);
+  flex-shrink: 0;
+  display: block;
+  filter: drop-shadow(0 1px 2px rgba(200, 164, 92, 0.25));
+}
+
+.htr-routes-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2px;
+}
+
+.htr-routes-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8c6a24;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.htr-routes-title::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold, #C8A45C);
+}
+
+.htr-routes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.htr-route-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1.5px solid rgba(200, 164, 92, 0.35);
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #0f172a;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(200, 164, 92, 0.06);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.htr-route-name {
+  color: #0f172a;
+}
+
+.htr-route-arrow {
+  color: var(--gold, #C8A45C);
+  font-weight: 700;
+}
+
+.htr-route-pill:hover {
+  background: #fdfbf7;
+  border-color: var(--gold, #C8A45C);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px -2px rgba(200, 164, 92, 0.22);
+}
+
+.htr-route-pill:active {
+  transform: translateY(0);
+}
+
+.htr-route-price {
+  color: #8c6819;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 850px) {
+  .hero-trust-routes {
+    margin: 4px 0 20px 0 !important;
+    gap: 14px !important;
+    padding: 0 2px !important;
+  }
+  .htr-trust-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+  }
+  .htr-trust-item {
+    font-size: 13px;
+    gap: 8px;
+  }
+  .htr-routes-grid {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .htr-route-pill {
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+}
+
+
+
+

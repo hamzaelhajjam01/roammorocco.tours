@@ -1,0 +1,451 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Essaouira Day Trip from Marrakech: Private Atlantic Tour";
+const description = "Day trip from Marrakech to Essaouira with a private chauffeur. Discover Portuguese sea ramparts, fresh seafood, and argan cooperatives on the coast.";
+const canonical = "https://roammorocco.tours/destination-essaouira.html";
+const ogImage = "https://roammorocco.tours/img/rigel-ibisQEDxODo-unsplash.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "Essaouira (Mogador) Atlantic Coast",
+      "description": "Morocco's UNESCO-listed coastal bastion, renowned for its 18th-century sea walls, bustling blue-boat fishing port, Thuya wood artisans, and relaxing seaside medina.",
+      "url": "https://roammorocco.tours/destination-essaouira.html",
+      "touristType": [
+        "Coastal Vacationers",
+        "Couples",
+        "Seafood Lovers",
+        "Art Collectors"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.5085,
+        "longitude": -9.7595
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "Private Day Trip from Marrakech to Essaouira",
+      "description": "A private, unhurried coastal excursion from Marrakech with dedicated executive transport, flexible schedule, and fresh Atlantic seafood dining.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long is the drive from Marrakech to Essaouira?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The drive takes approximately 2.5 to 3 hours in our private air-conditioned vehicle. Along the way, we pass through the endemic Argan forest, where you can see the famous tree-climbing goats and visit a certified women's argan oil cooperative."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Essaouira cooler than Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Essaouira benefits from Atlantic trade winds (the 'Aliz\u00e9s'), keeping temperatures moderate year-round (usually 20\u00b0C to 25\u00b0C). It is the perfect refreshing escape when Marrakech gets hot in late spring and summer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we buy fresh seafood directly at the port?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! One of the greatest pleasures of Essaouira is selecting fresh sea bass, sardines, prawns, or calamari directly from the fishermen at the port and having them grilled fresh over hot charcoal right in front of you."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/index.html">Home</a> &nbsp;/&nbsp; <a href="/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>Essaouira</span>
+        </div>
+        <span class="dest-badge-tag">ATLANTIC BASTION</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/rigel-ibisQEDxODo-unsplash.jpg" alt="Essaouira Portuguese Sea Walls and Fishing Port" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Private Day Trip to Essaouira: Sea Walls &amp; Fresh Seafood</h1>
+          <p class="dest-hero-subtitle">Breathe in the Atlantic breeze. Stroll historic 18th-century Portuguese ramparts, watch wooden blue fishing boats unload their catch, and browse fragrant thuya wood art with a private chauffeur.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> Full Day Excursion (or Overnight Riad Stay)</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> Private Executive Mercedes Transport &amp; Chauffeur</span>
+        <span class="dest-metric-item">📍 <strong>Departure:</strong> Marrakech (Door-to-Door Riad Pickup)</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- 2-Column Core Layout -->
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Essaouira Highlights &amp; Private Perks</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>Skala de la Ville &amp; Sea Walls:</strong> Walk along 18th-century ocean battlements lined with Dutch bronze cannons overlooking crashing waves.</li>
+              <li><strong>Bustling Blue Fishing Port:</strong> Experience the lively harbor where fishermen mend nets and unload glistening daily catches.</li>
+              <li><strong>Fresh Charcoal-Grilled Seafood:</strong> Savor grilled sea bream, lobster, and sardines at the open-air harbor stalls or a breezy ocean terrace.</li>
+              <li><strong>Thuya Wood Artisans:</strong> Discover the unique scent and craftsmanship of inlaid burl wood boxes in the historic rampart vaults.</li>
+              <li><strong>Argan Tree &amp; Goats Encounter:</strong> Spot goats perched in the branches of wild argan trees and tour an organic women's cooperative.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>The Bohemian Coastal Soul of Morocco</h2>
+            <p>Formerly known by its Portuguese name Mogador, Essaouira is Morocco’s most charming coastal haven. Unlike the bustling labyrinth of Marrakech, Essaouira’s whitewashed medina with its bright blue shutters was laid out by French architect Théodore Cornut in 1760 with wide, breezy avenues designed to capture the ocean air.</p>
+            <p>It has long enchanted artists, musicians, and travelers—from Orson Welles (who filmed <em>Othello</em> along its ramparts) to Jimi Hendrix. With Roam Morocco, you leave Marrakech behind at 08:30 AM in executive comfort, escaping city heat for the refreshing maritime breeze.</p>
+            
+            <div style="background:#faf8f5;border-left:3px solid var(--red,#f10b18);padding:20px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"Essaouira smells of brine, wood shavings, and freshly grilled sardines. It is where you slow down, breathe the ocean, and watch the Atlantic gulls soar over Portuguese stone."</p>
+              <span style="font-family:'Courier New',monospace;font-size:11px;font-weight:700;color:rgba(0,0,0,0.5);">— ROAM MOROCCO COASTAL DISPATCH</span>
+            </div>
+            
+            <p>You have total freedom: linger over lunch at an oceanfront terrace, wander the artisan galleries, or stroll the wide crescent beach before a relaxed late-afternoon return to Marrakech.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header">
+              <span>Full-Day Private Essaouira Itinerary</span>
+              <span style="font-size:12px;font-family:'Courier New',monospace;color:rgba(0,0,0,0.5);">RELAXED &amp; UNHURRIED</span>
+            </h3>
+
+            <!-- Timeline -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">08:30 AM // ARGAN FORESTS &amp; COASTAL DRIVE</span>
+              <h4 class="dest-day-title">Marrakech → Argan Tree Goats → Organic Cooperative</h4>
+              <p class="dest-day-desc">Your private chauffeur greets you at your riad at 08:30 AM. Travel west through the semi-arid plains into the UNESCO-protected Argan Biosphere Reserve. Pause to observe and photograph the famous goats feeding in the argan branches. Visit an authentic women-led argan oil cooperative to learn how cosmetic and culinary oils are cold-pressed by hand.</p>
+              <div class="dest-day-tags">
+                <span>Distance: ~175 km</span>
+                <span>Scenic 2.5-Hour Drive</span>
+                <span>Argan Cooperative Visit</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">11:30 AM // BLUE HARBOR &amp; RAMPARTS</span>
+              <h4 class="dest-day-title">Skala du Port → Medina Guilds → Grilled Fish Lunch</h4>
+              <p class="dest-day-desc">Arrive in Essaouira. Walk along the historic harbor ramparts where wooden blue fishing trawlers rock gently in the tide. Explore the Skala de la Ville for dramatic Atlantic ocean vistas. Head to the bustling fish grill stalls or an upscale seaside restaurant for fresh oysters and grilled sea bass caught that morning.</p>
+              <div class="dest-day-tags">
+                <span>4.5 Hours Free Time</span>
+                <span>Portuguese Ramparts</span>
+                <span>Fresh Seafood Feast</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">04:30 PM // BEACH STROLL &amp; SUNSET DRIVE HOME</span>
+              <h4 class="dest-day-title">Beach Walk OR Boutique Shopping → Marrakech Return</h4>
+              <p class="dest-day-desc">Spend the remaining afternoon shopping for thuya wood, spices, and Berber jewelry, or take a gentle stroll along the sandy beach. Your chauffeur welcomes you back to your vehicle for a relaxed sunset journey back to Marrakech, dropping you off directly at your riad by 19:00.</p>
+              <div class="dest-day-tags">
+                <span>Beach Stroll</span>
+                <span>Door-to-Door Riad Drop-Off</span>
+                <span>Back for Marrakech Dinner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">What's Included in Your Private Essaouira Tour</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUDED</h4>
+                <ul class="dest-inc-list">
+                  <li>Private round-trip transfer in executive air-conditioned vehicle</li>
+                  <li>Professional English-speaking Berber chauffeur</li>
+                  <li>All vehicle fuel, highway tolls &amp; parking fees</li>
+                  <li>Stop at authentic women’s argan oil cooperative</li>
+                  <li>Door-to-door pickup &amp; drop-off directly at your Marrakech riad</li>
+                  <li>Chilled mineral water onboard</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NOT INCLUDED</h4>
+                <ul class="dest-exc-list">
+                  <li>Lunch (we provide vetted seaside recommendations)</li>
+                  <li>Skala du Port entry ticket (~50 MAD)</li>
+                  <li>Discretionary chauffeur gratuity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Frequently Asked Questions: Essaouira Tours</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Can we stay overnight in Essaouira?</h4>
+              <div class="dest-faq-a">
+                <p>Yes, absolutely! Spending 1 or 2 nights in a boutique coastal riad or luxury oceanfront villa is one of the most relaxing additions to any Morocco itinerary. We can tailor this tour as a one-way transfer or multi-day coastal getaway.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Is Essaouira easy to walk around without a guide?</h4>
+              <div class="dest-faq-a">
+                <p>Yes! Unlike Fes or Marrakech, Essaouira’s medina is compact and straightforward with wide rectilinear streets. It is virtually impossible to get lost, making self-guided exploration very pleasant. However, a private licensed guide can be arranged upon request.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="Essaouira Atlantic Coast Private Excursion"
+               data-price-1-4="180"
+               data-price-5-7="230"
+               data-price-8-12="310"
+               data-tour-sub="Historic ramparts, fresh Atlantic seafood port &amp; argan forest route">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Essaouira Atlantic Coast Private Excursion</h3>
+            <p class="dest-prelocked-sub">Historic ramparts, fresh Atlantic seafood port &amp; argan forest route</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCityEssaouira">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityEssaouira">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateEssaouira">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateEssaouira">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">180€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Includes round-trip private transport, argan cooperative visit, fuel, highway tolls &amp; ramparts time.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 180€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const type = (document.getElementById('tripType')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName + (type ? ` (${type})` : ''),
+        pickup: 'Marrakech to Essaouira Coast',
+        vehicle: type,
+        date: dates,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about an ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (type ? `🌊 Trip Format: ${type}\n` : '') +
+        (dates ? `📅 Travel Date: ${dates}\n` : '') +
+        (notes ? `📝 Notes: ${notes}\n` : '') +
+        `\nCan you please confirm private driver availability and send a quote?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our team. We will check private vehicle and driver availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Essaouira Private Excursion</div>
+      <div class="smt-price">From <span class="smt-price-num">180€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Essaouira%20Atlantic%20Coast%20Private%20Excursion." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

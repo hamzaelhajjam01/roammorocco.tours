@@ -148,14 +148,10 @@
         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
       <nav class="desktop-nav">
+        <a href="index.html#transfers">Transfers</a>
+        <a href="experiences.html">Tours &amp; Day Trips</a>
+        <a href="morocco-private-driver.html">Private Chauffeur</a>
         <a href="destinations.html" class="active">Destinations</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="morocco-private-driver.html">Private Driver</a>
-        <a href="custom-morocco-tour.html">Custom Morocco</a>
-        <a href="morocco-trip-cost-calculator.html">Cost Calculator</a>
-        <a href="travel-deals.html">Travel Deals</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
       </nav>
     </div>
         <button class="dest-scroll-cta-btn" onclick="scrollToBookingForm(event)" aria-label="Book it now">
@@ -174,13 +170,13 @@
   <!-- Mobile Drawer -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div class="mobile-drawer-inner">
+      <a href="index.html#transfers" onclick="closeDrawer()">Transfers</a>
+      <a href="experiences.html" onclick="closeDrawer()">Tours &amp; Day Trips</a>
+      <a href="morocco-private-driver.html" onclick="closeDrawer()">Private Chauffeur</a>
       <a href="destinations.html" onclick="closeDrawer()" class="active">Destinations</a>
-      <a href="experiences.html" onclick="closeDrawer()">Experiences</a>
-      <a href="morocco-private-driver.html" onclick="closeDrawer()">Private Driver</a>
-      <a href="custom-morocco-tour.html" onclick="closeDrawer()">Custom Morocco</a>
       <a href="morocco-trip-cost-calculator.html" onclick="closeDrawer()">Cost Calculator</a>
       <a href="travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
-      <a href="about.html" onclick="closeDrawer()">About</a>
+      <a href="about.html" onclick="closeDrawer()">About Us</a>
       <a href="blog.html" onclick="closeDrawer()">Blog</a>
     </div>
   </div>
@@ -335,59 +331,65 @@
         </div>
 
         <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
         <aside class="dest-sidebar-col">
-          <div class="dest-booking-widget">
-            <span class="dest-widget-kicker">DIRECT LOCAL CONCIERGE</span>
-            <h3 class="dest-widget-title">Book Your Essaouira Day Trip</h3>
-            <p class="dest-widget-sub">Private vehicle pickup directly from your Marrakech riad. Flexible unhurried day.</p>
+          <div class="dest-prelocked-widget"
+               data-tour-name="Essaouira Atlantic Coast Private Excursion"
+               data-price-1-4="180"
+               data-price-5-7="230"
+               data-price-8-12="310"
+               data-tour-sub="Historic ramparts, fresh Atlantic seafood port &amp; argan forest route">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Essaouira Atlantic Coast Private Excursion</h3>
+            <p class="dest-prelocked-sub">Historic ramparts, fresh Atlantic seafood port &amp; argan forest route</p>
 
-            <form class="dest-form" id="essaouiraForm" onsubmit="handleInquirySubmit(event, 'Essaouira Private Day Trip')">
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="clientName">Your Full Name *</label>
-                <input class="dest-form-input" type="text" id="clientName" required placeholder="e.g. Liam Walker">
-              </div>
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
 
+            <div class="dest-prelocked-fields">
               <div class="dest-form-field">
-                <label class="dest-form-label" for="clientEmail">Email Address *</label>
-                <input class="dest-form-input" type="email" id="clientEmail" required placeholder="liam@example.com">
-              </div>
-
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="clientPhone">WhatsApp / Phone *</label>
-                <input class="dest-form-input" type="tel" id="clientPhone" required placeholder="+1 555 321 0987">
-              </div>
-
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="tripType">Trip Type</label>
-                <select class="dest-form-select" id="tripType">
-                  <option value="Full-Day Private Excursion">Full-Day Excursion (Return same day)</option>
-                  <option value="Overnight Stay in Essaouira">Overnight 2-Day Coastal Stay</option>
-                  <option value="One-Way Private Transfer">One-Way Transfer (Marrakech to Essaouira)</option>
+                <label class="dest-form-label" for="pickupCityEssaouira">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityEssaouira">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
                 </select>
               </div>
 
               <div class="dest-form-field">
-                <label class="dest-form-label" for="travelDates">Preferred Date</label>
-                <input class="dest-form-input" type="text" id="travelDates" placeholder="e.g. October 26, 2026">
+                <label class="dest-form-label" for="travelDateEssaouira">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateEssaouira">
               </div>
+            </div>
 
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="notes">Notes / Group Size</label>
-                <textarea class="dest-form-textarea" id="notes" placeholder="e.g. 2 guests, interested in fresh seafood lunch and argan cooperative visit."></textarea>
-              </div>
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">180€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Includes round-trip private transport, argan cooperative visit, fuel, highway tolls &amp; ramparts time.</p>
+            </div>
 
-              <button type="submit" class="dest-submit-btn">GET PRIVATE ESSAOUIRA PLAN ↳</button>
-            </form>
-
-            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20a%20Private%20Day%20Trip%20to%20Essaouira." class="dest-wa-btn" target="_blank" rel="noopener">
+            <a href="#" class="dest-prelocked-wa-btn">
               <img src="img/whatsapp-logo.png" alt="WhatsApp">
-              <span>Plan on WhatsApp</span>
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 180€</span></span>
             </a>
 
-            <div class="dest-widget-trust">
-              <span>🛡 <strong>100% Private:</strong> Executive vehicle &amp; driver just for you.</span>
-              <span>⚡ <strong>Coastal Breeze:</strong> The perfect cool day trip from Marrakech.</span>
-              <span>🇲🇦 <strong>Direct Local Concierge:</strong> 24/7 on-ground assistance.</span>
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
             </div>
           </div>
         </aside>
@@ -587,5 +589,19 @@
       }
     }
   </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Essaouira Private Excursion</div>
+      <div class="smt-price">From <span class="smt-price-num">180€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Essaouira%20Atlantic%20Coast%20Private%20Excursion." target="_blank" rel="noopener" class="smt-btn">
+      <img src="img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="js/booking-wizard.js?v=20261014" defer></script>
 </body>
 </html>

@@ -1,0 +1,479 @@
+/* ── ROAM MOROCCO INTERACTIVE TRIP COST & ROUTE ESTIMATOR ── */
+
+:root {
+  --calc-gold: #C8A45C;
+  --calc-gold-dark: #9A7836;
+  --calc-gold-light: #dfc17f;
+  --calc-bg: #ffffff;
+  --calc-cream: #faf8f5;
+  --calc-border: rgba(0, 0, 0, 0.12);
+  --calc-border-active: #000000;
+  --calc-text: #1a1a1a;
+  --calc-text-muted: #666666;
+}
+
+.estimator-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+}
+
+.estimator-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .estimator-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Control Panel (Left Column) */
+.estimator-controls {
+  background: var(--calc-bg);
+  border: 1px solid var(--calc-border);
+  padding: 36px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.est-step-block {
+  margin-bottom: 34px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.est-step-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.est-step-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.est-step-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.est-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background: var(--calc-gold);
+  color: #000000;
+  font-size: 11px;
+  font-weight: 900;
+  font-family: "Courier New", monospace;
+  border-radius: 50%;
+}
+
+.est-current-val {
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--calc-gold-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Route Selector Cards */
+.est-route-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .est-route-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.est-route-card {
+  background: var(--calc-cream);
+  border: 1px solid var(--calc-border);
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  text-align: left;
+}
+
+.est-route-card:hover {
+  border-color: #000000;
+  transform: translateY(-2px);
+}
+
+.est-route-card.selected {
+  background: #ffffff;
+  border: 2px solid var(--calc-gold);
+  box-shadow: 0 6px 18px rgba(200, 164, 92, 0.15);
+}
+
+.est-route-card.selected::after {
+  content: "✓";
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--calc-gold-dark);
+}
+
+.est-route-name {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 6px;
+}
+
+.est-route-desc {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--calc-text-muted);
+  margin: 0;
+}
+
+/* Slider Component */
+.est-slider-wrap {
+  padding: 8px 0;
+}
+
+.est-range-slider {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #e5e0d8;
+  outline: none;
+  border-radius: 3px;
+  transition: opacity 0.2s;
+}
+
+.est-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: #000000;
+  border: 3px solid var(--calc-gold);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.est-range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: var(--calc-gold);
+}
+
+.est-range-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: #000000;
+  border: 3px solid var(--calc-gold);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.est-slider-ticks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--calc-text-muted);
+}
+
+/* Pill Selectors (Style & Group) */
+.est-pills-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.est-pill {
+  background: var(--calc-cream);
+  border: 1px solid var(--calc-border);
+  padding: 12px 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.est-pill:hover {
+  border-color: #000000;
+}
+
+.est-pill.selected {
+  background: #ffffff;
+  border: 2px solid var(--calc-gold);
+  font-weight: 700;
+}
+
+.est-pill-label {
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 2px;
+}
+
+.est-pill-sub {
+  display: block;
+  font-size: 11px;
+  color: var(--calc-text-muted);
+}
+
+/* Live Estimate Card (Right Column) */
+.estimator-summary-card {
+  background: #ffffff;
+  border: 1px solid var(--calc-border);
+  border-top: 4px solid var(--calc-gold);
+  padding: 34px 28px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 100px;
+}
+
+.est-curr-toggle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.curr-btn {
+  background: none;
+  border: 1px solid var(--calc-border);
+  padding: 4px 10px;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.curr-btn.active {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.est-total-kicker {
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--calc-gold-dark);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.est-total-amount {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: clamp(32px, 3.5vw, 44px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #000000;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.est-per-person {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--calc-text-muted);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.est-per-person span.badge {
+  background: #fdf6e7;
+  color: var(--calc-gold-dark);
+  border: 1px solid #f2e2be;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+/* Category Breakdown Bars */
+.est-breakdown-list {
+  border-top: 1px solid var(--calc-border);
+  border-bottom: 1px solid var(--calc-border);
+  padding: 20px 0;
+  margin-bottom: 24px;
+}
+
+.est-cat-row {
+  margin-bottom: 14px;
+}
+
+.est-cat-row:last-child {
+  margin-bottom: 0;
+}
+
+.est-cat-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.est-cat-meta span.name {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #222222;
+}
+
+.est-cat-meta span.price {
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  color: #000000;
+}
+
+.est-meter-track {
+  width: 100%;
+  height: 5px;
+  background: #f0ece3;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.est-meter-bar {
+  height: 100%;
+  background: var(--calc-gold);
+  transition: width 0.3s ease;
+}
+
+/* Route Intel Strip */
+.est-route-intel {
+  background: var(--calc-cream);
+  border: 1px solid var(--calc-border);
+  padding: 16px;
+  margin-bottom: 24px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.est-intel-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #000000;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Action & Booking Area */
+.est-action-area {
+  margin-top: 20px;
+}
+
+.btn-lock-quote {
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-lock-quote:hover {
+  background: var(--calc-gold);
+  border-color: var(--calc-gold);
+  color: #000000;
+  transform: translateY(-2px);
+}
+
+/* Modal / Inline Lead Form */
+.est-lead-modal {
+  display: none;
+  background: #ffffff;
+  border: 1px solid var(--calc-border);
+  padding: 24px;
+  margin-top: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.est-lead-modal.active {
+  display: block;
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.est-lead-form input,
+.est-lead-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid var(--calc-border);
+  background: var(--calc-cream);
+  font-family: inherit;
+  font-size: 13.5px;
+  outline: none;
+}
+
+.est-lead-form input:focus,
+.est-lead-form textarea:focus {
+  border-color: #000000;
+  background: #ffffff;
+}
+
+.est-lead-msg {
+  padding: 14px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 12px;
+  display: none;
+}

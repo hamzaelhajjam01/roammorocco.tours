@@ -168,14 +168,10 @@
         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
       <nav class="desktop-nav">
+        <a href="index.html#transfers">Transfers</a>
+        <a href="experiences.html">Tours &amp; Day Trips</a>
+        <a href="morocco-private-driver.html">Private Chauffeur</a>
         <a href="destinations.html" class="active">Destinations</a>
-        <a href="experiences.html">Experiences</a>
-        <a href="morocco-private-driver.html">Private Driver</a>
-        <a href="custom-morocco-tour.html">Custom Morocco</a>
-        <a href="morocco-trip-cost-calculator.html">Cost Calculator</a>
-        <a href="travel-deals.html">Travel Deals</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
       </nav>
     </div>
         <button class="dest-scroll-cta-btn" onclick="scrollToBookingForm(event)" aria-label="Book it now">
@@ -194,13 +190,13 @@
   <!-- Mobile Drawer -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div class="mobile-drawer-inner">
+      <a href="index.html#transfers" onclick="closeDrawer()">Transfers</a>
+      <a href="experiences.html" onclick="closeDrawer()">Tours &amp; Day Trips</a>
+      <a href="morocco-private-driver.html" onclick="closeDrawer()">Private Chauffeur</a>
       <a href="destinations.html" onclick="closeDrawer()" class="active">Destinations</a>
-      <a href="experiences.html" onclick="closeDrawer()">Experiences</a>
-      <a href="morocco-private-driver.html" onclick="closeDrawer()">Private Driver</a>
-      <a href="custom-morocco-tour.html" onclick="closeDrawer()">Custom Morocco</a>
       <a href="morocco-trip-cost-calculator.html" onclick="closeDrawer()">Cost Calculator</a>
       <a href="travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
-      <a href="about.html" onclick="closeDrawer()">About</a>
+      <a href="about.html" onclick="closeDrawer()">About Us</a>
       <a href="blog.html" onclick="closeDrawer()">Blog</a>
     </div>
   </div>
@@ -395,61 +391,66 @@
 
         </div>
 
-        <!-- Right Sticky Sidebar: Conversion & Inquiry Widget -->
+        <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
         <aside class="dest-sidebar-col">
-          <div class="dest-booking-widget">
-            <span class="dest-widget-kicker">DIRECT LOCAL CONCIERGE</span>
-            <h3 class="dest-widget-title">Plan Your Private Sahara Journey</h3>
-            <p class="dest-widget-sub">Tell us your dates, group size, and pickup city. We will craft a 100% custom proposal within 24 hours.</p>
+          <div class="dest-prelocked-widget"
+               data-tour-name="3-Day Merzouga Luxury Sahara Expedition"
+               data-price-1-4="520"
+               data-price-5-7="680"
+               data-price-8-12="940"
+               data-tour-sub="Dedicated 4x4 Prado &amp; driver · Luxury desert camp · Door-to-door">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">3-Day Merzouga Luxury Sahara Expedition</h3>
+            <p class="dest-prelocked-sub">Dedicated 4x4 Prado &amp; driver · Luxury desert camp · Door-to-door</p>
 
-            <form class="dest-form" id="desertTourForm" onsubmit="handleInquirySubmit(event, 'Sahara Desert Tour')">
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="clientName">Your Full Name *</label>
-                <input class="dest-form-input" type="text" id="clientName" required placeholder="e.g. Sarah Jenkins">
-              </div>
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">4x4 Prado</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
 
+            <div class="dest-prelocked-fields">
               <div class="dest-form-field">
-                <label class="dest-form-label" for="clientEmail">Email Address *</label>
-                <input class="dest-form-input" type="email" id="clientEmail" required placeholder="sarah@example.com">
-              </div>
-
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="clientPhone">WhatsApp / Phone *</label>
-                <input class="dest-form-input" type="tel" id="clientPhone" required placeholder="+1 555 123 4567">
-              </div>
-
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="travelDates">Approx. Travel Dates</label>
-                <input class="dest-form-input" type="text" id="travelDates" placeholder="e.g. October 2026 / 4 Days">
-              </div>
-
-              <div class="dest-form-field">
-                <label class="dest-form-label" for="groupSize">Number of Guests</label>
-                <select class="dest-form-select" id="groupSize">
-                  <option value="2 Guests (Couple / Friends)">2 Guests (Couple / Friends)</option>
-                  <option value="Solo Traveler">Solo Traveler</option>
-                  <option value="3-4 Guests (Small Family / Group)">3-4 Guests (Small Family / Group)</option>
-                  <option value="5+ Guests (Private Minivan)">5+ Guests (Private Minivan)</option>
+                <label class="dest-form-label" for="pickupCitySahara">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCitySahara">
+                  <option value="Marrakech (Hotel or Riad)" selected>Marrakech (Hotel or Riad)</option>
+                  <option value="Fes (Hotel or Riad)">Fes (Hotel or Riad)</option>
+                  <option value="Casablanca (Airport or Hotel)">Casablanca (Airport or Hotel)</option>
                 </select>
               </div>
 
               <div class="dest-form-field">
-                <label class="dest-form-label" for="notes">Route Preference &amp; Special Requests</label>
-                <textarea class="dest-form-textarea" id="notes" placeholder="e.g. Start Marrakech, end in Fes. Interested in luxury camp & quad biking."></textarea>
+                <label class="dest-form-label" for="travelDateSahara">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateSahara">
               </div>
+            </div>
 
-              <button type="submit" class="dest-submit-btn">REQUEST DETAILED PROPOSAL ↳</button>
-            </form>
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">520€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Includes dedicated chauffeur, fuel, luxury canvas tent, dinners &amp; camel trek.</p>
+            </div>
 
-            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20a%20Private%20Sahara%20Desert%20Tour%20to%20Erg%20Chebbi." class="dest-wa-btn" target="_blank" rel="noopener">
+            <a href="#" class="dest-prelocked-wa-btn">
               <img src="img/whatsapp-logo.png" alt="WhatsApp">
-              <span>Plan on WhatsApp</span>
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 520€</span></span>
             </a>
 
-            <div class="dest-widget-trust">
-              <span>🛡 <strong>100% Private:</strong> Your own dedicated vehicle &amp; driver.</span>
-              <span>⚡ <strong>Zero Commitment:</strong> Free tailored itinerary revisions.</span>
-              <span>🇲🇦 <strong>Direct Local Team:</strong> Based in Marrakech, Morocco.</span>
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
             </div>
           </div>
         </aside>
@@ -649,5 +650,19 @@
       }
     }
   </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">3-Day Merzouga Luxury Sahara</div>
+      <div class="smt-price">From <span class="smt-price-num">520€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%203-Day%20Merzouga%20Luxury%20Sahara%20Expedition." target="_blank" rel="noopener" class="smt-btn">
+      <img src="img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+
+  <script src="js/booking-wizard.js?v=20261014" defer></script>
 </body>
 </html>

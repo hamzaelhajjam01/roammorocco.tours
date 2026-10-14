@@ -1,0 +1,96 @@
+---
+// Header Component (Page Loader, Announcement Marquee, Nav & Mobile Drawer)
+interface Props {
+  showLoader?: boolean;
+}
+
+const { showLoader = false } = Astro.props;
+---
+{showLoader && (
+  <div id="page-loader">
+    <div id="loader-slot">
+      <img class="loader-item" src="/stickers/jemaa-el-fnaa-sticker.webp" alt="Jemaa el-Fnaa Marrakech Market Sticker">
+      <img class="loader-item" src="/stickers/koutoubia-sticker.webp" alt="Koutoubia Mosque Marrakech Minaret Sticker">
+      <img class="loader-item" src="/stickers/hassan-tower-sticker.webp" alt="Hassan Tower Rabat Monument Sticker">
+      <img class="loader-item" src="/stickers/bab-mansour-sticker.webp" alt="Bab Mansour Meknes Gate Sticker">
+      <img class="loader-item" src="/stickers/ait-ben-haddou-sticker.webp" alt="Ait Ben Haddou UNESCO Kasbah Sticker">
+      <img class="loader-item" src="/stickers/essaouira-sqala-sticker.webp" alt="Essaouira Ramparts Coastline Sticker">
+      <img class="loader-item" src="/stickers/gnawa-maalem-sticker.webp" alt="Gnawa Musician Moroccan Culture Sticker">
+      <img class="loader-item" src="/stickers/moroccan-caftan-sticker.webp" alt="Moroccan Traditional Caftan Attire Sticker">
+      <img class="loader-item" src="/stickers/tbourida-sticker.webp" alt="Tbourida Fantasia Moroccan Equestrian Sticker">
+      <img class="loader-item" src="/stickers/volubilis-sticker.webp" alt="Volubilis Roman Ruins Morocco Sticker">
+      <img class="loader-item" src="/stickers/argan-oil-making-sticker.webp" alt="Traditional Moroccan Argan Oil Making Sticker">
+      <img class="loader-item" src="/stickers/al-qarawiyyin-sticker.webp" alt="Al-Qarawiyyin University Fes Morocco Sticker">
+      <img id="loader-final-logo" src="/img/logo-for-light-bg.png" alt="Roam Morocco">
+    </div>
+  </div>
+)}
+  <!-- ANNOUNCEMENT TICKER MARQUEE BAR — MOROCCAN STAR TICKER -->
+  <div class="announcement-bar">
+    <div class="announcement-track">
+      <div class="announcement-content">
+        <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Tailored Private Journeys Across Sahara & High Atlas</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>LUXURY RIADS & DESERT CAMPS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Custom Circuits From Marrakech, Fes & Casablanca</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>FEEL THE KINGDOM</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Private Drivers, Expert Local Guides & Unhurried Pacing</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+      </div>
+      <div class="announcement-content" aria-hidden="true">
+        <span><strong>2026 PRIVATE EXPEDITIONS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Tailored Private Journeys Across Sahara & High Atlas</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>LUXURY RIADS & DESERT CAMPS</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Custom Circuits From Marrakech, Fes & Casablanca</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span><strong>FEEL THE KINGDOM</strong></span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+        <span>Private Drivers, Expert Local Guides & Unhurried Pacing</span>
+        <svg class="morocco-star" viewBox="0 0 24 24" width="14" height="14" fill="#000000"><path d="M12 1.7l3.09 6.26 6.91 1-5 4.87 1.18 6.88L12 17.47l-6.18 3.25L7 13.84 2 8.97l6.91-1L12 1.7z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <header class="top at-top">
+    <div class="navbox">
+      <a class="wordmark" href="/#top">
+        <img id="navLogo" src="/img/logo-for-dark-bg.png" alt="Roam Morocco Tours">
+      </a>
+      <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+      <nav class="desktop-nav"><a href="/#transfers">Transfers</a><a href="/experiences.html">Tours &amp; Day Trips</a><a href="/morocco-private-driver.html">Private Chauffeur</a><a href="/destinations.html">Destinations</a></nav>
+    </div>
+    <a class="latest nav-wa-btn" href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
+      <span>WhatsApp</span>
+    </a>
+    <a class="back-top-btn" href="#top" aria-label="Back to top" onclick="scrollToTop(event)">
+      <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </a>
+  </header>
+
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="mobile-drawer-inner">
+      <a href="/#transfers" onclick="closeDrawer()">Transfers</a>
+      <a href="/experiences.html" onclick="closeDrawer()">Tours &amp; Day Trips</a>
+      <a href="/morocco-private-driver.html" onclick="closeDrawer()">Private Chauffeur</a>
+      <a href="/destinations.html" onclick="closeDrawer()">Destinations</a>
+      <a href="/morocco-trip-cost-calculator.html" onclick="closeDrawer()">Cost Calculator</a>
+      <a href="/travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
+      <a href="/about.html" onclick="closeDrawer()">About Us</a>
+      <a href="/blog.html" onclick="closeDrawer()">Blog</a>
+      <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." class="mobile-wa-cta" target="_blank" rel="noopener" onclick="closeDrawer()">
+        <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+  </div>
