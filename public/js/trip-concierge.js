@@ -16,22 +16,22 @@
     worldDest: ''
   };
 
-  // Inject HTML into DOM
+  // Inject HTML into DOM (or bind to existing Astro component)
   function initWidget() {
-    if (document.getElementById('rm-concierge-root')) return;
+    let root = document.getElementById('rm-concierge-root');
+    if (!root) {
+      // Ensure trip-concierge.css is loaded dynamically if missing
+      const isSub = window.location.pathname.includes('/blog/');
+      const cssHref = isSub ? '../css/trip-concierge.css?v=20261012_gold4' : 'css/trip-concierge.css?v=20261012_gold4';
+      if (!document.querySelector('link[href*="trip-concierge.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = cssHref;
+        document.head.appendChild(link);
+      }
 
-    // Ensure trip-concierge.css is loaded dynamically if missing
-    const isSub = window.location.pathname.includes('/blog/');
-    const cssHref = isSub ? '../css/trip-concierge.css?v=20261012_gold4' : 'css/trip-concierge.css?v=20261012_gold4';
-    if (!document.querySelector('link[href*="trip-concierge.css"]')) {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = cssHref;
-      document.head.appendChild(link);
-    }
-
-    const root = document.createElement('div');
-    root.id = 'rm-concierge-root';
+      root = document.createElement('div');
+      root.id = 'rm-concierge-root';
     root.innerHTML = `
       <!-- Luxury Edge Tab: Plan a Trip Trigger (Pinned Right-Center) -->
       <button class="rm-concierge-trigger" id="rm-trigger-btn" type="button" aria-label="Plan a Trip" title="Plan a Trip">
@@ -87,7 +87,9 @@
       </div>
     `;
 
-    document.body.appendChild(root);
+      document.body.appendChild(root);
+    }
+
     setupEvents();
     renderWelcome();
   }
@@ -229,35 +231,39 @@
 
   // Step 1: Welcome & Path Selection
   function renderWelcome() {
-    addBotMessage(`
-      <div class="rm-bubble-tag">✨ Marhaba • Private Concierge</div>
-      <div class="rm-bubble-title">Welcome to Roam Morocco</div>
-      <div class="rm-bubble-desc">I am your 24/7 personal travel advisor. How would you like to begin your journey?</div>
-      
-      <div class="rm-options-grid">
-        <button class="rm-choice-card primary" data-action="mode-morocco" type="button">
-          <div class="rm-card-icon-wrap" aria-hidden="true">🐪</div>
-          <div class="rm-card-content">
-            <div class="rm-card-title">Custom Morocco Private Tour</div>
-            <div class="rm-card-desc">Private 4x4 driver, Sahara glamping & tailor-made route</div>
-          </div>
-          <div class="rm-card-arrow" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-          </div>
-        </button>
+    const stream = document.getElementById('rm-chat-stream');
+    if (!stream) return;
+    if (stream.children.length === 0) {
+      addBotMessage(`
+        <div class="rm-bubble-tag">✨ Marhaba • Private Concierge</div>
+        <div class="rm-bubble-title">Welcome to Roam Morocco</div>
+        <div class="rm-bubble-desc">I am your 24/7 personal travel advisor. How would you like to begin your journey?</div>
+        
+        <div class="rm-options-grid">
+          <button class="rm-choice-card primary" data-action="mode-morocco" type="button">
+            <div class="rm-card-icon-wrap" aria-hidden="true">🐪</div>
+            <div class="rm-card-content">
+              <div class="rm-card-title">Custom Morocco Private Tour</div>
+              <div class="rm-card-desc">Private 4x4 driver, Sahara glamping & tailor-made route</div>
+            </div>
+            <div class="rm-card-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </button>
 
-        <button class="rm-choice-card" data-action="mode-worldwide" type="button">
-          <div class="rm-card-icon-wrap" aria-hidden="true">✈️</div>
-          <div class="rm-card-content">
-            <div class="rm-card-title">Flights & Global Travel Deals</div>
-            <div class="rm-card-desc">Compare airfare, boutique hotels & instant eSIMs</div>
-          </div>
-          <div class="rm-card-arrow" aria-hidden="true">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-          </div>
-        </button>
-      </div>
-    `);
+          <button class="rm-choice-card" data-action="mode-worldwide" type="button">
+            <div class="rm-card-icon-wrap" aria-hidden="true">✈️</div>
+            <div class="rm-card-content">
+              <div class="rm-card-title">Flights & Global Travel Deals</div>
+              <div class="rm-card-desc">Compare airfare, boutique hotels & instant eSIMs</div>
+            </div>
+            <div class="rm-card-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+            </div>
+          </button>
+        </div>
+      `);
+    }
 
     attachActionHandlers();
   }

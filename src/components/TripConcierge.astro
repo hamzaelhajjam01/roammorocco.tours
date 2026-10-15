@@ -1,0 +1,88 @@
+---
+// Roam Concierge & AI Trip Planner Floating Widget Component
+---
+<!-- Luxury Edge Tab: Plan a Trip Trigger (Pinned Right-Center) -->
+<div id="rm-concierge-root">
+  <button class="rm-concierge-trigger" id="rm-trigger-btn" type="button" aria-label="Plan a Trip" title="Plan a Trip">
+    <span class="rm-trigger-label">Plan a Trip</span>
+    <span class="rm-trigger-dot" aria-hidden="true"></span>
+  </button>
+
+  <!-- Chatbot Modal -->
+  <div class="rm-concierge-modal" id="rm-modal" role="dialog" aria-hidden="true" aria-label="Roam Morocco Concierge">
+    <div class="rm-modal-header">
+      <div class="rm-header-left">
+        <div class="rm-avatar-wrapper">
+          <div class="rm-avatar-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <span class="rm-online-indicator" title="Marrakech Specialists Online"></span>
+        </div>
+        <div class="rm-header-info">
+          <h4>Roam Concierge</h4>
+          <p><span class="rm-header-status-dot"></span> Marrakech Travel Desk • Online</p>
+        </div>
+      </div>
+      <button class="rm-close-btn" id="rm-close-btn" aria-label="Close Concierge" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="rm-chat-body" id="rm-chat-stream">
+      <div class="rm-bot-msg">
+        <div class="rm-bot-avatar-mini" aria-hidden="true">RM</div>
+        <div class="rm-msg-bubble">
+          <div class="rm-bubble-tag">✨ Marhaba • Private Concierge</div>
+          <div class="rm-bubble-title">Welcome to Roam Morocco</div>
+          <div class="rm-bubble-desc">I am your 24/7 personal travel advisor. How would you like to begin your journey?</div>
+          
+          <div class="rm-options-grid">
+            <button class="rm-choice-card primary" data-action="mode-morocco" type="button">
+              <div class="rm-card-icon-wrap" aria-hidden="true">🐪</div>
+              <div class="rm-card-content">
+                <div class="rm-card-title">Custom Morocco Private Tour</div>
+                <div class="rm-card-desc">Private 4x4 driver, Sahara glamping & tailor-made route</div>
+              </div>
+              <div class="rm-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </div>
+            </button>
+
+            <button class="rm-choice-card" data-action="mode-worldwide" type="button">
+              <div class="rm-card-icon-wrap" aria-hidden="true">✈️</div>
+              <div class="rm-card-content">
+                <div class="rm-card-title">Flights & Global Travel Deals</div>
+                <div class="rm-card-desc">Compare airfare, boutique hotels & instant eSIMs</div>
+              </div>
+              <div class="rm-card-arrow" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rm-chat-footer">
+      <div class="rm-footer-security">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+        <span>Verified Roam Morocco Desk</span>
+      </div>
+      <button class="rm-reset-btn" id="rm-reset-btn" type="button" aria-label="Start conversation over">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="1 4 1 10 7 10"></polyline>
+          <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+        </svg>
+        <span>Start Over</span>
+      </button>
+    </div>
+  </div>
+</div>

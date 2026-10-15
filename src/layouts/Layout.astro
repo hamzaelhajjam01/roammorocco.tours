@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import TripConcierge from '../components/TripConcierge.astro';
 
 interface Props {
   title?: string;
@@ -12,6 +13,7 @@ interface Props {
   showLoader?: boolean;
   showHeader?: boolean;
   showFooter?: boolean;
+  showConcierge?: boolean;
   extraStyles?: string[];
 }
 
@@ -25,6 +27,7 @@ const {
   showLoader = false,
   showHeader = true,
   showFooter = true,
+  showConcierge = true,
   extraStyles = []
 } = Astro.props;
 ---
@@ -330,7 +333,7 @@ const {
         document.head.appendChild(script);
     })();
   </script>
-  <link rel="stylesheet" href="/css/trip-concierge.css?v=20261012_gold4">
+  {showConcierge && <link rel="stylesheet" href="/css/trip-concierge.css?v=20261012_gold4">}
   <link rel="stylesheet" href="/css/roam-theme.css?v=20261014_goldtheme">
   {extraStyles && extraStyles.map((href) => (
     <link rel="stylesheet" href={href} />
@@ -341,6 +344,7 @@ const {
   {showHeader && <Header showLoader={showLoader} />}
   <slot />
   {showFooter && <Footer />}
+  {showConcierge && <TripConcierge />}
 
   <!-- Client-side Interactive Scripts -->
   <script is:inline>
@@ -528,7 +532,7 @@ const {
     })();
   </script>
   <script is:inline src="/js/roam-nav.js?v=20261012_nav6" defer></script>
-  <script is:inline src="/js/trip-concierge.js?v=20261012_gold4" defer></script>
+  {showConcierge && <script is:inline src="/js/trip-concierge.js?v=20261012_gold4" defer></script>}
   <script is:inline src="/js/booking-wizard.js?v=20261014_goldtheme" defer></script>
 </body>
 </html>
