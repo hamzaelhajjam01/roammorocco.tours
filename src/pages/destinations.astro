@@ -388,9 +388,12 @@ const schema = {
     .j-reserve-btn:hover .j-reserve-arrow { transform: translateX(5px); }
 
     @media(max-width:850px){
-      .page-container { padding: 110px 16px 0; }
+      .page-container { padding: 100px 16px 0; }
+      .section-title { font-size: clamp(32px, 8.5vw, 54px); line-height: 0.92; letter-spacing: -0.05em; margin-bottom: 28px; }
+      .section-subtitle { font-size: 16px; line-height: 1.5; }
       .section-header-bottom { grid-template-columns: 1fr; gap: 24px; }
-      .principles-bar { grid-template-columns: 1fr; gap: 12px; }
+      .principles-bar { grid-template-columns: 1fr; gap: 10px; border-top: 1px solid rgba(0, 0, 0, 0.08); padding-top: 18px; }
+      .principle-item { display: flex; align-items: center; gap: 10px; }
       .journeys-reserve-banner { padding: 40px 16px!important; grid-template-columns: 1fr!important; gap: 24px!important; }
       .j-reserve-btn { width: 100%!important; justify-content: center!important; }
     }

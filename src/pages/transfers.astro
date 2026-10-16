@@ -814,7 +814,17 @@ const hubs = [
 
   @media (max-width: 850px) {
     .page-container {
-      padding: 110px 16px 60px;
+      padding: 100px 16px 60px;
+    }
+    .section-title {
+      font-size: clamp(32px, 8.5vw, 54px);
+      line-height: 0.92;
+      letter-spacing: -0.05em;
+      margin-bottom: 28px;
+    }
+    .section-subtitle {
+      font-size: 16px;
+      line-height: 1.5;
     }
     .section-header-bottom {
       grid-template-columns: 1fr;
@@ -822,7 +832,14 @@ const hubs = [
     }
     .principles-bar {
       grid-template-columns: 1fr;
-      gap: 12px;
+      gap: 10px;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      padding-top: 18px;
+    }
+    .principle-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     .routes-editorial-grid {
       grid-template-columns: 1fr;

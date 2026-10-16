@@ -452,7 +452,9 @@ const schema = {
     .j-reserve-btn:hover .j-reserve-arrow { transform: translateX(5px); }
 
     @media(max-width:850px){
-      .page-container { padding: 110px 16px 0; }
+      .page-container { padding: 100px 16px 0; }
+      .section-title { font-size: clamp(32px, 8.5vw, 54px); line-height: 0.92; letter-spacing: -0.05em; margin-bottom: 28px; }
+      .section-subtitle { font-size: 16px; line-height: 1.5; }
       .about-story-grid { grid-template-columns: 1fr; gap: 32px; }
       .about-media-box { height: 320px; }
       .pillars-grid, .guides-profiles-grid, .extension-badges-grid { grid-template-columns: 1fr!important; gap: 20px!important; }
