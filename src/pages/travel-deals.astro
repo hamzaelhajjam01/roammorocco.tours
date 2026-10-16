@@ -245,14 +245,20 @@ const schema = {
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      padding: 13px 18px;
-      transition: all 0.2s ease;
+      padding: 13px 22px;
+      border-radius: 9999px;
+      border: 1px solid #000000;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     }
 
     .d-card-btn:hover {
-      background: #333333;
+      background: #262626;
+      border-color: #262626;
+      color: #ffffff;
       transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     }
 
     /* Worldwide Hotspots Showcase */
@@ -264,17 +270,19 @@ const schema = {
 
     .d-world-card {
       background: var(--card-bg);
-      border: 1px solid var(--border-subtle);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform 0.25s ease, border-color 0.25s ease;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
     .d-world-card:hover {
       transform: translateY(-4px);
-      border-color: #000000;
+      border-color: rgba(200, 164, 92, 0.4);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
     }
 
     .d-world-header {
@@ -312,7 +320,8 @@ const schema = {
       justify-content: space-between;
       padding: 11px 16px;
       background: #faf9f6;
-      border: 1px solid var(--border-subtle);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
       font-family: Helvetica, Arial, sans-serif;
       font-size: 13px;
       font-weight: 700;
@@ -323,18 +332,20 @@ const schema = {
     .d-world-link:hover {
       background: #000000;
       border-color: #000000;
-      color: #ffffff;
+      color: #ffffff !important;
+      transform: translateX(2px);
     }
 
     /* Chauffeur Bridge Banner */
     .d-bridge-banner {
       background: #ffffff;
-      border: 2px solid #000000;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 24px;
       padding: 48px 36px;
       margin: 60px auto 0;
       text-align: center;
       max-width: 1000px;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
     }
 
     .d-bridge-banner h3 {
@@ -374,35 +385,44 @@ const schema = {
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      padding: 13px 26px;
-      transition: all 0.2s ease;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      border: 1px solid #000000;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      transition: all 0.25s ease;
     }
 
     .d-btn-gold:hover {
-      background: #333333;
+      background: #262626;
+      border-color: #262626;
       transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
     }
 
     .d-btn-wa {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #25D366;
+      background: linear-gradient(135deg, #25D366 0%, #1ea952 100%);
       color: #ffffff !important;
       font-family: Helvetica, Arial, sans-serif;
       font-weight: 800;
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      padding: 13px 26px;
-      transition: all 0.2s ease;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      border: none;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: all 0.25s ease;
       text-decoration: none;
     }
 
     .d-btn-wa:hover {
-      background: #20BA59;
+      background: linear-gradient(135deg, #20BA59 0%, #169345 100%);
       color: #ffffff !important;
       transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.45);
       text-decoration: none;
     }
 
