@@ -190,15 +190,19 @@ const schema = {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .12em;
-      color: rgba(0,0,0,.54);
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      padding: 6px 16px;
       margin-bottom: 24px;
     }
-    .section-badge::before { content:""; width:7px; height:7px; background:var(--red,#f10b18); }
+    .section-badge::before { content:""; width:6px; height:6px; border-radius:50%; background:#C8A45C; }
 
     .section-title {
       font-size: clamp(52px, 8vw, 118px);
@@ -248,7 +252,7 @@ const schema = {
       gap: 24px;
     }
     .principle-item { display: grid; gap: 6px; font-size: 12px; }
-    .principle-item span { font-family: "Courier New", monospace; color: rgba(0,0,0,.45); }
+    .principle-item span { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; color: #8A6A23; }
     .principle-item strong { font-size: 14px; letter-spacing: -.02em; }
 
     /* Filter Bar */
@@ -325,7 +329,7 @@ const schema = {
     }
     .journeys-reserve-banner.in { opacity: 1; transform: translateY(0); }
     .journeys-reserve-copy { display: grid; gap: 12px; }
-    .journeys-reserve-kicker { font-family: "Courier New", monospace; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.54); }
+    .journeys-reserve-kicker { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #C8A45C; }
     .journeys-reserve-banner h3 { font-size: clamp(44px, 6.4vw, 92px); font-weight: 800; letter-spacing: -.07em; line-height: .86; text-transform: uppercase; margin: 0; max-width: 920px; }
     .journeys-reserve-banner p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: rgba(255,255,255,.72); font-size: 18px; margin: 4px 0 0; max-width: 620px; line-height: 1.35; }
     .j-reserve-btn { color: #fff!important; border-top: 1px solid rgba(255,255,255,.35)!important; border-bottom: 1px solid rgba(255,255,255,.35)!important; padding: 18px 0!important; min-width: 230px; justify-content: space-between!important; font-size: 15px!important; display: inline-flex!important; align-items: center!important; }
@@ -387,7 +391,7 @@ const schema = {
             <h3>Erg Chebbi & Merzouga</h3>
             <p>Endless golden dunes, sunset camel treks, and luxury nomad camps under starry Saharan skies.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: OCT – MAY</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: OCT – MAY</span>
               <a href="/destination-sahara-desert.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -403,7 +407,7 @@ const schema = {
             <h3>Marrakech Medina</h3>
             <p>The vibrant Red City, secret riad courtyards, Majorelle Gardens, and Jemaa el-Fnaa square.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: YEAR-ROUND</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: YEAR-ROUND</span>
               <a href="/destination-marrakech.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -422,7 +426,7 @@ const schema = {
             <h3>Marrakech Medina Sunset Free Tour</h3>
             <p>Daily 2-hour guided walking tour from Koutoubia Mosque through the souks &amp; Saadian quarters, ending at sunset over Jemaa el-Fna.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">DAILY: 5PM / 6PM</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">DAILY: 5PM / 6PM</span>
               <a href="/marrakech-medina-sunset-free-tour.html" class="see-more-btn"><span>View Free Tour</span> <span>↳</span></a>
             </div>
           </div>
@@ -438,7 +442,7 @@ const schema = {
             <h3>Chefchaouen</h3>
             <p>The iconic Blue Pearl nestled in the Rif Mountains, famous for serene cobblestone alleys and artisan craft.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: SPRING & FALL</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: SPRING &amp; FALL</span>
               <a href="/destination-chefchaouen.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -454,7 +458,7 @@ const schema = {
             <h3>Fes El Bali</h3>
             <p>The spiritual capital, 9,000 car-free medina alleys, ancient leather tanneries, and 9th-century mosques.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: SEPT – MAY</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: SEPT – MAY</span>
               <a href="/destination-fes.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -467,10 +471,10 @@ const schema = {
             <img src="/img/tour_active_atlas_toubkal.jpg" alt="Imlil Berber Village and Toubkal">
           </div>
           <div class="dest-body">
-            <h3>High Atlas & Imlil</h3>
+            <h3>High Atlas &amp; Imlil</h3>
             <p>Mount Toubkal mountain trails, ancient earthen Berber villages, terraced valleys, and panoramic lunches.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: APRIL – NOV</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: APRIL – NOV</span>
               <a href="/destination-high-atlas.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -483,26 +487,26 @@ const schema = {
             <img src="/img/dest-casablanca.jpg" alt="Hassan II Mosque in Casablanca">
           </div>
           <div class="dest-body">
-            <h3>Casablanca & Beyond</h3>
+            <h3>Casablanca &amp; Beyond</h3>
             <p>The monumental Hassan II Mosque over the Atlantic ocean, and seamless private circuits from CMN airport.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: YEAR-ROUND</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: YEAR-ROUND</span>
               <a href="/destination-casablanca.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
         </article>
 
-        <!-- 7. Aït Benhaddou & Ouarzazate -->
+        <!-- 7. Aït Benhaddou &amp; Ouarzazate -->
         <article class="dest-card reveal" data-cat="desert">
           <div class="dest-media">
             <span class="dest-badge-tag">UNESCO KASBAH</span>
             <img src="/img/tour_cinema_ait_benhaddou.jpg" alt="Aït Benhaddou UNESCO Fortress">
           </div>
           <div class="dest-body">
-            <h3>Aït Benhaddou & Ouarzazate</h3>
+            <h3>Aït Benhaddou &amp; Ouarzazate</h3>
             <p>Ancient clay towers, Gladiator movie sets, and the majestic gateway fortress to the Sahara Desert.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: OCT – MAY</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: OCT – MAY</span>
               <a href="/destination-ait-benhaddou.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -518,7 +522,7 @@ const schema = {
             <h3>Essaouira</h3>
             <p>Historic Portuguese sea walls, bustling blue boat harbor, thuya wood artisans, and refreshing coastal breezes.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Courier New',monospace;font-size:11px;color:rgba(0,0,0,.5);">BEST: YEAR-ROUND</span>
+              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: YEAR-ROUND</span>
               <a href="/destination-essaouira.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>

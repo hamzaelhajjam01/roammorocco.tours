@@ -149,10 +149,9 @@ const schema = {
 
     /* Breadcrumbs */
     .roam-breadcrumbs {
-      font-family: "Courier New", monospace;
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: .06em;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
       color: var(--text-muted);
       margin-bottom: 24px;
     }
@@ -172,14 +171,16 @@ const schema = {
 
     .category-badge {
       display: inline-block;
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .12em;
-      color: #ffffff;
-      background: #000000;
-      padding: 4px 10px;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      padding: 4px 12px;
       margin-bottom: 18px;
     }
 
@@ -204,10 +205,9 @@ const schema = {
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
-      font-size: 13px;
-      font-family: "Courier New", monospace;
-      text-transform: uppercase;
-      letter-spacing: .05em;
+      font-size: 12px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      letter-spacing: .02em;
       color: var(--text-muted);
       border-top: 1px solid var(--border);
       padding-top: 16px;
@@ -308,18 +308,25 @@ const schema = {
 
     .verdict-card {
       background: #faf8f5;
-      padding: 16px;
-      border: 1px solid var(--border);
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
     .verdict-card .tag {
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       text-transform: uppercase;
-      font-weight: bold;
-      color: var(--gold);
-      margin-bottom: 6px;
-      display: block;
+      font-weight: 700;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 3px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
     }
 
     .verdict-card .title {
@@ -339,8 +346,10 @@ const schema = {
     .table-container {
       overflow-x: auto;
       margin: 36px 0;
-      border: 1px solid #000000;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
       background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
     table {
@@ -352,17 +361,18 @@ const schema = {
 
     th, td {
       padding: 14px 18px;
-      border-bottom: 1px solid var(--border);
-      border-right: 1px solid var(--border);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
     }
 
     th {
-      background: #000000;
+      background: #18181B;
       color: #ffffff;
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       text-transform: uppercase;
       letter-spacing: .05em;
-      font-size: 13px;
+      font-size: 12px;
+      font-weight: 700;
     }
 
     tr:last-child td {
@@ -372,10 +382,12 @@ const schema = {
     /* Area Card Box */
     .roam-area-card {
       background: #ffffff;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
       padding: 28px;
       margin: 36px 0;
-      border-left: 6px solid #000000 !important;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
     .roam-area-header {
@@ -385,7 +397,7 @@ const schema = {
       flex-wrap: wrap;
       gap: 12px;
       margin-bottom: 16px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
       padding-bottom: 12px;
     }
 
@@ -395,26 +407,31 @@ const schema = {
     }
 
     .roam-area-badge {
-      background: #000000;
-      color: #ffffff;
-      font-family: "Courier New", monospace;
+      background: rgba(200, 164, 92, 0.12);
+      color: #8A6A23;
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
-      padding: 4px 10px;
+      padding: 4px 12px;
+      border-radius: 999px;
       text-transform: uppercase;
       font-weight: 700;
+      letter-spacing: 0.06em;
     }
 
     .roam-area-vibe {
       font-size: 14px;
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       color: var(--text-muted);
       margin-bottom: 14px;
+      font-weight: 500;
     }
 
     .roam-hotel-list {
       margin-top: 20px;
       background: #faf8f5;
-      padding: 18px;
+      padding: 18px 22px;
+      border-radius: 12px;
       border: 1px solid rgba(0,0,0,0.06);
     }
 
@@ -563,19 +580,23 @@ const schema = {
     /* Callout & Field Note */
     .roam-callout-ai {
       background: #ffffff;
-      border: 1px solid var(--border);
-      border-left: 5px solid var(--gold) !important;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
       padding: 24px;
       margin: 36px 0;
       font-size: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
     .roam-field-note {
       background: #faf8f5;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
       padding: 28px;
       margin: 40px 0;
       position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
     .roam-field-note-quote {
@@ -588,12 +609,12 @@ const schema = {
     }
 
     .roam-field-note-author {
-      font-family: "Courier New", monospace;
-      font-size: 12px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
       text-transform: uppercase;
       letter-spacing: .06em;
-      color: var(--gold);
-      font-weight: bold;
+      color: #8A6A23;
+      font-weight: 700;
     }
 
     /* FAQ Section */
@@ -603,8 +624,11 @@ const schema = {
 
     .faq-item {
       background: #ffffff;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
       margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
     }
 
     .faq-question {
@@ -649,7 +673,9 @@ const schema = {
       color: #ffffff;
       padding: 40px 32px;
       margin: 50px 0;
-      border-left: 6px solid var(--gold);
+      border-radius: 20px;
+      border: 1px solid rgba(200, 164, 92, 0.45);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
     }
 
     .roam-morocco-bridge h3 {
@@ -669,15 +695,17 @@ const schema = {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--gold);
+      background: var(--gold, #C8A45C);
       color: #000000 !important;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: .08em;
+      letter-spacing: .06em;
       padding: 14px 28px;
+      border-radius: 10px;
       text-decoration: none !important;
       transition: all 0.2s ease;
+      font-family: 'Inter', -apple-system, sans-serif;
     }
 
     .bridge-cta-btn:hover {
@@ -1085,9 +1113,9 @@ const schema = {
       <p>Maximizing Paris comes down to pacing. Too many visitors exhaust themselves running crisscross across the city. By clustering your explorations by bank and neighborhood, you spend more time sipping espresso in sunlight and less time underground.</p>
 
       <!-- Day 1 -->
-      <div class="roam-day-card" style="background:#ffffff;border:1px solid var(--border);padding:24px;margin-bottom:20px;">
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
         <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;">
-          <span style="background:#000000;color:#ffffff;font-size:12px;padding:3px 8px;font-family:'Courier New',monospace;">DAY 01</span>
+          <span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:uppercase;">DAY 01</span>
           The Medieval Cradle &amp; Royal Grandeur
         </h3>
         <p><strong>Morning:</strong> Start at the historical birthplace of Paris on Île de la Cité. Admire the newly restored façade and spire of Notre-Dame Cathedral, then walk two blocks to gasp at the jaw-dropping 13th-century stained glass inside <em>Sainte-Chapelle</em> (reserve early morning timed-entry tickets).</p>
@@ -1096,9 +1124,9 @@ const schema = {
       </div>
 
       <!-- Day 2 -->
-      <div class="roam-day-card" style="background:#ffffff;border:1px solid var(--border);padding:24px;margin-bottom:20px;">
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
         <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;">
-          <span style="background:#000000;color:#ffffff;font-size:12px;padding:3px 8px;font-family:'Courier New',monospace;">DAY 02</span>
+          <span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:uppercase;">DAY 02</span>
           Left Bank Romance &amp; Impressionist Masterpieces
         </h3>
         <p><strong>Morning:</strong> Breakfast at a traditional sidewalk table on Boulevard Saint-Germain, followed by a stroll through the Luxembourg Gardens. Watch local chess masters compete under the chestnut trees.</p>
@@ -1107,9 +1135,9 @@ const schema = {
       </div>
 
       <!-- Day 3 -->
-      <div class="roam-day-card" style="background:#ffffff;border:1px solid var(--border);padding:24px;margin-bottom:20px;">
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
         <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;">
-          <span style="background:#000000;color:#ffffff;font-size:12px;padding:3px 8px;font-family:'Courier New',monospace;">DAY 03</span>
+          <span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:uppercase;">DAY 03</span>
           Bohemian Montmartre &amp; Canal Saint-Martin Sunset
         </h3>
         <p><strong>Morning:</strong> Take Metro Line 12 up to Lamarck-Caulaincourt. Climb the quiet rear steps of Montmartre to reach Sacré-Cœur Basilica before the tour buses arrive. Wander down picturesque Rue de l’Abreuvoir past La Maison Rose.</p>
@@ -1118,9 +1146,9 @@ const schema = {
       </div>
 
       <!-- Day 4 -->
-      <div class="roam-day-card" style="background:#ffffff;border:1px solid var(--border);padding:24px;margin-bottom:20px;">
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
         <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;">
-          <span style="background:#000000;color:#ffffff;font-size:12px;padding:3px 8px;font-family:'Courier New',monospace;">DAY 04</span>
+          <span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:uppercase;">DAY 04</span>
           Le Marais Hidden Courtyards &amp; Seine Cruise
         </h3>
         <p><strong>Morning:</strong> Explore the boutique maze of Le Marais. Pick up fresh pastries from Du Pain et des Idées or Poilâne, then sit under the 17th-century arcades at Place des Vosges, the oldest planned square in Paris.</p>

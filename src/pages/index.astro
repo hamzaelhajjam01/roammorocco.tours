@@ -691,7 +691,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .case:hover img{filter:saturate(1.06) contrast(1.03);box-shadow:none}
     .case.big,.case.mid,.case.small,.case.tiny{width:clamp(160px,13.7vw,280px);height:clamp(213px,18.25vw,373px)}
     .case.up,.case.down{transform:translate3d(calc(-50% + var(--x,0px)),calc(-50% + var(--y,0px)),0) scale(var(--scale,.48))}
-    .caption{display:block;font-family:"Courier New",monospace;font-size:11px;letter-spacing:-.02em;text-transform:uppercase;margin-top:18px;color:rgba(0,0,0,.38);white-space:nowrap;opacity:0;transition:opacity .2s,transform .2s;transform:translateY(6px)}
+    .caption{display:block;font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:18px;color:rgba(0,0,0,.45);white-space:nowrap;opacity:0;transition:opacity .2s,transform .2s;transform:translateY(6px)}
     .caption strong{color:#000;font-weight:700;margin-right:8px}
     .case.active .caption{opacity:1;transform:translateY(0)}
     .ticker{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);display:flex;gap:7px;align-items:end}
@@ -725,7 +725,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .feature-row{min-height:auto;padding:100px 0;border-top:1px solid rgba(0,0,0,0.12);display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center}
     .feature-row.reverse{grid-template-columns:1.15fr 1fr}
     .feature-copy{padding:20px 0}
-    .feature-copy .meta{font-family:"Courier New",monospace;font-size:12px;text-transform:uppercase;margin:0 0 18px}
+    .feature-copy .meta{font-family:'Inter',-apple-system,sans-serif;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0 0 18px}
     .feature-copy h2{font-size:clamp(58px,8.2vw,136px);font-weight:800;letter-spacing:-.085em;line-height:.78;text-transform:uppercase;margin:0}
     .feature-copy p{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:clamp(22px,2.2vw,34px);letter-spacing:-.035em;line-height:1.13;margin:26px 0 0;max-width:560px}
     .feature-media{height:68vh;overflow:hidden;background:#11100d;border-radius:32px;position:relative;border:1px solid rgba(0,0,0,0.08);box-shadow:0 20px 60px rgba(0,0,0,0.08)}
@@ -1204,7 +1204,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .journeys-section{background:#f2eee6;color:#000;width:100%;margin:0;padding:0;position:relative;z-index:2;border-top:1px solid rgba(0,0,0,.14);border-bottom:1px solid rgba(0,0,0,.14);overflow:clip}
     .journeys-container{width:100%;margin:0}
     .journeys-header{min-height:88svh;padding:96px max(48px,calc((100vw - 1120px)/2)) 64px;display:grid;grid-template-rows:auto 1fr auto;align-items:start}
-    .journeys-badge{display:flex;align-items:center;gap:10px;font-family:"Courier New",monospace;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:rgba(0,0,0,.54);margin:0}
+    .journeys-badge{display:flex;align-items:center;gap:10px;font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:rgba(0,0,0,.54);margin:0}
     .journeys-badge::before{content:"";width:7px;height:7px;background:var(--red,#f10b18)}
     .journeys-header h2{align-self:center;font-size:clamp(58px,8.5vw,128px);font-weight:800;letter-spacing:-.078em;line-height:.82;text-transform:uppercase;margin:64px 0;color:#000}
     .journey-head-line{display:block;overflow:hidden;padding-bottom:.07em}
@@ -1216,7 +1216,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .journeys-subtitle{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:clamp(19px,1.8vw,25px);letter-spacing:-.03em;line-height:1.22;color:rgba(0,0,0,.82);margin:0}
     .journeys-principles{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
     .journey-principle{display:grid;gap:7px;font-size:12px;line-height:1.2}
-    .journey-principle span{font-family:"Courier New",monospace;color:rgba(0,0,0,.42)}
+    .journey-principle span{font-family:'Inter',-apple-system,sans-serif;font-weight:600;color:rgba(0,0,0,.45)}
     .journey-principle strong{font-size:14px;letter-spacing:-.02em}
 
     .journeys-experience{width:min(1184px,calc(100% - 96px));margin:0 auto;padding:80px 0 96px;display:grid;grid-template-columns:250px minmax(360px,1.15fr) minmax(310px,.85fr);gap:32px;align-items:start;border-top:1px solid rgba(0,0,0,.18)}
@@ -1226,7 +1226,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .j-tab:hover,.j-tab.active{color:#000;padding-left:8px}
     .j-tab:focus{outline:none}
     .j-tab:focus-visible{outline:2px solid #000;outline-offset:3px}
-    .j-tab-index{font-family:"Courier New",monospace;font-size:11px;padding-top:4px}
+    .j-tab-index{font-family:'Inter',-apple-system,sans-serif;font-weight:700;font-size:11px;padding-top:4px}
     .j-tab-copy{display:grid;gap:5px}
     .j-tab-copy strong{font-size:18px;line-height:1;letter-spacing:-.04em;text-transform:uppercase}
     .j-tab-copy small{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;color:inherit}
@@ -1239,7 +1239,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .journeys-visual.is-changing img{opacity:.18;transform:scale(1.08)}
     .journeys-visual::after{content:"";position:absolute;inset:38% 0 0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.74));pointer-events:none}
     .journeys-meta-bar{position:absolute;z-index:2;left:24px;right:24px;bottom:24px;display:grid;gap:10px;color:#fff;margin:0;padding:0;border:0;background:transparent}
-    .j-meta-tag{font-family:"Courier New",monospace;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+    .j-meta-tag{font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.72)}
     .j-meta-desc{font-size:18px;font-weight:700;line-height:1.15;letter-spacing:-.03em;max-width:430px}
 
     .journeys-details{min-width:0}
@@ -1254,7 +1254,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .journey-card{width:100%;position:relative;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible;transition:opacity .3s ease,transform .45s cubic-bezier(.16,1,.3,1)}
     .journey-card:hover{transform:none;box-shadow:none}
     .j-card-head{margin:0 0 16px}
-    .j-time-badge{display:block;font-family:"Courier New",monospace;font-size:10px;font-weight:700;letter-spacing:.1em;line-height:1.35;text-transform:uppercase;color:var(--red,#f10b18);margin:0 0 12px}
+    .j-time-badge{display:block;font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;line-height:1.35;text-transform:uppercase;color:var(--gold,#C8A45C);margin:0 0 12px}
     .journey-card h3{font-size:clamp(30px,3vw,46px);font-weight:800;letter-spacing:-.055em;line-height:.92;color:#000;margin:0;text-transform:uppercase}
     .j-card-desc{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:17px;line-height:1.48;color:rgba(0,0,0,.76);margin:0 0 24px;max-width:520px}
     .j-card-footer{display:grid;gap:24px;padding-top:20px;border-top:1px solid rgba(0,0,0,.13)}
@@ -1298,7 +1298,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     .journeys-reserve-banner{margin:0;padding:80px max(48px,calc((100vw - 1120px)/2));background:#000;color:#fff;border:0;border-radius:0;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:64px;box-shadow:none;transition:none}
     .journeys-reserve-banner:hover{transform:none;box-shadow:none}
     .journeys-reserve-copy{display:grid;gap:12px}
-    .journeys-reserve-kicker{font-family:"Courier New",monospace;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.54)}
+    .journeys-reserve-kicker{font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6)}
     .journeys-reserve-banner h3{font-size:clamp(44px,6.4vw,92px);font-weight:800;letter-spacing:-.07em;line-height:.86;text-transform:uppercase;margin:0;max-width:920px}
     .journeys-reserve-banner p{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;color:rgba(255,255,255,.72);font-size:18px;margin:4px 0 0;max-width:620px;line-height:1.35}
     .journeys-section .j-reserve-btn{color:#fff!important;border-top:1px solid rgba(255,255,255,.35)!important;border-bottom:1px solid rgba(255,255,255,.35)!important;padding:18px 0!important;min-width:230px;justify-content:space-between!important;font-size:15px!important}
@@ -1709,11 +1709,11 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     <!-- Frequently Asked Questions (AEO / GEO Knowledge Section) -->
     <section id="faq" class="reveal" style="padding: 90px 24px; background: #ffffff; border-top: 1px solid rgba(0,0,0,0.12);">
       <div style="max-width: 1040px; margin: 0 auto;">
-        <span style="display: block; font-family: 'Courier New', monospace; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: #C8A45C; margin-bottom: 12px;">TRAVEL ESSENTIALS // VERIFIED ADVICE</span>
+        <span style="display: inline-block; font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8A6A23; background: rgba(200, 164, 92, 0.12); border: 1px solid rgba(200, 164, 92, 0.28); border-radius: 999px; padding: 4px 12px; margin-bottom: 16px;">TRAVEL ESSENTIALS // VERIFIED ADVICE</span>
         <h2 style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(30px, 4.2vw, 48px); font-weight: 800; letter-spacing: -0.05em; line-height: 1.05; text-transform: uppercase; margin: 0 0 40px; color: #000000;">FREQUENTLY ASKED QUESTIONS</h2>
 
         <div style="display: flex; flex-direction: column; gap: 16px;">
-          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.1); padding: 22px 26px; cursor: pointer;">
+          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
               <span>What is the best time of year to visit Morocco?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
@@ -1723,7 +1723,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
             </p>
           </details>
 
-          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.1); padding: 22px 26px; cursor: pointer;">
+          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
               <span>How much do private Morocco tours and desert expeditions cost?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
@@ -1733,7 +1733,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
             </p>
           </details>
 
-          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.1); padding: 22px 26px; cursor: pointer;">
+          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
               <span>Is Morocco safe for international tourists and solo female travelers?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
@@ -1743,7 +1743,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
             </p>
           </details>
 
-          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.1); padding: 22px 26px; cursor: pointer;">
+          <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
               <span>Do US, UK, Canadian, or EU citizens need a visa for Morocco?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>

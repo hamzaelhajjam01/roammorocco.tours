@@ -157,16 +157,20 @@ const schema = {
     .section-badge {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      font-family: "Courier New", monospace;
+      gap: 8px;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .12em;
-      color: rgba(0,0,0,.54);
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 5px 14px;
+      border-radius: 999px;
       margin-bottom: 24px;
     }
-    .section-badge::before { content:""; width:7px; height:7px; background:var(--red,#f10b18); }
+    .section-badge::before { content:""; width:6px; height:6px; border-radius: 50%; background: #C8A45C; }
 
     .section-title {
       font-size: clamp(52px, 8vw, 118px);
@@ -200,7 +204,7 @@ const schema = {
       margin-bottom: 80px;
       align-items: center;
     }
-    .about-media-box { height: 520px; overflow: hidden; border: 1px solid rgba(0,0,0,0.14); }
+    .about-media-box { height: 520px; overflow: hidden; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
     .about-media-box img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
     .about-media-box:hover img { transform: scale(1.05); }
 
@@ -212,23 +216,25 @@ const schema = {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 24px;
-      border-top: 1px solid rgba(0,0,0,0.18);
-      border-bottom: 1px solid rgba(0,0,0,0.18);
+      border-top: 1px solid rgba(0,0,0,0.1);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
       padding: 48px 0;
       margin-bottom: 80px;
     }
     .stat-item h4 { font-size: clamp(40px, 5vw, 72px); font-weight: 800; letter-spacing: -.07em; margin: 0 0 4px; }
-    .stat-item p { font-family: "Courier New", monospace; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(0,0,0,0.5); margin: 0; }
+    .stat-item p { font-family: 'Inter', -apple-system, sans-serif; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: rgba(0,0,0,0.55); margin: 0; }
 
     .team-card-box {
       background: #fff;
-      border: 1px solid rgba(0,0,0,0.14);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
       padding: 48px;
       margin-bottom: 96px;
     }
     .team-card-box h3 { font-size: 28px; font-weight: 800; letter-spacing: -.04em; text-transform: uppercase; margin: 0 0 16px; }
     .team-card-box p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: rgba(0,0,0,0.78); margin-bottom: 24px; }
-    .office-info { font-size: 13px; font-weight: 700; line-height: 1.6; border-top: 1px solid rgba(0,0,0,0.12); padding-top: 20px; color: rgba(0,0,0,0.6); }
+    .office-info { font-size: 13px; font-weight: 700; line-height: 1.6; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 20px; color: rgba(0,0,0,0.6); }
 
     .see-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; color: #000; }
 
@@ -241,20 +247,28 @@ const schema = {
     }
     .pillar-card {
       background: #fff;
-      border: 1px solid rgba(0,0,0,0.14);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
       padding: 40px 32px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
     }
     .pillar-num {
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: .14em;
-      color: var(--red, #f10b18);
-      margin-bottom: 12px;
-      display: block;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 4px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      width: fit-content;
+      margin-bottom: 14px;
     }
     .pillar-card h4 {
       font-size: 24px;
@@ -280,7 +294,9 @@ const schema = {
       margin: 28px 0 32px;
     }
     .guide-profile-card {
-      border: 1px solid rgba(0,0,0,0.1);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
       padding: 24px;
       background: #faf8f5;
     }
@@ -292,13 +308,18 @@ const schema = {
       color: #000;
     }
     .guide-tag {
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 10px;
       font-weight: 700;
-      color: var(--red, #f10b18);
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.15);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 3px 10px;
+      border-radius: 999px;
       text-transform: uppercase;
-      letter-spacing: .1em;
-      display: block;
+      letter-spacing: .06em;
+      display: inline-block;
+      width: fit-content;
       margin-bottom: 12px;
     }
     .guide-profile-card p {
@@ -314,11 +335,14 @@ const schema = {
       background: #0d0d0d;
       color: #fff;
       border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
       padding: 48px;
       margin-bottom: 80px;
     }
     .extension-tools-box .section-badge {
-      color: rgba(255,255,255,0.54);
+      color: #C8A45C;
+      background: rgba(200, 164, 92, 0.18);
+      border-color: rgba(200, 164, 92, 0.35);
     }
     .extension-tools-box h3 {
       font-size: clamp(28px, 3.5vw, 44px);
@@ -344,6 +368,7 @@ const schema = {
     .ext-badge-card {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 12px;
       padding: 20px 18px;
       display: flex;
       flex-direction: column;
@@ -354,16 +379,16 @@ const schema = {
     }
     .ext-badge-card:hover {
       background: rgba(255,255,255,0.1);
-      border-color: var(--red, #f10b18);
+      border-color: #C8A45C;
       transform: translateY(-2px);
     }
     .ext-store-name {
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       font-weight: 700;
-      color: var(--red, #f10b18);
+      color: #C8A45C;
       text-transform: uppercase;
-      letter-spacing: .08em;
+      letter-spacing: .06em;
     }
     .ext-badge-title {
       font-size: 15px;
@@ -398,7 +423,7 @@ const schema = {
     }
     .journeys-reserve-banner.in { opacity: 1; transform: translateY(0); }
     .journeys-reserve-copy { display: grid; gap: 12px; }
-    .journeys-reserve-kicker { font-family: "Courier New", monospace; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.54); }
+    .journeys-reserve-kicker { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #C8A45C; }
     .journeys-reserve-banner h3 { font-size: clamp(44px, 6.4vw, 92px); font-weight: 800; letter-spacing: -.07em; line-height: .86; text-transform: uppercase; margin: 0; max-width: 920px; }
     .journeys-reserve-banner p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: rgba(255,255,255,.72); font-size: 18px; margin: 4px 0 0; max-width: 620px; line-height: 1.35; }
     .j-reserve-btn { color: #fff!important; border-top: 1px solid rgba(255,255,255,.35)!important; border-bottom: 1px solid rgba(255,255,255,.35)!important; padding: 18px 0!important; min-width: 230px; justify-content: space-between!important; font-size: 15px!important; display: inline-flex!important; align-items: center!important; }

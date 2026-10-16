@@ -147,10 +147,10 @@ const schema = {
     }
 
     .roam-breadcrumbs {
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: .06em;
+      letter-spacing: .05em;
       color: var(--text-muted);
       margin-bottom: 24px;
     }
@@ -161,6 +161,10 @@ const schema = {
       font-weight: 600;
     }
 
+    .roam-breadcrumbs a:hover {
+      color: var(--gold, #C8A45C);
+    }
+
     .article-header {
       margin-bottom: 40px;
       border-bottom: 1px solid var(--border);
@@ -168,15 +172,19 @@ const schema = {
     }
 
     .category-badge {
-      display: inline-block;
-      font-family: "Courier New", monospace;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: .12em;
-      color: #ffffff;
-      background: #000000;
-      padding: 4px 10px;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 4px 12px;
+      border-radius: 999px;
       margin-bottom: 18px;
     }
 
@@ -202,9 +210,9 @@ const schema = {
       flex-wrap: wrap;
       gap: 16px;
       font-size: 13px;
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       text-transform: uppercase;
-      letter-spacing: .05em;
+      letter-spacing: .04em;
       color: var(--text-muted);
       border-top: 1px solid var(--border);
       padding-top: 16px;
@@ -302,18 +310,26 @@ const schema = {
 
     .verdict-card {
       background: #faf8f5;
-      padding: 16px;
-      border: 1px solid var(--border);
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
     }
 
     .verdict-card .tag {
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 11px;
       text-transform: uppercase;
-      font-weight: bold;
-      color: var(--gold);
-      margin-bottom: 6px;
-      display: block;
+      font-weight: 700;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+      display: inline-block;
+      width: fit-content;
     }
 
     .verdict-card .title {
@@ -332,7 +348,9 @@ const schema = {
     .table-container {
       overflow-x: auto;
       margin: 36px 0;
-      border: 1px solid #000000;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
       background: #ffffff;
     }
 
@@ -350,12 +368,13 @@ const schema = {
     }
 
     th {
-      background: #000000;
+      background: #18181B;
       color: #ffffff;
-      font-family: "Courier New", monospace;
+      font-family: 'Inter', -apple-system, sans-serif;
       text-transform: uppercase;
-      letter-spacing: .05em;
-      font-size: 13px;
+      letter-spacing: .04em;
+      font-size: 12px;
+      font-weight: 700;
     }
 
     tr:last-child td {
@@ -469,16 +488,21 @@ const schema = {
 
     .roam-callout-ai {
       background: #ffffff;
-      border: 1px solid var(--border);
-      border-left: 5px solid var(--gold) !important;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
       padding: 24px;
       margin: 36px 0;
       font-size: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
     .roam-field-note {
       background: #faf8f5;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-left: 4px solid var(--gold, #C8A45C);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
       padding: 28px;
       margin: 40px 0;
       position: relative;
@@ -494,12 +518,12 @@ const schema = {
     }
 
     .roam-field-note-author {
-      font-family: "Courier New", monospace;
-      font-size: 12px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
       text-transform: uppercase;
       letter-spacing: .06em;
-      color: var(--gold);
-      font-weight: bold;
+      color: #8A6A23;
+      font-weight: 700;
     }
 
     .faq-accordion {
@@ -508,8 +532,11 @@ const schema = {
 
     .faq-item {
       background: #ffffff;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
       margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
     }
 
     .faq-question {
@@ -553,7 +580,9 @@ const schema = {
       color: #ffffff;
       padding: 40px 32px;
       margin: 50px 0;
-      border-left: 6px solid var(--gold);
+      border-radius: 20px;
+      border: 1px solid rgba(200, 164, 92, 0.45);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
     }
 
     .roam-morocco-bridge h3 {
@@ -573,15 +602,17 @@ const schema = {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--gold);
+      background: var(--gold, #C8A45C);
       color: #000000 !important;
-      font-weight: 800;
+      font-weight: 700;
       font-size: 13px;
       text-transform: uppercase;
-      letter-spacing: .08em;
+      letter-spacing: .06em;
       padding: 14px 28px;
+      border-radius: 10px;
       text-decoration: none !important;
       transition: all 0.2s ease;
+      font-family: 'Inter', -apple-system, sans-serif;
     }
 
     .bridge-cta-btn:hover {

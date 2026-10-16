@@ -35,7 +35,8 @@
 /* Control Panel (Left Column) */
 .estimator-controls {
   background: var(--calc-bg);
-  border: 1px solid var(--calc-border);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
   padding: 36px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
@@ -82,12 +83,12 @@
   color: #000000;
   font-size: 11px;
   font-weight: 900;
-  font-family: "Courier New", monospace;
+  font-family: 'Inter', -apple-system, sans-serif;
   border-radius: 50%;
 }
 
 .est-current-val {
-  font-family: "Courier New", monospace;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 13px;
   font-weight: 700;
   color: var(--calc-gold-dark);
@@ -111,6 +112,7 @@
 .est-route-card {
   background: var(--calc-cream);
   border: 1px solid var(--calc-border);
+  border-radius: 12px;
   padding: 16px;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -203,9 +205,9 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  font-family: "Courier New", monospace;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--calc-text-muted);
 }
 
@@ -219,6 +221,7 @@
 .est-pill {
   background: var(--calc-cream);
   border: 1px solid var(--calc-border);
+  border-radius: 10px;
   padding: 12px 14px;
   text-align: center;
   cursor: pointer;
@@ -253,8 +256,9 @@
 /* Live Estimate Card (Right Column) */
 .estimator-summary-card {
   background: #ffffff;
-  border: 1px solid var(--calc-border);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-top: 4px solid var(--calc-gold);
+  border-radius: 16px;
   padding: 34px 28px;
   box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
   position: sticky;
@@ -271,10 +275,11 @@
 .curr-btn {
   background: none;
   border: 1px solid var(--calc-border);
+  border-radius: 6px;
   padding: 4px 10px;
-  font-family: "Courier New", monospace;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -286,11 +291,11 @@
 }
 
 .est-total-kicker {
-  font-family: "Courier New", monospace;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 11px;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   color: var(--calc-gold-dark);
   display: block;
   margin-bottom: 4px;
@@ -320,10 +325,11 @@
   background: #fdf6e7;
   color: var(--calc-gold-dark);
   border: 1px solid #f2e2be;
-  font-family: "Courier New", monospace;
+  border-radius: 999px;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 11px;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 3px 10px;
   text-transform: uppercase;
 }
 
@@ -357,7 +363,7 @@
 }
 
 .est-cat-meta span.price {
-  font-family: "Courier New", monospace;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-weight: 700;
   color: #000000;
 }
@@ -367,7 +373,7 @@
   height: 5px;
   background: #f0ece3;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 999px;
 }
 
 .est-meter-bar {
@@ -380,6 +386,7 @@
 .est-route-intel {
   background: var(--calc-cream);
   border: 1px solid var(--calc-border);
+  border-radius: 12px;
   padding: 16px;
   margin-bottom: 24px;
   font-size: 12.5px;
@@ -407,14 +414,15 @@
 
 .btn-lock-quote {
   width: 100%;
-  background: #000000;
+  background: #18181B;
   color: #ffffff;
-  border: 1px solid #000000;
-  font-family: Helvetica, Arial, sans-serif;
+  border: 1px solid #18181B;
+  border-radius: 10px;
+  font-family: 'Inter', -apple-system, sans-serif;
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   padding: 16px 20px;
   cursor: pointer;
   transition: all 0.25s ease;
@@ -435,7 +443,8 @@
 .est-lead-modal {
   display: none;
   background: #ffffff;
-  border: 1px solid var(--calc-border);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
   padding: 24px;
   margin-top: 18px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
@@ -457,7 +466,8 @@
   box-sizing: border-box;
   padding: 12px 14px;
   margin-bottom: 12px;
-  border: 1px solid var(--calc-border);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   background: var(--calc-cream);
   font-family: inherit;
   font-size: 13.5px;
@@ -472,6 +482,7 @@
 
 .est-lead-msg {
   padding: 14px;
+  border-radius: 8px;
   font-size: 13px;
   line-height: 1.5;
   margin-top: 12px;
