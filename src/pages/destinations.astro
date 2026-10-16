@@ -320,8 +320,25 @@ const schema = {
     .dest-body p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.5; color: rgba(0, 0, 0, 0.76); margin: 0 0 24px; }
     .dest-footer-meta { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(0, 0, 0, 0.08); padding-top: 20px; }
     .dest-season-tag { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; color: #8A6A23; background: rgba(200, 164, 92, 0.12); border: 1px solid rgba(200, 164, 92, 0.28); padding: 5px 12px; border-radius: 999px; letter-spacing: 0.04em; }
-    .see-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: #111; padding: 8px 16px; border-radius: 999px; background: rgba(0, 0, 0, 0.04); border: 1px solid rgba(0, 0, 0, 0.08); transition: all .25s ease; text-decoration: none; }
-    .see-more-btn:hover { color: #8A6A23; background: rgba(200, 164, 92, 0.12); border-color: rgba(200, 164, 92, 0.32); transform: translateX(3px); }
+    .see-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #000;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: none;
+      transition: color .25s ease, transform .25s ease;
+      text-decoration: none;
+    }
+    .see-more-btn:hover {
+      color: #C8A45C;
+      transform: translateX(4px);
+    }
 
     /* ── EXACT HOME PAGE RESERVE BANNER (1-TO-1 MATCH) ── */
     .journeys-reserve-banner {
@@ -345,8 +362,29 @@ const schema = {
     .journeys-reserve-kicker { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #C8A45C; }
     .journeys-reserve-banner h3 { font-size: clamp(44px, 6.4vw, 92px); font-weight: 800; letter-spacing: -.07em; line-height: .86; text-transform: uppercase; margin: 0; max-width: 920px; }
     .journeys-reserve-banner p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: rgba(255,255,255,.72); font-size: 18px; margin: 4px 0 0; max-width: 620px; line-height: 1.35; }
-    .j-reserve-btn { color: #fff!important; border-top: 1px solid rgba(255,255,255,.35)!important; border-bottom: 1px solid rgba(255,255,255,.35)!important; padding: 18px 0!important; min-width: 230px; justify-content: space-between!important; font-size: 15px!important; display: inline-flex!important; align-items: center!important; }
+    .j-reserve-btn {
+      color: #fff !important;
+      background: transparent !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.35) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
+      padding: 18px 0 !important;
+      min-width: 230px;
+      justify-content: space-between !important;
+      font-size: 15px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      box-shadow: none !important;
+      text-decoration: none !important;
+    }
     .j-reserve-arrow { font-size: 22px; transition: transform .25s ease; }
+    .j-reserve-btn:hover {
+      color: #fff !important;
+      background: transparent !important;
+      border-top-color: rgba(255, 255, 255, 0.6) !important;
+      border-bottom-color: rgba(255, 255, 255, 0.6) !important;
+    }
     .j-reserve-btn:hover .j-reserve-arrow { transform: translateX(5px); }
 
     @media(max-width:850px){
@@ -550,7 +588,7 @@ const schema = {
         <h3>Tell us your Morocco dream. We’ll design the road.</h3>
         <p>Share your dates, travel style, and must-see places. We’ll turn them into one private, workable Morocco itinerary.</p>
       </div>
-      <a href="/index.html#contact" class="see-more-btn j-reserve-btn">
+      <a href="/index.html#contact" class="j-reserve-btn">
         <span>Start planning</span><span class="j-reserve-arrow" aria-hidden="true">→</span>
       </a>
     </div>
