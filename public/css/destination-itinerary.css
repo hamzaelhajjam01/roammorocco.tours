@@ -1107,9 +1107,9 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #ecfdf5;
-  color: #047857;
-  border: 1px solid #a7f3d0;
+  background: rgba(200, 164, 92, 0.12);
+  color: #8A6A23;
+  border: 1px solid rgba(200, 164, 92, 0.32);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 10.5px;
   font-weight: 800;
@@ -1118,7 +1118,7 @@
   border-radius: 9999px;
   text-transform: uppercase;
   margin-bottom: 10px;
-  box-shadow: 0 1px 3px rgba(16, 185, 129, 0.1);
+  box-shadow: 0 1px 3px rgba(200, 164, 92, 0.12);
 }
 
 .dest-prelocked-title {
@@ -1173,8 +1173,8 @@
 
 .dest-tier-btn.active {
   background: #ffffff;
-  color: #047857;
-  box-shadow: 0 3px 10px rgba(5, 150, 105, 0.14);
+  color: #8A6A23;
+  box-shadow: 0 3px 12px rgba(200, 164, 92, 0.18), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .dest-tier-pax {
@@ -1192,11 +1192,11 @@
 }
 
 .dest-tier-btn.active .dest-tier-pax {
-  color: #047857;
+  color: #0f172a;
 }
 
 .dest-tier-btn.active .dest-tier-veh {
-  color: #059669;
+  color: #8A6A23;
   font-weight: 700;
 }
 
@@ -1207,20 +1207,20 @@
 }
 
 .dest-prelocked-price-box {
-  background: linear-gradient(135deg, rgba(236, 253, 245, 0.95) 0%, rgba(240, 253, 244, 0.85) 100%);
-  border: 1.5px solid #a7f3d0;
+  background: linear-gradient(135deg, rgba(200, 164, 92, 0.09) 0%, rgba(200, 164, 92, 0.04) 100%);
+  border: 1.5px solid rgba(200, 164, 92, 0.35);
   border-radius: 20px;
   padding: 14px 16px;
   text-align: center;
   margin-bottom: 14px;
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.08);
+  box-shadow: 0 4px 16px rgba(200, 164, 92, 0.1);
 }
 
 .dest-prelocked-price-num {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 28px;
   font-weight: 900;
-  color: #047857;
+  color: #8A6A23;
   letter-spacing: -0.03em;
   line-height: 1;
 }
@@ -1229,7 +1229,7 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 11px;
   font-weight: 600;
-  color: #065f46;
+  color: #8A6A23;
   margin-top: 4px;
   display: block;
 }
@@ -1355,7 +1355,7 @@
   .smt-price {
     font-size: 13px;
     font-weight: 900;
-    color: #047857;
+    color: #8A6A23;
     line-height: 1.2;
     margin-top: 2px;
   }
