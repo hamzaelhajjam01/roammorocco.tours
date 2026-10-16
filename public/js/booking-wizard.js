@@ -13,52 +13,53 @@
   // ── 1. TRANSFER & INTERCITY PRICING TABLE (PER VEHICLE, ALL-INCLUSIVE) ──
   const WIZARD_RATES = {
     'Marrakech Airport (RAK)': {
-      'Marrakech Medina': { '1_4': 25, '5_7': 40, '8_12': 65 },
-      'Marrakech Palmeraie': { '1_4': 35, '5_7': 50, '8_12': 75 },
-      'Essaouira': { '1_4': 95, '5_7': 125, '8_12': 180 },
-      'Taghazout': { '1_4': 150, '5_7': 190, '8_12': 260 },
-      'Agadir City': { '1_4': 130, '5_7': 170, '8_12': 240 },
-      'Casablanca City': { '1_4': 150, '5_7': 190, '8_12': 270 }
+      'Marrakech Medina': { '1_4': 25, '5_7': 35, '8_12': 55 },
+      'Marrakech Palmeraie': { '1_4': 35, '5_7': 40, '8_12': 59 },
+      'Essaouira': { '1_4': 85, '5_7': 130, '8_12': 199 },
+      'Taghazout': { '1_4': 145, '5_7': 170, '8_12': 265 },
+      'Agadir City': { '1_4': 125, '5_7': 145, '8_12': 225 },
+      'Casablanca City': { '1_4': 145, '5_7': 165, '8_12': 255 }
     },
     'Casablanca Airport (CMN)': {
-      'Marrakech Medina': { '1_4': 145, '5_7': 185, '8_12': 260 },
-      'Marrakech Palmeraie': { '1_4': 150, '5_7': 190, '8_12': 270 },
-      'Casablanca City': { '1_4': 40, '5_7': 60, '8_12': 90 },
-      'Rabat': { '1_4': 85, '5_7': 115, '8_12': 160 }
+      'Marrakech Medina': { '1_4': 145, '5_7': 165, '8_12': 255 },
+      'Marrakech Palmeraie': { '1_4': 150, '5_7': 170, '8_12': 260 },
+      'Casablanca City': { '1_4': 40, '5_7': 55, '8_12': 85 },
+      'Rabat': { '1_4': 75, '5_7': 100, '8_12': 155 },
+      'Essaouira': { '1_4': 190, '5_7': 240, '8_12': 372 }
     },
     'Agadir Airport (AGA)': {
-      'Taghazout': { '1_4': 40, '5_7': 60, '8_12': 90 },
-      'Agadir City': { '1_4': 30, '5_7': 45, '8_12': 70 },
-      'Essaouira': { '1_4': 120, '5_7': 155, '8_12': 210 },
-      'Marrakech Medina': { '1_4': 135, '5_7': 175, '8_12': 245 }
+      'Taghazout': { '1_4': 45, '5_7': 60, '8_12': 93 },
+      'Agadir City': { '1_4': 25, '5_7': 35, '8_12': 55 },
+      'Essaouira': { '1_4': 105, '5_7': 138, '8_12': 215 },
+      'Marrakech Medina': { '1_4': 125, '5_7': 145, '8_12': 225 }
     },
     'Marrakech Medina': {
-      'Essaouira': { '1_4': 85, '5_7': 115, '8_12': 170 },
-      'Agafay Desert': { '1_4': 140, '5_7': 180, '8_12': 240 },
-      'Ourika Valley': { '1_4': 140, '5_7': 180, '8_12': 240 },
-      'Ouzoud Waterfalls': { '1_4': 200, '5_7': 250, '8_12': 340 },
-      'Casablanca City': { '1_4': 145, '5_7': 185, '8_12': 260 },
-      'Agadir City': { '1_4': 125, '5_7': 165, '8_12': 230 },
-      'Taghazout': { '1_4': 145, '5_7': 185, '8_12': 250 },
-      'Imlil': { '1_4': 65, '5_7': 95, '8_12': 140 }
+      'Essaouira': { '1_4': 85, '5_7': 130, '8_12': 199 },
+      'Agafay Desert': { '1_4': 75, '5_7': 95, '8_12': 149 },
+      'Ourika Valley': { '1_4': 75, '5_7': 95, '8_12': 149 },
+      'Ouzoud Waterfalls': { '1_4': 160, '5_7': 210, '8_12': 280 },
+      'Casablanca City': { '1_4': 145, '5_7': 165, '8_12': 255 },
+      'Agadir City': { '1_4': 125, '5_7': 145, '8_12': 225 },
+      'Taghazout': { '1_4': 145, '5_7': 170, '8_12': 265 },
+      'Imlil': { '1_4': 69, '5_7': 98, '8_12': 149 }
     },
     'Marrakech Palmeraie': {
-      'Essaouira': { '1_4': 90, '5_7': 120, '8_12': 175 },
-      'Agafay Desert': { '1_4': 145, '5_7': 185, '8_12': 245 },
-      'Ourika Valley': { '1_4': 145, '5_7': 185, '8_12': 245 },
-      'Ouzoud Waterfalls': { '1_4': 205, '5_7': 255, '8_12': 345 },
-      'Casablanca City': { '1_4': 145, '5_7': 185, '8_12': 260 },
-      'Agadir City': { '1_4': 130, '5_7': 170, '8_12': 235 },
-      'Taghazout': { '1_4': 150, '5_7': 190, '8_12': 255 },
-      'Imlil': { '1_4': 70, '5_7': 100, '8_12': 145 }
+      'Essaouira': { '1_4': 90, '5_7': 135, '8_12': 205 },
+      'Agafay Desert': { '1_4': 80, '5_7': 100, '8_12': 155 },
+      'Ourika Valley': { '1_4': 80, '5_7': 100, '8_12': 155 },
+      'Ouzoud Waterfalls': { '1_4': 165, '5_7': 215, '8_12': 285 },
+      'Casablanca City': { '1_4': 145, '5_7': 165, '8_12': 255 },
+      'Agadir City': { '1_4': 130, '5_7': 150, '8_12': 230 },
+      'Taghazout': { '1_4': 150, '5_7': 175, '8_12': 270 },
+      'Imlil': { '1_4': 74, '5_7': 103, '8_12': 154 }
     },
     'Essaouira': {
-      'Agadir City': { '1_4': 110, '5_7': 145, '8_12': 200 },
-      'Taghazout': { '1_4': 105, '5_7': 140, '8_12': 190 },
-      'Casablanca City': { '1_4': 210, '5_7': 270, '8_12': 380 }
+      'Agadir City': { '1_4': 105, '5_7': 138, '8_12': 215 },
+      'Taghazout': { '1_4': 115, '5_7': 150, '8_12': 233 },
+      'Casablanca City': { '1_4': 190, '5_7': 240, '8_12': 372 }
     },
     'Casablanca City': {
-      'Rabat': { '1_4': 75, '5_7': 105, '8_12': 150 }
+      'Rabat': { '1_4': 65, '5_7': 90, '8_12': 140 }
     }
   };
 
@@ -489,6 +490,39 @@
 
     // Run initial passenger counter setup
     setPaxAndTier(2, null);
+
+    // URL search params support for route pre-selection
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlFrom = urlParams.get('from') || urlParams.get('pickup');
+      const urlTo = urlParams.get('to') || urlParams.get('dest');
+      const urlTier = urlParams.get('tier');
+
+      if (urlTier) {
+        setPaxAndTier(undefined, urlTier);
+      }
+      if (urlFrom && pickupSelect) {
+        for (let i = 0; i < pickupSelect.options.length; i++) {
+          if (pickupSelect.options[i].value.toLowerCase().includes(urlFrom.toLowerCase())) {
+            pickupSelect.selectedIndex = i;
+            state.pickup = pickupSelect.options[i].value;
+            break;
+          }
+        }
+      }
+      if (urlTo && destSelect) {
+        for (let i = 0; i < destSelect.options.length; i++) {
+          if (destSelect.options[i].value.toLowerCase().includes(urlTo.toLowerCase())) {
+            destSelect.selectedIndex = i;
+            state.destination = destSelect.options[i].value;
+            break;
+          }
+        }
+      }
+      if (state.pickup && state.destination) {
+        updateCalculation();
+      }
+    } catch (err) {}
   }
 
   // ── 3. DESKTOP QR CODE MODAL ──
@@ -562,13 +596,34 @@
 
       let currentTier = '1_4';
 
+      // Check URL search params for tier preselection (e.g. ?tier=5_7)
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const requestedTier = urlParams.get('tier');
+        if (requestedTier && prices[requestedTier]) {
+          currentTier = requestedTier;
+          tierBtns.forEach(b => {
+            const match = b.getAttribute('data-tier') === currentTier;
+            b.classList.toggle('active', match);
+          });
+        }
+      } catch (err) {}
+
       if (dateInput) {
         const today = new Date().toISOString().split('T')[0];
         dateInput.min = today;
       }
 
+      function getCitySurcharge() {
+        if (!pickupSelect || !pickupSelect.selectedOptions || !pickupSelect.selectedOptions[0]) return 0;
+        const s = pickupSelect.selectedOptions[0].getAttribute('data-surcharge');
+        return s ? (parseInt(s, 10) || 0) : 0;
+      }
+
       function updateCard() {
-        const currentPrice = prices[currentTier] || prices['1_4'];
+        const basePrice = prices[currentTier] || prices['1_4'];
+        const currentPrice = basePrice + getCitySurcharge();
+
         if (priceNum) priceNum.textContent = currentPrice + '€';
         if (waBtnPrice) waBtnPrice.textContent = '— ' + currentPrice + '€';
 
@@ -594,7 +649,8 @@
           e.preventDefault();
           const pickupCity = pickupSelect ? pickupSelect.value : 'Marrakech';
           const travelDate = dateInput ? dateInput.value : '';
-          const currentPrice = prices[currentTier] || prices['1_4'];
+          const basePrice = prices[currentTier] || prices['1_4'];
+          const currentPrice = basePrice + getCitySurcharge();
 
           let vehicleLabel = 'Private Sedan / 4x4 Prado (1-4 pax)';
           if (currentTier === '5_7') vehicleLabel = 'Mercedes VIP Van (5-7 pax)';

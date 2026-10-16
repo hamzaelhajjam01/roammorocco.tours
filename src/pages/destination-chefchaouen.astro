@@ -254,9 +254,10 @@ const schema = {
               <div class="dest-form-field">
                 <label class="dest-form-label" for="pickupCityChefchaouen">Departure City</label>
                 <select class="dest-form-select dest-prelocked-city" id="pickupCityChefchaouen">
-                  <option value="Fes (Hotel or Riad)" selected>Fes (Hotel or Riad)</option>
-                  <option value="Tangier (Port / Hotel)">Tangier (Port / Hotel)</option>
-                  <option value="Tetouan">Tetouan</option>
+                  <option value="Fes (Hotel or Riad)" data-surcharge="0" selected>Fes (Hotel or Riad)</option>
+                  <option value="Tangier (Port / Hotel)" data-surcharge="-50">Tangier (Port / Hotel) (-50€)</option>
+                  <option value="Tetouan" data-surcharge="-70">Tetouan (-70€)</option>
+                  <option value="Casablanca (Airport or Hotel)" data-surcharge="120">Casablanca (Airport or Hotel) (+120€)</option>
                 </select>
               </div>
 
