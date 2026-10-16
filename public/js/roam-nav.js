@@ -39,6 +39,8 @@
       if (backdrop) backdrop.classList.add("active");
       const cTrig = document.getElementById("rmConciergeTrigger");
       if (cTrig) cTrig.classList.add("rm-hidden");
+      const smtBar = document.querySelector(".sticky-mobile-tour-bar");
+      if (smtBar) smtBar.classList.add("smt-hidden");
     }
 
     function closeDrawer() {
@@ -48,6 +50,8 @@
       if (backdrop) backdrop.classList.remove("active");
       const cTrig = document.getElementById("rmConciergeTrigger");
       if (cTrig) cTrig.classList.remove("rm-hidden");
+      const smtBar = document.querySelector(".sticky-mobile-tour-bar");
+      if (smtBar) smtBar.classList.remove("smt-hidden");
     }
 
     function toggleDrawer(e) {

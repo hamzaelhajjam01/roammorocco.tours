@@ -637,6 +637,10 @@
     if (!bar) return;
 
     function handleScroll() {
+      if (document.body.classList.contains('mobile-drawer-open')) {
+        bar.classList.remove('visible');
+        return;
+      }
       if (window.scrollY > 320) {
         bar.classList.add('visible');
       } else {

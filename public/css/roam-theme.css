@@ -372,7 +372,7 @@
     right: 16px !important;
     bottom: calc(16px + env(safe-area-inset-bottom, 0px)) !important;
     top: auto !important;
-    z-index: 200 !important;
+    z-index: 9000 !important;
   }
 
   .top.at-bottom .navbox {
@@ -532,6 +532,15 @@
   .mobile-drawer-backdrop.active {
     opacity: 1;
     pointer-events: auto;
+  }
+
+  /* Automatically hide any sticky tour bottom bar when mobile drawer is open */
+  body.mobile-drawer-open .sticky-mobile-tour-bar,
+  .sticky-mobile-tour-bar.smt-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(140%) !important;
   }
 
   /* Mobile Drawer Positioning & Sizing */

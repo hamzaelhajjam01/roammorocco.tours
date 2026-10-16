@@ -1303,10 +1303,10 @@
 @media (max-width: 900px) {
   .sticky-mobile-tour-bar {
     position: fixed;
-    bottom: 12px;
-    left: 12px;
-    right: 12px;
-    z-index: 9999;
+    bottom: calc(74px + env(safe-area-inset-bottom, 0px));
+    left: 16px;
+    right: 16px;
+    z-index: 8900;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px) saturate(1.8);
     -webkit-backdrop-filter: blur(20px) saturate(1.8);
@@ -1318,12 +1318,26 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    transform: translateY(120%);
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(140%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
     box-sizing: border-box;
   }
   .sticky-mobile-tour-bar.visible {
     transform: translateY(0);
+  }
+  body.mobile-drawer-open .sticky-mobile-tour-bar,
+  .sticky-mobile-tour-bar.smt-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(140%) !important;
+  }
+  @media (max-width: 360px) {
+    .sticky-mobile-tour-bar {
+      left: 10px;
+      right: 10px;
+      padding: 8px 12px;
+    }
   }
   .smt-info {
     min-width: 0;
