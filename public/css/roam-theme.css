@@ -123,7 +123,8 @@
   display: flex;
   gap: 16px;
 }
-.top.at-top nav.desktop-nav a {
+.top.at-top nav.desktop-nav > a,
+.top.at-top nav.desktop-nav .nav-link {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: -.2px;
@@ -135,8 +136,10 @@
   text-decoration: none;
   transition: all .25s ease;
 }
-.top.at-top nav.desktop-nav a:hover,
-.top.at-top nav.desktop-nav a.active {
+.top.at-top nav.desktop-nav > a:hover,
+.top.at-top nav.desktop-nav .nav-link:hover,
+.top.at-top nav.desktop-nav > a.active,
+.top.at-top nav.desktop-nav .nav-link.active {
   background: rgba(0, 0, 0, 0.06);
   color: #000;
 }
@@ -236,7 +239,8 @@
   display: flex;
   gap: 4px;
 }
-.top.at-bottom nav.desktop-nav a {
+.top.at-bottom nav.desktop-nav > a,
+.top.at-bottom nav.desktop-nav .nav-link {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .01em;
@@ -248,8 +252,10 @@
   text-decoration: none;
   transition: all .25s ease;
 }
-.top.at-bottom nav.desktop-nav a:hover,
-.top.at-bottom nav.desktop-nav a.active {
+.top.at-bottom nav.desktop-nav > a:hover,
+.top.at-bottom nav.desktop-nav .nav-link:hover,
+.top.at-bottom nav.desktop-nav > a.active,
+.top.at-bottom nav.desktop-nav .nav-link.active {
   background: rgba(255, 255, 255, 0.22);
   color: #fff;
   transform: translateY(-1px);
