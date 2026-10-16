@@ -61,36 +61,582 @@ const { showLoader = false } = Astro.props;
 
   <header class="top at-top">
     <div class="navbox">
-      <a class="wordmark" href="/#top">
+      <a class="wordmark" href="/#top" aria-label="Roam Morocco Home">
         <img id="navLogo" src="/img/logo-for-dark-bg.png" alt="Roam Morocco Tours">
       </a>
-      <button class="burger-btn" id="burgerBtn" aria-label="Toggle menu">
+      <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu">
         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
       </button>
-      <nav class="desktop-nav"><a href="/#transfers">Transfers</a><a href="/experiences.html">Tours &amp; Day Trips</a><a href="/morocco-private-driver.html">Private Chauffeur</a><a href="/destinations.html">Destinations</a></nav>
+
+      <!-- DESKTOP NAVIGATION WITH KEYWORD-RICH DROPDOWNS & REAL PRICE BADGES -->
+      <nav class="desktop-nav" aria-label="Main navigation">
+        
+        <!-- 1. TRANSFERS DROPDOWN -->
+        <div class="nav-dropdown-item">
+          <a href="/transfers.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            <span>Transfers</span>
+            <svg class="nav-chevron" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg>
+          </a>
+          <div class="nav-dropdown-panel glass-elevated">
+            <div class="dropdown-header">
+              <span class="dropdown-kicker">POPULAR PRIVATE TRANSFERS</span>
+              <span class="dropdown-sub">Fixed door-to-door rates · Licensed chauffeur · Luggage included</span>
+            </div>
+            <div class="dropdown-list">
+              <a href="/transfers/marrakech-to-essaouira.html" class="dropdown-route-row" title="Private Transfer from Marrakech to Essaouira">
+                <div class="route-main">
+                  <span class="route-title">Marrakech → Essaouira</span>
+                  <span class="route-meta">2h 30m · Highway R207 · Door to Door</span>
+                </div>
+                <span class="route-price-tag">85€</span>
+              </a>
+              <a href="/transfers/marrakech-to-casablanca.html" class="dropdown-route-row" title="Private Transfer from Marrakech to Casablanca">
+                <div class="route-main">
+                  <span class="route-title">Marrakech → Casablanca</span>
+                  <span class="route-meta">2h 45m · Highway A1 · Door to Door</span>
+                </div>
+                <span class="route-price-tag">145€</span>
+              </a>
+              <a href="/transfers/casablanca-airport-to-marrakech.html" class="dropdown-route-row" title="Casablanca Airport CMN to Marrakech Private Transfer">
+                <div class="route-main">
+                  <span class="route-title">Casablanca Airport (CMN) → Marrakech</span>
+                  <span class="route-meta">2h 30m · Flight Tracking &amp; Name-Sign Pickup</span>
+                </div>
+                <span class="route-price-tag">140€</span>
+              </a>
+              <a href="/transfers/marrakech-airport-to-marrakech.html" class="dropdown-route-row" title="Marrakech Menara Airport RAK to Medina Private Transfer">
+                <div class="route-main">
+                  <span class="route-title">Marrakech Airport (RAK) → Medina</span>
+                  <span class="route-meta">20m · Direct Riad Luggage Assistance</span>
+                </div>
+                <span class="route-price-tag">25€</span>
+              </a>
+              <a href="/transfers/marrakech-airport-to-palmeraie-marrakech.html" class="dropdown-route-row" title="Marrakech Menara Airport RAK to Palmeraie Private Transfer">
+                <div class="route-main">
+                  <span class="route-title">Marrakech Airport (RAK) → Palmeraie</span>
+                  <span class="route-meta">30m · Luxury Resort Drop-off</span>
+                </div>
+                <span class="route-price-tag">35€</span>
+              </a>
+              <a href="/transfers/marrakech-to-agadir.html" class="dropdown-route-row" title="Private Transfer from Marrakech to Agadir and Taghazout">
+                <div class="route-main">
+                  <span class="route-title">Marrakech → Agadir &amp; Taghazout</span>
+                  <span class="route-meta">3h 00m · Atlantic Coast Expressway</span>
+                </div>
+                <span class="route-price-tag">125€</span>
+              </a>
+            </div>
+            <div class="dropdown-footer">
+              <a href="/transfers.html" class="dropdown-footer-cta">
+                <span>⚡ View all 120+ Moroccan private transfers &amp; rates</span>
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. TOURS & CIRCUITS DROPDOWN -->
+        <div class="nav-dropdown-item">
+          <a href="/tours.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            <span>Tours &amp; Day Trips</span>
+            <svg class="nav-chevron" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg>
+          </a>
+          <div class="nav-dropdown-panel glass-elevated tours-panel">
+            <div class="dropdown-header">
+              <span class="dropdown-kicker">PRIVATE EXPEDITIONS &amp; CIRCUITS</span>
+              <span class="dropdown-sub">100% Private · Dedicated Prado 4x4 or Mercedes Van · Unhurried</span>
+            </div>
+            <div class="dropdown-list">
+              <a href="/destination-sahara-desert.html" class="dropdown-route-row" title="3-Day Private Sahara Desert Tour from Marrakech to Merzouga">
+                <div class="route-main">
+                  <span class="route-title">3-Day Merzouga Sahara Desert Tour</span>
+                  <span class="route-meta">High Atlas · Erg Chebbi Luxury Camp · Camel Trek</span>
+                </div>
+                <span class="route-price-tag highlight-tag">From 390€</span>
+              </a>
+              <a href="/destination-marrakech.html#agafay" class="dropdown-route-row" title="Agafay Desert Sunset Dinner and Camel Ride from Marrakech">
+                <div class="route-main">
+                  <span class="route-title">Agafay Desert Sunset Dinner &amp; Camel Ride</span>
+                  <span class="route-meta">45m from Medina · Candlelit Berber Tent &amp; Campfire</span>
+                </div>
+                <span class="route-price-tag">From 60€</span>
+              </a>
+              <a href="/destination-essaouira.html" class="dropdown-route-row" title="Private Day Trip from Marrakech to Essaouira">
+                <div class="route-main">
+                  <span class="route-title">Essaouira Coastal Bastion Day Trip</span>
+                  <span class="route-meta">Full Day · Atlantic Ramparts · Fresh Seafood &amp; Souks</span>
+                </div>
+                <span class="route-price-tag">120€</span>
+              </a>
+              <a href="/destination-high-atlas.html" class="dropdown-route-row" title="Ourika Valley and High Atlas Berber Trail Private Tour">
+                <div class="route-main">
+                  <span class="route-title">Ourika Valley &amp; Atlas Mountains Hike</span>
+                  <span class="route-meta">Full Day · Waterfalls · Authentic Berber Home Lunch</span>
+                </div>
+                <span class="route-price-tag">110€</span>
+              </a>
+              <a href="/destination-ait-benhaddou.html" class="dropdown-route-row" title="Ait Benhaddou and Ouarzazate Kasbah Day Trip">
+                <div class="route-main">
+                  <span class="route-title">Aït Benhaddou &amp; Ouarzazate Kasbah Tour</span>
+                  <span class="route-meta">Full Day · Tizi n'Tichka Pass 2,260m · UNESCO Kasbah</span>
+                </div>
+                <span class="route-price-tag">150€</span>
+              </a>
+              <a href="/custom-morocco-tour.html" class="dropdown-route-row" title="Custom Multi-Day Bespoke Morocco Tour">
+                <div class="route-main">
+                  <span class="route-title">Custom Multi-Day Bespoke Tour</span>
+                  <span class="route-meta">7 to 14 Days · Tailored Itinerary &amp; Boutique Riads</span>
+                </div>
+                <span class="route-price-tag">Bespoke</span>
+              </a>
+            </div>
+            <div class="dropdown-footer">
+              <a href="/tours.html" class="dropdown-footer-cta">
+                <span>✨ View full catalog of private tours &amp; day trips</span>
+                <span class="cta-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. DIRECT HIGH-CONVERTING COMMERCIAL SECTIONS -->
+        <a href="/morocco-private-driver.html" class="nav-link" title="Morocco Private Driver &amp; Chauffeur Service">Private Chauffeur</a>
+        <a href="/destinations.html" class="nav-link" title="Explore Morocco Travel Destinations">Destinations</a>
+      </nav>
     </div>
+
+    <!-- WHATSAPP CTA BUTTON -->
     <a class="latest nav-wa-btn" href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
       <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
       <span>WhatsApp</span>
     </a>
+
+    <!-- BACK TO TOP BUTTON -->
     <a class="back-top-btn" href="#top" aria-label="Back to top" onclick="scrollToTop(event)">
       <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </a>
   </header>
 
+  <!-- MOBILE NAV DRAWER WITH ACCORDIONS -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div class="mobile-drawer-inner">
-      <a href="/#transfers" onclick="closeDrawer()">Transfers</a>
-      <a href="/experiences.html" onclick="closeDrawer()">Tours &amp; Day Trips</a>
+      
+      <!-- Mobile Transfers Accordion -->
+      <div class="mob-accordion-group">
+        <button type="button" class="mob-accordion-toggle" onclick="toggleMobileAccordion('mobTransfersPanel', this)">
+          <span>Private Transfers</span>
+          <span class="mob-chevron">▾</span>
+        </button>
+        <div class="mob-accordion-panel" id="mobTransfersPanel">
+          <a href="/transfers/marrakech-to-essaouira.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Marrakech → Essaouira</span>
+            <span class="mob-badge">85€</span>
+          </a>
+          <a href="/transfers/marrakech-to-casablanca.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Marrakech → Casablanca</span>
+            <span class="mob-badge">145€</span>
+          </a>
+          <a href="/transfers/casablanca-airport-to-marrakech.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Casablanca Airport → Marrakech</span>
+            <span class="mob-badge">140€</span>
+          </a>
+          <a href="/transfers/marrakech-airport-to-marrakech.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Marrakech Airport → Medina</span>
+            <span class="mob-badge">25€</span>
+          </a>
+          <a href="/transfers/marrakech-airport-to-palmeraie-marrakech.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Marrakech Airport → Palmeraie</span>
+            <span class="mob-badge">35€</span>
+          </a>
+          <a href="/transfers/marrakech-to-agadir.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Marrakech → Agadir &amp; Taghazout</span>
+            <span class="mob-badge">125€</span>
+          </a>
+          <a href="/transfers.html" class="mob-route-row" style="color: #C8A45C; font-weight: 700;" onclick="closeDrawer()">
+            <span>⚡ View All 120+ Transfer Routes →</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile Tours Accordion -->
+      <div class="mob-accordion-group">
+        <button type="button" class="mob-accordion-toggle" onclick="toggleMobileAccordion('mobToursPanel', this)">
+          <span>Tours &amp; Day Trips</span>
+          <span class="mob-chevron">▾</span>
+        </button>
+        <div class="mob-accordion-panel" id="mobToursPanel">
+          <a href="/destination-sahara-desert.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>3-Day Merzouga Sahara Desert</span>
+            <span class="mob-badge">From 390€</span>
+          </a>
+          <a href="/destination-marrakech.html#agafay" class="mob-route-row" onclick="closeDrawer()">
+            <span>Agafay Desert Sunset Dinner</span>
+            <span class="mob-badge">From 60€</span>
+          </a>
+          <a href="/destination-essaouira.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Essaouira Coastal Day Trip</span>
+            <span class="mob-badge">120€</span>
+          </a>
+          <a href="/destination-high-atlas.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Ourika Valley &amp; Atlas Hike</span>
+            <span class="mob-badge">110€</span>
+          </a>
+          <a href="/destination-ait-benhaddou.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Aït Benhaddou &amp; Ouarzazate</span>
+            <span class="mob-badge">150€</span>
+          </a>
+          <a href="/custom-morocco-tour.html" class="mob-route-row" onclick="closeDrawer()">
+            <span>Custom Multi-Day Expedition</span>
+            <span class="mob-badge">Bespoke</span>
+          </a>
+          <a href="/tours.html" class="mob-route-row" style="color: #C8A45C; font-weight: 700;" onclick="closeDrawer()">
+            <span>✨ View All Tours &amp; Day Trips Catalog →</span>
+          </a>
+        </div>
+      </div>
+
       <a href="/morocco-private-driver.html" onclick="closeDrawer()">Private Chauffeur</a>
       <a href="/destinations.html" onclick="closeDrawer()">Destinations</a>
       <a href="/morocco-trip-cost-calculator.html" onclick="closeDrawer()">Cost Calculator</a>
       <a href="/travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
       <a href="/about.html" onclick="closeDrawer()">About Us</a>
-      <a href="/blog.html" onclick="closeDrawer()">Blog</a>
+      <a href="/blog.html" onclick="closeDrawer()">Travel Journal</a>
+      
       <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." class="mobile-wa-cta" target="_blank" rel="noopener" onclick="closeDrawer()">
         <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
         <span>Chat on WhatsApp</span>
       </a>
     </div>
   </div>
+
+  <script is:inline>
+    function toggleMobileAccordion(panelId, btn) {
+      var panel = document.getElementById(panelId);
+      if (!panel) return;
+      var isOpen = panel.classList.contains('open');
+      document.querySelectorAll('.mob-accordion-panel.open').forEach(function(p) {
+        p.classList.remove('open');
+        if (p.previousElementSibling) {
+          p.previousElementSibling.classList.remove('active');
+        }
+      });
+      if (!isOpen) {
+        panel.classList.add('open');
+        if (btn) btn.classList.add('active');
+      }
+    }
+  </script>
+
+  <style is:global>
+    /* ── NAV DROPDOWN ARCHITECTURE ── */
+    .nav-dropdown-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .nav-dropdown-item .nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: -.2px;
+      padding: 6px 12px;
+      border-radius: 9999px !important;
+      background: transparent;
+      border: none;
+      text-decoration: none;
+      transition: all .25s ease;
+      cursor: pointer;
+    }
+    .top.at-top .nav-dropdown-item .nav-link {
+      color: #000;
+    }
+    .top.at-top .nav-dropdown-item:hover .nav-link,
+    .top.at-top .nav-dropdown-item .nav-link:focus {
+      background: rgba(0, 0, 0, 0.06);
+      color: #000;
+    }
+    .top.at-bottom .nav-dropdown-item .nav-link {
+      color: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .top.at-bottom .nav-dropdown-item:hover .nav-link,
+    .top.at-bottom .nav-dropdown-item .nav-link:focus {
+      background: rgba(255, 255, 255, 0.22);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .nav-chevron {
+      transition: transform 0.25s ease;
+    }
+    .nav-dropdown-item:hover .nav-chevron,
+    .nav-dropdown-item:focus-within .nav-chevron {
+      transform: rotate(180deg);
+    }
+
+    /* ── DROPDOWN PANELS WITH INVISIBLE HOVER BRIDGE ── */
+    .nav-dropdown-panel {
+      position: absolute;
+      width: 370px;
+      border-radius: 20px;
+      padding: 16px;
+      box-sizing: border-box;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.22s;
+      z-index: 250;
+      text-align: left;
+    }
+
+    /* Invisible hover bridge connecting trigger button to dropdown panel */
+    .nav-dropdown-panel::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: transparent;
+      pointer-events: auto;
+    }
+
+    /* When at top (opens downward) */
+    .top.at-top .nav-dropdown-panel {
+      top: calc(100% + 4px);
+      left: 0;
+      transform: translateY(6px);
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(28px) saturate(1.8);
+      -webkit-backdrop-filter: blur(28px) saturate(1.8);
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+      color: #111;
+    }
+    .top.at-top .nav-dropdown-panel.tours-panel {
+      left: -60px;
+    }
+
+    /* When at bottom / docked (opens upward) */
+    .top.at-bottom .nav-dropdown-panel {
+      bottom: calc(100% + 6px);
+      top: auto;
+      left: 50%;
+      transform: translateX(-50%) translateY(6px);
+      background: rgba(18, 18, 18, 0.98);
+      backdrop-filter: blur(32px) saturate(1.8);
+      -webkit-backdrop-filter: blur(32px) saturate(1.8);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+      color: #fff;
+    }
+    .top.at-bottom .nav-dropdown-panel::before {
+      top: auto;
+      bottom: -20px;
+      height: 20px;
+    }
+
+    /* Hover & Focus show */
+    .nav-dropdown-item:hover .nav-dropdown-panel,
+    .nav-dropdown-item:focus-within .nav-dropdown-panel {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .top.at-top .nav-dropdown-item:hover .nav-dropdown-panel,
+    .top.at-top .nav-dropdown-item:focus-within .nav-dropdown-panel {
+      transform: translateY(0);
+    }
+    .top.at-bottom .nav-dropdown-item:hover .nav-dropdown-panel,
+    .top.at-bottom .nav-dropdown-item:focus-within .nav-dropdown-panel {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Dropdown Inner Content */
+    .dropdown-header {
+      padding-bottom: 10px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .top.at-bottom .dropdown-header {
+      border-bottom-color: rgba(255, 255, 255, 0.1);
+    }
+    .dropdown-kicker {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #C8A45C;
+    }
+    .dropdown-sub {
+      font-size: 11px;
+      color: rgba(0, 0, 0, 0.55);
+      font-weight: 500;
+    }
+    .top.at-bottom .dropdown-sub {
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .dropdown-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .dropdown-route-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.18s ease, transform 0.18s ease;
+    }
+    .top.at-top .dropdown-route-row:hover {
+      background: rgba(200, 164, 92, 0.09);
+      transform: translateX(2px);
+    }
+    .top.at-bottom .dropdown-route-row:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateX(2px);
+    }
+
+    .route-main {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      text-align: left;
+    }
+    .route-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: inherit;
+      line-height: 1.25;
+    }
+    .dropdown-route-row:hover .route-title {
+      color: #C8A45C;
+    }
+    .route-meta {
+      font-size: 11px;
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 500;
+    }
+    .top.at-bottom .route-meta {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .route-price-tag {
+      font-size: 12px;
+      font-weight: 800;
+      color: #9A7228;
+      background: rgba(200, 164, 92, 0.14);
+      border: 1px solid rgba(200, 164, 92, 0.35);
+      padding: 3px 8px;
+      border-radius: 9999px;
+      white-space: nowrap;
+      line-height: 1.2;
+      flex-shrink: 0;
+    }
+    .top.at-bottom .route-price-tag {
+      color: #E5C378;
+      background: rgba(200, 164, 92, 0.18);
+      border-color: rgba(200, 164, 92, 0.45);
+    }
+    .route-price-tag.highlight-tag {
+      background: #C8A45C;
+      color: #000;
+      border-color: #C8A45C;
+    }
+
+    .dropdown-footer {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .top.at-bottom .dropdown-footer {
+      border-top-color: rgba(255, 255, 255, 0.1);
+    }
+    .dropdown-footer-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      font-weight: 700;
+      color: #C8A45C;
+      text-decoration: none;
+      padding: 4px 6px;
+      border-radius: 6px;
+      transition: background 0.18s ease;
+    }
+    .dropdown-footer-cta:hover {
+      background: rgba(200, 164, 92, 0.1);
+    }
+
+    /* ── MOBILE ACCORDION STYLES ── */
+    .mob-accordion-group {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .mob-accordion-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 8px 0;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+    }
+    .mob-chevron {
+      font-size: 14px;
+      color: #C8A45C;
+      transition: transform 0.25s ease;
+    }
+    .mob-accordion-toggle.active .mob-chevron {
+      transform: rotate(180deg);
+    }
+    .mob-accordion-panel {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      padding-left: 12px;
+      margin-bottom: 8px;
+      border-left: 2px solid rgba(200, 164, 92, 0.4);
+    }
+    .mob-accordion-panel.open {
+      display: flex;
+    }
+    .mob-route-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 4px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+    }
+    .mob-route-row:hover {
+      color: #C8A45C;
+    }
+    .mob-badge {
+      font-size: 11px;
+      font-weight: 800;
+      color: #E5C378;
+      background: rgba(200, 164, 92, 0.18);
+      border: 1px solid rgba(200, 164, 92, 0.35);
+      padding: 2px 7px;
+      border-radius: 9999px;
+    }
+  </style>

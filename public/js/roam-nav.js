@@ -112,8 +112,8 @@
       }
     });
 
-    const isSubfolder = window.location.pathname.includes('/blog/');
-    const waLogoSrc = isSubfolder ? '../img/whatsapp-logo.png' : 'img/whatsapp-logo.png';
+    const isSubfolder = window.location.pathname.includes('/blog/') || window.location.pathname.includes('/transfers/');
+    const waLogoSrc = '/img/whatsapp-logo.png';
     const WA_IMG = `<img src="${waLogoSrc}" alt="WhatsApp" width="20" height="20" class="wa-btn-icon">`;
     
     function getContextWhatsAppMessage() {
@@ -222,8 +222,8 @@
       btn.style.setProperty('text-decoration', 'none', 'important');
     });
 
-    const darkLogo = isSubfolder ? '../img/logo-for-dark-bg.png?v=20261012_nav4' : 'img/logo-for-dark-bg.png?v=20261012_nav4';
-    const lightLogo = isSubfolder ? '../img/logo-for-light-bg.png?v=20261012_nav4' : 'img/logo-for-light-bg.png?v=20261012_nav4';
+    const darkLogo = '/img/logo-for-dark-bg.png?v=20261015_v2';
+    const lightLogo = '/img/logo-for-light-bg.png?v=20261015_v2';
 
     function onScroll() {
       const currentY = window.scrollY;

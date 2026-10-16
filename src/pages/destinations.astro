@@ -160,6 +160,32 @@ const schema = {
       padding: 140px 48px 0;
     }
 
+    .dest-breadcrumb {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(0, 0, 0, 0.45);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .dest-breadcrumb a {
+      color: rgba(0, 0, 0, 0.55);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .dest-breadcrumb a:hover {
+      color: #C8A45C;
+    }
+    .dest-breadcrumb span {
+      color: #000000;
+      font-weight: 700;
+    }
+
     .section-badge {
       display: inline-flex;
       align-items: center;
@@ -258,7 +284,9 @@ const schema = {
     }
     .dest-card {
       background: #fff;
-      border: 1px solid rgba(0,0,0,0.14);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 16px;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       opacity: 0;
@@ -266,17 +294,17 @@ const schema = {
       transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
     }
     .dest-card.in { opacity: 1; transform: translateY(0); }
-    .dest-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.14); }
+    .dest-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.12); }
     .dest-media { position: relative; width: 100%; height: 300px; overflow: hidden; background: #111; }
     .dest-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.16,1,.3,1); }
     .dest-card:hover .dest-media img { transform: scale(1.08); }
-    .dest-badge-tag { position: absolute; top: 16px; left: 16px; background: rgba(0,0,0,0.85); color: #fff; font-family: "Courier New", monospace; font-size: 10px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; padding: 6px 12px; }
+    .dest-badge-tag { position: absolute; top: 16px; left: 16px; background: rgba(18, 18, 18, 0.88); backdrop-filter: blur(8px); color: #fff; font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.15); }
     .dest-body { padding: 28px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
     .dest-body h3 { font-size: 28px; font-weight: 800; letter-spacing: -.055em; line-height: .95; text-transform: uppercase; margin: 0 0 14px; }
     .dest-body p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.5; color: rgba(0,0,0,0.76); margin: 0 0 24px; }
-    .dest-footer-meta { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(0,0,0,0.12); padding-top: 20px; }
-    .see-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; color: #000; transition: color .25s ease, transform .25s ease; }
-    .see-more-btn:hover { color: #666; transform: translateX(4px); }
+    .dest-footer-meta { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 20px; }
+    .see-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: #000; transition: color .25s ease, transform .25s ease; }
+    .see-more-btn:hover { color: #C8A45C; transform: translateX(4px); }
 
     /* ── EXACT HOME PAGE RESERVE BANNER (1-TO-1 MATCH) ── */
     .journeys-reserve-banner {
@@ -316,6 +344,10 @@ const schema = {
 
   <main>
     <div class="page-container reveal-block">
+      <nav class="dest-breadcrumb" aria-label="Breadcrumb">
+        <a href="/index.html">HOME</a> &nbsp;/&nbsp; <span>DESTINATIONS</span>
+      </nav>
+
       <div class="section-badge">01 / DESTINATIONS OF THE KINGDOM</div>
       
       <h1 class="section-title">

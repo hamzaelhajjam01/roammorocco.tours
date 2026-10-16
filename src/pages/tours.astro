@@ -1,0 +1,840 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Morocco Private Tours & Day Trips Catalog: Sahara, Atlas & Coastal Circuits | Roam Morocco";
+const description = "Explore Roam Morocco's complete private tours catalog: 3-day Sahara desert expeditions, Agafay sunset dinners, Essaouira day trips, and High Atlas hikes. 100% private with Prado 4x4 or Mercedes van.";
+const canonical = "https://roammorocco.tours/tours.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+
+interface Tour {
+  id: string;
+  category: "circuit" | "daytrip" | "trek";
+  categoryLabel: string;
+  duration: string;
+  title: string;
+  price: string;
+  priceUnit: string;
+  image: string;
+  imageAlt: string;
+  excerpt: string;
+  itinerary: string[];
+  link: string;
+  featured?: boolean;
+}
+
+const toursList: Tour[] = [
+  {
+    id: "sahara-3day",
+    category: "circuit",
+    categoryLabel: "Multi-Day Sahara Circuit",
+    duration: "3 Days / 2 Nights",
+    title: "3-Day Premium Sahara Desert Explorer (Erg Chebbi)",
+    price: "From €390",
+    priceUnit: "per vehicle · cash to driver",
+    image: "/img/wall-camp.jpg",
+    imageAlt: "Erg Chebbi Luxury Sahara Desert Camp at Sunset",
+    excerpt: "Morocco's most iconic private desert route. Cross the Tizi n'Tichka High Atlas pass, visit UNESCO Ait Benhaddou, and sleep under Saharan stars in a private luxury tent.",
+    itinerary: ["Marrakech → Tichka Pass → Ait Benhaddou", "Dades Valley → Todra Gorge → Erg Chebbi Dunes", "Sunrise Camel Trek → Draa Valley → Marrakech"],
+    link: "/destination-sahara-desert.html",
+    featured: true
+  },
+  {
+    id: "agafay-sunset",
+    category: "daytrip",
+    categoryLabel: "Desert Day Trip & Dinner",
+    duration: "Late Afternoon & Evening (5h)",
+    title: "Agafay Desert Sunset Dinner & Private Camel Ride",
+    price: "From €60",
+    priceUnit: "per vehicle · dinner packages available",
+    image: "/img/safari-sahara-fjlSCoiv_qM-unsplash.jpg",
+    imageAlt: "Agafay Desert Golden Dunes Near Marrakech",
+    excerpt: "Just 45 minutes from the Marrakech Medina. Enjoy a private camel ride over stony lunar dunes, panoramic Atlas sunset views, and an authentic candlelit Berber dinner with Gnawa fire performance.",
+    itinerary: ["4:30 PM Private Riad Pickup", "Scenic Dunes Camel Trek & Mint Tea", "Candlelit Camp Dinner & Live Acoustic Music", "10:30 PM Smooth Drop-off"],
+    link: "/destination-marrakech.html#agafay",
+    featured: true
+  },
+  {
+    id: "essaouira-daytrip",
+    category: "daytrip",
+    categoryLabel: "Coastal Excursion",
+    duration: "Full Day (8:30 AM – 6:30 PM)",
+    title: "Essaouira Atlantic Coastal Bastion Day Excursion",
+    price: "€120",
+    priceUnit: "flat per vehicle (up to 4 pax)",
+    image: "/img/rigel-ibisQEDxODo-unsplash.jpg",
+    imageAlt: "Essaouira Historic Sea Ramparts and Blue Boats",
+    excerpt: "Escape the Marrakech heat for the breezy Atlantic coast. Discover 18th-century sea ramparts, certified women's argan oil cooperatives, vibrant artisan woodcarvers, and fresh fish off the grill.",
+    itinerary: ["Chichaoua Argan Forest & Cooperative Stop", "Guided Walk on the UNESCO Sqala Bastion", "Fresh Grilled Fish at the Fishing Port", "Artisanal Thuya Wood Souk Exploration"],
+    link: "/destination-essaouira.html"
+  },
+  {
+    id: "ourika-atlas",
+    category: "daytrip",
+    categoryLabel: "High Atlas Mountains",
+    duration: "Full Day (9:00 AM – 5:00 PM)",
+    title: "Ourika Valley & High Atlas Berber Waterfalls Tour",
+    price: "€110",
+    priceUnit: "flat per vehicle",
+    image: "/img/review-atlas.jpg",
+    imageAlt: "Ourika Valley High Atlas Mountains Stream and Waterfalls",
+    excerpt: "Journey into the foothills of the High Atlas. Walk alongside glacial mountain streams, visit an authentic Berber home for fresh mint tea, and hike up to the famous Setti Fatma seven waterfalls.",
+    itinerary: ["Asni & Ourika Valley Mountain Drive", "Traditional Berber Family Tea Hospitality", "Guided Hike to Setti Fatma Waterfalls", "Riverside Tagine Lunch Beside Mountain Stream"],
+    link: "/destination-high-atlas.html"
+  },
+  {
+    id: "ait-benhaddou-cinema",
+    category: "daytrip",
+    categoryLabel: "Heritage & Film History",
+    duration: "Full Day (7:30 AM – 7:00 PM)",
+    title: "Aït Benhaddou & Ouarzazate Kasbah Heritage Tour",
+    price: "€150",
+    priceUnit: "flat per vehicle",
+    image: "/img/tour_cinema_ait_benhaddou.jpg",
+    imageAlt: "Ait Benhaddou UNESCO Fortified Kasbah",
+    excerpt: "Cross the High Atlas via the breathtaking Tizi n'Tichka pass (2,260m) to explore the world's most famous clay fortress — backdrop of Gladiator, Game of Thrones, and Lawrence of Arabia.",
+    itinerary: ["Panoramic Tizi n'Tichka Summit Stop", "Telouet Kasbah Palace Hidden Valley", "UNESCO Ksar Ait Benhaddou Guided Walk", "Ouarzazate Atlas Film Studios"],
+    link: "/destination-ait-benhaddou.html"
+  },
+  {
+    id: "heritage-3day",
+    category: "circuit",
+    categoryLabel: "Multi-Day Cultural Circuit",
+    duration: "3 Days / 2 Nights",
+    title: "3-Day Heritage & Cinema Kasbah Tour",
+    price: "From €380",
+    priceUnit: "per vehicle · boutique stays included",
+    image: "/img/pol-kasbah.jpg",
+    imageAlt: "Ancient Moroccan Mud-Brick Kasbah at Sunrise",
+    excerpt: "Deep cultural immersion connecting Marrakech, the Valley of One Thousand Kasbahs, and the dramatic rose-colored Todra and Dades Gorges with boutique earthen riad accommodation.",
+    itinerary: ["High Atlas & UNESCO Ait Benhaddou", "Dades Canyons & Valley of the Roses", "Todra Gorge 300m Cliffs & Return"],
+    link: "/tour-heritage-cinema.html"
+  },
+  {
+    id: "active-atlas-trek",
+    category: "trek",
+    categoryLabel: "Active Alpine Trek",
+    duration: "Full Day (8:00 AM – 6:00 PM)",
+    title: "1-Day Active High Atlas & Mount Toubkal Foothills Hike",
+    price: "€125",
+    priceUnit: "flat per vehicle · local guide included",
+    image: "/img/tour_active_atlas_toubkal.jpg",
+    imageAlt: "Mount Toubkal High Atlas Hiking Trail",
+    excerpt: "Designed for active travelers who want fresh alpine air and breathtaking mountain panoramas. Trek from the Imlil trailhead through Aremd village with a certified local Berber mountain guide.",
+    itinerary: ["Marrakech to Imlil Valley Transfer", "Guided Hike Through Walnut Groves to Aremd", "Rooftop Berber Lunch with Mount Toubkal Views", "Scenic Return Drive"],
+    link: "/tour-active-atlas.html"
+  },
+  {
+    id: "custom-tour",
+    category: "circuit",
+    categoryLabel: "Bespoke Private Expedition",
+    duration: "7 to 14 Days",
+    title: "Bespoke Multi-Day Custom Morocco Grand Expedition",
+    price: "Tailored",
+    priceUnit: "custom quote within 24h",
+    image: "/img/carlos-leret-kiYzznir-uo-unsplash.jpg",
+    imageAlt: "Morocco Sahara Caravan and Starlit Sky",
+    excerpt: "Your personal dream journey across Morocco. We craft custom itineraries uniting imperial medinas (Fes, Marrakech, Meknes), the blue alleys of Chefchaouen, Sahara glamping, and coastal retreats.",
+    itinerary: ["Tailored Departure from Marrakech, Casablanca, or Tangier", "Handpicked 5-Star Riads & Desert Camps", "Dedicated 4x4 Prado or Mercedes Van Fleet", "24/7 Private WhatsApp Concierge"],
+    link: "/custom-morocco-tour.html",
+    featured: true
+  }
+];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://roammorocco.tours/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tours & Day Trips",
+        "item": canonical
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Roam Morocco Private Tours & Excursions Catalog",
+    "description": "Comprehensive catalog of private Morocco tours, Sahara expeditions, and day trips.",
+    "numberOfItems": toursList.length,
+    "itemListElement": toursList.map((t, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "name": t.title,
+      "url": `https://roammorocco.tours${t.link}`
+    }))
+  }
+];
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  bodyClass="roam-light-theme"
+  schema={schema}
+>
+  <main class="tours-catalog-main">
+    
+    <div class="page-container reveal-block in">
+      
+      <!-- Monospace Uppercase Breadcrumbs -->
+      <nav class="dest-breadcrumb" aria-label="Breadcrumb">
+        <a href="/index.html">HOME</a> &nbsp;/&nbsp; <span>TOURS &amp; DAY TRIPS</span>
+      </nav>
+
+      <!-- Signature Red Kicker Badge -->
+      <div class="section-badge">01 / PRIVATE TOURS OF THE KINGDOM</div>
+
+      <!-- Giant Signature Title -->
+      <h1 class="section-title">
+        <span class="split-line"><span class="split-word">CURATED PRIVATE</span></span>
+        <span class="split-line"><span class="split-word">MOROCCO TOURS &amp;</span></span>
+        <span class="split-line"><span class="split-word">EXCURSIONS.</span></span>
+      </h1>
+
+      <!-- Split Row: Subtitle + 3 Principles Bar -->
+      <div class="section-header-bottom">
+        <p class="section-subtitle">
+          No crowded tour buses. No fixed group schedules. Every journey is 100% private and built around your unhurried pace, featuring dedicated executive transport, handpicked local Berber guides, and authentic Moroccan hospitality.
+        </p>
+        <div class="principles-bar">
+          <div class="principle-item"><span>01</span><strong>Dedicated 4x4 Fleet</strong></div>
+          <div class="principle-item"><span>02</span><strong>Your Tailored Pacing</strong></div>
+          <div class="principle-item"><span>03</span><strong>Local Berber Hosts</strong></div>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs matching destinations.astro -->
+      <div class="filter-bar" role="tablist" aria-label="Filter tours by style">
+        <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Experiences ({toursList.length})</button>
+        <button type="button" class="filter-btn" data-filter="circuit" role="tab" aria-selected="false">Multi-Day Sahara Circuits</button>
+        <button type="button" class="filter-btn" data-filter="daytrip" role="tab" aria-selected="false">Day Trips from Marrakech</button>
+        <button type="button" class="filter-btn" data-filter="trek" role="tab" aria-selected="false">High Atlas Active Treks</button>
+      </div>
+
+    </div>
+
+    <!-- Tours Grid Section -->
+    <section class="tours-grid-section">
+      <div class="page-container" style="padding-top:0;">
+        
+        <div class="tours-grid" id="toursGrid">
+          {toursList.map((tour) => (
+            <article class={`tour-card ${tour.featured ? 'featured-tour' : ''}`} data-category={tour.category}>
+              
+              <div class="tour-visual">
+                <img src={tour.image} alt={tour.imageAlt} loading="lazy" decoding="async">
+                <span class="tour-duration-badge">{tour.duration}</span>
+                {tour.featured && <span class="tour-signature-tag">★ SIGNATURE</span>}
+              </div>
+
+              <div class="tour-content">
+                <div class="tour-meta-row">
+                  <span class="tour-cat-label">{tour.categoryLabel}</span>
+                  <div class="tour-rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rate-val">5.0</span>
+                  </div>
+                </div>
+
+                <h2 class="tour-card-title">
+                  <a href={tour.link}>{tour.title}</a>
+                </h2>
+
+                <p class="tour-card-excerpt">{tour.excerpt}</p>
+
+                <!-- Itinerary Highlights List -->
+                <div class="tour-itinerary-preview">
+                  <span class="itin-label">ITINERARY STAGES:</span>
+                  <ul>
+                    {tour.itinerary.map((step) => (
+                      <li>
+                        <span class="step-bullet">↳</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <!-- Price and Actions Row -->
+                <div class="tour-card-footer">
+                  <div class="tour-price-box">
+                    <span class="price-from-label">LOCKED PRICE:</span>
+                    <strong class="price-amount">{tour.price}</strong>
+                    <span class="price-sub">{tour.priceUnit}</span>
+                  </div>
+
+                  <div class="tour-btns-wrap">
+                    <a href={tour.link} class="tour-detail-btn">
+                      <span>View Tour Details →</span>
+                    </a>
+                    <a
+                      href={`https://wa.me/212653506441?text=${encodeURIComponent(`Salam Roam Morocco! I'd like to book the "${tour.title}" tour.`)}`}
+                      target="_blank"
+                      rel="noopener"
+                      class="tour-wa-icon-btn"
+                      aria-label={`Book ${tour.title} on WhatsApp`}
+                    >
+                      <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="18" height="18" class="wa-btn-icon">
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bespoke Custom Itinerary Banner -->
+    <section class="tours-custom-banner">
+      <div class="tours-container">
+        <div class="custom-banner-inner">
+          <div class="custom-banner-copy">
+            <span class="custom-kicker">LOOKING FOR SOMETHING UNIQUE?</span>
+            <h2>Tell Us Your Morocco Dream. We'll Design The Road.</h2>
+            <p>
+              Whether you want a private 10-day Grand Tour across imperial cities, a private romantic honeymoon escape in Erg Chebbi, 
+              or a family-friendly coastal journey, our local team crafts tailored itineraries with dedicated chauffeur and boutique riads.
+            </p>
+          </div>
+          <div class="custom-banner-action">
+            <a href="/custom-morocco-tour.html" class="custom-plan-btn">
+              <span>Start Custom Itinerary →</span>
+            </a>
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20tailored%20private%20tour." target="_blank" rel="noopener" class="custom-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="20" height="20" class="wa-btn-icon">
+              <span>Chat with Expedition Curator</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Layout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const tourCards = document.querySelectorAll('.tour-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-selected', 'true');
+
+        const filter = this.dataset.filter;
+        tourCards.forEach(card => {
+          const category = card.dataset.category;
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style is:global>
+  /* ── TOURS CATALOG SIGNATURE EDITORIAL DESIGN SYSTEM ── */
+  body {
+    background: #f2eee6;
+    color: #000000;
+  }
+
+  .tours-catalog-main {
+    background: #f2eee6;
+    color: #000000;
+    min-height: 100vh;
+  }
+
+  /* Page Container (Max width 1380px matching destinations.astro) */
+  .page-container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 140px 48px 80px;
+  }
+
+  /* ── BREADCRUMBS MATCHING DESTINATIONS.ASTRO ── */
+  .dest-breadcrumb {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(0, 0, 0, 0.54);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .dest-breadcrumb a {
+    color: rgba(0, 0, 0, 0.54);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+  .dest-breadcrumb a:hover {
+    color: var(--red, #f10b18);
+  }
+  .dest-breadcrumb span {
+    color: rgba(0, 0, 0, 0.85);
+  }
+
+  /* ── KICKER BADGE WITH RED SQUARE ── */
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: rgba(0,0,0,.54);
+    margin-bottom: 24px;
+  }
+  .section-badge::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background: var(--red, #f10b18);
+  }
+
+  /* ── MASSIVE HEADLINE TYPOGRAPHY ── */
+  .section-title {
+    font-size: clamp(52px, 8vw, 118px);
+    font-weight: 800;
+    letter-spacing: -.078em;
+    line-height: .84;
+    text-transform: uppercase;
+    margin: 0 0 48px;
+    color: #000000;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .split-line {
+    display: block;
+    overflow: hidden;
+    padding-bottom: .08em;
+  }
+  .split-word {
+    display: block;
+  }
+
+  /* ── SECTION HEADER BOTTOM (SUBTITLE + PRINCIPLES) ── */
+  .section-header-bottom {
+    display: grid;
+    grid-template-columns: minmax(260px, 460px) 1fr;
+    gap: 64px;
+    align-items: end;
+    border-top: 1px solid rgba(0,0,0,.18);
+    padding-top: 28px;
+    margin-bottom: 48px;
+  }
+  .section-subtitle {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: clamp(19px, 1.8vw, 25px);
+    letter-spacing: -.03em;
+    line-height: 1.25;
+    color: rgba(0,0,0,.82);
+    margin: 0;
+  }
+  .principles-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .principle-item {
+    display: grid;
+    gap: 6px;
+    font-size: 12px;
+  }
+  .principle-item span {
+    font-family: "Courier New", monospace;
+    color: rgba(0,0,0,.45);
+  }
+  .principle-item strong {
+    font-size: 14px;
+    letter-spacing: -.02em;
+    color: #000;
+  }
+
+  /* ── FILTER BUTTONS MATCHING DESTINATIONS.ASTRO ── */
+  .filter-bar {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+  .filter-btn {
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.14);
+    padding: 12px 24px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .25s ease;
+    color: #000000;
+    font-family: inherit;
+  }
+  .filter-btn.active, .filter-btn:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: #000000;
+  }
+
+  /* Tours Grid */
+  .tours-grid-section {
+    padding-bottom: 80px;
+  }
+  .tours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .tour-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 0 !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .tour-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.09);
+  }
+  .tour-card.featured-tour {
+    border-color: #000000;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.06);
+  }
+
+  .tour-visual {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 0 !important;
+  }
+  .tour-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 !important;
+    transition: transform 0.5s ease;
+  }
+  .tour-card:hover .tour-visual img {
+    transform: scale(1.04);
+  }
+  .tour-duration-badge {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    background: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    padding: 6px 12px;
+    border-radius: 0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .tour-signature-tag {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #000000;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    padding: 5px 10px;
+    border-radius: 0 !important;
+  }
+
+  .tour-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .tour-meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .tour-cat-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C8A45C;
+  }
+  .tour-rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .stars {
+    color: #C8A45C;
+    font-size: 11px;
+  }
+  .rate-val {
+    font-size: 11px;
+    font-weight: 800;
+    color: #111;
+  }
+
+  .tour-card-title {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0 0 12px;
+  }
+  .tour-card-title a {
+    color: #111;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .tour-card-title a:hover {
+    color: #C8A45C;
+  }
+
+  .tour-card-excerpt {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(0, 0, 0, 0.65);
+    margin: 0 0 20px;
+  }
+
+  .tour-itinerary-preview {
+    background: #fbf9f5;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+  .itin-label {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.45);
+    display: block;
+    margin-bottom: 8px;
+  }
+  .tour-itinerary-preview ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .tour-itinerary-preview li {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.4;
+  }
+  .step-bullet {
+    color: #C8A45C;
+    font-weight: 800;
+  }
+
+  /* Card Footer */
+  .tour-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .tour-price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .price-from-label {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.45);
+  }
+  .price-amount {
+    font-size: 22px;
+    font-weight: 900;
+    color: #111;
+  }
+  .price-sub {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .tour-btns-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tour-detail-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #111111;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 0 !important;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .tour-detail-btn:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+  .tour-wa-icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: #25D366;
+    border-radius: 0 !important;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    transition: transform 0.2s, background 0.2s;
+  }
+  .tour-wa-icon-btn:hover {
+    background: #20ba59;
+    transform: translateY(-2px);
+  }
+
+  /* Custom Banner */
+  .tours-custom-banner {
+    padding: 80px 0 100px;
+    background: #f2eee6;
+    border-top: 1px solid rgba(0, 0, 0, 0.14);
+  }
+  .custom-banner-inner {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 0 !important;
+    padding: 56px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,0.14);
+  }
+  .custom-banner-copy {
+    max-width: 600px;
+  }
+  .custom-kicker {
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.55);
+    display: block;
+    margin-bottom: 12px;
+  }
+  .custom-banner-copy h2 {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin: 0 0 16px;
+  }
+  .custom-banner-copy p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .custom-banner-action {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 260px;
+  }
+  .custom-plan-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    padding: 16px 28px;
+    border-radius: 0 !important;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .custom-plan-btn:hover {
+    background: #e5e5e5;
+    transform: translateY(-2px);
+  }
+  .custom-wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25D366;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    padding: 14px 24px;
+    border-radius: 0 !important;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  }
+
+  @media (max-width: 900px) {
+    .tours-grid {
+      grid-template-columns: 1fr;
+    }
+    .custom-banner-inner {
+      flex-direction: column;
+      padding: 36px 24px;
+      text-align: center;
+    }
+    .custom-banner-action {
+      width: 100%;
+    }
+  }
+</style>
