@@ -488,20 +488,23 @@ const { showLoader = false } = Astro.props;
       flex-direction: column;
       gap: 5px;
     }
-    .dropdown-route-row {
+    .dropdown-route-row,
+    .dropdown-route-row:visited {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 12px;
       padding: 9px 12px !important;
       border-radius: 10px !important;
-      text-decoration: none;
+      text-decoration: none !important;
       transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
       box-sizing: border-box;
       background: transparent;
       border: 1px solid transparent;
     }
-    .top.at-top .dropdown-route-row {
+    .top.at-top .dropdown-route-row,
+    .top.at-top .dropdown-route-row:visited {
+      color: #0f172a !important;
       background: rgba(0, 0, 0, 0.025);
       border: 1px solid rgba(0, 0, 0, 0.04);
     }
@@ -510,7 +513,9 @@ const { showLoader = false } = Astro.props;
       border-color: rgba(200, 164, 92, 0.28) !important;
       transform: translateX(2px);
     }
-    .top.at-bottom .dropdown-route-row {
+    .top.at-bottom .dropdown-route-row,
+    .top.at-bottom .dropdown-route-row:visited {
+      color: #ffffff !important;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
@@ -529,19 +534,28 @@ const { showLoader = false } = Astro.props;
     .route-title {
       font-size: 13px;
       font-weight: 700;
-      color: inherit;
       line-height: 1.25;
+      transition: color 0.15s ease;
+    }
+    .top.at-top .route-title {
+      color: #0f172a !important;
+    }
+    .top.at-bottom .route-title {
+      color: #ffffff !important;
     }
     .dropdown-route-row:hover .route-title {
-      color: #C8A45C;
+      color: #C8A45C !important;
     }
     .route-meta {
       font-size: 11px;
-      color: rgba(0, 0, 0, 0.5);
       font-weight: 500;
+      line-height: 1.35;
+    }
+    .top.at-top .route-meta {
+      color: #64748b !important;
     }
     .top.at-bottom .route-meta {
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.6) !important;
     }
 
     .route-price-tag {
@@ -577,14 +591,15 @@ const { showLoader = false } = Astro.props;
     .top.at-bottom .dropdown-footer {
       border-top-color: rgba(255, 255, 255, 0.1);
     }
-    .dropdown-footer-cta {
+    .dropdown-footer-cta,
+    .dropdown-footer-cta:visited {
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 11.5px;
       font-weight: 700;
-      color: #C8A45C;
-      text-decoration: none;
+      color: #C8A45C !important;
+      text-decoration: none !important;
       padding: 8px 12px !important;
       border-radius: 8px !important;
       background: rgba(200, 164, 92, 0.08);
