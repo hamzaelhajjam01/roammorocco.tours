@@ -263,20 +263,31 @@ const schema = {
       margin-bottom: 48px;
     }
     .filter-btn {
-      background: rgba(0,0,0,0.05);
-      border: 1px solid rgba(0,0,0,0.14);
-      padding: 12px 24px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+      border-radius: 999px;
+      padding: 10px 22px;
       font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .04em;
+      font-weight: 700;
+      letter-spacing: .03em;
       text-transform: uppercase;
       cursor: pointer;
       transition: all .25s ease;
+      color: #333333;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     }
-    .filter-btn.active, .filter-btn:hover {
-      background: #000;
-      color: #fff;
-      border-color: #000;
+    .filter-btn:hover {
+      border-color: #C8A45C;
+      color: #000000;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(200, 164, 92, 0.15);
+    }
+    .filter-btn.active {
+      background: #111111;
+      color: #ffffff;
+      border-color: #111111;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
     }
 
     /* Grid & Cards */
@@ -288,27 +299,29 @@ const schema = {
     }
     .dest-card {
       background: #fff;
-      border: 1px solid rgba(0,0,0,0.08);
-      border-radius: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 24px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       opacity: 0;
       transform: translateY(40px);
-      transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1), box-shadow .35s ease;
+      transition: opacity .8s ease, transform .8s cubic-bezier(.16, 1, .3, 1), box-shadow .35s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
     }
     .dest-card.in { opacity: 1; transform: translateY(0); }
-    .dest-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.12); }
-    .dest-media { position: relative; width: 100%; height: 300px; overflow: hidden; background: #111; }
-    .dest-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.16,1,.3,1); }
+    .dest-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12); }
+    .dest-media { position: relative; width: 100%; height: 300px; overflow: hidden; background: #111; border-radius: 24px 24px 0 0; }
+    .dest-media img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s cubic-bezier(.16, 1, .3, 1); }
     .dest-card:hover .dest-media img { transform: scale(1.08); }
     .dest-badge-tag { position: absolute; top: 16px; left: 16px; background: rgba(18, 18, 18, 0.88); backdrop-filter: blur(8px); color: #fff; font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(255, 255, 255, 0.15); }
     .dest-body { padding: 28px; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
     .dest-body h3 { font-size: 28px; font-weight: 800; letter-spacing: -.055em; line-height: .95; text-transform: uppercase; margin: 0 0 14px; }
-    .dest-body p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.5; color: rgba(0,0,0,0.76); margin: 0 0 24px; }
-    .dest-footer-meta { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 20px; }
-    .see-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 700; color: #000; transition: color .25s ease, transform .25s ease; }
-    .see-more-btn:hover { color: #C8A45C; transform: translateX(4px); }
+    .dest-body p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.5; color: rgba(0, 0, 0, 0.76); margin: 0 0 24px; }
+    .dest-footer-meta { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(0, 0, 0, 0.08); padding-top: 20px; }
+    .dest-season-tag { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 600; color: #8A6A23; background: rgba(200, 164, 92, 0.12); border: 1px solid rgba(200, 164, 92, 0.28); padding: 5px 12px; border-radius: 999px; letter-spacing: 0.04em; }
+    .see-more-btn { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: #111; padding: 8px 16px; border-radius: 999px; background: rgba(0, 0, 0, 0.04); border: 1px solid rgba(0, 0, 0, 0.08); transition: all .25s ease; text-decoration: none; }
+    .see-more-btn:hover { color: #8A6A23; background: rgba(200, 164, 92, 0.12); border-color: rgba(200, 164, 92, 0.32); transform: translateX(3px); }
 
     /* ── EXACT HOME PAGE RESERVE BANNER (1-TO-1 MATCH) ── */
     .journeys-reserve-banner {
@@ -391,7 +404,7 @@ const schema = {
             <h3>Erg Chebbi & Merzouga</h3>
             <p>Endless golden dunes, sunset camel treks, and luxury nomad camps under starry Saharan skies.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: OCT – MAY</span>
+              <span class="dest-season-tag">BEST: OCT – MAY</span>
               <a href="/destination-sahara-desert.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -407,7 +420,7 @@ const schema = {
             <h3>Marrakech Medina</h3>
             <p>The vibrant Red City, secret riad courtyards, Majorelle Gardens, and Jemaa el-Fnaa square.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: YEAR-ROUND</span>
+              <span class="dest-season-tag">BEST: YEAR-ROUND</span>
               <a href="/destination-marrakech.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -426,7 +439,7 @@ const schema = {
             <h3>Marrakech Medina Sunset Free Tour</h3>
             <p>Daily 2-hour guided walking tour from Koutoubia Mosque through the souks &amp; Saadian quarters, ending at sunset over Jemaa el-Fna.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">DAILY: 5PM / 6PM</span>
+              <span class="dest-season-tag">DAILY: 5PM / 6PM</span>
               <a href="/marrakech-medina-sunset-free-tour.html" class="see-more-btn"><span>View Free Tour</span> <span>↳</span></a>
             </div>
           </div>
@@ -442,7 +455,7 @@ const schema = {
             <h3>Chefchaouen</h3>
             <p>The iconic Blue Pearl nestled in the Rif Mountains, famous for serene cobblestone alleys and artisan craft.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: SPRING &amp; FALL</span>
+              <span class="dest-season-tag">BEST: SPRING &amp; FALL</span>
               <a href="/destination-chefchaouen.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -458,7 +471,7 @@ const schema = {
             <h3>Fes El Bali</h3>
             <p>The spiritual capital, 9,000 car-free medina alleys, ancient leather tanneries, and 9th-century mosques.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: SEPT – MAY</span>
+              <span class="dest-season-tag">BEST: SEPT – MAY</span>
               <a href="/destination-fes.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -474,7 +487,7 @@ const schema = {
             <h3>High Atlas &amp; Imlil</h3>
             <p>Mount Toubkal mountain trails, ancient earthen Berber villages, terraced valleys, and panoramic lunches.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: APRIL – NOV</span>
+              <span class="dest-season-tag">BEST: APRIL – NOV</span>
               <a href="/destination-high-atlas.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -490,7 +503,7 @@ const schema = {
             <h3>Casablanca &amp; Beyond</h3>
             <p>The monumental Hassan II Mosque over the Atlantic ocean, and seamless private circuits from CMN airport.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: YEAR-ROUND</span>
+              <span class="dest-season-tag">BEST: YEAR-ROUND</span>
               <a href="/destination-casablanca.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -506,7 +519,7 @@ const schema = {
             <h3>Aït Benhaddou &amp; Ouarzazate</h3>
             <p>Ancient clay towers, Gladiator movie sets, and the majestic gateway fortress to the Sahara Desert.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: OCT – MAY</span>
+              <span class="dest-season-tag">BEST: OCT – MAY</span>
               <a href="/destination-ait-benhaddou.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
@@ -522,7 +535,7 @@ const schema = {
             <h3>Essaouira</h3>
             <p>Historic Portuguese sea walls, bustling blue boat harbor, thuya wood artisans, and refreshing coastal breezes.</p>
             <div class="dest-footer-meta">
-              <span style="font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:600;color:#8A6A23;background:rgba(200,164,92,0.1);padding:4px 10px;border-radius:6px;letter-spacing:0.04em;">BEST: YEAR-ROUND</span>
+              <span class="dest-season-tag">BEST: YEAR-ROUND</span>
               <a href="/destination-essaouira.html" class="see-more-btn"><span>View Itinerary</span> <span>↳</span></a>
             </div>
           </div>
