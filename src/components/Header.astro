@@ -252,7 +252,7 @@ const { showLoader = false } = Astro.props;
             <span>Marrakech → Agadir &amp; Taghazout</span>
             <span class="mob-badge">125€</span>
           </a>
-          <a href="/transfers.html" class="mob-route-row" style="color: #C8A45C; font-weight: 700;" onclick="closeDrawer()">
+          <a href="/transfers.html" class="mob-route-row mob-route-catalog" onclick="closeDrawer()">
             <span>⚡ View All 120+ Transfer Routes →</span>
           </a>
         </div>
@@ -289,7 +289,7 @@ const { showLoader = false } = Astro.props;
             <span>Custom Multi-Day Expedition</span>
             <span class="mob-badge">Bespoke</span>
           </a>
-          <a href="/tours.html" class="mob-route-row" style="color: #C8A45C; font-weight: 700;" onclick="closeDrawer()">
+          <a href="/tours.html" class="mob-route-row mob-route-catalog" onclick="closeDrawer()">
             <span>✨ View All Tours &amp; Day Trips Catalog →</span>
           </a>
         </div>
@@ -578,65 +578,168 @@ const { showLoader = false } = Astro.props;
       background: rgba(200, 164, 92, 0.1);
     }
 
-    /* ── MOBILE ACCORDION STYLES ── */
+    /* ── MOBILE ACCORDION & DRAWER STYLES ── */
+    .mobile-nav-drawer {
+      z-index: 100000 !important;
+    }
+    .mobile-drawer-backdrop {
+      z-index: 99999 !important;
+    }
+    .mobile-drawer-inner {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 8px !important;
+    }
+    .mobile-drawer-inner > a {
+      color: #ffffff !important;
+      font-size: 13.5px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .04em !important;
+      padding: 12px 18px !important;
+      border-radius: 9999px !important;
+      background: rgba(255, 255, 255, 0.06) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      text-decoration: none !important;
+      display: flex !important;
+      align-items: center !important;
+      transition: all 0.2s ease !important;
+      box-sizing: border-box !important;
+    }
+    .mobile-drawer-inner > a:hover {
+      background: rgba(255, 255, 255, 0.12) !important;
+      border-color: rgba(255, 255, 255, 0.16) !important;
+      color: #C8A45C !important;
+    }
+    .mobile-drawer-inner > a.mobile-wa-cta {
+      background: linear-gradient(135deg, #25D366 0%, #1ea952 100%) !important;
+      border: none !important;
+      color: #ffffff !important;
+      font-weight: 800 !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      margin-top: 6px !important;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35) !important;
+    }
+    .mobile-drawer-inner > a.mobile-wa-cta:hover {
+      background: linear-gradient(135deg, #20BA59 0%, #169345 100%) !important;
+      color: #ffffff !important;
+    }
     .mob-accordion-group {
       display: flex;
       flex-direction: column;
       gap: 4px;
     }
     .mob-accordion-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      background: transparent;
-      border: none;
-      color: #fff;
-      font-size: 16px;
-      font-weight: 700;
-      padding: 8px 0;
-      cursor: pointer;
-      text-align: left;
-      font-family: inherit;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+      background: rgba(255, 255, 255, 0.06) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      border-radius: 9999px !important;
+      color: #ffffff !important;
+      font-size: 13.5px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .04em !important;
+      padding: 12px 18px !important;
+      cursor: pointer !important;
+      text-align: left !important;
+      font-family: inherit !important;
+      transition: all 0.2s ease !important;
+      box-sizing: border-box !important;
+    }
+    .mob-accordion-toggle:hover,
+    .mob-accordion-toggle.active {
+      background: rgba(200, 164, 92, 0.12) !important;
+      border-color: rgba(200, 164, 92, 0.35) !important;
+      color: #E5C378 !important;
     }
     .mob-chevron {
-      font-size: 14px;
-      color: #C8A45C;
-      transition: transform 0.25s ease;
+      font-size: 12px !important;
+      color: #C8A45C !important;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
     }
     .mob-accordion-toggle.active .mob-chevron {
-      transform: rotate(180deg);
+      transform: rotate(180deg) !important;
     }
     .mob-accordion-panel {
       display: none;
       flex-direction: column;
       gap: 6px;
-      padding-left: 12px;
-      margin-bottom: 8px;
-      border-left: 2px solid rgba(200, 164, 92, 0.4);
+      padding: 6px 0 6px 10px;
+      margin: 4px 0 6px 6px;
+      border-left: 2px solid rgba(200, 164, 92, 0.35);
     }
     .mob-accordion-panel.open {
       display: flex;
     }
     .mob-route-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 6px 4px;
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.85);
-      text-decoration: none;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 12px !important;
+      padding: 10px 14px !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      line-height: 1.35 !important;
+      color: rgba(255, 255, 255, 0.92) !important;
+      text-transform: none !important;
+      letter-spacing: normal !important;
+      background: rgba(255, 255, 255, 0.04) !important;
+      border: 1px solid rgba(255, 255, 255, 0.07) !important;
+      border-radius: 12px !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
     }
-    .mob-route-row:hover {
-      color: #C8A45C;
+    .mob-route-row:hover,
+    .mob-route-row:active {
+      background: rgba(200, 164, 92, 0.12) !important;
+      border-color: rgba(200, 164, 92, 0.35) !important;
+      color: #C8A45C !important;
+      transform: translateX(2px) !important;
+    }
+    .mob-route-row span:first-child {
+      flex: 1;
+      text-align: left;
+      word-break: break-word;
     }
     .mob-badge {
-      font-size: 11px;
-      font-weight: 800;
-      color: #E5C378;
-      background: rgba(200, 164, 92, 0.18);
-      border: 1px solid rgba(200, 164, 92, 0.35);
-      padding: 2px 7px;
-      border-radius: 9999px;
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 800 !important;
+      color: #E5C378 !important;
+      background: rgba(200, 164, 92, 0.18) !important;
+      border: 1px solid rgba(200, 164, 92, 0.35) !important;
+      padding: 3px 8px !important;
+      border-radius: 9999px !important;
+      white-space: nowrap !important;
+      line-height: 1.2 !important;
+      flex-shrink: 0 !important;
+    }
+    .mob-route-catalog {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      padding: 11px 14px !important;
+      font-size: 12px !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.04em !important;
+      color: #E5C378 !important;
+      background: rgba(200, 164, 92, 0.12) !important;
+      border: 1px solid rgba(200, 164, 92, 0.3) !important;
+      border-radius: 12px !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease !important;
+      margin-top: 4px !important;
+    }
+    .mob-route-catalog:hover {
+      background: rgba(200, 164, 92, 0.22) !important;
+      border-color: rgba(200, 164, 92, 0.5) !important;
+      color: #ffffff !important;
     }
   </style>

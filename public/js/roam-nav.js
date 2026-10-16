@@ -35,13 +35,19 @@
       if (!mDraw) return;
       updateDrawerPosition();
       mDraw.classList.add("open");
+      document.body.classList.add("mobile-drawer-open");
       if (backdrop) backdrop.classList.add("active");
+      const cTrig = document.getElementById("rmConciergeTrigger");
+      if (cTrig) cTrig.classList.add("rm-hidden");
     }
 
     function closeDrawer() {
       if (!mDraw) return;
       mDraw.classList.remove("open");
+      document.body.classList.remove("mobile-drawer-open");
       if (backdrop) backdrop.classList.remove("active");
+      const cTrig = document.getElementById("rmConciergeTrigger");
+      if (cTrig) cTrig.classList.remove("rm-hidden");
     }
 
     function toggleDrawer(e) {

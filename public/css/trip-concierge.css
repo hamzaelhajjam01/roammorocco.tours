@@ -68,10 +68,16 @@ button.rm-concierge-trigger,
   transform: translateY(-50%) translateX(-2px) scale(0.98) !important;
 }
 
-.rm-concierge-trigger.rm-hidden {
+.rm-concierge-trigger.rm-hidden,
+body.mobile-drawer-open .rm-concierge-trigger,
+body:has(#mobileDrawer.open) .rm-concierge-trigger,
+.mobile-nav-drawer.open ~ * .rm-concierge-trigger,
+#mobileDrawer.open ~ .rm-concierge-trigger,
+.mobile-drawer-backdrop.active ~ * .rm-concierge-trigger {
   opacity: 0 !important;
   pointer-events: none !important;
   transform: translateY(-50%) translateX(100%) !important;
+  visibility: hidden !important;
 }
 
 .rm-trigger-icon {
