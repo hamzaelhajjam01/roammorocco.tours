@@ -228,7 +228,9 @@
 /* NARRATIVE SECTION */
 .dest-narrative {
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   padding: 36px;
   margin-bottom: 40px;
   width: 100%;
@@ -366,6 +368,7 @@
   width: 100%;
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
   display: block;
   background: #fafafa;
 }
@@ -802,7 +805,7 @@
   /* Hero Banner */
   .dest-hero {
     margin-bottom: 24px;
-    border-radius: 2px;
+    border-radius: 16px;
   }
   .dest-hero-img {
     height: 280px;

@@ -20,25 +20,7 @@
   box-sizing: border-box;
 }
 
-/* Sharp architectural corners on editorial components */
-article,
-.article-wrap,
-.roam-day-card,
-.roam-tour-cta-box,
-.roam-toolkit-box,
-.roam-callout-ai,
-.roam-field-note,
-.table-container,
-table,
-th,
-td,
-figure,
-.featured-image-box,
-.featured-image-box img,
-.roam-area-card,
-.takeaway-box {
-  border-radius: 0 !important;
-}
+
 
 body {
   margin: 0;
@@ -350,9 +332,10 @@ tbody td:last-child {
 .roam-day-card {
   background: #ffffff;
   border: 1px solid var(--border);
+  border-radius: 16px;
   padding: 28px 32px;
   margin: 28px 0;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .roam-day-header {
@@ -496,6 +479,7 @@ tbody td:last-child {
   text-transform: uppercase !important;
   letter-spacing: .08em !important;
   padding: 16px 28px !important;
+  border-radius: 9999px !important;
   text-decoration: none !important;
   transition: all .25s ease !important;
 }
@@ -518,6 +502,7 @@ tbody td:last-child {
   text-transform: uppercase !important;
   letter-spacing: .08em !important;
   padding: 16px 28px !important;
+  border-radius: 9999px !important;
   text-decoration: none !important;
   transition: all .25s ease !important;
 }
@@ -553,6 +538,7 @@ tbody td:last-child {
   text-transform: uppercase !important;
   letter-spacing: .08em !important;
   padding: 16px 28px !important;
+  border-radius: 9999px !important;
   text-decoration: none !important;
   transition: all .25s ease !important;
 }
@@ -711,6 +697,8 @@ tbody td:last-child {
 .roam-faq-block {
   background: #ffffff;
   border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   padding: 40px;
   margin: 54px 0;
 }

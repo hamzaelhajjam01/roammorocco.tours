@@ -944,7 +944,7 @@ main.roam-tour-main {
   height: auto;
   border: 1px solid rgba(0, 0, 0, 0.14) !important;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08) !important;
-  border-radius: 0 !important;
+  border-radius: 20px !important;
   margin-bottom: 40px;
   display: block;
 }
@@ -1014,7 +1014,7 @@ main.roam-tour-main {
   padding: 36px !important;
   margin: 48px 0 !important;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
-  border-radius: 0 !important;
+  border-radius: 16px !important;
 }
 
 .roam-driver-box h4 {
@@ -1054,7 +1054,7 @@ a.roam-btn-black,
   letter-spacing: .05em !important;
   padding: 14px 28px !important;
   border: 1px solid #000000 !important;
-  border-radius: 0 !important;
+  border-radius: 9999px !important;
   text-decoration: none !important;
   cursor: pointer !important;
   line-height: 1 !important;
@@ -1100,7 +1100,7 @@ button.c-wa-trigger-btn {
   letter-spacing: .05em !important;
   padding: 14px 28px !important;
   border: 1px solid #25D366 !important;
-  border-radius: 0 !important;
+  border-radius: 9999px !important;
   text-decoration: none !important;
   cursor: pointer !important;
   line-height: 1 !important;

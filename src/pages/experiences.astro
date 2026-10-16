@@ -155,8 +155,8 @@ const schema = {
     .j-tab-arrow{font-size:18px;line-height:1;opacity:0;transform:translate(-6px,6px);transition:opacity .3s ease,transform .3s ease}
     .j-tab.active .j-tab-arrow,.j-tab:hover .j-tab-arrow{opacity:1;transform:translate(0,0)}
 
-    .journeys-visual{position:relative;height:660px;overflow:hidden;background:#d8d3ca;margin:0;border-radius:16px;}
-    .journeys-visual img{width:100%;height:100%;object-fit:cover;transform:scale(1.015);transition:opacity .35s ease,transform 1s cubic-bezier(.16,1,.3,1)}
+    .journeys-visual{position:relative;height:660px;overflow:hidden;background:#d8d3ca;margin:0;border-radius:24px;box-shadow:0 16px 40px rgba(0,0,0,0.08)}
+    .journeys-visual img{width:100%;height:100%;object-fit:cover;border-radius:24px;transform:scale(1.015);transition:opacity .35s ease,transform 1s cubic-bezier(.16,1,.3,1)}
     .journeys-visual:hover img{transform:scale(1.045)}
     .journeys-visual.is-changing img{opacity:.18;transform:scale(1.08)}
     .journeys-visual::after{content:"";position:absolute;inset:38% 0 0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.74));pointer-events:none}
