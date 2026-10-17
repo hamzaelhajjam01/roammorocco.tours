@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "404 - Page Not Found | Roam Morocco Tours";
+const description = "The page you are looking for might have been moved, removed, or is temporarily unavailable.";
+---
+
+<Layout title={title} description={description} bodyClass="roam-light-theme">
+  <!-- Client-side self-healing redirect for any mistyped or legacy multilingual URLs -->
+  <script is:inline>
+    (function() {
+      var p = window.location.pathname;
+      // If user landed on /es/fr.html or /fr/es.html, auto-redirect to target locale home
+      var doubleLangMatch = p.match(/^\/(fr|es|de|it)\/(fr|es|de|it)\.html$/i);
+      if (doubleLangMatch) {
+        window.location.replace('/' + doubleLangMatch[1] + '/');
+        return;
+      }
+      // If user landed on /fr.html, /es.html, etc., redirect to clean trailing slash
+      var singleLangMatch = p.match(/^\/(fr|es|de|it)\.html$/i);
+      if (singleLangMatch) {
+        window.location.replace('/' + singleLangMatch[1] + '/');
+        return;
+      }
+    })();
+  </script>
+
+  <main class="error-page-main">
+    <div class="error-container">
+      <div class="error-badge">404 ERROR</div>
+      <h1 class="error-title">Pathway Not Found</h1>
+      <p class="error-text">
+        The destination you are looking for may have shifted in the sands, or the link may have been mistyped.
+      </p>
+
+      <div class="error-actions">
+        <a href="/" class="btn-primary">Return to Homepage</a>
+        <a href="/transfers.html" class="btn-secondary">Private Transfers (120+ Routes)</a>
+        <a href="/tours.html" class="btn-secondary">Curated Tours &amp; Expeditions</a>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .error-page-main {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+    background: #0D0D0D;
+    color: #FFFFFF;
+  }
+  .error-container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .error-badge {
+    display: inline-block;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: #C8A45C;
+    border: 1px solid rgba(200, 164, 92, 0.35);
+    background: rgba(200, 164, 92, 0.08);
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-bottom: 24px;
+  }
+  .error-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+    line-height: 1.15;
+  }
+  .error-text {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #A0A0A0;
+    margin-bottom: 36px;
+  }
+  .error-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+  .btn-primary {
+    background: #C8A45C;
+    color: #000000;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .btn-primary:hover {
+    background: #dfb96c;
+    transform: translateY(-1px);
+  }
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.06);
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 14px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.2s ease;
+  }
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(200, 164, 92, 0.4);
+    color: #C8A45C;
+  }
+</style>

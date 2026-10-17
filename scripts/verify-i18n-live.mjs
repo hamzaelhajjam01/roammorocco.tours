@@ -1,24 +1,40 @@
 async function verifyLive() {
-  const homeRes = await fetch('https://roammorocco.tours/');
-  const html = await homeRes.text();
-  console.log('Home status:', homeRes.status);
-  console.log('Has lang dropdown:', html.includes('lang-dropdown-item'));
-  console.log('Has mobile lang selector:', html.includes('mob-lang-section'));
-  console.log('Has fr hreflang:', html.includes('hreflang="fr"'));
-  console.log('Has es hreflang:', html.includes('hreflang="es"'));
-  console.log('Has de hreflang:', html.includes('hreflang="de"'));
-  console.log('Has it hreflang:', html.includes('hreflang="it"'));
-  console.log('Includes roam-i18n.js:', html.includes('roam-i18n.js'));
+  const urls = [
+    { name: 'Root English Home', url: 'https://roammorocco.tours/' },
+    { name: 'Master Sitemap Index', url: 'https://roammorocco.tours/sitemap.xml' },
+    { name: 'Sitemap Main XML', url: 'https://roammorocco.tours/sitemap-main.xml' },
+    { name: 'French Home (/fr/)', url: 'https://roammorocco.tours/fr/' },
+    { name: 'Spanish Transfer Route', url: 'https://roammorocco.tours/es/transfers/marrakech-to-essaouira.html' },
+    { name: 'German Blog Post', url: 'https://roammorocco.tours/de/blog/morocco-10-day-itinerary.html' },
+    { name: 'Italian Commercial Page', url: 'https://roammorocco.tours/it/morocco-private-driver.html' }
+  ];
 
-  const jsRes = await fetch('https://roammorocco.tours/js/roam-i18n.js');
-  console.log('roam-i18n.js status:', jsRes.status);
+  console.log('🌐 VERIFYING LIVE ROAM MOROCCO MULTILINGUAL DEPLOYMENT...\n');
 
-  const blogRes = await fetch('https://roammorocco.tours/blog/morocco-10-day-itinerary.html');
-  const blogHtml = await blogRes.text();
-  console.log('Blog has lang dropdown:', blogHtml.includes('lang-dropdown-item'));
+  for (const item of urls) {
+    try {
+      const res = await fetch(item.url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+      });
+      const text = await res.text();
+      const langMatch = text.match(/<html\b[^>]*lang="([^"]+)"/i);
+      const titleMatch = text.match(/<title>([^<]+)<\/title>/i);
+      const canMatch = text.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i);
+      const hreflangs = [...text.matchAll(/hreflang="([^"]+)"/g)].map(m => m[1]);
 
-  const transferRes = await fetch('https://roammorocco.tours/transfers/marrakech-to-essaouira.html');
-  const transferHtml = await transferRes.text();
-  console.log('Transfer has lang dropdown:', transferHtml.includes('lang-dropdown-item'));
+      console.log(`✅ [HTTP ${res.status}] ${item.name}`);
+      console.log(`   URL: ${item.url}`);
+      if (langMatch) console.log(`   HTML Lang: <${langMatch[1]}>`);
+      if (titleMatch) console.log(`   Title: ${titleMatch[1].slice(0, 70)}...`);
+      if (canMatch) console.log(`   Canonical: ${canMatch[1]}`);
+      if (hreflangs.length > 0) console.log(`   Hreflangs: [${hreflangs.join(', ')}]`);
+      console.log('');
+    } catch (err) {
+      console.error(`❌ [ERROR] ${item.name}:`, err.message);
+    }
+  }
 }
+
 verifyLive();

@@ -9,9 +9,9 @@ const { showLoader = false, lang = 'en' } = Astro.props;
 
 // Determine clean path for language link alternates
 const rawPath = Astro.url.pathname;
-const pathWithoutLang = rawPath.replace(/^\/(fr|es|de|it)(\/|$)/, '/');
+const pathWithoutLang = rawPath.replace(/^\/(fr|es|de|it)(\.html|\/|$)/, '/');
 const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang : `/${pathWithoutLang}`;
-const normPath = cleanPath === '/index.html' ? '/' : cleanPath;
+const normPath = (cleanPath === '/index.html' || cleanPath === '/') ? '/' : cleanPath;
 
 const enHref = normPath;
 const frHref = normPath === '/' ? '/fr/' : `/fr${normPath}`;
@@ -90,7 +90,7 @@ const lLink = (url: string) => {
 
   <header class="top at-top">
     <div class="navbox">
-      <a class="wordmark" href="/#top" aria-label="Roam Morocco Home">
+      <a class="wordmark" href={lLink('/#top')} aria-label="Roam Morocco Home">
         <img id="navLogo" src="/img/logo-for-dark-bg.png" alt="Roam Morocco Tours">
       </a>
       <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu">
@@ -102,7 +102,7 @@ const lLink = (url: string) => {
         
         <!-- 1. TRANSFERS DROPDOWN -->
         <div class="nav-dropdown-item">
-          <a href="/transfers.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+          <a href={lLink('/transfers.html')} class="nav-link dropdown-toggle" aria-haspopup="true">
             <span>Transfers</span>
             <svg class="nav-chevron" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg>
           </a>
@@ -112,42 +112,42 @@ const lLink = (url: string) => {
               <span class="dropdown-sub">Fixed door-to-door rates · Licensed chauffeur · Luggage included</span>
             </div>
             <div class="dropdown-list">
-              <a href="/transfers/marrakech-to-essaouira.html" class="dropdown-route-row" title="Private Transfer from Marrakech to Essaouira">
+              <a href={lLink('/transfers/marrakech-to-essaouira.html')} class="dropdown-route-row" title="Private Transfer from Marrakech to Essaouira">
                 <div class="route-main">
                   <span class="route-title">Marrakech → Essaouira</span>
                   <span class="route-meta">2h 30m · Highway R207 · Door to Door</span>
                 </div>
                 <span class="route-price-tag">85€</span>
               </a>
-              <a href="/transfers/marrakech-to-casablanca.html" class="dropdown-route-row" title="Private Transfer from Marrakech to Casablanca">
+              <a href={lLink('/transfers/marrakech-to-casablanca.html')} class="dropdown-route-row" title="Private Transfer from Marrakech to Casablanca">
                 <div class="route-main">
                   <span class="route-title">Marrakech → Casablanca</span>
                   <span class="route-meta">2h 45m · Highway A1 · Door to Door</span>
                 </div>
                 <span class="route-price-tag">145€</span>
               </a>
-              <a href="/transfers/casablanca-airport-to-marrakech.html" class="dropdown-route-row" title="Casablanca Airport CMN to Marrakech Private Transfer">
+              <a href={lLink('/transfers/casablanca-airport-to-marrakech.html')} class="dropdown-route-row" title="Casablanca Airport CMN to Marrakech Private Transfer">
                 <div class="route-main">
                   <span class="route-title">Casablanca Airport (CMN) → Marrakech</span>
                   <span class="route-meta">2h 30m · Flight Tracking &amp; Name-Sign Pickup</span>
                 </div>
                 <span class="route-price-tag">145€</span>
               </a>
-              <a href="/transfers/marrakech-airport-to-marrakech.html" class="dropdown-route-row" title="Marrakech Menara Airport RAK to Medina Private Transfer">
+              <a href={lLink('/transfers/marrakech-airport-to-marrakech.html')} class="dropdown-route-row" title="Marrakech Menara Airport RAK to Medina Private Transfer">
                 <div class="route-main">
                   <span class="route-title">Marrakech Airport (RAK) → Medina</span>
                   <span class="route-meta">20m · Direct Riad Luggage Assistance</span>
                 </div>
                 <span class="route-price-tag">25€</span>
               </a>
-              <a href="/transfers/marrakech-airport-to-palmeraie-marrakech.html" class="dropdown-route-row" title="Marrakech Menara Airport RAK to Palmeraie Private Transfer">
+              <a href={lLink('/transfers/marrakech-airport-to-palmeraie-marrakech.html')} class="dropdown-route-row" title="Marrakech Menara Airport RAK to Palmeraie Private Transfer">
                 <div class="route-main">
                   <span class="route-title">Marrakech Airport (RAK) → Palmeraie</span>
                   <span class="route-meta">30m · Luxury Resort Drop-off</span>
                 </div>
                 <span class="route-price-tag">35€</span>
               </a>
-              <a href="/transfers/marrakech-to-agadir.html" class="dropdown-route-row" title="Private Transfer from Marrakech to Agadir and Taghazout">
+              <a href={lLink('/transfers/marrakech-to-agadir.html')} class="dropdown-route-row" title="Private Transfer from Marrakech to Agadir and Taghazout">
                 <div class="route-main">
                   <span class="route-title">Marrakech → Agadir &amp; Taghazout</span>
                   <span class="route-meta">3h 00m · Atlantic Coast Expressway</span>
@@ -156,7 +156,7 @@ const lLink = (url: string) => {
               </a>
             </div>
             <div class="dropdown-footer">
-              <a href="/transfers.html" class="dropdown-footer-cta">
+              <a href={lLink('/transfers.html')} class="dropdown-footer-cta">
                 <span>⚡ View all 120+ Moroccan private transfers &amp; rates</span>
                 <span class="cta-arrow">→</span>
               </a>
@@ -166,7 +166,7 @@ const lLink = (url: string) => {
 
         <!-- 2. TOURS & CIRCUITS DROPDOWN -->
         <div class="nav-dropdown-item">
-          <a href="/tours.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+          <a href={lLink('/tours.html')} class="nav-link dropdown-toggle" aria-haspopup="true">
             <span>Tours &amp; Day Trips</span>
             <svg class="nav-chevron" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg>
           </a>
@@ -176,42 +176,42 @@ const lLink = (url: string) => {
               <span class="dropdown-sub">100% Private · Dedicated Prado 4x4 or Mercedes Van · Unhurried</span>
             </div>
             <div class="dropdown-list">
-              <a href="/destination-sahara-desert.html" class="dropdown-route-row" title="3-Day Private Sahara Desert Tour from Marrakech to Merzouga">
+              <a href={lLink('/destination-sahara-desert.html')} class="dropdown-route-row" title="3-Day Private Sahara Desert Tour from Marrakech to Merzouga">
                 <div class="route-main">
                   <span class="route-title">3-Day Merzouga Sahara Desert Tour</span>
                   <span class="route-meta">High Atlas · Erg Chebbi Luxury Camp · Camel Trek</span>
                 </div>
                 <span class="route-price-tag highlight-tag">From 390€</span>
               </a>
-              <a href="/destination-marrakech.html#agafay" class="dropdown-route-row" title="Agafay Desert Sunset Dinner and Camel Ride from Marrakech">
+              <a href={lLink('/destination-marrakech.html#agafay')} class="dropdown-route-row" title="Agafay Desert Sunset Dinner and Camel Ride from Marrakech">
                 <div class="route-main">
                   <span class="route-title">Agafay Desert Sunset Dinner &amp; Camel Ride</span>
                   <span class="route-meta">45m from Medina · Candlelit Berber Tent &amp; Campfire</span>
                 </div>
                 <span class="route-price-tag">From 140€</span>
               </a>
-              <a href="/destination-essaouira.html" class="dropdown-route-row" title="Private Day Trip from Marrakech to Essaouira">
+              <a href={lLink('/destination-essaouira.html')} class="dropdown-route-row" title="Private Day Trip from Marrakech to Essaouira">
                 <div class="route-main">
                   <span class="route-title">Essaouira Coastal Bastion Day Trip</span>
                   <span class="route-meta">Full Day · Atlantic Ramparts · Fresh Seafood &amp; Souks</span>
                 </div>
                 <span class="route-price-tag">120€</span>
               </a>
-              <a href="/destination-high-atlas.html" class="dropdown-route-row" title="Ourika Valley and High Atlas Berber Trail Private Tour">
+              <a href={lLink('/destination-high-atlas.html')} class="dropdown-route-row" title="Ourika Valley and High Atlas Berber Trail Private Tour">
                 <div class="route-main">
                   <span class="route-title">Ourika Valley &amp; Atlas Mountains Hike</span>
                   <span class="route-meta">Full Day · Waterfalls · Authentic Berber Home Lunch</span>
                 </div>
                 <span class="route-price-tag">110€</span>
               </a>
-              <a href="/destination-ait-benhaddou.html" class="dropdown-route-row" title="Ait Benhaddou and Ouarzazate Kasbah Day Trip">
+              <a href={lLink('/destination-ait-benhaddou.html')} class="dropdown-route-row" title="Ait Benhaddou and Ouarzazate Kasbah Day Trip">
                 <div class="route-main">
                   <span class="route-title">Aït Benhaddou &amp; Ouarzazate Kasbah Tour</span>
                   <span class="route-meta">Full Day · Tizi n'Tichka Pass 2,260m · UNESCO Kasbah</span>
                 </div>
                 <span class="route-price-tag">150€</span>
               </a>
-              <a href="/custom-morocco-tour.html" class="dropdown-route-row" title="Custom Multi-Day Bespoke Morocco Tour">
+              <a href={lLink('/custom-morocco-tour.html')} class="dropdown-route-row" title="Custom Multi-Day Bespoke Morocco Tour">
                 <div class="route-main">
                   <span class="route-title">Custom Multi-Day Bespoke Tour</span>
                   <span class="route-meta">7 to 14 Days · Tailored Itinerary &amp; Boutique Riads</span>
@@ -220,7 +220,7 @@ const lLink = (url: string) => {
               </a>
             </div>
             <div class="dropdown-footer">
-              <a href="/tours.html" class="dropdown-footer-cta">
+              <a href={lLink('/tours.html')} class="dropdown-footer-cta">
                 <span>✨ View full catalog of private tours &amp; day trips</span>
                 <span class="cta-arrow">→</span>
               </a>
@@ -229,8 +229,8 @@ const lLink = (url: string) => {
         </div>
 
         <!-- 3. DIRECT HIGH-CONVERTING COMMERCIAL SECTIONS -->
-        <a href="/morocco-private-driver.html" class="nav-link" title="Morocco Private Driver &amp; Chauffeur Service">Private Chauffeur</a>
-        <a href="/destinations.html" class="nav-link" title="Explore Morocco Travel Destinations">Destinations</a>
+        <a href={lLink('/morocco-private-driver.html')} class="nav-link" title="Morocco Private Driver &amp; Chauffeur Service">Private Chauffeur</a>
+        <a href={lLink('/destinations.html')} class="nav-link" title="Explore Morocco Travel Destinations">Destinations</a>
 
         <!-- 4. LUXURY MULTILINGUAL SELECTOR (EN, FR, ES, DE, IT) -->
         <div class="nav-dropdown-item lang-dropdown-item">
@@ -299,31 +299,31 @@ const lLink = (url: string) => {
           <span class="mob-chevron">▾</span>
         </button>
         <div class="mob-accordion-panel" id="mobTransfersPanel">
-          <a href="/transfers/marrakech-to-essaouira.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/transfers/marrakech-to-essaouira.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Marrakech → Essaouira</span>
             <span class="mob-badge">85€</span>
           </a>
-          <a href="/transfers/marrakech-to-casablanca.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/transfers/marrakech-to-casablanca.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Marrakech → Casablanca</span>
             <span class="mob-badge">145€</span>
           </a>
-          <a href="/transfers/casablanca-airport-to-marrakech.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/transfers/casablanca-airport-to-marrakech.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Casablanca Airport → Marrakech</span>
             <span class="mob-badge">145€</span>
           </a>
-          <a href="/transfers/marrakech-airport-to-marrakech.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/transfers/marrakech-airport-to-marrakech.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Marrakech Airport → Medina</span>
             <span class="mob-badge">25€</span>
           </a>
-          <a href="/transfers/marrakech-airport-to-palmeraie-marrakech.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/transfers/marrakech-airport-to-palmeraie-marrakech.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Marrakech Airport → Palmeraie</span>
             <span class="mob-badge">35€</span>
           </a>
-          <a href="/transfers/marrakech-to-agadir.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/transfers/marrakech-to-agadir.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Marrakech → Agadir &amp; Taghazout</span>
             <span class="mob-badge">125€</span>
           </a>
-          <a href="/transfers.html" class="mob-route-row mob-route-catalog" onclick="closeDrawer()">
+          <a href={lLink('/transfers.html')} class="mob-route-row mob-route-catalog" onclick="closeDrawer()">
             <span>⚡ View All 120+ Transfer Routes →</span>
           </a>
         </div>
@@ -336,41 +336,41 @@ const lLink = (url: string) => {
           <span class="mob-chevron">▾</span>
         </button>
         <div class="mob-accordion-panel" id="mobToursPanel">
-          <a href="/destination-sahara-desert.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/destination-sahara-desert.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>3-Day Merzouga Sahara Desert</span>
             <span class="mob-badge">From 390€</span>
           </a>
-          <a href="/destination-marrakech.html#agafay" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/destination-marrakech.html#agafay')} class="mob-route-row" onclick="closeDrawer()">
             <span>Agafay Desert Sunset Dinner</span>
             <span class="mob-badge">From 140€</span>
           </a>
-          <a href="/destination-essaouira.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/destination-essaouira.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Essaouira Coastal Day Trip</span>
             <span class="mob-badge">120€</span>
           </a>
-          <a href="/destination-high-atlas.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/destination-high-atlas.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Ourika Valley &amp; Atlas Hike</span>
             <span class="mob-badge">110€</span>
           </a>
-          <a href="/destination-ait-benhaddou.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/destination-ait-benhaddou.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Aït Benhaddou &amp; Ouarzazate</span>
             <span class="mob-badge">150€</span>
           </a>
-          <a href="/custom-morocco-tour.html" class="mob-route-row" onclick="closeDrawer()">
+          <a href={lLink('/custom-morocco-tour.html')} class="mob-route-row" onclick="closeDrawer()">
             <span>Custom Multi-Day Expedition</span>
             <span class="mob-badge">Bespoke</span>
           </a>
-          <a href="/tours.html" class="mob-route-row mob-route-catalog" onclick="closeDrawer()">
+          <a href={lLink('/tours.html')} class="mob-route-row mob-route-catalog" onclick="closeDrawer()">
             <span>✨ View All Tours &amp; Day Trips Catalog →</span>
           </a>
         </div>
       </div>
 
-      <a href="/morocco-private-driver.html" onclick="closeDrawer()">Private Chauffeur</a>
-      <a href="/destinations.html" onclick="closeDrawer()">Destinations</a>
-      <a href="/morocco-trip-cost-calculator.html" onclick="closeDrawer()">Cost Calculator</a>
-      <a href="/travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
-      <a href="/about.html" onclick="closeDrawer()">About Us</a>
+      <a href={lLink('/morocco-private-driver.html')} onclick="closeDrawer()">Private Chauffeur</a>
+      <a href={lLink('/destinations.html')} onclick="closeDrawer()">Destinations</a>
+      <a href={lLink('/morocco-trip-cost-calculator.html')} onclick="closeDrawer()">Cost Calculator</a>
+      <a href={lLink('/travel-deals.html')} onclick="closeDrawer()">Travel Deals</a>
+      <a href={lLink('/about.html')} onclick="closeDrawer()">About Us</a>
       <!-- Mobile Language Selector -->
       <div class="mob-lang-section">
         <span class="mob-lang-title">Choose Language:</span>
@@ -406,6 +406,38 @@ const lLink = (url: string) => {
         if (btn) btn.classList.add('active');
       }
     }
+
+    // Dynamic Client-side Language Switcher Sync: always resolves accurately against live browser pathname
+    (function () {
+      function syncLanguageLinks() {
+        var p = window.location.pathname;
+        // Strip any existing language prefix (e.g. /fr/, /es/, /de/, /it/, /fr.html, etc.)
+        var clean = p.replace(/^\/(fr|es|de|it)(\.html|\/|$)/, '/');
+        if (!clean.startsWith('/')) clean = '/' + clean;
+        if (clean === '/index.html' || clean === '/') clean = '/';
+
+        var links = {
+          en: clean,
+          fr: clean === '/' ? '/fr/' : '/fr' + clean,
+          es: clean === '/' ? '/es/' : '/es' + clean,
+          de: clean === '/' ? '/de/' : '/de' + clean,
+          it: clean === '/' ? '/it/' : '/it' + clean
+        };
+
+        document.querySelectorAll('.lang-row-btn, .mob-lang-pill').forEach(function (el) {
+          var l = el.getAttribute('data-lang');
+          if (l && links[l]) {
+            el.href = links[l];
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', syncLanguageLinks);
+      } else {
+        syncLanguageLinks();
+      }
+    })();
   </script>
 
   <style is:global>

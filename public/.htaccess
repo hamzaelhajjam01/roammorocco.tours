@@ -7,6 +7,13 @@
   RewriteEngine On
   RewriteBase /
 
+  # 0. Multilingual Canonical Routing & Legacy Double-Locale Cleanup
+  # Redirect any legacy /es/fr.html or /fr/es.html directly to target locale homepage (e.g. /es/)
+  RewriteRule ^(fr|es|de|it)/(fr|es|de|it)\.html$ /$1/ [L,R=301]
+
+  # Redirect /fr.html -> /fr/, /es.html -> /es/, /de.html -> /de/, /it.html -> /it/
+  RewriteRule ^(fr|es|de|it)\.html$ /$1/ [L,R=301]
+
   # 3. Blog Slug Permalinks (Legacy & Direct Link Redirects to /blog/)
   RewriteRule ^agafay-desert-vs-merzouga\.html$ /blog/agafay-desert-vs-merzouga.html [L,R=301]
   RewriteRule ^agafay-desert-vs-merzouga$ /blog/agafay-desert-vs-merzouga.html [L,R=301]
