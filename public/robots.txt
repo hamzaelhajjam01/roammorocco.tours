@@ -39,10 +39,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Sitemaps
+# Sitemap
 Sitemap: https://roammorocco.tours/sitemap.xml
-Sitemap: https://roammorocco.tours/sitemap-transfers.xml
-Sitemap: https://roammorocco.tours/sitemap-tours.xml
-Sitemap: https://roammorocco.tours/sitemap-destinations.xml
-Sitemap: https://roammorocco.tours/sitemap-blog.xml
-Sitemap: https://roammorocco.tours/sitemap-main.xml
