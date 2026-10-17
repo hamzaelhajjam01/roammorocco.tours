@@ -202,6 +202,48 @@ const { showLoader = false } = Astro.props;
         <!-- 3. DIRECT HIGH-CONVERTING COMMERCIAL SECTIONS -->
         <a href="/morocco-private-driver.html" class="nav-link" title="Morocco Private Driver &amp; Chauffeur Service">Private Chauffeur</a>
         <a href="/destinations.html" class="nav-link" title="Explore Morocco Travel Destinations">Destinations</a>
+
+        <!-- 4. LUXURY MULTILINGUAL SELECTOR (EN, FR, ES, DE, IT) -->
+        <div class="nav-dropdown-item lang-dropdown-item">
+          <button type="button" class="nav-link lang-pill-btn" aria-label="Select Language" aria-haspopup="true">
+            <span class="current-lang-flag" id="currentLangFlag">🇬🇧</span>
+            <span class="current-lang-code" id="currentLangCode">EN</span>
+            <svg class="nav-chevron" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 4.5L6 8l3.5-3.5"/></svg>
+          </button>
+          <div class="nav-dropdown-panel lang-panel glass-elevated">
+            <div class="dropdown-header">
+              <span class="dropdown-kicker">EUROPEAN TRAVELERS</span>
+              <strong class="dropdown-title">Choose Language</strong>
+            </div>
+            <div class="lang-options-grid">
+              <button type="button" class="lang-row-btn active" data-lang="en">
+                <span class="lang-flag">🇬🇧</span>
+                <span class="lang-name">English</span>
+                <span class="lang-check">✓</span>
+              </button>
+              <button type="button" class="lang-row-btn" data-lang="fr">
+                <span class="lang-flag">🇫🇷</span>
+                <span class="lang-name">Français</span>
+                <span class="lang-check">✓</span>
+              </button>
+              <button type="button" class="lang-row-btn" data-lang="es">
+                <span class="lang-flag">🇪🇸</span>
+                <span class="lang-name">Español</span>
+                <span class="lang-check">✓</span>
+              </button>
+              <button type="button" class="lang-row-btn" data-lang="de">
+                <span class="lang-flag">🇩🇪</span>
+                <span class="lang-name">Deutsch</span>
+                <span class="lang-check">✓</span>
+              </button>
+              <button type="button" class="lang-row-btn" data-lang="it">
+                <span class="lang-flag">🇮🇹</span>
+                <span class="lang-name">Italiano</span>
+                <span class="lang-check">✓</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
 
@@ -300,8 +342,18 @@ const { showLoader = false } = Astro.props;
       <a href="/morocco-trip-cost-calculator.html" onclick="closeDrawer()">Cost Calculator</a>
       <a href="/travel-deals.html" onclick="closeDrawer()">Travel Deals</a>
       <a href="/about.html" onclick="closeDrawer()">About Us</a>
-      <a href="/blog.html" onclick="closeDrawer()">Travel Journal</a>
-      
+      <!-- Mobile Language Selector -->
+      <div class="mob-lang-section">
+        <span class="mob-lang-title">Choose Language:</span>
+        <div class="mob-lang-pills">
+          <button type="button" class="mob-lang-pill active" data-lang="en">🇬🇧 English</button>
+          <button type="button" class="mob-lang-pill" data-lang="fr">🇫🇷 Français</button>
+          <button type="button" class="mob-lang-pill" data-lang="es">🇪🇸 Español</button>
+          <button type="button" class="mob-lang-pill" data-lang="de">🇩🇪 Deutsch</button>
+          <button type="button" class="mob-lang-pill" data-lang="it">🇮🇹 Italiano</button>
+        </div>
+      </div>
+
       <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." class="mobile-wa-cta" target="_blank" rel="noopener" onclick="closeDrawer()">
         <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
         <span>Chat on WhatsApp</span>
@@ -777,5 +829,166 @@ const { showLoader = false } = Astro.props;
       background: rgba(200, 164, 92, 0.22) !important;
       border-color: rgba(200, 164, 92, 0.5) !important;
       color: #ffffff !important;
+    }
+
+    /* ── LUXURY MULTILINGUAL SELECTOR (DESKTOP & MOBILE) ── */
+    .lang-dropdown-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .lang-pill-btn {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      letter-spacing: -.2px !important;
+      padding: 6px 14px !important;
+      border-radius: 9999px !important;
+      cursor: pointer !important;
+      transition: all .25s ease !important;
+      border: 1px solid rgba(200, 164, 92, 0.4) !important;
+    }
+    .top.at-top .lang-pill-btn {
+      color: #000000 !important;
+      background: rgba(200, 164, 92, 0.12) !important;
+    }
+    .top.at-top .lang-pill-btn:hover {
+      background: rgba(200, 164, 92, 0.25) !important;
+      border-color: #C8A45C !important;
+    }
+    .top.at-bottom .lang-pill-btn {
+      color: #ffffff !important;
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+    .top.at-bottom .lang-pill-btn:hover {
+      background: rgba(200, 164, 92, 0.3) !important;
+      border-color: #C8A45C !important;
+    }
+    .current-lang-flag {
+      font-size: 16px;
+      line-height: 1;
+    }
+    .current-lang-code {
+      font-size: 12.5px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    /* Dropdown Panel */
+    .lang-panel {
+      width: 220px !important;
+      right: 0 !important;
+      left: auto !important;
+      padding: 14px !important;
+    }
+    .top.at-bottom .lang-panel {
+      transform: translateY(0) !important;
+      right: 0 !important;
+      left: auto !important;
+    }
+    .lang-options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .lang-row-btn {
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+      width: 100% !important;
+      padding: 9px 12px !important;
+      border-radius: 10px !important;
+      border: 1px solid transparent !important;
+      background: transparent !important;
+      cursor: pointer !important;
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 13.5px !important;
+      font-weight: 600 !important;
+      text-align: left !important;
+      transition: all 0.2s ease !important;
+    }
+    .top.at-top .lang-row-btn {
+      color: #111111 !important;
+    }
+    .top.at-bottom .lang-row-btn {
+      color: #f1f5f9 !important;
+    }
+    .lang-row-btn:hover {
+      background: rgba(200, 164, 92, 0.15) !important;
+      border-color: rgba(200, 164, 92, 0.35) !important;
+      color: #000000 !important;
+    }
+    .top.at-bottom .lang-row-btn:hover {
+      color: #ffffff !important;
+    }
+    .lang-row-btn.active {
+      background: rgba(200, 164, 92, 0.22) !important;
+      border-color: #C8A45C !important;
+      font-weight: 700 !important;
+    }
+    .lang-row-btn .lang-flag {
+      font-size: 18px !important;
+      line-height: 1 !important;
+    }
+    .lang-row-btn .lang-name {
+      flex: 1 1 auto !important;
+    }
+    .lang-row-btn .lang-check {
+      color: #C8A45C !important;
+      font-weight: 800 !important;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .lang-row-btn.active .lang-check {
+      opacity: 1 !important;
+    }
+
+    /* Mobile Drawer Lang Selector */
+    .mob-lang-section {
+      padding: 16px 18px !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+      margin: 14px 0 !important;
+      background: rgba(255, 255, 255, 0.03) !important;
+      border-radius: 14px !important;
+    }
+    .mob-lang-title {
+      display: block !important;
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.08em !important;
+      color: #C8A45C !important;
+      margin-bottom: 10px !important;
+    }
+    .mob-lang-pills {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 8px !important;
+    }
+    .mob-lang-pill {
+      padding: 8px 14px !important;
+      border-radius: 9999px !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      color: #ffffff !important;
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 12.5px !important;
+      font-weight: 600 !important;
+      cursor: pointer !important;
+      transition: all 0.2s ease !important;
+    }
+    .mob-lang-pill:hover {
+      background: rgba(200, 164, 92, 0.25) !important;
+      border-color: #C8A45C !important;
+    }
+    .mob-lang-pill.active {
+      background: #C8A45C !important;
+      border-color: #C8A45C !important;
+      color: #000000 !important;
+      font-weight: 800 !important;
     }
   </style>

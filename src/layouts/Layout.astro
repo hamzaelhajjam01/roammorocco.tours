@@ -68,6 +68,10 @@ const {
   <meta name="description" content={description}>
   <link rel="canonical" href={canonical}>
   <link rel="alternate" hreflang="en" href={canonical}>
+  <link rel="alternate" hreflang="fr" href={canonical}>
+  <link rel="alternate" hreflang="es" href={canonical}>
+  <link rel="alternate" hreflang="de" href={canonical}>
+  <link rel="alternate" hreflang="it" href={canonical}>
   <link rel="alternate" hreflang="x-default" href={canonical}>
   <link rel="alternate" type="text/plain" href="https://roammorocco.tours/llms.txt" title="AI Model Context (LLMs.txt)">
   <link rel="alternate" type="text/plain" href="https://roammorocco.tours/llms-full.txt" title="Full AI Knowledge Base (LLMs-full.txt)">
@@ -419,6 +423,35 @@ const {
   {extraStyles && extraStyles.map((href) => (
     <link rel="stylesheet" href={href} />
   ))}
+  <!-- Multilingual Clean Display (Suppresses 3rd-party frames & banner shifts) -->
+  <style is:inline>
+    .goog-te-banner-frame.skiptranslate,
+    .goog-te-banner-frame,
+    iframe.goog-te-banner-frame {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+    }
+    body {
+      top: 0px !important;
+      position: static !important;
+    }
+    #goog-gt-tt,
+    .goog-te-balloon-frame,
+    .goog-tooltip,
+    .goog-tooltip:hover {
+      display: none !important;
+    }
+    .goog-text-highlight {
+      background-color: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+    #google_translate_element {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  </style>
   <slot name="head" />
 </head>
 <body class={bodyClass} id="top">
@@ -613,6 +646,7 @@ const {
     })();
   </script>
   <script is:inline src="/js/roam-nav.js?v=20261012_nav6" defer></script>
+  <script is:inline src="/js/roam-i18n.js?v=20261017_i18n" defer></script>
   {showConcierge && <script is:inline src="/js/trip-concierge.js?v=20261012_gold4" defer></script>}
   <script is:inline src="/js/booking-wizard.js?v=20261014_goldtheme" defer></script>
 </body>
