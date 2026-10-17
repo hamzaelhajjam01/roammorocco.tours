@@ -1644,10 +1644,11 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
 .faq-item {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  margin-bottom: 12px;
-  border-radius: 4px;
+  margin-bottom: 14px;
+  border-radius: 16px !important;
   overflow: hidden;
-  transition: border-color 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease;
 }
 .faq-item.active {
   border-color: #C8A45C !important;
@@ -2930,7 +2931,7 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
   background: #ffffff !important;
   border: 1px solid rgba(200, 164, 92, 0.35) !important;
   border-left: 4px solid #C8A45C !important;
-  border-radius: 14px !important;
+  border-radius: 16px !important;
   padding: 20px 24px !important;
   margin: 28px 0 36px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;

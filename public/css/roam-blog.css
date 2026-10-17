@@ -740,6 +740,93 @@ tbody td:last-child {
   margin: 0;
 }
 
+/* ── UNIVERSAL FAQ ACCORDION WITH LUXURY ROUNDED CORNERS ── */
+.faq-accordion {
+  margin: 40px 0 !important;
+}
+
+.faq-item {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 16px !important;
+  margin-bottom: 14px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02) !important;
+  transition: all 0.25s ease !important;
+}
+
+.faq-item.active {
+  border-color: #C8A45C !important;
+  box-shadow: 0 6px 24px rgba(200, 164, 92, 0.12) !important;
+}
+
+.faq-question {
+  padding: 20px 24px !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin: 0 !important;
+  user-select: none !important;
+  font-family: inherit !important;
+  color: #000000 !important;
+}
+
+.faq-question::after {
+  content: "+" !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  color: #C8A45C !important;
+  transition: transform 0.2s ease !important;
+}
+
+.faq-item.active .faq-question::after {
+  content: "\2212" !important;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 24px 24px !important;
+  font-size: 16.5px !important;
+  line-height: 1.75 !important;
+  color: rgba(0, 0, 0, 0.75) !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
+}
+
+.faq-item.active .faq-answer {
+  display: block !important;
+}
+
+/* ── EDITORIAL FIGURES & IMAGES LUXURY ROUNDED CORNERS ── */
+.featured-image-box,
+.article-hero-fig,
+.article-content figure,
+.article-body figure,
+figure.featured-image-box {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+}
+
+.featured-image-box img,
+.article-hero-fig img,
+.article-content img:not(.wa-btn-icon),
+.article-body img:not(.wa-btn-icon) {
+  border-radius: 14px !important;
+}
+
+/* ── AI SUMMARY & TAKEAWAY CARDS LUXURY ROUNDED CORNERS ── */
+.ai-quick-summary-card,
+.takeaway-box,
+.roam-callout-ai,
+.verdict-box,
+.verdict-card {
+  border-radius: 16px !important;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .article-wrap {
