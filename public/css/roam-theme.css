@@ -2925,6 +2925,52 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
   }
 }
 
-
-
-
+/* ── GEO & AEO QUICK SUMMARY CARD (BLUF FOR ALL PAGES) ── */
+.ai-quick-summary-card {
+  background: #ffffff !important;
+  border: 1px solid rgba(200, 164, 92, 0.35) !important;
+  border-left: 4px solid #C8A45C !important;
+  border-radius: 14px !important;
+  padding: 20px 24px !important;
+  margin: 28px 0 36px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+  display: block !important;
+}
+.ai-summary-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 10px !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+.ai-summary-kicker {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+  color: #9A7B38 !important;
+  text-transform: uppercase !important;
+}
+.ai-summary-badge {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  background: rgba(37, 211, 102, 0.1) !important;
+  color: #15803d !important;
+  padding: 3px 10px !important;
+  border-radius: 9999px !important;
+}
+.ai-summary-text {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-size: 14.5px !important;
+  line-height: 1.65 !important;
+  color: #334155 !important;
+  margin: 0 !important;
+}
+.ai-summary-text strong {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
