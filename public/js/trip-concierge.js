@@ -5,6 +5,207 @@
 
 (function () {
   const WHATSAPP_NUMBER = "212653506441";
+
+  function getConciergeLang() {
+    const root = document.getElementById('rm-concierge-root');
+    if (root && root.getAttribute('data-lang')) return root.getAttribute('data-lang');
+    const match = window.location.pathname.match(/^\/(fr|es|de|it)(\.html|\/|$)/);
+    if (match) return match[1];
+    return (document.documentElement.lang || 'en').slice(0, 2);
+  }
+
+  const CONCIERGE_I18N = {
+    en: {
+      planCustomTour: "Plan a Custom Morocco Tour with Private Driver",
+      exploreDeals: "Explore Worldwide Travel Deals & Flight Tools",
+      destTitle: "Which circuits would you like to explore?",
+      destDesc: "Select a region to customize with our local Marrakech team:",
+      destOpt1: "Sahara Desert & Luxury Glamping (Merzouga)",
+      destOpt2: "Imperial Cities (Marrakech, Fes & Rabat)",
+      destOpt3: "High Atlas Mountains & Berber Valleys",
+      destOpt4: "Chefchaouen Blue City & Tangier Coast",
+      destOpt5: "Grand Morocco Complete Circuit (All Highlights)",
+      durTitle: "How many days are you planning?",
+      durDesc: "Every itinerary is completely flexible and tailored to your travel dates:",
+      durOpt1: "3 to 5 Days • Short Highlight Getaway",
+      durOpt2: "7 to 10 Days • Classic Sahara & Cities (Recommended)",
+      durOpt3: "12 to 14+ Days • In-Depth Grand Tour",
+      styleTitle: "What travel style suits you best?",
+      styleDesc: "We handpick every property to match your comfort preferences:",
+      styleOpt1: "Luxury Riads & 5-Star Desert Glamping",
+      styleOpt2: "Authentic Boutique & Historic Riads",
+      styleOpt3: "Family-Friendly & Relaxed Pace",
+      styleOpt4: "Active Trekking & Sahara Expedition",
+      finalTag: "🎉 Itinerary Draft Ready",
+      finalTitle: "Your Custom Journey Overview",
+      recapTitle: "Selected Preferences",
+      recapTransport: "🚗 Private 4x4 & Driver",
+      waDesk: "● Marrakech Local Desk Online",
+      waDesc: "Send your custom itinerary draft directly to our Marrakech headquarters for a fast, tailored quote with transparent pricing.",
+      waBtn: "Plan on WhatsApp",
+      waMsg: "Salam Roam Morocco! I used your online trip planner:\n\n" +
+        "• Destination: {dest}\n" +
+        "• Duration: {dur}\n" +
+        "• Style: {style}\n" +
+        "• Transport: Private Air-Conditioned 4x4 with Chauffeur\n\n" +
+        "Could you please send me a custom itinerary quote and availability?",
+      essentialsTitle: "✈️ Travel Essentials & Connectivity",
+      flightsText: "✈️ Search Cheap Flights to Marrakech / Casablanca",
+      esimText: "📱 High-Speed Morocco eSIM (Instant Setup)"
+    },
+    fr: {
+      planCustomTour: "Planifier un circuit sur mesure au Maroc avec chauffeur",
+      exploreDeals: "Offres de voyage dans le monde & vols",
+      destTitle: "Quels circuits souhaitez-vous explorer ?",
+      destDesc: "Choisissez une région à personnaliser avec notre équipe locale à Marrakech :",
+      destOpt1: "Désert du Sahara & Camp de Luxe (Merzouga)",
+      destOpt2: "Villes Impériales (Marrakech, Fès & Rabat)",
+      destOpt3: "Haut Atlas & Vallées Berbères",
+      destOpt4: "Chefchaouen la Perle Bleue & Côte de Tanger",
+      destOpt5: "Grand Circuit Complet du Maroc (Tous les incontournables)",
+      durTitle: "Combien de jours prévoyez-vous ?",
+      durDesc: "Chaque itinéraire est 100% personnalisable selon vos dates :",
+      durOpt1: "3 à 5 jours • Escapade courte et intense",
+      durOpt2: "7 à 10 jours • Sahara classique & Cités impériales (Recommandé)",
+      durOpt3: "12 à 14+ jours • Grand tour approfondi",
+      styleTitle: "Quel style de voyage vous correspond le mieux ?",
+      styleDesc: "Nous sélectionnons chaque adresse selon vos préférences de confort :",
+      styleOpt1: "Riads de Luxe & Glamping 5 Étoiles au Sahara",
+      styleOpt2: "Riads Historiques & de Charme Authentiques",
+      styleOpt3: "En Famille & Rythme Paisible",
+      styleOpt4: "Trekking Actif & Expédition Sahara",
+      finalTag: "🎉 Projet d'itinéraire prêt",
+      finalTitle: "Aperçu de votre voyage sur mesure",
+      recapTitle: "Préférences sélectionnées",
+      recapTransport: "🚗 4x4 Privé & Chauffeur dédié",
+      waDesk: "● Desk Local Marrakech en ligne",
+      waDesc: "Envoyez votre projet d'itinéraire directement à notre équipe à Marrakech pour un devis rapide, clair et sans engagement.",
+      waBtn: "Planifier sur WhatsApp",
+      waMsg: "Salam Roam Morocco ! J'ai configuré mon voyage sur votre planificateur en ligne :\n\n" +
+        "• Destination : {dest}\n" +
+        "• Durée : {dur}\n" +
+        "• Style : {style}\n" +
+        "• Transport : 4x4 privé climatisé avec chauffeur\n\n" +
+        "Pourriez-vous me transmettre une proposition d'itinéraire personnalisé et les disponibilités ?",
+      essentialsTitle: "✈️ Indispensables de voyage & connectivité",
+      flightsText: "✈️ Trouver des vols avantageux pour Marrakech / Casablanca",
+      esimText: "📱 eSIM Maroc haut débit (Activation immédiate)"
+    },
+    es: {
+      planCustomTour: "Diseñar un tour privado en Marruecos a medida",
+      exploreDeals: "Ofertas de viajes y vuelos en todo el mundo",
+      destTitle: "¿Qué rutas le gustaría explorar?",
+      destDesc: "Seleccione una región para personalizarla con nuestro equipo local en Marrakech:",
+      destOpt1: "Desierto del Sahara y Campamento de Lujo (Merzouga)",
+      destOpt2: "Ciudades Imperiales (Marrakech, Fez y Rabat)",
+      destOpt3: "Alto Atlas y Valles Bereberes",
+      destOpt4: "Chefchaouen Ciudad Azul y Costa de Tánger",
+      destOpt5: "Gran Circuito Completo de Marruecos",
+      durTitle: "¿Cuántos días tiene planeados?",
+      durDesc: "Cada itinerario es totalmente flexible y adaptado a sus fechas:",
+      durOpt1: "3 a 5 días • Escapada corta destacada",
+      durOpt2: "7 a 10 días • Sahara clásico y ciudades (Recomendado)",
+      durOpt3: "12 a 14+ días • Gran viaje en profundidad",
+      styleTitle: "¿Qué estilo de viaje prefiere?",
+      styleDesc: "Elegimos cada alojamiento a la medida de su comodidad:",
+      styleOpt1: "Riads de Lujo y Glamping 5 Estrellas en el Sahara",
+      styleOpt2: "Riads con Encanto Histórico y Auténtico",
+      styleOpt3: "Familiar y a Ritmo Tranquilo",
+      styleOpt4: "Trekking Activo y Expedición en el Sahara",
+      finalTag: "🎉 Borrador de Itinerario Listo",
+      finalTitle: "Resumen de su Viaje Personalizado",
+      recapTitle: "Preferencias Seleccionadas",
+      recapTransport: "🚗 4x4 Privado y Chófer Dedicado",
+      waDesk: "● Centro de Operaciones en Marrakech Online",
+      waDesc: "Envíe su borrador de viaje directamente a nuestro equipo en Marrakech para recibir un presupuesto rápido y detallado.",
+      waBtn: "Planificar en WhatsApp",
+      waMsg: "¡Salam Roam Morocco! He completado el planificador de viaje online:\n\n" +
+        "• Destino: {dest}\n" +
+        "• Duración: {dur}\n" +
+        "• Estilo: {style}\n" +
+        "• Transporte: 4x4 privado con aire acondicionado y chófer\n\n" +
+        "¿Podrían enviarme una propuesta de itinerario a medida y disponibilidad?",
+      essentialsTitle: "✈️ Esenciales de Viaje y Conectividad",
+      flightsText: "✈️ Buscar vuelos a Marrakech / Casablanca",
+      esimText: "📱 eSIM de alta velocidad para Marruecos"
+    },
+    de: {
+      planCustomTour: "Individuelle Marokko-Privatreise planen",
+      exploreDeals: "Weltweite Reiseangebote & Flugsuche",
+      destTitle: "Welche Regionen möchten Sie erkunden?",
+      destDesc: "Wählen Sie ein Ziel, das unser Team in Marrakesch für Sie maßschneidert:",
+      destOpt1: "Sahara-Wüste & Luxus-Glamping (Merzouga)",
+      destOpt2: "Königsstädte (Marrakesch, Fès & Rabat)",
+      destOpt3: "Hoher Atlas & Berber-Täler",
+      destOpt4: "Blaue Stadt Chefchaouen & Küste von Tanger",
+      destOpt5: "Große Marokko-Rundreise (Alle Höhepunkte)",
+      durTitle: "Wie viele Reisetage planen Sie?",
+      durDesc: "Jede Route ist vollkommen flexibel und an Ihre Reisedaten angepasst:",
+      durOpt1: "3 bis 5 Tage • Kurztrip-Highlights",
+      durOpt2: "7 bis 10 Tage • Klassische Sahara & Städte (Empfohlen)",
+      durOpt3: "12 bis 14+ Tage • Ausführliche Rundreise",
+      styleTitle: "Welcher Reisestil passt zu Ihnen?",
+      styleDesc: "Wir wählen jede Unterkunft passend zu Ihrem Komfortwunsch aus:",
+      styleOpt1: "Luxus-Riads & 5-Sterne Wüsten-Glamping",
+      styleOpt2: "Authentische Boutique- & historische Riads",
+      styleOpt3: "Familienfreundlich & entspanntes Tempo",
+      styleOpt4: "Aktives Trekking & Sahara-Expedition",
+      finalTag: "🎉 Reiseentwurf fertig",
+      finalTitle: "Übersicht Ihrer maßgeschneiderten Reise",
+      recapTitle: "Ausgewählte Wünsche",
+      recapTransport: "🚗 Privater 4x4 & eigener Fahrer",
+      waDesk: "● Marrakesch-Team jetzt online",
+      waDesc: "Senden Sie Ihren Reiseentwurf direkt an unsere Zentrale in Marrakesch für ein schnelles, transparentes Angebot.",
+      waBtn: "Über WhatsApp planen",
+      waMsg: "Salam Roam Morocco! Ich habe Ihren Online-Reiseplaner genutzt:\n\n" +
+        "• Reiseziel: {dest}\n" +
+        "• Reisedauer: {dur}\n" +
+        "• Reisestil: {style}\n" +
+        "• Transport: Privater klimatisierter 4x4 mit Chauffeur\n\n" +
+        "Könnten Sie mir bitte ein individuelles Reiseangebot und die Verfügbarkeit zusenden?",
+      essentialsTitle: "✈️ Reise-Essentials & Internet",
+      flightsText: "✈️ Günstige Flüge nach Marrakesch / Casablanca",
+      esimText: "📱 Schnelle Marokko-eSIM (Sofortige Aktivierung)"
+    },
+    it: {
+      planCustomTour: "Pianifica un tour privato su misura con autista",
+      exploreDeals: "Offerte di viaggio mondiali e voli",
+      destTitle: "Quali circuiti desideri esplorare?",
+      destDesc: "Seleziona una regione da personalizzare con il nostro team locale di Marrakech:",
+      destOpt1: "Deserto del Sahara & Glamping di Lusso (Merzouga)",
+      destOpt2: "Città Imperiali (Marrakech, Fes & Rabat)",
+      destOpt3: "Alto Atlante & Valli Berbere",
+      destOpt4: "Chefchaouen Perla Blu & Costa di Tangeri",
+      destOpt5: "Gran Circuito Completo del Marocco",
+      durTitle: "Quanti giorni stai pianificando?",
+      durDesc: "Ogni itinerario è completamente flessibile e su misura per le tue date:",
+      durOpt1: "Da 3 a 5 giorni • Fuga breve tra le meraviglie",
+      durOpt2: "Da 7 a 10 giorni • Sahara classico e città (Consigliato)",
+      durOpt3: "Da 12 a 14+ giorni • Gran tour approfondito",
+      styleTitle: "Quale stile di viaggio preferisci?",
+      styleDesc: "Selezioniamo con cura ogni struttura per offrirti il massimo comfort:",
+      styleOpt1: "Riad di Lusso & Glamping 5 Stelle nel Sahara",
+      styleOpt2: "Riad Storici & Boutique di Charme",
+      styleOpt3: "Per Famiglie & Ritmo Rilassato",
+      styleOpt4: "Trekking Attivo & Spedizione nel Sahara",
+      finalTag: "🎉 Bozza d'itinerario pronta",
+      finalTitle: "Riepilogo del tuo viaggio su misura",
+      recapTitle: "Preferenze selezionate",
+      recapTransport: "🚗 4x4 Privato con autista dedicato",
+      waDesk: "● Desk Locale Marrakech online",
+      waDesc: "Invia la tua bozza d'itinerario al nostro team di Marrakech per ricevere un preventivo rapido, trasparente e senza impegno.",
+      waBtn: "Pianifica su WhatsApp",
+      waMsg: "Salam Roam Morocco! Ho configurato il mio viaggio con il planner online:\n\n" +
+        "• Destinazione: {dest}\n" +
+        "• Durata: {dur}\n" +
+        "• Stile: {style}\n" +
+        "• Trasporto: 4x4 privato con aria condizionata e autista\n\n" +
+        "Potreste inviarmi un preventivo personalizzato e verificare le disponibilità?",
+      essentialsTitle: "✈️ Indispensabili di viaggio e connessione",
+      flightsText: "✈️ Cerca voli per Marrakech / Casablanca",
+      esimText: "📱 eSIM Marocco ad alta velocità (Configurazione immediata)"
+    }
+  };
   
   // Trip State
   let tripState = {
@@ -271,29 +472,30 @@
   // MOROCCO FLOW: Step 2: Destinations
   function renderMoroccoDestinations() {
     tripState.mode = 'morocco';
-    addUserMessage("Plan a Custom Morocco Tour with Private Driver");
+    const i18n = CONCIERGE_I18N[getConciergeLang()] || CONCIERGE_I18N.en;
+    addUserMessage(i18n.planCustomTour);
     simulateBotReply(`
-      <div class="rm-bubble-title">Which circuits would you like to explore?</div>
-      <div class="rm-bubble-desc">Select a region to customize with our local Marrakech team:</div>
+      <div class="rm-bubble-title">${i18n.destTitle}</div>
+      <div class="rm-bubble-desc">${i18n.destDesc}</div>
       <div class="rm-options-grid">
-        <button class="rm-choice-pill highlight" data-dest="Sahara Desert & Erg Chebbi Luxury Camp" type="button">
-          <span class="rm-pill-text"><span>🐪</span> <span>Sahara Desert & Luxury Glamping (Merzouga)</span></span>
+        <button class="rm-choice-pill highlight" data-dest="${i18n.destOpt1}" type="button">
+          <span class="rm-pill-text"><span>🐪</span> <span>${i18n.destOpt1}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill" data-dest="Imperial Cities (Marrakech, Fes & Rabat)" type="button">
-          <span class="rm-pill-text"><span>🏰</span> <span>Imperial Cities (Marrakech, Fes & Rabat)</span></span>
+        <button class="rm-choice-pill" data-dest="${i18n.destOpt2}" type="button">
+          <span class="rm-pill-text"><span>🏰</span> <span>${i18n.destOpt2}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill" data-dest="High Atlas Mountains & Berber Valleys" type="button">
-          <span class="rm-pill-text"><span>🏔️</span> <span>High Atlas Mountains & Berber Valleys</span></span>
+        <button class="rm-choice-pill" data-dest="${i18n.destOpt3}" type="button">
+          <span class="rm-pill-text"><span>🏔️</span> <span>${i18n.destOpt3}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill" data-dest="Chefchaouen Blue City & Tangier Coast" type="button">
-          <span class="rm-pill-text"><span>💙</span> <span>Chefchaouen Blue City & Tangier Coast</span></span>
+        <button class="rm-choice-pill" data-dest="${i18n.destOpt4}" type="button">
+          <span class="rm-pill-text"><span>💙</span> <span>${i18n.destOpt4}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill highlight" data-dest="Grand Morocco Complete Circuit" type="button">
-          <span class="rm-pill-text"><span>⭐</span> <span>Grand Morocco Complete Circuit (All Highlights)</span></span>
+        <button class="rm-choice-pill highlight" data-dest="${i18n.destOpt5}" type="button">
+          <span class="rm-pill-text"><span>⭐</span> <span>${i18n.destOpt5}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
       </div>
@@ -304,20 +506,21 @@
   function renderMoroccoDuration(selectedDest) {
     tripState.destinations = [selectedDest];
     addUserMessage(selectedDest);
+    const i18n = CONCIERGE_I18N[getConciergeLang()] || CONCIERGE_I18N.en;
     simulateBotReply(`
-      <div class="rm-bubble-title">How many days are you planning?</div>
-      <div class="rm-bubble-desc">Every itinerary is completely flexible and tailored to your travel dates:</div>
+      <div class="rm-bubble-title">${i18n.durTitle}</div>
+      <div class="rm-bubble-desc">${i18n.durDesc}</div>
       <div class="rm-options-grid">
-        <button class="rm-choice-pill" data-dur="3 to 5 Days (Short Gateway)" type="button">
-          <span class="rm-pill-text"><span>⏱️</span> <span>3 to 5 Days • Short Highlight Getaway</span></span>
+        <button class="rm-choice-pill" data-dur="${i18n.durOpt1}" type="button">
+          <span class="rm-pill-text"><span>⏱️</span> <span>${i18n.durOpt1}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill highlight" data-dur="7 to 10 Days (The Sweet Spot)" type="button">
-          <span class="rm-pill-text"><span>⭐</span> <span>7 to 10 Days • Classic Sahara & Cities (Recommended)</span></span>
+        <button class="rm-choice-pill highlight" data-dur="${i18n.durOpt2}" type="button">
+          <span class="rm-pill-text"><span>⭐</span> <span>${i18n.durOpt2}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill" data-dur="12 to 14+ Days (Grand Circuit)" type="button">
-          <span class="rm-pill-text"><span>👑</span> <span>12 to 14+ Days • In-Depth Grand Tour</span></span>
+        <button class="rm-choice-pill" data-dur="${i18n.durOpt3}" type="button">
+          <span class="rm-pill-text"><span>👑</span> <span>${i18n.durOpt3}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
       </div>
@@ -328,24 +531,25 @@
   function renderMoroccoStyle(selectedDur) {
     tripState.duration = selectedDur;
     addUserMessage(selectedDur);
+    const i18n = CONCIERGE_I18N[getConciergeLang()] || CONCIERGE_I18N.en;
     simulateBotReply(`
-      <div class="rm-bubble-title">What travel style suits you best?</div>
-      <div class="rm-bubble-desc">We handpick every property to match your comfort preferences:</div>
+      <div class="rm-bubble-title">${i18n.styleTitle}</div>
+      <div class="rm-bubble-desc">${i18n.styleDesc}</div>
       <div class="rm-options-grid">
-        <button class="rm-choice-pill highlight" data-style="Luxury Riads & 5-Star Glamping" type="button">
-          <span class="rm-pill-text"><span>💎</span> <span>Luxury Riads & 5-Star Desert Glamping</span></span>
+        <button class="rm-choice-pill highlight" data-style="${i18n.styleOpt1}" type="button">
+          <span class="rm-pill-text"><span>💎</span> <span>${i18n.styleOpt1}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill" data-style="Authentic Boutique & Cultural Riads" type="button">
-          <span class="rm-pill-text"><span>🏛️</span> <span>Authentic Boutique & Historic Riads</span></span>
+        <button class="rm-choice-pill" data-style="${i18n.styleOpt2}" type="button">
+          <span class="rm-pill-text"><span>🏛️</span> <span>${i18n.styleOpt2}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill" data-style="Family-Friendly & Relaxed Pace" type="button">
-          <span class="rm-pill-text"><span>👨‍👩‍👧</span> <span>Family-Friendly & Relaxed Pace</span></span>
+        <button class="rm-choice-pill" data-style="${i18n.styleOpt3}" type="button">
+          <span class="rm-pill-text"><span>👨‍👩‍👧</span> <span>${i18n.styleOpt3}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
-        <button class="rm-choice-pill" data-style="Active Trekking & Sahara Expedition" type="button">
-          <span class="rm-pill-text"><span>🥾</span> <span>Active Trekking & Sahara Expedition</span></span>
+        <button class="rm-choice-pill" data-style="${i18n.styleOpt4}" type="button">
+          <span class="rm-pill-text"><span>🥾</span> <span>${i18n.styleOpt4}</span></span>
           <span class="rm-pill-arrow">→</span>
         </button>
       </div>
@@ -356,52 +560,52 @@
   function renderMoroccoFinal(selectedStyle) {
     tripState.style = selectedStyle;
     addUserMessage(selectedStyle);
-    const textMessage = `Salam Roam Morocco! I used your online trip planner:%0A%0A` +
-      `• Destination: ${tripState.destinations[0]}%0A` +
-      `• Duration: ${tripState.duration}%0A` +
-      `• Style: ${tripState.style}%0A` +
-      `• Transport: Private Air-Conditioned 4x4 with English-speaking Driver%0A%0A` +
-      `Could you please send me a custom itinerary quote and availability?`;
+    const i18n = CONCIERGE_I18N[getConciergeLang()] || CONCIERGE_I18N.en;
 
-    const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${textMessage}`;
+    const textMessage = i18n.waMsg
+      .replace('{dest}', tripState.destinations[0] || '')
+      .replace('{dur}', tripState.duration || '')
+      .replace('{style}', tripState.style || '');
+
+    const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(textMessage)}`;
 
     simulateBotReply(`
-      <div class="rm-bubble-tag">🎉 Itinerary Draft Ready</div>
-      <div class="rm-bubble-title">Your Custom Journey Overview</div>
+      <div class="rm-bubble-tag">${i18n.finalTag}</div>
+      <div class="rm-bubble-title">${i18n.finalTitle}</div>
       
       <div class="rm-recap-box">
         <div class="rm-recap-title">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          Selected Preferences
+          ${i18n.recapTitle}
         </div>
         <div class="rm-recap-tags">
           <span class="rm-recap-tag">📍 ${tripState.destinations[0]}</span>
           <span class="rm-recap-tag">⏱️ ${tripState.duration}</span>
           <span class="rm-recap-tag">✨ ${tripState.style}</span>
-          <span class="rm-recap-tag">🚗 Private 4x4 & Driver</span>
+          <span class="rm-recap-tag">${i18n.recapTransport}</span>
         </div>
       </div>
 
       <div class="rm-wa-card">
-        <span class="rm-wa-badge">● Marrakech Local Desk Online</span>
-        <p>Send your custom itinerary draft directly to our Marrakech headquarters for a fast, tailored quote with transparent pricing.</p>
+        <span class="rm-wa-badge">${i18n.waDesk}</span>
+        <p>${i18n.waDesc}</p>
         <a href="${waLink}" target="_blank" rel="noopener" class="rm-wa-btn" style="color:#ffffff !important; text-decoration:none;">
           <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
-          <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          <span style="color:#ffffff !important;">${i18n.waBtn}</span>
         </a>
       </div>
 
       <div class="rm-affiliate-card">
         <div class="rm-affiliate-title">
-          <span>✈️ Travel Essentials & Connectivity</span>
+          <span>${i18n.essentialsTitle}</span>
         </div>
         <div class="rm-affiliate-links">
           <a href="https://roammorocco.tours/blog/cheap-flights-to-morocco.html" class="rm-aff-link" target="_blank" rel="noopener">
-            <span>✈️ Search Cheap Flights to Marrakech / Casablanca</span>
+            <span>${i18n.flightsText}</span>
             <span class="rm-aff-link-meta">SkyScanner / Trip.com →</span>
           </a>
           <a href="https://roammorocco.tours/travel-deals.html#esim" class="rm-aff-link" target="_blank" rel="noopener">
-            <span>📱 High-Speed Morocco eSIM (Instant Setup)</span>
+            <span>${i18n.esimText}</span>
             <span class="rm-aff-link-meta">Airalo →</span>
           </a>
         </div>

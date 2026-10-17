@@ -491,7 +491,7 @@ const ogLocale = currentLang === 'fr' ? 'fr_FR' :
   {showHeader && <Header showLoader={showLoader} lang={currentLang} />}
   <slot />
   {showFooter && <Footer lang={currentLang} />}
-  {showConcierge && <TripConcierge />}
+  {showConcierge && <TripConcierge lang={currentLang} />}
 
   <!-- Client-side Interactive Scripts -->
   <script is:inline>

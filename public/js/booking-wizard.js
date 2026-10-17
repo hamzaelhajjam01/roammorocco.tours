@@ -122,6 +122,259 @@
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
   }
 
+  function getCurrentLang() {
+    const wizardEl = document.getElementById('heroBookingWizard');
+    if (wizardEl && wizardEl.getAttribute('data-lang')) {
+      return wizardEl.getAttribute('data-lang');
+    }
+    const match = window.location.pathname.match(/^\/(fr|es|de|it)(\.html|\/|$)/);
+    if (match) return match[1];
+    return (document.documentElement.lang || 'en').slice(0, 2);
+  }
+
+  const WIZARD_I18N = {
+    en: {
+      customQuote: 'Custom Quote',
+      quote: 'Quote',
+      sedanVeh: 'Sedan · 1–4 passengers',
+      vanVeh: 'Van · 5–7 passengers',
+      minibusVeh: 'Minibus · 8–12 passengers',
+      coachVeh: 'Coach / Fleet · 13+ passengers',
+      luggage3: 'About 3 suitcases',
+      luggage7: 'About 7 suitcases',
+      luggage12: 'About 12 suitcases',
+      luggageLarge: 'Large luggage capacity',
+      childSeatAdd: '<span class="hbw-pill-icon">+</span> Child seat',
+      childSeatInc: '<span class="hbw-pill-icon">✓</span> Child seat included',
+      payCashNote: 'ⓘ Pay the driver on the day, in euros or dirhams.',
+      payCardNote: 'ⓘ We will send a secure online payment link via WhatsApp after confirmation.',
+      alertSelect: 'Please select a pickup location and destination.',
+      waGreeting: 'Salam Roam Morocco! I would like to book a private transfer:\n\n',
+      waFrom: '📍 *From:* ',
+      waTo: '🏁 *To:* ',
+      waType: '🚗 *Trip Type:* ',
+      waRound: 'Round Trip (-10% return applied)',
+      waOneWay: 'One Way Direct',
+      waPax: '👥 *Passengers:* ',
+      waDate: '📅 *Date:* ',
+      waFlight: '✈️ *Flight Number:* ',
+      waChild: '👶 *Child Seat:* 1 requested\n',
+      waNotes: '📝 *Notes/Pickup:* ',
+      waPay: '💳 *Payment Method:* ',
+      waPayCash: 'Cash to driver on arrival',
+      waPayCard: 'Card via secure link',
+      waPrice: '💰 *Quoted Rate:* ',
+      waCustom: 'Custom Quote Requested',
+      waTotal: '€ total for group',
+      waClose: 'Could you please confirm driver availability? Shukran!',
+      tourGreeting: 'Salam Roam Morocco! I want to book the *{tourName}*:\n\n',
+      tourFrom: '📍 *Departure City:* ',
+      tourVeh: '🚗 *Vehicle:* ',
+      tourDate: '📅 *Preferred Date:* ',
+      tourPrice: '💰 *Confirmed Starting Price:* ',
+      tourGroupTotal: '€ for our private group\n',
+      tourPay: '💳 *Payment:* Cash to driver / Card upon arrival\n\n',
+      tourClose: 'Can you please confirm driver & itinerary availability?',
+      qrTag: '● Direct WhatsApp Desk',
+      qrTitle: 'Instant Booking Confirmation',
+      qrDesc: 'Scan with your phone camera to chat instantly with our Marrakech operations desk.',
+      qrWeb: 'Open WhatsApp Web on Desktop →',
+      qrEmail: 'Prefer Email? Send booking request via email'
+    },
+    fr: {
+      customQuote: 'Sur devis',
+      quote: 'Devis',
+      sedanVeh: 'Berline · 1–4 passagers',
+      vanVeh: 'Van · 5–7 passagers',
+      minibusVeh: 'Minibus · 8–12 passagers',
+      coachVeh: 'Autocar / Flotte · 13+ passagers',
+      luggage3: 'Environ 3 valises',
+      luggage7: 'Environ 7 valises',
+      luggage12: 'Environ 12 valises',
+      luggageLarge: 'Grande capacité de bagages',
+      childSeatAdd: '<span class="hbw-pill-icon">+</span> Siège enfant',
+      childSeatInc: '<span class="hbw-pill-icon">✓</span> Siège enfant inclus',
+      payCashNote: 'ⓘ Payez le chauffeur le jour même, en euros ou dirhams.',
+      payCardNote: 'ⓘ Nous vous enverrons un lien de paiement en ligne sécurisé par WhatsApp après confirmation.',
+      alertSelect: 'Veuillez sélectionner un lieu de prise en charge et une destination.',
+      waGreeting: 'Salam Roam Morocco ! Je souhaite réserver un transfert privé :\n\n',
+      waFrom: '📍 *Départ :* ',
+      waTo: '🏁 *Destination :* ',
+      waType: '🚗 *Type de trajet :* ',
+      waRound: 'Aller-retour (-10% appliqué sur le retour)',
+      waOneWay: 'Aller simple direct',
+      waPax: '👥 *Passagers :* ',
+      waDate: '📅 *Date :* ',
+      waFlight: '✈️ *Numéro de vol :* ',
+      waChild: '👶 *Siège enfant :* 1 demandé\n',
+      waNotes: '📝 *Notes / Prise en charge :* ',
+      waPay: '💳 *Mode de paiement :* ',
+      waPayCash: 'Espèces au chauffeur à l\'arrivée',
+      waPayCard: 'Carte bancaire via lien sécurisé',
+      waPrice: '💰 *Tarif estimé :* ',
+      waCustom: 'Devis sur mesure demandé',
+      waTotal: '€ au total pour le groupe',
+      waClose: 'Pourriez-vous confirmer la disponibilité du chauffeur ? Shukran !',
+      tourGreeting: 'Salam Roam Morocco ! Je souhaite réserver l\'excursion *{tourName}* :\n\n',
+      tourFrom: '📍 *Ville de départ :* ',
+      tourVeh: '🚗 *Véhicule :* ',
+      tourDate: '📅 *Date souhaitée :* ',
+      tourPrice: '💰 *Tarif de départ confirmé :* ',
+      tourGroupTotal: '€ pour notre groupe privé\n',
+      tourPay: '💳 *Paiement :* Espèces au chauffeur / Carte à l\'arrivée\n\n',
+      tourClose: 'Pouvez-vous confirmer la disponibilité du chauffeur et de l\'itinéraire ?',
+      qrTag: '● Assistance Directe WhatsApp',
+      qrTitle: 'Confirmation Immédiate de Réservation',
+      qrDesc: 'Scannez avec votre appareil photo pour discuter directement avec notre équipe à Marrakech.',
+      qrWeb: 'Ouvrir WhatsApp Web sur ordinateur →',
+      qrEmail: 'Vous préférez un e-mail ? Envoyer par e-mail'
+    },
+    es: {
+      customQuote: 'A medida',
+      quote: 'Presupuesto',
+      sedanVeh: 'Sedán · 1–4 pasajeros',
+      vanVeh: 'Van · 5–7 pasajeros',
+      minibusVeh: 'Minibús · 8–12 pasajeros',
+      coachVeh: 'Autobús / Flota · 13+ pasajeros',
+      luggage3: 'Aprox. 3 maletas',
+      luggage7: 'Aprox. 7 maletas',
+      luggage12: 'Aprox. 12 maletas',
+      luggageLarge: 'Gran capacidad de equipaje',
+      childSeatAdd: '<span class="hbw-pill-icon">+</span> Silla infantil',
+      childSeatInc: '<span class="hbw-pill-icon">✓</span> Silla infantil incluida',
+      payCashNote: 'ⓘ Paga al conductor el día del viaje, en euros o dirhams.',
+      payCardNote: 'ⓘ Enviaremos un enlace de pago seguro por WhatsApp tras la confirmación.',
+      alertSelect: 'Por favor, selecciona un punto de recogida y un destino.',
+      waGreeting: '¡Salam Roam Morocco! Me gustaría reservar un traslado privado:\n\n',
+      waFrom: '📍 *Origen:* ',
+      waTo: '🏁 *Destino:* ',
+      waType: '🚗 *Tipo de viaje:* ',
+      waRound: 'Ida y vuelta (-10% descuento en retorno)',
+      waOneWay: 'Solo ida directo',
+      waPax: '👥 *Pasajeros:* ',
+      waDate: '📅 *Fecha:* ',
+      waFlight: '✈️ *Número de vuelo:* ',
+      waChild: '👶 *Silla de bebé:* 1 solicitada\n',
+      waNotes: '📝 *Notas / Recogida:* ',
+      waPay: '💳 *Método de pago:* ',
+      waPayCash: 'Efectivo al conductor al llegar',
+      waPayCard: 'Tarjeta mediante enlace seguro',
+      waPrice: '💰 *Tarifa cotizada:* ',
+      waCustom: 'Cotización a medida solicitada',
+      waTotal: '€ total por grupo',
+      waClose: '¿Podrían confirmar la disponibilidad del conductor? ¡Shukran!',
+      tourGreeting: '¡Salam Roam Morocco! Deseo reservar el tour *{tourName}*:\n\n',
+      tourFrom: '📍 *Ciudad de salida:* ',
+      tourVeh: '🚗 *Vehículo:* ',
+      tourDate: '📅 *Fecha preferida:* ',
+      tourPrice: '💰 *Tarifa base confirmada:* ',
+      tourGroupTotal: '€ para nuestro grupo privado\n',
+      tourPay: '💳 *Pago:* Efectivo al conductor / Tarjeta a la llegada\n\n',
+      tourClose: '¿Podrían confirmar disponibilidad de conductor e itinerario?',
+      qrTag: '● Atención Directa por WhatsApp',
+      qrTitle: 'Confirmación Inmediata de Reserva',
+      qrDesc: 'Escanee con su cámara para chatear al instante con nuestro centro de operaciones en Marrakech.',
+      qrWeb: 'Abrir WhatsApp Web en PC →',
+      qrEmail: '¿Prefiere correo? Enviar solicitud por email'
+    },
+    de: {
+      customQuote: 'Angebot anfragen',
+      quote: 'Angebot',
+      sedanVeh: 'Limousine · 1–4 Passagiere',
+      vanVeh: 'Van · 5–7 Passagiere',
+      minibusVeh: 'Kleinbus · 8–12 Passagiere',
+      coachVeh: 'Reisebus / Flotte · 13+ Passagiere',
+      luggage3: 'Ca. 3 Koffer',
+      luggage7: 'Ca. 7 Koffer',
+      luggage12: 'Ca. 12 Koffer',
+      luggageLarge: 'Große Gepäckkapazität',
+      childSeatAdd: '<span class="hbw-pill-icon">+</span> Kindersitz',
+      childSeatInc: '<span class="hbw-pill-icon">✓</span> Kindersitz inklusive',
+      payCashNote: 'ⓘ Zahlung beim Fahrer am Reisetag, in Euro oder Dirham.',
+      payCardNote: 'ⓘ Nach Bestätigung senden wir Ihnen einen sicheren Zahlungslink per WhatsApp.',
+      alertSelect: 'Bitte wählen Sie einen Abholort und ein Reiseziel aus.',
+      waGreeting: 'Salam Roam Morocco! Ich möchte einen privaten Transfer buchen:\n\n',
+      waFrom: '📍 *Abholung:* ',
+      waTo: '🏁 *Ziel:* ',
+      waType: '🚗 *Fahrtart:* ',
+      waRound: 'Hin- und Rückfahrt (-10% Rabatt auf Rückfahrt)',
+      waOneWay: 'Einfache Fahrt',
+      waPax: '👥 *Passagiere:* ',
+      waDate: '📅 *Datum:* ',
+      waFlight: '✈️ *Flugnummer:* ',
+      waChild: '👶 *Kindersitz:* 1 angefordert\n',
+      waNotes: '📝 *Hinweise / Hotel:* ',
+      waPay: '💳 *Zahlungsart:* ',
+      waPayCash: 'Barzahlung beim Fahrer bei Ankunft',
+      waPayCard: 'Kreditkarte über sicheren Online-Link',
+      waPrice: '💰 *Preisangebot:* ',
+      waCustom: 'Individuelles Angebot angefordert',
+      waTotal: '€ Gesamtpreis für Gruppe',
+      waClose: 'Könnten Sie bitte die Verfügbarkeit eines Fahrers bestätigen? Shukran!',
+      tourGreeting: 'Salam Roam Morocco! Ich möchte die Tour *{tourName}* anfragen:\n\n',
+      tourFrom: '📍 *Abfahrtsort:* ',
+      tourVeh: '🚗 *Fahrzeug:* ',
+      tourDate: '📅 *Wunschdatum:* ',
+      tourPrice: '💰 *Bestätigter Startpreis:* ',
+      tourGroupTotal: '€ für unsere private Gruppe\n',
+      tourPay: '💳 *Zahlung:* Bar beim Fahrer / Karte bei Ankunft\n\n',
+      tourClose: 'Könnten Sie bitte die Verfügbarkeit von Fahrer und Route bestätigen?',
+      qrTag: '● Direkter WhatsApp-Desk',
+      qrTitle: 'Sofortige Buchungsbestätigung',
+      qrDesc: 'Mit Smartphone-Kamera scannen, um direkt mit unserem Team in Marrakesch zu schreiben.',
+      qrWeb: 'WhatsApp Web am Desktop öffnen →',
+      qrEmail: 'Lieber per E-Mail? Anfrage per E-Mail senden'
+    },
+    it: {
+      customQuote: 'Su misura',
+      quote: 'Preventivo',
+      sedanVeh: 'Berlina · 1–4 passeggeri',
+      vanVeh: 'Van · 5–7 passeggeri',
+      minibusVeh: 'Minibus · 8–12 passeggeri',
+      coachVeh: 'Pullman / Flotta · 13+ passeggeri',
+      luggage3: 'Circa 3 valigie',
+      luggage7: 'Circa 7 valigie',
+      luggage12: 'Circa 12 valigie',
+      luggageLarge: 'Grande capacità bagagli',
+      childSeatAdd: '<span class="hbw-pill-icon">+</span> Seggiolino',
+      childSeatInc: '<span class="hbw-pill-icon">✓</span> Seggiolino incluso',
+      payCashNote: 'ⓘ Paga l\'autista il giorno stesso, in euro o dirham.',
+      payCardNote: 'ⓘ Invieremo un link di pagamento sicuro tramite WhatsApp dopo la conferma.',
+      alertSelect: 'Seleziona un punto di partenza e una destinazione.',
+      waGreeting: 'Salam Roam Morocco! Vorrei prenotare un transfer privato:\n\n',
+      waFrom: '📍 *Partenza:* ',
+      waTo: '🏁 *Destinazione:* ',
+      waType: '🚗 *Tipo di viaggio:* ',
+      waRound: 'Andata e ritorno (-10% applicato sul ritorno)',
+      waOneWay: 'Solo andata',
+      waPax: '👥 *Passeggeri:* ',
+      waDate: '📅 *Data:* ',
+      waFlight: '✈️ *Numero di volo:* ',
+      waChild: '👶 *Seggiolino:* 1 richiesto\n',
+      waNotes: '📝 *Note / Ritiro:* ',
+      waPay: '💳 *Metodo di pagamento:* ',
+      waPayCash: 'Contanti all\'autista all\'arrivo',
+      waPayCard: 'Carta di credito tramite link protetto',
+      waPrice: '💰 *Tariffa stimata:* ',
+      waCustom: 'Preventivo su misura richiesto',
+      waTotal: '€ totale per il gruppo',
+      waClose: 'Potreste confermare la disponibilità dell\'autista? Shukran!',
+      tourGreeting: 'Salam Roam Morocco! Vorrei prenotare il tour *{tourName}*:\n\n',
+      tourFrom: '📍 *Città di partenza:* ',
+      tourVeh: '🚗 *Veicolo:* ',
+      tourDate: '📅 *Data preferita:* ',
+      tourPrice: '💰 *Tariffa di partenza confermata:* ',
+      tourGroupTotal: '€ per il nostro gruppo privato\n',
+      tourPay: '💳 *Pagamento:* Contanti all\'autista / Carta all\'arrivo\n\n',
+      tourClose: 'Potreste confermare la disponibilità dell\'autista e dell\'itinerario?',
+      qrTag: '● Desk Diretto WhatsApp',
+      qrTitle: 'Conferma Immediata Prenotazione',
+      qrDesc: 'Inquadra con la fotocamera per chattare subito con il nostro desk di Marrakech.',
+      qrWeb: 'Apri WhatsApp Web su Desktop →',
+      qrEmail: 'Preferisci via email? Invia richiesta per email'
+    }
+  };
+
   // ── 2. HERO BOOKING WIZARD INITIALIZER (SMART SYNC & AUTO-APPEND) ──
   function initHeroWizard() {
     const wizardEl = document.getElementById('heroBookingWizard');
@@ -249,12 +502,14 @@
       // 1. Calculate price
       state.calculatedPrice = lookupRate(state.pickup, state.destination, state.tier, state.tripType);
 
+      const i18n = WIZARD_I18N[getCurrentLang()] || WIZARD_I18N.en;
+
       // 2. Update price card
       if (priceAmountEl) {
-        priceAmountEl.textContent = state.calculatedPrice === 'Custom' ? 'Custom Quote' : state.calculatedPrice + '€';
+        priceAmountEl.textContent = state.calculatedPrice === 'Custom' ? i18n.customQuote : state.calculatedPrice + '€';
       }
       if (buttonPriceEl) {
-        buttonPriceEl.textContent = state.calculatedPrice === 'Custom' ? 'Quote' : state.calculatedPrice + '€';
+        buttonPriceEl.textContent = state.calculatedPrice === 'Custom' ? i18n.quote : state.calculatedPrice + '€';
       }
 
       // 3. Update route duration and distance
@@ -264,17 +519,17 @@
 
       // 4. Update vehicle and luggage summaries
       if (vehicleSummaryEl) {
-        if (state.tier === '1_4') vehicleSummaryEl.textContent = 'Sedan · 1–4 passengers';
-        else if (state.tier === '5_7') vehicleSummaryEl.textContent = 'Van · 5–7 passengers';
-        else if (state.tier === '8_12') vehicleSummaryEl.textContent = 'Minibus · 8–12 passengers';
-        else vehicleSummaryEl.textContent = 'Coach / Fleet · 13+ passengers';
+        if (state.tier === '1_4') vehicleSummaryEl.textContent = i18n.sedanVeh;
+        else if (state.tier === '5_7') vehicleSummaryEl.textContent = i18n.vanVeh;
+        else if (state.tier === '8_12') vehicleSummaryEl.textContent = i18n.minibusVeh;
+        else vehicleSummaryEl.textContent = i18n.coachVeh;
       }
 
       if (luggageSummaryEl) {
-        if (state.tier === '1_4') luggageSummaryEl.textContent = 'About 3 suitcases';
-        else if (state.tier === '5_7') luggageSummaryEl.textContent = 'About 7 suitcases';
-        else if (state.tier === '8_12') luggageSummaryEl.textContent = 'About 12 suitcases';
-        else luggageSummaryEl.textContent = 'Large luggage capacity';
+        if (state.tier === '1_4') luggageSummaryEl.textContent = i18n.luggage3;
+        else if (state.tier === '5_7') luggageSummaryEl.textContent = i18n.luggage7;
+        else if (state.tier === '8_12') luggageSummaryEl.textContent = i18n.luggage12;
+        else luggageSummaryEl.textContent = i18n.luggageLarge;
       }
     }
 
@@ -359,9 +614,10 @@
         state.childSeat = !state.childSeat;
         childSeatBtn.classList.toggle('active', state.childSeat);
         childSeatBtn.setAttribute('aria-pressed', state.childSeat ? 'true' : 'false');
+        const i18n = WIZARD_I18N[getCurrentLang()] || WIZARD_I18N.en;
         childSeatBtn.innerHTML = state.childSeat
-          ? '<span class="hbw-pill-icon">✓</span> Child seat included'
-          : '<span class="hbw-pill-icon">+</span> Child seat';
+          ? i18n.childSeatInc
+          : i18n.childSeatAdd;
       });
     }
 
@@ -374,7 +630,8 @@
         payCashBtn.setAttribute('aria-checked', 'true');
         payCardBtn.classList.remove('active');
         payCardBtn.setAttribute('aria-checked', 'false');
-        if (paymentNoteEl) paymentNoteEl.textContent = 'ⓘ Pay the driver on the day, in euros or dirhams.';
+        const i18n = WIZARD_I18N[getCurrentLang()] || WIZARD_I18N.en;
+        if (paymentNoteEl) paymentNoteEl.textContent = i18n.payCashNote;
       });
       payCardBtn.addEventListener('click', function (e) {
         e.preventDefault();
@@ -383,7 +640,8 @@
         payCardBtn.setAttribute('aria-checked', 'true');
         payCashBtn.classList.remove('active');
         payCashBtn.setAttribute('aria-checked', 'false');
-        if (paymentNoteEl) paymentNoteEl.textContent = 'ⓘ We will send a secure online payment link via WhatsApp after confirmation.';
+        const i18n = WIZARD_I18N[getCurrentLang()] || WIZARD_I18N.en;
+        if (paymentNoteEl) paymentNoteEl.textContent = i18n.payCardNote;
       });
     }
 
@@ -391,28 +649,29 @@
     if (submitBtn) {
       submitBtn.addEventListener('click', function (e) {
         e.preventDefault();
+        const i18n = WIZARD_I18N[getCurrentLang()] || WIZARD_I18N.en;
         if (!state.pickup || !state.destination) {
-          alert('Please select a pickup location and destination.');
+          alert(i18n.alertSelect);
           return;
         }
 
-        let vehicleLabel = 'Sedan (1–4 passengers)';
-        if (state.tier === '5_7') vehicleLabel = 'Mercedes Van (5–7 passengers)';
-        else if (state.tier === '8_12') vehicleLabel = 'Minibus (8–12 passengers)';
-        else if (state.tier === '13_plus') vehicleLabel = 'Large Coach / Multiple Vehicles (13+ passengers)';
+        let vehicleLabel = i18n.sedanVeh;
+        if (state.tier === '5_7') vehicleLabel = i18n.vanVeh;
+        else if (state.tier === '8_12') vehicleLabel = i18n.minibusVeh;
+        else if (state.tier === '13_plus') vehicleLabel = i18n.coachVeh;
 
-        let msg = `Salam Roam Morocco! I would like to book a private transfer:\n\n`;
-        msg += `📍 *From:* ${state.pickup}\n`;
-        msg += `🏁 *To:* ${state.destination}\n`;
-        msg += `🚗 *Trip Type:* ${state.tripType === 'round_trip' ? 'Round Trip (-10% return applied)' : 'One Way Direct'}\n`;
-        msg += `👥 *Passengers:* ${state.passengers} (${vehicleLabel})\n`;
-        if (state.date) msg += `📅 *Date:* ${state.date}${state.time ? ' at ' + state.time : ''}\n`;
-        if (state.flight) msg += `✈️ *Flight Number:* ${state.flight}\n`;
-        if (state.childSeat) msg += `👶 *Child Seat:* 1 requested\n`;
-        if (state.details) msg += `📝 *Notes/Pickup:* ${state.details}\n`;
-        msg += `💳 *Payment Method:* ${state.payment === 'cash' ? 'Cash to driver on arrival' : 'Card via secure link'}\n`;
-        msg += `💰 *Quoted Rate:* ${state.calculatedPrice === 'Custom' ? 'Custom Quote Requested' : state.calculatedPrice + '€ total for group'}\n\n`;
-        msg += `Could you please confirm driver availability? Shukran!`;
+        let msg = i18n.waGreeting;
+        msg += `${i18n.waFrom}${state.pickup}\n`;
+        msg += `${i18n.waTo}${state.destination}\n`;
+        msg += `${i18n.waType}${state.tripType === 'round_trip' ? i18n.waRound : i18n.waOneWay}\n`;
+        msg += `${i18n.waPax}${state.passengers} (${vehicleLabel})\n`;
+        if (state.date) msg += `${i18n.waDate}${state.date}${state.time ? ' ' + state.time : ''}\n`;
+        if (state.flight) msg += `${i18n.waFlight}${state.flight}\n`;
+        if (state.childSeat) msg += i18n.waChild;
+        if (state.details) msg += `${i18n.waNotes}${state.details}\n`;
+        msg += `${i18n.waPay}${state.payment === 'cash' ? i18n.waPayCash : i18n.waPayCard}\n`;
+        msg += `${i18n.waPrice}${state.calculatedPrice === 'Custom' ? i18n.waCustom : state.calculatedPrice + i18n.waTotal}\n\n`;
+        msg += i18n.waClose;
 
         const waUrl = `https://wa.me/${RM_PHONE}?text=${encodeURIComponent(msg)}`;
 
@@ -528,6 +787,7 @@
   // ── 3. DESKTOP QR CODE MODAL ──
   function openQrModal(waUrl, rawMessage) {
     let modal = document.getElementById('wizardQrModal');
+    const i18n = WIZARD_I18N[getCurrentLang()] || WIZARD_I18N.en;
     if (!modal) {
       modal = document.createElement('div');
       modal.id = 'wizardQrModal';
@@ -536,14 +796,14 @@
         <div class="wizard-qr-modal-card">
           <button type="button" class="wizard-qr-close" id="wizardQrClose" aria-label="Close modal">&times;</button>
           <div style="display:inline-flex;align-items:center;gap:6px;background:rgba(200,164,92,0.15);color:#8c6a28;font-size:11px;font-weight:800;padding:4px 10px;border-radius:999px;text-transform:uppercase;margin-bottom:8px;">
-            <span>●</span> Direct WhatsApp Desk
+            <span>●</span> ${i18n.qrTag}
           </div>
-          <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:800;margin:0 0 6px;color:#111827;">Instant Booking Confirmation</h3>
-          <p style="font-family:'Inter',sans-serif;font-size:13px;color:#6b7280;margin:0 0 16px;">Scan with your phone camera to chat instantly with our Marrakech operations desk.</p>
+          <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:800;margin:0 0 6px;color:#111827;">${i18n.qrTitle}</h3>
+          <p style="font-family:'Inter',sans-serif;font-size:13px;color:#6b7280;margin:0 0 16px;">${i18n.qrDesc}</p>
           <img id="wizardQrImg" class="wizard-qr-img" src="" alt="Scan QR Code to WhatsApp">
           <div style="display:flex;flex-direction:column;gap:8px;margin-top:14px;">
-            <a id="wizardWebBtn" class="wizard-web-link" href="#" target="_blank" rel="noopener">Open WhatsApp Web on Desktop &rarr;</a>
-            <a id="wizardEmailBtn" href="#" style="font-size:12px;color:#4b5563;text-decoration:underline;">Prefer Email? Send booking request via email</a>
+            <a id="wizardWebBtn" class="wizard-web-link" href="#" target="_blank" rel="noopener">${i18n.qrWeb}</a>
+            <a id="wizardEmailBtn" href="#" style="font-size:12px;color:#4b5563;text-decoration:underline;">${i18n.qrEmail}</a>
           </div>
         </div>
       `;
@@ -652,17 +912,18 @@
           const basePrice = prices[currentTier] || prices['1_4'];
           const currentPrice = basePrice + getCitySurcharge();
 
-          let vehicleLabel = 'Private Sedan / 4x4 Prado (1-4 pax)';
-          if (currentTier === '5_7') vehicleLabel = 'Mercedes VIP Van (5-7 pax)';
-          else if (currentTier === '8_12') vehicleLabel = 'VIP Minibus (8-12 pax)';
+          const i18n = WIZARD_I18N[getCurrentLang()] || WIZARD_I18N.en;
+          let vehicleLabel = i18n.sedanVeh;
+          if (currentTier === '5_7') vehicleLabel = i18n.vanVeh;
+          else if (currentTier === '8_12') vehicleLabel = i18n.minibusVeh;
 
-          let msg = `Salam Roam Morocco! I want to book the *${tourName}*:\n\n`;
-          msg += `📍 *Departure City:* ${pickupCity}\n`;
-          msg += `🚗 *Vehicle:* ${vehicleLabel}\n`;
-          if (travelDate) msg += `📅 *Preferred Date:* ${travelDate}\n`;
-          msg += `💰 *Confirmed Starting Price:* ${currentPrice}€ for our private group\n`;
-          msg += `💳 *Payment:* Cash to driver / Card upon arrival\n\n`;
-          msg += `Can you please confirm driver & itinerary availability?`;
+          let msg = i18n.tourGreeting.replace('{tourName}', tourName);
+          msg += `${i18n.tourFrom}${pickupCity}\n`;
+          msg += `${i18n.tourVeh}${vehicleLabel}\n`;
+          if (travelDate) msg += `${i18n.tourDate}${travelDate}\n`;
+          msg += `${i18n.tourPrice}${currentPrice}${i18n.tourGroupTotal}`;
+          msg += i18n.tourPay;
+          msg += i18n.tourClose;
 
           const waUrl = `https://wa.me/${RM_PHONE}?text=${encodeURIComponent(msg)}`;
 

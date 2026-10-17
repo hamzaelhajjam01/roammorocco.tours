@@ -1416,7 +1416,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
       <p class="hero-tagline" style="font-size: clamp(0.85rem, 1.5vw, 1.05rem); color: #C8A45C; margin: 0 0 16px 0; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 700;">Circuits privés au Maroc et expéditions de luxe au Sahara · Marrakech</p>
       <div class="hero-grid">
         <h1><span class="split"><span>MAROC PRIVÉ</span></span></h1>
-        <div class="hero-h1-sub right"><span class="split"><span>TAILORED TOURS</span></span></div>
+        <div class="hero-h1-sub right"><span class="split"><span>CIRCUITS SUR MESURE</span></span></div>
       </div>
 
       <!-- HERO EDITORIAL LEAD DESCRIPTIONS (Balanced 2-Column SEO Space) -->
@@ -1431,7 +1431,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
 
 
     <!-- REUSABLE COMPONENT: Hero Booking Wizard -->
-    <HeroBookingWizard />
+    <HeroBookingWizard lang="fr" />
 
       <!-- TRUST SIGNALS & MOST BOOKED ROUTES (Replaces generic stats) -->
       <div class="hero-trust-routes">
@@ -1440,40 +1440,40 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
             <svg class="htr-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
-            <span>Vehicles cleaned before every trip</span>
+            <span>Véhicules nettoyés avant chaque départ</span>
           </div>
           <div class="htr-trust-item">
             <svg class="htr-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
-            <span>24/7 support in English, French &amp; Spanish</span>
+            <span>Assistance 24/7 en français, anglais &amp; espagnol</span>
           </div>
           <div class="htr-trust-item">
             <svg class="htr-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
-            <span>Cash to the driver or card online</span>
+            <span>Paiement en espèces au chauffeur ou par carte en ligne</span>
           </div>
           <div class="htr-trust-item">
             <svg class="htr-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
-            <span>Free cancellation up to 24 hours before (bookings over 300€: deposit policy)</span>
+            <span>Annulation gratuite jusqu'à 24h avant (réservations >300€ : acompte)</span>
           </div>
           <div class="htr-trust-item">
             <svg class="htr-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
             </svg>
-            <span>Flights tracked, no waiting fee</span>
+            <span>Suivi des vols en direct, aucun frais d'attente</span>
           </div>
         </div>
 
         <div class="htr-routes-block">
-          <div class="htr-routes-title">MOST BOOKED ROUTES</div>
+          <div class="htr-routes-title">TRAJETS LES PLUS RÉSERVÉS</div>
           <div class="htr-routes-grid">
             <button type="button" class="htr-route-pill" data-pickup="Marrakech Medina" data-dest="Essaouira">
-              <span class="htr-route-name">Marrakech to Essaouira transfer</span>
-              <span class="htr-route-price">from 85&euro;</span>
+              <span class="htr-route-name">Transfert Marrakech vers Essaouira</span>
+              <span class="htr-route-price">dès 85&euro;</span>
             </button>
             <button type="button" class="htr-route-pill" data-pickup="Marrakech Medina" data-dest="Casablanca City">
               <span class="htr-route-name">Marrakech <span class="htr-route-arrow">&rarr;</span> Casablanca</span>
@@ -1484,7 +1484,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
               <span class="htr-route-price">125&euro;</span>
             </button>
             <button type="button" class="htr-route-pill" data-pickup="Marrakech Airport (RAK)" data-dest="Marrakech Medina">
-              <span class="htr-route-name">Airport <span class="htr-route-arrow">&rarr;</span> Medina</span>
+              <span class="htr-route-name">Aéroport <span class="htr-route-arrow">&rarr;</span> Médina</span>
               <span class="htr-route-price">25&euro;</span>
             </button>
           </div>
@@ -1543,7 +1543,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
       <div class="services-sticky reveal-block">
         <h2><span class="split"><span>Roam Morocco conçoit des voyages privés conçus pour être inoubliables.</span></span></h2>
         <div class="service-body">
-          <div class="label">Our services</div>
+          <div class="label">Nos services</div>
           <div class="service-list-viewport"><div class="service-list" id="serviceList"></div></div>
           <div class="service-image-wrap" id="serviceImageWrap" aria-live="polite"></div>
           <ul class="service-items" id="serviceItems"></ul>
@@ -1555,16 +1555,16 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
     <section id="experiences" class="journeys-section reveal-block">
       <div class="journeys-container">
         <div class="journeys-header">
-          <span class="journeys-badge">Private Experiences</span>
+          <span class="journeys-badge">Expériences Privées</span>
           <h2 aria-label="Bespoke Morocco experiences, crafted for you"><span class="journey-head-line"><span class="journey-head-word">Maroc personnalisé</span></span>
             <span class="journey-head-line"><span class="journey-head-word">expériences construites</span></span>
             <span class="journey-head-line"><span class="journey-head-word">autour de vous.</span></span></h2>
           <div class="journeys-header-bottom">
             <p class="journeys-subtitle">Pas d'autocars bondés. Pas de rythme de groupe fixe. Visites 100% privées au Maroc avec transport 4x4 dédié, guides berbères locaux experts et riads de luxe triés sur le volet.</p>
             <div class="journeys-principles" aria-label="Journey benefits">
-              <div class="journey-principle"><span>01</span><strong>Dedicated 4x4 or Van</strong></div>
-              <div class="journey-principle"><span>02</span><strong>Your Tailored Pace</strong></div>
-              <div class="journey-principle"><span>03</span><strong>Local Berber Guides</strong></div>
+              <div class="journey-principle"><span>01</span><strong>4x4 ou van privé dédié</strong></div>
+              <div class="journey-principle"><span>02</span><strong>Votre propre rythme</strong></div>
+              <div class="journey-principle"><span>03</span><strong>Guides berbères locaux</strong></div>
             </div>
           </div>
         </div>
@@ -1574,13 +1574,13 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
             <p class="journeys-picker-label">Choisissez une expérience</p>
             <div class="journeys-tabs" id="journeyCategoryTabs" role="tablist" aria-label="Journey styles">
               <button class="j-tab active" type="button" role="tab" aria-selected="true" data-category="explorer" onclick="switchJourneyCategory('explorer')">
-                <span class="j-tab-index">01</span><span class="j-tab-copy"><strong>Premium Explorer</strong><small>Coast · valleys · desert</small></span><span class="j-tab-arrow" aria-hidden="true">↘</span>
+                <span class="j-tab-index">01</span><span class="j-tab-copy"><strong>Premium Explorer</strong><small>Côte · vallées · désert</small></span><span class="j-tab-arrow" aria-hidden="true">↘</span>
               </button>
               <button class="j-tab" type="button" role="tab" aria-selected="false" data-category="heritage" onclick="switchJourneyCategory('heritage')">
-                <span class="j-tab-index">02</span><span class="j-tab-copy"><strong>Heritage & Cinema</strong><small>Kasbahs · palaces · craft</small></span><span class="j-tab-arrow" aria-hidden="true">↘</span>
+                <span class="j-tab-index">02</span><span class="j-tab-copy"><strong>Heritage & Cinema</strong><small>Kasbahs · palais · artisanat</small></span><span class="j-tab-arrow" aria-hidden="true">↘</span>
               </button>
               <button class="j-tab" type="button" role="tab" aria-selected="false" data-category="atlas" onclick="switchJourneyCategory('atlas')">
-                <span class="j-tab-index">03</span><span class="j-tab-copy"><strong>Active High Atlas</strong><small>Trails · lagoons · lakes</small></span><span class="j-tab-arrow" aria-hidden="true">↘</span>
+                <span class="j-tab-index">03</span><span class="j-tab-copy"><strong>Active High Atlas</strong><small>Sentiers · lagunes · lacs</small></span><span class="j-tab-arrow" aria-hidden="true">↘</span>
               </button>
             </div>
           </div>
@@ -1596,14 +1596,14 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
             <div class="journey-card-wrap">
               <div class="journey-card" id="journeyCard" aria-live="polite">
                 <div class="j-card-head">
-                  <span class="j-time-badge" id="jTimeBadge">07:00 AM DEPARTURE • ESSAOUIRA COASTAL ESCAPE</span>
+                  <span class="j-time-badge" id="jTimeBadge">DÉPART 07H00 • ESCAPADE CÔTIÈRE À ESSAOUIRA</span>
                   <h3 id="jCardTitle">Essaouira devant la foule</h3>
                 </div>
                 <p class="j-card-desc" id="jCardDesc">Rejoignez la médina atlantique alors que ses ruelles sont encore calmes. Parcourez les digues avec un guide privé, choisissez votre déjeuner parmi les prises du matin, puis explorez les souks d'art à votre rythme.</p>
                 <div class="j-card-footer">
                   <div class="j-card-tags" id="jCardTags"></div>
                   <a href="#contact" class="see-more-btn j-card-btn" onclick="selectJourneyForReserve(event)">
-                    <span aria-hidden="true">↳</span><span>Design this journey</span>
+                    <span aria-hidden="true">↳</span><span>Concevoir ce voyage</span>
                   </a>
                 </div>
               </div>
@@ -1613,12 +1613,12 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
 
         <div class="journeys-reserve-banner">
           <div class="journeys-reserve-copy">
-            <span class="journeys-reserve-kicker">Not sure where to begin?</span>
+            <span class="journeys-reserve-kicker">Vous hésitez sur l'itinéraire ?</span>
             <h3>Racontez-nous votre rêve au Maroc. Nous concevrons la route.</h3>
             <p>Partagez vos dates, votre style de voyage et vos lieux incontournables. Nous les transformerons en un itinéraire marocain privé et réalisable.</p>
           </div>
           <a href="#contact" class="j-reserve-btn" onclick="selectJourneyForReserve(event)">
-            <span>Start planning</span><span class="j-reserve-arrow" aria-hidden="true">→</span>
+            <span>Commencer à planifier</span><span class="j-reserve-arrow" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
@@ -1651,7 +1651,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
           <p>Conseils pratiques, guides saisonniers, étiquette locale et idées d'itinéraires privés d'experts de Marrakech.</p>
           <a href="./blog.html" class="see-more-btn">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
-            <span>Explore all guides</span>
+            <span>Explorer tous les guides</span>
           </a>
         </aside>
         <div class="news-list">
@@ -1684,13 +1684,13 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
         
         <div class="dp-banner-content">
           <div class="dp-top-left">
-            <span class="dp-tagline">Get to know us better</span>
+            <span class="dp-tagline">Apprenez à mieux nous connaître</span>
           </div>
           <div class="dp-top-right">
             <h2 class="dp-banner-title">NOTRE HISTOIRE D'ORIGINE</h2>
             <a href="#about" class="dp-banner-link">
               <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6v8a2 2 0 0 0 2 2h10"/><polyline points="13 12 17 16 13 20"/></svg>
-              <span>ABOUT US</span>
+              <span>À PROPOS</span>
             </a>
           </div>
         </div>
@@ -1700,13 +1700,13 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
     <!-- Frequently Asked Questions (AEO / GEO Knowledge Section) -->
     <section id="faq" class="reveal" style="padding: 90px 24px; background: #ffffff; border-top: 1px solid rgba(0,0,0,0.12);">
       <div style="max-width: 1040px; margin: 0 auto;">
-        <span style="display: inline-block; font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8A6A23; background: rgba(200, 164, 92, 0.12); border: 1px solid rgba(200, 164, 92, 0.28); border-radius: 999px; padding: 4px 12px; margin-bottom: 16px;">TRAVEL ESSENTIALS // VERIFIED ADVICE</span>
+        <span style="display: inline-block; font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #8A6A23; background: rgba(200, 164, 92, 0.12); border: 1px solid rgba(200, 164, 92, 0.28); border-radius: 999px; padding: 4px 12px; margin-bottom: 16px;">INFOS ESSENTIELLES // CONSEILS VÉRIFIÉS</span>
         <h2 style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(30px, 4.2vw, 48px); font-weight: 800; letter-spacing: -0.05em; line-height: 1.05; text-transform: uppercase; margin: 0 0 40px; color: #000000;">QUESTIONS FRÉQUEMMENT POSÉES</h2>
 
         <div style="display: flex; flex-direction: column; gap: 16px;">
           <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              <span>What is the best time of year to visit Morocco?</span>
+              <span>Quelle est la meilleure période de l'année pour visiter le Maroc ?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
             <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">La période optimale pour visiter le Maroc est le printemps (de mi-mars à mai) et l'automne (de septembre à novembre). Les journées sont confortablement chaudes (22°C-28°C / 72°F-82°F) et les nuits dans le désert de Merzouga sont agréables, évitant la chaleur extrême de 45°C (113°F) du milieu de l'été.</p>
@@ -1714,7 +1714,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
 
           <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              <span>How much do private Morocco tours and desert expeditions cost?</span>
+              <span>Combien coûtent les circuits privés et expéditions au Sahara au Maroc ?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
             <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">Les visites privées sur mesure varient généralement entre 195 $ et 385 $ USD par personne et par jour, en fonction de la taille du groupe et du niveau d'hébergement. Les forfaits comprennent le transport privé en minibus Toyota Prado 4x4 ou Mercedes, un chauffeur anglophone dédié, des riads de charme, un glamping de luxe au Sahara et des visites guidées de la médina historique avec tout le carburant et les péages inclus.</p>
@@ -1722,7 +1722,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
 
           <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              <span>Is Morocco safe for international tourists and solo female travelers?</span>
+              <span>Le Maroc est-il sûr pour les touristes internationaux et les voyageuses en solo ?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
             <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">Oui, le Maroc est reconnu comme l'une des destinations de voyage les plus sûres d'Afrique du Nord, soutenu par une présence dédiée de la police touristique (Brigade Touristique) dans toutes les principales médinas. Les visites privées avec chauffeur offrent une sécurité porte à porte transparente, une assistance bagages et une médiation culturelle locale.</p>
@@ -1730,7 +1730,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
 
           <details style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-radius: 14px; padding: 22px 26px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s ease;">
             <summary style="font-family: Helvetica, Arial, sans-serif; font-size: clamp(16px, 1.8vw, 19px); font-weight: 700; color: #000000; outline: none; list-style: none; display: flex; justify-content: space-between; align-items: center;">
-              <span>Do US, UK, Canadian, or EU citizens need a visa for Morocco?</span>
+              <span>Les citoyens de l'UE, des États-Unis, du Royaume-Uni ou du Canada ont-ils besoin d'un visa pour le Maroc ?</span>
               <span style="color: #C8A45C; font-size: 20px; font-weight: 400;">+</span>
             </summary>
             <p style="margin: 16px 0 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.7; color: rgba(0,0,0,0.76);">Aucun visa touristique n'est requis pour les citoyens des États-Unis, du Royaume-Uni, du Canada, de l'Union européenne, de l'Australie ou de la Nouvelle-Zélande pour des séjours allant jusqu'à 90 jours. Un passeport valide avec une validité d'au moins six mois est tout ce qui est requis à l'arrivée.</p>
@@ -1830,12 +1830,12 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
     }
 
     const services=[
-      ["Private Tours","/img/carlos-leret-kiYzznir-uo-unsplash.jpg",["Custom Morocco itineraries","Private driver guides","Flexible pacing","Local trip hosts"]],
-      ["Desert Journeys","/img/pol-tent.jpg",["Merzouga and Erg Chebbi","Camel sunset rides","Luxury camps","Stargazing dinners"]],
-      ["Culture","/img/frida-aguilar-estrada-LhVJaRPweJc-unsplash.jpg",["Medina walks","Berber homes","Cooking experiences","Artisan workshops"]],
-      ["Stays","/img/pol-kasbah.jpg",["Riads and kasbahs","Boutique hotels","Desert tents","Handpicked comfort"]],
-      ["Routes","/img/morocco-map-new.png",["Marrakech to Fes","Atlas Mountains","Atlantic coast","Imperial cities"]],
-      ["Concierge","/img/amine-ozennou-wjOMf53cv88-unsplash.jpg",["Airport pickup","Restaurant bookings","Hammam days","Special occasions"]]
+      ["Circuits Privés","/img/carlos-leret-kiYzznir-uo-unsplash.jpg",["Itinéraires sur mesure au Maroc","Chauffeurs-guides privés dédiés","Rythme flexible et personnalisé","Accueil chaleureux par des locaux"]],
+      ["Voyages au Désert","/img/pol-tent.jpg",["Merzouga et dunes de l'Erg Chebbi","Balades à dos de dromadaire au coucher du soleil","Camps de luxe avec tentes nomades","Dîners féeriques sous les étoiles"]],
+      ["Culture & Patrimoine","/img/frida-aguilar-estrada-LhVJaRPweJc-unsplash.jpg",["Visites guidées des médinas historiques","Immersion dans des maisons berbères","Cours de cuisine marocaine authentique","Ateliers d'artisans d'art"]],
+      ["Séjours de Charme","/img/pol-kasbah.jpg",["Riads traditionnels et kasbahs royales","Hôtels-boutiques d'exception","Bivouacs de luxe dans le désert","Confort et sérénité triés sur le volet"]],
+      ["Grandes Traversées","/img/morocco-map-new.png",["De Marrakech à Fès par le désert","Cols et vallées du Haut Atlas","Rivages de la côte atlantique","Villes impériales et trésors UNESCO"]],
+      ["Conciergerie Privée","/img/amine-ozennou-wjOMf53cv88-unsplash.jpg",["Accueil VIP aux aéroports","Réservations de tables d'exception","Journées rituels bien-être et hammam","Célébrations et moments inoubliables"]]
     ];
     const serviceList=document.getElementById("serviceList"),items=document.getElementById("serviceItems"),serviceWrap=document.getElementById("serviceImageWrap");
     serviceWrap.innerHTML=services.map((service,i)=>`<div class="service-image-layer" data-i="${i}" aria-hidden="${i===0?'false':'true'}"><img class="service-img" src="${service[1]}" alt="${service[0]}"></div>`).join("");
@@ -2094,92 +2094,92 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
     /* ── CUSTOM JOURNEYS JS ── */
     const journeyData = {
       explorer: {
-        metaTag: "3-DAY PREMIUM EXPLORER",
-        metaDesc: "Three iconic escapes, one private vehicle, zero hotel changes.",
+        metaTag: "EXPLORATEUR PREMIUM 3 JOURS",
+        metaDesc: "Trois escapades emblématiques, un véhicule privé, aucun changement d'hôtel.",
         days: [
           {
-            dayNum: "Day 1",
-            label: "Day 1: Essaouira Coast",
-            timeBadge: "07:00 AM DEPARTURE • ESSAOUIRA COASTAL ESCAPE",
-            title: 'Essaouira Before the Crowds',
-            desc: 'Reach the Atlantic medina while its lanes are still quiet. Walk the sea walls with a private guide, choose lunch from the morning catch, then explore the art souks entirely at your own pace.',
-            tags: ["Private Luxury Van", "UNESCO Medina", "Seaside Seafood Lunch"]
+            dayNum: "Jour 1",
+            label: "Jour 1 : Côte d'Essaouira",
+            timeBadge: "DÉPART 07H00 • ESCAPADE CÔTIÈRE À ESSAOUIRA",
+            title: "Essaouira avant la foule",
+            desc: "Rejoignez la médina atlantique alors que ses ruelles sont encore calmes. Parcourez les remparts avec un guide privé, choisissez votre déjeuner parmi la pêche du matin, puis explorez les souks d'art à votre rythme.",
+            tags: ["Van privé de luxe", "Médina UNESCO", "Déjeuner fruits de mer"]
           },
           {
-            dayNum: "Day 2",
-            label: "Day 2: Ourika Valley",
-            timeBadge: "08:30 AM DEPARTURE • ATLAS FOOTHILLS & BERBER VALLEYS",
-            title: "Ourika Valley & Hidden Berber Trails",
-            desc: "Leave Marrakech after a relaxed breakfast for the green Ourika Valley. Follow mountain streams, meet local families, and share mint tea in a village chosen for its warmth rather than its souvenir stalls.",
-            tags: ["Authentic Berber Villages", "Atlas Streams", "Mint Tea Tasting"]
+            dayNum: "Jour 2",
+            label: "Jour 2 : Vallée de l'Ourika",
+            timeBadge: "DÉPART 08H30 • CONTREFORTS DE L'ATLAS & VALLÉES BERBÈRES",
+            title: "Vallée de l'Ourika & sentiers berbères secrets",
+            desc: "Quittez Marrakech après un petit-déjeuner paisible pour la verdoyante vallée de l'Ourika. Longez les torrents de montagne, rencontrez des familles locales et partagez le thé à la menthe dans un village authentique.",
+            tags: ["Villages berbères authentiques", "Rivières de l'Atlas", "Dégustation de thé à la menthe"]
           },
           {
-            dayNum: "Day 3",
-            label: "Day 3: Agafay Desert",
-            timeBadge: "04:00 PM DEPARTURE • AGAFAY DESERT SUNSET",
-            title: "Agafay Desert & Luxury Nomad Dinner",
-            desc: "Arrive in Agafay as the evening light reaches the Atlas. Take a private camel ride, settle into a canvas camp, and finish with a candlelit dinner accompanied by Gnawa musicians.",
-            tags: ["Golden Hour Sunset", "Private Camel Trek", "Gnawa Music Dinner"]
+            dayNum: "Jour 3",
+            label: "Jour 3 : Désert d'Agafay",
+            timeBadge: "DÉPART 16H00 • COUCHER DE SOLEIL DANS LE DÉSERT D'AGAFAY",
+            title: "Désert d'Agafay & dîner nomade sous les étoiles",
+            desc: "Arrivez à Agafay alors que la lumière dorée embrasse l'Atlas. Profitez d'une méharée privée, installez-vous dans un campement raffiné et savourez un dîner aux chandelles au son des musiciens gnaouas.",
+            tags: ["Coucher de soleil doré", "Balade privée à dromadaire", "Dîner musical gnaoua"]
           }
         ]
       },
       heritage: {
-        metaTag: "HERITAGE & CINEMA",
-        metaDesc: "Hidden palaces, cinematic kasbahs, and roads large coaches cannot take.",
+        metaTag: "PATRIMOINE & CINÉMA",
+        metaDesc: "Palais secrets, kasbahs mythiques et routes inaccessibles aux grands autocars.",
         days: [
           {
-            dayNum: "Day 1",
-            label: "Day 1: Ait Ben Haddou & Telouet Palace",
-            timeBadge: "07:30 AM DEPARTURE • ANCIENT KASBAHS & MOVIE HISTORY",
-            title: "Ait Ben Haddou & The Telouet Shortcut",
-            desc: "Cross the High Atlas by private vehicle and take the narrow road to atmospheric Telouet Palace. Continue to the UNESCO ksar of Ait Ben Haddou, with time for its film history and earthen architecture.",
-            tags: ["Mountain Shortcut", "Telouet Kasbah", "Ait Ben Haddou UNESCO"]
+            dayNum: "Jour 1",
+            label: "Jour 1 : Aït Ben Haddou & Palais de Telouet",
+            timeBadge: "DÉPART 07H30 • KASBAHS MILLÉNAIRES & HISTOIRE DU CINÉMA",
+            title: "Aït Ben Haddou & la route secrète de Telouet",
+            desc: "Traversez le Haut Atlas en véhicule privé par l'ancienne route caravanière vers le somptueux palais de Telouet. Poursuivez vers le ksar d'Aït Ben Haddou, haut lieu du cinéma mondial classé à l'UNESCO.",
+            tags: ["Route panoramique de l'Atlas", "Kasbah de Telouet", "Aït Ben Haddou UNESCO"]
           },
           {
-            dayNum: "Day 2",
-            label: "Day 2: Imperial Marrakesh",
-            timeBadge: "09:00 AM DEPARTURE • IMPERIAL PALACES & SECRET GARDENS",
-            title: "Imperial Marrakesh & Hidden Courtyards",
-            desc: "Step behind unmarked medina doors into 19th-century palaces, citrus courtyards, and working ateliers. An expert historian gives the details meaning before lunch in a restored riad.",
-            tags: ["Secret Palaces", "Expert Historian", "Private Riad Lunch"]
+            dayNum: "Jour 2",
+            label: "Jour 2 : Marrakech Impériale",
+            timeBadge: "DÉPART 09H00 • PALAIS IMPÉRIAUX & JARDINS SECRETS",
+            title: "Marrakech Impériale & cours secrètes",
+            desc: "Franchissez des portes discrètes pour découvrir des palais du XIXe siècle, des patios d'orangers et des ateliers d'artisans. Un historien expert éclaire chaque détail avant un déjeuner raffiné dans un riad privatisé.",
+            tags: ["Palais secrets", "Historien conférencier", "Déjeuner en riad privé"]
           },
           {
-            dayNum: "Day 3",
-            label: "Day 3: Culinary Foothills",
-            timeBadge: "08:30 AM DEPARTURE • ATLAS FOOTHILLS CULINARY",
-            title: "Artisanal Cooking & Organic Garden Tour",
-            desc: "Spend the morning at an organic foothills farm gathering herbs, vegetables, and local olive oil. Then cook a slow tajine with a Berber chef and enjoy it overlooking the gardens.",
-            tags: ["Organic Farm", "Artisanal Tajine Class", "Berber Master Chef"]
+            dayNum: "Jour 3",
+            label: "Jour 3 : Saveurs de l'Atlas",
+            timeBadge: "DÉPART 08H30 • ÉVEIL CULINAIRE DANS L'ATLAS",
+            title: "Cuisine artisanale & potager biologique",
+            desc: "Passez la matinée dans un domaine biologique au pied des montagnes pour cueillir herbes aromatiques et légumes frais. Cuisinez un tajine traditionnel avec un chef berbère et dégustez-le face aux jardins.",
+            tags: ["Domaine bio", "Atelier tajine traditionnel", "Chef berbère"]
           }
         ]
       },
       atlas: {
-        metaTag: "ACTIVE HIGH ATLAS",
-        metaDesc: "Flexible trails, quiet water, and an active day shaped to your pace.",
+        metaTag: "HAUT ATLAS ACTIF",
+        metaDesc: "Sentiers panoramiques, lagunes paisibles et journées vivifiantes adaptées à votre rythme.",
         days: [
           {
-            dayNum: "Day 1",
-            label: "Day 1: Toubkal Custom Trek",
-            timeBadge: "08:00 AM DEPARTURE • CUSTOM MOUNTAIN TREKKING",
-            title: "Imlil & Toubkal Base: The Flexible Trek",
-            desc: "Meet your certified mountain guide in Imlil and choose the trail that suits you: an orchard walk, a village hike, or a stronger climb. Every option ends with a panoramic mountain lunch.",
-            tags: ["Mount Toubkal Base", "3 Flexible Paces", "Panoramic Mountain Lunch"]
+            dayNum: "Jour 1",
+            label: "Jour 1 : Randonnée sur mesure au Toubkal",
+            timeBadge: "DÉPART 08H00 • RANDONNÉE DE MONTAGNE SUR MESURE",
+            title: "Imlil & pied du Toubkal : l'excursion flexible",
+            desc: "Retrouvez votre guide de haute montagne certifié à Imlil et choisissez l'itinéraire qui vous convient : balade dans les vergers, traversée de villages en pisé ou ascension sportive. Déjeuner montagnard panoramique inclus.",
+            tags: ["Pied du mont Toubkal", "3 niveaux de marche au choix", "Déjeuner panoramique"]
           },
           {
-            dayNum: "Day 2",
-            label: "Day 2: Oualidia Lagoon",
-            timeBadge: "07:30 AM DEPARTURE • ATLANTIC COAST & LAGOONS",
-            title: "Oualidia Coastal Lagoon & Oyster Tasting",
-            desc: "Cross Oualidia's calm lagoon by private wooden boat, look for flamingos, and taste oysters where they are farmed. The afternoon stays open for the beach or a long coastal lunch.",
-            tags: ["Private Wooden Boat", "Pink Flamingos", "Fresh Oyster Tasting"]
+            dayNum: "Jour 2",
+            label: "Jour 2 : Lagune d'Oualidia",
+            timeBadge: "DÉPART 07H30 • CÔTE ATLANTIQUE & LAGUNES NATURELLES",
+            title: "Lagune d'Oualidia & dégustation d'huîtres",
+            desc: "Naviguez sur les eaux calmes d'Oualidia en barque traditionnelle en bois, observez les flamants roses et savourez des huîtres fraîches sorties du parc. Après-midi détente sur la plage ou déjeuner marin.",
+            tags: ["Barque privée en bois", "Flamants roses sauvages", "Huîtres fraîches de l'Atlantique"]
           },
           {
-            dayNum: "Day 3",
-            label: "Day 3: Lake & Jet Ski",
-            timeBadge: "09:00 AM DEPARTURE • MOUNTAIN LAKE & WATERSPORTS",
-            title: "Lalla Takerkoust Lake Watersports & High Atlas Relaxation",
-            desc: "Choose jet skiing, paddleboarding, or a slower morning beside Lalla Takerkoust. A reserved lakeside table and wide Atlas views make the day feel active without becoming rushed.",
-            tags: ["Private Jet Ski", "Azure Waters", "Lakeside Beach Club"]
+            dayNum: "Jour 3",
+            label: "Jour 3 : Lac & activités nautiques",
+            timeBadge: "DÉPART 09H00 • LAC DE MONTAGNE & ACTIVITÉS NAUTIQUES",
+            title: "Sensations au lac Lalla Takerkoust & détente face à l'Atlas",
+            desc: "Optez pour le jet-ski, le paddle ou une matinée de repos au bord du lac Lalla Takerkoust. Une table réservée au bord de l'eau et la vue grandiose sur les crêtes de l'Atlas complètent cette journée vivifiante.",
+            tags: ["Jet-ski privé", "Eaux turquoise", "Club de plage au bord du lac"]
           }
         ]
       }

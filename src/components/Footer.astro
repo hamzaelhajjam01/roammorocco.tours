@@ -1,10 +1,13 @@
 ---
 // Footer Component
+import { getTranslations } from '../i18n/translations';
+
 interface Props {
   lang?: string;
 }
 
 const { lang = 'en' } = Astro.props;
+const t = getTranslations(lang);
 
 const lLink = (url: string) => {
   if (lang === 'en') return url;
@@ -16,26 +19,26 @@ const lLink = (url: string) => {
     <div class="footer-wrap">
       <div class="footer-header-row">
         <div class="footer-contact-block">
-          <p class="footer-tagline">Let's feel Morocco together</p>
+          <p class="footer-tagline">{t.footer.tagline}</p>
           <a href="mailto:contact@roammorocco.tours" class="footer-email-link">contact@roammorocco.tours</a>
         </div>
         <div class="footer-nav-columns" style="gap:36px;">
           <div class="footer-col">
-            <span class="footer-col-title">Destinations</span>
-            <a href={lLink('/destination-sahara-desert.html')}>Sahara Desert</a>
-            <a href={lLink('/destination-marrakech.html')}>Marrakech</a>
-            <a href={lLink('/destination-fes.html')}>Fes</a>
-            <a href={lLink('/destination-chefchaouen.html')}>Chefchaouen</a>
+            <span class="footer-col-title">{t.footer.destinationsCol}</span>
+            <a href={lLink('/destination-sahara-desert.html')}>{t.footer.saharaDesert}</a>
+            <a href={lLink('/destination-marrakech.html')}>{t.footer.marrakech}</a>
+            <a href={lLink('/destination-fes.html')}>{t.footer.fes}</a>
+            <a href={lLink('/destination-chefchaouen.html')}>{t.footer.chefchaouen}</a>
           </div>
           <div class="footer-col">
-            <span class="footer-col-title">Travel Suite</span>
-            <a href={lLink('/morocco-trip-cost-calculator.html')}>Cost Estimator</a>
-            <a href={lLink('/morocco-private-driver.html')}>Private Chauffeur</a>
-            <a href={lLink('/custom-morocco-tour.html')}>Custom Tours</a>
-            <a href={lLink('/blog.html')}>Travel Blog</a>
+            <span class="footer-col-title">{t.footer.travelSuiteCol}</span>
+            <a href={lLink('/morocco-trip-cost-calculator.html')}>{t.footer.costEstimator}</a>
+            <a href={lLink('/morocco-private-driver.html')}>{t.footer.privateChauffeur}</a>
+            <a href={lLink('/custom-morocco-tour.html')}>{t.footer.customTours}</a>
+            <a href={lLink('/blog.html')}>{t.footer.travelBlog}</a>
           </div>
           <div class="footer-col">
-            <span class="footer-col-title">Connect</span>
+            <span class="footer-col-title">{t.footer.connectCol}</span>
             <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour." target="_blank" rel="noopener">WhatsApp</a>
           </div>
         </div>
@@ -47,11 +50,11 @@ const lLink = (url: string) => {
       
       <div class="footer-bottom-bar">
         <div class="footer-legal">
-          <span>&copy; 2026 Roam Morocco Tours. All Rights Reserved.</span>
-          <a href={lLink('/terms-conditions.html')}>Terms of Service</a>
-          <a href={lLink('/privacy-policy.html')}>Privacy Policy</a>
-          <a href={lLink('/refund-policy.html')}>Refund Policy</a>
-          <a href={lLink('/travel-policy.html')}>Travel Policy</a>
+          <span>{t.footer.copyright}</span>
+          <a href={lLink('/terms-conditions.html')}>{t.footer.terms}</a>
+          <a href={lLink('/privacy-policy.html')}>{t.footer.privacy}</a>
+          <a href={lLink('/refund-policy.html')}>{t.footer.refund}</a>
+          <a href={lLink('/travel-policy.html')}>{t.footer.travelPolicy}</a>
         </div>
       </div>
     </div>

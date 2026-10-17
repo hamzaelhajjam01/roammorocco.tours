@@ -1,15 +1,23 @@
 ---
 // Hero Booking Wizard & Price Calculator Component (Smart Vehicle Tabs, Auto-Append)
+import { getTranslations } from '../i18n/translations';
+
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = getTranslations(lang);
 ---
       <!-- HERO BOOKING WIZARD CONTAINER (Always Visible, Dynamic Animated Gold Gradient Border) -->
       <div id="transfers" style="position:relative;top:-80px;visibility:hidden;"></div>
       <div class="hero-wizard-collapse" id="heroWizardCollapse">
         <div class="hero-wizard-collapse-inner">
-          <div class="hero-booking-wizard" id="heroBookingWizard" role="region" aria-label="Route booking calculator">
+          <div class="hero-booking-wizard" id="heroBookingWizard" role="region" aria-label="Route booking calculator" data-lang={lang}>
             <!-- Header Section (Compact, modern travel search) -->
             <div class="hbw-header">
-              <h2 class="hbw-title">Check your price instantly</h2>
-              <p class="hbw-subtitle">Pick your route and group size · No commitment</p>
+              <h2 class="hbw-title">{t.wizard.title}</h2>
+              <p class="hbw-subtitle">{t.wizard.subtitle}</p>
             </div>
 
             <!-- PRIMARY HORIZONTAL SEARCH BAR (Airbnb / Booking.com style) -->
@@ -17,17 +25,17 @@
               <!-- 1. Pickup Location -->
               <div class="hbw-field-group hbw-field-pickup">
                 <label class="hbw-field-label" for="hbwPickup">
-                  <span class="hbw-dot hbw-dot-green"></span> Pickup Location
+                  <span class="hbw-dot hbw-dot-green"></span> {t.wizard.pickupLabel}
                 </label>
                 <div class="hbw-select-wrap">
-                  <select id="hbwPickup" class="hbw-select" aria-label="Pickup Location">
-                    <option value="" disabled selected>Select pickup location</option>
-                    <optgroup label="Airports">
+                  <select id="hbwPickup" class="hbw-select" aria-label={t.wizard.pickupLabel}>
+                    <option value="" disabled selected>{t.wizard.pickupPlaceholder}</option>
+                    <optgroup label={t.wizard.groupAirports}>
                       <option value="Marrakech Airport (RAK)">Marrakech Airport (RAK)</option>
                       <option value="Casablanca Airport (CMN)">Casablanca Airport (CMN)</option>
                       <option value="Agadir Airport (AGA)">Agadir Airport (AGA)</option>
                     </optgroup>
-                    <optgroup label="Cities &amp; Hubs">
+                    <optgroup label={t.wizard.groupCities}>
                       <option value="Marrakech Medina">Marrakech (Medina / Gueliz)</option>
                       <option value="Marrakech Palmeraie">Marrakech (Palmeraie)</option>
                       <option value="Casablanca City">Casablanca City</option>
@@ -44,12 +52,12 @@
               <!-- 2. Destination -->
               <div class="hbw-field-group hbw-field-dest">
                 <label class="hbw-field-label" for="hbwDestination">
-                  <span class="hbw-dot hbw-dot-red"></span> Destination
+                  <span class="hbw-dot hbw-dot-red"></span> {t.wizard.destLabel}
                 </label>
                 <div class="hbw-select-wrap">
-                  <select id="hbwDestination" class="hbw-select" aria-label="Destination">
-                    <option value="" disabled selected>Select destination</option>
-                    <optgroup label="Airports &amp; Intercity Hubs">
+                  <select id="hbwDestination" class="hbw-select" aria-label={t.wizard.destLabel}>
+                    <option value="" disabled selected>{t.wizard.destPlaceholder}</option>
+                    <optgroup label={t.wizard.groupIntercity}>
                       <option value="Marrakech Airport (RAK)">Marrakech Airport (RAK)</option>
                       <option value="Casablanca Airport (CMN)">Casablanca Airport (CMN)</option>
                       <option value="Agadir Airport (AGA)">Agadir Airport (AGA)</option>
@@ -59,11 +67,11 @@
                       <option value="Agadir City">Agadir City</option>
                       <option value="Taghazout">Taghazout</option>
                     </optgroup>
-                    <optgroup label="Marrakech Areas">
+                    <optgroup label={t.wizard.groupMarrakech}>
                       <option value="Marrakech Medina">Marrakech (Medina / Riad)</option>
                       <option value="Marrakech Palmeraie">Marrakech (Palmeraie)</option>
                     </optgroup>
-                    <optgroup label="Day Trips &amp; Excursions">
+                    <optgroup label={t.wizard.groupDayTrips}>
                       <option value="Agafay Desert">Agafay Desert (Camp / Sunset)</option>
                       <option value="Ourika Valley">Ourika Valley (Atlas Waterfalls)</option>
                       <option value="Ouzoud Waterfalls">Ouzoud Waterfalls</option>
@@ -76,7 +84,7 @@
               <!-- 3. Passengers & Smart Vehicle Tabs -->
               <div class="hbw-field-group hbw-field-pax">
                 <div class="hbw-pax-top">
-                  <span class="hbw-pax-label">HOW MANY PASSENGERS?</span>
+                  <span class="hbw-pax-label">{t.wizard.paxLabel}</span>
                   <div class="hbw-counter">
                     <button type="button" class="hbw-counter-btn" id="hbwPaxMinus" aria-label="Decrease passenger count">&minus;</button>
                     <span class="hbw-counter-val" id="hbwPaxVal">2</span>
@@ -86,19 +94,19 @@
                 <div class="hbw-tier-tabs" role="tablist" aria-label="Vehicle options">
                   <button type="button" class="hbw-tab-btn active" data-tier="1_4" role="tab" aria-selected="true">
                     <span class="hbw-tab-pax">1–4</span>
-                    <span class="hbw-tab-veh">sedan</span>
+                    <span class="hbw-tab-veh">{t.wizard.tabSedan}</span>
                   </button>
                   <button type="button" class="hbw-tab-btn" data-tier="5_7" role="tab" aria-selected="false">
                     <span class="hbw-tab-pax">5–7</span>
-                    <span class="hbw-tab-veh">van</span>
+                    <span class="hbw-tab-veh">{t.wizard.tabVan}</span>
                   </button>
                   <button type="button" class="hbw-tab-btn" data-tier="8_12" role="tab" aria-selected="false">
                     <span class="hbw-tab-pax">8–12</span>
-                    <span class="hbw-tab-veh">minibus</span>
+                    <span class="hbw-tab-veh">{t.wizard.tabMinibus}</span>
                   </button>
                   <button type="button" class="hbw-tab-btn" data-tier="13_plus" role="tab" aria-selected="false">
                     <span class="hbw-tab-pax">13+</span>
-                    <span class="hbw-tab-veh">quote</span>
+                    <span class="hbw-tab-veh">{t.wizard.tabQuote}</span>
                   </button>
                 </div>
               </div>
@@ -107,8 +115,8 @@
             <!-- UNFILLED HINT (Shown when route not yet selected) -->
             <div class="hbw-unfilled-hint" id="hbwUnfilledHint">
               <div class="hbw-hint-trust">
-                <span>⏱ We reply within 10 minutes</span>
-                <span>• No charge now — confirm via WhatsApp, pay later.</span>
+                <span>{t.wizard.unfilledReply}</span>
+                <span>{t.wizard.unfilledPayLater}</span>
               </div>
             </div>
 
@@ -120,11 +128,11 @@
                 <div class="hbw-route-actions">
                   <button type="button" class="hbw-action-pill" id="hbwSwapBtn" title="Swap pickup and destination">
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none"><path d="M7 16V4m0 0L3 8m4-4l4 4m6 4v12m0 0l4-4m-4 4l-4-4"/></svg>
-                    <span>Swap</span>
+                    <span>{t.wizard.swapBtn}</span>
                   </button>
                   <button type="button" class="hbw-action-pill" id="hbwRoundTripToggle" aria-pressed="false">
                     <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none"><path d="M3 12a9 9 0 0 1 15-6.7L21 8M21 3v5h-5M21 12a9 9 0 0 1-15 6.7L3 16M3 21v-5h5"/></svg>
-                    <span>Round trip <span class="hbw-pill-discount">-10% return</span></span>
+                    <span>{t.wizard.roundTrip} <span class="hbw-pill-discount">{t.wizard.roundTripDiscount}</span></span>
                   </button>
                 </div>
 
@@ -133,7 +141,7 @@
                   <div class="hbw-price-card-top">
                     <div class="hbw-price-main">
                       <span class="hbw-price-amount" id="hbwPriceAmount">100€</span>
-                      <span class="hbw-price-for">for your group · cash to driver</span>
+                      <span class="hbw-price-for">{t.wizard.forGroup}</span>
                     </div>
                     <div class="hbw-route-metric" id="hbwRouteMetric">
                       <span id="hbwRouteTime">1h</span> · <span id="hbwRouteDist">90 km</span>
@@ -142,7 +150,7 @@
                   <div class="hbw-price-card-sub">
                     <span id="hbwVehicleSummary">Van · 5–7 passengers</span>
                     <span class="hbw-bullet-sep">•</span>
-                    <span>Per vehicle — fuel, tolls and luggage included</span>
+                    <span>{t.wizard.includedSummary}</span>
                     <span class="hbw-bullet-sep">•</span>
                     <span id="hbwLuggageSummary">About 7 suitcases</span>
                   </div>
@@ -151,67 +159,66 @@
                 <!-- Appended Optional Inputs (Date, Time, Flight Number in One Single Line) -->
                 <div class="hbw-extra-grid">
                   <div class="hbw-extra-col">
-                    <label class="hbw-extra-label" for="hbwDateInput">PICKUP DATE (OPTIONAL)</label>
+                    <label class="hbw-extra-label" for="hbwDateInput">{t.wizard.pickupDateLabel}</label>
                     <input type="date" id="hbwDateInput" class="hbw-extra-input">
                   </div>
                   <div class="hbw-extra-col">
-                    <label class="hbw-extra-label" for="hbwTimeInput">TIME (OPTIONAL)</label>
+                    <label class="hbw-extra-label" for="hbwTimeInput">{t.wizard.pickupTimeLabel}</label>
                     <input type="time" id="hbwTimeInput" class="hbw-extra-input">
                   </div>
                   <div class="hbw-extra-col hbw-field-flight">
-                    <label class="hbw-extra-label" for="hbwFlightInput">FLIGHT NUMBER (OPTIONAL)</label>
-                    <input type="text" id="hbwFlightInput" class="hbw-extra-input" placeholder="e.g. AT800, BA2662, AF1476">
+                    <label class="hbw-extra-label" for="hbwFlightInput">{t.wizard.flightNumLabel}</label>
+                    <input type="text" id="hbwFlightInput" class="hbw-extra-input" placeholder={t.wizard.flightPlaceholder}>
                   </div>
                 </div>
 
                 <!-- Trip Details Textarea (Full Width) -->
                 <div class="hbw-field-details">
-                  <label class="hbw-extra-label" for="hbwTripDetails">TRIP DETAILS</label>
-                  <textarea id="hbwTripDetails" class="hbw-extra-textarea" rows="2" placeholder="Your name, hotel or riad pickup, special requests..."></textarea>
+                  <label class="hbw-extra-label" for="hbwTripDetails">{t.wizard.tripDetailsLabel}</label>
+                  <textarea id="hbwTripDetails" class="hbw-extra-textarea" rows="2" placeholder={t.wizard.tripDetailsPlaceholder}></textarea>
                 </div>
 
                 <!-- Child Seat & Payment Method Toggles -->
                 <div class="hbw-options-row">
                   <button type="button" class="hbw-option-pill" id="hbwChildSeatBtn" aria-pressed="false">
-                    <span class="hbw-pill-icon">+</span> Child seat
+                    <span class="hbw-pill-icon">+</span> {t.wizard.childSeatAdd}
                   </button>
 
                   <div class="hbw-payment-group" role="radiogroup" aria-label="Payment method">
                     <button type="button" class="hbw-pay-btn active" id="hbwPayCash" role="radio" aria-checked="true">
-                      Cash to the driver
+                      {t.wizard.payCash}
                     </button>
                     <button type="button" class="hbw-pay-btn" id="hbwPayCard" role="radio" aria-checked="false">
-                      Card via secure link
+                      {t.wizard.payCard}
                     </button>
                   </div>
                 </div>
 
                 <!-- Payment Note -->
                 <div class="hbw-micro-note" id="hbwPaymentNote">
-                  ⓘ Pay the driver on the day, in euros or dirhams.
+                  {t.wizard.payNoteCash}
                 </div>
 
                 <!-- Trust Guarantee List (Flight tracking in one single line) -->
                 <div class="hbw-trust-list">
                   <div class="hbw-trust-item hbw-trust-reply">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#C8A45C" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    <span>We reply within 10 minutes</span>
+                    <span>{t.wizard.trustReply}</span>
                   </div>
                   <div class="hbw-trust-item hbw-trust-flight">
                     <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#C8A45C" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    <span class="hbw-flight-text">We track your flight, so delays are covered, and your driver waits in arrivals with a name sign until you come out — no time limit and no waiting fee.</span>
+                    <span class="hbw-flight-text">{t.wizard.trustFlight}</span>
                   </div>
                 </div>
 
                 <!-- Primary Book Now Button -->
                 <button type="button" class="hbw-book-btn" id="hbwSubmitBtn">
-                  <span>Book Now — <span id="hbwButtonPrice">100€</span> →</span>
+                  <span>{t.wizard.bookNowBtn} — <span id="hbwButtonPrice">100€</span> →</span>
                 </button>
-                <p class="hbw-bottom-note">Cash to the driver on the day · No charge now</p>
+                <p class="hbw-bottom-note">{t.wizard.bottomNote}</p>
 
               </div>
             </div>
           </div>
         </div>
       </div>
-
