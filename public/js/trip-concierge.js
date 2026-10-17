@@ -386,7 +386,7 @@
         <span class="rm-wa-badge">● Marrakech Local Desk Online</span>
         <p>Send your custom itinerary draft directly to our Marrakech headquarters for a fast, tailored quote with transparent pricing.</p>
         <a href="${waLink}" target="_blank" rel="noopener" class="rm-wa-btn" style="color:#ffffff !important; text-decoration:none;">
-          <img src="${window.location.pathname.includes('/blog/') ? '../img/whatsapp-logo.png' : 'img/whatsapp-logo.png'}" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+          <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
           <span style="color:#ffffff !important;">Plan on WhatsApp</span>
         </a>
       </div>

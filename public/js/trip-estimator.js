@@ -346,7 +346,7 @@
       msg.style.border = '1px solid #86efac';
       msg.style.borderLeft = '4px solid #16a34a';
       msg.style.color = '#14532d';
-      msg.innerHTML = `<strong>✓ Estimate Saved &amp; Dispatched!</strong><br>Thank you, ${name}. Your calculation has been sent to our Marrakech team. We will review riad availability and email you at <strong>${email}</strong> within 30 minutes.<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; align-items:center; gap:8px; background:#25D366; color:#ffffff !important; padding:10px 18px; font-weight:800; font-size:12px; text-transform:uppercase; text-decoration:none; margin-top:8px;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="18" height="18" style="vertical-align:middle;"> Plan on WhatsApp &rarr;</a>`;
+      msg.innerHTML = `<strong>✓ Estimate Saved &amp; Dispatched!</strong><br>Thank you, ${name}. Your calculation has been sent to our Marrakech team. We will review riad availability and email you at <strong>${email}</strong> within 30 minutes.<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="btn-wa-solid" style="display:inline-flex; align-items:center; gap:8px; background:#25D366; color:#ffffff !important; padding:10px 18px; font-weight:800; font-size:12px; text-transform:uppercase; text-decoration:none; margin-top:8px;"><img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="18" height="18" style="vertical-align:middle;"> Plan on WhatsApp &rarr;</a>`;
 
       btn.innerHTML = '✓ Estimate Sent to Operations Desk';
       btn.style.background = '#16a34a';
@@ -371,7 +371,7 @@
       msg.style.display = 'block';
       msg.style.background = '#fefce8';
       msg.style.border = '1px solid #fde047';
-      msg.innerHTML = `Connecting directly to our WhatsApp concierge...<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="roam-btn-wa" style="display:inline-flex; align-items:center; gap:8px; font-weight:800; background:#25D366; color:#ffffff !important; padding:12px 24px; border-radius:9999px; text-decoration:none;"><img src="img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;"><span style="color:#ffffff !important;">Plan on WhatsApp</span></a>`;
+      msg.innerHTML = `Connecting directly to our WhatsApp concierge...<br><br><a href="${waUrl}" target="_blank" rel="noopener" class="roam-btn-wa" style="display:inline-flex; align-items:center; gap:8px; font-weight:800; background:#25D366; color:#ffffff !important; padding:12px 24px; border-radius:9999px; text-decoration:none;"><img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;"><span style="color:#ffffff !important;">Plan on WhatsApp</span></a>`;
       window.open(waUrl, '_blank');
     }
   }

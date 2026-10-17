@@ -67,7 +67,7 @@
       <div class="roam-tour-cta-actions">
         <a href="${btnUrl}" class="roam-btn-white">${btnText}</a>
         <a href="${waLink}" target="_blank" rel="noopener" class="roam-btn-wa">
-          <img src="${isSub ? '../img/whatsapp-logo.png' : 'img/whatsapp-logo.png'}" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+          <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
           Plan on WhatsApp
         </a>
       </div>

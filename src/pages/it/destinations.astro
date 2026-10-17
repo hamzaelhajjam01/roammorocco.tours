@@ -619,12 +619,12 @@ const schema = {
           topEl.classList.add("at-top");
           topEl.classList.remove("at-bottom");
           const logo = document.getElementById('navLogo');
-          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+          if(logo) logo.src = '/img/logo-for-dark-bg.png';
         } else {
           topEl.classList.add("at-bottom");
           topEl.classList.remove("at-top");
           const logo = document.getElementById('navLogo');
-          if(logo) logo.src = 'img/logo-for-light-bg.png';
+          if(logo) logo.src = '/img/logo-for-light-bg.png';
         }
       }
     }
@@ -656,18 +656,18 @@ const schema = {
     /* ── CLICK & TAP STICKER POPUP (DESKTOP & MOBILE) ── */
     (function(){
       const stickers = [
-        "stickers/ait-ben-haddou-sticker.png",
-        "stickers/al-qarawiyyin-sticker.png",
-        "stickers/argan-oil-making-sticker.png",
-        "stickers/bab-mansour-sticker.png",
-        "stickers/essaouira-sqala-sticker.png",
-        "stickers/gnawa-maalem-sticker.png",
-        "stickers/hassan-tower-sticker.png",
-        "stickers/jemaa-el-fnaa-sticker.png",
-        "stickers/koutoubia-sticker.png",
-        "stickers/moroccan-caftan-sticker.png",
-        "stickers/tbourida-sticker.png",
-        "stickers/volubilis-sticker.png"
+        "/stickers/ait-ben-haddou-sticker.png",
+        "/stickers/al-qarawiyyin-sticker.png",
+        "/stickers/argan-oil-making-sticker.png",
+        "/stickers/bab-mansour-sticker.png",
+        "/stickers/essaouira-sqala-sticker.png",
+        "/stickers/gnawa-maalem-sticker.png",
+        "/stickers/hassan-tower-sticker.png",
+        "/stickers/jemaa-el-fnaa-sticker.png",
+        "/stickers/koutoubia-sticker.png",
+        "/stickers/moroccan-caftan-sticker.png",
+        "/stickers/tbourida-sticker.png",
+        "/stickers/volubilis-sticker.png"
       ];
       let stickerIdx = 0;
       let activeTimer = null;

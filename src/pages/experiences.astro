@@ -427,12 +427,12 @@ const schema = {
           topEl.classList.add("at-top");
           topEl.classList.remove("at-bottom");
           const logo = document.getElementById('navLogo');
-          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+          if(logo) logo.src = '/img/logo-for-dark-bg.png';
         } else {
           topEl.classList.add("at-bottom");
           topEl.classList.remove("at-top");
           const logo = document.getElementById('navLogo');
-          if(logo) logo.src = 'img/logo-for-light-bg.png';
+          if(logo) logo.src = '/img/logo-for-light-bg.png';
         }
       }
     }
@@ -452,7 +452,7 @@ const schema = {
       explorer: {
         badge: "3-DAY PREMIUM EXPLORER",
         desc: "Three iconic escapes, one private vehicle, zero hotel changes.",
-        image: "img/rigel-ibisQEDxODo-unsplash.jpg",
+        image: "/img/rigel-ibisQEDxODo-unsplash.jpg",
         alt: "Essaouira coastal ramparts",
         days: [
           { dayLabel: "DAY 01 • ESSAOUIRA COAST", timeBadge: "07:00 AM DEPARTURE • ESSAOUIRA COASTAL ESCAPE", title: "Essaouira before the crowds", cardDesc: "Reach the Atlantic medina while its lanes are still quiet. Walk the sea walls with a private guide, choose lunch from the morning catch, then explore the art souks.", tags: ["100% Private vehicle & driver", "Local Atlantic guide", "Fresh seafood harbour lunch"] },
@@ -463,7 +463,7 @@ const schema = {
       heritage: {
         badge: "4-DAY HERITAGE & CINEMA",
         desc: "Ancient kasbahs, film studio sets, and high mountain passes.",
-        image: "img/pol-kasbah.jpg",
+        image: "/img/pol-kasbah.jpg",
         alt: "Ait Ben Haddou kasbah",
         days: [
           { dayLabel: "DAY 01 • TIZI N'TICHKA PASS", timeBadge: "08:00 AM DEPARTURE • ATLAS MOUNTAIN CROSSING", title: "Winding through Tizi n'Tichka", cardDesc: "Ascend to 2,260 meters through high Atlas mountain passes. Stop at panoramic lookouts and historic Berber villages along the ancient caravan route.", tags: ["High Atlas mountain pass", "Panorama photo stops", "Private 4x4 comfort"] },
@@ -473,7 +473,7 @@ const schema = {
       atlas: {
         badge: "3-DAY ACTIVE HIGH ATLAS",
         desc: "Berber mountain villages, Toubkal trails, and alpine fresh air.",
-        image: "img/soufiane-koraichi-zLWxuxUqrDk-unsplash.jpg",
+        image: "/img/soufiane-koraichi-zLWxuxUqrDk-unsplash.jpg",
         alt: "Imlil mountain valley",
         days: [
           { dayLabel: "DAY 01 • IMLIL VALLEY", timeBadge: "08:30 AM DEPARTURE • TOUBKAL BASE CAMP", title: "Imlil valley mountain trek", cardDesc: "Hike through terraced walnut groves and apple orchards at the base of Mount Toubkal. Enjoy a traditional Berber lunch overlooking the valley.", tags: ["Certified mountain guide", "Terraced valley trail hike", "Local Berber family lunch"] }
@@ -638,18 +638,18 @@ const schema = {
     /* ── CLICK & TAP STICKER POPUP (DESKTOP & MOBILE) ── */
     (function(){
       const stickers = [
-        "stickers/ait-ben-haddou-sticker.png",
-        "stickers/al-qarawiyyin-sticker.png",
-        "stickers/argan-oil-making-sticker.png",
-        "stickers/bab-mansour-sticker.png",
-        "stickers/essaouira-sqala-sticker.png",
-        "stickers/gnawa-maalem-sticker.png",
-        "stickers/hassan-tower-sticker.png",
-        "stickers/jemaa-el-fnaa-sticker.png",
-        "stickers/koutoubia-sticker.png",
-        "stickers/moroccan-caftan-sticker.png",
-        "stickers/tbourida-sticker.png",
-        "stickers/volubilis-sticker.png"
+        "/stickers/ait-ben-haddou-sticker.png",
+        "/stickers/al-qarawiyyin-sticker.png",
+        "/stickers/argan-oil-making-sticker.png",
+        "/stickers/bab-mansour-sticker.png",
+        "/stickers/essaouira-sqala-sticker.png",
+        "/stickers/gnawa-maalem-sticker.png",
+        "/stickers/hassan-tower-sticker.png",
+        "/stickers/jemaa-el-fnaa-sticker.png",
+        "/stickers/koutoubia-sticker.png",
+        "/stickers/moroccan-caftan-sticker.png",
+        "/stickers/tbourida-sticker.png",
+        "/stickers/volubilis-sticker.png"
       ];
       let stickerIdx = 0;
       let activeTimer = null;

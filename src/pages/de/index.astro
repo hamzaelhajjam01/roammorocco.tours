@@ -1504,7 +1504,7 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
     <section class="showcase">
       <div class="showcase-block flush reveal-block">
         <div class="showcase-stage">
-          <div class="showcase-wide"><video class="clean-generated" src="/Cinematic_luxury_travel_film_o.mp4" autoplay muted loop playsinline poster="img/hero-desert.jpg"></video></div>
+          <div class="showcase-wide"><video class="clean-generated" src="/Cinematic_luxury_travel_film_o.mp4" autoplay muted loop playsinline poster="/img/hero-desert.jpg"></video></div>
         </div>
       </div>
     </section>
@@ -1830,12 +1830,12 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
     }
 
     const services=[
-      ["Private Tours","img/carlos-leret-kiYzznir-uo-unsplash.jpg",["Custom Morocco itineraries","Private driver guides","Flexible pacing","Local trip hosts"]],
-      ["Desert Journeys","img/pol-tent.jpg",["Merzouga and Erg Chebbi","Camel sunset rides","Luxury camps","Stargazing dinners"]],
-      ["Culture","img/frida-aguilar-estrada-LhVJaRPweJc-unsplash.jpg",["Medina walks","Berber homes","Cooking experiences","Artisan workshops"]],
-      ["Stays","img/pol-kasbah.jpg",["Riads and kasbahs","Boutique hotels","Desert tents","Handpicked comfort"]],
-      ["Routes","img/morocco-map-new.png",["Marrakech to Fes","Atlas Mountains","Atlantic coast","Imperial cities"]],
-      ["Concierge","img/amine-ozennou-wjOMf53cv88-unsplash.jpg",["Airport pickup","Restaurant bookings","Hammam days","Special occasions"]]
+      ["Private Tours","/img/carlos-leret-kiYzznir-uo-unsplash.jpg",["Custom Morocco itineraries","Private driver guides","Flexible pacing","Local trip hosts"]],
+      ["Desert Journeys","/img/pol-tent.jpg",["Merzouga and Erg Chebbi","Camel sunset rides","Luxury camps","Stargazing dinners"]],
+      ["Culture","/img/frida-aguilar-estrada-LhVJaRPweJc-unsplash.jpg",["Medina walks","Berber homes","Cooking experiences","Artisan workshops"]],
+      ["Stays","/img/pol-kasbah.jpg",["Riads and kasbahs","Boutique hotels","Desert tents","Handpicked comfort"]],
+      ["Routes","/img/morocco-map-new.png",["Marrakech to Fes","Atlas Mountains","Atlantic coast","Imperial cities"]],
+      ["Concierge","/img/amine-ozennou-wjOMf53cv88-unsplash.jpg",["Airport pickup","Restaurant bookings","Hammam days","Special occasions"]]
     ];
     const serviceList=document.getElementById("serviceList"),items=document.getElementById("serviceItems"),serviceWrap=document.getElementById("serviceImageWrap");
     serviceWrap.innerHTML=services.map((service,i)=>`<div class="service-image-layer" data-i="${i}" aria-hidden="${i===0?'false':'true'}"><img class="service-img" src="${service[1]}" alt="${service[0]}"></div>`).join("");
@@ -2186,9 +2186,9 @@ import HeroBookingWizard from '../../components/HeroBookingWizard.astro';
     };
 
     const journeyVisuals = {
-      explorer: { src: "img/rigel-ibisQEDxODo-unsplash.jpg", alt: "Warm stone walls and artisan stalls in Essaouira" },
-      heritage: { src: "img/sergio-otoya--3uyPo-2cOE-unsplash.jpg", alt: "Guide pointing toward an earthen Moroccan kasbah" },
-      atlas: { src: "img/review-atlas.jpg", alt: "High Atlas mountains and a valley village at sunset" }
+      explorer: { src: "/img/rigel-ibisQEDxODo-unsplash.jpg", alt: "Warm stone walls and artisan stalls in Essaouira" },
+      heritage: { src: "/img/sergio-otoya--3uyPo-2cOE-unsplash.jpg", alt: "Guide pointing toward an earthen Moroccan kasbah" },
+      atlas: { src: "/img/review-atlas.jpg", alt: "High Atlas mountains and a valley village at sunset" }
     };
 
     let currentCategory = "explorer";
