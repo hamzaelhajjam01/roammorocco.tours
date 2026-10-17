@@ -1,0 +1,1180 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "Dove alloggiare a Bali (2026): Ubud, Canggu, Seminyak e Uluwatu a confronto | Vagare per il Marocco";
+const description = "La guida definitiva del 2026 su dove alloggiare a Bali: Ubud vs Canggu vs Seminyak vs Uluwatu, ville con piscina privata, hack per i trasferimenti aeroportuali DPS, eSIM Indonesia Airalo ed etichetta culturale.";
+const canonical = "https://roammorocco.tours/it/blog/bali-travel-guide.html";
+const ogImage = "https://roammorocco.tours/images/bali-ubud-hero.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-toc.css?v=20260928_gold2", "/css/roam-blog.css?v=20260928_b"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://roammorocco.tours/blog/bali-travel-guide.html#article",
+      "headline": "Where to Stay in Bali (2026): Ubud, Canggu, Seminyak & Uluwatu Compared",
+      "description": "An exhaustive, insider Bali travel guide covering optimal accommodation regions (Ubud vs Canggu vs Seminyak vs Uluwatu), private pool villa recommendations, DPS Denpasar airport logistics, Airalo Indonesia eSIM, and cultural etiquette.",
+      "image": "https://roammorocco.tours/images/bali-ubud-hero.jpg",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "author": {
+        "@type": "Organization",
+        "name": "Roam Morocco Global Travel Editors",
+        "url": "https://roammorocco.tours/about.html"
+      },
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://roammorocco.tours/blog/bali-travel-guide.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://roammorocco.tours/blog/bali-travel-guide.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Where to Stay in Bali (2026)",
+          "item": "https://roammorocco.tours/blog/bali-travel-guide.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roammorocco.tours/blog/bali-travel-guide.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which area of Bali is best for first-time visitors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For first-time travelers, splitting your trip between Ubud (cultural jungle highlands) and either Seminyak or Canggu (southwest coast beaches and dining) is the quintessential Bali combination. Spending 4 days in Ubud and 4 days on the coast gives you both ancient temple heritage and sunset beach vibes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it better to stay in Ubud or Canggu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose Ubud if you seek tranquil rainforest landscapes, morning yoga, vegan caf\u00e9 culture, sacred water temples (Tirta Empul), and traditional Balinese art. Choose Canggu if you want world-famous surf breaks, trendy beach clubs, digital nomad co-working spaces, and bustling nightlife."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you avoid airport taxi scams at Denpasar (DPS)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Upon exiting customs at DPS, do not engage with the intense swarm of independent drivers in the arrival lobby. Instead, pre-book a private airport transfer through your villa/hotel, use the official Grab Lounge located in the multi-story parking structure, or take an official Blue Bird metered taxi from their outdoor kiosk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is an eSIM better than buying a physical SIM in Bali?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Indonesia has strict IMEI registration laws (Beacukai). Buying a physical SIM card at DPS airport requires waiting in lengthy customs inspection lines, registering your phone's IMEI number, and paying high airport markups. A travel eSIM like Airalo's Indotel connects immediately to Telkomsel or Indosat networks upon landing without any IMEI bureaucracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Bali's private villa culture compare to Morocco's private riads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both destinations offer intimate, residential luxury. Balinese private pool villas focus on indoor-outdoor tropical living with open-air living rooms and jungle gardens, while Moroccan riads focus on inward-facing courtyard architecture designed for cooling, privacy, and ornate artisan tilework. Mindful travelers who appreciate personalized hospitality thrive in both."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="it" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg: #fbfbf9;
+      --card-bg: #ffffff;
+      --text: #111111;
+      --text-muted: rgba(0, 0, 0, 0.72);
+      --border: rgba(0, 0, 0, 0.12);
+      --gold: #C8A45C;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    /* Luxury rounded corners system active */
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .article-wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 130px 24px 80px;
+    }
+
+    .roam-breadcrumbs {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .roam-breadcrumbs a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .roam-breadcrumbs a:hover {
+      color: var(--gold, #C8A45C);
+    }
+
+    .article-header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+
+    .category-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .article-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 20px 0;
+      color: #000000;
+    }
+
+    .article-subtitle {
+      font-size: clamp(18px, 2.2vw, 22px);
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0 0 24px 0;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    .meta-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .gold-accent {
+      color: var(--gold);
+      font-weight: bold;
+    }
+
+    .article-hero-fig {
+      margin: 0 0 48px 0;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      padding: 10px;
+    }
+
+    .article-hero-fig img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      max-height: 520px;
+    }
+
+    .article-hero-fig figcaption {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding-top: 10px;
+      font-style: italic;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 3.8vw, 36px);
+      line-height: 1.25;
+      margin: 54px 0 20px 0;
+      padding-top: 24px;
+      border-top: 2px solid #000000;
+      color: #000000;
+    }
+
+    .article-body h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 36px 0 14px 0;
+      color: #000000;
+    }
+
+    .article-body p {
+      margin: 0 0 24px 0;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 24px 0;
+      padding-left: 24px;
+    }
+
+    .article-body li {
+      margin-bottom: 8px;
+    }
+
+    .verdict-box {
+      background: #ffffff;
+      border: 2px solid #000000;
+      padding: 30px;
+      margin: 40px 0;
+      box-shadow: 6px 6px 0px rgba(0,0,0,0.08);
+    }
+
+    .verdict-box h3 {
+      margin-top: 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .verdict-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .verdict-card {
+      background: #faf8f5;
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .verdict-card .tag {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 3px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .verdict-card .title {
+      font-weight: 800;
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .verdict-card .desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 36px 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    th, td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    th {
+      background: #18181B;
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .roam-area-card {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 36px 0;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-area-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      padding-bottom: 12px;
+    }
+
+    .roam-area-header h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .roam-area-badge {
+      background: rgba(200, 164, 92, 0.12);
+      color: #8A6A23;
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .roam-area-vibe {
+      font-size: 14px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .roam-hotel-list {
+      margin-top: 20px;
+      background: #faf8f5;
+      padding: 18px 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .roam-hotel-list h4 {
+      margin: 0 0 12px 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--gold);
+    }
+
+    .hotel-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+
+    .hotel-item:last-child {
+      border-bottom: none;
+    }
+
+    .hotel-link {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hotel-link:hover {
+      color: var(--gold);
+    }
+
+    .roam-toolkit-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 36px;
+      margin: 48px 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-toolkit-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #000000;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+        .roam-toolkit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .roam-toolkit-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px 20px;
+      background: #fdfcf9;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold, #C8A45C);
+      border-radius: 6px;
+      color: #000000 !important;
+      text-decoration: none !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      transition: all .25s ease;
+    }
+
+    .roam-toolkit-link:hover {
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.25);
+      border-left-color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .roam-toolkit-link span:first-child {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111111;
+      flex: 1 1 auto;
+    }
+
+    .roam-toolkit-link span:last-child:not(:only-child) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: #000000;
+      color: #ffffff !important;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .roam-toolkit-link:hover span:last-child:not(:only-child) {
+      background: var(--gold, #C8A45C);
+      border-color: var(--gold, #C8A45C);
+      color: #000000 !important;
+      box-shadow: 0 4px 12px rgba(200, 164, 92, 0.35);
+    }
+
+    @media (max-width: 580px) {
+      .roam-toolkit-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .roam-toolkit-link {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 16px 18px;
+      }
+      .roam-toolkit-link span:last-child:not(:only-child) {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 14px;
+      }
+    }
+
+    .roam-callout-ai {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
+      padding: 24px;
+      margin: 36px 0;
+      font-size: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-field-note {
+      background: #faf8f5;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 40px 0;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-field-note-quote {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px;
+      font-style: italic;
+      line-height: 1.6;
+      margin: 0 0 12px 0;
+      color: #000000;
+    }
+
+    .roam-field-note-author {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      font-weight: 700;
+    }
+
+    .faq-accordion {
+      margin-top: 30px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    .faq-question {
+      padding: 18px 22px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--gold);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 22px 22px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .roam-morocco-bridge {
+      background: #000000;
+      color: #ffffff;
+      padding: 40px 32px;
+      margin: 50px 0;
+      border-radius: 20px;
+      border: 1px solid rgba(200, 164, 92, 0.45);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+    }
+
+    .roam-morocco-bridge h3 {
+      color: #ffffff;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(22px, 3vw, 30px);
+      margin: 0 0 14px 0;
+    }
+
+    .roam-morocco-bridge p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .bridge-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold, #C8A45C);
+      color: #000000 !important;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      font-family: 'Inter', -apple-system, sans-serif;
+    }
+
+    .bridge-cta-btn:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+  
+  </style>
+
+  <!-- Main Article -->
+  <article class="article-wrap">
+
+    <!-- Breadcrumbs -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/it/index.html">Home</a> &gt; <a href="/it/blog.html">Blog</a> &gt; <span>Where to Stay in Bali (2026)</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">GLOBAL INTELLIGENCE &amp; ISLAND RETREATS</span>
+      <h1 class="article-title">Dove alloggiare a Bali (2026): Ubud, Canggu, Seminyak e Uluwatu a confronto</h1>
+      <p class="article-subtitle">La suddivisione definitiva dell'isola per chi è alle prime armi e per i viaggiatori di lusso. Dai santuari del benessere nella foresta pluviale di Ubud alle pause per il surf a Canggu e alle ville a sfioro sulla scogliera di Uluwatu, scegli la tua base, gestisci la logistica aeroportuale e configura la tua eSIM indonesiana.</p>
+      
+      <div class="meta-bar">
+        <span>🗓️ UPDATED: <strong class="gold-accent">OCTOBER 2026</strong></span>
+        <span>⏱️ 18 MIN READ</span>
+        <span>✍️ ROAM MOROCCO EDITORS</span>
+        <span>📍 BALI, INDONESIA</span>
+      </div>
+    </header>
+
+    <!-- Hero Figure -->
+    <figure class="article-hero-fig">
+      <img src="/images/bali-ubud-hero.jpg" alt="Golden sunrise over a private luxury infinity pool and emerald rice terraces in Ubud Bali" width="1280" height="720">
+      <figcaption>Nebbia dell'alba su Ubud: balla privata sulla scogliera e piscina a sfioro che si affaccia sulla sacra valle del fiume Ayung.</figcaption>
+    </figure>
+
+    <!-- Article Content -->
+        <!-- GEO & AEO Key Takeaways Box (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Where to Stay in Bali Quick Answer">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ QUICK ANSWER: WHERE TO STAY IN BALI (2026)</span>
+        <span class="ai-summary-badge">Island Guide</span>
+      </div>
+      <p class="ai-summary-text"><strong>Scegli Ubud</strong> per templi d'acqua sacra, lussureggianti santuari del benessere nella giungla e ville private a sfioro. <strong>Scegli Canggu</strong> per la cultura del surf, i beach club e i caffè hipster. <strong>Scegli Uluwatu</strong> per spettacolari resort di lusso sulla scogliera e surf break di prima classe. <strong>Scegli Seminyak</strong> per lo shopping in boutique esclusive e una cucina raffinata di alto livello. Evitare di spostare gli hotel ogni notte a causa dell'intenso traffico sull'isola (<em>macet</em>); basarti in 2 regioni al massimo.</p>
+    </aside>
+
+    <div class="article-body">
+
+      <p>Bali non è semplicemente una destinazione su un'unica isola; è un arcipelago di micromondi completamente divergenti. Un viaggio di sole due ore attraverso l'isola ti trasporta dai club diurni sulla spiaggia di Canggu alle valli dei templi avvolte dalla nebbia e ai ritiri di yoga biologico di Ubud, o agli spettacolari anfiteatri di scogliere calcaree di Uluwatu dove l'Oceano Indiano si infrange centinaia di piedi più in basso.</p>
+
+      <p>Poiché l'infrastruttura stradale di Bali è costituita in gran parte da stretti corridoi a due corsie soggetti a noti ingorghi (conosciuti localmente come <em>macet</em>), <strong>il luogo in cui scegli la tua base determina l'intera esperienza della tua vacanza</strong>. Basarsi nella regione sbagliata significa passare quattro ore al giorno bloccato dietro moto e camion per le consegne invece di galleggiare nella propria piscina privata.</p>
+
+      <p>Questa guida completa del 2026 analizza le cinque principali regioni di Bali, fornisce consigli controllati su ville con piscina privata e ti fornisce informazioni essenziali sugli arrivi all'aeroporto di Denpasar (DPS) e hack sulla connettività.</p>
+
+      <!-- Quick Verdict Box -->
+      <div class="verdict-box">
+        <h3>⚡ Verdetto rapido: le migliori regioni di Bali in base all'intento di viaggio</h3>
+        <div class="verdict-grid">
+          <div class="verdict-card">
+            <span class="tag">Culture, Jungle &amp; Wellness</span>
+            <div class="title">Ubud (Central Highlands)</div>
+            <p class="desc">Terrazze di riso color smeraldo, templi d'acqua sacra, ritiri yoga di livello mondiale, templi gastronomici vegani e intagliatori artigianali del legno.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Surf, Cafés &amp; Nomad Vibe</span>
+            <div class="title">Canggu (Batu Bolong &amp; Pererenan)</div>
+            <p class="desc">Surf break sulla sabbia nera, frullati hipster, beach club al tramonto (Echo Beach) e vibrante energia creativa.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Chic Dining &amp; Boutiques</span>
+            <div class="title">Seminyak (Petitenget)</div>
+            <p class="desc">Boutique di alta moda, cocktail lounge leggendari, beach club esclusivi (Potato Head, Ku De Ta) e ville di lusso.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Dramatic Ocean Views</span>
+            <div class="title">Uluwatu (The Bukit Peninsula)</div>
+            <p class="desc">Resort a 5 stelle sulla scogliera di prima classe, spiagge di calette di sabbia bianca (Bingin, Padang Padang) ed epici tramonti con danze del fuoco Kecak.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Essential Bali Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">🧰 The 2026 Bali Travel Toolkit (Verified Direct Booking Deals)</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-bali/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>✈️ Flight Deals to Denpasar (DPS)</span>
+            <span>Check Fares &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/region/id/bali.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🏨 Private Pool Villas on Booking.com</span>
+            <span>View Stays &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/indonesia-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>📱 Indonesia 5G eSIM (Airalo)</span>
+            <span>From $5.50 &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span>🚗 Bali Private Chauffeur / Car</span>
+            <span>Compare Rates &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 1: The Geography of Bali -->
+      <h2>1. La geografia di Bali: perché dividere il soggiorno non è negoziabile</h2>
+
+      <p>Bali copre più di 5.780 chilometri quadrati. La spina dorsale geografica dell’isola è coronata da sacri picchi vulcanici attivi (Monte Agung e Monte Batur), che scendono verso sud nei fertili burroni fluviali e terminano sulla costa dell’Oceano Indiano.</p>
+
+      <p>L'errore più grande che commettono coloro che viaggiano per la prima volta è prenotare tutte le 10 o 14 notti in un unico hotel e tentare di fare una "gita di un giorno" ovunque. Un viaggio in auto da Canggu alle terrazze di riso settentrionali di Jatiluwih o alle cascate di Munduk può facilmente richiedere dalle 2,5 alle 3 ore a tratta durante il traffico pomeridiano di punta.</p>
+
+      <div class="roam-callout-ai">
+        <strong>💡 The Golden 2-Base Rule:</strong> For any trip of 7 days or longer, <strong>always split your accommodation</strong>:
+        <ul style="margin-top:10px;margin-bottom:0;">
+          <li><strong>Base 1 (4–5 notti):</strong> Base culturale e naturalistica a <strong>Ubud</strong> o sulle colline settentrionali.</li>
+          <li><strong>Base 2 (4–5 notti):</strong> Base sulla spiaggia costiera a <strong>Canggu, Seminyak o Uluwatu</strong>.</li>
+        </ul>
+      </div>
+
+      <!-- Section 2: Detailed Regional Breakdown -->
+      <h2>2. Le principali regioni di Bali a confronto (testa a testa)</h2>
+
+      <!-- Region 1: Ubud -->
+      <div class="roam-area-card" id="area-ubud">
+        <div class="roam-area-header">
+          <div>
+            <h3>1. Ubud (Altipiani Culturali Centrali)</h3>
+            <div class="roam-area-vibe">Rainforest Valleys • Sacred Hindu Temples • Yoga &amp; Sound Baths • Artisan Villages</div>
+          </div>
+          <span class="roam-area-badge">Best for Culture &amp; Serenity</span>
+        </div>
+
+        <p>Ubud è il cuore spirituale di Bali. Circondato da profondi burroni scavati dal sacro fiume Ayung, è un mondo color smeraldo di lussureggianti tettoie della giungla, risaie a cascata e santuari indù scolpiti nella pietra adornati con offerte quotidiane di petali di frangipani (<em>canang sari</em>).</p>
+
+        <p><strong>Attrazioni e atmosfera:</strong> oltre il vivace centro (Jalan Raya Ubud e la Foresta Sacra delle Scimmie), la vera magia inizia 10 minuti fuori città, in villaggi tranquilli come Sayan, Penestanan e Keliki. Qui, resort di lusso e ville private sembrano scavati nella foresta pluviale stessa. Le mattine iniziano con il canto degli uccelli, la nebbia mattutina e le fresche ciotole di frutti di drago tropicali.</p>
+
+        <p><strong>Ideale per:</strong> coppie, persone in cerca di benessere, viaggiatori singoli e appassionati di cultura che privilegiano la tranquillità, la cucina biologica di livello mondiale e l'esplorazione dei templi rispetto ai bar aperti fino a tarda notte.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Scelte curate di hotel e ville a Ubud:</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Ubud+Bali" target="_blank" rel="noopener" class="hotel-link">Four Seasons Resort Bali at Sayan</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Iconic architectural suspension bridge entering a lush valley sanctuary.</span>
+            </div>
+            <strong>From €750/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Ubud+Bali" target="_blank" rel="noopener" class="hotel-link">The Kayon Jungle Resort</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Tiered 3-level infinity pool cascading directly over deep jungle canyons.</span>
+            </div>
+            <strong>From €380/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Ubud+Bali" target="_blank" rel="noopener" class="hotel-link">Adiwana Suweta</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Elegant boutique resort surrounded by pristine palm groves near the center.</span>
+            </div>
+            <strong>From €160/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Region 2: Canggu -->
+      <div class="roam-area-card" id="area-canggu">
+        <div class="roam-area-header">
+          <div>
+            <h3>2. Canggu (Batu Bolong, Echo Beach e Pererenan)</h3>
+            <div class="roam-area-vibe">Southwest Coast • World-Class Surf • Trendy Beach Clubs • Digital Nomad Epicenter</div>
+          </div>
+          <span class="roam-area-badge">Best for Surf, Cafés &amp; Nightlife</span>
+        </div>
+
+        <p>Negli ultimi cinque anni, Canggu si è trasformata da un sonnolento villaggio di surfisti nella capitale indiscussa dello stile di vita del sud-est asiatico. Ricco di concept store di design, torrefazioni di caffè speciali, skate bowl e club diurni sulla spiaggia, Canggu vibra di energia giovanile internazionale.</p>
+
+        <p><strong>Sub-Neighborhood Breakdown:</strong>
+          <ul>
+            <li><strong>Batu Bolong:</strong> The center of the action. Dense with boutiques, bars (Old Man's, The Lawn), and beginner surf breaks.</li>
+            <li><strong>Echo Beach:</strong> Advanced reef surf breaks and legendary sunset barbecue seafood shacks.</li>
+            <li><strong>Pererenan (Insider Secret):</strong> Just across the river shortcut, Pererenan preserves tranquil rice field views, elevated culinary bistros, and peaceful private villas while keeping you 5 minutes from the action.</li>
+          </ul>
+        </p>
+
+        <div class="roam-hotel-list">
+          <h4>Scelte curate di hotel e ville a Canggu:</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Canggu+Bali" target="_blank" rel="noopener" class="hotel-link">The Slow</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — 12-suite brutalist art and music sanctuary on Batu Bolong.</span>
+            </div>
+            <strong>From €240/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Canggu+Bali" target="_blank" rel="noopener" class="hotel-link">COMO Uma Canggu</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Luxury beachfront wellness haven directly facing Echo Beach surf.</span>
+            </div>
+            <strong>From €390/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Canggu+Bali" target="_blank" rel="noopener" class="hotel-link">Private Pool Villa in Pererenan</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — 2-bedroom secluded designer villa with private sun deck and kitchen.</span>
+            </div>
+            <strong>From €140/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Region 3: Seminyak -->
+      <div class="roam-area-card" id="area-seminyak">
+        <div class="roam-area-header">
+          <div>
+            <h3>3. Seminyak (Petitenget e Oberoi)</h3>
+            <div class="roam-area-vibe">Southwest Coast • Fine Dining • Sunset Cocktail Lounges • Luxury Beachfront Resorts</div>
+          </div>
+          <span class="roam-area-badge">Best for Chic Dining &amp; Walkability</span>
+        </div>
+
+        <p>Se Canggu è la Brooklyn di Bali, Seminyak è la sua SoHo. Affermata da tempo come sofisticata enclave di resort sulla spiaggia dell'isola, Seminyak vanta marciapiedi asfaltati (una rarità a Bali), negozi monomarca di moda di lusso e alcuni dei migliori ristoranti internazionali dell'Asia, tra cui <em>Sarong</em>, <em>Mama San</em> e <em>Merah Putih</em>.</p>
+
+        <p><strong>Cultura dei beach club:</strong> Petitenget Beach ospita istituzioni di fama mondiale come il <strong>Potato Head Beach Club</strong> (una meraviglia architettonica sostenibile con lettini fronte oceano) e <strong>Ku De Ta</strong>. I cocktail al tramonto qui accompagnati da DJ ospiti internazionali sono un rito di passaggio balinese senza tempo.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Scelte curate di hotel e ville a Seminyak:</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Seminyak+Bali" target="_blank" rel="noopener" class="hotel-link">The Oberoi Beach Resort</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Legendary 5-star oceanfront sanctuary with 500m of tranquil tropical beachfront.</span>
+            </div>
+            <strong>From €420/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Seminyak+Bali" target="_blank" rel="noopener" class="hotel-link">Desa Potato Head</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Design-forward creative eco-resort on Petitenget Beach.</span>
+            </div>
+            <strong>From €310/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Seminyak+Bali" target="_blank" rel="noopener" class="hotel-link">The Elysian Boutique Villa Hotel</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Private walled pool villas within 5 minutes walk of dining strips.</span>
+            </div>
+            <strong>From €190/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Region 4: Uluwatu -->
+      <div class="roam-area-card" id="area-uluwatu">
+        <div class="roam-area-header">
+          <div>
+            <h3>4. Uluwatu e la penisola di Bukit</h3>
+            <div class="roam-area-vibe">Southern Tip • Soaring Limestone Cliffs • White Sand Coves • World-Class Ocean Sunsets</div>
+          </div>
+          <span class="roam-area-badge">Best for Jaw-Dropping Clifftop Luxury</span>
+        </div>
+
+        <p>Occupando l'arida penisola calcarea all'estremità meridionale di Bali, Uluwatu sembra un altro continente. Qui, spettacolari scogliere alte 100 metri si tuffano verticalmente nelle onde blu elettrico dell'oceano. Le spiagge nascoste alla base di queste scogliere, come <strong>Bingin Beach</strong>, <strong>Padang Padang</strong> e <strong>Thomas Beach</strong>, sono caratterizzate da sabbia bianca scintillante e acqua turchese molto più chiara delle scure sabbie vulcaniche di Canggu.</p>
+
+        <p><strong>La scena sulla scogliera:</strong> i beach club sulla scogliera come <em>Savaya</em> e <em>Single Fin</em> ospitano iconiche sessioni domenicali al tramonto con vista sui surfisti professionisti che cavalcano il famoso reef break di Uluwatu. Al tramonto, migliaia di persone si riuniscono nell'antico tempio di Uluwatu dell'XI secolo, arroccato su una scogliera a picco sul mare, per assistere all'ipnotico canto ritmico della <strong>Danza del fuoco Kecak</strong> contro il sole al tramonto.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Scelte selezionate di hotel e ville a Uluwatu:</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Uluwatu+Bali" target="_blank" rel="noopener" class="hotel-link">Alila Villas Uluwatu</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — World-renowned minimalist cliff pavilion cantilevered 100m over the Indian Ocean.</span>
+            </div>
+            <strong>From €780/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Uluwatu+Bali" target="_blank" rel="noopener" class="hotel-link">Suarga Padang Padang</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Sustainable bamboo luxury retreat overlooking famous surf breaks.</span>
+            </div>
+            <strong>From €290/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Uluwatu+Bali" target="_blank" rel="noopener" class="hotel-link">Mule Malu Tropical Stay</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Crisp, minimalist boutique hotel tucked close to Bingin and Padang Padang.</span>
+            </div>
+            <strong>From €110/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Comparison Matrix Table -->
+      <h2>3. Matrice di confronto regionale di Bali (2026)</h2>
+
+      <p>Valuta il ritmo di viaggio, la qualità della spiaggia, la vita notturna e i costi medi notturni delle ville nelle principali zone di Bali:</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Regione</th>
+              <th>Vibrazioni e geografia</th>
+              <th>Qualità della spiaggia</th>
+              <th>Vita notturna e ristorazione</th>
+              <th>Tariffa media per villa privata</th>
+              <th>Distanza dall'aeroporto DPS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ubud</strong></td>
+              <td>Altopiani della giungla e campi di riso</td>
+              <td>Nessuna spiaggia (valli fluviali)</td>
+              <td>Tranquillo; concentrarsi sulla bistronomia e sul tè</td>
+              <td>€90 – €280/notte</td>
+              <td>35 km (1,5 – 2 ore)</td>
+            </tr>
+            <tr>
+              <td><strong>Canggu</strong></td>
+              <td>Surf, beach club e nomadi</td>
+              <td>Sabbia nera vulcanica (ottimo surf)</td>
+              <td>Alta energia, musica dal vivo, stabilimenti balneari</td>
+              <td>€110 – €320/notte</td>
+              <td>19 km (1 – 1,5 ore)</td>
+            </tr>
+            <tr>
+              <td><strong>Seminyak</strong></td>
+              <td>Resort sulla spiaggia di lusso ed elegante</td>
+              <td>Ampia spiaggia di sabbia dorata</td>
+              <td>Cocktail lounge sofisticati</td>
+              <td>€140 – €400/notte</td>
+              <td>11 km (30 – 45 minuti)</td>
+            </tr>
+            <tr>
+              <td><strong>Uluwatu</strong></td>
+              <td>Scogliere e calette calcaree</td>
+              <td>Acqua turchese limpida e sabbia bianca</td>
+              <td>Club diurni e surf bar sulla scogliera</td>
+              <td>€130 – €550/notte</td>
+              <td>20 km (45 – 60 minuti)</td>
+            </tr>
+            <tr>
+              <td><strong>Sanur</strong></td>
+              <td>Costa orientale calma e adatta alle famiglie</td>
+              <td>Barriera corallina protetta (nuoto tranquillo)</td>
+              <td>Warung e caffè rilassanti sul mare</td>
+              <td>€80 – €220/notte</td>
+              <td>14 km (25 – 35 minuti)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section 4: 10-Day Perfect Bali Itinerary -->
+      <h2>4. L'itinerario definitivo di Bali per principianti di 10 giorni</h2>
+
+      <!-- Day 1-4: Ubud -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style=" background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solido rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:uppercase;">GIORNI 01–04</span>
+          Altopiani della giungla di Ubud e antichi templi acquatici</h3>
+        <p><strong>1° giorno:</strong> Arrivo all'aeroporto DPS, incontro con l'autista privato prenotato in anticipo e trasferimento nella fresca aria della giungla di Ubud. Effettua il check-in nella tua villa privata nella valle e goditi una bevanda Jamu alle erbe di benvenuto.</p>
+        <p><strong>2° giorno:</strong> passeggiata all'alba lungo il panoramico Campuhan Ridge Trail prima dell'arrivo della folla di turisti. Nel pomeriggio visita al tempio dell'acqua sacra <strong>Tirta Empul</strong> per partecipare ad un tradizionale rituale del bagno di purificazione con una guida locale.</p>
+        <p><strong>3° giorno:</strong> trekking guidato mattutino attraverso le <strong>terrazze di riso Jatiluwih</strong>, protette dall'UNESCO. Pranzo con vista sulle risaie color smeraldo. Spettacolo serale di danza tradizionale balinese gamelan al Palazzo di Ubud.</p>
+        <p><strong>4° giorno:</strong> Visita mattutina alle cascate di Tegenungan o Kanto Lampo. Massaggio termale pomeridiano con scrub vulcanico naturale e oli essenziali.</p>
+      </div>
+
+      <!-- Day 5-7: Canggu / Seminyak -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style=" background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solido rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:uppercase;">GIORNI 05–07</span>
+          La costa vibrante: surf, beach club e boutique</h3>
+        <p><strong>Giorno 5:</strong> Trasferimento con autista privato da Ubud alla tua villa costiera a Canggu o Seminyak. Pomeriggio di relax presso la vostra piscina privata, seguito da un drink al tramonto al The Lawn on Batu Bolong.</p>
+        <p><strong>Giorno 6:</strong> lezione mattutina di surf per principianti a Batu Bolong Beach. Brunch biologico al Crate Cafe. Pomeriggio esplorando le boutique degli stilisti lungo Jalan Pantai Batu Bolong e Pererenan.</p>
+        <p><strong>Giorno 7:</strong> Visita nel tardo pomeriggio all'iconico tempio marino <strong>Tanah Lot</strong>, osservando la sagoma del tempio mentre le onde si infrangono attorno alla sua base rocciosa al largo durante l'ora d'oro.</p>
+      </div>
+
+      <!-- Day 8-10: Uluwatu -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style=" background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solido rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:uppercase;">GIORNI 08–10</span>
+          Dramma sulla scogliera di Uluwatu e calette turchesi nascoste</h3>
+        <p><strong>8° giorno:</strong> Trasferimento alle spettacolari scogliere meridionali di Uluwatu. Trascorri il pomeriggio nuotando nella baia turchese di Bingin Beach o Padang Padang.</p>
+        <p><strong>9° giorno:</strong> rilassati in un day club a sfioro sulla scogliera (Savaya o Sunday's Beach Club). Alle 18:00, sperimenta l'affascinante <strong>danza del fuoco Kecak del tempio di Uluwatu</strong> arroccato a 70 metri sopra il fragoroso Oceano Indiano.</p>
+        <p><strong>10° giorno:</strong> pranzo finale barbecue a base di pesce fresco sulla sabbia nella baia di Jimbaran prima di un facile trasferimento di 20 minuti all'aeroporto DPS per il volo in partenza.</p>
+      </div>
+
+      <!-- Section 5: Airport Logistics & Transport -->
+      <h2>5. Hack per gli arrivi all'aeroporto di Denpasar (DPS) e trasporti sull'isola</h2>
+
+      <p>Atterrare all'aeroporto internazionale Ngurah Rai (DPS) può essere complicato se non ti sei preparato in anticipo:</p>
+
+      <ul>
+        <li><strong>Prenota in anticipo l'autista della tua villa (raccomandazione più alta):</strong> la sala arrivi fuori dal ritiro bagagli internazionale è un intenso guanto di sfida di dozzine di autisti aggressivi senza licenza che urlano <em>"Taxi, capo!"</em>. Avere il tuo nome chiaramente esposto su un cartello da parte di un autista prenotato in anticipo elimina il 100% di questo stress. I trasferimenti prenotati in anticipo per Canggu, Seminyak o Ubud costano generalmente tra <strong>300.000 IDR e 450.000 IDR (da 18 a 27 €)</strong>.</li>
+        <li><strong>La Grab Lounge ufficiale:</strong> se non hai prenotato in anticipo, segui le indicazioni per la Grab Lounge situata nel parcheggio multipiano a soli 2 minuti a piedi dall'uscita. Ordina tramite l'app Grab e inserisci la tua corsa all'interno di una sala d'attesa climatizzata con prezzi fissi e misurati.</li>
+        <li><strong>Assumere un autista privato per gite di un giorno:</strong> a Bali, la guida autonoma di un'auto a noleggio è fortemente sconsigliata a causa del traffico frenetico di moto, della mancanza di segnaletica stradale e dei vicoli stretti. Assumi invece un autista privato esperto con una Toyota Avanza o Innova con aria condizionata per un'intera giornata di 10 ore per soli <strong>da € 45 a € 60 (da 750.000 a 1.000.000 IDR)</strong>, che include veicolo, carburante e autista.</li>
+      </ul>
+
+      <!-- Section 6: eSIM vs IMEI Registration -->
+      <h2>6. Restare connessi: la guida eSIM di viaggio in Indonesia del 2026</h2>
+
+      <p>L'Indonesia applica <strong>leggi sulla registrazione IMEI (Beacukai)</strong> molto rigide per impedire l'importazione illegale di smartphone. Se tenti di acquistare una carta SIM locale in plastica standard presso un chiosco indonesiano, il tuo telefono straniero potrebbe essere bloccato dopo 24-48 ore a meno che non registri il suo IMEI alla dogana e paghi le tasse di importazione.</p>
+
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">📱 The Hassle-Free Solution: Airalo Indotel Indonesia eSIM</div>
+        <p style="margin-bottom:16px;">Acquistando una eSIM di viaggio come il pacchetto <strong>Indotel di Airalo</strong> prima della partenza, aggiri completamente la burocrazia IMEI di Beacukai. Il profilo eSIM opera in base ad accordi di roaming legittimi direttamente sulle reti Telkomsel o Indosat, i due operatori più veloci nell'arcipelago indonesiano.</p>
+        <ul style="margin-bottom:20px;">
+          <li><strong>Zero code in aeroporto:</strong> scansiona il codice QR mentre fai le valigie a casa. Non appena tocchi DPS, attiva la linea eSIM per dati 4G/5G istantanei.</li>
+          <li><strong>Essenziale per le app:</strong> l'accesso immediato ai dati ti consente di ordinare corse Grab/Gojek, inviare messaggi al concierge della tua villa privata e navigare su Google Maps senza problemi.</li>
+          <li><strong>Prezzi:</strong> 1 GB a partire da $ 5,50 USD fino a 20 GB per $ 40 USD.</li>
+        </ul>
+        <a href="https://www.airalo.com/indonesia-esim" target="_blank" rel="noopener" class="roam-toolkit-link" style="display:inline-flex;width:auto;">
+          <span>Get Your Airalo Indonesia eSIM &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Section 7: Balinese Sanctum vs Moroccan Riad -->
+      <h2>7. L'architettura del santuario: ville balinesi e riad marocchini</h2>
+
+      <p>I viaggiatori che apprezzano il lusso consapevole spesso si ritrovano attratti alternativamente da Bali e dal Marocco. Sebbene culturalmente distinte, entrambe le civiltà perfezionarono il concetto di <strong>santuario architettonico privato</strong>.</p>
+
+      <div class="roam-morocco-bridge">
+        <h3>Due capitali globali del santuario privato</h3>
+        <p>A Bali, il santuario guarda verso l'esterno: un padiglione <em>joglo</em> in legno all'aperto, annidato tra laghetti di loto, palme tropicali e piscine a sfioro che si fondono perfettamente con la natura. In Marocco, il santuario si guarda verso l'interno: un antico <a href="/it/custom-morocco-tour.html">cortile privato</a> del riad del XVII secolo nascosto dietro le austere mura della medina, ornato con legno di cedro intagliato a mano, profumati alberi di arancio e intricati mosaici zellij progettati per tenere a bada il caldo del deserto e il rumore della medina.</p>
+        <p>Entrambe le destinazioni condividono un profondo impegno per l'ospitalità locale senza fretta e sincera e per l'esplorazione privata con autista.</p>
+        <a href="/it/custom-morocco-tour.html" class="bridge-cta-btn">
+          <span>Explore Private Moroccan Riads &amp; Circuits</span> &rarr;
+        </a>
+      </div>
+
+      <!-- Section 8: FAQ Accordion -->
+      <h2>8. Domande frequenti sul soggiorno a Bali</h2>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <h3 class="faq-question">Qual è il mese migliore per visitare Bali?</h3>
+          <div class="faq-answer">
+            <p>Il periodo ottimale per visitare Bali è durante la stagione secca tra <strong>maggio e settembre</strong>. Durante questi mesi l'umidità è moderata, il cielo è soleggiato e la pioggia è minima. Luglio e agosto sono i mesi di punta turistica; Maggio, giugno e settembre offrono il miglior equilibrio tra clima splendido e folla gestibile.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Bali è sicura per i turisti e per le donne che viaggiano da sole?</h3>
+          <div class="faq-answer">
+            <p>Sì, Bali è generalmente considerata una delle destinazioni di viaggio più sicure in Asia. La cultura balinese è profondamente radicata nei principi indù del karma (<em>Tri Hita Karana</em>), rendendo estremamente rari i crimini violenti contro i turisti. I principali rischi per la sicurezza sono gli incidenti stradali in moto e gli scippi opportunistici da parte dei motociclisti nei vicoli scarsamente illuminati di Canggu o Kuta. Indossa sempre il casco ed evita di camminare da solo tenendo il telefono allentato durante la notte.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Quanto costa per notte una villa con piscina privata a Bali?</h3>
+          <div class="faq-answer">
+            <p>Bali offre alcune delle sistemazioni con il miglior rapporto qualità-prezzo al mondo. Una villa pulita e affascinante con 1 camera da letto e piscina privata a Ubud o Pererenan varia da <strong>€80 a €150 a notte</strong>. Le lussuose ville boutique a 4 stelle con chef privati ​​vanno da <strong>€ 180 a € 350 a notte</strong>, mentre i resort a 5 stelle di fama mondiale sulla scogliera o nella giungla (come Four Seasons, Bulgari o Alila) partono da <strong>€ 650+ a notte</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Ho bisogno di contanti a Bali o sono accettate carte di credito?</h3>
+          <div class="faq-answer">
+            <p>Le carte di credito (Visa e Mastercard) sono ampiamente accettate nei moderni hotel, stabilimenti balneari e ristoranti con posti a sedere a Canggu, Seminyak e Ubud (spesso con un supplemento per l'elaborazione della carta del 2-3%). Tuttavia, devi sempre portare con te contanti in rupie indonesiane (IDR) per i biglietti di ingresso al tempio, i warung stradali locali, le tariffe di parcheggio (2.000-5.000 IDR) e la mancia all'autista privato.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Cos'è la tassa di soggiorno indonesiana e il visto all'arrivo (VoA)?</h3>
+          <div class="faq-answer">
+            <p>I viaggiatori internazionali che entrano a Bali devono ottenere un <strong>visto all'arrivo (VoA)</strong> di 30 giorni per 500.000 IDR (circa $ 32 USD), che può essere acquistato online (e-VoA) o in aeroporto. Inoltre, il governo provinciale di Bali riscuote una tassa turistica ufficiale di 150.000 IDR (circa 10 dollari) a persona, dedicata alla conservazione culturale e alle infrastrutture ambientali.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <!-- Scripts -->
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

@@ -1,0 +1,1161 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "Où séjourner à Istanbul (2026) : Sultanahmet contre Karaköy contre Kadıköy et guide du Bosphore | RoamMaroc";
+const description = "Le guide définitif 2026 sur les endroits où séjourner à Istanbul : Sultanahmet contre Taksim contre Karaköy contre Kadıköy (côté asiatique), les hôtels-boutiques du Bosphore, les hacks de transit de l'aéroport IST, la Turquie Airalo eSIM et les offres de vols.";
+const canonical = "https://roammorocco.tours/fr/blog/istanbul-travel-guide.html";
+const ogImage = "https://roammorocco.tours/images/istanbul-bosphorus-hero.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-toc.css?v=20260928_gold2", "/css/roam-blog.css?v=20260928_b"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://roammorocco.tours/blog/istanbul-travel-guide.html#article",
+      "headline": "Where to Stay in Istanbul (2026): Sultanahmet vs Karak\u00f6y vs Kad\u0131k\u00f6y & Bosphorus Guide",
+      "description": "An exhaustive, insider Istanbul travel guide covering optimal hotel locations (Sultanahmet vs Taksim vs Karak\u00f6y vs Kad\u0131k\u00f6y), Bosphorus waterfront stays, IST airport metro transit hacks, Airalo Turkey eSIM, and cultural etiquette.",
+      "image": "https://roammorocco.tours/images/istanbul-bosphorus-hero.jpg",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "author": {
+        "@type": "Organization",
+        "name": "Roam Morocco Global Travel Editors",
+        "url": "https://roammorocco.tours/about.html"
+      },
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://roammorocco.tours/blog/istanbul-travel-guide.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://roammorocco.tours/blog/istanbul-travel-guide.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Where to Stay in Istanbul (2026)",
+          "item": "https://roammorocco.tours/blog/istanbul-travel-guide.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roammorocco.tours/blog/istanbul-travel-guide.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is the best area to stay in Istanbul for first-time visitors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For first-time visitors focused on monuments, Sultanahmet (Historic Peninsula) is ideal because Hagia Sophia, the Blue Mosque, Topkapi Palace, and the Basilica Cistern are within a 5-minute walk. However, for a balance of historic sights, fantastic culinary dining, and vibrant nightlife, Karak\u00f6y or Galata (Beyo\u011flu) across the Golden Horn is our top recommendation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it better to stay in Sultanahmet or Taksim/Beyo\u011flu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose Sultanahmet if you want to walk directly to Byzantine and Ottoman architectural masterpieces and prefer early, quiet evenings. Choose Taksim, Karak\u00f6y, or Galata if you want bustling evening restaurants, lively rooftop cocktail terraces overlooking the Bosphorus, and authentic contemporary city life."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get from Istanbul Airport (IST) to the city center in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The fastest transit option is the M11 driverless Airport Metro line connecting IST to Gayrettepe in approximately 30 minutes, where you can transfer to the M2 line into Taksim or \u015ei\u015fhane. Alternatively, Havaist luxury express airport buses run 24/7 direct to Taksim, Sultanahmet, and Kad\u0131k\u00f6y for approx. 180\u2013220 TL (\u20ac5\u2013\u20ac6)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need a travel eSIM for Turkey?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Physical SIM card counters at Istanbul Airport (IST and SAW) are notorious for aggressive markups and long queues, charging $40 to $60 USD for basic tourist packages. An instant Airalo 'Merhaba' Turkey eSIM starts at just $4.50 USD and connects to T\u00fcrk Telekom or Turkcell 4G/5G the second your flight touches down."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I combine an Istanbul vacation with a tour of Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Istanbul (IST) connects directly to Casablanca (CMN) and Marrakech (RAK) on Turkish Airlines and Royal Air Maroc in approximately 4 hours and 45 minutes. It is one of the most culturally rewarding dual-destination itineraries in the world, combining Ottoman imperial splendor with the Moorish medinas and Sahara dunes of Morocco."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg: #fbfbf9;
+      --card-bg: #ffffff;
+      --text: #111111;
+      --text-muted: rgba(0, 0, 0, 0.72);
+      --border: rgba(0, 0, 0, 0.12);
+      --gold: #C8A45C;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    /* Luxury rounded corners system active */
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .article-wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 130px 24px 80px;
+    }
+
+    .roam-breadcrumbs {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .roam-breadcrumbs a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .article-header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+
+    .category-badge {
+      display: inline-block;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      padding: 4px 12px;
+      margin-bottom: 18px;
+    }
+
+    .article-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 20px 0;
+      color: #000000;
+    }
+
+    .article-subtitle {
+      font-size: clamp(18px, 2.2vw, 22px);
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0 0 24px 0;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      letter-spacing: .02em;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    .meta-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .gold-accent {
+      color: var(--gold);
+      font-weight: bold;
+    }
+
+    .article-hero-fig {
+      margin: 0 0 48px 0;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      padding: 10px;
+    }
+
+    .article-hero-fig img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      max-height: 520px;
+    }
+
+    .article-hero-fig figcaption {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding-top: 10px;
+      font-style: italic;
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 3.8vw, 36px);
+      line-height: 1.25;
+      margin: 54px 0 20px 0;
+      padding-top: 24px;
+      border-top: 2px solid #000000;
+      color: #000000;
+    }
+
+    .article-body h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 36px 0 14px 0;
+      color: #000000;
+    }
+
+    .article-body p {
+      margin: 0 0 24px 0;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 24px 0;
+      padding-left: 24px;
+    }
+
+    .article-body li {
+      margin-bottom: 8px;
+    }
+
+    .verdict-box {
+      background: #ffffff;
+      border: 2px solid #000000;
+      padding: 30px;
+      margin: 40px 0;
+      box-shadow: 6px 6px 0px rgba(0,0,0,0.08);
+    }
+
+    .verdict-box h3 {
+      margin-top: 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .verdict-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .verdict-card {
+      background: #faf8f5;
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .verdict-card .tag {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 3px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .verdict-card .title {
+      font-weight: 800;
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .verdict-card .desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 36px 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    th, td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    th {
+      background: #18181B;
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .roam-area-card {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 36px 0;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-area-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      padding-bottom: 12px;
+    }
+
+    .roam-area-header h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .roam-area-badge {
+      background: rgba(200, 164, 92, 0.12);
+      color: #8A6A23;
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .roam-area-vibe {
+      font-size: 14px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .roam-hotel-list {
+      margin-top: 20px;
+      background: #faf8f5;
+      padding: 18px 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .roam-hotel-list h4 {
+      margin: 0 0 12px 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--gold);
+    }
+
+    .hotel-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+
+    .hotel-item:last-child {
+      border-bottom: none;
+    }
+
+    .hotel-link {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hotel-link:hover {
+      color: var(--gold);
+    }
+
+    .roam-toolkit-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 36px;
+      margin: 48px 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-toolkit-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #000000;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+        .roam-toolkit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .roam-toolkit-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px 20px;
+      background: #fdfcf9;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold, #C8A45C);
+      border-radius: 6px;
+      color: #000000 !important;
+      text-decoration: none !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      transition: all .25s ease;
+    }
+
+    .roam-toolkit-link:hover {
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.25);
+      border-left-color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .roam-toolkit-link span:first-child {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111111;
+      flex: 1 1 auto;
+    }
+
+    .roam-toolkit-link span:last-child:not(:only-child) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: #000000;
+      color: #ffffff !important;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .roam-toolkit-link:hover span:last-child:not(:only-child) {
+      background: var(--gold, #C8A45C);
+      border-color: var(--gold, #C8A45C);
+      color: #000000 !important;
+      box-shadow: 0 4px 12px rgba(200, 164, 92, 0.35);
+    }
+
+    @media (max-width: 580px) {
+      .roam-toolkit-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .roam-toolkit-link {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 16px 18px;
+      }
+      .roam-toolkit-link span:last-child:not(:only-child) {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 14px;
+      }
+    }
+
+    .roam-callout-ai {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
+      padding: 24px;
+      margin: 36px 0;
+      font-size: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-field-note {
+      background: #faf8f5;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 40px 0;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-field-note-quote {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px;
+      font-style: italic;
+      line-height: 1.6;
+      margin: 0 0 12px 0;
+      color: #000000;
+    }
+
+    .roam-field-note-author {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      font-weight: 700;
+    }
+
+    .faq-accordion {
+      margin-top: 30px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    .faq-question {
+      padding: 18px 22px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--gold);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 22px 22px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .roam-morocco-bridge {
+      background: #000000;
+      color: #ffffff;
+      padding: 40px 32px;
+      margin: 50px 0;
+      border-radius: 20px;
+      border: 1px solid rgba(200, 164, 92, 0.45);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+    }
+
+    .roam-morocco-bridge h3 {
+      color: #ffffff;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(22px, 3vw, 30px);
+      margin: 0 0 14px 0;
+    }
+
+    .roam-morocco-bridge p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .bridge-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold, #C8A45C);
+      color: #000000 !important;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      font-family: 'Inter', -apple-system, sans-serif;
+    }
+
+    .bridge-cta-btn:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+  
+  </style>
+
+  <!-- Main Article -->
+  <article class="article-wrap">
+
+    <!-- Breadcrumbs -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/fr/index.html">Home</a> &gt; <a href="/fr/blog.html">Blog</a> &gt; <span>Where to Stay in Istanbul (2026)</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">GLOBAL INTELLIGENCE &amp; IMPERIAL CROSSROADS</span>
+      <h1 class="article-title">Où séjourner à Istanbul (2026) : Sultanahmet vs Karaköy vs Kadıköy & Guide du Bosphore</h1>
+      <p class="article-subtitle">Le guide de quartier incontournable de la ville qui s'étend sur deux continents. Des palais byzantins de Sultanahmet aux néo-bistros de Karaköy, en passant par les ferries en bord de mer à Kadıköy et les demeures ottomanes au bord de l'eau le long du Bosphore.</p>
+      
+      <div class="meta-bar">
+        <span>🗓️ UPDATED: <strong class="gold-accent">OCTOBER 2026</strong></span>
+        <span>⏱️ 17 MIN READ</span>
+        <span>✍️ ROAM MOROCCO EDITORS</span>
+        <span>📍 ISTANBUL, TURKEY</span>
+      </div>
+    </header>
+
+    <!-- Hero Figure -->
+    <figure class="article-hero-fig">
+      <img src="/images/istanbul-bosphorus-hero.jpg" alt="Panoramic golden hour sunset over the Bosphorus Strait, historic passenger ferry, and minarets of Hagia Sophia in Istanbul" width="1280" height="720">
+      <figcaption>Crépuscule sur la Corne d'Or : le ferry historique Şehir Hatları passe devant Sainte-Sophie et les minarets de la Mosquée Bleue.</figcaption>
+    </figure>
+
+    <!-- Article Content -->
+        <!-- GEO & AEO Key Takeaways Box (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Where to Stay in Istanbul Quick Answer">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ QUICK ANSWER: WHERE TO STAY IN ISTANBUL (2026)</span>
+        <span class="ai-summary-badge">Two-Continent Hub</span>
+      </div>
+      <p class="ai-summary-text"><strong>Choisissez Sultanahmet</strong> pour un accès instantané à pied à Sainte-Sophie, à la Mosquée Bleue, au palais de Topkapi et à la Citerne Basilique (idéal pour les débutants de 2 à 3 jours). <strong>Choisissez Karaköy / Galata</strong> pour ses cafés-boutiques animés, ses galeries d'art sur les toits et sa vie nocturne branchée. <strong>Choisissez Kadıköy</strong> (côté asiatique) pour ses marchés alimentaires locaux authentiques, ses promenades en ferry et sa vie résidentielle détendue, loin des foules touristiques.</p>
+    </aside>
+
+    <div class="article-body">
+
+      <p>Istanbul n'est pas seulement un carrefour entre l'Europe et l'Asie ; c’est une tapisserie vivante colossale de civilisations romaine, byzantine et ottomane s’étendant sur deux continents et deux mers intérieures. Divisé par les eaux bleues serpentines du <strong>détroit du Bosphore</strong> et par l'entrée historique de la <strong>Corne d'Or</strong>, choisir où poser votre tête dans cette métropole de 16 millions d'habitants est la décision la plus importante que vous aurez à prendre.</p>
+
+      <p>Restez trop au sud à Sultanahmet et vous risquez de vous retrouver coincé à 21h00 parmi les magasins de tapis fermés et les kebabs touristiques hors de prix. Restez trop profondément à Taksim et vous risquez de voir votre sommeil brisé par les basses des boîtes de nuit jusqu'à 4h00 du matin. Mais choisissez votre quartier de manière stratégique et Istanbul révèle sa magie incomparable : se réveiller avec l'appel à la prière envoûtant du lever du soleil qui résonne sur l'eau, siroter un thé noir au verre de tulipe pendant que les mouettes suivent les ferries publics et dîner de mezze dans d'anciennes caves en pierre.</p>
+
+      <p>Ce guide de terrain 2026 compare les quatre principaux quartiers résidentiels et touristiques d'Istanbul, met en évidence des adresses de boutiques sélectionnées et révèle des hacks cruciaux en matière de transit aéroportuaire et de connectivité des données.</p>
+
+      <!-- Quick Verdict Box -->
+      <div class="verdict-box">
+        <h3>⚡ Verdict rapide : où séjourner à Istanbul par style de voyage</h3>
+        <div class="verdict-grid">
+          <div class="verdict-card">
+            <span class="tag">Monuments &amp; Antiquity</span>
+            <div class="title">Sultanahmet (Historic Peninsula)</div>
+            <p class="desc">Sainte-Sophie, la Mosquée Bleue, le palais de Topkapi et la Citerne Basilique sont à moins de 5 minutes à pied. Idéal pour les puristes de l'histoire avec 2 à 3 jours.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">#1 Overall: Dining &amp; Vibe</span>
+            <div class="title">Karaköy &amp; Galata (Beyoğlu)</div>
+            <p class="desc">Torréfacteurs chics de troisième vague, galeries d'art, bars à cocktails sur le toit offrant des panoramas sur la Corne d'Or et le tramway T1 à votre porte.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Authentic Asian Side &amp; Foodies</span>
+            <div class="title">Kadıköy &amp; Moda (Anatolia)</div>
+            <p class="desc">Zéro bus touristiques. Marchés aux poissons animés, librairies indépendantes, parcs balnéaires bohèmes et cuisine de rue de classe mondiale (Çiya Sofrası).</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Palatial Waterfront Luxury</span>
+            <div class="title">Beşiktaş &amp; The Bosphorus (Ortaköy)</div>
+            <p class="desc">Palais ottomans restaurés du XIXe siècle (Çırağan Palace Kempinski, Four Seasons Bosphorus) avec des yachts privés amarrés sur le détroit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Essential Istanbul Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ The 2026 Istanbul Travel Toolkit (Verified Booking Deals)</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-istanbul/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Istanbul Flights (IST &amp; SAW)</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/city/tr/istanbul.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Curated Istanbul Hotels</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/turkey-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Turkey 5G eSIM (Airalo)</span>
+            <span class="roam-toolkit-btn">Airalo from $4.50 &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Turkey Aegean / Cappadocia Rental</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Section 1: The Geography of Istanbul -->
+      <h2>1. Décoder la géographie d'Istanbul : l'Europe contre l'Asie et les voies navigables</h2>
+
+      <p>Pour naviguer à Istanbul comme un natif, imaginez la ville divisée en trois masses continentales distinctes délimitées par deux plans d'eau :</p>
+
+      <ul>
+        <li><strong>1. La péninsule historique (au sud de la Corne d'Or) :</strong> Sultanahmet, Eminönü et Fatih. Il s'agit de l'ancienne Byzance/Constantinople, entourée de digues romaines et couronnée par les dômes impériaux des sultans.</li>
+        <li><strong>2. Le côté européen moderne (au nord de la Corne d'Or) :</strong> Karaköy, Galata, Beyoğlu et Beşiktaş. Relié à la vieille ville par l'emblématique pont de Galata. Cette zone est le centre culturel, financier et culinaire moderne.</li>
+        <li><strong>3. La rive asiatique (Anatolie, de l'autre côté du Bosphore) :</strong> Kadıköy et Üsküdar. Atteint en 20 glorieuses minutes en ferry public. Il est authentique, résidentiel, dynamique et largement épargné par les groupes touristiques de masse.</li>
+      </ul>
+
+      <div class="roam-callout-ai">
+        <strong>💡 The Local Secret of Istanbul Transit:</strong> Never take taxis across the Bosphorus bridges during rush hour. <strong>The iconic yellow-and-white public passenger ferries (Şehir Hatları)</strong> cost less than €0.80, bypass 100% of road traffic, and offer the most cinematic, breeze-swept commute on the planet.
+      </div>
+
+      <!-- Section 2: Detailed Neighborhood Breakdown -->
+      <h2>2. Comparaison des meilleurs quartiers d'Istanbul (face à face)</h2>
+
+      <!-- Area 1: Sultanahmet -->
+      <div class="roam-area-card" id="area-sultanahmet">
+        <div class="roam-area-header">
+          <div>
+            <h3>1. Sultanahmet (la péninsule impériale historique)</h3>
+            <div class="roam-area-vibe">Historic European Side • Byzantine Domes • Ottoman Palaces • Cobblestone Alleys</div>
+          </div>
+          <span class="roam-area-badge">Best for Monuments &amp; First 48 Hours</span>
+        </div>
+
+        <p>Si votre rêve d'Istanbul consiste à sortir de votre hôtel et à regarder directement le dôme de <strong>Hagia Sophia</strong>, vieux de 1 500 ans, ou les six minarets de la <strong>Mosquée Bleue</strong>, Sultanahmet est sans égal. Tout est à portée de main : le palais de Topkapi, les colonnes souterraines de la Citerne Basilique, l'Hippodrome et les couloirs voûtés labyrinthiques du Grand Bazar (Kapalıçarşı).</p>
+
+        <p><strong>Le compromis :</strong> Sultanahmet est extrêmement touristique. Lorsque les monuments ferment à 17h00, les rues se vident rapidement, laissant derrière elles les boutiques de souvenirs et les vendeurs ambulants de restaurants agressifs. Pour un dîner authentique, vous devrez traverser le pont menant à Karaköy.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés à Sultanahmet :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Sultanahmet+Istanbul" target="_blank" rel="noopener" class="hotel-link">Four Seasons Hotel Istanbul at Sultanahmet</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Converted neoclassical prison surrounding an olive courtyard steps from Hagia Sophia.</span>
+            </div>
+            <strong>From €620/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Sultanahmet+Istanbul" target="_blank" rel="noopener" class="hotel-link">White House Hotel Istanbul</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Renowned for warm Ottoman hospitality and immaculate service.</span>
+            </div>
+            <strong>From €180/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Sultanahmet+Istanbul" target="_blank" rel="noopener" class="hotel-link">Sirkeci Mansion</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Charming boutique stay directly adjacent to tranquil Gülhane Park.</span>
+            </div>
+            <strong>From €140/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 2: Karaköy & Galata -->
+      <div class="roam-area-card" id="area-karakoy">
+        <div class="roam-area-header">
+          <div>
+            <h3>2. Karaköy et Galata (front de mer de Beyoğlu)</h3>
+            <div class="roam-area-vibe">Modern European Side • Harborfront • Specialty Coffee • Rooftop Lounges • T1 Tram Access</div>
+          </div>
+          <span class="roam-area-badge">#1 Overall Best Base in Istanbul</span>
+        </div>
+
+        <p>Historiquement port maritime où les marchands génois et vénitiens faisaient le commerce de la soie et des épices à l'ombre de la <strong>Tour Galata</strong> médiévale, Karaköy est devenu le quartier le plus branché d'Istanbul. Les entrepôts de quincaillerie centenaires et les arcades des passages français renaissent sous la forme d'espaces d'art contemporain, de torréfacteurs de troisième vague, d'ateliers de design et de salons à cocktails animés.</p>
+
+        <p><strong>Centre de transport imbattable :</strong> Karaköy se trouve juste à l'embouchure de la Corne d'Or. Vous pouvez traverser le pont de Galata jusqu'au bazar aux épices, monter à bord du <strong>tramway T1</strong> pour rejoindre Sultanahmet en 8 minutes, ou prendre un ferry panoramique qui traverse le Bosphore jusqu'à la rive asiatique depuis la jetée de Karaköy.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés à Karaköy et Galata :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Karakoy+Istanbul" target="_blank" rel="noopener" class="hotel-link">The Peninsula Istanbul</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Ultra-luxury restored waterfront landmark overlooking the Bosphorus.</span>
+            </div>
+            <strong>From €750/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Karakoy+Istanbul" target="_blank" rel="noopener" class="hotel-link">The Bank Hotel Istanbul</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Neo-Renaissance historic bank palace with a stunning rooftop terrace.</span>
+            </div>
+            <strong>From €210/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Karakoy+Istanbul" target="_blank" rel="noopener" class="hotel-link">Sub Karakoy</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Industrial design boutique stay steps from Istanbul Modern art museum.</span>
+            </div>
+            <strong>From €120/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 3: Kadıköy & Moda -->
+      <div class="roam-area-card" id="area-kadikoy">
+        <div class="roam-area-header">
+          <div>
+            <h3>3. Kadıköy & Moda (le côté asiatique/anatolien)</h3>
+            <div class="roam-area-vibe">Asian Side • Vibrant Fish Market • Street Food Mecca • Seaside Parks • Zero Mass Tourism</div>
+          </div>
+          <span class="roam-area-badge">Best for Foodies &amp; Cultural Immersion</span>
+        </div>
+
+        <p>Traversez le Bosphore jusqu’à la côte asiatique et les foules de touristes s’évaporent. Kadıköy est un quartier animé et réservé aux piétons, composé de boulevards résidentiels verdoyants, de magasins de vinyles vintage, de cafés indépendants et du légendaire <strong>marché aux produits et aux poissons de Kadıköy</strong>, où des meules de fromage à sauce Kars vieilli, des anchois fraîchement pêchés (<em>hamsi</em>) et des légumes marinés débordent de chaque étal.</p>
+
+        <p><strong>Pèlerinage culinaire</strong> : c'est ici que se trouve <em>Çiya Sofrası</em>, présenté sur la table du chef de Netflix, où le chef Musa Dağdeviren ressuscite des recettes régionales oubliées de toute l'Anatolie, de la Syrie et de la Mésopotamie. Promenez-vous le long de la promenade du bord de mer de Moda au coucher du soleil avec une glace à la pistache de <em>Dondurmacı Ali Usta</em> pour une soirée authentique à Istanbul.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés à Kadıköy :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Kadikoy+Istanbul" target="_blank" rel="noopener" class="hotel-link">DoubleTree by Hilton Istanbul - Moda</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — 5-Star Bosphorus waterfront hotel with rooftop pool overlooking Old City minarets.</span>
+            </div>
+            <strong>From €160/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Kadikoy+Istanbul" target="_blank" rel="noopener" class="hotel-link">Juliet Rooms &amp; Kitchen Moda</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Charming, leafy garden townhouse boutique in quiet residential Moda.</span>
+            </div>
+            <strong>From €95/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 4: Beşiktaş & Bosphorus -->
+      <div class="roam-area-card" id="area-besiktas">
+        <div class="roam-area-header">
+          <div>
+            <h3>4. Beşiktaş et le Bosphore (Ortaköy et Kuruçeşme)</h3>
+            <div class="roam-area-vibe">Bosphorus Waterfront • 19th-Century Palaces • High Society • Fish Taverns (Meyhane)</div>
+          </div>
+          <span class="roam-area-badge">Best for 5-Star Waterfront Splendor</span>
+        </div>
+
+        <p>S'étendant vers le nord le long de la côte européenne du Bosphore, Beşiktaş et Ortaköy représentent le summum de la haute élégance ottomane. Ici, les sultans ont construit leurs grands palais d'été en marbre du XIXe siècle directement sur l'eau afin que les barges royales puissent s'arrêter jusqu'aux salles de réception.</p>
+
+        <p><strong>L'ambiance :</strong> Sirotez du champagne sur un quai privé en bois pendant que les superpétroliers et les dauphins passent à moins de 50 mètres de votre table. Bien que plus éloigné de la ligne de tramway T1, l'aura romantique du front de mer du Bosphore est complètement hypnotique.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés le long du Bosphore :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Besiktas+Istanbul" target="_blank" rel="noopener" class="hotel-link">Çırağan Palace Kempinski</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Authentic 19th-century Ottoman imperial palace directly on the Bosphorus.</span>
+            </div>
+            <strong>From €850/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Besiktas+Istanbul" target="_blank" rel="noopener" class="hotel-link">W Istanbul</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Chic luxury suites in the historic Akaretler Row Houses near Dolmabahçe Palace.</span>
+            </div>
+            <strong>From €240/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Comparison Matrix Table -->
+      <h2>3. Matrice de comparaison des quartiers d'Istanbul (2026)</h2>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Quartier</th>
+              <th>Continent et ambiance</th>
+              <th>Proximité des sites touristiques</th>
+              <th>Restauration et vie nocturne</th>
+              <th>Tarif moyen / Nuit</th>
+              <th>Ligne de transport clé</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sultanahmet</strong></td>
+              <td>Europe • Antiquité Impériale</td>
+              <td>10 / 10 (Marcher jusqu'à Sainte-Sophie)</td>
+              <td>Faible (s'arrête plus tôt)</td>
+              <td>90 € – 240 €</td>
+              <td>Tramway T1 (Sultanahmet)</td>
+            </tr>
+            <tr>
+              <td><strong>Karakoy et Galata</strong></td>
+              <td>Europe • Maritime et Bohême</td>
+              <td>9 / 10 (8 mn en tramway)</td>
+              <td>Haut (Bistros, toits, vin)</td>
+              <td>110 € – 310 €</td>
+              <td>Terminal de tramway et ferry T1</td>
+            </tr>
+            <tr>
+              <td><strong>Kadıköy & Moda</strong></td>
+              <td>Asie • Local & Authentique</td>
+              <td>6/10 (20 min de ferry vers les sites touristiques)</td>
+              <td>Exceptionnel (le paradis des gourmands)</td>
+              <td>65 € – 160 €</td>
+              <td>Embarcadère des ferries de Kadıköy et métro M4</td>
+            </tr>
+            <tr>
+              <td><strong>Beşiktaş et Bosphore</strong></td>
+              <td>Europe • Front de mer royal</td>
+              <td>7/10 (Nécessite un bus ou un ferry)</td>
+              <td>Tavernes et clubs de poisson haut de gamme</td>
+              <td>180 € – 650 €</td>
+              <td>Embarcadère des ferries et funiculaire F1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Section 4: 4-Day Perfect Itinerary -->
+      <h2>4. L'itinéraire parfait de 4 jours pour les débutants à Istanbul</h2>
+
+      <!-- Day 1 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 01</span>
+          Le cœur impérial : Byzance et les sultans ottomans</h3>
+        <p><strong>Matin</strong> : entrez dans <strong>Hagia Sophia</strong> dès 8 h 30 pour admirer les mosaïques dorées du VIe siècle et l'ingénierie du dôme byzantin. Traversez le parc paysager pour visiter la <strong>Mosquée bleue (Sultanahmet Camii)</strong> et admirez ses milliers de carreaux bleus d'Iznik peints à la main.</p>
+        <p><strong>Après-midi :</strong> Descendez dans les ombres souterraines de la <strong>Citerne de la Basilique (Yerebatan Sarnıcı)</strong> pour voir les anciennes bases des colonnes de la tête de Méduse illuminées par des installations artistiques spectaculaires. Promenez-vous dans les cours luxuriantes et le harem impérial du <strong>palais de Topkapi</strong>.</p>
+        <p><strong>Soirée</strong> : Marchez jusqu'au pont de Galata au crépuscule et observez des centaines de pêcheurs locaux lancer leurs lignes sur la Corne d'Or alors que les dômes de la ville deviennent orange.</p>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 02</span>
+          Voûtes du bazar et toits de Karaköy</h3>
+        <p><strong>Matin :</strong> Perdez-vous dans les 4 000 boutiques du <strong>Grand Bazar (Kapalıçarşı)</strong>. Marchandez pour des cafetières en cuivre martelé, des oreillers kilim et des céramiques peintes à la main. Descendez jusqu'aux pyramides parfumées de sumac, de safran et de délices turcs dans le <strong>bazar aux épices égyptien</strong>.</p>
+        <p><strong>Après-midi :</strong> Traversez Karaköy. Montez jusqu'à la <strong>tour médiévale de Galata</strong> pour une vue panoramique à 360 degrés sur la Corne d'Or et le Bosphore.</p>
+        <p><strong>Soirée :</strong> Dîner mezze turc traditionnel accompagné de raki dans un <em>meyhane</em> historique dans les ruelles d'Asmalımescit ou de Karaköy.</p>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 03</span>
+          Voyage en Asie : promenade gastronomique à Kadıköy et coucher de soleil sur Moda</h3>
+        <p><strong>Matin :</strong> Montez à bord du ferry à passagers de 20 minutes depuis Karaköy ou Eminönü jusqu'à Kadıköy, du côté asiatique. Dégustez un <em>simit</em> frais (anneau de pain au sésame) et du thé chaud sur la terrasse extérieure pendant que les mouettes suivent le sillage.</p>
+        <p><strong>Après-midi :</strong> Promenade guidée dans le marché animé de Kadıköy. Déjeuner au légendaire <em>Çiya Sofrası</em> en dégustant des ragoûts d'aubergines régionaux et des brochettes de griottes.</p>
+        <p><strong>Soirée :</strong> Promenez-vous le long des sentiers balnéaires du parc Moda en admirant la silhouette historique de la péninsule européenne alors que le soleil se couche sous l'horizon.</p>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 04</span>
+          Croisière sur le Bosphore et grandeur du front de mer ottoman</h3>
+        <p><strong>Matin :</strong> Faites une croisière tranquille de 2 heures sur le Bosphore en direction du pont suspendu Fatih Sultan Mehmet, en admirant les demeures ottomanes en bois au bord de l'eau (<em>yalı</em>) le long du rivage.</p>
+        <p><strong>Après-midi</strong> : visitez l'époustouflant plafond de feuilles d'or de 14 tonnes et le lustre en cristal de Bohême de 4,5 tonnes à l'intérieur du <strong>palais de Dolmabahçe</strong> à Beşiktaş.</p>
+        <p><strong>Soirée :</strong> Dîner d'adieu sur une terrasse en plein air au bord de l'eau du Bosphore à Ortaköy, directement sous le pont illuminé du Bosphore.</p>
+      </div>
+
+      <!-- Section 5: Airport Logistics -->
+      <h2>5. Hacks de transit de l'aéroport d'Istanbul (IST et SAW)</h2>
+
+      <p>Istanbul est desservie par deux grands aéroports internationaux. Connaître votre itinéraire de transit aéroportuaire évite des erreurs coûteuses :</p>
+
+      <ul>
+        <li><strong>Istanbul Airport (IST) — The Main European Gateway (35 km Northwest):</strong>
+          <ul>
+            <li><strong>M11 Driverless Metro Line (Fastest):</strong> Connects IST Airport to Gayrettepe station in just 30 minutes for approx. 30 TL (€0.90). At Gayrettepe, transfer to the M2 Green line directly into Taksim or Şişhane.</li>
+            <li><strong>Bus Havaist Express</strong> : autocars de luxe équipés de bagages, circulant toutes les 20 à 30 minutes vers Taksim, Beşiktaş et Kadıköy pour 180 à 220 TL (5 à 6 €). Propre, climatisé et très fiable.</li>
+          </ul>
+        </li>
+        <li><strong>Aéroport Sabiha Gökçen (SAW) — Le hub du côté asiatique :</strong> connecté à Kadıköy via la <strong>ligne de métro M4</strong> en 50 minutes, ou par l'autocar express Havabus directement jusqu'à la place Taksim.</li>
+        <li><strong style="color:var(--gold);">⚠️ Avertissement concernant les taxis jaunes :</strong> Les taxis des aéroports d'Istanbul sont connus pour refuser d'allumer les taximètres, réclamant des « tarifs touristiques fixes » de 60 € à 80 €, ou empruntant des itinéraires détournés plus longs. Insistez sur le compteur ("Taksimètre lütfen"</em>) ou pré-réservez un transfert privé vérifié via votre hôtel.</li>
+      </ul>
+
+      <!-- Pre-Booked Airport Shuttle Widget (Kiwitaxi) -->
+      <div class="roam-toolkit-box" style="margin-top:28px;">
+        <div class="roam-toolkit-title">🚖 Pre-Book Verified Istanbul Airport Transfer (IST &amp; SAW to Hotel)</div>
+        <p style="margin-bottom:14px;">Contournez les vendeurs de taxi agressifs, les conflits de compteurs et les barrières linguistiques. Rencontrez votre chauffeur à la porte d'arrivée avec suivi des vols, 60 minutes de temps d'attente gratuit et tarifs fixes transparents vers Sultanahmet, Taksim ou Karaköy :</p>
+        <div style="background:#ffffff;padding:12px;border:1px solid rgba(0,0,0,0.08);overflow-x:auto;">
+          <script is:inline async src="https://tpwdg.com/content?currency=usd&trs=578287&shmarker=782223&language=en&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
+        </div>
+      </div>
+
+      <!-- Section 6: eSIM vs Airport Kiosks -->
+      <h2>6. Rester connecté : le guide eSIM de voyage en Turquie 2026</h2>
+
+      <p>Les kiosques de télécommunications des aéroports de l'IST et de SAW exploitent régulièrement les touristes qui arrivent, facturant entre 45 et 65 dollars américains pour les cartes SIM touristiques qui coûtent 10 dollars aux résidents locaux. De plus, la Turquie exige que les téléphones physiques étrangers soient enregistrés après 120 jours via e-Devlet.</p>
+
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">📱 The Smart Traveler Choice: Airalo Merhaba Turkey eSIM</div>
+        <p style="margin-bottom:16px;">Téléchargez une <strong>eSIM Airalo Merhaba Turquie</strong> avant le départ. Il s'installe directement sur votre téléphone via un code QR et se connecte directement à Türk Telekom ou Turkcell haut débit 4G/5G dès la seconde où votre vol atterrit à IST ou SAW.</p>
+        <ul style="margin-bottom:20px;">
+          <li><strong>Connectivité instantanée :</strong> commandez votre trajet BiTaksi, vérifiez les itinéraires de transports publics d'Istanbulkart et traduisez immédiatement les menus des rues.</li>
+          <li><strong>Prix équitable</strong> : 1 Go à partir de 4,50 $ USD jusqu'à 20 Go pour 32 $ USD (une fraction des arnaques aux comptoirs d'aéroport).</li>
+        </ul>
+        <a href="https://www.airalo.com/turkey-esim" target="_blank" rel="noopener" class="roam-toolkit-link" style="display:inline-flex;width:auto;">
+          <span>Get Your Airalo Turkey eSIM &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Section 7: Bosphorus to Sahara Bridge -->
+      <h2>7. Du Bosphore au Sahara : le patrimoine partagé mauresque-ottoman</h2>
+
+      <p>Pour les voyageurs exigeants intéressés par l’architecture islamique, le commerce dynamique des souks et l’artisanat ancien, <strong>Istanbul et le Maroc forment le couple de voyage complémentaire ultime</strong>.</p>
+
+      <div class="roam-morocco-bridge">
+        <h3>Deux grands centres historiques de la civilisation islamique</h3>
+        <p>Alors qu'Istanbul présente des dômes et des minarets ottomans monumentaux en pierre s'élevant au-dessus des détroits maritimes, le Maroc représente le sommet du raffinement mauresque occidental : des cours intimes en bois de cèdre, une géométrie de zellij ciselée à la main et le vaste silence des dunes sahariennes. Turkish Airlines et Royal Air Maroc opèrent des vols directs sans escale reliant Istanbul (IST) directement à Casablanca (CMN) et Marrakech (RAK) en moins de 5 heures.</p>
+        <p>De nombreux voyageurs internationaux passent 4 jours à découvrir Istanbul avant de s'envoler vers le sud pour commencer un circuit privé avec chauffeur à travers le Haut Atlas et l'Erg Chebbi avec Roam Morocco.</p>
+        <a href="/fr/custom-morocco-tour.html" class="bridge-cta-btn">
+          <span>Design Your Morocco Private Tour</span> &rarr;
+        </a>
+      </div>
+
+      <!-- Section 8: FAQ Accordion -->
+      <h2>8. Foire aux questions sur le séjour à Istanbul</h2>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <h3 class="faq-question">Istanbul est-elle sûre pour les touristes internationaux en 2026 ?</h3>
+          <div class="faq-answer">
+            <p>Oui, Istanbul est extrêmement sûre pour les touristes. Les crimes violents sont rares dans les quartiers centraux. Les principales préoccupations en matière de sécurité sont de petites escroqueries : des astuces pour faire briller des brosses à chaussures, de faux habitants sympathiques invitant des hommes seuls à des boissons hors de prix en boîte de nuit (l'arnaque classique des bars) et des chauffeurs de taxi refusant les compteurs. Une sensibilisation standard aux rues garantit des vacances sans problème.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Combien coûte un hôtel dans le centre de Istanbul ?</h3>
+          <div class="faq-answer">
+            <p>Istanbul offre une valeur de luxe phénoménale. Les hôtels-boutiques 3 étoiles propres et bien situés varient entre <strong>60 € et 110 € par nuit</strong> ; les séjours dans une maison de ville 4 étoiles de caractère à Karaköy ou Galata vont de <strong>120 € à 220 € par nuit</strong> ; tandis que les hôtels 5 étoiles du Bosphore au bord de l'eau varient entre <strong>450 € et plus de 900 € par nuit</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Qu'est-ce que l'Istanbulkart et comment en obtenir un ?</h3>
+          <div class="faq-answer">
+            <p>L'<strong>Istanbulkart</strong> est la carte de transport universelle sans contact valable sur tous les ferries, tramways, métros, funiculaires et bus publics des deux continents. Vous pouvez acheter et recharger une carte plastifiée anonyme dans les distributeurs automatiques jaunes de toutes les principales stations de métro et quais de ferry (espèces TL requises).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Quel est le code vestimentaire pour visiter les mosquées à Istanbul ?</h3>
+          <div class="faq-answer">
+            <p>Tous les visiteurs doivent retirer leurs chaussures avant d’entrer dans les salles de prière recouvertes de moquette. Les hommes doivent porter des pantalons couvrant les genoux et des chemises couvrant les épaules. Les femmes doivent porter des vêtements couvrant les épaules, les genoux et un foulard (hijab) couvrant les cheveux. Des foulards et des robes de prêt gratuits sont disponibles aux entrées des principales mosquées (Hagia Sophia, Mosquée Bleue).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Ai-je besoin d'un e-Visa pour la Turquie en 2026 ?</h3>
+          <div class="faq-answer">
+            <p>Les citoyens des États-Unis, du Canada, du Royaume-Uni et des pays de l'Union européenne peuvent entrer en Turquie sans visa pour des séjours touristiques allant jusqu'à 90 jours sur une période de 180 jours. Vérifiez toujours les avis consulaires officiels avant de partir.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <!-- Scripts -->
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

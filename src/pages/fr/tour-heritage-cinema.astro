@@ -1,0 +1,828 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Visites des lieux de tournage au Maroc : Aït Benhaddou et les studios Atlas";
+const description = "Explorez des décors de cinéma légendaires avec des visites privées des lieux de tournage au Maroc. Promenez-vous dans la Kasbah Ait Benhaddou, visitez les studios de cinéma Atlas, les décors de Gladiator II et Ouarzazate.";
+const canonical = "https://roammorocco.tours/fr/tour-heritage-cinema.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://roammorocco.tours/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": [
+      "TouristTrip",
+      "Product"
+    ],
+    "@id": "https://roammorocco.tours/tour-heritage-cinema.html#trip",
+    "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+    "description": "Private guided day excursion through Morocco's cinematic heritage. Walk UNESCO Kasbah Ait Benhaddou, explore Atlas Film Studios sets from Gladiator, Lawrence of Arabia, and Game of Thrones, crossing the High Atlas Mountains.",
+    "touristType": [
+      "Film Enthusiast",
+      "Cultural Explorer",
+      "History Buff"
+    ],
+    "duration": "P1D",
+    "image": [
+      "https://roammorocco.tours/images/hero-desert.jpg",
+      "https://roammorocco.tours/img/wall-camp.jpg"
+    ],
+    "brand": {
+      "@type": "Brand",
+      "name": "Roam Morocco Tours"
+    },
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "145.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01",
+      "priceValidUntil": "2027-12-31",
+      "url": "https://roammorocco.tours/tour-heritage-cinema.html",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "MA",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 2,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "MA"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          }
+        }
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "985",
+      "reviewCount": "985"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Sarah Miller"
+        },
+        "datePublished": "2026-03-15",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "James Thorne"
+        },
+        "datePublished": "2026-05-22",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Roam Morocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Elena Rossi"
+        },
+        "datePublished": "2026-06-10",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
+      }
+    ],
+    "itinerary": {
+      "@type": "ItemList",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "High Atlas Crossing via Tizi n'Tichka Pass (2,260m)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guided Walking Tour of UNESCO Kasbah Ait Benhaddou"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Behind-the-Scenes at Atlas Film Studios & Kasbah Taourirt"
+        }
+      ]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What famous movies and TV shows were filmed at Ait Benhaddou and Ouarzazate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ait Benhaddou and Ouarzazate form the backdrop for legendary Hollywood productions including Gladiator and Gladiator II, Game of Thrones (the yellow city of Yunkai), Lawrence of Arabia, The Mummy, Kingdom of Heaven, Babel, and Prince of Persia. Your licensed guide takes you directly to the exact filming terraces and fortified kasbah gates where these scenes were captured."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in the Morocco Film Location and Heritage Cinema tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This comprehensive 1-day private excursion includes round-trip private transport from your Marrakech hotel or riad in a premium air-conditioned 4x4 or Mercedes minivan, an experienced English-speaking Moroccan chauffeur, crossing the High Atlas via Tizi n'Tichka Pass (2,260m), an official walking tour of UNESCO Ksar Ait Benhaddou, and admission to Atlas Film Studios and CLA Studios in Ouarzazate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can visitors walk inside Atlas Film Studios in Ouarzazate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Atlas Film Studios (spanning over 300,000 square meters) offers guided access to preserved movie sets, including ancient Egyptian temples, Roman amphitheaters, Tibetan monasteries, and medieval biblical fortresses. You can walk through the set architecture and explore behind-the-scenes production workshops."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long is the drive from Marrakech to Ait Benhaddou and Ouarzazate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The scenic drive from Marrakech to Ait Benhaddou takes approximately 3.5 to 4 hours each way, winding through the High Atlas Mountains. We depart early (around 07:30 AM) to maximize sightseeing time, with scenic rest pauses along the Tizi n'Tichka pass. The full-day excursion spans 11 to 12 hours total."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can this film location tour be customized or extended to the Sahara Desert?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, absolutely. Because all Roam Morocco journeys are 100% private, you can seamlessly extend this single-day cinema itinerary into a 3-day or 4-day desert expedition through Dades Gorge and Todra Valley to the Erg Chebbi luxury dunes in Merzouga, finishing either back in Marrakech or onward in Fes."
+        }
+      }
+    ]
+  }
+];
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg-cream: #f2eee6;
+      --card-bg: #ffffff;
+      --border-subtle: rgba(0, 0, 0, 0.12);
+      --border-strong: rgba(0, 0, 0, 0.22);
+      --text-main: #000000;
+      --text-muted: rgba(0, 0, 0, 0.72);
+      --red: #f10b18;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main.roam-tour-main {
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      padding: 120px 24px 80px !important;
+    }
+
+    .roam-tour-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .roam-tour-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    .roam-tour-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C8A45C;
+    }
+
+    .roam-tour-title {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: clamp(34px, 5.5vw, 62px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -.04em !important;
+      line-height: 1.05 !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 20px !important;
+    }
+
+    .roam-tour-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .02em;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .roam-tour-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      padding: 6px 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .roam-itinerary-card {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-radius: 16px !important;
+      padding: 32px 36px !important;
+      margin-bottom: 24px !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+    }
+
+    .roam-day-badge {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      color: #8A6A23 !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+
+    .roam-itinerary-title {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: 22px !important;
+      font-weight: 800 !important;
+      letter-spacing: -.03em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 14px !important;
+    }
+
+    .roam-itinerary-desc {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 17px !important;
+      line-height: 1.75 !important;
+      color: rgba(0, 0, 0, 0.82) !important;
+      margin: 0 !important;
+    }
+
+    .roam-highlights-box {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 32px 36px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-highlights-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -.03em;
+      color: #000000;
+      margin: 0 0 20px;
+    }
+
+    .roam-highlight-list {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: grid;
+      gap: 14px;
+    }
+
+    .roam-highlight-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.84);
+    }
+
+    .roam-highlight-bullet {
+      color: var(--red);
+      font-weight: 900;
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: -1px;
+    }
+  
+    /* Action Buttons in Tour Pages */
+    .roam-btn-black,
+    .roam-tour-content a.roam-btn-black,
+    a.roam-btn-black {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #000000 !important;
+      color: #ffffff !important;
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border: 1px solid #000000 !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      line-height: 1 !important;
+      transition: all .25s ease !important;
+    }
+    .roam-btn-black:hover,
+    .roam-tour-content a.roam-btn-black:hover,
+    a.roam-btn-black:hover {
+      background: #262626 !important;
+      color: #ffffff !important;
+      border-color: #262626 !important;
+      transform: translateY(-2px) !important;
+      text-decoration: none !important;
+    }
+
+    .roam-btn-wa,
+    .roam-tour-content a.roam-btn-wa,
+    a.roam-btn-wa {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #25D366 !important;
+      color: #000000 !important;
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border: 1px solid #25D366 !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      line-height: 1 !important;
+      transition: all .25s ease !important;
+    }
+    .roam-btn-wa:hover,
+    .roam-tour-content a.roam-btn-wa:hover,
+    a.roam-btn-wa:hover {
+      background: #20BA59 !important;
+      color: #000000 !important;
+      border-color: #20BA59 !important;
+      transform: translateY(-2px) !important;
+      text-decoration: none !important;
+    }
+
+    .roam-tour-cta-box,
+    .roam-driver-box {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.14) !important;
+      padding: 44px 32px !important;
+      margin: 48px 0 !important;
+      text-align: center !important;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
+      border-radius: 24px !important;
+    }
+    .roam-tour-cta-title,
+    .roam-driver-box h4 {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: clamp(20px, 3.2vw, 28px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -.03em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 14px !important;
+    }
+    .roam-tour-cta-desc,
+    .roam-driver-box p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 16px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.76) !important;
+      max-width: 680px !important;
+      margin: 0 auto 26px !important;
+    }
+
+    /* Human-Centered Storytelling: Bourdain Field Note Card */
+    .roam-field-note {
+      background: #faf8f5 !important;
+      border: 1px solid rgba(200, 164, 92, 0.25) !important;
+      border-left: 3px solid #C8A45C !important;
+      border-radius: 12px !important;
+      padding: 24px 28px !important;
+      margin: 24px 0 28px !important;
+    }
+    .roam-field-note-kicker {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: #8A6A23 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    .roam-field-note-quote {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-style: italic !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.8) !important;
+      margin: 0 0 10px !important;
+    }
+    .roam-field-note-author {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: rgba(0, 0, 0, 0.55) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .06em !important;
+      margin: 0 !important;
+    }
+  
+  </style>
+
+  <main class="roam-tour-main" style="padding: 120px 24px 80px;">
+  <div class="roam-tour-wrapper">
+    <div class="roam-tour-badge">1-DAY PRIVATE EXCURSION // ATLAS &amp; CINEMA STUDIOS</div>
+    <h1 class="roam-tour-title">Tournée des lieux de tournage au Maroc : Ait Benhaddou et Atlas Studios</h1>
+    
+    <div class="roam-tour-meta-bar">
+      <span class="roam-tour-meta-item">📍 START/FINISH: MARRAKECH</span>
+      <span class="roam-tour-meta-item">⏱ DURATION: FULL DAY (11-12 HRS)</span>
+      <span class="roam-tour-meta-item">🏛 UNESCO: KASBAH AIT BENHADDOU</span>
+      <span class="roam-tour-meta-item">🛡 100% PRIVATE 4X4 TRANSPORT &amp; DRIVER</span>
+    </div>
+
+    <!-- GEO & AEO Tour Fast Facts (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Tour Fast Facts and Summary">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ TOUR AT A GLANCE (QUICK SUMMARY)</span>
+        <span class="ai-summary-badge">Full-Day Private Departure</span>
+      </div>
+      <p class="ai-summary-text">L'<strong>Excursion d'une journée patrimoine et cinéma</strong> est un voyage privé d'une journée complète (11 à 12 heures) au départ de Marrakech à 7h30. Traversant les spectaculaires montagnes du Haut Atlas via le col de Tizi n'Tichka (2 260 m), l'itinéraire visite le ksar en briques crues d'<strong>Ait Benhaddou</strong>, classé au patrimoine mondial de l'UNESCO (lieu de tournage de <em>Gladiator</em> et <em>Game of Thrones</em>) et les <strong>Atlas Film Studios</strong> à Ouarzazate. Le tarif privé commence à <strong>195 $ USD par personne</strong>, comprenant le transport privé en 4x4 ou minibus climatisé, un chauffeur-guide agréé, le carburant, tous les péages d'autoroute et le transfert direct de porte à porte au riad.</p>
+    </aside>
+
+    <div style="margin-bottom: 40px; border: 1px solid rgba(0,0,0,0.12); overflow: hidden;">
+      <img src="/images/pol-kasbah.jpg" alt="Kasbah Ait Benhaddou and Ouarzazate Tour" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; display: block;">
+    </div>
+
+    <div class="roam-article-body">
+      <p style="font-size: 1.25rem; font-weight: 500; line-height: 1.7; margin-bottom: 28px;">Embarquez pour le voyage ultime à travers l'histoire cinématographique du Maroc et les anciennes routes des caravanes. Le <strong>Heritage & Cinema Tour</strong> vous emmène à travers les spectaculaires montagnes du Haut Atlas pour explorer les légendaires kasbahs, dont l'emblématique <strong>Ait Benhaddou</strong> et les <strong>studios de cinéma de Ouarzazate</strong>, le véritable Hollywood de l'Afrique.</p>
+
+      <h2>Pourquoi faire une visite à Aït Benhaddou ?</h2>
+      <p>Si vous recherchez les meilleures <strong>excursions d'une journée au Maroc</strong> au départ de Marrakech, une <strong>visite Ait Benhaddou</strong> est un rite de passage essentiel. Désigné site du patrimoine mondial de l'UNESCO depuis 1987, le village fortifié en terre cuite (Ksar) d'Aït Benhaddou représente le sommet de l'architecture en terre du sud du Maroc. Se promener à travers ses imposantes portes de terre rouge donne l’impression de remonter des centaines d’années dans l’ère des caravanes transsahariennes de sel et d’or.</p>
+      
+      <p>Au-delà de ses profondes racines historiques, Aït Benhaddou est un pèlerinage cinématographique mondial. Si vous avez toujours voulu visiter les plateaux de tournage du monde réel de <em>Gladiator</em>, <em>Game of Thrones</em> (la ville jaune de Yunkai), <em>Lawrence d'Arabie</em> ou <em>Royaume des cieux</em>, cette expédition privée donne vie à ces scènes légendaires.</p>
+
+      <!-- Highlights Box -->
+      <div class="roam-highlights-box">
+        <h3 class="roam-highlights-title">Points forts de la tournée</h3>
+        <ul class="roam-highlight-list">
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Tizi n'Tichka Mountain Pass:</strong> Cross the High Atlas at 2,260m elevation with dramatic stops at scenic mountain lookouts.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>UNESCO Kasbah Ait Benhaddou:</strong> In-depth private guided walking tour of the ancient mudbrick granaries and towers.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Atlas Film Studios:</strong> Go behind the scenes at the world's largest desert film lot in Ouarzazate.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Kasbah Taourirt:</strong> Discover the restored 19th-century Glaoui palace decorated with intricate stucco and cedar woodwork.</div>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Itinéraire détaillé d'une excursion d'une journée</h2>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">LEG 01 // 07:30 AM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">Traversée des montagnes du Haut Atlas via Tizi n'Tichka</h3>
+        <p class="roam-itinerary-desc">Votre chauffeur privé vient vous chercher à votre riad de Marrakech dans un 4x4 confortable et climatisé ou une camionnette Mercedes exécutive. Montez la merveille d'ingénierie sinueuse du col de Tizi n'Tichka (2 260 m). Arrêtez-vous pour prendre de superbes photos de vallées profondes, de gorges spectaculaires et de hameaux berbères d'argile rouge accrochés aux flancs des montagnes.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Tizi n'Tichka Summit (2,260m)</span>
+          <p class="roam-field-note-quote">"Au col froid et venteux où passent les mini-fourgonnettes commerciales pour gagner vingt minutes de route, il y a un abri en pierre où Daoud cuit du pain khobz rond enfoui sous du charbon d'olive chaud. Nous nous arrêtons. Daoud vous tend du pain si chaud qu'il faut le jeter de main en main, accompagné d'huile d'olive de montagne non filtrée et poivrée. Cette seule bouchée à deux mille mètres explique pourquoi vous prenez la grande route. "</p>
+          <p class="roam-field-note-author">— Brahim, spécialiste des itinéraires Roam Maroc</p>
+        </div>
+      </div>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">LEG 02 // MIDDAY EXPLORATION</span>
+        <h3 class="roam-itinerary-title">Kasbah Aït Benhaddou Site du patrimoine mondial de l'UNESCO</h3>
+        <p class="roam-itinerary-desc">Traversez les tremplins peu profonds de la rivière Ounila pour entrer dans Ait Benhaddou. Avec votre expert local privé, explorez l'ancien grenier au sommet de la colline, parcourez le labyrinthe de passages en terre et admirez les tours défensives qui surveillaient les marchands historiques du désert. Profitez d'un déjeuner panoramique sur une terrasse ombragée face à la forteresse.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Inside the Upper Ksar</span>
+          <p class="roam-field-note-quote">"Les groupes de touristes prennent trois photos près de l'arène romaine et font demi-tour. Mais si vous gravissez les lacets en briques crues jusqu'au grenier supérieur où Mokhtar et seulement quatre familles vivent encore, Mokhtar peint des scènes de désert avec du safran, du thé et de l'indigo au cobalt, puis tient le papier au-dessus d'une flamme de gaz pour que le sucre brunisse en caramel doré. Le parfum du sucre brûlé, de la boue de rivière et du soleil brûlant est la véritable âme de cet endroit. "</p>
+          <p class="roam-field-note-author">— Brahim, spécialiste des itinéraires Roam Maroc</p>
+        </div>
+      </div>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">LEG 03 // AFTERNOON CINEMA</span>
+        <h3 class="roam-itinerary-title">Ouarzazate : studios de cinéma Atlas et Kasbah Taourirt</h3>
+        <p class="roam-itinerary-desc">Roulez 30 minutes vers le sud jusqu'à Ouarzazate, la porte d'entrée du Sahara. Visitez les célèbres studios de cinéma Atlas où les décors de Cléopâtre, du Royaume des Cieux et de Gladiator sont préservés sous le soleil du désert. Visitez les chambres labyrinthiques de la Kasbah Taourirt avant de vous détendre lors de votre soirée privée de retour à Marrakech.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Atlas Studios Backlot</span>
+          <p class="roam-field-note-quote">"Se tenir devant un temple égyptien en fibre de verre en ruine au milieu du désert marocain devrait paraître ridicule, mais ce n'est pas le cas. Ici, vous rencontrez des aînés qui ont travaillé comme figurants pour David Lean en 1962 et Ridley Scott en 2000. Ils parlent quatre langues, sont morts trente fois devant la caméra et rentrent chez eux chaque soir pour irriguer les dattiers. Le Maroc tient le cinéma et l'antiquité dans la même main. "</p>
+          <p class="roam-field-note-author">— Brahim, spécialiste des itinéraires Roam Maroc</p>
+        </div>
+      </div>
+
+      <h2>Questions fréquemment posées: Aït Benhaddou et Ouarzazate</h2>
+      
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Quels films ont été tournés à Aït Benhaddou ?</h3>
+        <p>Plus de 20 superproductions hollywoodiennes et séries télévisées de prestige ont été tournées à Aït Benhaddou. Les titres clés incluent <em>Gladiator</em> (1999) et <em>Gladiator II</em> (2024), <em>Game of Thrones</em> (saison 3 sous le nom de Yunkai), <em>La Momie</em>, <em>Royaume des cieux</em>, <em>Prince of Persia</em> et le chef-d'œuvre intemporel de David Lean <em>Lawrence de Arabie</em>.</p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Combien de temps dure le trajet de Marrakech à Aït Benhaddou ?</h3>
+        <p>La distance est d'environ 180 km (112 miles), ce qui prend environ 3,5 à 4 heures dans chaque sens. Parce que l'itinéraire traverse les hauts cols de l'Atlas, disposer d'un chauffeur privé expérimenté vous permet de vous détendre, de vous arrêter quand vous le souhaitez pour prendre un café et prendre des photos, et d'éviter le stress de la navigation en voiture de location.</p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Puis-je prolonger cela dans une visite du Sahara de plusieurs jours ?</h3>
+        <p>Absolument! Ait Benhaddou est la première porte naturelle sur la route des dunes de sable du Sahara de Merzouga (Erg Chebbi). Nous personnalisons fréquemment cet itinéraire en une expédition privée dans le désert de 3 ou 4 jours avec glamping de luxe.</p>
+      </div>
+
+      <!-- Driver Concierge Lead Gen -->
+      <div class="roam-driver-box">
+        <h4>Vous voulez un chauffeur privé et un horaire personnalisé ?</h4>
+        <p>Évitez les bus touristiques exigus. Profitez d'une prise en charge porte-à-porte au riad dans un Prado 4x4 privé ou une Mercedes Classe V avec une flexibilité totale de l'itinéraire, des arrêts photographiques professionnels et votre propre chauffeur local dédié.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="/fr/custom-morocco-tour.html" class="roam-btn-black">Book Private Chauffeur &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%20Heritage%20%26%20Cinema%20tour." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Travel Deals Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Trip Planning &amp; Gear Toolkit</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Ouarzazate Kasbah Hotels</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Unlimited Morocco eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="/fr/custom-morocco-tour.html" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚐 Custom 4x4 &amp; Chauffeur</span>
+            <span class="roam-toolkit-btn">Plan Route &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Frequently Asked Questions Accordion -->
+      <section style="margin: 48px 0 32px;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(24px, 3.5vw, 36px); margin-bottom: 24px; color: #000000;">Questions fréquemment posées : Tournée de tournage et de cinéma au Maroc</h2>
+        
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <h3 class="faq-question">Quels films et émissions de télévision célèbres ont été tournés à Aït Benhaddou et à Ouarzazate ?</h3>
+            <div class="faq-answer">
+              <p>Aït Benhaddou et Ouarzazate constituent la toile de fond de productions hollywoodiennes légendaires, notamment <em>Gladiator</em> et <em>Gladiator II</em>, <em>Game of Thrones</em> (la ville jaune de Yunkai), <em>Lawrence d'Arabie</em>, <em>La Momie</em>, <em>Le Royaume des cieux</em>, <em>Babel</em> et <em>Prince de Perse</em>. Votre guide agréé vous emmène directement aux terrasses de tournage et aux portes fortifiées de la kasbah où ces scènes ont été capturées.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Qu'est-ce qui est inclus dans la visite du Maroc Film Location et Heritage Cinema ?</h3>
+            <div class="faq-answer">
+              <p>Cette excursion privée complète d'une journée comprend le transport privé aller-retour depuis votre hôtel ou riad de Marrakech dans un 4x4 ou un minibus Mercedes climatisé haut de gamme, un chauffeur marocain anglophone expérimenté, la traversée du Haut Atlas via le col de Tizi n'Tichka (2 260 m), une visite officielle à pied du Ksar Ait Benhaddou de l'UNESCO et l'entrée aux studios de cinéma Atlas et aux studios CLA à Ouarzazate.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Les visiteurs peuvent-ils entrer à pied dans les studios Atlas Film à Ouarzazate ?</h3>
+            <div class="faq-answer">
+              <p>Oui. Atlas Film Studios (s'étendant sur plus de 300 000 mètres carrés) offre un accès guidé à des décors de cinéma préservés, notamment des temples égyptiens antiques, des amphithéâtres romains, des monastères tibétains et des forteresses bibliques médiévales. Vous pouvez vous promener dans l’architecture du décor et explorer les ateliers de production en coulisses.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Combien de temps dure le trajet de Marrakech à Ait Benhaddou et Ouarzazate ?</h3>
+            <div class="faq-answer">
+              <p>La route panoramique de Marrakech à Ait Benhaddou prend environ 3,5 à 4 heures dans chaque sens, serpentant à travers les montagnes du Haut Atlas. Nous partons tôt (vers 7h30) pour maximiser le temps de visite, avec des pauses panoramiques le long du col de Tizi n'Tichka. L'excursion d'une journée complète dure de 11 à 12 heures au total.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Cette visite des lieux de tournage peut-elle être personnalisée ou étendue au désert du Sahara ?</h3>
+            <div class="faq-answer">
+              <p>Oui, absolument. Parce que tous les voyages Roam Morocco sont 100 % privés, vous pouvez facilement prolonger cet itinéraire cinéma d'une journée en une expédition de 3 ou 4 jours dans le désert à travers les gorges du Dadès et la vallée du Todra jusqu'aux dunes de luxe de l'Erg Chebbi à Merzouga, pour finir soit de retour à Marrakech, soit de continuer à Fès.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Bottom CTA Box -->
+            <!-- Pre-Locked Route Booking Card -->
+      <div style="max-width: 680px; margin: 40px auto 24px;">
+        <div class="dest-prelocked-widget"
+             data-tour-name="Heritage & Cinema 6-Day Morocco Odyssey"
+             data-price-1-4="380"
+             data-price-5-7="510"
+             data-price-8-12="690"
+             data-tour-sub="Imperial cities, Ouarzazate cinema studios & Merzouga desert camp">
+          
+          <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+          <h3 class="dest-prelocked-title">Patrimoine et cinéma Odyssée du Maroc de 6 jours</h3>
+          <p class="dest-prelocked-sub">Villes impériales, studios de cinéma de Ouarzazate et camp du désert de Merzouga</p>
+
+          <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+          <div class="dest-tier-grid">
+            <button type="button" class="dest-tier-btn active" data-tier="1_4">
+              <span class="dest-tier-pax">1–4 Pax</span>
+              <span class="dest-tier-veh">Sedan / 4x4</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="5_7">
+              <span class="dest-tier-pax">5–7 Pax</span>
+              <span class="dest-tier-veh">VIP Van</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="8_12">
+              <span class="dest-tier-pax">8–12 Pax</span>
+              <span class="dest-tier-veh">Minibus</span>
+            </button>
+          </div>
+
+          <div class="dest-prelocked-fields">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="pickupCityCinema">Departure City</label>
+              <select class="dest-form-select dest-prelocked-city" id="pickupCityCinema">
+                  <option value="Marrakech (Hotel or Riad)" data-surcharge="0" selected>Marrakech (Hotel or Riad)</option>
+                  <option value="Casablanca (Airport or Hotel)" data-surcharge="120">Casablanca (Airport or Hotel) (+120€)</option>
+              </select>
+            </div>
+
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="travelDateCinema">Approx. Travel Date</label>
+              <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateCinema">
+            </div>
+          </div>
+
+          <div class="dest-prelocked-price-box">
+            <div class="dest-prelocked-price-num">380€</div>
+            <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+            <p class="dest-prelocked-price-note">Comprend un chauffeur Mercedes dédié, du carburant, un accès au studio, un guide de la Kasbah de l'UNESCO et un camp de luxe dans le désert.</p>
+          </div>
+
+          <a href="#" class="dest-prelocked-wa-btn">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+            <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 380€</span></span>
+          </a>
+
+          <div class="dest-prelocked-trust">
+            <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+            <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+            <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+          </div>
+        </div>
+      </div>
+<div class="roam-tour-cta-box">
+        <h3 class="roam-tour-cta-title">Montez sur les plateaux de tournage légendaires</h3>
+        <p class="roam-tour-cta-desc">Prêt à explorer les anciennes forteresses en terre et l'histoire cinématographique d'Hollywood ? Réservez notre excursion privée d'une journée Patrimoine et Cinéma pour une expérience marocaine inoubliable.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/fr/custom-morocco-tour.html" class="roam-btn-black">Reserve Private Tour &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20inquiring%20about%20the%20Ait%20Benhaddou%20day%20trip." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Heritage & Cinema Odyssey</div>
+      <div class="smt-price">From <span class="smt-price-num">380€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Heritage%20&%20Cinema%206-Day%20Morocco%20Odyssey." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

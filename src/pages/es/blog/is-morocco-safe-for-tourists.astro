@@ -1,0 +1,298 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "¿Es seguro visitar Marruecos? (Guía de viaje 2026) | Deambular por Marruecos";
+const description = "¿Es seguro ir a Marruecos? Guía de seguridad completa para 2026 que cubre tasas de criminalidad, advertencias de viaje, viajes de mujeres solas y leyes locales.";
+const canonical = "https://roammorocco.tours/es/blog/is-morocco-safe-for-tourists.html";
+const ogImage = "https://roammorocco.tours/images/morocco_safety_hero.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": `${canonical}#article`,
+      "headline": title,
+      "description": description,
+      "image": ogImage,
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-03-01",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hamza",
+          "jobTitle": "Co-Founder & Expedition Curator",
+          "url": "https://roammorocco.tours/about.html"
+        },
+        {
+          "@type": "Person",
+          "name": "Abdelhakim",
+          "jobTitle": "Co-Founder & Operations Lead",
+          "url": "https://roammorocco.tours/about.html"
+        }
+      ],
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonical
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonical}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title,
+          "item": canonical
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonical}#faq`,
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best time to visit Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best time to visit Morocco is during the spring (mid-March to May) or fall (September to October). The weather is warm but pleasant, unlike the extreme heat of summer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a visa to visit Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Citizens of the US, UK, Canada, Australia, and most of Europe do not need a visa for tourist visits up to 90 days. Always check with your local embassy before traveling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Morocco safe for tourists?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Morocco is generally very safe for tourists. The government places a high priority on tourist safety. Like any destination, practice common sense, especially in crowded medinas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should female travelers wear in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Morocco is a conservative country. While tourists aren't expected to wear traditional clothing, dressing modestly (covering shoulders and knees) is highly recommended out of respect for local culture."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you drink alcohol in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, alcohol is available in Morocco, primarily in licensed hotels, bars, and tourist restaurants. However, drinking in public outside of these venues is strictly prohibited."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What language do they speak in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The official languages are Arabic and Amazigh (Berber). French is widely spoken and serves as the language of commerce. English is increasingly common in tourist areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the currency in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The currency is the Moroccan Dirham (MAD). While major hotels and large restaurants accept credit cards, cash is essential for souks, taxis, and small shops."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many days do you need in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To see the highlights (Marrakech, Fes, and the Sahara Desert), we recommend at least 7 to 10 days. A two-week trip allows for a more relaxed pace and exploring the coast."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is tap water safe to drink in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is generally recommended for tourists to stick to bottled water to avoid stomach upsets, as the tap water contains different minerals than you might be used to."
+        }
+      }
+    ]
+  }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <article class="article-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/es/index.html">Home</a> &gt; <a href="/es/blog.html">Blog</a> &gt; <span>Morocco Safety Guide</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">SAFETY & ADVISORY • 2026 AUTHORITY GUIDE</span>
+      <h1 class="article-title">¿Es Marruecos seguro para los turistas? Avisos de viaje y la realidad privilegiada de 2026</h1>
+      <p class="article-subtitle">Un análisis transparente y honesto de la seguridad en los viajes, las pequeñas estafas, los viajes de mujeres solas, las leyes locales y los protocolos de emergencia en Marrakech, las montañas del Atlas y el Sahara.</p>
+      <div class="article-meta">
+        <span>Published: <strong>September 28, 2026</strong></span>
+        <span>Author: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>11 Minutes (2,400 Words)</strong></span>
+        <span>Focus: <strong>Travel Safety & Emergency Protocols</strong></span>
+      </div>
+    </header>
+
+    <!-- Featured Visual Frame -->
+    <figure class="featured-image-box">
+      <img src="/images/morocco_safety_hero.webp" alt="Is Morocco Safe for Tourists? Travel Advisories & 2026 Insider Reality">
+      <figcaption>Vista panorámica de la azotea de Marrakech con vistas a la medina y a la mezquita Koutoubia al atardecer.</figcaption>
+    </figure>
+
+    <!-- GEO & AEO Key Takeaways Box (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Morocco Travel Safety Quick Answer">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ QUICK ANSWER: IS MOROCCO SAFE FOR TOURISTS?</span>
+        <span class="ai-summary-badge">Advisory Level 2 · Low Risk</span>
+      </div>
+      <p class="ai-summary-text"><strong>Sí, es muy seguro visitar Marruecos.</strong> Marruecos está clasificado en el <strong>Nivel 2: tenga mayor precaución</strong> por el Departamento de Estado de EE. UU. y el Ministerio de Asuntos Exteriores del Reino Unido, exactamente el mismo nivel de seguridad otorgado a Francia, el Reino Unido e Italia. Los delitos violentos contra turistas son extremadamente raros. Una policía turística dedicada (<em>Brigada Turística</em>) está estacionada en todas las medinas históricas, y más de 14 millones de viajeros internacionales las visitan cada año sin incidentes.</p>
+    </aside>
+
+      <p style="font-size: 1.25rem;">Mientras se prepara para su viaje al norte de África, la pregunta más común que usted y su familia probablemente se harán es: <em>"¿Es seguro visitar Marruecos en este momento?"</em> Ya sea que se esté preguntando <strong>es Marruecos seguro para los estadounidenses</strong>, consultando las últimas recomendaciones de viaje o preguntando <strong>es Marruecos seguro para los turistas del Reino Unido</strong>, tenemos las respuestas directas y honestas que necesita.</p>
+  
+      <p>La respuesta corta es sí. Marruecos es uno de los países más estables, seguros y turísticos de la región de Oriente Medio y Norte de África (MENA). Sin embargo, como cualquier destino internacional popular, comprender las leyes, la cultura y las estafas comunes locales es la clave para unas vacaciones sin estrés.</p>
+
+      <h2>Sobrecarga sensorial versus peligro real: la mentalidad de Medina</h2>
+      <p>Antes de mirar las estadísticas, conviene comprender por qué los viajeros occidentales suelen sentirse incómodos durante sus primeras veinticuatro horas en Marruecos. Casi nunca se debe a un peligro real: se debe a un shock sensorial.</p>
+      <p>Cuando entras en la antigua medina amurallada de Marrakech o Fez, los estímulos llegan sin ningún filtro. Un ciclomotor de 50 cc pasa rugiendo junto a tu codo a través de un callejón de apenas dos metros de ancho; tres vendedores de alfombras te saludan en español, francés e inglés; el aroma de las virutas de cedro choca con el comino tostado y el cuero crudo; el llamado a la oración resuena simultáneamente desde cinco minaretes separados. Su sistema nervioso, condicionado por el orden predecible de los suburbios occidentales o de los corredores de cercanías, interpreta esta densidad como una amenaza. Pero observe lo que realmente sucede a su alrededor: la gente trabaja, transporta pan fresco sobre tablas de madera, saluda a los vecinos, regatea por las aceitunas y vive su vida diaria. La densidad no es hostilidad.</p>
+
+      <div class="roam-field-note">
+        <span class="roam-field-note-kicker">Field Note // Derb Dabachi, Marrakech</span>
+        <p class="roam-field-note-quote">"Si te desvías en los callejones estrechos cerca de Ben Youssef y un adolescente se acerca y se ofrece a mostrarte el camino a Jemaa el-Fna, tu instinto puede ser de pánico. Pero él no planea hacerte daño; es un oportunista que busca una propina de 20 dirhams. Coloca tu mano derecha suavemente sobre tu corazón, establece contacto visual con calma y di 'La, Shukran' ('No, gracias'). Mantén los hombros relajados y sigue caminando hacia la luz del día. Marruecos opera sobre la dignidad y el respeto mutuos; el pánico atrae la perseverancia, mientras que la resolución tranquila y cortés la disuelve instantáneamente”.</p>
+        <p class="roam-field-note-author">— Hamza y Abdelhakim, cofundadores de Roam Marruecos</p>
+      </div>
+
+      <h2>Delitos violentos versus delitos menores</h2>
+      <p>Una de las mayores garantías para los viajeros es que los <strong>crímenes violentos</strong> contra turistas en Marruecos son increíblemente raros. Es mucho más seguro caminar por las calles de Marrakech de noche que en muchas de las principales ciudades americanas o europeas.</p>
+      <p>Lo que sí hay que tener en cuenta son los <strong>delitos menores</strong>. En <strong>zonas concurridas</strong>, como la plaza Jemaa el-Fna de Marrakech o las medinas de <strong>ciudades importantes</strong> como Fez, pueden producirse carteristas y <strong>robos de bolsos</strong>. Mantenga siempre sus objetos de valor seguros en un bolso cruzado y evite exhibir grandes cantidades de dinero en efectivo o joyas caras en <strong>zonas turísticas</strong> densas.</p>
+
+      <h2>Terrorismo y seguridad: ¿Está Marruecos a salvo del ISIS?</h2>
+      <p>Una consulta de búsqueda común entre viajeros preocupados es sobre la amenaza de un <strong>ataque terrorista</strong> o se preguntan <em>"¿Está Marruecos a salvo del ISIS?"</em></p>
+      <p>Marruecos se toma muy en serio su seguridad nacional y la protección de su industria turística. Tras incidentes raros y aislados en el pasado, las <strong>autoridades marroquíes</strong> establecieron la Oficina Central de Investigaciones Judiciales (BCIJ), el equivalente del FBI. Sus agresivas medidas antiterroristas y su profunda red de inteligencia hacen de Marruecos uno de los países más seguros de la región. Con frecuencia verá personal de seguridad muy visible y policía turística patrullando los principales centros para garantizar su seguridad.</p>
+
+      <h2>¿Es Marruecos seguro para las mujeres turistas?</h2>
+      <p>Para las <strong>viajeras</strong>, Marruecos requiere un poco más de conciencia situacional. El principal problema al que se enfrentan las turistas no es el peligro físico, sino más bien la <strong>atención no deseada</strong> o los abucheos de los hombres locales.</p>
+      <ul>
+        <li><strong>Código de vestimenta:</strong> la mejor manera de mitigar esto es <strong>usar ropa holgada</strong> que cubra los hombros y las rodillas. Respetar la cultura islámica local es de gran ayuda. Para obtener una lista detallada de control de equipaje de temporada, lea nuestra guía completa sobre <a href="/es/blog/what-to-wear-in-morocco.html"><strong>qué ponerse en Marruecos para mujeres y hombres</strong></a>.</li>
+        <li><strong>Confianza y sabiduría callejera:</strong> Camine con propósito y cortesía tranquila. Si alguien ofrece direcciones no solicitadas (un truco común para pedir una propina más tarde), coloque firmemente su mano derecha sobre su corazón, diga "No, gracias" (o "La, shukran" en árabe) y siga avanzando. Para comprender por qué ocurren las interacciones callejeras y cómo interactuar con un respeto mutuo genuino, lea <a href="/es/blog/the-art-of-the-souk-bargaining-etiquette.html"><strong>El arte del zoco: por qué la negociación es una conversación, no un combate</strong></a>.</li>
+        <li><strong>Guías turísticos y choferes privados:</strong> Contratar <strong>guías turísticos</strong> oficiales con licencia o viajar con un conductor privado dedicado transforma completamente la experiencia. En la cultura marroquí, un huésped que viaja con un anfitrión local de confianza recibe un respeto inmediato. Los revendedores y comerciantes agresivos dan un paso atrás, dejando espacio para una hospitalidad cálida y genuina.</li>
+      </ul>
+
+      <h2>El puente cultural invisible: por qué el transporte privado protege la tranquilidad</h2>
+      <p>Cuando los viajeros revisan sus viajes con Roam Marruecos, la palabra que utilizan con más frecuencia no es “lujo”, sino “alivio”. Viajar con un conductor marroquí de habla inglesa no se trata sólo de asientos de cuero con aire acondicionado; es tener un puente cultural invisible. Su conductor saluda al personal del riad en Darija, recorre puertas laberínticas donde fallan las aplicaciones de GPS, negocia estacionamiento justo y lo aleja de las trampas para turistas que cobran comisiones. Si estás pensando en cómo viajar por el Reino, compara tus opciones en <a href="/es/blog/renting-a-car-in-morocco-vs-private-driver.html"><strong>alquilar un coche en Marruecos frente a contratar un conductor privado</strong></a>, o consulta nuestro desglose honesto de <a href="/es/blog/morocco-private-driver-cost.html"><strong>conductor privado en Marruecos costes</strong></a>.</p>
+
+      <h2>¿Qué es ilegal en Marruecos para los turistas?</h2>
+      <p>Para garantizar un viaje sin problemas, debe conocer las leyes marroquíes. Si bien se da cierta libertad a los turistas, ciertas acciones están estrictamente prohibidas:</p>
+      <ul>
+        <li><strong>Muestras públicas de afecto:</strong> tomarse de la mano es generalmente aceptable para las parejas casadas, pero besarse o <strong>muestras públicas intensas de afecto</strong> están muy mal vistos y técnicamente son ilegales.</li>
+        <li><strong>Falta de respeto a la Monarquía:</strong> Es ilegal burlarse, desfigurar o hablar mal del rey marroquí o de la familia real.</li>
+        <li><strong>Drones:</strong> No traigas un dron a Marruecos. Son estrictamente ilegales por razones de seguridad y serán confiscados en el aeropuerto a su llegada.</li>
+      </ul>
+
+      <h2>Consejos prácticos de salud y seguridad</h2>
+      <p>Más allá de la seguridad física, proteger tu salud y tus finanzas es crucial para un buen viaje.</p>
+      <ol>
+        <li><strong>Beba agua embotellada:</strong> el agua del grifo en Marruecos generalmente es segura para los lugareños, pero el diferente contenido mineral puede alterar el estómago de un turista. Limítese siempre al <strong>agua embotellada</strong> sellada, incluso para cepillarse los dientes.</li>
+        <li><strong>Seguridad de las tarjetas de crédito:</strong> Si bien los hoteles y restaurantes de lujo aceptan plástico, Marruecos sigue siendo una sociedad con mucho dinero en efectivo. Cuando utilice una <strong>tarjeta de crédito</strong>, asegúrese de que la máquina esté cerca de su mesa para proteger su <strong>información personal</strong>. Evite los cajeros automáticos aislados por la noche.</li>
+      </ol>
+
+      <!-- Roam Morocco Reusable Tour CTA Box Component -->
+      <div class="roam-tour-cta-box">
+        <span class="roam-tour-cta-kicker">★ BESPOKE SAFE TRAVEL IN MOROCCO</span>
+        <h3 class="roam-tour-cta-title">Viaje con total tranquilidad por todo el reino</h3>
+        <p class="roam-tour-cta-desc">Evite las preocupaciones de navegación, los vendedores callejeros agresivos y la conducción nocturna en la montaña. Explore Marruecos cómodamente con un chofer bereber con licencia y que habla inglés en un moderno Prado 4×4 o una camioneta Mercedes de lujo con conserjería en Marrakech las 24 horas, los 7 días de la semana.</p>
+        <div class="roam-tour-cta-actions">
+          <a href="/es/custom-morocco-tour.html" class="roam-btn-white">Plan a Safe Custom Tour &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
+
+            <!-- Roam Morocco E-E-A-T Curator Bio Card -->
+      <div class="roam-author-card" itemscope itemtype="https://schema.org/Person">
+        <div class="roam-author-avatar">RM</div>
+        <div class="roam-author-content">
+          <span class="roam-author-kicker">Written &amp; Curated by Local Experts</span>
+          <h4 class="roam-author-title"><span itemprop="name">Hamza & Abdelhakim</span> <span itemprop="jobTitle">— Cofundadores de Roam Marruecos Tours</span></h4>
+          <p class="roam-author-bio" itemprop="description">Criados en Marrakech con raíces familiares de toda la vida que abarcaban el Alto Atlas y el Sahara, Hamza y Abdelhakim fundaron Roam Marruecos para rechazar el turismo comercial de masas. Junto con curadores de rutas nativos, diseñan expediciones 100% privadas y sin prisas que se centran en una auténtica inmersión cultural, precios transparentes y apoyo directo a las comunidades artesanales locales.</p>
+          <div class="roam-author-badges">
+            <span><span class="badge-check">✓</span> Ministry Licensed Tour Operators</span>
+            <span><span class="badge-check">✓</span> Based in Marrakech Medina (40000)</span>
+            <a href="/es/about.html" class="roam-author-link" itemprop="url">Meet Our Team &amp; Philosophy &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+        </div>
+  </article>  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

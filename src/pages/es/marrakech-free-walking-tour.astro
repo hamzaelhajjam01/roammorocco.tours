@@ -1,0 +1,618 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Tour Gratis al Atardecer en la Medina de Marrakech | Rutas por Marruecos";
+const description = "Descubra la Medina de Marrakech en este recorrido gratuito a pie al atardecer. Guía en inglés con licencia, mezquita Koutoubia, zocos artesanales y puesta de sol sobre Jemaa el-Fna.";
+const canonical = "https://roammorocco.tours/es/marrakech-medina-sunset-free-tour.html";
+const ogImage = "https://roammorocco.tours/img/tour_marrakech_free_sunset.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristTrip",
+      "name": "Marrakech Medina Sunset Free Tour",
+      "description": "Daily 2-hour free sunset walking tour through the Marrakech Medina, artisan craft quarters, and Saadian alleys, ending at sunset over Jemaa el-Fna square.",
+      "url": "https://roammorocco.tours/marrakech-medina-sunset-free-tour.html",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "MAD",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "url": "https://roammorocco.tours/marrakech-medina-sunset-free-tour.html"
+      },
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
+          "addressLocality": "Marrakech",
+          "postalCode": "40000",
+          "addressCountry": "MA"
+        }
+      },
+      "itinerary": {
+        "@type": "ItemList",
+        "numberOfItems": 8,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Koutoubia Mosque & Gardens (Meeting Point)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Jemaa el-Fna (First Look & Halqa Heritage)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Souk Semmarine to Rahba Kedima (Spice Square)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Dyers' Souk & Lantern Maker Workshops"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Mouassine Fountain, Mosque & Communal Oven"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Le Jardin Secret (Exterior Story)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Sunset Rooftop Terrace over Jemaa el-Fna"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Jemaa el-Fna by Night (Farewell & Night Food Stalls)"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is this Marrakech walking tour really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! This is a traditional free walking tour. There is no upfront booking fee or service charge. At the end of the tour, you are free to tip your official licensed guide whatever amount you feel the experience was worth."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the meeting point for the tour?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We meet at the Koutoubia Mosque esplanade, next to the Lalla Zohra tomb (on the Avenue Mohammed V side). Look for our licensed guide holding a visible Roam Morocco Tours sign."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What time does the Marrakech sunset free tour start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The tour starts at 5:00 PM from October to March (winter schedule) and at 6:00 PM from April to September (summer schedule), ensuring the walk always concludes at sunset over Jemaa el-Fna."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the tour include any shopping stops?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "None! Roam Morocco Tours enforces a strict zero-shop-stop policy. You will never be brought into commission carpet shops or pressurized artisan cooperatives. The tour is 100% focused on genuine culture, history, and craftsmanship."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <!-- Main Tour Page Content -->
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badges -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/es/index.html">Home</a> &nbsp;/&nbsp; <a href="/es/destinations.html">Destinations</a> &nbsp;/&nbsp; <a href="/es/destination-marrakech.html">Marrakech</a> &nbsp;/&nbsp; <span>Sunset Free Tour</span>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span class="dest-badge-tag" style="background:#16a34a;color:#ffffff;">100% FREE TOUR</span>
+          <span class="dest-badge-tag">OFFICIAL LICENSED GUIDE</span>
+        </div>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/tour_marrakech_free_sunset.jpg" alt="Marrakech Koutoubia Mosque and Atlas Mountains" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Tour gratuito al atardecer en la Medina de Marrakech</h1>
+          <p class="dest-hero-subtitle">Descubra la Medina de Marrakech en este recorrido gratuito a pie al atardecer, desde la Mezquita Koutoubia a través de los zocos, terminando en Jemaa el-Fna cuando la plaza cobra vida por la noche.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> 2 Hours (~2 km easy walk)</span>
+        <span class="dest-metric-item">💰 <strong>Price:</strong> Free (Pay What You Want)</span>
+        <span class="dest-metric-item">🗣 <strong>Language:</strong> English (Guide Agréé)</span>
+        <span class="dest-metric-item">📍 <strong>Meeting Point:</strong> Koutoubia Mosque Esplanade</span>
+      </div>
+
+      <!-- 2-Column Core Layout -->
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Content Column -->
+        <div class="dest-content-col">
+
+          <!-- Tour Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Aspectos destacados del recorrido y puntos de venta</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>El único tour gratuito al atardecer en Marrakech:</strong> Programado específicamente para concluir al atardecer sobre Jemaa el-Fna cuando el llamado a la oración suena desde la Koutoubia y la plaza se transforma en un teatro culinario.</li>
+              <li><strong>Guía local con licencia oficial:</strong> Dirigido por un guía marroquí de habla inglesa totalmente acreditado (*guide agréé*) que porta credenciales oficiales del Ministerio de Turismo.</li>
+              <li><strong>Garantía 100 % sin parada en la tienda:</strong> Sin comisiones presurizadas en tiendas de alfombras, trampas de herbolarios ni compras forzadas. Pura cultura e historia auténtica.</li>
+              <li><strong>Living Craft Quarters:</strong> observe a los fabricantes de faroles de cobre, torneros de madera y tintoreros de lana trabajando en sus tradicionales talleres medievales.</li>
+              <li><strong>Orientación privilegiada sobre Jemaa el-Fna:</strong> Conozca la historia centenaria de los artistas de *Halqa* y domine las habilidades esenciales de seguridad, etiqueta y navegación.</li>
+            </ul>
+          </div>
+
+          <!-- Why Sunset Narrative -->
+          <div class="dest-narrative">
+            <h2>¿Por qué Sunset y por qué este Free Tour?</h2>
+            <p>Durante el calor del mediodía, las estrechas callejuelas de la medina de Marrakech pueden resultar abrumadoras. La mayoría de los monumentos históricos, como Le Jardin Secret, el Palacio de la Bahía y las Tumbas Saadíes, cierran a las 6:00 p.m. Convertimos esto en la firma única del recorrido: <strong>este es el único recorrido a pie gratuito que concluye a la hora dorada</strong>, justo cuando el sol se pone detrás del minarete de Koutoubia, la llamada vespertina a la oración del Magreb resuena en los tejados de arcilla y la plaza Jemaa el-Fna se enciende para pasar la noche.</p>
+
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"Marrakech de día es una ciudad de artesanía histórica; Marrakech al atardecer es pura poesía viva. Caminar desde las tranquilas callejuelas saadíes hasta el espectáculo humeante e iluminado por linternas de Jemaa el-Fna al anochecer es una experiencia que ningún viajero olvida".</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO MEDINA WALKING JOURNAL</span>
+            </div>
+
+            <p>En el camino, su guía le presenta la fundación histórica de Marrakech en 1070 por la dinastía almorávide, los orígenes arquitectónicos de la mezquita Koutoubia del siglo XII y los cinco pilares esenciales de la vida vecinal marroquí.</p>
+          </div>
+
+          <!-- Meeting Point & Schedule Details -->
+          <div style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);padding:28px;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);margin-bottom:32px;">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:800;text-transform:uppercase;margin:0 0 16px;display:flex;align-items:center;gap:8px;"><span>📍Punto de encuentro y hora de inicio</span></h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px;">
+              <div>
+                <p style="margin:0 0 8px;font-size:11px;color:#8A6A23;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;background:rgba(200,164,92,0.12);padding:3px 10px;border-radius:999px;display:inline-block;">DONDE NOS ENCONTRAMOS</p>
+                <p style="margin:0;font-size:15px;line-height:1.5;"><strong>Explanada de la Mezquita Koutoubia</strong>, junto a la tumba de Lalla Zohra en el lado de la Avenida Mohammed V. Su guía estará de pie sosteniendo un cartel visible de <strong>Roam Marruecos Tours</strong>.</p>
+              </div>
+              <div>
+                <p style="margin:0 0 8px;font-size:11px;color:#8A6A23;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;background:rgba(200,164,92,0.12);padding:3px 10px;border-radius:999px;display:inline-block;">HORARIOS DE INICIO (DIARIOS)</p>
+                <p style="margin:0 0 4px;font-size:15px;line-height:1.5;">• <strong>5:00 p.m.</strong> (de octubre a marzo: horario de invierno)</p>
+                <p style="margin:0;font-size:15px;line-height:1.5;">• <strong>6:00 p. m.</strong> (de abril a septiembre: horario de verano)</p>
+              </div>
+            </div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px dashed rgba(0,0,0,0.12);font-size:13px;color:rgba(0,0,0,0.7);">
+              🏁 <strong>End Point:</strong> Jemaa el-Fna square, right at the start of the night street food stalls and performers.
+            </div>
+          </div>
+
+          <!-- Step-by-Step 8-Stop Route Timeline -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Ruta a pie completa de 8 paradas</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">2 HORAS // ~2 KM CAMINANDO FÁCIL</span></h3>
+
+            <!-- Stop 1 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 01 // 17:00 (20 MIN) // MEETING POINT</span>
+              <h4 class="dest-day-title">Mezquita Koutoubia, jardines y leyenda de Lalla Zohra</h4>
+              <p class="dest-day-desc">Reúnase con su guía autorizado fuera del minarete Koutoubia del siglo XII. Descubra cómo su torre de arenisca de 77 metros se convirtió en el prototipo arquitectónico de la Giralda de Sevilla y la Torre Hassan de Rabat. Examine los cimientos excavados de la primera mezquita, reconstruida por los almohades después de descubrir que estaba desalineada con La Meca, y escuche la historia mítica de Lalla Zohra, quien, según los lugareños, se transforma en una paloma blanca por la noche.</p>
+              <div class="dest-day-tags">
+                <span>Almohad Minaret (Exterior)</span>
+                <span>Almoravid History</span>
+                <span>Mosque Etiquette</span>
+              </div>
+            </div>
+
+            <!-- Stop 2 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 02 // 17:20 (10 MIN) // UNESCO HERITAGE</span>
+              <h4 class="dest-day-title">Jemaa el-Fna: obra maestra oral y etiqueta callejera</h4>
+              <p class="dest-day-desc">Eche una primera mirada panorámica a Jemaa el-Fna, reconocida por la UNESCO en 2001 como Obra Maestra del Patrimonio Oral e Inmaterial. Comprenda la tradición centenaria de <em>Halqa</em> (círculos de narradores, acróbatas y músicos bereberes) y reciba sencillos consejos de seguridad: formas educadas de rechazar a los vendedores ambulantes, pautas éticas para la fotografía y cómo se prepara la plaza para su transformación nocturna.</p>
+              <div class="dest-day-tags">
+                <span>UNESCO Intangible Heritage</span>
+                <span>Halqa Storytelling</span>
+                <span>Anti-Scam Tips</span>
+              </div>
+            </div>
+
+            <!-- Stop 3 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 03 // 17:30 (20 MIN) // CRAFTS &amp; HERBS</span>
+              <h4 class="dest-day-title">Zoco Semmarine → Rahba Kedima (Plaza de las Especias Viejas)</h4>
+              <p class="dest-day-desc">Ingrese a la red de zocos cubiertos a través de Souk Semmarine. Descubra cómo los gremios de artesanos medievales dividían cada callejón por especialidad. Llegue a Rahba Kedima, el histórico mercado de cereales y especias, repleto de cestas de rafia tejidas, hierbas secas, pirámides de comino y auténticos cosméticos bereberes como aceite de argán, jabón negro (*savon noir*) y arcilla rhassoul. Aprenda el amistoso arte de la negociación marroquí para más adelante.</p>
+              <div class="dest-day-tags">
+                <span>Historic Spice Square</span>
+                <span>Guild Organization</span>
+                <span>Haggling Etiquette</span>
+              </div>
+            </div>
+
+            <!-- Stop 4 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 04 // 17:50 (15 MIN) // LIVING CRAFTSMANSHIP</span>
+              <h4 class="dest-day-title">Zoco de tintoreros y talleres de faroles perforados a mano</h4>
+              <p class="dest-day-desc">Camine por el vibrante Zoco de los Tintoreros (Souk Sebbaghine), donde ovillos de lana teñidos en tonos naturales de índigo, azafrán y granada cuelgan secándose de vigas de madera elevadas. Eche un vistazo a los talleres de latón y cobre para observar a los maestros metalúrgicos cincelar manualmente los intrincados patrones geométricos que dan a las linternas marroquíes sus icónicas sombras estrelladas. No se requiere compra.</p>
+              <div class="dest-day-tags">
+                <span>Wool Drying Overhead</span>
+                <span>Artisan Metalworkers</span>
+                <span>Photo Stop</span>
+              </div>
+            </div>
+
+            <!-- Stop 5 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 05 // 18:05 (15 MIN) // SAADIAN LIFE</span>
+              <h4 class="dest-day-title">Barrio Mouassine: mezquita, fuente y horno comunitario</h4>
+              <p class="dest-day-desc">Explore el barrio urbano saadí de Mouassine, del siglo XVI. Su guía explica la genialidad de la planificación vecinal islámica construida en torno a cinco instituciones comunales esenciales: la mezquita, la gran fuente pública con bebederos para animales, la casa de baños hammam, la escuela madrasa y el panadero del barrio (*ferran*), donde las familias todavía entregan masa amasada a mano para hornear sobre virutas de madera.</p>
+              <div class="dest-day-tags">
+                <span>16th-Century Urban Design</span>
+                <span>Communal Bakery (Ferran)</span>
+                <span>Saadian Fountain</span>
+              </div>
+            </div>
+
+            <!-- Stop 6 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 06 // 18:20 (10 MIN) // PALACE GARDENS</span>
+              <h4 class="dest-day-title">Le Jardin Secret (Historia exterior y sistema Khettara)</h4>
+              <p class="dest-day-desc">Haga una pausa fuera de los altos muros del riad Le Jardin Secret. Escuche la historia de esta aristocrática residencia saadí, reconstruida en el siglo XIX y meticulosamente restaurada en 2016. Descubra cómo el antiguo sistema hidráulico subterráneo <em>khettara</em> transportaba la escorrentía de las montañas del Alto Atlas para irrigar los jardines del palacio de la ciudad. Su guía proporciona detalles al visitante para explorar el interior a la mañana siguiente.</p>
+              <div class="dest-day-tags">
+                <span>Riad Architecture</span>
+                <span>Ancient Khettara Hydraulics</span>
+                <span>Next-Day Visit Advice</span>
+              </div>
+            </div>
+
+            <!-- Stop 7 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 07 // 18:30 (15 MIN) // GOLDEN HOUR</span>
+              <h4 class="dest-day-title">Terraza en la azotea al atardecer sobre Jemaa el-Fna</h4>
+              <p class="dest-day-desc">Dirígete a una terraza panorámica elevada en la azotea con vistas a la plaza Jemaa el-Fna. Los huéspedes que deseen pedir un té de menta fresca o una bebida fría podrán hacerlo (opcional, los huéspedes cubren su propia bebida; los que lo prefieran pueden esperar al nivel de la calle con el guía). Observe cómo el sol dorado se esconde detrás de las palmeras mientras el conmovedor llamado del Magreb a la oración resuena en todo Marrakech.</p>
+              <div class="dest-day-tags">
+                <span>Panoramic Square View</span>
+                <span>Sunset Over Palms</span>
+                <span>Maghrib Call to Prayer</span>
+              </div>
+            </div>
+
+            <!-- Stop 8 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">STOP 08 // 18:45 (15 MIN) // EVENING TRANSFORMATION</span>
+              <h4 class="dest-day-title">Plaza Jemaa el-Fna de noche y despedida</h4>
+              <p class="dest-day-desc">El recorrido concluye de nuevo en la plaza justo cuando el anochecer da paso a la noche. El humo sale de filas de puestos de comida numerados que sirven brochetas a la parrilla, caracoles especiados y harira fresca. Su guía le explica cómo elegir puestos de comida locales seguros y concurridos, ofrece recomendaciones personalizadas para los días restantes (excursiones de un día al Palacio de la Bahía, las Tumbas Saadíes, el desierto de Agafay o el Atlas) y responde cualquier pregunta antes de despedirse.</p>
+              <div class="dest-day-tags">
+                <span>Night Food Stalls</span>
+                <span>Street Musicians</span>
+                <span>Tips Welcome</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions Card (Exact Civitatis Format) -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">Qué está incluido y excluido</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUIDO</h4>
+                <ul class="dest-inc-list">
+                  <li>Guía oficial con licencia (*guide agréé*) en inglés</li>
+                  <li>Visita guiada a pie de 2 horas por la Medina de Marrakech</li>
+                  <li>Narración histórica y cultural en 8 paradas de ruta</li>
+                  <li>Orientación y guía de seguridad para Jemaa el-Fna</li>
+                  <li>Recomendaciones personalizadas para su estancia en Marruecos</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NO INCLUIDO (EXCLUIDO)</h4>
+                <ul class="dest-exc-list">
+                  <li>Bebidas y refrescos en la terraza de la azotea (parada pagada opcional, los huéspedes pagan su propia bebida)</li>
+                  <li>Entradas a monumentos (solo visitas exteriores)</li>
+                  <li>Propinas/gratificaciones para el guía (paga lo que creas que valió el tour)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Important Information & Guidelines -->
+          <div style="background:#ffffff;border:1px solid rgba(0,0,0,0.12);padding:24px;border-radius:4px;margin-bottom:32px;">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:800;text-transform:uppercase;margin:0 0 16px;">Es bueno saberlo antes de ir</h3>
+            <ul style="margin:0;padding-left:20px;line-height:1.7;font-size:15px;color:rgba(0,0,0,0.8);">
+              <li><strong>Concepto de Free Tour:</strong> No hay ningún cargo inicial obligatorio. Al finalizar la caminata, puede darle una propina al guía por la cantidad que crea que valió la pena el recorrido.</li>
+              <li><strong>Calzado cómodo:</strong> Los callejones de la medina son históricos, estrechos y adoquinados. Use zapatos cómodos para caminar.</li>
+              <li><strong>Acceso a las mezquitas:</strong> Los no musulmanes no pueden entrar a las mezquitas activas en Marruecos. Visitaremos el minarete exterior, las ruinas arqueológicas y los jardines de la Mezquita Koutoubia.</li>
+              <li><strong>Sin paradas en tiendas comerciales:</strong> Nos enorgullecemos de nunca someter a nuestros huéspedes a ventas presionadas de alfombras o especias.</li>
+              <li><strong>Hora del Ramadán:</strong> Durante el mes sagrado del Ramadán, el tiempo puede ajustarse ligeramente para alinearse con la puesta del sol (*Iftar*); Lo confirmaremos vía mensaje.</li>
+            </ul>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Preguntas frecuentes: Tour gratuito al atardecer en Marrakech</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Este tour es completamente gratuito?</h4>
+              <div class="dest-faq-a">
+                <p>Sí. Al igual que los recorridos a pie gratuitos oficiales en todo el mundo, la reserva es 100% gratuita y no se requiere tarjeta de crédito. Al final del recorrido, los invitados le dan una propina al guía por la cantidad que consideren que valió la experiencia, el conocimiento y el entretenimiento.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Dónde exactamente nos encontramos con nuestro guía?</h4>
+              <div class="dest-faq-a">
+                <p>Nos reunimos en la explanada de la Mezquita Koutoubia, justo al lado de la tumba histórica de Lalla Zohra en el lado de la Avenida Mohammed V. Su guía llevará un cartel de <strong>Roam Marruecos Tours</strong> claramente visible.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Cómo funcionan los horarios de inicio de temporada?</h4>
+              <div class="dest-faq-a">
+                <p>De octubre a marzo, el recorrido comienza puntualmente a las <strong>5:00 p. m.</strong>. De abril a septiembre, el recorrido comienza a las <strong>6:00 p. m.</strong>. Este ajuste estacional garantiza que nuestro grupo siempre llegue a la azotea de Jemaa el-Fna exactamente al atardecer.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Pueden unirse niños o familias?</h4>
+              <div class="dest-faq-a">
+                <p>Sí, el recorrido es ideal para familias y cubre aproximadamente 2 km a un ritmo suave y sin prisas. Tenga en cuenta que los callejones de Medina pueden ser irregulares, por lo que se recomienda calzado cómodo.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar: Free Tour Reservation -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-booking-widget">
+            <span class="dest-widget-kicker" style="background:#16a34a;color:#ffffff;padding:3px 8px;font-weight:800;border-radius:2px;">100% FREE BOOKING</span>
+            <h3 class="dest-widget-title">Reserva tu plaza para el Free Tour</h3>
+            <p class="dest-widget-sub">Únase a nuestro guía autorizado para disfrutar del atardecer en la Medina. Reserve su lugar en 30 segundos sin necesidad de pago.</p>
+
+            <form class="dest-form" id="freeTourForm" onsubmit="handleInquirySubmit(event, 'Marrakech Medina Sunset Free Tour')">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="clientName">Your Full Name *</label>
+                <input class="dest-form-input" type="text" id="clientName" required placeholder="e.g. Sarah Jenkins">
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="clientPhone">WhatsApp / Phone *</label>
+                <input class="dest-form-input" type="tel" id="clientPhone" required placeholder="+1 555 987 6543">
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="clientEmail">Email Address *</label>
+                <input class="dest-form-input" type="email" id="clientEmail" required placeholder="sarah@example.com">
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDates">Preferred Date *</label>
+                <input class="dest-form-input" type="text" id="travelDates" required placeholder="e.g. Tomorrow or 24 Oct 2026">
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="timeSlot">Start Time Slot *</label>
+                <select class="dest-form-select" id="timeSlot">
+                  <option value="5:00 PM (Winter Schedule: Oct-Mar)">5:00 PM (Winter Schedule: Oct–Mar)</option>
+                  <option value="6:00 PM (Summer Schedule: Apr-Sep)">6:00 PM (Summer Schedule: Apr–Sep)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="groupSize">Number of Travelers</label>
+                <select class="dest-form-select" id="groupSize">
+                  <option value="2 Guests">2 Guests</option>
+                  <option value="1 Guest (Solo Traveler)">1 Guest (Solo Traveler)</option>
+                  <option value="3-4 Guests (Family / Friends)">3-4 Guests</option>
+                  <option value="5+ Guests">5+ Guests</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="notes">Special Notes / Dietary / Language</label>
+                <textarea class="dest-form-textarea" id="notes" placeholder="Optional notes for your guide..."></textarea>
+              </div>
+
+              <button type="submit" class="dest-submit-btn" style="background:#16a34a;border-color:#16a34a;">RESERVE FREE SPOT ↳</button>
+            </form>
+
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20reserve%20spots%20for%20the%20Marrakech%20Medina%20Sunset%20Free%20Tour." class="dest-wa-btn" target="_blank" rel="noopener">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Plan on WhatsApp</span>
+            </a>
+
+            <div class="dest-widget-trust">
+              <span>🛡 <strong>Licensed Guide:</strong> Official Morocco Ministry of Tourism guide (*guide agréé*).</span>
+              <span>🆓 <strong>100% Free:</strong> Pay whatever you feel the tour was worth at the end.</span>
+              <span>🚫 <strong>No Shop Traps:</strong> 0% commission shops or forced purchases.</span>
+              <span>👥 <strong>Small Groups:</strong> Comfortable group sizes for a personalized walk.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Signature Footer -->
+
+  <script is:inline>
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    function toggleFaq(el) {
+      const parent = el.closest('.dest-faq-item');
+      if (parent) {
+        parent.classList.toggle('active');
+      }
+    }
+
+    async function handleInquirySubmit(e, tourName) {
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const slot = (document.getElementById('timeSlot')?.value || '').trim();
+      const guests = (document.getElementById('groupSize')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName,
+        pickup: 'Koutoubia Mosque Esplanade (Lalla Zohra tomb)',
+        date: dates + (slot ? ' (' + slot + ')' : ''),
+        passengers: guests,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to reserve spots for the ${tourName}:
+
+` +
+        `👤 Name: ${name}
+` +
+        `📱 WhatsApp: ${phone}
+` +
+        `✉️ Email: ${email}
+` +
+        (dates ? `📅 Date: ${dates}
+` : '') +
+        (slot ? `⏰ Slot: ${slot}
+` : '') +
+        (guests ? `👥 Travelers: ${guests}
+` : '') +
+        (notes ? `📝 Notes: ${notes}
+` : '') +
+        `
+Meeting Point: Koutoubia Mosque Esplanade (Lalla Zohra tomb).
+Please confirm our reservation!`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Reserving Spot...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 0,
+          currency: 'MAD'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Free Tour Spot Reserved!</strong>Thank you, ${name}. Your reservation for <strong>${tourName}</strong> has been registered. We look forward to meeting you at the Koutoubia Mosque esplanade.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Confirm Instantly on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ RESERVATION CONFIRMED';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+</Layout>

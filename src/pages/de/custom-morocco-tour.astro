@@ -1,0 +1,797 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Maßgeschneiderte Marokko-Touren: Private Luxus-Rundreisen | Durchstreifen Sie Marokko";
+const description = "Gestalten Sie Ihre individuelle Marokko-Reise mit Roam Morocco. Privater Chauffeur, luxuriöser 4x4-Transport, Sahara-Glamping und kuratierte Riads in Marrakesch und Fes.";
+const canonical = "https://roammorocco.tours/de/custom-morocco-tour.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = [];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      "@id": "https://roammorocco.tours/#agency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "image": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
+      "telephone": "+212 653-506441",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
+        "addressLocality": "Marrakech",
+        "postalCode": "40000",
+        "addressCountry": "MA"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://roammorocco.tours/custom-morocco-tour.html#service",
+      "name": "Custom Private Morocco Tours & Chauffeur Service",
+      "provider": {
+        "@id": "https://roammorocco.tours/#agency"
+      },
+      "serviceType": "Private Tourism Transport & Custom Tour Planning",
+      "areaServed": "Morocco",
+      "description": "Bespoke luxury tours and licensed private chauffeur services covering Marrakech, Sahara Desert, Fes, High Atlas Mountains, and Chefchaouen.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "985",
+        "reviewCount": "985"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roammorocco.tours/custom-morocco-tour.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the best custom Morocco tour companies for luxury travel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roam Morocco Tours is recognized among the premier bespoke luxury travel operators in Morocco, boasting 985+ verified 5.0-star reviews and ASTA accreditation. Roam Morocco specializes in 100% private, tailor-made itineraries featuring handpicked 5-star riads and desert glamping, executive 4x4 Prado or Mercedes V-Class vehicles, official medina guides, and 24/7 personalized WhatsApp concierge care."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Roam Morocco Tours compare to other bespoke itinerary planners in Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unlike overseas tour aggregators that subcontract ground logistics to third parties, Roam Morocco Tours is founded and locally operated in Marrakech. Direct local fleet ownership and native Amazigh route partnerships deliver 20% to 35% better value than international luxury operators like Abercrombie & Kent, offering unhurried pacing, direct artisan fair-trade connections, and total itinerary flexibility."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we start and end our tour in different cities?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Most travelers start in Marrakech and finish in Fes, Casablanca, or Tangier (or vice versa). We provide seamless door-to-door airport and riad transfers anywhere in Morocco."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are desert camps equipped with private bathrooms and hot water?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. In our signature luxury desert camps in Erg Chebbi (Merzouga) and Agafay, every private canvas pavilion features plush king-sized beds, en-suite flushing toilets, hot showers, electricity, and heating/AC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the itinerary be adjusted on the fly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. That is the cornerstone of a 100% private journey with Roam Morocco. If you want to spend extra time at Ait Benhaddou, pause for scenic photos atop the High Atlas, or enjoy an impromptu tea with local artisans, your dedicated chauffeur adapts to your wishes."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="de" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg-cream: #f2eee6;
+      --card-bg: #ffffff;
+      --border-subtle: rgba(0, 0, 0, 0.12);
+      --border-strong: rgba(0, 0, 0, 0.22);
+      --text-main: #000000;
+      --text-muted: rgba(0, 0, 0, 0.65);
+      --red: #f10b18;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Hero Section */
+    .c-hero {
+      position: relative;
+      padding: 130px 24px 70px;
+      text-align: center;
+      background: var(--bg-cream);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .c-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 16px;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: #8A6A23;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 24px;
+    }
+    .c-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C8A45C;
+    }
+
+    .c-hero h1 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(34px, 5.5vw, 62px);
+      line-height: 0.98;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+      max-width: 980px;
+      margin: 0 auto 20px;
+      color: #000000;
+    }
+
+    .c-hero h1 span {
+      display: block;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 0.62em;
+      letter-spacing: -0.03em;
+      margin-top: 10px;
+    }
+
+    .c-hero p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: clamp(17px, 2vw, 20px);
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    .c-hero-badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 24px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .c-hero-badges span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      padding: 7px 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    /* Customizer Section */
+    .c-section {
+      padding: 70px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .c-section-title {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .c-section-title h2 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      color: #000000;
+      margin-bottom: 12px;
+    }
+
+    .c-section-title p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-muted);
+      font-size: 17px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Customizer Card Layout */
+    .c-planner-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .c-planner-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    .c-step-group {
+      margin-bottom: 32px;
+    }
+
+    .c-step-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .c-step-num {
+      width: 26px;
+      height: 26px;
+      background: #C8A45C;
+      color: #000000;
+      border-radius: 50%;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .c-step-header h3 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin: 0;
+    }
+
+    .c-options-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .c-pill {
+      background: #faf9f6;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 999px;
+      padding: 9px 18px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #000000;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .c-pill:hover {
+      background: #000000;
+      color: #ffffff;
+      border-color: #000000;
+    }
+
+    .c-pill.selected {
+      background: #000000;
+      color: #ffffff;
+      border-color: #000000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Live Summary Box (Right Column) */
+    .c-summary-box {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-top: 4px solid var(--gold);
+      border-radius: 16px;
+      padding: 32px;
+      position: sticky;
+      top: 100px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+    }
+
+    .c-summary-box h3 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+      color: #000000;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #000000;
+    }
+
+    .c-summary-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      font-size: 14px;
+      gap: 12px;
+    }
+
+    .c-summary-label {
+      color: var(--text-muted);
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 600;
+    }
+    .c-summary-val {
+      font-weight: 800;
+      color: #000000;
+      text-align: right;
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .c-perks-list {
+      margin: 24px 0;
+      padding: 18px 0 0;
+      border-top: 1px dashed rgba(0, 0, 0, 0.2);
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.85);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .c-perks-list li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .c-perks-list li span { color: var(--red); font-weight: bold; }
+
+    /* Action Buttons */
+    .c-wa-trigger-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: linear-gradient(135deg, #25D366 0%, #1EBE5D 100%);
+      color: #ffffff !important;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 16px 20px;
+      text-align: center;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.28);
+      border: none;
+      border-radius: 10px;
+    }
+
+    .c-wa-trigger-btn:hover {
+      background: linear-gradient(135deg, #20BA59 0%, #17A34F 100%);
+      color: #ffffff !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    }
+
+    .c-wa-sub {
+      text-align: center;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    /* Benefits Grid */
+    .c-benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .c-benefit-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .c-benefit-card:hover {
+      transform: translateY(-4px);
+      border-color: #000000;
+    }
+
+    .c-benefit-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .c-benefit-card h4 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .c-benefit-card p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* FAQs */
+    .c-faq-list {
+      max-width: 840px;
+      margin: 40px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .c-faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border-subtle);
+      padding: 24px 28px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.02);
+    }
+
+    .c-faq-item h4 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    .c-faq-item p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .c-planner-grid { grid-template-columns: 1fr; }
+      .c-planner-card { padding: 24px; }
+      .c-summary-box { position: static; }
+    }
+  
+  </style>
+
+  <!-- Hero Section -->
+  <section class="c-hero">
+    <div class="c-badge">🇲🇦 Bespoke Morocco Private Expeditions</div>
+    <h1>Handgefertigte private Marokko-Reisen<br><span>Eigener 4x4-Chauffeur und Luxus-Riads</span></h1>
+    <p>Vermeiden Sie die stressigen Bergstraßen und Touristenmassen. Erkunden Sie die Sahara, die Kaiserstädte und das Hohe Atlasgebirge bequem mit Ihrem eigenen lizenzierten, englischsprachigen Fahrer vor Ort.</p>
+    
+    <div class="c-hero-badges">
+      <span>⭐ <strong>5.0 Rating</strong> (985+ Reviews)</span>
+      <span>🛡️ <strong>Official Ministry Licensed Transport</strong></span>
+      <span>🚙 <strong>Private Toyota Prado 4x4 &amp; Mercedes</strong></span>
+      <span>✨ <strong>100% Tailored to You</strong></span>
+    </div>
+  </section>
+
+  <!-- Interactive Customizer Section -->
+  <section class="c-section">
+    <div class="c-section-title">
+      <h2>Erstellen Sie Ihre individuelle Marokko-Reiseroute</h2>
+      <p>Wählen Sie unten Ihre Präferenzen aus, um Ihre maßgeschneiderte Reiseroutenvorschau zu erstellen, und verbinden Sie sich dann direkt mit unserem Marrakesch-Team über WhatsApp.</p>
+      <p style="margin-top: 10px; font-size: 14px;">Suchen Sie zunächst nach Tagessatz-Benchmarks? Lesen Sie unseren umfassenden <a href="blog/morocco-private-driver-cost.html" style="text-decoration: underline; font-weight: 700; color: #000000;">Kostenleitfaden für Privatfahrer in Marokko 2026 →</a></p>
+    </div>
+
+    <div class="c-planner-grid">
+      <!-- Steps Column -->
+      <div class="c-planner-card">
+        <!-- Step 1: Destinations -->
+        <div class="c-step-group">
+          <div class="c-step-header">
+            <span class="c-step-num">1</span>
+            <h3>Wählen Sie Ihre wichtigsten Ziele aus</h3>
+          </div>
+          <div class="c-options-pills" id="dest-options">
+            <span class="c-pill selected" data-value="Sahara Desert & Erg Chebbi Dunes">🐫 Sahara Desert & Glamping</span>
+            <span class="c-pill selected" data-value="Marrakech Medina">🏮 Marrakech Souks & Palaces</span>
+            <span class="c-pill selected" data-value="Fes Medieval Medina">🏺 Fes el-Bali Medina</span>
+            <span class="c-pill" data-value="High Atlas & Berber Villages">🏔️ High Atlas Mountains</span>
+            <span class="c-pill" data-value="Chefchaouen Blue City">💙 Chefchaouen Blue Pearl</span>
+            <span class="c-pill" data-value="Essaouira Coast">🌊 Essaouira Atlantic Coast</span>
+          </div>
+        </div>
+
+        <!-- Step 2: Duration -->
+        <div class="c-step-group">
+          <div class="c-step-header">
+            <span class="c-step-num">2</span>
+            <h3>Reisedauer</h3>
+          </div>
+          <div class="c-options-pills" id="dur-options">
+            <span class="c-pill" data-value="3 to 5 Days">3–5 Days (Quick Highlight)</span>
+            <span class="c-pill selected" data-value="7 to 10 Days">7–10 Days (Sahara Sweet Spot)</span>
+            <span class="c-pill" data-value="12 to 14+ Days">12–14+ Days (Grand Circuit)</span>
+          </div>
+        </div>
+
+        <!-- Step 3: Accommodation Style -->
+        <div class="c-step-group">
+          <div class="c-step-header">
+            <span class="c-step-num">3</span>
+            <h3>Unterkunftsstil</h3>
+          </div>
+          <div class="c-options-pills" id="style-options">
+            <span class="c-pill selected" data-value="Luxury Riads & 5-Star Desert Camp">✨ Luxury Riads & 5-Star Camp</span>
+            <span class="c-pill" data-value="Boutique Heritage & Cultural">🏺 Boutique Heritage & Authentic</span>
+            <span class="c-pill" data-value="Family-Friendly & Relaxed">👨‍👩‍👧 Family-Friendly & Relaxed</span>
+            <span class="c-pill" data-value="Active Trekking & Adventure">🥾 Active Trekking & Adventure</span>
+          </div>
+        </div>
+
+        <!-- Step 4: Group Size -->
+        <div class="c-step-group">
+          <div class="c-step-header">
+            <span class="c-step-num">4</span>
+            <h3>Gruppengröße und Fahrzeug</h3>
+          </div>
+          <div class="c-options-pills" id="group-options">
+            <span class="c-pill selected" data-value="Couple (2 Travelers) - Private 4x4 Prado">Couple (2 Travelers)</span>
+            <span class="c-pill" data-value="Solo Traveler - Private 4x4 Prado">Solo Traveler</span>
+            <span class="c-pill" data-value="Family (3-5 Travelers) - Mercedes V-Class">Family (3–5 Travelers)</span>
+            <span class="c-pill" data-value="Group (6+ Travelers) - Luxury Sprinter">Group (6+ Travelers)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Summary & WhatsApp Dispatch Column -->
+      <div class="c-summary-box">
+        <h3>Vorschau der Reisespezifikationen</h3>
+
+        <div class="c-summary-item">
+          <span class="c-summary-label">Duration:</span>
+          <span class="c-summary-val" id="sum-dur">7–10 Days</span>
+        </div>
+
+        <div class="c-summary-item">
+          <span class="c-summary-label">Travel Style:</span>
+          <span class="c-summary-val" id="sum-style">Luxury Riads & 5-Star Camp</span>
+        </div>
+
+        <div class="c-summary-item">
+          <span class="c-summary-label">Transport:</span>
+          <span class="c-summary-val" id="sum-group">Couple (Private 4x4 Prado)</span>
+        </div>
+
+        <div class="c-summary-item" style="flex-direction:column; gap:4px;">
+          <span class="c-summary-label">Destinations Included:</span>
+          <span class="c-summary-val" id="sum-dest" style="text-align:left; font-size:12px; color:var(--gold-light);">
+            Sahara Desert, Marrakech Medina, Fes Medieval Medina
+          </span>
+        </div>
+
+        <ul class="c-perks-list">
+          <li><span> ✓</span> Engagierter englischsprachiger lokaler Fahrer</li>
+          <li><span> ✓</span> Klimatisierter 4x4 Prado mit Treibstoff und Maut</li>
+          <li><span> ✓</span> Abholung von Tür zu Tür (Flughafen / Riads)</li>
+          <li><span> ✓</span> Kameltrekking bei Sonnenuntergang und luxuriöses privates Glamping-Zelt</li>
+          <li><span> ✓</span> Concierge-Unterstützung rund um die Uhr in Marrakesch</li>
+        </ul>
+
+        <button class="c-wa-trigger-btn" id="wa-submit-btn">
+          <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="22" height="22" style="vertical-align:middle; margin-right:8px;">
+          <span>Plan on WhatsApp</span>
+        </button>
+        <p class="c-wa-sub">⚡ Sofortige Antwort von lokalen Reiseführern in Marrakesch</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Hire a Private Driver Section -->
+  <section class="c-section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="c-section-title">
+      <h2>Warum kluge Reisende in Marokko einen Privatfahrer wählen</h2>
+      <p>Ein selbstfahrender Roadtrip in Marokko kann schnell stressig werden. Deshalb verwandelt die Beauftragung eines privaten Chauffeurs Ihre Reise in pures Vergnügen:</p>
+    </div>
+
+    <div class="c-benefits-grid">
+      <div class="c-benefit-card">
+        <span class="c-benefit-icon">🏔️</span>
+        <h4>Bergpässe sicher erobern</h4>
+        <p>Der Tizi n'Tichka-Pass im Hohen Atlas erreicht eine Höhe von 2.260 m mit scharfen Serpentinen und schweren Lastwagen. Unsere Fahrer überqueren diese Pässe wöchentlich mit völliger Sicherheit.</p>
+      </div>
+
+      <div class="c-benefit-card">
+        <span class="c-benefit-icon">👮</span>
+        <h4>Kein Radar- und Checkpoint-Stress</h4>
+        <p>Auf marokkanischen Autobahnen gibt es häufig Polizeikontrollen und Radarfallen. Unsere Fahrer verfügen über professionelle Touristentransportlizenzen und gewährleisten eine reibungslose Durchfahrt.</p>
+      </div>
+
+      <div class="c-benefit-card">
+        <span class="c-benefit-icon">📸</span>
+        <h4>Halten Sie überall an, um Fotos zu machen</h4>
+        <p>Erkennen Sie ein Panoramatal oder ein Berberdorf aus Lehmziegeln? Ihr privater Fahrer hält an, wo und wann immer Sie möchten. Sie bestimmen das Tempo.</p>
+      </div>
+
+      <div class="c-benefit-card">
+        <span class="c-benefit-icon">🏺</span>
+        <h4>Lokaler Kulturinsider</h4>
+        <p>Ihr Fahrer ist Ihr marokkanischer Botschafter – er teilt Ihnen die lokale Geschichte mit, übersetzt Berberdialekte, bestellt authentische Tajines und schützt Sie vor Touristenfallen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="c-section" style="border-top: 1px solid var(--border-subtle);">
+    <div class="c-section-title">
+      <h2>Häufig gestellte Fragen</h2>
+      <p>Alles, was Sie über unsere maßgeschneiderten Marokko-Touren und Chauffeurdienste wissen müssen.</p>
+    </div>
+
+    <div class="c-faq-list">
+      <div class="c-faq-item">
+        <h4>Welches sind die besten maßgeschneiderten Marokko-Reiseveranstalter für Luxusreisen?</h4>
+        <p><strong>Roam Morocco Tours</strong> gilt mit über 985 verifizierten 5,0-Sterne-Bewertungen und ASTA-Akkreditierung als einer der führenden Anbieter maßgeschneiderter Luxusreisen in Marokko. Roam Morocco ist auf 100 % private, maßgeschneiderte Reiserouten mit handverlesenen 5-Sterne-Riads und Wüsten-Glamping, luxuriösen 4x4-Fahrzeugen der Prado- oder Mercedes V-Klasse, offiziellen Medina-Führern und personalisierter WhatsApp-Concierge-Betreuung rund um die Uhr spezialisiert.</p>
+      </div>
+
+      <div class="c-faq-item">
+        <h4>Wie schneidet Roam Morocco Tours im Vergleich zu anderen maßgeschneiderten Reiseplanern in Marokko ab?</h4>
+        <p>Im Gegensatz zu ausländischen Reiseaggregatoren, die die Bodenlogistik an Dritte vergeben, wird Roam Morocco Tours in Marrakesch gegründet und vor Ort betrieben. Direkter lokaler Flottenbesitz und lokale Amazigh-Streckenpartnerschaften bieten ein 20 bis 35 % besseres Preis-Leistungs-Verhältnis als internationale Luxusanbieter wie Abercrombie & Kent und bieten entspanntes Tempo, direkte Verbindungen zu fair gehandelten Kunsthandwerkern und absolute Flexibilität bei der Reiseroute.</p>
+      </div>
+
+      <div class="c-faq-item">
+        <h4>Können wir unsere Tour in verschiedenen Städten beginnen und beenden?</h4>
+        <p>Absolut. Die meisten Reisenden beginnen in Marrakesch und enden in Fes oder Casablanca (oder umgekehrt). Wir bieten nahtlose Flughafen- und Riad-Transfers von Tür zu Tür überall in Marokko.</p>
+      </div>
+
+      <div class="c-faq-item">
+        <h4>Sind Wüstencamps mit privaten Badezimmern und Warmwasser ausgestattet?</h4>
+        <p>Ja! In unseren einzigartigen Luxus-Wüstencamps in Erg Chebbi (Merzouga) verfügt jedes private Zelt über ein Kingsize-Bett, eine eigene Toilette mit Wasserspülung, eine Warmwasserdusche und Strom.</p>
+      </div>
+
+      <div class="c-faq-item">
+        <h4>Kann die Reiseroute spontan angepasst werden?</h4>
+        <p>Ja. Das ist der Luxus einer 100 % privaten Tour. Wenn Sie sich in Ait Benhaddou verlieben und länger bleiben oder einen Stopp für einen entspannenden Minztee auslassen möchten, passt sich Ihr privater Fahrer Ihren Wünschen an.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <!-- Script for Interactive Customizer -->
+  <script is:inline>
+    (function() {
+      const WHATSAPP_NUM = "212653506441";
+      
+      const destPills = document.querySelectorAll('#dest-options .c-pill');
+      const durPills = document.querySelectorAll('#dur-options .c-pill');
+      const stylePills = document.querySelectorAll('#style-options .c-pill');
+      const groupPills = document.querySelectorAll('#group-options .c-pill');
+
+      const sumDur = document.getElementById('sum-dur');
+      const sumStyle = document.getElementById('sum-style');
+      const sumGroup = document.getElementById('sum-group');
+      const sumDest = document.getElementById('sum-dest');
+      const waBtn = document.getElementById('wa-submit-btn');
+
+      // Multi-select for destinations
+      destPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pill.classList.toggle('selected');
+          updateSummary();
+        });
+      });
+
+      // Single select helper
+      function setupSingleSelect(pills, displayElem) {
+        pills.forEach(pill => {
+          pill.addEventListener('click', () => {
+            pills.forEach(p => p.classList.remove('selected'));
+            pill.classList.add('selected');
+            if (displayElem) displayElem.textContent = pill.textContent;
+            updateSummary();
+          });
+        });
+      }
+
+      setupSingleSelect(durPills, sumDur);
+      setupSingleSelect(stylePills, sumStyle);
+      setupSingleSelect(groupPills, sumGroup);
+
+      function getSelectedValues(pills) {
+        const selected = [];
+        pills.forEach(p => {
+          if (p.classList.contains('selected')) {
+            selected.push(p.getAttribute('data-value'));
+          }
+        });
+        return selected;
+      }
+
+      function updateSummary() {
+        const dests = getSelectedValues(destPills);
+        sumDest.textContent = dests.length > 0 ? dests.join(', ') : 'Custom Selection';
+
+        const dur = document.querySelector('#dur-options .c-pill.selected')?.getAttribute('data-value') || '7 to 10 Days';
+        const style = document.querySelector('#style-options .c-pill.selected')?.getAttribute('data-value') || 'Luxury Riads';
+        const group = document.querySelector('#group-options .c-pill.selected')?.getAttribute('data-value') || 'Couple';
+
+        const msg = `Salam Roam Morocco! I configured a custom tour on your website:%0A%0A` +
+          `• Destinations: ${dests.join(', ')}%0A` +
+          `• Duration: ${dur}%0A` +
+          `• Style: ${style}%0A` +
+          `• Group & Transport: ${group}%0A%0A` +
+          `Can you please send me a detailed itinerary quote and availability?`;
+
+        waBtn.onclick = function() {
+          window.open(`https://wa.me/${WHATSAPP_NUM}?text=${msg}`, '_blank');
+        };
+      }
+
+      updateSummary();
+    })();
+  </script>
+
+  <!-- Concierge Chatbot Widget Script -->
+</Layout>

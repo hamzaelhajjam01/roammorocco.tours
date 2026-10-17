@@ -1,0 +1,529 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Tours privados por el desierto del Sahara en Marruecos: campamentos de lujo en Erg Chebbi";
+const description = "Tours privados personalizados por el desierto del Sahara desde Marrakech o Fez a Erg Chebbi. Disfrute de campamentos de tiendas de campaña de lujo, paseos en camello al atardecer y transporte privado en 4x4.";
+const canonical = "https://roammorocco.tours/es/destination-sahara-desert.html";
+const ogImage = "https://roammorocco.tours/img/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "Sahara Desert & Erg Chebbi Dunes",
+      "description": "Morocco's iconic sea of golden sand dunes in Merzouga, offering luxury desert glamping, Berber stargazing, and private 4x4 overland expeditions.",
+      "url": "https://roammorocco.tours/destination-sahara-desert.html",
+      "touristType": [
+        "Adventure Seekers",
+        "Luxury Travelers",
+        "Couples",
+        "Photographers"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.0988,
+        "longitude": -4.0113
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "3-Day Private Sahara Desert Expedition (Marrakech to Merzouga & Fes)",
+      "description": "A fully tailored private desert circuit crossing the High Atlas mountains, Dades Valley, Todra Gorge, and two nights of Saharan luxury.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      },
+      "itinerary": [
+        {
+          "@type": "City",
+          "name": "Marrakech"
+        },
+        {
+          "@type": "LandmarksOrHistoricalBuildings",
+          "name": "A\u00eft Benhaddou"
+        },
+        {
+          "@type": "City",
+          "name": "Dades Valley"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Erg Chebbi Dunes"
+        },
+        {
+          "@type": "City",
+          "name": "Fes"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to drive from Marrakech to Erg Chebbi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The drive from Marrakech to Erg Chebbi (Merzouga) takes approximately 9 to 10 hours of driving time. Because of this, our private tours break the journey with an overnight stop in the stunning Dades Valley or Skoura Oasis, ensuring an unhurried, comfortable voyage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a shared bus tour and a private Sahara tour?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shared bus tours pack 15 to 20 travelers into cramped minibuses with rigid schedules, forced tourist shop stops, and basic tents. Roam Morocco provides a dedicated air-conditioned 4x4 or VIP minivan, personal English-speaking Berber chauffeur, luxury private tents with en-suite hot showers, and flexible photo stops."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we finish the Sahara tour in Fes instead of returning to Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The Marrakech to Fes desert circuit is our most popular route. You travel from Marrakech through the desert to Erg Chebbi, and on Day 3 or Day 4 continue north through the Ziz Valley, Midelt, and the Middle Atlas cedar forests to conclude directly at your riad in Fes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are luxury desert camps like in Erg Chebbi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our partner luxury camps feature spacious canvas pavilions with plush King-sized beds, authentic Moroccan rugs, private flushing toilets, heated water showers, electricity, and fine dining multi-course dinners served under the Saharan stars."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/es/index.html">Home</a> &nbsp;/&nbsp; <a href="/es/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>Sahara Desert</span>
+        </div>
+        <span class="dest-badge-tag">SIGNATURE PRIVATE EXPEDITION</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/hero-desert.jpg" alt="Erg Chebbi Merzouga Sahara Desert Dunes" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Tours privados por el desierto del Sahara: expediciones de lujo a Erg Chebbi</h1>
+          <p class="dest-hero-subtitle">Cruce los picos del Alto Atlas, atraviese los cañones de la Kasbah y duerma bajo un dosel de miles de millones de estrellas en nuestros campamentos VIP en el desierto cuidadosamente seleccionados.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> 3 or 4 Days (Customizable)</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> 100% Private Chauffeur &amp; 4x4</span>
+        <span class="dest-metric-item">📍 <strong>Departures:</strong> Marrakech, Fes, or Casablanca</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- GEO & AEO Destination Fast Facts (BLUF) -->
+      <aside class="ai-quick-summary-card" aria-label="Sahara Desert Travel Fast Facts">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ SAHARA EXPEDITION AT A GLANCE (QUICK SUMMARY)</span>
+          <span class="ai-summary-badge">Erg Chebbi Glamping</span>
+        </div>
+        <p class="ai-summary-text">Un <strong>tour privado por el desierto del Sahara</strong> con Roam Marruecos es una expedición por tierra personalizada de 3 o 4 días que conecta Marrakech o Fez con las dunas doradas de 150 metros de <strong>Erg Chebbi (Merzouga)</strong>. El viaje cruza el Alto Atlas a través de Tizi n'Tichka (2260 m), el Ksar Ait Benhaddou de la UNESCO y el desfiladero del Dades, culminando con un glamping VIP de lujo en el desierto con baño privado, camas tamaño king, duchas con agua caliente, paseos en camello al atardecer y música Gnawa en una fogata. Los circuitos privados con todo incluido incluyen un chofer bereber de habla inglesa, un Toyota Prado 4x4 privado o una minivan Mercedes, combustible, pernoctaciones en kasbah boutique y desayunos/cenas.</p>
+      </aside>
+
+      <!-- 2-Column Core Layout -->
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Tour Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Aspectos destacados del viaje y visitas obligadas</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>Las Grandes Dunas de Erg Chebbi:</strong> Escale imponentes dunas de arena dorada de 150 metros para disfrutar de inolvidables amaneceres y atardeceres saharianos.</li>
+              <li><strong>Glamping de lujo privado:</strong> Amplios pabellones de lona con lujosas camas King, baños privados con cisterna, duchas con agua caliente y electricidad.</li>
+              <li><strong>Excursiones en camello al atardecer y al amanecer:</strong> Caravanas de camellos suaves y sin prisas dirigidas por nómadas nativos amazigh a través de prístinas crestas de arena.</li>
+              <li><strong>UNESCO Ksar Aït Benhaddou:</strong> Exploración guiada privada de la antigua fortaleza de tierra vista en <em>Gladiator</em> y <em>Juego de Tronos</em>.</li>
+              <li><strong>Valle del Dades y cañones del Todra:</strong> Maravíllate con las paredes escarpadas de piedra caliza de 300 metros y los exuberantes oasis de palmeras datileras.</li>
+              <li><strong>Fogata tradicional bereber:</strong> tambores saharianos en vivo, melodías Gnawa y auténticos banquetes de tagine bajo la Vía Láctea.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>La verdadera experiencia del Sahara: sin prisas, privada y auténtica</h2>
+            <p>El desierto del Sahara no es sólo un destino; es un despertar de los sentidos. Vastas, silenciosas y fascinantemente antiguas, las dunas de Erg Chebbi en las afueras de Merzouga representan el Marruecos más atemporal. Sin embargo, la ruta terrestre de 500 kilómetros desde Marrakech o Fez puede volverse agotadora rápidamente si se intenta en un autobús rígido y lleno de gente.</p>
+            <p>Con Roam Marruecos, tu aventura en el desierto es <strong>100% privada</strong>. Viajará en un vehículo ejecutivo 4x4 con aire acondicionado y un dedicado chófer bereber nativo que habla inglés con fluidez y cuya profunda hospitalidad convierte el viaje en sí en un momento destacado. Usted decide cuándo hacer una pausa para tomar fotografías panorámicas a lo largo del paso de Tizi n'Tichka, dónde detenerse para tomar un té de menta fresca y cuánto tiempo saborear el almuerzo en el valle del Draa.</p>
+            
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"En el desierto, el silencio es tan inmenso que parece físico. Sentarse en la cima de Erg Chebbi mientras el sol se esconde bajo el Sahara es uno de los mejores recuerdos de viaje de la tierra".</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO FIELD DISPATCH</span>
+            </div>
+            
+            <p>Ya sea que elija nuestro clásico <strong>circuito de 3 días de Marrakech a Merzouga</strong> o nuestro gran <strong>cruce de Marrakech a Fez</strong>, evitará las trampas para turistas y experimentará el auténtico pulso del sur de Marruecos.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Itinerario de ruta día a día</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">CIRCUITO DE MUESTRA DE 3 DÍAS</span></h3>
+
+            <!-- Day 1 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 01 // OVER THE HIGH ATLAS TO DADES VALLEY</span>
+              <h4 class="dest-day-title">Marrakech → Paso Tizi n'Tichka → Aït Benhaddou → Gargantas del Dades</h4>
+              <p class="dest-day-desc">Su conductor privado le recibirá en su riad de Marrakech a las 08:00 a.m. Subimos por los espectaculares y sinuosos caminos de las montañas del Alto Atlas a través del paso de Tizi n'Tichka (2260 m), y nos detenemos para tomar espectaculares fotografías de la montaña. Desciende al Ksar Aït Benhaddou, declarado Patrimonio de la Humanidad por la UNESCO, para realizar un auténtico recorrido a pie. Continuamos por Ouarzazate (el Hollywood de Marruecos) y el fragante Valle de las Rosas antes de instalarnos en un hotel boutique Kasbah en el Valle del Dades para cenar.</p>
+              <div class="dest-day-tags">
+                <span>Distance: ~310 km</span>
+                <span>Drive Time: ~6 hrs scenic</span>
+                <span>Overnight: Luxury Kasbah Hotel</span>
+                <span>Meals: Dinner Included</span>
+              </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 02 // INTO THE GOLDEN DUNES</span>
+              <h4 class="dest-day-title">Valle del Dades → Gargantas del Todra → Oasis de Tinghir → Dunas de Erg Chebbi</h4>
+              <p class="dest-day-desc">Después del desayuno con vistas a las escarpadas formaciones rocosas del Dades, nos dirigimos hacia la imponente garganta del Todra. Camine por el cañón de 300 metros donde los escaladores ponen a prueba sus habilidades junto a los pastores locales. Después de un almuerzo tranquilo en Tinghir, navegamos hacia el sur pasando por los talleres de fósiles de Erfoud hacia las arenas de Merzouga. Monte su dromedario en camello para una caminata al atardecer sobre dunas doradas hasta su campamento VIP de lujo en el desierto. Disfrute de una cena marroquí a la luz de las velas, música bereber en vivo alrededor de la fogata y contemplación de las estrellas.</p>
+              <div class="dest-day-tags">
+                <span>Distance: ~250 km</span>
+                <span>Drive Time: ~4.5 hrs</span>
+                <span>Overnight: Private Luxury Tent</span>
+                <span>Meals: Breakfast &amp; Dinner</span>
+              </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 03 // SAHARAN SUNRISE &amp; JOURNEY FORWARD</span>
+              <h4 class="dest-day-title">Erg Chebbi → Valle del Draa → Marrakech (O Valle del Ziz → Fez)</h4>
+              <p class="dest-day-desc">Levántese temprano para disfrutar de un impresionante amanecer sobre la tranquila cordillera del Sahara. Después de un abundante desayuno de campamento y una ducha caliente, su 4x4 lo llevará de regreso desde las dunas. Puede optar por regresar a Marrakech a través del valle del Draa, con un millón de palmeras, O continuar hacia el norte, hacia Fez, a través del majestuoso desfiladero de Ziz, los bosques de cedros del Medio Atlas (hogar de macacos salvajes de Berbería) y el pueblo de esquí alpino de Ifrane, llegando por la tarde a su riad.</p>
+              <div class="dest-day-tags">
+                <span>Flexible Ending: Marrakech or Fes</span>
+                <span>Drop-off: Direct at Riad Door</span>
+                <span>Meals: Breakfast</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Morocco Route Map Illustration -->
+          <div class="dest-map-box">
+            <h3 class="dest-map-title">🗺️ El viaje en el mapa</h3>
+            <p style="font-size:14px;color:rgba(0,0,0,0.7);margin-bottom:16px;">Este circuito atraviesa directamente la espectacular columna geográfica de Marruecos: desde los jardines imperiales de Marrakech, pasando por los picos nevados del Atlas hasta las dunas del Sahara.</p>
+            <img src="/img/morocco-map-new.png" alt="Morocco Desert Tour Route Map" class="dest-map-img">
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">Qué está incluido en su tour privado</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUIDO EN TU PAQUETE</h4>
+                <ul class="dest-inc-list">
+                  <li>Minivan ejecutiva exclusiva 4x4 o Mercedes VIP con aire acondicionado</li>
+                  <li>Chofer bereber profesional de habla inglesa.</li>
+                  <li>Todo el combustible del vehículo, peajes de autopistas y tarifas de estacionamiento.</li>
+                  <li>1 Noche en hotel boutique Kasbah en Dades (habitación privada)</li>
+                  <li>1 Noche en un campamento de lujo en el desierto del Sahara (tienda de campaña privada con baño)</li>
+                  <li>Paseo privado en camello para ver el atardecer y el amanecer sobre Erg Chebbi</li>
+                  <li>Desayunos y cenas tradicionales de varios platos.</li>
+                  <li>Guía local certificado en UNESCO Aït Benhaddou</li>
+                  <li>Recogida y regreso puerta a puerta en sus riads o aeropuerto</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NO INCLUIDO</h4>
+                <ul class="dest-exc-list">
+                  <li>Billetes de avión internacionales hacia/desde Marruecos</li>
+                  <li>Almuerzos de mediodía y bebidas personales.</li>
+                  <li>Propinas discrecionales para choferes y guías locales.</li>
+                  <li>Seguro médico y de viaje personal</li>
+                  <li>Alquiler opcional de quads o buggy en las dunas.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Proof / Reviews -->
+          <div style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:32px;margin-bottom:40px;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+              <span style="background:linear-gradient(135deg, #25D366 0%, #1EBE5D 100%);color:#fff;font-weight:800;padding:4px 10px;font-size:12px;border-radius:999px;font-family:'Inter',sans-serif;">5.0 ★</span>
+              <strong style="font-family:'Inter',sans-serif;font-size:14px;text-transform:uppercase;letter-spacing:0.04em;color:#18181B;">Verified Guest Experience</strong>
+            </div>
+            <p style="font-style:italic;font-size:16px;line-height:1.7;color:#333;margin:0 0 12px;">"Nuestro recorrido privado por el desierto con Roam Marruecos superó todas las expectativas. Nuestro conductor fue atento, conocedor y un hábil conductor a través del Atlas. El campamento de lujo en Merzouga parecía sacado de un sueño: agua caliente en medio de las dunas y una hospitalidad increíble".</p>
+            <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— MARK &amp; EMILY D., SAN FRANCISCO (USA)</span>
+          </div>
+
+          <!-- FAQ Accordion (Targets People Also Ask) -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Preguntas frecuentes: Tours por el desierto del Sahara</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Cuánto tiempo se tarda en conducir desde Marrakech a Erg Chebbi?</h4>
+              <div class="dest-faq-a">
+                <p>La distancia total de conducción es de aproximadamente 560 km (alrededor de 9 a 10 horas de viaje). En lugar de realizar la agotadora caminata en un día, nuestros tours privados siempre dividen la ruta con una parada nocturna en el impresionante valle del Dades o en el oasis de Skoura, lo que convierte el viaje en una agradable aventura turística.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Podemos terminar nuestro recorrido en Fez en lugar de regresar a Marrakech?</h4>
+              <div class="dest-faq-a">
+                <p>¡Sí, absolutamente! El circuito por el desierto de Marrakech a Fez (o viceversa) es una de nuestras rutas más recomendadas. Le permite experimentar las Kasbahs del sur, el Sahara, las montañas del Medio Atlas y llegar a la capital espiritual de Fez sin retroceder.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Qué instalaciones hay dentro de las lujosas tiendas de campaña en el desierto?</h4>
+              <div class="dest-faq-a">
+                <p>Nuestros lujosos campamentos en el desierto brindan comodidad de primer nivel: verdaderas camas tamaño king o dos camas individuales con ropa de cama fina, baños privados con inodoros occidentales, duchas a presión con agua caliente, muebles hechos a mano e iluminación eléctrica alimentada por energía solar para cargar cámaras y teléfonos.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Cuál es la mejor época del año para visitar Erg Chebbi?</h4>
+              <div class="dest-faq-a">
+                <p>Los meses ideales son de octubre a mayo, cuando las temperaturas diurnas son agradables (20 °C a 28 °C) y las noches frescas. A mediados del verano (julio y agosto) se puede observar un calor extremo que supera los 45 °C, por lo que recomendamos actividades en el desierto temprano en la mañana y al final de la tarde durante los meses de verano.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="3-Day Merzouga Luxury Sahara Expedition"
+               data-price-1-4="390"
+               data-price-5-7="520"
+               data-price-8-12="720"
+               data-tour-sub="Dedicated 4x4 Prado &amp; driver · Luxury desert camp · Door-to-door">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Expedición de lujo de 3 días al Sahara en Merzouga</h3>
+            <p class="dest-prelocked-sub">4x4 Prado dedicado y conductor · Campamento de lujo en el desierto · Puerta a puerta</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">4x4 Prado</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCitySahara">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCitySahara">
+                  <option value="Marrakech (Hotel or Riad)" data-surcharge="0" selected>Marrakech (Hotel or Riad)</option>
+                  <option value="Fes (Hotel or Riad)" data-surcharge="0">Fes (Hotel or Riad)</option>
+                  <option value="Casablanca (Airport or Hotel)" data-surcharge="120">Casablanca (Airport or Hotel) (+120€)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateSahara">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateSahara">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">390€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Incluye chofer exclusivo, combustible, tienda de campaña de lona de lujo, cenas y paseo en camello.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 390€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const guests = (document.getElementById('groupSize')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName,
+        pickup: tourName,
+        date: dates,
+        passengers: guests,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about the ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (dates ? `📅 Travel Dates: ${dates}\n` : '') +
+        (guests ? `👥 Group Size: ${guests}\n` : '') +
+        (notes ? `📝 Special Requests: ${notes}\n` : '') +
+        `\nCan you please confirm availability and send a detailed itinerary proposal?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our Marrakech team. We will review riad and route availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">3-Day Merzouga Luxury Sahara</div>
+      <div class="smt-price">From <span class="smt-price-num">390€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%203-Day%20Merzouga%20Luxury%20Sahara%20Expedition." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

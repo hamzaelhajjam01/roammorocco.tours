@@ -1,0 +1,738 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Esperienze | Vagare per il Marocco: campi ed escursioni di lusso nel deserto";
+const description = "Scopri esperienze private personalizzate in Marocco: campi di lusso nel deserto del Sahara, escursioni a dorso di cammello al tramonto, escursioni nei villaggi berberi dell'Alto Atlante e fughe sulla laguna costiera.";
+const canonical = "https://roammorocco.tours/it/experiences.html";
+const ogImage = "https://roammorocco.tours/img/pol-tent.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = [];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Custom Morocco Tour Experiences",
+  "url": "https://roammorocco.tours/experiences.html",
+  "itemListElement": [
+    {
+      "@type": "TouristTrip",
+      "name": "3-Day Premium Sahara Explorer",
+      "description": "Desert expedition from Marrakech to Erg Chebbi luxury camp."
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "3-Day Heritage & Cinema Kasbah Tour",
+      "description": "Cultural journey through Ait Benhaddou, Ouarzazate, and Todra Gorge."
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "1-Day Active High Atlas Hike",
+      "description": "Trek through Imlil valley to Toubkal base with traditional Berber lunch."
+    }
+  ]
+};
+---
+<Layout lang="it" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root{
+      --white:#fff;--black:#000;--soft:#f4f4f4;--muted:#d9d9d9;--red:#f10b18;
+    }
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f2eee6;
+      color: #000000;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* Announcement Bar */
+    .announcement-bar {
+      background: #f8f8f8;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      padding: 8px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .announcement-track {
+      display: flex;
+      width: max-content;
+      animation: announcementScroll 36s linear infinite;
+    }
+    .announcement-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #333;
+      padding-right: 20px;
+    }
+    .announcement-content strong { font-weight: 800; color: #000; }
+    @keyframes announcementScroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+    /* ── HEADER NAVIGATION — DYNAMIC MORPH ── */
+    .top{
+      position:fixed; z-index:200; display:flex; align-items:center; pointer-events:none; transition: top .48s cubic-bezier(.16,1,.3,1), bottom .48s cubic-bezier(.16,1,.3,1), left .48s cubic-bezier(.16,1,.3,1), right .48s cubic-bezier(.16,1,.3,1), transform .48s cubic-bezier(.16,1,.3,1), opacity .35s ease, gap .45s ease;
+    }
+    .top.at-top{ top:56px; bottom:auto; left:16px; right:16px; transform:translateY(0); justify-content:space-between; width:auto; }
+    .top.at-top .navbox{ pointer-events:auto; background:rgba(255,255,255,0.78); backdrop-filter:blur(30px) saturate(1.8); -webkit-backdrop-filter:blur(30px) saturate(1.8); border:1px solid rgba(255,255,255,0.9); box-shadow:0 10px 32px rgba(0,0,0,0.05); border-radius:9999px; display:flex; align-items:center; color:#000; transition:all .45s cubic-bezier(.16,1,.3,1); }
+    .top.at-top .navbox{ gap:22px; padding:10px 24px 10px 20px; min-height:52px; }
+    .top .wordmark img{ height:40px; width:auto; display:block; transition:opacity .3s ease; }
+    .top.at-top .burger-btn{color:#000}
+    .top.at-top nav.desktop-nav{display:flex;gap:20px}
+    .top.at-top nav.desktop-nav a{ font-size:13px; font-weight:700; letter-spacing:-.2px; color:#000; padding:6px 12px; border-radius:9999px; background:transparent; border:none; transition:all .25s ease; }
+    .top.at-top nav.desktop-nav a:hover, .top.at-top nav.desktop-nav a.active{ background:rgba(0,0,0,0.06); color:#000; }
+
+    .top.at-bottom{ top:auto; bottom:24px; left:50%; right:auto; transform:translateX(-50%); justify-content:center; gap:10px; width:max-content; }
+    .top.at-bottom .navbox{ pointer-events:auto; background:rgba(18,18,18,0.92); backdrop-filter:blur(30px) saturate(1.8); -webkit-backdrop-filter:blur(30px) saturate(1.8); border:1px solid rgba(255,255,255,0.16); box-shadow:0 16px 48px rgba(0,0,0,0.32); border-radius:9999px; display:flex; align-items:center; color:#fff; transition:all .45s cubic-bezier(.16,1,.3,1); }
+    .top.at-bottom .navbox{ gap:14px; padding:8px 10px 8px 18px; min-height:52px; }
+    .top.at-bottom .burger-btn{color:#fff}
+    .top.at-bottom nav.desktop-nav{display:flex;gap:4px}
+    .top.at-bottom nav.desktop-nav a{ font-size:12px; font-weight:700; letter-spacing:.01em; color:rgba(255,255,255,0.85); padding:8px 14px; border-radius:9999px; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.08); transition:all .25s ease; }
+    .top.at-bottom nav.desktop-nav a:hover, .top.at-bottom nav.desktop-nav a.active{ background:rgba(255,255,255,0.22); color:#fff; transform:translateY(-1px); }
+
+    .burger-btn{ display:none!important; background:transparent!important; border:none!important; padding:6px!important; cursor:pointer!important; align-items:center!important; justify-content:center!important; border-radius:10px!important; transition:all .25s ease!important; }
+    @media (max-width:900px){
+      .burger-btn{display:inline-flex!important}
+      .top.at-top .burger-btn{ color:#000!important; background:rgba(0,0,0,0.06)!important; border:1px solid rgba(0,0,0,0.1)!important; }
+      .top.at-top .burger-btn svg{ stroke:#000!important; }
+      .top.at-bottom .burger-btn{ color:#fff!important; background:rgba(255,255,255,0.12)!important; border:1px solid rgba(255,255,255,0.18)!important; }
+      .top.at-bottom .burger-btn svg{ stroke:#fff!important; }
+    }
+    .dot{width:7px;height:7px;background:#C8A45C!important;border-radius:50%!important;display:inline-block;box-shadow:0 0 8px rgba(200,164,92,0.8),0 0 14px rgba(200,164,92,0.4)!important;animation:blink-gold 1.5s infinite}
+    @keyframes blink-gold{50%{opacity:.28;transform:scale(.7);box-shadow:0 0 4px rgba(200,164,92,0.4);}}
+
+    /* Back To Top Button */
+    .back-top-btn{ pointer-events:auto; width:52px; height:52px; border-radius:50%!important; background:rgba(18,18,18,0.92); backdrop-filter:blur(30px) saturate(1.8); -webkit-backdrop-filter:blur(30px) saturate(1.8); border:1px solid rgba(255,255,255,0.16); box-shadow:0 12px 36px rgba(0,0,0,0.25); color:#fff; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; transition:all .3s cubic-bezier(.16,1,.3,1); }
+    .back-top-btn:hover{ background:#222; transform:translateY(-2px); box-shadow:0 16px 44px rgba(0,0,0,0.35); color:#fff; }
+    .top.at-top .back-top-btn{ display:none!important; }
+    .top.at-bottom .back-top-btn{ display:inline-flex!important; }
+
+    /* Mobile Drawer */
+    .mobile-nav-drawer{ position:fixed; bottom:calc(68px + env(safe-area-inset-bottom, 0px))!important; top:auto; left:12px!important; right:12px!important; z-index:100000!important; background:rgba(18,18,18,0.95); backdrop-filter:blur(40px); -webkit-backdrop-filter:blur(40px); border-radius:32px; padding:24px 20px; opacity:0; transform:translateY(20px) scale(.96); pointer-events:none; transition:opacity .3s ease,transform .3s ease; box-shadow:0 24px 60px rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.18); }
+    .mobile-nav-drawer.open{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
+    .mobile-drawer-inner{display:flex;flex-direction:column;gap:12px}
+    .mobile-drawer-inner > a{color:#fff;font-size:13.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:12px 18px;border-radius:9999px;background:rgba(255,255,255,0.08)}
+
+    /* ── PAGE CONTAINER (MAX WIDTH 1380PX MATCHING HOME PAGE) ── */
+    .page-container {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 140px 48px 0;
+    }
+
+    .journeys-badge{display:inline-flex;align-items:center;gap:10px;font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);border-radius:999px;padding:6px 16px;margin:0 0 24px}
+    .journeys-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:#C8A45C}
+    .journeys-header h1{font-size:clamp(52px,8vw,118px);font-weight:800;letter-spacing:-.078em;line-height:.84;text-transform:uppercase;margin:0 0 48px;color:#000;user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+    .split-line{display:block;overflow:hidden;padding-bottom:.08em}
+    .split-word{display:block;transform:translate3d(0,115%,0);transition:transform .9s cubic-bezier(.16,1,.3,1)}
+    .split-line:nth-child(2) .split-word{transition-delay:.12s}
+    .split-line:nth-child(3) .split-word{transition-delay:.24s}
+    .reveal-block.in .split-word, .reveal.in .split-word{transform:translate3d(0,0,0)}
+
+    .journeys-header-bottom{display:grid;grid-template-columns:minmax(260px,430px) 1fr;gap:64px;align-items:end;border-top:1px solid rgba(0,0,0,.18);padding-top:28px;margin-bottom:60px}
+    .journeys-subtitle{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:clamp(19px,1.8vw,25px);letter-spacing:-.03em;line-height:1.22;color:rgba(0,0,0,.82);margin:0}
+    .journeys-principles{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .journey-principle{display:grid;gap:7px;font-size:12px;line-height:1.2}
+    .journey-principle span{font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:600;color:#8A6A23}
+    .journey-principle strong{font-size:14px;letter-spacing:-.02em}
+
+    .journeys-experience{width:100%;margin:0 auto;padding:0 0 96px;display:grid;grid-template-columns:250px minmax(360px,1.15fr) minmax(310px,.85fr);gap:32px;align-items:start;border-top:1px solid rgba(0,0,0,.18);padding-top:60px}
+    .journeys-picker-label{font-size:11px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:rgba(0,0,0,.46);margin:0 0 28px}
+    .journeys-tabs{display:flex;flex-direction:column;margin:0;gap:0;border-bottom:1px solid rgba(0,0,0,.17)}
+    .j-tab{width:100%;display:grid;grid-template-columns:32px 1fr 18px;gap:10px;align-items:start;padding:20px 0;border:0;border-top:1px solid rgba(0,0,0,.17);border-radius:0;background:transparent;color:rgba(0,0,0,.35);text-align:left;cursor:pointer;transition:color .35s ease,padding .35s cubic-bezier(.16,1,.3,1)}
+    .j-tab:hover,.j-tab.active{color:#000;padding-left:8px}
+    .j-tab-index{font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;color:#8A6A23;padding-top:4px}
+    .j-tab-copy{display:grid;gap:5px}
+    .j-tab-copy strong{font-size:18px;line-height:1;letter-spacing:-.04em;text-transform:uppercase}
+    .j-tab-copy small{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:13px;line-height:1.25;color:inherit}
+    .j-tab-arrow{font-size:18px;line-height:1;opacity:0;transform:translate(-6px,6px);transition:opacity .3s ease,transform .3s ease}
+    .j-tab.active .j-tab-arrow,.j-tab:hover .j-tab-arrow{opacity:1;transform:translate(0,0)}
+
+    .journeys-visual{position:relative;height:660px;overflow:hidden;background:#d8d3ca;margin:0;border-radius:24px;box-shadow:0 16px 40px rgba(0,0,0,0.08)}
+    .journeys-visual img{width:100%;height:100%;object-fit:cover;border-radius:24px;transform:scale(1.015);transition:opacity .35s ease,transform 1s cubic-bezier(.16,1,.3,1)}
+    .journeys-visual:hover img{transform:scale(1.045)}
+    .journeys-visual.is-changing img{opacity:.18;transform:scale(1.08)}
+    .journeys-visual::after{content:"";position:absolute;inset:38% 0 0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.74));pointer-events:none}
+    .journeys-meta-bar{position:absolute;z-index:2;left:24px;right:24px;bottom:24px;display:grid;gap:10px;color:#fff;margin:0;padding:0;border:0;background:transparent}
+    .j-meta-tag{font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+    .j-meta-desc{font-size:18px;font-weight:700;line-height:1.15;letter-spacing:-.03em;max-width:430px}
+
+    .journeys-details{min-width:0}
+    .journeys-day-tabs{display:flex;gap:18px;flex-wrap:wrap;margin:0 0 30px;padding-bottom:12px;border-bottom:1px solid rgba(0,0,0,.17)}
+    .j-day-tab{padding:0;border:0;border-radius:0;background:transparent;font-size:12px;font-weight:700;letter-spacing:-.01em;color:rgba(0,0,0,.38);cursor:pointer;transition:color .25s ease}
+    .j-day-tab:hover,.j-day-tab.active{color:#000}
+    .j-day-tab.active::after{content:"";display:block;width:100%;height:2px;background:#C8A45C;margin-top:10px}
+    .journey-card{width:100%;position:relative;padding:0;background:transparent;border:0;box-shadow:none;transition:opacity .3s ease}
+    .j-time-badge{display:block;font-family:'Inter',-apple-system,sans-serif;font-size:11px;font-weight:700;letter-spacing:.06em;line-height:1.35;text-transform:uppercase;color:#8A6A23;margin:0 0 12px}
+    .journey-card h3{font-size:clamp(30px,3vw,46px);font-weight:800;letter-spacing:-.055em;line-height:.92;color:#000;margin:0;text-transform:uppercase}
+    .j-card-desc{font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:17px;line-height:1.48;color:rgba(0,0,0,.76);margin:0 0 24px;max-width:520px}
+    .j-card-footer{display:grid;gap:24px;padding-top:20px;border-top:1px solid rgba(0,0,0,.13)}
+    .j-card-tags{display:grid;grid-template-columns:1fr;gap:8px}
+    .j-tag{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;color:rgba(0,0,0,.68)}
+    .j-tag::before{content:"";width:5px;height:5px;border-radius:50%;background:#C8A45C;flex:0 0 5px}
+
+    .see-more-btn, .j-card-btn, .j-reserve-btn{
+      display:inline-flex!important; align-items:center!important; gap:10px!important; font-size:16px!important; font-weight:700!important; letter-spacing:-.02em!important; color:#000!important; background:transparent!important; border:none!important; box-shadow:none!important; padding:6px 0!important; cursor:pointer!important; text-decoration:none!important; transition:color .25s ease, transform .25s ease!important;
+    }
+    .see-more-btn:hover, .j-card-btn:hover, .j-reserve-btn:hover{ color:#666!important; transform:translateX(4px)!important; }
+
+    /* ── EXACT HOME PAGE RESERVE BANNER (1-TO-1 MATCH) ── */
+    .journeys-reserve-banner {
+      margin: 0;
+      padding: 80px max(48px, calc((100vw - 1120px)/2));
+      background: #000;
+      color: #fff;
+      border: 0;
+      border-radius: 0;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 64px;
+      box-shadow: none;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1);
+    }
+    .journeys-reserve-banner.in { opacity: 1; transform: translateY(0); }
+    .journeys-reserve-copy { display: grid; gap: 12px; }
+    .journeys-reserve-kicker { font-family: 'Inter', -apple-system, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #C8A45C; }
+    .journeys-reserve-banner h3 { font-size: clamp(44px, 6.4vw, 92px); font-weight: 800; letter-spacing: -.07em; line-height: .86; text-transform: uppercase; margin: 0; max-width: 920px; }
+    .journeys-reserve-banner p { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: rgba(255,255,255,.72); font-size: 18px; margin: 4px 0 0; max-width: 620px; line-height: 1.35; }
+    .j-reserve-btn {
+      color: #fff !important;
+      background: transparent !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.35) !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
+      padding: 18px 0 !important;
+      min-width: 230px;
+      justify-content: space-between !important;
+      font-size: 15px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      box-shadow: none !important;
+      text-decoration: none !important;
+    }
+    .j-reserve-arrow { font-size: 22px; transition: transform .25s ease; }
+    .j-reserve-btn:hover {
+      color: #fff !important;
+      background: transparent !important;
+      border-top-color: rgba(255, 255, 255, 0.6) !important;
+      border-bottom-color: rgba(255, 255, 255, 0.6) !important;
+    }
+    .j-reserve-btn:hover .j-reserve-arrow { transform: translateX(5px); }
+
+    @media(max-width:850px){
+      .page-container { padding: 100px 16px 0; }
+      .journeys-header h1 { font-size: clamp(32px, 8.5vw, 54px); line-height: 0.92; letter-spacing: -0.05em; margin-bottom: 28px; }
+      .journeys-header-bottom{grid-template-columns:1fr!important;gap:24px!important}
+      .journeys-principles{grid-template-columns:1fr!important;gap:10px!important;border-top:1px solid rgba(0,0,0,0.08);padding-top:18px}
+      .journeys-experience{padding:36px 0!important;grid-template-columns:1fr!important;gap:32px!important}
+      .journeys-visual{height:340px!important}
+      .journeys-reserve-banner{padding:40px 16px!important;grid-template-columns:1fr!important;gap:24px!important}
+      .j-reserve-btn { width: 100%!important; justify-content: center!important; }
+    }
+  
+  </style>
+
+  <main>
+    <div class="page-container reveal-block">
+      <div class="journeys-header">
+        <span class="journeys-badge">Private Experiences</span>
+        <h1><span class="split-line"><span class="split-word">Marocco personalizzato</span></span>
+          <span class="split-line"><span class="split-word">esperienze costruite</span></span>
+          <span class="split-line"><span class="split-word">intorno a te.</span></span></h1>
+        <div class="journeys-header-bottom">
+          <p class="journeys-subtitle">Nessun pullman affollato. Nessun ritmo di gruppo fisso. Tour privati ​​del Marocco al 100% con trasporto 4x4 dedicato, guide berbere locali esperte e riad di lusso selezionati con cura.</p>
+          <div class="journeys-principles">
+            <div class="journey-principle"><span>01</span><strong>Dedicated 4x4 or Van</strong></div>
+            <div class="journey-principle"><span>02</span><strong>Your Tailored Pace</strong></div>
+            <div class="journey-principle"><span>03</span><strong>Local Berber Guides</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="journeys-experience">
+        <div class="journeys-picker">
+          <p class="journeys-picker-label">Scegli un'esperienza</p>
+          <div class="journeys-tabs" id="journeyCategoryTabs">
+            <button class="j-tab active" type="button" data-category="explorer" onclick="switchJourneyCategory('explorer')">
+              <span class="j-tab-index">01</span><span class="j-tab-copy"><strong>Premium Explorer</strong><small>Coast · valleys · desert</small></span><span class="j-tab-arrow">↘</span>
+            </button>
+            <button class="j-tab" type="button" data-category="heritage" onclick="switchJourneyCategory('heritage')">
+              <span class="j-tab-index">02</span><span class="j-tab-copy"><strong>Heritage & Cinema</strong><small>Kasbahs · palaces · craft</small></span><span class="j-tab-arrow">↘</span>
+            </button>
+            <button class="j-tab" type="button" data-category="atlas" onclick="switchJourneyCategory('atlas')">
+              <span class="j-tab-index">03</span><span class="j-tab-copy"><strong>Active High Atlas</strong><small>Trails · lagoons · lakes</small></span><span class="j-tab-arrow">↘</span>
+            </button>
+          </div>
+        </div>
+
+        <figure class="journeys-visual" id="journeyVisual">
+          <img id="journeyImage" src="/img/rigel-ibisQEDxODo-unsplash.jpg" alt="Essaouira Coast">
+          <figcaption class="journeys-meta-bar" id="journeyMetaBar"><span class="j-meta-tag" id="jMetaTag">ESPLORATORE PREMIUM DI 3 GIORNI</span>
+            <span class="j-meta-desc" id="jMetaDesc">Tre fughe iconiche, un veicolo privato, zero cambi di hotel.</span></figcaption>
+        </figure>
+
+        <div class="journeys-details">
+          <div class="journeys-day-tabs" id="journeyDayTabs"></div>
+          <div class="journey-card-wrap">
+            <div class="journey-card" id="journeyCard">
+              <div class="j-card-head">
+                <span class="j-time-badge" id="jTimeBadge">07:00 AM DEPARTURE • ESSAOUIRA COASTAL ESCAPE</span>
+                <h3 id="jCardTitle">Essaouira davanti alla folla</h3>
+              </div>
+              <p class="j-card-desc" id="jCardDesc">Raggiungi la medina atlantica mentre le sue viuzze sono ancora tranquille. Cammina lungo le mura del mare con una guida privata, scegli il pranzo dal pescato mattutino, quindi esplora i suk dell'arte.</p>
+              <div class="j-card-footer">
+                <div class="j-card-tags" id="jCardTags"></div>
+                <a href="#bookingSection" class="see-more-btn j-card-btn" onclick="scrollToExperienceForm(event)">
+                  <span>↳ Design this journey</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exact Home Page Reserve Banner (Full Width Outside Max-Width Container) -->
+    <div class="journeys-reserve-banner reveal">
+      <div class="journeys-reserve-copy">
+        <span class="journeys-reserve-kicker">Not sure where to begin?</span>
+        <h3>Raccontaci il tuo sogno in Marocco. Progetteremo la strada.</h3>
+        <p>Condividi le tue date, il tuo stile di viaggio e i luoghi imperdibili. Li trasformeremo in un itinerario privato e praticabile in Marocco.</p>
+      </div>
+      <a href="#bookingSection" class="j-reserve-btn" onclick="scrollToExperienceForm(event)">
+        <span>Start planning</span><span class="j-reserve-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <!-- EXPERIENCE BOOKING FORM SECTION (LOGS TO GOOGLE SHEET & SENDS EMAIL + WHATSAPP) -->
+    <section class="experience-booking-section" id="bookingSection" style="max-width: 1000px; margin: 60px auto 100px; padding: 0 24px;">
+      <div class="exp-booking-card" style="background:#ffffff; border:1px solid rgba(0,0,0,0.08); border-radius:16px; padding:48px 36px; border-top:4px solid #C8A45C; box-shadow:0 12px 36px rgba(0,0,0,0.05);">
+        <div style="max-width:700px; margin:0 auto; text-align:center; margin-bottom:32px;">
+          <span style="font-family:'Inter', -apple-system, sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#8A6A23; background:rgba(200,164,92,0.12); border:1px solid rgba(200,164,92,0.28); border-radius:999px; padding:5px 14px; display:inline-block; margin-bottom:12px;">Direct Marrakech Operations</span>
+          <h2 style="font-size:clamp(26px, 3.5vw, 40px); font-weight:800; text-transform:uppercase; letter-spacing:-0.03em; margin:8px 0 12px; color:#000;">Prenota la tua esperienza privata in Marocco</h2>
+          <p style="font-size:15px; color:rgba(0,0,0,0.7); margin:0; line-height:1.6;">Condividi le date del tuo viaggio e le preferenze del gruppo. Progetteremo il tuo itinerario su misura e invieremo una proposta dettagliata direttamente alla tua email e WhatsApp.</p>
+        </div>
+
+        <form id="experienceInquiryForm" class="dest-form" onsubmit="handleExperienceSubmit(event)" style="max-width:700px; margin:0 auto; display:grid; gap:16px;">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expClientName" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Your Full Name *</label>
+              <input class="dest-form-input" type="text" id="expClientName" required placeholder="e.g. Sarah Jenkins" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.14); border-radius:8px; box-sizing:border-box;">
+            </div>
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expClientEmail" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Email Address *</label>
+              <input class="dest-form-input" type="email" id="expClientEmail" required placeholder="sarah@example.com" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.14); border-radius:8px; box-sizing:border-box;">
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expClientPhone" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">WhatsApp / Phone *</label>
+              <input class="dest-form-input" type="tel" id="expClientPhone" required placeholder="+1 555 123 4567" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.14); border-radius:8px; box-sizing:border-box;">
+            </div>
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expSelectedTour" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Selected Experience</label>
+              <select class="dest-form-select" id="expSelectedTour" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); background:#fff; box-sizing:border-box;">
+                <option value="3-Day Premium Explorer">3-Day Premium Explorer (Coast, Valleys, Agafay)</option>
+                <option value="4-Day Heritage & Cinema">4-Day Heritage & Cinema (Kasbahs, Film Sets, Passes)</option>
+                <option value="3-Day Active High Atlas">3-Day Active High Atlas (Toubkal & Berber Villages)</option>
+                <option value="Custom Tailored Experience">Custom Tailored Private Experience</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expTravelDates" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Approximate Travel Dates</label>
+              <input class="dest-form-input" type="text" id="expTravelDates" placeholder="e.g. November 2026 / 4 Days" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); box-sizing:border-box;">
+            </div>
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expGroupSize" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Number of Guests</label>
+              <select class="dest-form-select" id="expGroupSize" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); background:#fff; box-sizing:border-box;">
+                <option value="2 Guests (Couple / Friends)">2 Guests (Couple / Friends)</option>
+                <option value="Solo Traveler">Solo Traveler</option>
+                <option value="3-4 Guests (Small Family / Group)">3-4 Guests (Small Family / Group)</option>
+                <option value="5+ Guests (Private Minivan)">5+ Guests (Private Minivan)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:16px;">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expPickupLocation" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Pickup Location</label>
+              <select class="dest-form-select" id="expPickupLocation" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); background:#fff; box-sizing:border-box;">
+                <option value="Marrakech (Riad / Hotel / Airport)">Marrakech (Riad / Hotel / Airport)</option>
+                <option value="Casablanca (CMN Airport / City)">Casablanca (CMN Airport / City)</option>
+                <option value="Fes (Medina / Airport)">Fes (Medina / Airport)</option>
+                <option value="Flexible / Other Moroccan City">Flexible / Other Moroccan City</option>
+              </select>
+            </div>
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="expVehicleStyle" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Vehicle &amp; Accommodation Tier</label>
+              <select class="dest-form-select" id="expVehicleStyle" style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); background:#fff; box-sizing:border-box;">
+                <option value="Luxury (Private 4x4 Prado + 5-Star Camp)">Luxury (Private 4x4 Prado + 5-Star Camp)</option>
+                <option value="Boutique Riads (Private 4x4 Prado)">Boutique Riads (Private 4x4 Prado)</option>
+                <option value="VIP Royal / Palace (Mercedes Chauffeur)">VIP Royal / Palace (Mercedes Chauffeur)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="dest-form-field">
+            <label class="dest-form-label" for="expNotes" style="font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px; display:block;">Special Requests / Desired Activities</label>
+            <textarea class="dest-form-textarea" id="expNotes" placeholder="e.g. Sunset camel trek in Agafay, high-end boutique riads, private guide for medina souks..." style="width:100%; padding:12px 14px; border:1px solid rgba(0,0,0,0.22); min-height:85px; box-sizing:border-box;"></textarea>
+          </div>
+
+          <button type="submit" id="expSubmitBtn" style="width:100%; background:#000000; color:#ffffff; border:1px solid #000; padding:16px; font-family:Helvetica,Arial,sans-serif; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; cursor:pointer; transition:all 0.25s ease; margin-top:8px;">
+            REQUEST EXPERIENCE PROPOSAL &rarr;
+          </button>
+
+          <a id="expQuickWaBtn" href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20a%20private%20Morocco%20experience." class="dest-wa-btn" target="_blank" rel="noopener" style="display:flex; align-items:center; justify-content:center; gap:10px; width:100%; background:#25D366; color:#ffffff !important; border:1px solid #1fa851; padding:14px; font-family:Helvetica,Arial,sans-serif; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:0.05em; text-decoration:none; margin-top:8px; box-sizing:border-box;">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="18" height="18" style="vertical-align:middle;">
+            <span>Plan on WhatsApp</span>
+          </a>
+
+          <div id="expFormStatus" style="display:none; margin-top:14px; padding:16px; background:#f0fdf4; border:1px solid #86efac; border-left:4px solid #16a34a; font-size:13px; line-height:1.55; color:#14532d;"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline>
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal, .reveal-block').forEach(el => observer.observe(el));
+
+    const journeyData = {
+      explorer: {
+        badge: "3-DAY PREMIUM EXPLORER",
+        desc: "Three iconic escapes, one private vehicle, zero hotel changes.",
+        image: "img/rigel-ibisQEDxODo-unsplash.jpg",
+        alt: "Essaouira coastal ramparts",
+        days: [
+          { dayLabel: "DAY 01 • ESSAOUIRA COAST", timeBadge: "07:00 AM DEPARTURE • ESSAOUIRA COASTAL ESCAPE", title: "Essaouira before the crowds", cardDesc: "Reach the Atlantic medina while its lanes are still quiet. Walk the sea walls with a private guide, choose lunch from the morning catch, then explore the art souks.", tags: ["100% Private vehicle & driver", "Local Atlantic guide", "Fresh seafood harbour lunch"] },
+          { dayLabel: "DAY 02 • AGAFAY SUNSET", timeBadge: "04:30 PM ARRIVAL • AGAFAY DESERT DINNER", title: "Sunset over Agafay stone dunes", cardDesc: "Trade the medina heat for the open moonscape. Arrive in time for a sunset camel trek across stone desert hills, followed by dinner under a starlit canvas tent.", tags: ["Private 4x4 desert transfer", "Sunset camel trek included", "Candlelit Moroccan dinner"] },
+          { dayLabel: "DAY 03 • HIGH ATLAS VALLEYS", timeBadge: "09:00 AM DEPARTURE • HIGH ATLAS VALLEY DAY", title: "Berber tea in Ourika valley", cardDesc: "Follow the mountain river up into the High Atlas. Pause for mint tea with a local family in an earthen village before a riverside lunch prepared by your hosts.", tags: ["Scenic mountain driving", "Private Berber home visit", "Riverside dining experience"] }
+        ]
+      },
+      heritage: {
+        badge: "4-DAY HERITAGE & CINEMA",
+        desc: "Ancient kasbahs, film studio sets, and high mountain passes.",
+        image: "img/pol-kasbah.jpg",
+        alt: "Ait Ben Haddou kasbah",
+        days: [
+          { dayLabel: "DAY 01 • TIZI N'TICHKA PASS", timeBadge: "08:00 AM DEPARTURE • ATLAS MOUNTAIN CROSSING", title: "Winding through Tizi n'Tichka", cardDesc: "Ascend to 2,260 meters through high Atlas mountain passes. Stop at panoramic lookouts and historic Berber villages along the ancient caravan route.", tags: ["High Atlas mountain pass", "Panorama photo stops", "Private 4x4 comfort"] },
+          { dayLabel: "DAY 02 • AIT BEN HADDOU", timeBadge: "09:30 AM EXPLORATION • UNESCO FORTIFIED KASBAH", title: "Inside the earthen fortress", cardDesc: "Explore Ait Ben Haddou with a local historian guide. Walk through the mud-brick towers featured in Gladiator, Lawrence of Arabia, and Game of Thrones.", tags: ["UNESCO World Heritage site", "Historian kasbah guide", "Boutique heritage stay"] }
+        ]
+      },
+      atlas: {
+        badge: "3-DAY ACTIVE HIGH ATLAS",
+        desc: "Berber mountain villages, Toubkal trails, and alpine fresh air.",
+        image: "img/soufiane-koraichi-zLWxuxUqrDk-unsplash.jpg",
+        alt: "Imlil mountain valley",
+        days: [
+          { dayLabel: "DAY 01 • IMLIL VALLEY", timeBadge: "08:30 AM DEPARTURE • TOUBKAL BASE CAMP", title: "Imlil valley mountain trek", cardDesc: "Hike through terraced walnut groves and apple orchards at the base of Mount Toubkal. Enjoy a traditional Berber lunch overlooking the valley.", tags: ["Certified mountain guide", "Terraced valley trail hike", "Local Berber family lunch"] }
+        ]
+      }
+    };
+
+    let activeCat = 'explorer', activeDayIdx = 0;
+    function switchJourneyCategory(cat){
+      if(!journeyData[cat]) return;
+      activeCat = cat; activeDayIdx = 0;
+      document.querySelectorAll('#journeyCategoryTabs .j-tab').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-category') === cat);
+      });
+      renderJourneyVisual(); renderDayTabs(); renderJourneyCard();
+    }
+
+    function renderJourneyVisual(){
+      const data = journeyData[activeCat];
+      const img = document.getElementById('journeyImage');
+      const tag = document.getElementById('jMetaTag');
+      const desc = document.getElementById('jMetaDesc');
+      if(img){ img.src = data.image; img.alt = data.alt; }
+      if(tag) tag.textContent = data.badge;
+      if(desc) desc.textContent = data.desc;
+    }
+
+    function renderDayTabs(){
+      const container = document.getElementById('journeyDayTabs');
+      if(!container) return;
+      container.innerHTML = '';
+      const days = journeyData[activeCat].days;
+      days.forEach((day, idx) => {
+        const btn = document.createElement('button');
+        btn.className = `j-day-tab ${idx === activeDayIdx ? 'active' : ''}`;
+        btn.textContent = day.dayLabel;
+        btn.onclick = () => { activeDayIdx = idx; renderDayTabs(); renderJourneyCard(); };
+        container.appendChild(btn);
+      });
+    }
+
+    function renderJourneyCard(){
+      const day = journeyData[activeCat].days[activeDayIdx];
+      if(!day) return;
+      document.getElementById('jTimeBadge').textContent = day.timeBadge;
+      document.getElementById('jCardTitle').textContent = day.title;
+      document.getElementById('jCardDesc').textContent = day.cardDesc;
+      const tagsContainer = document.getElementById('jCardTags');
+      if(tagsContainer){
+        tagsContainer.innerHTML = day.tags.map(t => `<div class="j-tag">${t}</div>`).join('');
+      }
+    }
+
+    switchJourneyCategory('explorer');
+
+    function scrollToExperienceForm(e) {
+      if (e) e.preventDefault();
+      const catMap = {
+        'explorer': '3-Day Premium Explorer',
+        'heritage': '4-Day Heritage & Cinema',
+        'atlas': '3-Day Active High Atlas'
+      };
+      const selectEl = document.getElementById('expSelectedTour');
+      if (selectEl && typeof activeCat !== 'undefined' && catMap[activeCat]) {
+        selectEl.value = catMap[activeCat];
+      }
+      const bookingSection = document.getElementById('bookingSection');
+      if (bookingSection) {
+        const yOffset = -70;
+        const y = bookingSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('expClientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    async function handleExperienceSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('expSubmitBtn');
+      const statusBox = document.getElementById('expFormStatus');
+
+      const name = (document.getElementById('expClientName')?.value || '').trim();
+      const email = (document.getElementById('expClientEmail')?.value || '').trim();
+      const phone = (document.getElementById('expClientPhone')?.value || '').trim();
+      const expTour = (document.getElementById('expSelectedTour')?.value || 'Morocco Experience').trim();
+      const dates = (document.getElementById('expTravelDates')?.value || '').trim();
+      const guests = (document.getElementById('expGroupSize')?.value || '').trim();
+      const pickup = (document.getElementById('expPickupLocation')?.value || 'Marrakech').trim();
+      const vehicle = (document.getElementById('expVehicleStyle')?.value || 'Luxury (Private 4x4 Prado)').trim();
+      const notes = (document.getElementById('expNotes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: expTour,
+        pickup: pickup,
+        date: dates,
+        passengers: guests,
+        vehicle: vehicle,
+        notes: notes,
+        source: '/experiences.html'
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about the ${expTour}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        `📍 Pickup: ${pickup}\n` +
+        `🚗 Style/Vehicle: ${vehicle}\n` +
+        (dates ? `📅 Travel Dates: ${dates}\n` : '') +
+        (guests ? `👥 Group Size: ${guests}\n` : '') +
+        (notes ? `📝 Special Requests: ${notes}\n` : '') +
+        `\nCan you please confirm availability and send a detailed itinerary proposal?`;
+
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (btn) {
+        btn.disabled = true;
+        btn.textContent = 'Submitting Request...';
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: expTour,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${expTour}</strong> has been sent to our Marrakech team and logged in our system. We will review availability and email you at <strong>${email}</strong> within 30 minutes.<br><br><a href="${waUrl}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:#25D366; color:#ffffff !important; font-weight:800; font-size:12px; text-transform:uppercase; padding:10px 16px; border-radius:3px; text-decoration:none;"><img src="/img/whatsapp-logo.png" alt="WhatsApp" width="16" height="16"> Plan on WhatsApp &rarr;</a>`;
+
+        if (btn) {
+          btn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          btn.style.background = '#16a34a';
+          btn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:#25D366; color:#000; font-weight:800; font-size:12px; text-transform:uppercase; padding:10px 16px; border-radius:3px; text-decoration:none;"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+
+    /* ── CLICK & TAP STICKER POPUP (DESKTOP & MOBILE) ── */
+    (function(){
+      const stickers = [
+        "stickers/ait-ben-haddou-sticker.png",
+        "stickers/al-qarawiyyin-sticker.png",
+        "stickers/argan-oil-making-sticker.png",
+        "stickers/bab-mansour-sticker.png",
+        "stickers/essaouira-sqala-sticker.png",
+        "stickers/gnawa-maalem-sticker.png",
+        "stickers/hassan-tower-sticker.png",
+        "stickers/jemaa-el-fnaa-sticker.png",
+        "stickers/koutoubia-sticker.png",
+        "stickers/moroccan-caftan-sticker.png",
+        "stickers/tbourida-sticker.png",
+        "stickers/volubilis-sticker.png"
+      ];
+      let stickerIdx = 0;
+      let activeTimer = null;
+
+      function dismissAllStickers(fast) {
+        if (activeTimer) { clearTimeout(activeTimer); activeTimer = null; }
+        const activeStickers = document.querySelectorAll('.click-pop-sticker');
+        activeStickers.forEach(img => {
+          if (fast) {
+            img.remove();
+          } else {
+            img.style.opacity = "0";
+            img.style.transform = "translate(-50%, -50%) scale(0.6)";
+            setTimeout(() => { if (img.parentNode) img.remove(); }, 200);
+          }
+        });
+      }
+
+      window.addEventListener('scroll', () => dismissAllStickers(false), { passive: true });
+
+      function spawnSticker(e) {
+        if (e.target.closest('a') || e.target.closest('button')) return;
+
+        dismissAllStickers(true);
+
+        const src = stickers[stickerIdx];
+        stickerIdx = (stickerIdx + 1) % stickers.length;
+
+        const img = document.createElement("img");
+        img.src = src;
+        img.alt = "";
+        img.className = "click-pop-sticker";
+        
+        let x = e.clientX;
+        let y = e.clientY;
+        if ((!x && x !== 0) && e.touches && e.touches[0]) {
+          x = e.touches[0].clientX;
+          y = e.touches[0].clientY;
+        }
+
+        const isMobile = window.innerWidth <= 900;
+        const stickerWidth = isMobile ? 115 : 170;
+        const rot = (Math.random() * 26 - 13).toFixed(1);
+
+        img.style.cssText = `
+          position: fixed;
+          left: ${x}px;
+          top: ${y}px;
+          width: ${stickerWidth}px;
+          height: auto;
+          pointer-events: none;
+          z-index: 99999;
+          transform: translate(-50%, -50%) scale(0.3) rotate(${rot}deg);
+          opacity: 0;
+          transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.25s ease;
+          filter: drop-shadow(0 12px 24px rgba(0,0,0,0.3));
+        `;
+
+        document.body.appendChild(img);
+
+        requestAnimationFrame(() => {
+          img.style.transform = `translate(-50%, -50%) scale(1) rotate(${rot}deg)`;
+          img.style.opacity = "1";
+        });
+
+        activeTimer = setTimeout(() => {
+          if (img.parentNode) {
+            img.style.transform = `translate(-50%, -50%) scale(0.7) rotate(${rot}deg)`;
+            img.style.opacity = "0";
+            setTimeout(() => { if (img.parentNode) img.remove(); }, 350);
+          }
+        }, 2000);
+      }
+
+      function attachStickerClick() {
+        const targets = document.querySelectorAll('.section-title, .journeys-header h1, .footer-logo-img, .footer-giant-brand, .footer-header-row, .footer-wrap');
+        targets.forEach(el => {
+          el.style.cursor = 'pointer';
+          el.addEventListener('click', spawnSticker);
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', attachStickerClick);
+      } else {
+        attachStickerClick();
+      }
+    })();
+  </script>
+</Layout>

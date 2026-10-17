@@ -1,0 +1,497 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "Ein Auto in Marokko mieten vs. einen Privatfahrer engagieren: Sicherheits- und Kostenvergleich 2026 | Durchstreifen Sie Marokko";
+const description = "Ein Auto in Marokko mieten vs. einen Privatfahrer engagieren: Sicherheitsanalyse 2026, versteckte Mietkosten, Bergpässe (Tizi Nr";
+const canonical = "https://roammorocco.tours/de/blog/renting-a-car-in-morocco-vs-private-driver.html";
+const ogImage = "https://roammorocco.tours/images/review-atlas.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://roammorocco.tours/blog/renting-a-car-in-morocco-vs-private-driver.html#article",
+      "headline": "Renting a Car in Morocco vs Hiring a Private Driver: 2026 Safety & Cost Comparison",
+      "description": "An exhaustive, honest comparison between renting a car and hiring a licensed private driver in Morocco, analyzing road safety, Tizi n'Tichka mountain switchbacks, hidden rental costs, police checkpoints, and travel comfort.",
+      "image": "https://roammorocco.tours/images/review-atlas.jpg",
+      "datePublished": "2026-09-26",
+      "dateModified": "2026-09-26",
+      "author": {
+        "@type": "Organization",
+        "name": "Roam Morocco Local Experts",
+        "url": "https://roammorocco.tours/about.html"
+      },
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://roammorocco.tours/blog/renting-a-car-in-morocco-vs-private-driver.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://roammorocco.tours/blog/renting-a-car-in-morocco-vs-private-driver.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Renting a Car vs Private Driver in Morocco",
+          "item": "https://roammorocco.tours/blog/renting-a-car-in-morocco-vs-private-driver.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roammorocco.tours/blog/renting-a-car-in-morocco-vs-private-driver.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it safe for tourists to rent a car and drive in Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Driving on Morocco's major toll highways (Autoroutes like Casablanca to Marrakech or Tangier to Rabat) is very modern, safe, and straightforward. However, driving through the High Atlas Mountains (Tizi n'Tichka pass), medina perimeters, and remote rural desert tracks can be intensely stressful due to steep hairpin turns, slow heavy trucks, pedestrians, unlit vehicles at night, and aggressive police radar traps. If your route includes the Atlas Mountains and Sahara Desert, hiring a licensed private driver is far safer and more relaxing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does renting a car in Morocco really cost including hidden fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While base rental rates appear low online (\u20ac25 to \u20ac45 per day), the true cost after adding full zero-deductible insurance (\u20ac15\u2013\u20ac25/day), fuel (\u20ac25\u2013\u20ac35/day across long distances), highway tolls, medina parking guardians (10\u201330 MAD/day), and potential radar speeding tickets totals \u20ac80 to \u20ac135 per day. In contrast, an all-inclusive private driver costs \u20ac130 to \u20ac220 per day flat, with zero credit card security deposit holds (\u20ac1,500\u2013\u20ac2,500) and zero accident liability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an International Driving Permit (IDP) to drive in Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Legally, foreign visitors from the US, UK, EU, Canada, and Australia can drive in Morocco using their valid domestic driver's license for stays under 90 days, provided the license is written in the Latin alphabet. However, carrying an International Driving Permit (IDP) is strongly recommended to avoid misunderstandings at rural Gendarmerie Royale police checkpoints."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which side of the road do they drive on in Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Morocco drives on the right-hand side of the road, and priority is generally given to traffic coming from the right unless roundabouts or signs dictate otherwise. Inside cities, roundabouts frequently follow 'priorit\u00e9 \u00e0 droite' where entering vehicles have priority over circulating vehicles, which surprises many Western drivers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you drive a rental car directly to riads in Marrakech or Fes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Historical medinas in Marrakech, Fes, Meknes, and Chefchaouen are completely pedestrianized with narrow alleyways inaccessible to vehicles. You must park in perimeter parking lots guarded by local attendants ('gardiens de voitures') and navigate luggage on foot or via handcart. A private driver handles drop-off at the closest medina gate and coordinates baggage porters directly with your riad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a 4x4 necessary for driving to the Sahara Desert (Merzouga)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The main highway (N13) leading to Merzouga and the edge of the Erg Chebbi dunes is fully paved, meaning a standard sedan can physically reach the desert town. However, navigating off-road desert tracks to reach luxury deep-dune desert camps requires an experienced 4x4 chauffeur. Rental car contracts strictly forbid driving off paved roads, and getting stuck in soft sand will void all insurance."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="de" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <article class="article-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/de/index.html">Home</a> &gt; <a href="/de/blog.html">Blog</a> &gt; <span>Car Rental vs Driver</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">TRANSPORT ANALYSIS • 2026 AUTHORITY GUIDE</span>
+      <h1 class="article-title">Ein Auto in Marokko mieten vs. einen Privatfahrer engagieren: Sicherheits- und Kostenvergleich 2026</h1>
+      <p class="article-subtitle">Gebirgspassnavigation, Polizeikontrollpunkte, Straßenverhältnisse, Versicherungsfallen und Stressfaktoren im Vergleich zur Erkundung mit Chauffeur.</p>
+      <div class="article-meta">
+        <span>Published: <strong>September 28, 2026</strong></span>
+        <span>Author: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>14 Minutes (2,800 Words)</strong></span>
+        <span>Focus: <strong>Self-Drive vs Chauffeur Comparison</strong></span>
+      </div>
+    </header>
+
+    <!-- Featured Visual Frame -->
+    <figure class="featured-image-box">
+      <img src="/images/review-atlas.jpg" alt="Renting a Car in Morocco vs Hiring a Private Driver: 2026 Safety & Cost Comparison">
+      <figcaption>Navigieren Sie über die dramatischen Gebirgspässe und malerischen Routen des Hohen Atlas.</figcaption>
+    </figure>
+
+    <!-- GEO & AEO Key Takeaways Box (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Renting a Car vs Private Driver Morocco Summary">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ QUICK ANSWER: RENT A CAR OR HIRE A PRIVATE DRIVER?</span>
+        <span class="ai-summary-badge">Logistical Comparison</span>
+      </div>
+      <p class="ai-summary-text"><strong>Mieten Sie ein Auto</strong>, wenn Sie mit aggressivem Verkehr zurechtkommen, auf modernen Mautstraßen (Casablanca, Rabat, Tanger) oder Küstenrouten (Taghazout, Essaouira) bleiben und über eine Kreditkarte mit einer Kaution von 1.500 bis 2.500 € verfügen. <strong>Mieten Sie einen Privatfahrer</strong>, wenn Sie den Hohen Atlas (Tizi n'Tichka) überqueren, in die Sahara (Merzouga) fahren, mit Familie oder Gepäck reisen oder sich in Fußgängerzonen aufhalten, die für Autos nicht zugänglich sind. Für <strong>140–220 €/Tag All-Inclusive</strong> (Kraftstoff, Maut, Unterbringung des Fahrers und Null-Haftpflicht) bietet ein privater Chauffeur höchste Sicherheit und Entspannung.</p>
+    </aside>
+
+    <!-- Editorial Prose -->
+    <div class="article-content">
+        <p>Die Planung einer Marokko-Expedition führt unweigerlich zu einer entscheidenden Verkehrskreuzung: <em>Sollten Sie ein Auto mieten und selbst fahren oder einen lizenzierten Privatfahrer mit einem Allrad- oder Mercedes-Minivan engagieren?</em></p>
+        <p>Durchsuchen Sie Online-Reiseforen und Sie werden auf stark polarisierte Meinungen stoßen. Einige unerschrockene Straßenausflügler rühmen sich der landschaftlichen Freiheit, durch den Anti-Atlas zu fahren, während andere von erschütternden Strapazen erzählen, wie sie haarsträubende 2.260 Meter hohe Gebirgspässe hinter rauchenden Phosphatlastwagen bewältigt haben, in ländlichen Dörfern an Ort und Stelle Bußgelder der Polizei bezahlt haben oder 1.800 Euro Kaution wegen geringfügiger Steinschläge am Fahrwerk verloren haben.</p>
+        <p>Bei <strong>Roam Morocco</strong> führt unser lokales Team private, maßgeschneiderte Touren durch jeden Winkel des Königreichs durch und berät gleichzeitig unabhängige Reisende zu realistischer Logistik. In diesem umfassenden Leitfaden für 2026 schlüsseln wir die <strong>ungefilterte finanzielle Realität</strong>, die <strong>Sicherheitsrisiken auf marokkanischen Straßen</strong> und die <strong>versteckten Gebühren, die Autovermietungen selten offenlegen</strong> auf und bieten einen klaren Rahmen, damit Sie die sicherste und kostengünstigste Wahl für Ihre Reise treffen können.</p>
+
+        <!-- Side by Side Versus Cards -->
+        <div class="roam-versus-grid">
+          <div class="roam-versus-card">
+            <span class="roam-versus-badge" style="background: rgba(0,0,0,0.6);">Option A: Self-Drive</span>
+            <h4 class="roam-versus-title">Ein Auto mieten</h4>
+            <div class="roam-versus-price">€80 – €135 <span style="font-size: 13px; font-weight: normal; color: rgba(0,0,0,0.6);">/ true daily total</span></div>
+            <ul class="roam-versus-list">
+              <li><strong>Flexibilität:</strong> Hoch auf ruhigen Autobahnen; tief in der antiken Medina</li>
+              <li><strong>Straßenstress:</strong> Hochgebirgsstraßen, Kreisverkehre und Nachtfahrten auf dem Land</li>
+              <li><strong>Haftung:</strong> Volles finanzielles Risiko (1.500 bis 2.500 € Kreditkartensperre)</li>
+              <li><strong>Navigation:</strong> Erfordert ständige GPS-Aufmerksamkeit, Offline-Karten und -Daten</li>
+              <li><strong>Parken:</strong> Muss täglich mit den Parkwächtern an der Straße verhandelt werden</li>
+              <li><strong>Am besten geeignet für:</strong> Budget-Duos, Surfausflüge an der Küste und Mautstraßen-Transit</li>
+            </ul>
+          </div>
+
+          <div class="roam-versus-card featured">
+            <span class="roam-versus-badge">Option B: Chauffeur-Driven</span>
+            <h4 class="roam-versus-title">Mieten Sie einen privaten Fahrer</h4>
+            <div class="roam-versus-price">€130 – €220 <span style="font-size: 13px; font-weight: normal; color: rgba(0,0,0,0.6);">/ all-inclusive daily</span></div>
+            <ul class="roam-versus-list">
+              <li><strong>Flexibilität:</strong> Uneingeschränkte Fotostopps, versteckte Panorama-Aussichtspunkte</li>
+              <li><strong>Straßenbelastung:</strong> Null. Entspannen Sie sich, machen Sie ein Nickerchen, machen Sie Fotos und genießen Sie die Berglandschaft</li>
+              <li><strong>Haftung:</strong> Null. Lizenzierte <em>Transport Touristique</em>-Vollversicherung</li>
+              <li><strong>Navigation:</strong> Erfahrener einheimischer Berber-Fahrer kümmert sich um alle Routen und das Wetter</li>
+              <li><strong>Parken und Gepäck:</strong> Lieferung bis zur Bordsteinkante des Riads und Gepäcktransport</li>
+              <li><strong>Am besten geeignet für:</strong> Sahara, Atlasgebirge, Familien und Luxusreisen</li>
+            </ul>
+            <div style="margin-top: 16px; border-top: 1px solid rgba(0,0,0,0.08); padding-top: 12px;">
+              <a href="/de/morocco-private-driver.html" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 800; text-transform: uppercase; color: #C8A45C; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 4px;">Explore Fleet &amp; Book Chauffeur &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <h2>1. Der tatsächliche Kostenvergleich: Versteckte Gebühren aufgedeckt</h2>
+        <p>Auf internationalen Buchungsportalen wie <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener">DiscoverCars</a> werden in Marrakesch oder Casablanca Kompaktmietwagen für nur <strong>25 bis 35 € (27 bis 38 USD) pro Tag</strong> angeboten. Allerdings ist es einer der häufigsten Budgetfehler, den Reisende machen, wenn sie diese Überschrift als Ihre endgültigen Transportkosten betrachten.</p>
+        <p>Die Fahrt durch Marokko ist mit erheblichen täglichen Betriebsgemeinkosten verbunden, die Autovermieter im Kleingedruckten behalten. Schauen wir uns die tatsächliche Aufschlüsselung eines 7-tägigen Roadtrips an:</p>
+
+        <!-- True Cost Comparison Table -->
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Kostenkomponente</th>
+                <th>Mietwagen für Selbstfahrer (Economy/Kompakt)</th>
+                <th>Roam Morocco Privater Chauffeur (SUV 4x4 / Van)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Basis-Tagespreis</strong></td>
+                <td>28 – 50 € / Tag</td>
+                <td>130 – 220 € / Tag (transparenter Pauschalpreis)</td>
+              </tr>
+              <tr>
+                <td><strong>Vollkaskoversicherung (kein Selbstbehalt)</strong></td>
+                <td>16 – 26 € / Tag (Unverzichtbar in Marokko zum Schutz vor Kiessplittern)</td>
+                <td><strong>Inbegriffen</strong> (offizieller gewerblicher Passagierschutz)</td>
+              </tr>
+              <tr>
+                <td><strong>Kraftstoff (Benzin/Diesel bei ~14,50 MAD/L)</strong></td>
+                <td>25 – 40 € / Tag (Entfernungen zwischen Städten und Wüste sind riesig)</td>
+                <td><strong>Inbegriffen</strong> (Der gesamte Treibstoff des Fahrzeugs ist abgedeckt)</td>
+              </tr>
+              <tr>
+                <td><strong>Autobahngebühren (Autoroutes du Maroc)</strong></td>
+                <td>5 – 12 € / Tag</td>
+                <td><strong>Im Lieferumfang enthalten</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Parkwächter („Gardiens de Voitures“)</strong></td>
+                <td>2 – 5 € / Tag (10 bis 30 MAD pro Parkbegegnung)</td>
+                <td><strong>Inbegriffen</strong> (Fahrer kümmert sich um die Fahrzeugsicherheit)</td>
+              </tr>
+              <tr>
+                <td><strong>Kreditkartenkaution einbehalten</strong></td>
+                <td><strong>1.500 – 2.500 € eingefroren</strong> auf der Kreditkarte während der Reise</td>
+                <td><strong>0 € einbehalten</strong> (keine Kaution erforderlich)</td>
+              </tr>
+              <tr>
+                <td><strong>Geschwindigkeitsradar-Bußgelder für den Notfall</strong></td>
+                <td>15 – 40 € pro Verstoß (wird sofort in bar an die Gendarmerie ausgezahlt)</td>
+                <td><strong>0 €</strong> (Fahrerverantwortung)</td>
+              </tr>
+              <tr>
+                <td><strong>Unterkunft und Verpflegung des Fahrers</strong></td>
+                <td>N / A</td>
+                <td><strong>Im Tagespaket enthalten</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Realistische Gesamtsumme pro Tag</strong></td>
+                <td><strong>76 € – 133 € / Tag</strong></td>
+                <td><strong>130 € – 220 € / Tag</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Die Finanzmathematik „pro Person“.</h3>
+        <p>Beachten Sie die Arithmetik, wenn Sie zu zweit oder mehr reisen:</p>
+        <ul>
+          <li><strong>Für Alleinreisende:</strong> Ein Auto zu mieten ist wesentlich günstiger (85 €/Tag gegenüber 160 €/Tag), vorausgesetzt, Sie sind bereit, den Navigationsstress und die Haftung auf sich zu nehmen.</li>
+          <li><strong>Für ein Paar:</strong> Ein Mietwagen kostet etwa 45 € pro Person und Tag. Ein privater Fahrer kostet etwa 75 € pro Person und Tag. Der Unterschied beträgt ungefähr <strong>30 € pro Person und Tag</strong> – der Preis für ein bescheidenes Abendessen – als Gegenleistung für die Vermeidung von Fahrmüdigkeit, Haftung und Parkproblemen.</li>
+          <li><strong>Für eine Familie oder eine Gruppe von 4 Personen:</strong> Ein größeres Mietfahrzeug (SUV oder 7-Sitzer-Minivan) kostet 110–150 €/Tag mit Versicherung und Kraftstoff. Ein privater Mercedes-Van oder Toyota Prado von Roam Morocco kostet 180–220 €/Tag. Der Unterschied sinkt auf nur <strong>15 bis 20 € pro Person und Tag</strong>.</li>
+        </ul>
+
+        <h2>2. Sicherheit und Realität im Straßenverkehr: Was Sie vor dem Fahren wissen müssen</h2>
+        <p>Marokko hat im letzten Jahrzehnt Milliarden Dirham in die Modernisierung seiner nationalen Autobahninfrastruktur gesteckt. Die gebührenpflichtigen Autobahnen (Autoroutes), die Tanger, Rabat, Casablanca, Marrakesch und Agadir verbinden, sind hervorragend – vierspurige, geteilte Schnellstraßen, die mit französischen <em>Autorouten</em> konkurrieren können.</p>
+        <p>Allerdings kommen die meisten Touristen nicht nach Marokko, um zwischen Casablanca und Rabat zu fahren. Sie kommen, um das <strong>Hohe Atlasgebirge</strong>, die alten befestigten Kasbahs von Ouarzazate, die dramatischen Dadès- und Todra-Schluchten und die sanften goldenen Dünen von Erg Chebbi in Merzouga zu erkunden. Und auf diesen Strecken verändert sich die Fahrumgebung dramatisch.</p>
+
+        <!-- Image Callout -->
+        <div style="margin: 36px 0; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); overflow: hidden;">
+          <img src="/images/wall-atlas.jpg" alt="High Atlas mountain road switchbacks in Morocco" style="width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block;">
+          <div style="background: #ffffff; padding: 12px 20px; font-family: 'Inter', -apple-system, sans-serif; font-size: 12px; color: rgba(0,0,0,0.65); border-top: 1px solid rgba(0,0,0,0.08);">
+            High Atlas mountain pass N9: spectacular vistas coupled with high hairpin frequency and sheer cliff edges.
+          </div>
+        </div>
+
+        <h3>Gefahr 1: Der Tizi n'Tichka-Gebirgspass (Höhe 2.260 m)</h3>
+        <p>Um von Marrakesch aus Ouarzazate, das Dadès-Tal oder die Sahara zu erreichen, müssen Sie das Hohe Atlasgebirge über die berühmte <strong>Straße N9 über den Tizi n'Tichka-Pass</strong> überqueren.</p>
+        <p>Während durch große Verbreiterungsprojekte Abschnitte der Straße verbessert wurden, bleibt Tichka eine äußerst anspruchsvolle Alpenroute:</p>
+        <ul>
+          <li><strong>Überwältigende Serpentinen:</strong> Kontinuierliche Haarnadelkurven mit steilen vertikalen Gefällen am unverbarrikadierten Außenrand.</li>
+          <li><strong>Schwerer kommerzieller Güterverkehr:</strong> Riesige Phosphat- und Steinbruch-Sattelschlepper kriechen mit 15 km/h bergauf und stoßen dabei schwarze Abgase aus. Um sie zu überholen, muss man sich auf schmale Seitenstreifen quetschen oder das Überholen in unübersichtlichen Bergkurven zeitlich planen.</li>
+          <li><strong>Unvorhersehbares Wetter:</strong> Zwischen November und April kommt es in Tizi n'Tichka regelmäßig zu dichtem Bergnebel, sintflutartigen Regenfällen, Glatteis und plötzlichen Schneestürmen, die den Pass vorübergehend schließen.</li>
+          <li><strong>Steinschlaggefahr:</strong> Starker Regen kann Felsbrocken aus steilen Berghängen auf den Asphalt schleudern.</li>
+        </ul>
+        <p>Wenn Sie einen ortsansässigen Berber-Fahrer engagieren, fährt dieser jede Saison Dutzende Male über diesen Bergpass. Sie kennen jede unübersichtliche Ecke, wissen genau, welche Schotterränder fest sind und wissen, wie man das Fahrzeug bei 35 °C heißen Sommerauffahrten kühl hält. Wenn Sie selbst fahren, verbringen Sie vier angespannte Stunden damit, das Lenkrad festzuhalten, ohne einen Blick auf die majestätischen schneebedeckten Gipfel werfen zu können.</p>
+
+        <h3>Gefahr 2: Stadtverkehr und Kreisverkehr „Priorité à Droite“</h3>
+        <p>Die Einfahrt nach Marrakesch, Casablanca oder Fes während der Hauptverkehrszeiten ist für uneingeweihte Fahrer ein Sinnesschock. Fahrspuren werden als lose Vorschläge behandelt. Mopeds, Elektroroller, Pferdekutschen (Calèches), Handkarren, streunende Hunde und Fußgänger in dunklen Djellabas überqueren gleichzeitig achtspurige Boulevards.</p>
+        <p>Entscheidend ist, dass Marokko eine eigenwillige Verkehrsregel der französischen Kolonialzeit durchsetzt: <strong>Priorité à droite (Vorrang nach rechts)</strong>. An vielen älteren städtischen Kreisverkehren ohne ausdrückliche Dreiecksschilder mit der Aufschrift „Cedez le Passage“ (Vorfahrt) hat <em>der in den Kreisverkehr einfahrende Verkehr Vorfahrt vor Fahrzeugen, die sich bereits im Kreisverkehr befinden</em>. Das Zögern oder Vollbremsen in einem mehrspurigen Kreisverkehr in Marrakesch ist eine der Hauptursachen für Touristen, die ihre Kotflügel verbiegen.</p>
+
+        <h3>Gefahr 3: Das strenge Radarnetz der Gendarmerie Royale</h3>
+        <p>Marokko ist eines der am stärksten überwachten Fahrgebiete in Nordafrika. Alle 25 bis 50 Kilometer auf Regionalstraßen treffen Sie auf einen Kontrollpunkt, der von der <strong>Gendarmerie Royale</strong> (Landpolizei) oder der <strong>Sûreté Nationale</strong> (Stadtpolizei) besetzt ist.</p>
+        <ul>
+          <li><strong>Der obligatorische Halt:</strong> Kontrollpunkte sind durch Schilder mit der Aufschrift <em>„Halte Polizei“</em> oder <em>„Halte Gendarmerie“</em> gekennzeichnet. An dem Schild müssen Sie vollständig zum Stillstand kommen</strong>. Nicht durchrollen. Sie müssen geduldig warten, bis der Beamte Augenkontakt herstellt und Sie mit einer Handbewegung vorwärts winkt. Das Durchfahren ohne Genehmigung kann zu einer sofortigen Geldstrafe von 400 MAD führen.</li>
+          <li><strong>Laser-Geschwindigkeitskanonen:</strong> Polizeibeamte verstecken Laser-Radar-Geschwindigkeitskanonen häufig hinter Dattelpalmen, Olivenhainen oder Brückenpfeilern, genau an der Stelle, an der die Geschwindigkeitsbegrenzung bei Ortseinfahrten abrupt von 100 km/h auf 60 km/h sinkt.</li>
+          <li><strong>Bußgelder vor Ort:</strong> Wenn Sie bei einer Geschwindigkeitsüberschreitung von nur 7 km/h erwischt werden, werden Sie angehalten und mit einem Bußgeld in Höhe von <strong>150 bis 300 MAD</strong> (ca. 15 bis 30 €) belegt, das sofort in bar gegen Vorlage einer amtlichen Quittung bezahlt werden muss. Auch wenn es finanziell nicht katastrophal ist, können mehrere Stopps und Sprachbarrieren Ihre Urlaubsstimmung verderben.</li>
+        </ul>
+
+        <h3>Gefahr 4: Risiken beim Fahren bei Nacht</h3>
+        <p>Fast jede westliche Botschaft in Rabat gibt den gleichen Ratschlag heraus: <strong>Vermeiden Sie es, nach Einbruch der Dunkelheit auf unbeleuchteten marokkanischen Landstraßen zu fahren</strong>.</p>
+        <p>Auf Landstraßen fehlen Straßenlaternen, reflektierende Katzenaugen und aufgemalte Fahrbahntrenner. Nach Sonnenuntergang treffen Sie auf Fußgänger, die in dunklen Djellabas gekleidet die Straße entlanglaufen, auf Fahrräder ohne Reflektoren, auf unbeleuchtete Traktoren, die Heuballen schleppen, und auf umherstreifende Esel oder Kamele, die sich nahtlos in den nächtlichen Asphalt einfügen. Gerade aus diesem Grund planen professionelle Privatfahrer lange Fahrten so ein, dass sie vor Einbruch der Dunkelheit enden.</p>
+
+        <!-- Private Driver Callout Box -->
+        <div class="roam-tour-cta-box">
+          <span class="roam-tour-cta-kicker">★ STRESS-FREE MOROCCAN TRAVEL</span>
+          <h3 class="roam-tour-cta-title">Möchten Sie lieber das Panorama genießen, ohne Angst vor der Straße zu haben?</h3>
+          <p class="roam-tour-cta-desc">Überlassen Sie Roam Morocco das Steuer. Unsere lizenzierten, englischsprachigen Chauffeure fahren moderne Toyota Prado 4x4 und Mercedes-Vans mit 24/7-Concierge-Support in Marrakesch, Abholung direkt vor der Haustür und All-Inclusive-Preisen.</p>
+          <div class="roam-tour-cta-actions">
+            <a href="/de/custom-morocco-tour.html" class="roam-btn-white">Configure Custom Itinerary &rarr;</a>
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20a%20private%20driver%20quote%20for%20my%20trip." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+          </div>
+        </div>
+
+        <h2>3. Das Medina-Park- und Gepäck-Rätsel</h2>
+        <p>Eine kritische betriebliche Realität, die Selbstfahrer übersehen, ist, dass <strong>Marokkos berühmte Riads tief in jahrhundertealten Medinas liegen, wo Autos physisch keinen Zutritt haben</strong>.</p>
+        <p>Wenn Sie ein Auto mieten und nach Marrakesch oder Fes fahren, ergibt sich folgender Ablauf:</p>
+        <ol>
+          <li>Sie kommen an der äußeren Medina-Mauer an und navigieren durch den dichten Rollerverkehr, während Sie versuchen, Straßenschilder zu entziffern.</li>
+          <li>Sie müssen nach einem öffentlichen oder privaten Parkplatz suchen (oft ein staubiges Kiesgehege).</li>
+          <li>Sie werden von einem <em>„Gardien de Voiture“</em> empfangen – einem Parkwächter mit einer reflektierenden gelben Weste, der die Parkplätze verwaltet. Sie müssen einen Übernachtungspreis aushandeln (normalerweise 20 bis 50 MAD pro Nacht) und Ihre Autoschlüssel oft zurücklassen, damit die Fahrzeuge wie bei einem Schiebepuzzle sortiert werden können.</li>
+          <li>Sie müssen Ihr gesamtes Gepäck auf dem Kopfsteinpflaster ausladen, einen Wagenträger (Koussa) finden, dessen Gebühr (20–40 MAD) aushandeln und 15 bis 25 Minuten durch verwirrende, labyrinthische Gassen laufen, um die Tür Ihres Riads zu finden.</li>
+          <li>Am Abreisetag müssen Sie die gesamte Übung in umgekehrter Reihenfolge wiederholen.</li>
+        </ol>
+        <p>Wenn Sie dagegen einen <strong>Privatfahrer von Roam Morocco</strong> engagieren:</p>
+        <ul>
+          <li>Ihr Fahrer fährt direkt zum nächsten autorisierten Abgabetor.</li>
+          <li>Ihr Fahrer kontaktiert Ihren Riad-Manager im Voraus über WhatsApp und stellt sicher, dass die Riad-Mitarbeiter mit Gepäckwagen am Straßenrand warten, um Sie direkt zur Rezeption zu begleiten.</li>
+          <li>Ihr Fahrer holt das Fahrzeug ab, um es auf einem Privatparkplatz zu sichern, ohne dass für Sie zusätzliche Kosten entstehen.</li>
+          <li>Sie müssen sich keine Sorgen machen, dass Ihr Auto zerkratzt, blockiert oder eingebrochen wird, während Sie in einem Pool auf dem Dach entspannen.</li>
+        </ul>
+
+        <h2>4. Der verborgene kulturelle Wert eines lokalen Berberfahrers</h2>
+        <p>Der vielleicht größte Unterschied zwischen der Anmietung eines Autos und der Beauftragung eines Chauffeurs wird nicht in Euro oder Dirham gemessen, sondern in der <strong>Tiefe Ihrer marokkanischen Erfahrung</strong>.</p>
+        <p>Ein lizenzierter Privatfahrer in Marokko ist weit mehr als eine Person hinter dem Lenkrad. Sie sind Ihr <strong>Kulturbotschafter, Übersetzer und lokaler Beschützer</strong>.</p>
+
+        <!-- Cultural Benefits Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin: 32px 0;">
+          <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.12); padding: 22px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">🗣️</div>
+            <h4 style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; text-transform: uppercase; margin: 0 0 8px; color: #000000;">Sprache & Übersetzung</h4>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; color: rgba(0,0,0,0.76);">Ihr Fahrer spricht fließend Englisch, Französisch, marokkanisches Arabisch (Darija) und Tashelhit Berber und überbrückt jede Kommunikationslücke auf Märkten am Straßenrand, bei Polizeikontrollen und in ländlichen Dörfern.</p>
+          </div>
+          <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.12); padding: 22px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">📍</div>
+            <h4 style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; text-transform: uppercase; margin: 0 0 8px; color: #000000;">Geheime Standpunkte</h4>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; color: rgba(0,0,0,0.76);">Stoppen Sie bei authentischen Bergbäckereien, unberührten Schluchtaussichtspunkten und alten Getreidespeicherruinen, die weder auf Google Maps noch in Reiseführern zu finden sind.</p>
+          </div>
+          <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.12); padding: 22px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">🛡️</div>
+            <h4 style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; text-transform: uppercase; margin: 0 0 8px; color: #000000;">Schutz vor Feilschen und Betrug</h4>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; color: rgba(0,0,0,0.76);">Vermeiden Sie aggressive Straßenwerbung, falsche Reiseführer und Touristenfallen am Straßenrand. Ihr Fahrer sorgt für faire lokale Preise für Arganöl, fossiles Kunsthandwerk und frische Mahlzeiten.</p>
+          </div>
+          <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.12); padding: 22px;">
+            <div style="font-size: 24px; margin-bottom: 8px;">☕</div>
+            <h4 style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; text-transform: uppercase; margin: 0 0 8px; color: #000000;">Spontane Teestopps</h4>
+            <p style="font-size: 15px; line-height: 1.6; margin: 0; color: rgba(0,0,0,0.76);">Teilen Sie Minztee mit einheimischen Familien, hören Sie Geschichten aus erster Hand über das Leben der Nomaden in der Wüste und entdecken Sie die Seele Marokkos durch echte menschliche Beziehungen.</p>
+          </div>
+        </div>
+
+        <h2>5. Der 60-Sekunden-Entscheidungsbaum: Welche Option passt zu Ihnen?</h2>
+        <p>Sie sind sich immer noch nicht sicher, welchen Weg Sie einschlagen sollen? Beantworten Sie diese fünf kurzen Fragen, um Ihr ideales Transportmittel zu ermitteln:</p>
+
+        <!-- Decision Table -->
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Ihr Reiseszenario</th>
+                <th>Empfohlene Wahl</th>
+                <th>Warum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Route:</strong> Nur Kaiserstädte (Casablanca, Rabat, Tanger)</td>
+                <td><strong>Hochgeschwindigkeitszug Al Boraq</strong></td>
+                <td>Marokkos Hochgeschwindigkeitszug fährt mit 320 km/h zwischen Tanger und Casablanca. Es ist schneller, günstiger und komfortabler als Autofahren oder Chauffeur.</td>
+              </tr>
+              <tr>
+                <td><strong>Route:</strong> Atlantikküste und Surfausflug (Taghazout, Essaouira, Imsouane)</td>
+                <td><strong>Ein Auto mieten</strong></td>
+                <td>Flache Küstenstraßen, einfache Navigation und die Freiheit, mit auf dem Dach festgeschnallten Surfbrettern nach Surfspots zu suchen.</td>
+              </tr>
+              <tr>
+                <td><strong>Route:</strong> Sahara Desert Expedition (Marrakesch → Dades → Merzouga → Fes)</td>
+                <td><strong>Privater Fahrer (dringend empfohlen)</strong></td>
+                <td>Beinhaltet mehr als 1.100 km Serpentinen in den Bergen, Wüstenpisten und 8-Stunden-Fahrtage. Müdigkeit ist extrem; Kenntnisse der örtlichen Fahrer sind von unschätzbarem Wert.</td>
+              </tr>
+              <tr>
+                <td><strong>Gruppe:</strong> Familie mit kleinen Kindern oder ältere Reisende</td>
+                <td><strong>Privater Fahrer</strong></td>
+                <td>Riad-Service direkt vor der Haustür, kein Schleppen von Gepäck, geräumiges, klimatisiertes Fahrzeug, flexible Toiletten-/Snackstopps ohne Stress.</td>
+              </tr>
+              <tr>
+                <td><strong>Reiseprofil:</strong> Erstmaliger Besucher in Nordafrika / der arabischen Welt</td>
+                <td><strong>Privater Fahrer</strong></td>
+                <td>Beseitigt kulturelle Desorientierung, Sprachkonflikte an Kontrollpunkten und aggressive Parkwerbung in der Stadt.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+              <!-- Roam Morocco E-E-A-T Curator Bio Card -->
+      <div class="roam-author-card" itemscope itemtype="https://schema.org/Person">
+        <div class="roam-author-avatar">RM</div>
+        <div class="roam-author-content">
+          <span class="roam-author-kicker">Written &amp; Curated by Local Experts</span>
+          <h4 class="roam-author-title"><span itemprop="name">Hamza & Abdelhakim</span> <span itemprop="jobTitle">– Mitbegründer von Roam Morocco Tours</span></h4>
+          <p class="roam-author-bio" itemprop="description">Hamza und Abdelhakim sind in Marrakesch aufgewachsen und haben lebenslange Familienwurzeln im Hohen Atlas und in der Sahara. Sie gründeten Roam Morocco, um kommerziellen Massentourismus abzulehnen. Zusammen mit einheimischen Routenkuratoren entwerfen sie zu 100 % private, entspannte Expeditionen mit dem Schwerpunkt auf authentischem Eintauchen in die Kultur, transparenten Preisen und direkter Unterstützung lokaler Kunsthandwerkergemeinschaften.</p>
+          <div class="roam-author-badges">
+            <span><span class="badge-check">✓</span> Ministry Licensed Tour Operators</span>
+            <span><span class="badge-check">✓</span> Based in Marrakech Medina (40000)</span>
+            <a href="/de/about.html" class="roam-author-link" itemprop="url">Meet Our Team &amp; Philosophy &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Essential Morocco Toolkit -->
+        <div class="roam-toolkit-box">
+          <div class="roam-toolkit-title">✈️ Morocco Trip Planning &amp; Booking Toolkit</div>
+          <div class="roam-toolkit-grid">
+            <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+              <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+              <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+            </a>
+            <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+              <span class="roam-toolkit-label">📱 Unlimited Morocco Airalo eSIM</span>
+              <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+            </a>
+            <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+              <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+              <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+            </a>
+            <a href="/de/custom-morocco-tour.html" class="roam-toolkit-link">
+              <span class="roam-toolkit-label">🚙 Design Custom Chauffeur Tour</span>
+              <span class="roam-toolkit-btn">Plan Route &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <h2>6. Wenn Sie sich entscheiden, ein Auto zu mieten: 7 wesentliche Überlebensregeln</h2>
+        <p>Wenn Sie die Kompromisse abgewogen haben und zu dem Schluss gekommen sind, dass autonomes Fahren zu Ihrem Reisestil passt, halten Sie sich strikt an diese sieben Expertenregeln:</p>
+        <ol>
+          <li><strong>Buchen Sie über einen seriösen Anbieter mit Vollkaskoversicherung:</strong> Wir empfehlen <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener">DiscoverCars</a>, da die Vollkaskoversicherung Ihren Selbstbehalt im Falle kleinerer Kratzer oder Risse in der Windschutzscheibe zurückerstattet, was lokale Kioske häufig ausnutzen.</li>
+          <li><strong>Machen Sie bei der Abholung ein vollständiges 4K-Walkaround-Video:</strong> Bevor Sie den Flughafenparkplatz verlassen, filmen Sie ein kontinuierliches Zeitlupenvideo von jedem Karosserieteil, jeder Radfelge, jeder Reifenseitenwand, jedem Scheinwerfer und jeder Windschutzscheibe. Vergrößern Sie vorhandene Steinschläge und stellen Sie sicher, dass der Makler jeden einzelnen Kratzer auf dem unterschriebenen Inspektionsblatt vermerkt.</li>
+          <li><strong>Fahren Sie niemals nachts:</strong> Planen Sie alle Autofahrten so, dass Sie mindestens 45 Minuten vor Sonnenuntergang in Ihrem Riad oder Hotel ankommen.</li>
+          <li><strong>Installieren Sie eine Airalo eSIM für Instant GPS:</strong> Verlassen Sie sich nicht auf GPS-Geräte von Vermietungsagenturen (die oft veraltet sind). Installieren Sie vor dem Einsteigen in Ihren Flug eine kostengünstige eSIM für Marokko von <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener">Airalo</a> und laden Sie Offline-Karten für das gesamte Land auf Google Maps oder Maps.me herunter.</li>
+          <li><strong>Halten Sie an Kontrollpunkten immer vollständig an:</strong> Wenn Sie <em>„Halte Polizei“</em> oder <em>„Halte Gendarmerie“</em> sehen, halten Sie am Schild vollständig an und warten Sie auf die Welle.</li>
+          <li><strong>Bewahren Sie Dirham-Bargeld in kleinen Stückelungen auf:</strong> Tragen Sie immer 10-, 20- und 50-MAD-Scheine für Parkwächter (gardiens de voitures), Autobahnmautstellen und mögliche Radarstrafen bei sich.</li>
+          <li><strong>Überprüfen Sie das Reserverad und den Wagenheber:</strong> Schlaglöcher in den Bergen und unbefestigter Straßenrandschotter verursachen häufig Reifenpannen. Stellen Sie sicher, dass das Reserverad richtig aufgepumpt ist und dass Wagenheber und Radschlüssel im Kofferraum vorhanden sind, bevor Sie losfahren.</li>
+        </ol>
+
+        <h2>7. Wenn Sie sich entscheiden, einen privaten Fahrer zu engagieren: So buchen Sie sicher</h2>
+        <p>Wenn Sie sich für die Sicherheit, den Luxus und den kulturellen Reichtum eines Privatfahrers entscheiden, vermeiden Sie unbedingt Fahrer ohne Lizenz:</p>
+        <ul>
+          <li><strong>Überprüfen Sie die Nummernschilder von „Transport Touristique“:</strong> In Marokko tragen offizielle Touristentransportfahrzeuge spezielle blaue oder metallische Nummernschilder, aus denen die Genehmigung für gewerbliche Passagiere hervorgeht. Fahrer ohne Führerschein, die private Privatfahrzeuge führen, riskieren, dass ihre Fahrzeuge an Polizeikontrollpunkten beschlagnahmt werden und Passagiere auf der Autobahn festsitzen.</li>
+          <li><strong>Bestehen Sie auf transparenten All-Inclusive-Angeboten:</strong> Stellen Sie schriftlich sicher, dass Ihr Tagesangebot das Fahrzeug, den englischsprachigen Chauffeur, Kraftstoff, Autobahngebühren, Parkgebühren sowie die Hotelübernachtung und Mahlzeiten des Fahrers umfasst.</li>
+          <li><strong>Suchen Sie nach erstklassiger Flottenwartung:</strong> Stellen Sie sicher, dass Ihr Reiseveranstalter moderne Toyota Land Cruiser Prado 4x4 oder Mercedes Vito/V-Klasse-Transporter mit funktionierender Doppelklimaanlage, makellosen Reifen und WLAN an Bord verwendet.</li>
+        </ul>
+        <p>Bei <strong>Roam Morocco</strong> verfügen alle unsere Fahrer über eine vollständige Lizenz, sind geprüft und sprechen fließend Englisch. Wir verfügen über eine Flotte makelloser Fahrzeuge und bieten transparente Preise ohne Überraschungen. Sie können unsere einzigartigen Routen erkunden oder eine völlig maßgeschneiderte Reise entwerfen:</p>
+        <ul>
+          <li><a href="/de/tour-premium-explorer.html">3-tägiger Premium Explorer Circuit (Marrakesch → Dades → Merzouga Dunes)</a></li>
+          <li><a href="/de/tour-heritage-cinema.html">Kulturerbe- und Kinorundgang (Kasbahs Ait Benhaddou und Ouarzazate)</a></li>
+          <li><a href="/de/tour-active-atlas.html">Aktiver High Atlas & Toubkal Trekking Circuit</a></li>
+          <li><a href="/de/blog/morocco-private-driver-cost.html">Vollständige Kostenaufschlüsselung für Privatfahrer in Marokko im Jahr 2026</a></li>
+        </ul>
+
+        <!-- Bottom Tour CTA Box -->
+        <div class="roam-tour-cta-box">
+          <span class="roam-tour-cta-kicker">★ PRIVATE EXPEDITIONS &amp; CHAUFFEURED TOURS</span>
+          <h3 class="roam-tour-cta-title">Sind Sie bereit, Marokko ganz bequem zu erleben?</h3>
+          <p class="roam-tour-cta-desc">Vermeiden Sie den Stress in den Bergen, Parkprobleme und die Einbehaltung der Kaution für den Mietwagen. Lassen Sie unser lokales Team Ihre maßgeschneiderte private Tour mit lizenzierten englischsprachigen Fahrern, handverlesenen Riads und einem 24/7-Concierge-Support in Marrakesch zusammenstellen.</p>
+          <div class="roam-tour-cta-actions">
+            <a href="/de/custom-morocco-tour.html" class="roam-btn-white">Request Custom Itinerary &rarr;</a>
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I%20read%20your%20car%20vs%20driver%20guide%20and%20want%20to%20hire%20a%20private%20driver." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+          </div>
+        </div>
+
+          </div>
+  </article>  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

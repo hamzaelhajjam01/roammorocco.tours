@@ -1,0 +1,327 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "Marrakech vs Fez (Comparación 2026): ¿Qué ciudad es mejor? | Deambular por Marruecos";
+const description = "Marrakech vs Fez: ¿qué ciudad imperial deberías visitar? Comparación honesta en 2026 de medinas, comida, seguridad, costos de riad, zocos artesanales y viajes entre ellos.";
+const canonical = "https://roammorocco.tours/es/blog/marrakech-vs-fes.html";
+const ogImage = "https://roammorocco.tours/images/marrakech_vs_fes_hero.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": `${canonical}#article`,
+      "headline": title,
+      "description": description,
+      "image": ogImage,
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-03-01",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hamza",
+          "jobTitle": "Co-Founder & Expedition Curator",
+          "url": "https://roammorocco.tours/about.html"
+        },
+        {
+          "@type": "Person",
+          "name": "Abdelhakim",
+          "jobTitle": "Co-Founder & Operations Lead",
+          "url": "https://roammorocco.tours/about.html"
+        }
+      ],
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonical
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonical}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title,
+          "item": canonical
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonical}#faq`,
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best time to visit Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best time to visit Morocco is during the spring (mid-March to May) or fall (September to October). The weather is warm but pleasant, unlike the extreme heat of summer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a visa to visit Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Citizens of the US, UK, Canada, Australia, and most of Europe do not need a visa for tourist visits up to 90 days. Always check with your local embassy before traveling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Morocco safe for tourists?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Morocco is generally very safe for tourists. The government places a high priority on tourist safety. Like any destination, practice common sense, especially in crowded medinas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should female travelers wear in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Morocco is a conservative country. While tourists aren't expected to wear traditional clothing, dressing modestly (covering shoulders and knees) is highly recommended out of respect for local culture."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you drink alcohol in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, alcohol is available in Morocco, primarily in licensed hotels, bars, and tourist restaurants. However, drinking in public outside of these venues is strictly prohibited."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What language do they speak in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The official languages are Arabic and Amazigh (Berber). French is widely spoken and serves as the language of commerce. English is increasingly common in tourist areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the currency in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The currency is the Moroccan Dirham (MAD). While major hotels and large restaurants accept credit cards, cash is essential for souks, taxis, and small shops."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many days do you need in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To see the highlights (Marrakech, Fes, and the Sahara Desert), we recommend at least 7 to 10 days. A two-week trip allows for a more relaxed pace and exploring the coast."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is tap water safe to drink in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is generally recommended for tourists to stick to bottled water to avoid stomach upsets, as the tap water contains different minerals than you might be used to."
+        }
+      }
+    ]
+  }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <article class="article-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/es/index.html">Home</a> &gt; <a href="/es/blog.html">Blog</a> &gt; <span>Marrakech vs Fes</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">DESTINATION SHOWDOWN • 2026 AUTHORITY GUIDE</span>
+      <h1 class="article-title">Marrakech vs Fez: ¿Qué ciudad imperial marroquí deberías visitar?</h1>
+      <p class="article-subtitle">Una comparación cultural sin adornos: energía sensorial moderna y vibrante versus 1200 años de laberinto, cocina, arquitectura y artesanía medievales conservados.</p>
+      <div class="article-meta">
+        <span>Published: <strong>September 28, 2026</strong></span>
+        <span>Author: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>10 Minutes (2,100 Words)</strong></span>
+        <span>Focus: <strong>Imperial City Comparison</strong></span>
+      </div>
+    </header>
+
+    <!-- Featured Visual Frame -->
+    <figure class="featured-image-box">
+      <img src="/images/marrakech_vs_fes_hero.webp" alt="Marrakech vs Fes: Which Moroccan Imperial City Should You Visit?">
+      <figcaption>Perspectivas comparativas: el animado crepúsculo de la plaza Jemaa el-Fna de Marrakech y las atemporales curtidurías de cuero de Fez el-Bali.</figcaption>
+    </figure>
+
+    <!-- Editorial Prose -->
+    <div class="article-content">
+      <!-- Quick Answer Snapshot for AI Overviews / Answer Engines -->
+      <aside class="ai-quick-summary-card" aria-label="Marrakech vs Fes Comparison Quick Answer">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ QUICK ANSWER: MARRAKECH VS FES</span>
+          <span class="ai-summary-badge">City Comparison</span>
+        </div>
+        <p class="ai-summary-text">Elija <strong>Marrakech</strong> si desea energía nocturna vibrante (Jemaa el-Fna), cenas de lujo en la azotea, riads boutique de diseño y excursiones de un día al glamping de Agafay o a las montañas del Alto Atlas. Elija <strong>Fez</strong> si desea una auténtica historia medieval, la medina peatonal sin automóviles más grande del mundo (Fes el-Bali con más de 9.000 callejones), curtidurías vivas (Chouara) y una cultura artesanal sin prisas. Si su agenda le permite más de 7 días, conectar ambos a través de un circuito privado por el desierto del Sahara ofrece el viaje marroquí definitivo.</p>
+      </aside>
+
+      <p style="font-size: 1.25rem;">Es el debate definitivo para los viajeros que se dirigen al norte de África con tiempo limitado: <em>"Marrakech vs Fez, ¿qué ciudad deberías visitar?"</em> Si recorres los hilos de reddit de <strong>fez vs marrakech</strong>, encontrarás defensores apasionados de ambos lados. Son las dos <strong>ciudades de Marruecos</strong> más famosas, pero ofrecen experiencias tremendamente diferentes.</p>
+  
+      <p>¿Deberías sumergirte en la energía caótica y vibrante de Marrakech o perderte en las auténticas callejuelas medievales de Fez? ¿Es posible visitar ambos? (Spoiler: el tren de Fez a Marrakech los conecta directamente, pero la mejor manera de experimentar ambas joyas imperiales es a través del espectacular cruce por el desierto que se incluye en nuestro <a href="/es/blog/morocco-10-day-itinerary.html"><strong>itinerario de viaje por carretera de 10 días por Marruecos</strong></a>). En esta guía, desglosamos el gran debate <strong>Fez vs Marrakech</strong>.</p>
+
+      <h2>The Vibe: energía vibrante versus autenticidad antigua</h2>
+      
+      <h3>Marrakech: la vibrante ciudad roja</h3>
+      <p>A menudo la gente pregunta: <em>"¿Debería saltarme Marrakech?"</em> La respuesta es un rotundo no. Marrakech está construida para el turismo. Está muy restaurado, es lujoso y vibra con una energía innegable. El corazón de la ciudad es <strong>Jemaa el Fnaa</strong>, una enorme plaza llena de encantadores de serpientes, narradores de cuentos y puestos de comida que cobra vida por la noche. Si desea riads de lujo, restaurantes de talla mundial y tiendas increíbles, Marrakech es el claro ganador. También es significativamente <strong>más fácil de navegar</strong> para quienes visitan por primera vez en comparación con Fez.</p>
+
+      <h3>Fez: la cápsula del tiempo medieval</h3>
+      <p>Si se pregunta: <em>"¿Vale la pena visitar Fez?"</em>, comprenda que Fez es el corazón espiritual y cultural de Marruecos. Es una de las <strong>ciudades más antiguas</strong> del mundo árabe. El ambiente aquí es profundamente tradicional y absolutamente auténtico. Está menos pulida que Marrakech, que es exactamente su encanto. Cuando entras en Fez, realmente sientes que has viajado 1.000 años atrás en el tiempo.</p>
+
+      <!-- Comparison Table Matrix for AI Citations & Searchers -->
+      <div style="overflow-x: auto; margin: 32px 0; border: 1px solid rgba(0,0,0,0.12); background: #ffffff;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+          <thead>
+            <tr style="background: #faf8f5; border-bottom: 2px solid #000000;">
+              <th style="padding: 14px 18px; font-weight: 800; text-transform: uppercase;">Categoría</th>
+              <th style="padding: 14px 18px; font-weight: 800; text-transform: uppercase;">Marrakech (La Ciudad Roja)</th>
+              <th style="padding: 14px 18px; font-weight: 800; text-transform: uppercase;">Fez (El Corazón Espiritual)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+              <td style="padding: 14px 18px; font-weight: 700;">Ambiente general</td>
+              <td style="padding: 14px 18px;">Vibrante, cosmopolita, sensorial, llena de energía.</td>
+              <td style="padding: 14px 18px;">Erudito, místico, medieval, sin prisas.</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+              <td style="padding: 14px 18px; font-weight: 700;">Disposición de la medina</td>
+              <td style="padding: 14px 18px;">Navegación más fácil, amplias avenidas del zoco.</td>
+              <td style="padding: 14px 18px;">Más de 9.000 callejones laberínticos, la zona libre de coches más grande del mundo</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+              <td style="padding: 14px 18px; font-weight: 700;">Costos promedio del riad</td>
+              <td style="padding: 14px 18px;">$120 – $450/noche (techo alto de lujo)</td>
+              <td style="padding: 14px 18px;">$70 – $220/noche (30–40% mejor valor)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
+              <td style="padding: 14px 18px; font-weight: 700;">Pasarelas de excursiones</td>
+              <td style="padding: 14px 18px;">Desierto de Agafay, Ourika, Monte Toubkal, Essaouira</td>
+              <td style="padding: 14px 18px;">Chefchaouen (Ciudad Azul), Meknes, ruinas romanas de Volubilis</td>
+            </tr>
+            <tr>
+              <td style="padding: 14px 18px; font-weight: 700;">Más adecuado para</td>
+              <td style="padding: 14px 18px;">Parejas, vida nocturna, amantes del diseño, quienes visitan por primera vez.</td>
+              <td style="padding: 14px 18px;">Aficionados a la historia, fotógrafos, puristas culturales.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Fez vs Marrakech Medina</h2>
+      <p>La atracción central de cualquier ciudad imperial marroquí es su medina (casco antiguo). Ambos son <strong>sitios del Patrimonio Mundial de la UNESCO</strong>, pero son bestias completamente diferentes.</p>
+      
+      <ul>
+        <li><strong>Medina de Marrakech:</strong> Los zocos aquí son visualmente impresionantes, coloridos y muy seleccionados para los turistas. Encontrarás increíbles productos artesanales, lámparas y alfombras. La arquitectura es espectacular: no se pierda la madraza <strong>Ben Youssef</strong> con intrincados azulejos y el impresionante <strong>Palacio de la Bahía</strong>.</li>
+        <li><strong>Medina de Fez (Fes el Bali):</strong> <strong>Fes el Bali</strong> es la zona urbana sin coches más grande del mundo y consta de más de 9.000 callejones sinuosos y laberínticos. Es una verdadera ciudad trabajadora. Esquivarás burros que transportan suministros y escucharás el martilleo de los artesanos del cobre. La joya de la corona es la <strong>Chouara Tannery</strong>, donde todavía se tiñe el cuero con métodos medievales. Advertencia: <em>te</em> te perderás en Fez sin un guía, pero eso es parte de la magia.</li>
+      </ul>
+      <p><em>Etiqueta de compras:</em> Ya sea que esté mirando faroles de latón en Marrakech o kilims tejidos a mano en Fez, la negociación es un antiguo ritual de amistad, no de combate. Aprenda a comprar con confianza y gracia en nuestra guía cultural: <a href="/es/blog/the-art-of-the-souk-bargaining-etiquette.html"><strong>El arte del zoco: por qué regatear en Marrakech es una conversación, no un combate</strong></a>.</p>
+
+      <h2>¿Es Fez más barata que Marrakech?</h2>
+      <p>El presupuesto suele ser un factor decisivo. <strong>¿Es Fez más barata que Marrakech?</strong> Sí, notablemente. Debido a que Marrakech atiende a una afluencia masiva de turistas internacionales, los precios de los riads, la comida y los recuerdos son más altos. Fez sigue estando mucho más basada en los precios locales. Un riad de lujo o un tagine tradicional en Fez suele costar entre un 30 y un 40 % menos que una experiencia comparable en Marrakech. Cuando planifique su viaje por tierra entre ciudades, revise nuestro análisis de costos transparente en <a href="/es/blog/morocco-private-driver-cost.html"><strong>Costes de los conductores privados en Marruecos</strong></a> para presupuestar los traslados privados frente a los trenes regionales.</p>
+
+      <h2>Marrakech vs Casablanca vs Fez</h2>
+      <p>Muchos viajeros incluyen Casablanca en la lista. Al analizar <strong>Marrakech, Casablanca y Fez</strong>, el consenso entre los expertos en viajes es claro: Casablanca es un centro económico corporativo moderno. Aparte de la magnífica Mezquita de Hassan II, carece del encanto histórico y romántico de las ciudades imperiales. Para los turistas, es mucho mejor pasar el tiempo en Marrakech o Fez.</p>
+
+      <h2>Excursiones de un día: ¿Qué ciudad es un mejor campamento base?</h2>
+      <p>Si quieres establecerte en una ciudad y realizar excursiones, el ganador es claro.</p>
+      <p><strong>Marrakech</strong> es el rey indiscutible de las <strong>excursiones de un día</strong>. Desde Marrakech, estarás a poca distancia en coche de las nevadas <a href="/es/tour-active-atlas.html"><strong>Montañas del Atlas</strong></a>, del rocoso desierto de Agafay, de la ciudad costera de Essaouira y de las cinematográficas Kasbahs de Ait Benhaddou en nuestro <a href="/es/tour-heritage-cinema.html"><strong>Lugares de cine y cine patrimonial de Marruecos. recorrido</strong></a>. Fez también ofrece excelentes excursiones de un día (como la ciudad azul de Chefchaouen o las ruinas romanas de Volubilis), pero Marrakech ofrece una diversidad geográfica mucho mayor en un radio de dos horas.</p>
+
+      <!-- Roam Morocco Reusable Tour CTA Box Component -->
+      <div class="roam-tour-cta-box">
+        <span class="roam-tour-cta-kicker">★ TAILORED IMPERIAL CITIES CIRCUIT</span>
+        <h3 class="roam-tour-cta-title">Experimente Marrakech y Fez con total comodidad</h3>
+        <p class="roam-tour-cta-desc">¿No puedes decidir entre Marrakech y Fez? Conéctelos sin problemas a través de las dunas del Alto Atlas y del Sahara con su propio chofer bereber de habla inglesa, un vehículo 4×4 de lujo y riads históricos seleccionados.</p>
+        <div class="roam-tour-cta-actions">
+          <a href="/es/custom-morocco-tour.html" class="roam-btn-white">Design Imperial Cities Circuit &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20Marrakech%20and%20Fes%20tour." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
+
+      <h2>El veredicto final</h2>
+      <p><strong>Elija Marrakech si:</strong> desea lujo, cenas increíbles, vida nocturna vibrante, arquitectura fotogénica, fácil navegación y acceso a las montañas del Atlas.</p>
+      <p><strong>Elija Fez si:</strong> es un aficionado a la historia, desea una experiencia cultural intensa y sin filtros, prefiere menos multitudes y viaja con un presupuesto ligeramente más ajustado.</p>
+
+            <!-- Roam Morocco E-E-A-T Curator Bio Card -->
+      <div class="roam-author-card" itemscope itemtype="https://schema.org/Person">
+        <div class="roam-author-avatar">RM</div>
+        <div class="roam-author-content">
+          <span class="roam-author-kicker">Written &amp; Curated by Local Experts</span>
+          <h4 class="roam-author-title"><span itemprop="name">Hamza & Abdelhakim</span> <span itemprop="jobTitle">— Cofundadores de Roam Marruecos Tours</span></h4>
+          <p class="roam-author-bio" itemprop="description">Criados en Marrakech con raíces familiares de toda la vida que abarcaban el Alto Atlas y el Sahara, Hamza y Abdelhakim fundaron Roam Marruecos para rechazar el turismo comercial de masas. Junto con curadores de rutas nativos, diseñan expediciones 100% privadas y sin prisas que se centran en una auténtica inmersión cultural, precios transparentes y apoyo directo a las comunidades artesanales locales.</p>
+          <div class="roam-author-badges">
+            <span><span class="badge-check">✓</span> Ministry Licensed Tour Operators</span>
+            <span><span class="badge-check">✓</span> Based in Marrakech Medina (40000)</span>
+            <a href="/es/about.html" class="roam-author-link" itemprop="url">Meet Our Team &amp; Philosophy &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+        </div>
+  </article>  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

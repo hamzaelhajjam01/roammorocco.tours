@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Politique de confidentialité - RoamMaroc";
+const description = "Lisez la politique de confidentialité de Roam Morocco Tours. Découvrez comment nous protégeons en toute sécurité les données des clients, les informations de réservation et les transactions de paiement.";
+const canonical = "https://roammorocco.tours/fr/privacy-policy.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = [];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${canonical}#webpage`,
+  "url": canonical,
+  "name": title,
+  "description": description,
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/"
+  },
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+    }
+  }
+};
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+        body {
+            background-color: #060605;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        h1 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #C8A45C;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #C8A45C;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    
+  </style>
+
+  <div class="container">
+        <a href="/fr/" class="back-link">← Back to Home</a>
+        <h1>politique de confidentialité</h1>
+        <p>Ceci est un espace réservé pour la politique de confidentialité de RoamMorocco. Veuillez mettre à jour cette page avec vos conditions juridiques officielles.</p>
+        <h2>1. Introduction</h2>
+        <p>Bienvenue sur RoamMaroc. En accédant à notre site Web, vous acceptez ces conditions.</p>
+        <h2>2. Collecte de données</h2>
+        <p>Nous respectons votre vie privée et nous engageons à protéger toutes les informations personnelles que vous fournissez lorsque vous demandez un voyage personnalisé.</p>
+        <h2>3. Contactez-nous</h2>
+        <p>Si vous avez des questions sur nos pratiques de confidentialité, veuillez nous contacter à <a href="mailto:contact@roammorocco.tours">contact@roammorocco.tours</a> ou via WhatsApp au <a href="https://wa.me/212653506441">+212 653 506 441</a>.</p>
+    </div>
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+</Layout>

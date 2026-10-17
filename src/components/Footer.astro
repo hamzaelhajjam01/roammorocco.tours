@@ -1,5 +1,16 @@
 ---
 // Footer Component
+interface Props {
+  lang?: string;
+}
+
+const { lang = 'en' } = Astro.props;
+
+const lLink = (url: string) => {
+  if (lang === 'en') return url;
+  if (url === '/' || url === '/#top') return `/${lang}/`;
+  return `/${lang}${url.startsWith('/') ? url : '/' + url}`;
+};
 ---
   <footer id="contact">
     <div class="footer-wrap">
@@ -11,17 +22,17 @@
         <div class="footer-nav-columns" style="gap:36px;">
           <div class="footer-col">
             <span class="footer-col-title">Destinations</span>
-            <a href="/destination-sahara-desert.html">Sahara Desert</a>
-            <a href="/destination-marrakech.html">Marrakech</a>
-            <a href="/destination-fes.html">Fes</a>
-            <a href="/destination-chefchaouen.html">Chefchaouen</a>
+            <a href={lLink('/destination-sahara-desert.html')}>Sahara Desert</a>
+            <a href={lLink('/destination-marrakech.html')}>Marrakech</a>
+            <a href={lLink('/destination-fes.html')}>Fes</a>
+            <a href={lLink('/destination-chefchaouen.html')}>Chefchaouen</a>
           </div>
           <div class="footer-col">
             <span class="footer-col-title">Travel Suite</span>
-            <a href="/morocco-trip-cost-calculator.html">Cost Estimator</a>
-            <a href="/morocco-private-driver.html">Private Chauffeur</a>
-            <a href="/custom-morocco-tour.html">Custom Tours</a>
-            <a href="/blog.html">Travel Blog</a>
+            <a href={lLink('/morocco-trip-cost-calculator.html')}>Cost Estimator</a>
+            <a href={lLink('/morocco-private-driver.html')}>Private Chauffeur</a>
+            <a href={lLink('/custom-morocco-tour.html')}>Custom Tours</a>
+            <a href={lLink('/blog.html')}>Travel Blog</a>
           </div>
           <div class="footer-col">
             <span class="footer-col-title">Connect</span>
@@ -37,10 +48,10 @@
       <div class="footer-bottom-bar">
         <div class="footer-legal">
           <span>&copy; 2026 Roam Morocco Tours. All Rights Reserved.</span>
-          <a href="/terms-conditions.html">Terms of Service</a>
-          <a href="/privacy-policy.html">Privacy Policy</a>
-          <a href="/refund-policy.html">Refund Policy</a>
-          <a href="/travel-policy.html">Travel Policy</a>
+          <a href={lLink('/terms-conditions.html')}>Terms of Service</a>
+          <a href={lLink('/privacy-policy.html')}>Privacy Policy</a>
+          <a href={lLink('/refund-policy.html')}>Refund Policy</a>
+          <a href={lLink('/travel-policy.html')}>Travel Policy</a>
         </div>
       </div>
     </div>

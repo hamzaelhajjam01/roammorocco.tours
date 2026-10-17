@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import TripConcierge from '../components/TripConcierge.astro';
 
 interface Props {
+  lang?: string;
   title?: string;
   description?: string;
   canonical?: string;
@@ -18,9 +19,10 @@ interface Props {
 }
 
 const {
+  lang: propLang,
   title = "Private Morocco Tours: Luxury Sahara Expeditions & Drivers",
   description = "Discover Morocco with Roam Morocco Tours. Custom luxury Sahara desert expeditions, Atlas trekking, and private tours crafted by local Marrakech experts.",
-  canonical = "https://roammorocco.tours/",
+  canonical: propCanonical,
   ogImage = "https://roammorocco.tours/images/hero-desert.jpg",
   schema,
   bodyClass = "roam-light-theme",
@@ -30,9 +32,39 @@ const {
   showConcierge = true,
   extraStyles = []
 } = Astro.props;
+
+// Determine active language
+const currentLang = propLang || (Astro.url.pathname.match(/^\/(fr|es|de|it)(\.html|\/|$)/)?.[1]) || 'en';
+
+// Compute reciprocal alternate URLs for multi-language SEO
+const rawPath = Astro.url.pathname;
+const pathWithoutLang = rawPath.replace(/^\/(fr|es|de|it)(\.html|\/|$)/, '/');
+const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang : `/${pathWithoutLang}`;
+const normPath = (cleanPath === '/index.html' || cleanPath === '/') ? '/' : cleanPath;
+
+const domain = "https://roammorocco.tours";
+const enUrl = normPath === '/' ? `${domain}/` : `${domain}${normPath}`;
+const frUrl = normPath === '/' ? `${domain}/fr/` : `${domain}/fr${normPath}`;
+const esUrl = normPath === '/' ? `${domain}/es/` : `${domain}/es${normPath}`;
+const deUrl = normPath === '/' ? `${domain}/de/` : `${domain}/de${normPath}`;
+const itUrl = normPath === '/' ? `${domain}/it/` : `${domain}/it${normPath}`;
+
+const canonical = propCanonical || (
+  currentLang === 'fr' ? frUrl :
+  currentLang === 'es' ? esUrl :
+  currentLang === 'de' ? deUrl :
+  currentLang === 'it' ? itUrl :
+  enUrl
+);
+
+const ogLocale = currentLang === 'fr' ? 'fr_FR' :
+  currentLang === 'es' ? 'es_ES' :
+  currentLang === 'de' ? 'de_DE' :
+  currentLang === 'it' ? 'it_IT' :
+  'en_US';
 ---
 <!doctype html>
-<html lang="en">
+<html lang={currentLang}>
 <head>
   <!-- Google tag (gtag.js) -->
   <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-G2EBSDKVZM"></script>
@@ -67,18 +99,19 @@ const {
   <title>{title}</title>
   <meta name="description" content={description}>
   <link rel="canonical" href={canonical}>
-  <link rel="alternate" hreflang="en" href={canonical}>
-  <link rel="alternate" hreflang="fr" href={canonical}>
-  <link rel="alternate" hreflang="es" href={canonical}>
-  <link rel="alternate" hreflang="de" href={canonical}>
-  <link rel="alternate" hreflang="it" href={canonical}>
-  <link rel="alternate" hreflang="x-default" href={canonical}>
+  <link rel="alternate" hreflang="en" href={enUrl}>
+  <link rel="alternate" hreflang="fr" href={frUrl}>
+  <link rel="alternate" hreflang="es" href={esUrl}>
+  <link rel="alternate" hreflang="de" href={deUrl}>
+  <link rel="alternate" hreflang="it" href={itUrl}>
+  <link rel="alternate" hreflang="x-default" href={enUrl}>
   <link rel="alternate" type="text/plain" href="https://roammorocco.tours/llms.txt" title="AI Model Context (LLMs.txt)">
   <link rel="alternate" type="text/plain" href="https://roammorocco.tours/llms-full.txt" title="Full AI Knowledge Base (LLMs-full.txt)">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content={canonical}>
+  <meta property="og:locale" content={ogLocale}>
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
   <meta property="og:image" content={ogImage}>
@@ -455,9 +488,9 @@ const {
   <slot name="head" />
 </head>
 <body class={bodyClass} id="top">
-  {showHeader && <Header showLoader={showLoader} />}
+  {showHeader && <Header showLoader={showLoader} lang={currentLang} />}
   <slot />
-  {showFooter && <Footer />}
+  {showFooter && <Footer lang={currentLang} />}
   {showConcierge && <TripConcierge />}
 
   <!-- Client-side Interactive Scripts -->
@@ -646,7 +679,6 @@ const {
     })();
   </script>
   <script is:inline src="/js/roam-nav.js?v=20261012_nav6" defer></script>
-  <script is:inline src="/js/roam-i18n.js?v=20261017_i18n" defer></script>
   {showConcierge && <script is:inline src="/js/trip-concierge.js?v=20261012_gold4" defer></script>}
   <script is:inline src="/js/booking-wizard.js?v=20261014_goldtheme" defer></script>
 </body>

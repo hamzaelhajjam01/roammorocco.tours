@@ -1,0 +1,325 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "Temps de conduite au Maroc et réalité des road trips (Guide 2026) | Parcourez le Maroc";
+const description = "Temps de conduite réalistes au Maroc par rapport aux estimations de Google Maps. Découvrez les heures de route réelles de Marrakech à Merzouga, Fès, la vallée du Dadès et les cols de l'Atlas.";
+const canonical = "https://roammorocco.tours/fr/blog/morocco-driving-times.html";
+const ogImage = "https://roammorocco.tours/images/morocco_private_driver.webp";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://roammorocco.tours/blog/morocco-driving-times.html#article",
+      "headline": "Morocco Driving Times & Road Trip Reality: Why Google Maps Lies (And How to Pace Your Route)",
+      "description": "Realistic driving times across Morocco's most popular road trip circuits compared against misleading navigation app estimates.",
+      "image": "https://roammorocco.tours/images/morocco_private_driver.webp",
+      "datePublished": "2026-10-03",
+      "dateModified": "2026-10-03",
+      "author": {
+        "@type": "Organization",
+        "name": "Roam Morocco Chauffeur Team",
+        "url": "https://roammorocco.tours/about.html"
+      },
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://roammorocco.tours/blog/morocco-driving-times.html"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roammorocco.tours/blog/morocco-driving-times.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it really take to drive from Marrakech to Merzouga desert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While Google Maps quotes 8.5 to 9 hours for Marrakech to Merzouga (560 km), the realistic travel time is 10 to 11.5 hours. Crossing the 2,260m Tizi n'Tichka pass involves heavy truck traffic, hairpins, and road inspections. Roam Morocco strongly recommends splitting this journey with an overnight stop in the Dades Valley or Skoura Oasis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Google Maps underestimate driving times in Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Maps calculates travel times based on posted speed limits (60\u2013100 km/h) without factoring in single-lane mountain passes, slow agricultural trucks, frequent Royal Gendarmerie speed radars, wandering livestock, or scenic mountain stops. On mountain routes, always add 25% to 40% to digital navigation estimates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you drive from Marrakech to Merzouga in one single day?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Technically yes, but it is physically grueling and not recommended. You will spend over 10 hours in the vehicle, miss UNESCO Ait Benhaddou and Todra Gorge entirely, and arrive in the Sahara long after sunset, forfeiting the iconic sunset camel trek into camp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is the drive from Fes to Merzouga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The drive from Fes to Merzouga via the Middle Atlas (460 km) takes 7.5 to 8.5 hours with brief stops at Ifrane (the Swiss-style cedar forest) and the Ziz Valley gorge. Unlike the Marrakech route, Fes to Merzouga can comfortably be completed in a single scenic day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is driving the Tizi n'Tichka mountain pass dangerous?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Tizi n'Tichka pass (N9 highway) is paved and modern, but features steep drop-offs, sharp hairpin turns, and occasional heavy rain or winter ice. It is safe for confident mountain drivers, but can induce intense anxiety for unaccustomed drivers. Experienced local private chauffeurs navigate this road weekly with specialized 4x4 vehicles."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <article class="article-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/fr/index.html">Home</a> &gt; <a href="/fr/blog.html">Blog</a> &gt; <span>Morocco Driving Times</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">ROAD TRIP REALITY • 2026 LOGISTICS GUIDE</span>
+      <h1 class="article-title">Temps de conduite au Maroc et réalité des road trips : pourquoi Google Maps ment (et comment suivre votre itinéraire)</h1>
+      <p class="article-subtitle">Un guide sans fard d'heures de transit réalistes à travers les montagnes du Haut Atlas, le désert du Sahara et les villes impériales. Évitez le piège épuisant des 12 heures de conduite.</p>
+      <div class="article-meta">
+        <span>Published: <strong>October 3, 2026</strong></span>
+        <span>Author: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>11 Minutes (2,400 Words)</strong></span>
+        <span>Focus: <strong>Itinerary Feasibility &amp; Mountain Pacing</strong></span>
+      </div>
+    </header>
+
+    <!-- Featured Visual Frame -->
+    <figure class="featured-image-box">
+      <img src="/images/morocco_private_driver.webp" alt="Private Chauffeur driving through the High Atlas Mountains in Morocco" width="1200" height="630">
+      <figcaption>Les routes sinueuses traversant le col de Tizi n'Tichka, culminant à 2 260 m, nécessitent un rythme tranquille, une navigation experte en montagne et des aires de repos calculées.</figcaption>
+    </figure>
+
+    <!-- Editorial Prose -->
+        <!-- GEO & AEO Key Takeaways Box (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Morocco Driving Times Quick Answer">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ QUICK ANSWER: REALISTIC MOROCCO DRIVING TIMES</span>
+        <span class="ai-summary-badge">2026 Route Benchmarks</span>
+      </div>
+      <p class="ai-summary-text">Les temps de conduite à travers le Maroc dépendent fortement du relief : les autoroutes modernes (autoroutes à péage) permettent une vitesse de croisière fluide de 120 km/h, tandis que les cols de montagne atteignent en moyenne 45 à 60 km/h. Principaux repères de transfert privé : <strong>Casablanca à Marrakech :</strong> 2h 45m (242 km) ; <strong>Marrakech à Essaouira :</strong> 2h 30m (175 km) ; <strong>Marrakech à Fès :</strong> 6h (530 km) ; <strong>Marrakech à Merzouga (Sahara) :</strong> 9h–10h (560 km à travers le col de Tizi n'Tichka, mieux réparti sur 2 jours) ; <strong>Tanger à Chefchaouen :</strong> 2h 15m (115 km).</p>
+    </aside>
+
+    <div class="article-content">
+
+      <!-- AEO / GEO Quick Answer Snapshot -->
+      <div style="background: #ffffff; border-left: 4px solid var(--gold, #C8A45C); border-top: 1px solid rgba(0,0,0,0.12); border-right: 1px solid rgba(0,0,0,0.12); border-bottom: 1px solid rgba(0,0,0,0.12); padding: 24px 28px; margin-bottom: 36px; box-shadow: 0 6px 20px rgba(0,0,0,0.03);">
+        <strong style="display: block; font-family: Helvetica, Arial, sans-serif; font-size: 15px; text-transform: uppercase; letter-spacing: 0.05em; color: #000000; margin-bottom: 8px;">Quick Answer: Why Does Google Maps Underestimate Moroccan Driving Times?</strong>
+        <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.6; color: rgba(0,0,0,0.85); margin: 0;">Google Maps calcule les temps de conduite au Maroc en utilisant les limites de vitesse maximales légales sur les autoroutes, sans tenir compte de la réalité du terrain : lacets de montagne à voie unique sur des cols de 2 260 mètres, camions de phosphate lents, tracteurs agricoles, postes de contrôle radar de la gendarmerie et passages à bétail. Pour les itinéraires de montagne et de désert (comme <strong>Marrakech à Merzouga</strong> ou <strong>Fès vers le Sahara</strong>), <strong>ajoutez toujours 25 à 40 % aux estimations de Google Maps</strong> pour calculer des temps de trajet réalistes et confortables.</p>
+      </div>
+
+      <p style="font-size: 1.25rem;">Ouvrez Google Maps, saisissez <em>"Marrakech aux dunes de l'Erg Chebbi, Merzouga"</em>, et l'écran revient confortablement : <strong>8 heures et 35 minutes (560 km)</strong>. Cela semble ambitieux, mais réalisable en une seule journée – du moins c’est ce que croient à tort des centaines de voyageurs épuisés chaque semaine.</p>
+
+      <p>En réalité, tenter ce sprint marathon transforme ce qui devrait être une charmante traversée culturelle de l’Afrique du Nord en une éreintante épreuve d’endurance de 11 heures. Au moment où vous parcourez les virages en épingle du Haut Atlas, rampez derrière des camions lourds, franchissez les points de contrôle de la police rurale et arrêtez-vous pour prendre un café et du carburant, le soleil a disparu sous l'horizon. Vous manquez la randonnée à dos de chameau au coucher du soleil doré jusqu'au camp, arrivant épuisé dans l'obscurité totale.</p>
+
+      <p>Chez Roam Morocco, nos chauffeurs parcourent ces cols chaque semaine. Dans ce guide d'autorité, nous détaillons les <strong>temps de conduite réalistes et exacts</strong> entre les principales destinations du Maroc, pourquoi les cartes numériques vous induisent en erreur et comment structurer votre <a href="/fr/blog/morocco-10-day-itinerary.html"><strong>Road trip au Maroc de 10 jours</strong></a> pour savourer chaque kilomètre.</p>
+
+      <!-- Comparison Matrix Table -->
+      <h2 id="morocco-driving-times-matrix">Temps de conduite au Maroc : Google Maps et temps de chauffeur réaliste</h2>
+      <p>Vous trouverez ci-dessous notre matrice de réalité testée sur le terrain comparant les estimations numériques théoriques aux temps de trajet réels avec des arrêts confortables, des opportunités de photos panoramiques et des conditions de montagne standard :</p>
+
+      <div class="roam-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Itinéraire du circuit</th>
+              <th>Distance (km)</th>
+              <th>Heure Google Maps</th>
+              <th>Temps de trajet réaliste</th>
+              <th>Principaux goulets d'étranglement et laissez-passer</th>
+              <th>Rythme recommandé</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Marrakech → Merzouga (Sahara)</strong></td>
+              <td>560 km</td>
+              <td>8h30</td>
+              <td><strong>10h 30 – 11h 30</strong></td>
+              <td>Col Tizi n'Tichka (2 260 m), Ouarzazate, circulation ville de Tinghir</td>
+              <td><strong>Partage obligatoire de 2 jours</strong> (nuit à Dades/Skoura)</td>
+            </tr>
+            <tr>
+              <td><strong>Marrakech → Vallée du Dadès / Skoura</strong></td>
+              <td>310km</td>
+              <td>5h 45min</td>
+              <td><strong>6h 30 – 7h 00</strong></td>
+              <td>Lacets de Tizi n'Tichka, détour Ait Benhaddou</td>
+              <td>Jour 1 confortable de l'expédition au Sahara</td>
+            </tr>
+            <tr>
+              <td><strong>Vallée du Dadès → Dunes de Merzouga</strong></td>
+              <td>260 km</td>
+              <td>4h00</td>
+              <td><strong>5h 00 – 5h 30</strong></td>
+              <td>Promenade dans les gorges du Todra, souk de Tinghir, oasis de dattes d'Erfoud</td>
+              <td>Jour 2 parfait : arrivée au camp vers 16h30 pour le coucher du soleil</td>
+            </tr>
+            <tr>
+              <td><strong>Fès → Merzouga (Erg Chebbi)</strong></td>
+              <td>465km</td>
+              <td>7h15</td>
+              <td><strong>8h 30 – 9h 00</strong></td>
+              <td>Forêt de cèdres du Moyen Atlas, Col du Zad, Gorges du Ziz</td>
+              <td>Réalisable en 1 longue journée avec départ tôt à 7h30</td>
+            </tr>
+            <tr>
+              <td><strong>Marrakech → Fès (Autoroute Directe)</strong></td>
+              <td>530 km</td>
+              <td>5h 45min</td>
+              <td><strong>6h 30 – 7h 00</strong></td>
+              <td>Autoroute à péage A1 via le contournement de Casablanca</td>
+              <td>Connexion la plus rapide ; mieux fait via le train Al Boraq + chauffeur</td>
+            </tr>
+            <tr>
+              <td><strong>Marrakech → Essaouira (Côte)</strong></td>
+              <td>190km</td>
+              <td>2h 45min</td>
+              <td><strong>3h 15 – 3h 30</strong></td>
+              <td>Carrefour Chichaoua, arrêts photos arganiers, radars de vitesse</td>
+              <td>Excursion d'une journée idéale ou retraite côtière de 2 nuits</td>
+            </tr>
+            <tr>
+              <td><strong>Tanger → Chefchaouen (Ville Bleue)</strong></td>
+              <td>115km</td>
+              <td>2h15</td>
+              <td><strong>2h 45 – 3h 00</strong></td>
+              <td>Virages du Rif, contournement de Tétouan</td>
+              <td>Route panoramique en montagne ; beau transit matinal</td>
+            </tr>
+            <tr>
+              <td><strong>Fès → Chefchaouen</strong></td>
+              <td>200km</td>
+              <td>3h 45min</td>
+              <td><strong>4h 30 – 5h 00</strong></td>
+              <td>Autoroute secondaire N13 sinueuse, circulation agricole</td>
+              <td>Nécessite une conduite alerte ; superbes collines verdoyantes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Deep Dive 1: Marrakech to Merzouga -->
+      <h2 id="can-you-drive-marrakech-to-merzouga-in-one-day">Pouvez-vous conduire de Marrakech à Merzouga en une journée ?</h2>
+      
+      <div class="roam-callout-ai">
+        <h4>VERDICT LOGISTIQUE DIRECT // DE MARRAKECH AU SAHARA</h4>
+        <p><strong>Non, vous ne devriez jamais tenter Marrakech à Merzouga en une seule journée.</strong> Bien que mathématiquement possible si vous conduisez sans arrêt pendant plus de 11 heures sans repas, vous manquerez les points forts les plus emblématiques du Maroc (le ksar UNESCO d'Ait Benhaddou, la Vallée des Roses et les gorges du Todra) et atteindrez le désert dans l'obscurité totale. Le standard luxe est un circuit de 3 jours/2 nuits ou 4 jours/3 nuits avec une nuit dans une palmeraie de Skoura ou une kasbah de la vallée du Dadès.</p>
+      </div>
+
+      <p>Le voyage de Marrakech à Erg Chebbi traverse le Haut Atlas via le légendaire <strong>col de Tizi n'Tichka</strong> (altitude 2 260 mètres / 7 415 pieds). Cette merveille d'ingénierie traverse de spectaculaires canyons de roches rouges et des hameaux berbères. Cependant, comme il s'agit de la principale liaison artérielle de fret entre Marrakech et le sud-est du Maroc, vous rencontrerez constamment des camions chargés qui grimpent à 20 km/h sur des pentes raides.</p>
+
+      <p>Les dépassements nécessitent de la patience, une visibilité dégagée et un moteur avec un couple élevé à bas régime. C'est pourquoi notre flotte repose exclusivement sur des <strong>Toyota Land Cruiser Prado 4x4</strong> lourds et des fourgons de tourisme exécutifs Mercedes-Benz.</p>
+
+      <h3>La route idéale de 3 jours de Marrakech au Sahara</h3>
+      <ul>
+        <li><strong>Jour 1 (Marrakech → Ait Benhaddou → Skoura/Dades) :</strong> Départ de Marrakech à 8h00. Traverser Tizi n'Tichka. Visitez l'ancienne citadelle en briques crues d'<a href="/fr/tour-heritage-cinema.html"><strong>Ait Benhaddou</strong></a> (présentée dans <em>Gladiator</em>). Détendez-vous dans une kasbah boutique de la vallée à 17h30. <em>Durée de trajet : environ 6,5 heures.</em></li>
+        <li><strong>Jour 2 (Vallée du Dadès → Gorges du Todra → Dunes de Merzouga) :</strong> Promenez-vous à travers les falaises calcaires abruptes de 300 mètres des gorges du Todra. Arrêtez-vous à Erfoud pour des ateliers sur les fossiles et les dattes sucrées Medjool. Arrivez au bord de l'Erg Chebbi vers 16h00 pour le thé, le transfert des bagages et une caravane de chameaux au coucher du soleil dans votre camp de luxe dans le désert. <em>Durée du trajet : environ 5 heures.</em></li>
+        <li><strong>Jour 3 (Merzouga → Fès OU retour à Marrakech) :</strong> Départ après le petit-déjeuner. Si vous vous dirigez vers Fès, profitez de la traversée pittoresque du Moyen Atlas via les gorges du Ziz et les forêts de cèdres d'Azrou. <em>Durée de trajet : environ 8,5 heures.</em></li>
+      </ul>
+
+      <!-- Section: Why Google Maps Miscalculates -->
+      <h2 id="why-google-maps-miscalculates">Les 5 facteurs qui rendent les cartes numériques inexactes au Maroc</h2>
+
+      <h3>1. La réalité de la montagne Tizi n'Tichka</h3>
+      <p>Les algorithmes supposent que vous pouvez franchir des virages en épingle à cheveux à la limite affichée de 60 km/h. En réalité, les lacets sinueux, les changements d'altitude et les véhicules lourds réduisent la vitesse moyenne sur le col à <strong>35-45 km/h</strong>.</p>
+
+      <h3>2. Contrôles rapides de la Gendarmerie Royale</h3>
+      <p>Le Maroc prend la sécurité routière au sérieux. À l'approche de presque chaque ville ou rond-point, vous rencontrerez des postes de contrôle fixes de la Gendarmerie Royale signalés par des panneaux <em>"HALTE CONTRÔLE"</em>. Vous devez décélérer à 20 km/h, vous arrêter presque et attendre le signe de la main d'un agent avant de continuer. Sur un trajet de 500 kilomètres, ces points de contrôle ajoutent 30 à 45 minutes de décélération cumulée.</p>
+
+      <h3>3. Circulation agricole et piétons ruraux</h3>
+      <p>Dans les provinces rurales comme Errachidia, Tinghir et Zagora, les routes nationales constituent l’élément vital de la vie rurale. Vous partagerez fréquemment des routes à voie unique avec des charrettes tirées par des ânes, des bergers déplaçant des moutons et des tracteurs d'époque transportant des récoltes d'olives ou de dattes.</p>
+
+      <h3>4. Navigation dans la médina et transfert des bagages</h3>
+      <p>Google Maps ne comprend pas que les voitures ne puissent pas entrer dans les médinas marocaines. Lorsque vous arrivez à Marrakech, Fès ou Chefchaouen, le trajet en voiture se termine à la porte de la médina la plus proche (Bab). Naviguer dans le parking, rencontrer le personnel du riad et transporter les bagages dans les ruelles médiévales peut prendre 30 à 60 minutes au-delà de l'heure d'arrivée de la carte.</p>
+
+      <h3>5. L’importance des arrêts panoramiques sans hâte</h3>
+      <p>Le Maroc n’est pas une destination pour se précipiter à travers un pare-brise. Vous aurez envie de vous arrêter pour photographier des panoramas de montagne, de siroter un thé à la menthe dans les cafés berbères au bord de la route et de savourer des tajines lents pour le déjeuner. Un road trip sans arrêts est un voyage manqué.</p>
+
+      <!-- Section: Driving Yourself vs Hiring a Chauffeur -->
+      <h2 id="self-drive-vs-private-chauffeur">Autotour ou chauffeur privé : quel est le meilleur choix pour les itinéraires de montagne ?</h2>
+      
+      <p>De nombreux voyageurs demandent s'ils doivent louer une voiture ou embaucher un chauffeur local. S'il est possible de louer une voiture sur les autoroutes à péage modernes entre Casablanca, Rabat et Tanger, les circuits de montagne et de désert présentent un ensemble de défis complètement différents.</p>
+
+      <p>Pour une analyse complète des prix des véhicules, des pièges d'assurance et des tarifs journaliers des chauffeurs, explorez notre guide compagnon : <a href="/fr/blog/morocco-private-driver-cost.html"><strong>Combien coûte un chauffeur privé au Maroc ? (Guide des prix 2026)</strong></a>.</p>
+
+      <!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+      </div>
+
+      <!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

@@ -1,0 +1,802 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Ofertas de viajes a Marruecos: vuelos, hoteles y eSIM | Deambular por Marruecos";
+const description = "Descubra ofertas de viajes verificadas a Marruecos: vuelos baratos a Marrakech, hoteles boutique, eSIM para viajes de alta velocidad y alquiler de automóviles con descuentos de socios confiables.";
+const canonical = "https://roammorocco.tours/es/travel-deals.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = [];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Travel Deals & Booking Toolkit - Roam Morocco",
+  "url": "https://roammorocco.tours/travel-deals.html",
+  "description": "Comprehensive travel toolkit and verified discounts for flights, hotels, eSIM mobile data, and car rentals in Morocco and worldwide.",
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/"
+  }
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg-cream: #f2eee6;
+      --card-bg: #ffffff;
+      --border-subtle: rgba(0, 0, 0, 0.12);
+      --border-strong: rgba(0, 0, 0, 0.22);
+      --text-main: #000000;
+      --text-muted: rgba(0, 0, 0, 0.65);
+      --red: #f10b18;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Hero */
+    .d-hero {
+      padding: 130px 24px 60px;
+      text-align: center;
+      background: var(--bg-cream);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .d-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: #8A6A23;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+    .d-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C8A45C;
+    }
+
+    .d-hero h1 {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: clamp(34px, 5.5vw, 62px);
+      line-height: 1.05;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      max-width: 960px;
+      margin: 0 auto 20px;
+      color: #000000;
+    }
+
+    .d-hero h1 span {
+      display: block;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 0.62em;
+      letter-spacing: -0.02em;
+      margin-top: 10px;
+    }
+
+    .d-hero p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: clamp(17px, 2vw, 20px);
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 30px;
+    }
+
+    /* Category Nav Bar */
+    .d-cat-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .d-cat-pill {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+      border-radius: 999px;
+      padding: 10px 20px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #333333;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+      transition: all 0.25s ease;
+    }
+
+    .d-cat-pill:hover {
+      background: #000000;
+      border-color: #000000;
+      color: #ffffff;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    /* Section Styles */
+    .d-section {
+      padding: 60px 24px;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .d-section-header {
+      margin-bottom: 32px;
+    }
+
+    .d-section-header h2 {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+      color: #000000;
+      margin-bottom: 8px;
+    }
+
+    .d-section-header p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+
+    /* Deals Grid */
+    .d-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .d-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .d-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(200, 164, 92, 0.4);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(200, 164, 92, 0.12);
+    }
+
+    .d-card-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      color: #8A6A23;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      letter-spacing: 0.02em;
+    }
+
+    .d-card-icon {
+      font-size: 36px;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .d-card h3 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+
+    .d-card p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .d-card-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #000000;
+      color: #ffffff;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 13px 22px;
+      border-radius: 9999px;
+      border: 1px solid #000000;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+
+    .d-card-btn:hover {
+      background: #262626;
+      border-color: #262626;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Worldwide Hotspots Showcase */
+    .d-world-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .d-world-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .d-world-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(200, 164, 92, 0.4);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    }
+
+    .d-world-header {
+      padding: 18px 24px;
+      background: #f8f6f0;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .d-world-header h3 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin: 0;
+    }
+
+    .d-world-flag { font-size: 24px; }
+
+    .d-world-body {
+      padding: 24px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .d-world-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 16px;
+      background: #faf9f6;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #000000;
+      transition: all 0.2s ease;
+    }
+
+    .d-world-link:hover {
+      background: #000000;
+      border-color: #000000;
+      color: #ffffff !important;
+      transform: translateX(2px);
+    }
+
+    /* Chauffeur Bridge Banner */
+    .d-bridge-banner {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 24px;
+      padding: 48px 36px;
+      margin: 60px auto 0;
+      text-align: center;
+      max-width: 1000px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
+    }
+
+    .d-bridge-banner h3 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      color: #000000;
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+
+    .d-bridge-banner p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 28px;
+    }
+
+    .d-bridge-btns {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .d-btn-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #000000;
+      color: #ffffff;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      border: 1px solid #000000;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      transition: all 0.25s ease;
+    }
+
+    .d-btn-gold:hover {
+      background: #262626;
+      border-color: #262626;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+    }
+
+    .d-btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #25D366 0%, #1ea952 100%);
+      color: #ffffff !important;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      border: none;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      transition: all 0.25s ease;
+      text-decoration: none;
+    }
+
+    .d-btn-wa:hover {
+      background: linear-gradient(135deg, #20BA59 0%, #169345 100%);
+      color: #ffffff !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.45);
+      text-decoration: none;
+    }
+
+    .d-btn-wa span {
+      color: #ffffff !important;
+    }
+
+    @media (max-width: 768px) {
+      .d-bridge-banner { padding: 32px 20px; }
+    }
+  
+  </style>
+
+  <!-- Hero Section -->
+  <section class="d-hero">
+    <div class="d-badge">✈️ Global Travel Partners & Savings</div>
+    <h1>Ofertas de viajes seleccionadas y kit de herramientas esenciales<br><span>Vuelos, estadías, eSIM y puntos de acceso en todo el mundo</span></h1>
+    <p>Todo lo que necesita para viajar sin problemas por Marruecos y los principales destinos del mundo. Búsqueda de vuelos cuidadosamente seleccionada, tarifas de hoteles de lujo, eSIM móviles de alta velocidad y alquiler de automóviles.</p>
+
+    <!-- Quick Jump Bar -->
+    <div class="d-cat-bar">
+      <a href="#flights" class="d-cat-pill">✈️ Cheap Flights</a>
+      <a href="#flight-calendar" class="d-cat-pill">📅 Low-Fare Calendar</a>
+      <a href="#compensation-tool" class="d-cat-pill">⚖️ Flight Compensation</a>
+      <a href="#hotels" class="d-cat-pill">🏨 Hotel & Riad Deals</a>
+      <a href="#esim" class="d-cat-pill">📱 Travel eSIMs</a>
+      <a href="#transfers-tool" class="d-cat-pill">🚖 Airport Shuttles</a>
+      <a href="#cars" class="d-cat-pill">🚗 Car Rentals</a>
+      <a href="#ferry" class="d-cat-pill">🚢 Spain-Morocco Ferry</a>
+      <a href="#worldwide" class="d-cat-pill">🌍 Worldwide Hotspots</a>
+    </div>
+  </section>
+
+  <!-- Essential Toolkit Grid -->
+  <section class="d-section" id="tools">
+    <div class="d-section-header">
+      <h2>Kit de herramientas de viaje esenciales</h2>
+      <p>Ahorre tiempo y dinero con nuestros socios verificados de reserva de viajes:</p>
+    </div>
+
+    <div class="d-grid">
+      <!-- 1. Flights Card -->
+      <div class="d-card" id="flights">
+        <span class="d-card-badge">Best Rates</span>
+        <div>
+          <span class="d-card-icon">✈️</span>
+          <h3>Comparación de vuelos baratos</h3>
+          <p>Compare tarifas aéreas en tiempo real a Marrakech (RAK), Casablanca (CMN) y rutas globales de más de 1000 aerolíneas. Encuentra tarifas de error y descuentos de temporada.</p>
+        </div>
+        <a href="https://www.trip.com/flights/" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Search Flights on Trip.com →</span>
+        </a>
+      </div>
+
+      <!-- 2. Flight Compensation Card -->
+      <div class="d-card" id="compensation">
+        <span class="d-card-badge">EU261 Rights</span>
+        <div>
+          <span class="d-card-icon">⚖️</span>
+          <h3>Compensación por retraso de vuelo</h3>
+          <p>¿Vuelo retrasado más de 3 horas, cancelado o sobrevendido en los últimos 3 años? Verifique en 60 segundos si se le debe hasta <strong>600 € ($650)</strong> de compensación en efectivo según EU261.</p>
+        </div>
+        <a href="#compensation-tool" class="d-card-btn">
+          <span>Check Flight Claim Tool ↓</span>
+        </a>
+      </div>
+
+      <!-- 3. eSIM Card -->
+      <div class="d-card" id="esim">
+        <span class="d-card-badge">Must-Have</span>
+        <div>
+          <span class="d-card-icon">📱</span>
+          <h3>eSIM de viaje instantáneo (Airalo)</h3>
+          <p>No pague $10 por día por roaming al operador. Descargue una eSIM instantánea de Marruecos o global antes del despegue y obtenga datos 4G/5G instantáneos en el momento en que su avión aterrice.</p>
+        </div>
+        <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Get Morocco eSIM from $8 →</span>
+        </a>
+      </div>
+
+      <!-- 4. Hotel Card -->
+      <div class="d-card" id="hotels">
+        <span class="d-card-badge">Verified Stays</span>
+        <div>
+          <span class="d-card-icon">🏨</span>
+          <h3>Riads y hoteles de lujo</h3>
+          <p>Explore riads seleccionados en Marrakech, palacios de la medina en Fez y resorts frente a la playa en Essaouira con cancelación gratuita y garantía de igualación de precios.</p>
+        </div>
+        <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Find Riad & Hotel Deals →</span>
+        </a>
+      </div>
+
+      <!-- 5. Global Airport Shuttles Card -->
+      <div class="d-card" id="transfers">
+        <span class="d-card-badge">Worldwide</span>
+        <div>
+          <span class="d-card-icon">🚖</span>
+          <h3>Traslados globales al aeropuerto</h3>
+          <p>¿Conectando a través de París (CDG/ORY), Roma (FCO), Londres (LHR) o Estambul (IST)? Reserve con antelación traslados privados al aeropuerto con conductor para conocer y saludar en más de 100 países.</p>
+        </div>
+        <a href="#transfers-tool" class="d-card-btn">
+          <span>Search Airport Shuttles ↓</span>
+        </a>
+      </div>
+
+      <!-- 6. Car Rental Card -->
+      <div class="d-card" id="cars">
+        <span class="d-card-badge">Self-Drive</span>
+        <div>
+          <span class="d-card-icon">🚗</span>
+          <h3>Alquiler de coches (DiscoverCars)</h3>
+          <p>¿Está planeando un viaje sin conductor? Compare empresas de alquiler locales e internacionales en Marruecos sin cargos ocultos y con cobertura de seguro completa.</p>
+        </div>
+        <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="d-card-btn">
+          <span>Compare Car Rentals →</span>
+        </a>
+      </div>
+
+      <!-- 7. Ferry Card -->
+      <div class="d-card" id="ferry">
+        <span class="d-card-badge">Cross-Strait</span>
+        <div>
+          <span class="d-card-icon">🚢</span>
+          <h3>Ferry de España a Marruecos</h3>
+          <p>Navega por el Estrecho de Gibraltar desde Tarifa hasta Tánger Ville en 60 minutos. Logística completa, sellado de pasaportes a bordo y recogida con conductor privado.</p>
+        </div>
+        <a href="blog/ferry-from-spain-to-morocco.html" class="d-card-btn" style="background:#000000;color:#ffffff;border-color:#000000;">
+          <span>Read Ferry &amp; Port Guide →</span>
+        </a>
+      </div>
+
+      <!-- 8. Morocco Private Chauffeur Card -->
+      <div class="d-card" id="morocco-driver">
+        <span class="d-card-badge">VIP Service</span>
+        <div>
+          <span class="d-card-icon">🚘</span>
+          <h3>Chofer privado en Marruecos</h3>
+          <p>Evite las curvas cerradas de las montañas, la navegación agresiva y los estafadores de taxis. Contrate a nuestros conductores bereberes de habla inglesa en un Prado 4x4 de lujo por Marruecos.</p>
+        </div>
+        <a href="/es/morocco-private-driver.html" class="d-card-btn">
+          <span>Explore Morocco Drivers →</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Interactive Flight Pricing Calendar -->
+    <div id="flight-calendar" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;padding:32px;margin-top:40px;box-shadow:0 8px 24px rgba(0,0,0,0.03);">
+      <div style="margin-bottom:20px;">
+        <span style="display:inline-block;padding:5px 12px;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);border-radius:999px;color:#8A6A23;font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:10px;">Live Pricing Engine</span>
+        <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:4px 0 8px;letter-spacing:-0.02em;">Calendario interactivo de tarifas bajas de vuelos</h3>
+        <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:15px;color:var(--text-muted);margin:0;">Explore las tarifas aéreas más bajas por fecha de salida en más de 1000 aerolíneas. Compare las tendencias estacionales y descubra cuándo bajan las tarifas aéreas para Marruecos y destinos en todo el mundo:</p>
+      </div>
+      <div style="min-height:350px;width:100%;overflow-x:auto;">
+        <script is:inline async src="https://tpwdg.com/content?currency=usd&trs=578287&shmarker=782223&searchUrl=www.aviasales.com%2Fsearch&locale=en&powered_by=true&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23ffffff&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+      </div>
+    </div>
+
+    <!-- 2-Column Dedicated Interactive Engines (Compensair & Kiwitaxi) -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(min(100%, 460px), 1fr));gap:24px;margin-top:32px;">
+      
+      <!-- Engine 1: Compensair Flight Delay & Cancellation Claims -->
+      <div id="compensation-tool" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;padding:32px 28px;box-shadow:0 8px 24px rgba(0,0,0,0.03);display:flex;flex-direction:column;justify-content:space-between;">
+        <div>
+          <span style="display:inline-block;padding:5px 12px;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);border-radius:999px;color:#8A6A23;font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:12px;">⚖️ EU261 &amp; UK261 Claims</span>
+          <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:800;text-transform:uppercase;margin:0 0 10px;letter-spacing:-0.02em;">¿Vuelo retrasado o cancelado? Reclama hasta 600€</h3>
+          <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:14px;color:var(--text-muted);margin:0 0 20px;line-height:1.6;">Si su vuelo hacia o desde Europa se retrasó más de 3 horas, se canceló o tuvo sobreventa en los últimos 3 años, tiene derecho legal a una compensación en efectivo. Verifique su elegibilidad al instante:</p>
+          
+          <div style="background:#faf9f6;border:1px solid rgba(0,0,0,0.08);padding:16px;border-radius:12px;">
+            <script is:inline async src="https://tpwdg.com/content?trs=578287&shmarker=782223&locale=en&border_radius=5&plain=true&powered_by=true&promo_id=3408&campaign_id=86" charset="utf-8"></script>
+          </div>
+        </div>
+        <p style="font-size:12px;color:rgba(0,0,0,0.55);margin:16px 0 0;font-family:'Inter', -apple-system, sans-serif;font-weight:500;">✓ Sin ganancia, sin comisión • Pago medio de reclamación 450 € • Transferencia bancaria directa</p>
+      </div>
+
+      <!-- Engine 2: Kiwitaxi Global Airport Transfers -->
+      <div id="transfers-tool" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;padding:32px 28px;box-shadow:0 8px 24px rgba(0,0,0,0.03);display:flex;flex-direction:column;justify-content:space-between;">
+        <div>
+          <span style="display:inline-block;padding:5px 12px;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);border-radius:999px;color:#8A6A23;font-family:'Inter', -apple-system, sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:12px;">🚖 100+ Countries &amp; 500+ Airports</span>
+          <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:800;text-transform:uppercase;margin:0 0 10px;letter-spacing:-0.02em;">Reserve con antelación traslados al aeropuerto global</h3>
+          <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;font-size:14px;color:var(--text-muted);margin:0 0 20px;line-height:1.6;">¿Conectando vía París (CDG/ORY), Roma (FCO), Londres (LHR) o Estambul (IST)? Reserve con antelación traslados privados con bienvenida a la llegada, tiempo de espera de 60 minutos y seguimiento de vuelos:</p>
+          
+          <div style="background:#faf9f6;border:1px solid rgba(0,0,0,0.08);padding:16px;border-radius:12px;">
+            <script is:inline async src="https://tpwdg.com/content?currency=usd&trs=578287&shmarker=782223&language=en&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
+          </div>
+        </div>
+        <p style="font-size:12px;color:rgba(0,0,0,0.55);margin:16px 0 0;font-family:'Inter', -apple-system, sans-serif;font-weight:500;">ℹ️ Para Marruecos, reserve nuestros chóferes privados directos a continuación.</p>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Worldwide Destinations Grid -->
+  <section class="d-section" id="worldwide" style="border-top: 1px solid var(--border-subtle);">
+    <div class="d-section-header">
+      <h2>Puntos de acceso de alta demanda en todo el mundo</h2>
+      <p>¿Sueñas más allá de Marruecos? Explore ofertas seleccionadas de vuelos, estadías y atracciones para los destinos de viaje más buscados del mundo:</p>
+    </div>
+
+    <div class="d-world-grid">
+      <!-- Dubai -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Dubái, Emiratos Árabes Unidos</h3>
+          <span class="d-world-flag">🇦🇪</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://www.trip.com/flights/to-dubai/" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Cheap Flights to Dubai (DXB)</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.booking.com/city/ae/dubai.html" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Luxury Resorts & Jumeirah Stays</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.airalo.com/united-arab-emirates-esim" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 UAE High-Speed eSIM</span>
+            <span>→</span>
+          </a>
+          <a href="blog/dubai-travel-guide.html" class="d-world-link" style="background:#000000;color:#ffffff!important;font-weight:800;">
+            <span>📖 Full 2026 Dubai Travel Guide</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Paris -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>París, Francia</h3>
+          <span class="d-world-flag">🇫🇷</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://www.trip.com/flights/to-paris/" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Paris Flight Deals (CDG / ORY)</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.booking.com/city/fr/paris.html" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Boutique Hotels in Le Marais</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.airalo.com/france-esim" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 France & Europe eSIM</span>
+            <span>→</span>
+          </a>
+          <a href="blog/paris-travel-guide.html" class="d-world-link" style="background:#000000;color:#ffffff!important;font-weight:800;">
+            <span>📖 Where to Stay in Paris (2026 Guide)</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bali -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Bali, Indonesia</h3>
+          <span class="d-world-flag">🇮🇩</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://www.trip.com/flights/to-bali/" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Flight Deals to Denpasar (DPS)</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.booking.com/region/id/bali.html" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Private Pool Villas in Ubud & Canggu</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.airalo.com/indonesia-esim" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Indonesia Unlimited eSIM</span>
+            <span>→</span>
+          </a>
+          <a href="blog/bali-travel-guide.html" class="d-world-link" style="background:#000000;color:#ffffff!important;font-weight:800;">
+            <span>📖 Where to Stay in Bali (2026 Guide)</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Rome -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Roma, Italia</h3>
+          <span class="d-world-flag">🇮🇹</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://www.trip.com/flights/to-rome/" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Rome Flight Specials (FCO)</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.booking.com/city/it/rome.html" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Historic Center Boutique Stays</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.airalo.com/italy-esim" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Italy & EU eSIM Card</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Tokyo -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Tokio, Japón</h3>
+          <span class="d-world-flag">🇯🇵</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://www.trip.com/flights/to-tokyo/" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Flights to Tokyo (HND / NRT)</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.booking.com/city/jp/tokyo.html" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Shinjuku & Shibuya Top Hotels</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.airalo.com/japan-esim" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Japan High-Speed eSIM</span>
+            <span>→</span>
+          </a>
+          <a href="blog/tokyo-travel-guide.html" class="d-world-link" style="background:#000000;color:#ffffff!important;font-weight:800;">
+            <span>📖 Where to Stay in Tokyo (2026 Guide)</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Istanbul -->
+      <div class="d-world-card">
+        <div class="d-world-header">
+          <h3>Estambul, Turquía</h3>
+          <span class="d-world-flag">🇹🇷</span>
+        </div>
+        <div class="d-world-body">
+          <a href="https://www.trip.com/flights/to-istanbul/" target="_blank" rel="noopener" class="d-world-link">
+            <span>✈️ Flights to Istanbul Hub (IST)</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.booking.com/city/tr/istanbul.html" target="_blank" rel="noopener" class="d-world-link">
+            <span>🏨 Bosphorus Waterfront Hotels</span>
+            <span>→</span>
+          </a>
+          <a href="https://www.airalo.com/turkey-esim" target="_blank" rel="noopener" class="d-world-link">
+            <span>📱 Turkey 4G/5G eSIM</span>
+            <span>→</span>
+          </a>
+          <a href="blog/istanbul-travel-guide.html" class="d-world-link" style="background:#000000;color:#ffffff!important;font-weight:800;">
+            <span>📖 Where to Stay in Istanbul (2026 Guide)</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bridge Banner to Roam Morocco Direct Tours -->
+    <div class="d-bridge-banner">
+      <h3>¿Viajas a Marruecos? Déjanos conducir</h3>
+      <p>Si bien la conducción autónoma funciona en Europa, navegar por las curvas de las montañas Tizi n'Tichka y las carreteras desérticas de Marruecos es agotador. Experimente el Reino en un Prado privado de lujo 4x4 con su propio chofer local con licencia que habla inglés.</p>
+      <div class="d-bridge-btns">
+        <a href="/es/custom-morocco-tour.html" class="d-btn-gold">
+          <span>✨ Build a Custom Morocco Tour</span>
+        </a>
+        <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20hire%20a%20private%20driver%20in%20Morocco." class="d-btn-wa" target="_blank" rel="noopener">
+          <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+          <span>Plan on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <!-- Concierge Chatbot Widget Script -->
+</Layout>

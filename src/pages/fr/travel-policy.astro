@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Politique de voyage - RoamMaroc";
+const description = "Directives de voyage officielles et normes de sécurité pour Roam Morocco Tours. Informations sur les guides locaux agréés, les transports, la santé et l'assurance voyage.";
+const canonical = "https://roammorocco.tours/fr/travel-policy.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = [];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${canonical}#webpage`,
+  "url": canonical,
+  "name": title,
+  "description": description,
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/"
+  },
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+    }
+  }
+};
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+        body {
+            background-color: #060605;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        h1 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #C8A45C;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #C8A45C;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    
+  </style>
+
+  <div class="container">
+        <a href="/fr/" class="back-link">← Back to Home</a>
+        <h1>Politique de voyage</h1>
+        <p>Ceci est un espace réservé pour la politique de voyage de RoamMorocco. Veuillez mettre à jour cette page avec vos conditions juridiques officielles.</p>
+        <h2>1. Exigences de voyage</h2>
+        <p>Les clients sont responsables de détenir un passeport valide et tout visa nécessaire pour entrer au Maroc.</p>
+        <h2>2. Sécurité et assurance</h2>
+        <p>Nous vous recommandons fortement de souscrire une assurance voyage complète avant de vous lancer dans l'un de nos voyages privés ou personnalisés.</p>
+        <h2>3. Contactez-nous</h2>
+        <p>Pour plus de détails sur nos procédures de voyage, contactez-nous à <a href="mailto:contact@roammorocco.tours">contact@roammorocco.tours</a> ou via WhatsApp au <a href="https://wa.me/212653506441">+212 653 506 441</a>.</p>
+    </div>
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+</Layout>

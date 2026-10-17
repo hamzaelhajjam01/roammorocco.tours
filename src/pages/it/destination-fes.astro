@@ -1,0 +1,500 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Tour privati ​​di Fes: Medina, concerie di Chouara e Volubilis";
+const description = "Esplora Fes el-Bali con una guida privata: concerie Chouara, antiche madrase e gite giornaliere private a Volubilis romana e Meknes.";
+const canonical = "https://roammorocco.tours/it/destination-fes.html";
+const ogImage = "https://roammorocco.tours/img/frida-aguilar-estrada-LhVJaRPweJc-unsplash.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "Fes el-Bali Medina",
+      "description": "The world's largest car-free urban zone and the spiritual heart of Morocco, home to the 9th-century University of Al-Qarawiyyin and the historic Chouara tanneries.",
+      "url": "https://roammorocco.tours/destination-fes.html",
+      "touristType": [
+        "History Lovers",
+        "Cultural Travelers",
+        "Architectural Historians",
+        "Photographers"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0331,
+        "longitude": -5.0003
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "Private Fes & Imperial North Heritage Tour",
+      "description": "A comprehensive private experience pairing an academic guide in Fes Medina with private chauffeur day excursions to Roman Volubilis and Meknes.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I visit Volubilis and Meknes as a day trip from Fes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, absolutely! Volubilis is only about 1 hour and 15 minutes by private car from Fes. Our private day trip combines the Roman mosaics of Volubilis, the holy hill town of Moulay Idriss, and the imperial city of Meknes with the monumental Bab Mansour gate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Fes older than Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Fes was founded in 789 AD by Idris I, making it nearly 300 years older than Marrakech (founded in 1062 AD). Fes is celebrated as Morocco's spiritual, intellectual, and artisan capital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is a private guide essential in Fes el-Bali?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fes el-Bali contains over 9,000 winding, car-free alleyways with no street names or GPS coverage. A licensed private guide provides context on the medieval guild system, ensures you visit authentic artisan cooperatives, and navigates the labyrinth with ease."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I visit the Chouara Tannery in Fes without getting scammed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The safest way is to visit with a licensed official national tour guide rather than following touts on the street. View the stone pits from authorized leather shop terraces, accept a fresh mint sprig to neutralize the pungent smell, tip 10 to 20 MAD if you don't buy leather goods, and negotiate prices firmly if purchasing handcrafted Moroccan leather jackets or slippers."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="it" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/it/index.html">Home</a> &nbsp;/&nbsp; <a href="/it/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>Fes</span>
+        </div>
+        <span class="dest-badge-tag">THE SPIRITUAL CAPITAL</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/frida-aguilar-estrada-LhVJaRPweJc-unsplash.jpg" alt="Fes El Bali Medina and Bab Bou Jeloud" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Tour privati ​​di Fes: Medina UNESCO ed escursioni imperiali</h1>
+          <p class="dest-hero-subtitle">Viaggio nel cuore medievale del Marocco. 9.000 vicoli antichi, concerie di pelle di fama mondiale ed escursioni giornaliere private a Volubilis e Meknes romane.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> 2 to 4 Days (Customizable)</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> Private Licensed Scholar &amp; Chauffeur</span>
+        <span class="dest-metric-item">📍 <strong>Base:</strong> Historic Luxury Riad inside Fes Medina</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- 2-Column Core Layout -->
+            <!-- GEO & AEO Destination Fast Facts (BLUF) -->
+      <aside class="ai-quick-summary-card" aria-label="Fes Travel Fast Facts">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ FES AT A GLANCE (QUICK SUMMARY)</span>
+          <span class="ai-summary-badge">Imperial Capital</span>
+        </div>
+        <p class="ai-summary-text"><strong>Fes</strong> è la capitale spirituale e culturale del Marocco, sede di <strong>Fes el-Bali</strong>, la più grande area urbana contigua senza auto del mondo che contiene oltre 9.000 vicoli medievali, l'Università Al Quaraouiyine del IX secolo (la più antica università del mondo) e le iconiche <strong>Concerie di cuoio Chouara</strong> dell'XI secolo. La durata consigliata della visita è <strong>da 2 a 3 giorni</strong>. Roam Morocco fornisce storici accademici autorizzati della medina, trasporto riad porta a porta e collegamenti di trasferimento nel deserto del Sahara.</p>
+      </aside>
+
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Highlights di Fes ed esclusive private</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>Università Al-Qarawiyyin:</strong> si trova all'esterno della più antica università ininterrotta del mondo, fondata nell'859 d.C. da Fatima al-Fihri.</li>
+              <li><strong>Concerie di pelle Chouara:</strong> vista esclusiva dal balcone sulle iconiche cave di tintura della pietra dell'XI secolo senza folle di turisti.</li>
+              <li><strong>Bou Inania e Al-Attarine Madrasas:</strong> intricati intagli di cedro, cortili di marmo e mosaici geometrici zellige di qualità museale.</li>
+              <li><strong>Rovine romane di Volubilis UNESCO:</strong> tour privato di un giorno a splendidi pavimenti a mosaico romani di 2.000 anni fa, archi di trionfo e frantoi.</li>
+              <li><strong>Meknes imperiale e Bab Mansour:</strong> visita la capitale monumentale e i granai reali del sultano Moulay Ismail.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>L'anima intellettuale e spirituale del Regno</h2>
+            <p>Se Marrakech è il cuore pulsante del teatro del Marocco, Fes ne è la mente erudita e contemplativa. Attraversare la monumentale porta di cobalto di Bab Bou Jeloud per entrare a Fes el-Bali è un immediato accesso al XIV secolo. Muli carichi di spezie sfrecciano davanti ai panifici che utilizzano gli stessi identici forni a legna da quattrocento anni.</p>
+            <p>Poiché Fes el-Bali non ha auto, una guida privata esperta ha un valore inestimabile. Ti mettiamo in contatto con studiosi culturali autorizzati che intrecciano il profondo arazzo della filosofia marocchina, dell'influsso architettonico andaluso e dell'artigianato ebraico Mellah.</p>
+            
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"Fes non rivela i suoi segreti a coloro che si affrettano. Dietro semplici porte di cedro si trovano cortili di riad così opulenti da rivaleggiare con l'Alhambra di Granada."</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO HISTORICAL NOTES</span>
+            </div>
+            
+            <p>Oltre la Medina, il nostro servizio di autista privato collega facilmente Fes alle rovine romane di Volubilis, alla città santa di Moulay Idriss e agli spettacolari passi di montagna che conducono verso il deserto del Sahara.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Esempio di circuito storico di Fes curato di 3 giorni</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;sfondo:rgba(200,164,92,0.12);bordo:1px solido rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">CULTURA E PATRIMONIO ROMANO</span></h3>
+
+            <!-- Day 1 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 01 // DEEP DIVE INTO FES EL-BALI MEDINA</span>
+              <h4 class="dest-day-title">Antiche corporazioni, madrase e concerie Chouara</h4>
+              <p class="dest-day-desc">Incontra la tua guida accademica autorizzata nel tuo riad. Esplora la splendida madrasa Bou Inania del XIV secolo, il Museo Nejjarine delle arti e dei mestieri del legno e la biblioteca della moschea Al-Qarawiyyin. Visita le concerie Chouara da una terrazza panoramica privata con rametti di menta fresca. Passeggia tra i vicoli artigianali del rame e dell'ottone di Place Seffarine, seguito da un viaggio panoramico nel tardo pomeriggio verso le Tombe Marinidi che dominano l'intera valle dorata di Fes.</p>
+              <div class="dest-day-tags">
+                <span>Walking Tour: 5 Hours</span>
+                <span>Licensed Private Scholar</span>
+                <span>Sunset at Marinid Tombs</span>
+              </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 02 // ROMAN MOSAICS &amp; IMPERIAL MEKNES</span>
+              <h4 class="dest-day-title">Sito archeologico di Volubilis → Moulay Idriss → Meknes</h4>
+              <p class="dest-day-desc">Il tuo autista privato verrà a prenderti in un executive 4x4 alle 09:00. Viaggia per 1 ora verso ovest attraverso gli uliveti fino a Volubilis, un sito patrimonio mondiale dell'UNESCO con le rovine romane meglio conservate del Nord Africa. Esplora la Casa di Orfeo e i mosaici delle Fatiche di Ercole. Prosegui verso la città di pellegrinaggio di Moulay Idriss per il pranzo con vista sulle montagne. Concludi il pomeriggio nella città imperiale di Meknes, risalente al XVII secolo, ammirando l'imponente porta Bab Mansour prima di tornare a Fes.</p>
+              <div class="dest-day-tags">
+                <span>Private Chauffeur &amp; 4x4</span>
+                <span>UNESCO Roman Archaeological Site</span>
+                <span>Scenic Countryside Drive</span>
+              </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 03 // CHEFCHAOUEN EXCURSION OR SAHARA CROSSING</span>
+              <h4 class="dest-day-title">Gita di un giorno a Chefchaouen OPPURE Partenza verso Erg Chebbi</h4>
+              <p class="dest-day-desc">A seconda del tuo programma di viaggio, scegli tra una splendida gita di un giorno panoramico nelle montagne settentrionali del Rif per esplorare i vicoli blu di Chefchaouen, oppure intraprendi il nostro esclusivo viaggio nel deserto a sud verso le foreste di cedri del Medio Atlante e le dune di Merzouga.</p>
+              <div class="dest-day-tags">
+                <span>Flexible Direction</span>
+                <span>Rif Mountains or Sahara Departure</span>
+                <span>Door-to-Door Luggage Care</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visiting Chouara Tanneries in Fes Section -->
+          <div class="dest-tannery-feature" style="background:#fff;border-radius:16px;padding:32px;margin-bottom:30px;box-shadow:0 4px 20px rgba(0,0,0,0.03);border:1px solid rgba(0,0,0,0.08);">
+            <span style="font-size:11px;font-family:'Inter',sans-serif;color:#8A6A23;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;display:inline-block;">INSIDER GUIDE // ARTISAN HERITAGE</span>
+            <h3 style="font-family:'Playfair Display',serif;font-size:26px;color:#1a1a1a;margin:14px 0 16px;">Visita alla conceria Chouara a Fes (le famose concerie di pelle del Marocco)</h3>
+            <p style="font-size:15px;line-height:1.7;color:#4a4a4a;margin-bottom:14px;">La <strong>Conceria Chouara a Fes</strong> (spesso scritta come Chaouwara) è la più antica e più grande conceria di cuoio medievale ancora attiva in Marocco, attiva ininterrottamente dall'XI secolo. Immerse nel cuore di Fes el-Bali vicino a Place Seffarine, queste iconiche fosse per la tintura della pietra sembrano e funzionano quasi identiche a come facevano mille anni fa.</p>
+            <p style="font-size:15px;line-height:1.7;color:#4a4a4a;margin-bottom:14px;">Le pelli di mucca, pecora, capra e cammello vengono lavorate interamente a mano utilizzando elementi organici naturali: escrementi di piccione per ammorbidirli, seguiti da vivaci coloranti naturali estratti dal fiore di papavero (rosso), zafferano (giallo), legno di cedro (marrone) e indaco (blu). Durante la visita con Roam Morocco, le nostre guide autorizzate ti portano su esclusive terrazze panoramiche sul tetto, fornendo rametti di menta fresca per contrastare i pungenti odori organici e offrendo opportunità fotografiche panoramiche con vista sui vivaci tini a nido d'ape.</p>
+            <div style="background:#f9f8f6;border-left:4px solid var(--gold,#C8A45C);padding:20px;margin:20px 0;border-radius:12px;border:1px solid rgba(0,0,0,0.06);border-left:4px solid #C8A45C;">
+              <h4 style="font-size:15px;margin:0 0 8px;color:#1a1a1a;">Suggerimenti per visitare le concerie di pelle di Fes:</h4>
+              <ul style="font-size:14px;line-height:1.6;color:#555;padding-left:20px;margin:0;">
+                <li><strong>Migliore illuminazione:</strong> visita tra le 09:30 e le 12:00 quando la luce del sole illumina direttamente i colorati tini di tintura e gli artigiani lavorano attivamente.</li>
+                <li><strong>Evitare i bagarini non ufficiali:</strong> non seguire mai false guide aggressive nei vicoli della Medina. Visita sempre con una guida accademica ufficiale autorizzata che garantisce l'accesso alla terrazza privata senza tattiche di vendita ad alta pressione.</li>
+                <li><strong>Acquisto di autentica pelle marocchina:</strong> i prodotti in vera pelle di Fes (giacche, borsoni, pantofole babouche e pouf) sono conciati al vegetale, morbidi e durevoli. Preparati a negoziare delicatamente: le nostre guide private ti assisteranno con prezzi equi.</li>
+              </ul>
+            </div>
+            <p style="font-size:14px;color:#666;margin:0;"><em>Stai pianificando un viaggio interurbano? Viaggia comodamente tra Marrakech, Casablanca e Fes con il nostro <a href="/it/morocco-private-driver.html" style="color:#f10b18;font-weight:600;text-decoration:underline;">servizio di autista privato con licenza in Marocco</a>.</em></p>
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">Cosa è incluso nel tuo tour privato di Fes</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUSO</h4>
+                <ul class="dest-inc-list">
+                  <li>Guida culturale autorizzata di lingua inglese di Fes per l'intera giornata</li>
+                  <li>Trasporto privato dedicato con aria condizionata per escursioni giornaliere</li>
+                  <li>Escursione di un'intera giornata a Volubilis, Moulay Idriss e Meknes</li>
+                  <li>Biglietti d'ingresso al sito archeologico storico di Madrasas e Volubilis</li>
+                  <li>Prelievo e rientro direttamente al tuo riad di Fes</li>
+                  <li>Gestione bagagli e servizio di facchinaggio nella Medina senza auto</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NON INCLUSO</h4>
+                <ul class="dest-exc-list">
+                  <li>Pranzi e bevande alcoliche</li>
+                  <li>Mance discrezionali per guide e autista</li>
+                  <li>Acquisti di artigianato personale nei suk artigianali</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Domande frequenti: Tour privati ​​di Fes</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Le auto possono circolare all'interno della Medina di Fes?</h4>
+              <div class="dest-faq-a">
+                <p>No. Fes el-Bali è la più grande zona urbana contigua senza auto del pianeta. Auto e furgoni possono far scendere i passeggeri solo ai cancelli designati (come Bab Bou Jeloud o Place R'cif). Per tutti i nostri ospiti che soggiornano nei riad, il nostro team coordina i portabagagli privati ​​con i tradizionali carretti a mano per trasportare i bagagli in sicurezza direttamente alla porta del riad.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Possiamo fare una gita di un giorno a Chefchaouen da Fes?</h4>
+              <div class="dest-faq-a">
+                <p>SÌ. Il viaggio dura circa 3,5-4 ore a tratta attraverso le pittoresche montagne del Rif. Con il nostro autista privato, partirai presto (07:30), godrai di 4 o 5 ore rilassate a Chefchaouen e tornerai comodamente a Fes entro la cena.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Per fare shopping è meglio Fes o Marrakech?</h4>
+              <div class="dest-faq-a">
+                <p>Marrakech ha boutique bohémien più moderne ed eleganti, ma Fes è universalmente riconosciuta come la capitale dell'artigianato per la ceramica tradizionale (zellige blu di Fes), le lampade in rame e l'autentica pelle conciata al vegetale.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Qual è il modo migliore per visitare la Conceria Chouara a Fes senza truffe?</h4>
+              <div class="dest-faq-a">
+                <p>Il modo più sicuro per visitare le concerie Chouara a Fes è con una guida ufficiale autorizzata che ti condurrà a rinomate terrazze panoramiche che si affacciano sulle fosse di tintura. Ti verranno forniti rametti di menta fresca da respirare per contrastare l'odore. Non seguire mai i bagarini non ufficiali nei vicoli, che spesso chiedono mance esorbitanti per uscire o indirizzano i viaggiatori verso negozi di pelletteria ad alta pressione.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="Fes Medina, Volubilis & Meknes Private Circuit"
+               data-price-1-4="160"
+               data-price-5-7="210"
+               data-price-8-12="280"
+               data-tour-sub="Certified English historian · Roman ruins of Volubilis &amp; Imperial Meknes">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Circuito privato di Fes Medina, Volubilis e Meknes</h3>
+            <p class="dest-prelocked-sub">Storico inglese certificato · Rovine romane di Volubilis e Meknes imperiale</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCityFes">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityFes">
+                  <option value="Fes (Medina / Riad)" data-surcharge="0" selected>Fes (Medina / Riad)</option>
+                  <option value="Meknes" data-surcharge="-20">Meknes (-20€)</option>
+                  <option value="Rabat" data-surcharge="40">Rabat (+40€)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateFes">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateFes">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">160€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Include autista dedicato, guida storica privata autorizzata, carburante e ritiro dall'hotel porta a porta.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 160€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const guests = (document.getElementById('groupSize')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName,
+        pickup: tourName,
+        date: dates,
+        passengers: guests,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about the ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (dates ? `📅 Travel Dates: ${dates}\n` : '') +
+        (guests ? `👥 Group Size: ${guests}\n` : '') +
+        (notes ? `📝 Special Requests: ${notes}\n` : '') +
+        `\nCan you please confirm availability and send a detailed itinerary proposal?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our Marrakech team. We will review riad and route availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Fes, Volubilis &amp; Meknes Tour</div>
+      <div class="smt-price">From <span class="smt-price-num">160€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Fes%20Medina,%20Volubilis%20&%20Meknes%20Private%20Circuit." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

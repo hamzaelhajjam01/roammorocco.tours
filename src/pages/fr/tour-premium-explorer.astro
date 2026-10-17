@@ -1,0 +1,822 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Circuit Explorateur Premium de 3 jours | RoamMaroc";
+const description = "Découvrez le meilleur du Maroc avec notre Premium Explorer de 3 jours. Découvrez Essaouira, la vallée de l'Ourika et le désert d'Agafay depuis Marrakech.";
+const canonical = "https://roammorocco.tours/fr/tour-premium-explorer.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://roammorocco.tours/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What luxury amenities are included in the Erg Chebbi desert camp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our handpicked luxury desert camps feature spacious private canvas pavilions with plush King or Queen beds, handcrafted Moroccan carpets, private en-suite bathrooms with hot-water showers, flushing porcelain toilets, electricity, bedside USB charging, and heating or AC. You also enjoy a candlelit 4-course Moroccan dinner and live campfire Gnawa drum performances under the stars."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long is the camel trek to reach the luxury camp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The sunset camel trek into the Erg Chebbi dunes takes approximately 45 to 60 minutes, timed perfectly for golden hour photography across the sand sea. For travelers who prefer not to ride camels or have mobility concerns, a private 4x4 dune transfer directly to your luxury tent entrance is always included at no extra charge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the driving time between Marrakech and the Sahara Desert?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The journey covers approximately 560 km each way through the High Atlas, Dades Valley, and Todra Gorge. To ensure comfortable travel without rushing, our 3-Day Sahara Luxury Explorer breaks the drive with an overnight stay at a boutique kasbah hotel in Dades on Night 1, arriving at the Erg Chebbi dunes in the afternoon on Day 2."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can this Sahara tour end in Fes instead of returning to Marrakech?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Many travelers book our 3-Day or 4-Day Desert route starting in Marrakech and finishing in Fes (or vice versa). On the final day, your private driver chauffeurs you north across the Ziz Valley gorge, the Middle Atlas cedar forest of Azrou, and the Alpine town of Ifrane, arriving in Fes by early evening."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can dietary requirements (vegetarian, vegan, gluten-free, halal) be accommodated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all meals (both at kasbah stops and at the desert camp) are freshly prepared and can easily accommodate vegetarian, vegan, gluten-free, dairy-free, and nut-allergy requirements. Simply inform us when booking and your private hosts will curate tailored menus."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": [
+      "TouristTrip",
+      "Product"
+    ],
+    "@id": "https://roammorocco.tours/tour-premium-explorer.html#trip",
+    "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
+    "description": "3 iconic day-trips from Marrakech with zero hotel changes: Atlantic coast in Essaouira, Atlas Mountains trekking in Ourika Valley, and luxury sunset dinner in Agafay Desert.",
+    "url": "https://roammorocco.tours/tour-premium-explorer.html",
+    "image": "https://roammorocco.tours/images/hero-desert.jpg",
+    "touristType": [
+      "Luxury Travelers",
+      "Couples",
+      "Families",
+      "Culture Seekers"
+    ],
+    "duration": "P3D",
+    "brand": {
+      "@type": "Brand",
+      "name": "Roam Morocco Tours"
+    },
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://roammorocco.tours/tour-premium-explorer.html",
+      "priceCurrency": "USD",
+      "price": "395.00",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01",
+      "priceValidUntil": "2027-12-31",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "MA",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 2,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "MA"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          }
+        }
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "985",
+      "reviewCount": "985"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Sarah Miller"
+        },
+        "datePublished": "2026-03-15",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "James Thorne"
+        },
+        "datePublished": "2026-05-22",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Roam Morocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Elena Rossi"
+        },
+        "datePublished": "2026-06-10",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
+      }
+    ],
+    "itinerary": {
+      "@type": "ItemList",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Day 1: Coastal Escape to Essaouira & Argan Oil Cooperative"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Day 2: High Atlas Mountain Trekking in Ourika Valley & Berber Home Visit"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Day 3: Secluded Agafay Desert Sunset, Boutique Dinner & Stargazing"
+        }
+      ]
+    }
+  }
+];
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg-cream: #f2eee6;
+      --card-bg: #ffffff;
+      --border-subtle: rgba(0, 0, 0, 0.12);
+      --border-strong: rgba(0, 0, 0, 0.22);
+      --text-main: #000000;
+      --text-muted: rgba(0, 0, 0, 0.72);
+      --red: #f10b18;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main.roam-tour-main {
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      padding: 120px 24px 80px !important;
+    }
+
+    .roam-tour-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .roam-tour-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    .roam-tour-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C8A45C;
+    }
+
+    .roam-tour-title {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: clamp(34px, 5.5vw, 62px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -.04em !important;
+      line-height: 1.05 !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 20px !important;
+    }
+
+    .roam-tour-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .02em;
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .roam-tour-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      padding: 6px 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .roam-itinerary-card {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-radius: 16px !important;
+      padding: 32px 36px !important;
+      margin-bottom: 24px !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+    }
+
+    .roam-day-badge {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      color: #8A6A23 !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+
+    .roam-itinerary-title {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: 22px !important;
+      font-weight: 800 !important;
+      letter-spacing: -.03em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 14px !important;
+    }
+
+    .roam-itinerary-desc {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 17px !important;
+      line-height: 1.75 !important;
+      color: rgba(0, 0, 0, 0.82) !important;
+      margin: 0 !important;
+    }
+
+    .roam-highlights-box {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      padding: 32px 36px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-highlights-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -.03em;
+      color: #000000;
+      margin: 0 0 20px;
+    }
+
+    .roam-highlight-list {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: grid;
+      gap: 14px;
+    }
+
+    .roam-highlight-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.84);
+    }
+
+    .roam-highlight-bullet {
+      color: var(--red);
+      font-weight: 900;
+      font-size: 16px;
+      flex-shrink: 0;
+      margin-top: -1px;
+    }
+  
+    /* Action Buttons in Tour Pages */
+    .roam-btn-black,
+    .roam-tour-content a.roam-btn-black,
+    a.roam-btn-black {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #000000 !important;
+      color: #ffffff !important;
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border: 1px solid #000000 !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      line-height: 1 !important;
+      transition: all .25s ease !important;
+    }
+    .roam-btn-black:hover,
+    .roam-tour-content a.roam-btn-black:hover,
+    a.roam-btn-black:hover {
+      background: #262626 !important;
+      color: #ffffff !important;
+      border-color: #262626 !important;
+      transform: translateY(-2px) !important;
+      text-decoration: none !important;
+    }
+
+    .roam-btn-wa,
+    .roam-tour-content a.roam-btn-wa,
+    a.roam-btn-wa {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #25D366 !important;
+      color: #000000 !important;
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border: 1px solid #25D366 !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      cursor: pointer !important;
+      line-height: 1 !important;
+      transition: all .25s ease !important;
+    }
+    .roam-btn-wa:hover,
+    .roam-tour-content a.roam-btn-wa:hover,
+    a.roam-btn-wa:hover {
+      background: #20BA59 !important;
+      color: #000000 !important;
+      border-color: #20BA59 !important;
+      transform: translateY(-2px) !important;
+      text-decoration: none !important;
+    }
+
+    .roam-tour-cta-box,
+    .roam-driver-box {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.14) !important;
+      padding: 44px 32px !important;
+      margin: 48px 0 !important;
+      text-align: center !important;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05) !important;
+      border-radius: 24px !important;
+    }
+    .roam-tour-cta-title,
+    .roam-driver-box h4 {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: clamp(20px, 3.2vw, 28px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -.03em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 14px !important;
+    }
+    .roam-tour-cta-desc,
+    .roam-driver-box p {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 16px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.76) !important;
+      max-width: 680px !important;
+      margin: 0 auto 26px !important;
+    }
+
+    /* Human-Centered Storytelling: Bourdain Field Note Card */
+    .roam-field-note {
+      background: #faf8f5 !important;
+      border: 1px solid rgba(200, 164, 92, 0.25) !important;
+      border-left: 3px solid #C8A45C !important;
+      border-radius: 12px !important;
+      padding: 24px 28px !important;
+      margin: 24px 0 28px !important;
+    }
+    .roam-field-note-kicker {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: #8A6A23 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    .roam-field-note-quote {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-style: italic !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.8) !important;
+      margin: 0 0 10px !important;
+    }
+    .roam-field-note-author {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: rgba(0, 0, 0, 0.55) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .06em !important;
+      margin: 0 !important;
+    }
+  
+  </style>
+
+  <main class="roam-tour-main" style="padding: 120px 24px 80px;">
+  <div class="roam-tour-wrapper">
+    <div class="roam-tour-badge">3-DAY CURATED CIRCUIT // ZERO HOTEL CHANGES</div>
+    <h1 class="roam-tour-title">Explorateur Premium de 3 jours</h1>
+    
+    <div class="roam-tour-meta-bar">
+      <span class="roam-tour-meta-item">📍 BASE: MARRAKECH LUXURY RIAD</span>
+      <span class="roam-tour-meta-item">⏱ DURATION: 3 DAYS / 3 DAY-TRIPS</span>
+      <span class="roam-tour-meta-item">🌊 HIGHLIGHTS: ESSAOUIRA, OURIKA &amp; AGAFAY</span>
+      <span class="roam-tour-meta-item">🛡 100% PRIVATE CHAUFFEUR &amp; 4X4</span>
+    </div>
+
+    <!-- GEO & AEO Tour Fast Facts (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Tour Fast Facts and Summary">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ TOUR AT A GLANCE (QUICK SUMMARY)</span>
+        <span class="ai-summary-badge">Guaranteed Private Departure</span>
+      </div>
+      <p class="ai-summary-text">Le <strong>3-Day Premium Explorer</strong> est un circuit 100 % privé et organisé entièrement basé sur le riad de Marrakech de votre choix avec <strong>zéro changement d'hôtel</strong>. S'étendant sur 3 excursions d'une journée consécutives, l'itinéraire couvre la côte d'Essaouira (jour 1), une randonnée dans les montagnes du Haut Atlas dans la vallée de l'Ourika (jour 2) et une luxueuse randonnée à dos de chameau au coucher du soleil avec un dîner d'observation des étoiles dans le désert d'Agafay (jour 3). Les tarifs commencent à partir de <strong>395 $ USD par personne</strong>, tout compris avec chauffeur anglophone agréé dédié, 4x4 privé ou minibus Mercedes, carburant, frais d'entrée, guide de montagne local et excursions à dos de chameau.</p>
+    </aside>
+
+    <div style="margin-bottom: 40px; border: 1px solid rgba(0,0,0,0.12); overflow: hidden;">
+      <img src="/images/dest-marrakech.jpg" alt="3-Day Premium Marrakech Explorer Tour" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; display: block;">
+    </div>
+
+    <div class="roam-article-body">
+      <p style="font-size: 1.25rem; font-weight: 500; line-height: 1.7; margin-bottom: 28px;">Si vous envisagez de <strong>visiter Marrakech</strong> et que vous vous demandez <strong>que faire à Marrakech</strong>, notre Premium Explorer de 3 jours est l'itinéraire privé ultime. Nous avons conçu ce circuit spécifiquement pour les voyageurs exigeants qui souhaitent découvrir le <strong>meilleur absolu de Marrakech</strong> et de ses paysages environnants sans l'épuisement quotidien de remballer leurs valises et de changer d'hôtel.</p>
+
+      <h2>L'expérience de voyage ultime à Marrakech</h2>
+      <p>Lorsque les voyageurs recherchent <em>"où aller à Marrakech"</em> ou <em>"que voir à Marrakech au Maroc"</em>, ils se retrouvent souvent pris dans les souks animés et l'énergie intense du <strong>centre-ville de Marrakech</strong>. Si l'ancienne médina est magique, le véritable luxe des <strong>vacances à Marrakech</strong> réside dans sa diversité géographique. À quelques minutes en voiture privée, vous découvrirez la brise de l'océan Atlantique, les sommets enneigés de l'Atlas et les vastes paysages lunaires du désert de pierre.</p>
+      
+      <p>Notre circuit Premium Explorer résout la plus grande friction logistique des voyages au Maroc : <strong>zéro changement d'hôtel</strong>. Vous séjournez dans le riad de luxe de votre choix au cœur de Marrakech et votre chauffeur privé anglophone vient vous chercher chaque matin dans un véhicule exécutif climatisé pour trois excursions d'une journée organisées et sans hâte.</p>
+
+      <!-- Highlights Box -->
+      <div class="roam-highlights-box">
+        <h3 class="roam-highlights-title">Points forts de la visite : le meilleur de la région de Marrakech</h3>
+        <ul class="roam-highlight-list">
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Zero Hotel Repacking:</strong> Base yourself in one luxury Marrakech riad while experiencing coast, mountains, and desert.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Essaouira Coastal Escape:</strong> Stroll the breezy 18th-century Portuguese ramparts, taste freshly caught grilled sea bass, and visit artisan argan oil cooperatives.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Ourika Valley Foothills:</strong> Hike up to the Setti Fatma waterfalls with a local guide and dine on slow-cooked Berber tagine beside the river.</div>
+          </li>
+          <li>
+            <span class="roam-highlight-bullet">✦</span>
+            <div><strong>Secluded Agafay Desert Sunset:</strong> Avoid the noisy bus crowds. Enjoy a private sunset camel walk, candlelit eco-camp dinner, and laser constellation stargazing.</div>
+          </li>
+        </ul>
+      </div>
+
+      <h2>Itinéraire détaillé de 3 jours</h2>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 01 // 07:30 AM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">L'évasion de la côte atlantique à Essaouira</h3>
+        <p class="roam-itinerary-desc">Quittez Marrakech tôt dans une camionnette exécutive privée. Parcourez les forêts d'arganiers vallonnées en vous arrêtant dans une coopérative de femmes biologiques pour découvrir comment l'huile d'argan dorée liquide est pressée à froid. En arrivant dans la ville venteuse d'Essaouira (Mogador), promenez-vous dans la médina bleue et blanche classée au patrimoine mondial de l'UNESCO, explorez les remparts de la Skala du Port où Orson Welles a filmé <em>Othello</em> et déjeunez dans un stand de fruits de mer au bord de l'eau avant de revenir dans la soirée.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Chichaoua Plain</span>
+          <p class="roam-field-note-quote">"Près de Chichaoua, les grands bus touristiques s'arrêtent dans des granges à cadeaux en béton avec des gaz d'échappement diesel dans l'air. Nous quittons l'autoroute pour entrer dans une coopérative où Fatima et sa sœur cassent encore à la main des noix d'argan entre deux pierres de rivière. Lorsque vous dégustez de l'huile d'argan culinaire fraîche arrosée de khobz chaud - noisette, grillée, non raffinée - vous comprenez immédiatement à quel point le Maroc est aseptisé pour les voyages de masse. "</p>
+          <p class="roam-field-note-author">— Brahim, spécialiste des itinéraires Roam Maroc</p>
+        </div>
+      </div>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 02 // 08:30 AM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">Vallée de l'Ourika, chutes Setti Fatma et patrimoine berbère</h3>
+        <p class="roam-itinerary-desc">Voyagez vers le sud dans les contreforts luxuriants des montagnes du Haut Atlas. Parcourez des sentiers de montagne ombragés jusqu'aux sept cascades de Setti Fatma avec un guide de montagne local expert. Ensuite, traversez des passerelles en bois pour savourer un festin traditionnel marocain servi directement à des tables installées dans le ruisseau de montagne peu profond et rafraîchissant. Retour à Marrakech en fin d'après-midi libre pour les soins du spa du riad.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Setti Fatma Stream</span>
+          <p class="roam-field-note-quote">"Le vrai tajine de la vallée ne se trouve pas sur les terrasses en bord de route avec des menus anglais laminés. Il est niché sous les noyers où Rachid fait mijoter de l'agneau de montagne sur des braises d'oliviers sauvages dans un plat en argile non vernissé assaisonné de vingt saisons de cumin et de thym sauvage. Vous déchirez la croûte de pain chaud avec vos doigts tandis que la fonte des neiges du Toubkal se précipite sur les pierres de la rivière en contrebas."</p>
+          <p class="roam-field-note-author">— Brahim, spécialiste des itinéraires Roam Maroc</p>
+        </div>
+      </div>
+
+      <div class="roam-itinerary-card">
+        <span class="roam-day-badge">DAY 03 // 03:30 PM DEPARTURE</span>
+        <h3 class="roam-itinerary-title">Coucher de soleil isolé dans le désert d'Agafay et observation des étoiles au laser</h3>
+        <p class="roam-itinerary-desc">Dormez et passez votre matinée à explorer le musée Yves Saint Laurent et le jardin Majorelle. En milieu d'après-midi, votre chauffeur vous emmène dans les sereines dunes de pierre du désert d'Agafay (à seulement 45 minutes de la ville). Embarquez pour une paisible randonnée à dos de chameau à l'heure d'or, dînez sous des tentes nomades de luxe et terminez la nuit avec une présentation astronomique guidée au laser retraçant Jupiter, Saturne et les constellations du désert.</p>
+        <div class="roam-field-note">
+          <span class="roam-field-note-kicker">Field Note // Agafay Stone Dunes at Dusk</span>
+          <p class="roam-field-note-quote">"Les gens appellent Agafay un désert, mais c'est un plateau de pierre blanchie sculpté par le vent. Une fois que les quads des excursionnistes rentrent à Marrakech à cinq heures, un silence absolu tombe sur les plaines comme un linge épais. Le Haut Atlas devient violet foncé dans le rétroviseur, et le seul bruit est la brise du désert à travers les broussailles sauvages."</p>
+          <p class="roam-field-note-author">— Lahcen, spécialiste du désert de Roam Morocco</p>
+        </div>
+      </div>
+
+      <h2>Questions fréquemment posées : Marrakech et au-delà</h2>
+      
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Marrakech est-elle sûre pour les voyageurs internationaux ?</h3>
+        <p>Marrakech est l'une des villes les plus accueillantes et les plus visitées d'Afrique. La police du tourisme est présente dans toute la médina, les crimes violents sont exceptionnellement rares et l'hospitalité marocaine est légendaire. Avoir un chauffeur privé dédié élimine également tout problème lié à la négociation de taxis ou à une navigation peu familière.</p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 19px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">Les destinations de ce circuit de 3 jours peuvent-elles être personnalisées ?</h3>
+        <p>100% oui ! Comme il s'agit d'un circuit privé, on peut facilement troquer Essaouira contre une expédition à Ait Benhaddou, ou ajouter des vols en montgolfière au-dessus des palmeraies de Marrakech au lever du soleil. Faites simplement part à notre équipe de vos préférences sur WhatsApp.</p>
+      </div>
+
+      <!-- Driver Concierge Lead Gen -->
+      <div class="roam-driver-box">
+        <h4>Besoin d'excursions d'une journée personnalisées ou d'un transfert aéroport ?</h4>
+        <p>Avez-vous des sites spécifiques que vous souhaitez voir ? Réservez notre service de chauffeur privé anglophone avec des véhicules modernes haut de gamme pour les transferts depuis l'aéroport, les excursions d'une journée personnalisées et les transferts vers la médina selon votre horaire.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="/fr/custom-morocco-tour.html" class="roam-btn-black">Book Custom Driver &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20customize%20the%203-Day%20Premium%20Explorer." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Travel Deals Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Trip Planning &amp; Booking Toolkit</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Best Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Boutique Marrakech Riads</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Fast Morocco eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="/fr/custom-morocco-tour.html" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚐 Custom 4x4 &amp; Chauffeur</span>
+            <span class="roam-toolkit-btn">Plan Route &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Frequently Asked Questions Accordion -->
+      <section style="margin: 48px 0 32px;">
+        <h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: clamp(24px, 3.5vw, 36px); margin-bottom: 24px; color: #000000;">Questions fréquemment posées : Explorateur de luxe au Sahara de 3 jours</h2>
+        
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <h3 class="faq-question">Quels équipements de luxe sont inclus dans le camp du désert de l'Erg Chebbi ?</h3>
+            <div class="faq-answer">
+              <p>Nos camps de luxe dans le désert, triés sur le volet, comprennent de spacieux pavillons privés en toile avec des lits King ou Queen moelleux, des tapis marocains fabriqués à la main, des salles de bains privatives avec douches à eau chaude, des toilettes en porcelaine avec chasse d'eau, l'électricité, une recharge USB au chevet et le chauffage ou la climatisation. Vous profiterez également d'un dîner marocain de 4 plats aux chandelles et de spectacles de tambours Gnawa sur un feu de camp sous les étoiles.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Combien de temps dure la randonnée à dos de chameau pour atteindre le camp de luxe ?</h3>
+            <div class="faq-answer">
+              <p>La randonnée à dos de chameau au coucher du soleil dans les dunes de l'Erg Chebbi dure environ 45 à 60 minutes, parfaitement chronométrée pour une photographie à l'heure d'or à travers la mer de sable. Pour les voyageurs qui préfèrent ne pas monter à dos de chameau ou qui ont des problèmes de mobilité, un transfert privé en 4x4 vers les dunes directement à l'entrée de votre tente de luxe est toujours inclus sans frais supplémentaires.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Quel est le temps de conduite entre Marrakech et le désert du Sahara ?</h3>
+            <div class="faq-answer">
+              <p>Le voyage couvre environ 560 km dans chaque sens à travers le Haut Atlas, la vallée du Dadès et les gorges du Todra. Pour garantir un voyage confortable sans se presser, notre Sahara Luxury Explorer de 3 jours interrompt le trajet avec une nuit dans un hôtel-boutique kasbah à Dadès la première nuit, arrivant aux dunes de l'Erg Chebbi dans l'après-midi du jour 2.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Ce tour du Sahara peut-il se terminer à Fès au lieu de retourner à Marrakech ?</h3>
+            <div class="faq-answer">
+              <p>Oui! De nombreux voyageurs réservent notre itinéraire désert de 3 ou 4 jours commençant à Marrakech et se terminant à Fès (ou vice versa). Le dernier jour, votre chauffeur privé vous conduit vers le nord à travers les gorges de la vallée du Ziz, la forêt de cèdres du Moyen Atlas d'Azrou et la ville alpine d'Ifrane, pour arriver à Fès en début de soirée.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Les exigences alimentaires (végétariennes, végétaliennes, sans gluten, halal) peuvent-elles être satisfaites ?</h3>
+            <div class="faq-answer">
+              <p>Oui, tous les repas (aux arrêts de la kasbah et au camp du désert) sont fraîchement préparés et peuvent facilement répondre aux besoins végétariens, végétaliens, sans gluten, sans produits laitiers et allergiques aux noix. Informez-nous simplement lors de la réservation et vos hôtes privés vous prépareront des menus sur mesure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tour Bottom CTA Box -->
+            <!-- Pre-Locked Route Booking Card -->
+      <div style="max-width: 680px; margin: 40px auto 24px;">
+        <div class="dest-prelocked-widget"
+             data-tour-name="3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay"
+             data-price-1-4="335"
+             data-price-5-7="450"
+             data-price-8-12="620"
+             data-tour-sub="Marrakech hub · Essaouira coast, Ourika waterfalls & Agafay sunset camp">
+          
+          <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+          <h3 class="dest-prelocked-title">Explorateur Premium de 3 jours : Marrakech, Essaouira, Ourika et Agafay</h3>
+          <p class="dest-prelocked-sub">Centre de Marrakech · Côte d'Essaouira, cascades de l'Ourika et camp au coucher du soleil d'Agafay</p>
+
+          <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+          <div class="dest-tier-grid">
+            <button type="button" class="dest-tier-btn active" data-tier="1_4">
+              <span class="dest-tier-pax">1–4 Pax</span>
+              <span class="dest-tier-veh">Sedan / 4x4</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="5_7">
+              <span class="dest-tier-pax">5–7 Pax</span>
+              <span class="dest-tier-veh">VIP Van</span>
+            </button>
+            <button type="button" class="dest-tier-btn" data-tier="8_12">
+              <span class="dest-tier-pax">8–12 Pax</span>
+              <span class="dest-tier-veh">Minibus</span>
+            </button>
+          </div>
+
+          <div class="dest-prelocked-fields">
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="pickupCityPremiumExplorer">Departure City</label>
+              <select class="dest-form-select dest-prelocked-city" id="pickupCityPremiumExplorer">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
+              </select>
+            </div>
+
+            <div class="dest-form-field">
+              <label class="dest-form-label" for="travelDatePremiumExplorer">Approx. Travel Date</label>
+              <input class="dest-form-input dest-prelocked-date" type="date" id="travelDatePremiumExplorer">
+            </div>
+          </div>
+
+          <div class="dest-prelocked-price-box">
+            <div class="dest-prelocked-price-num">335€</div>
+            <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+            <p class="dest-prelocked-price-note">Comprend 3 jours de chauffeur dédié, des excursions d'une journée, du carburant, des péages et un dîner de luxe au coucher du soleil dans le désert d'Agafay.</p>
+          </div>
+
+          <a href="#" class="dest-prelocked-wa-btn">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+            <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 335€</span></span>
+          </a>
+
+          <div class="dest-prelocked-trust">
+            <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+            <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+            <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+          </div>
+        </div>
+      </div>
+<div class="roam-tour-cta-box">
+        <h3 class="roam-tour-cta-title">Prêt pour les vacances ultimes à Marrakech ?</h3>
+        <p class="roam-tour-cta-desc">Laissez notre équipe locale s'occuper de chaque détail pendant que vous vous détendez et vous imprégnez de la beauté du Maroc. Transport privé, guides certifiés et souvenirs inoubliables garantis.</p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <a href="/fr/custom-morocco-tour.html" class="roam-btn-black">Book Premium Explorer &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I%20want%20to%20book%20the%203-Day%20Premium%20Explorer%20circuit." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">3-Day Premium Explorer</div>
+      <div class="smt-price">From <span class="smt-price-num">335€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%203-Day%20Premium%20Explorer:%20Marrakech,%20Essaouira,%20Ourika%20&%20Agafay." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

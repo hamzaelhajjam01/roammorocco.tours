@@ -1,0 +1,328 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "L'itinerario definitivo di 10 giorni in Marocco | Vagare per il Marocco";
+const description = "L'itinerario definitivo di 10 giorni in Marocco: da Marrakech a Fes attraverso il deserto del Sahara. Pianifica il viaggio perfetto con i nostri esperti locali.";
+const canonical = "https://roammorocco.tours/it/blog/morocco-10-day-itinerary.html";
+const ogImage = "https://roammorocco.tours/images/morocco_10_day_hero.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": `${canonical}#article`,
+      "headline": title,
+      "description": description,
+      "image": ogImage,
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-03-01",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hamza",
+          "jobTitle": "Co-Founder & Expedition Curator",
+          "url": "https://roammorocco.tours/about.html"
+        },
+        {
+          "@type": "Person",
+          "name": "Abdelhakim",
+          "jobTitle": "Co-Founder & Operations Lead",
+          "url": "https://roammorocco.tours/about.html"
+        }
+      ],
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonical
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonical}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title,
+          "item": canonical
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonical}#faq`,
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best time to visit Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best time to visit Morocco is during the spring (mid-March to May) or fall (September to October). The weather is warm but pleasant, unlike the extreme heat of summer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a visa to visit Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Citizens of the US, UK, Canada, Australia, and most of Europe do not need a visa for tourist visits up to 90 days. Always check with your local embassy before traveling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Morocco safe for tourists?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Morocco is generally very safe for tourists. The government places a high priority on tourist safety. Like any destination, practice common sense, especially in crowded medinas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should female travelers wear in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Morocco is a conservative country. While tourists aren't expected to wear traditional clothing, dressing modestly (covering shoulders and knees) is highly recommended out of respect for local culture."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you drink alcohol in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, alcohol is available in Morocco, primarily in licensed hotels, bars, and tourist restaurants. However, drinking in public outside of these venues is strictly prohibited."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What language do they speak in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The official languages are Arabic and Amazigh (Berber). French is widely spoken and serves as the language of commerce. English is increasingly common in tourist areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the currency in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The currency is the Moroccan Dirham (MAD). While major hotels and large restaurants accept credit cards, cash is essential for souks, taxis, and small shops."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many days do you need in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To see the highlights (Marrakech, Fes, and the Sahara Desert), we recommend at least 7 to 10 days. A two-week trip allows for a more relaxed pace and exploring the coast."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is tap water safe to drink in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is generally recommended for tourists to stick to bottled water to avoid stomach upsets, as the tap water contains different minerals than you might be used to."
+        }
+      }
+    ]
+  }
+  ]
+};
+---
+<Layout lang="it" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <article class="article-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/it/index.html">Home</a> &gt; <a href="/it/blog.html">Blog</a> &gt; <span>10-Day Morocco Itinerary</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">ITINERARY PLANNING • 2026 AUTHORITY GUIDE</span>
+      <h1 class="article-title">L'itinerario definitivo di 10 giorni in Marocco: città imperiali, Atlante e Sahara</h1>
+      <p class="article-subtitle">Il percorso definitivo che collega Casablanca, Fes, le dune dorate dell'Erg Chebbi di Merzouga e Marrakech con tempi di guida realistici e consigli di autisti privati.</p>
+      <div class="article-meta">
+        <span>Published: <strong>September 28, 2026</strong></span>
+        <span>Author: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>14 Minutes (2,900 Words)</strong></span>
+        <span>Focus: <strong>Imperial Cities & Sahara Route</strong></span>
+      </div>
+    </header>
+
+    <!-- Featured Visual Frame -->
+    <figure class="featured-image-box">
+      <img src="/images/morocco_10_day_hero.webp" alt="The Ultimate 10-Day Morocco Itinerary: Imperial Cities, Atlas & Sahara">
+      <figcaption>Alba sull'antica fortezza in mattoni di fango di Aït Benhaddou, uno ksar patrimonio mondiale dell'UNESCO lungo la storica via carovaniera.</figcaption>
+    </figure>
+
+    <!-- GEO & AEO Key Takeaways Box (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="10-Day Morocco Itinerary Summary">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ 10-DAY ITINERARY AT A GLANCE (QUICK SUMMARY)</span>
+        <span class="ai-summary-badge">Expert Route</span>
+      </div>
+      <p class="ai-summary-text">L'<strong>itinerario ideale in Marocco di 10 giorni</strong> segue il classico giro a bocca aperta da <strong>Casablanca → Fes → Deserto del Sahara Erg Chebbi → Gola del Dades → Marrakech</strong>. Questo percorso riduce al minimo il ritorno sui propri passi, include 2 notti a Fes, 1 notte in un lussuoso campo glamping nel Sahara, 1 notte nella valle del Dades e 3 notti a Marrakech. Aspettatevi circa 1.450 km di viaggio panoramico meglio vissuti tramite autista privato dedicato per percorrere senza fretta i passi montani dell'Alto Atlante e le rotte transahariane.</p>
+    </aside>
+
+    <!-- Editorial Prose -->
+    <div class="article-content">
+      <p style="font-size: 1.25rem;">Quindi, hai prenotato i tuoi voli e ti stai chiedendo: <em>"Qual è un buon itinerario per un viaggio di 10 giorni in Marocco?"</em> Che tu stia cercando un itinerario <strong>Viaggio su strada in Marocco di 10 giorni</strong> o il classico <strong>itinerario di 10 giorni da Marrakech a Fes</strong>, sei atterrato esattamente nel posto giusto.</p>
+  
+      <p>Il Marocco è un paese dai contrasti sconcertanti. In soli dieci giorni, puoi passeggiare per la medina medievale senza auto di Fes, attraversare le montagne innevate dell'Alto Atlante e cavalcare un cammello tra le mutevoli dune di sabbia del deserto del Sahara. Questa guida delinea il nostro <strong>itinerario di 10 giorni in Marocco</strong> preferito in assoluto.</p>
+
+      <!-- Interactive Trip Cost Calculator Banner -->
+      <div style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-left: 4px solid #C8A45C; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); padding: 24px; margin: 28px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+        <div>
+          <span style="font-family:'Inter', sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#8A6A23; background:rgba(200,164,92,0.12); border:1px solid rgba(200,164,92,0.28); padding:3px 10px; border-radius:999px; display:inline-block; margin-bottom:8px;">Interactive Budget Tool</span>
+          <strong style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000; display:block;">Curious how much this 10-day route costs?</strong>
+          <p style="margin:4px 0 0; font-size:13.5px; color:#555;">Utilizza il nostro calcolatore del budget in tempo reale per stimare le spese di autisti privati, riad e campi nel deserto in pochi secondi.</p>
+        </div>
+        <a href="/it/morocco-trip-cost-calculator.html" class="roam-btn-black" style="padding:12px 20px; font-size:12px; white-space:nowrap; border-radius:10px; font-weight:600;">Open 10-Day Cost Calculator &rarr;</a>
+      </div>
+
+      <h2>Giorni 1-2: Arrivo a Marrakech e Piazza Jemaa el Fna</h2>
+      <p>I tuoi 10 giorni in Marocco iniziano nella vibrante "Città Rossa". <strong>Marrakech</strong> è un assalto ai sensi nel miglior modo possibile. Trascorri il tuo primo giorno perdendoti nei vicoli tortuosi e labirintici della vecchia medina.</p>
+      <ul>
+        <li><strong>Jemaa el Fna:</strong> con l'avvicinarsi della sera, dirigiti verso la famosa piazza Jemaa el Fnaa. L'aria si riempie del fumo delle bancarelle di cibo, dei suoni degli incantatori di serpenti e dei richiami dei mercanti.</li>
+        <li><strong>Palazzi e tombe reali:</strong> dedica il tuo secondo giorno alla storia. Visita il <em>Palazzo Bahia</em> finemente intagliato, i tranquilli <em>Giardini Menara</em> e le antiche <em>Tombe Saadiane</em>. Concludi la giornata sorseggiando un tè alla menta con vista sull'imponente <em>Moschea Koutoubia</em>.</li>
+      </ul>
+      <p><em>Suggerimento del curatore:</em> quando ti immergi nei souk per la prima volta, mantieni il passo senza fretta. Se ti senti ansioso di navigare o contrattare, leggi la nostra guida culturale su <a href="/it/blog/the-art-of-the-souk-bargaining-etiquette.html"><strong>L'arte del suk: perché contrattare a Marrakech è una conversazione, non un combattimento</strong></a>, e consulta i nostri consigli stagionali su <a href="/it/blog/cosa-indossare-in-marocco.html"><strong>cosa indossare Marocco</strong></a> per farti stare tranquillo, a tuo agio e culturalmente rispettoso.</p>
+
+      <h2>Giorno 3: Le montagne dell'Alto Atlante e il Passo Tizi n'Tichka</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/wall-atlas.jpg" alt="High Atlas Mountains serpentine road and Berber stone villages along Tizi n'Tichka pass in Morocco">
+        <figcaption>Montagne dell'Alto Atlante: salita sull'ampio passo Tizi n'Tichka di 2.260 m verso il sud del Marocco.</figcaption>
+      </figure>
+
+      
+      <p>Lasciati alle spalle l'energia caotica della città e inizia il tuo percorso panoramico verso le <strong>montagne dell'Alto Atlante</strong>. Il viaggio attraverso l'ampio <strong>passo Tizi n Tichka</strong> (che raggiunge i 2.260 m) è una delle strade di montagna più belle dell'Africa. Fermati spesso per scattare foto dei villaggi berberi di mattoni di fango aggrappati alle ripide pareti del canyon.</p>
+      <div class="roam-field-note" style="margin: 20px 0; background: #faf8f5; border-left: 4px solid #C8A45C; padding: 18px 22px;">
+        <span class="roam-field-note-kicker" style="font-size: 11px; font-weight: 800; letter-spacing: .1em; color: #C8A45C; text-transform: uppercase;">Curator's Logistics Note // Hamza &amp; Abdelhakim</span>
+        <p style="margin: 8px 0 0; font-size: 15px; line-height: 1.6; color: #333;">Molti viaggiatori ci chiedono se dovrebbero guidare da soli questo passo di montagna con un'auto a noleggio. Tra camion commerciali pesanti che percorrono tornanti stretti e improvvisi cambiamenti di altitudine, può mettere alla prova anche i guidatori esperti. Se vuoi rilassarti e guardare i boschi di noci che passano senza stress, valuta i compromessi nella nostra guida su <a href="/it/blog/affittare-un-auto-in-marocco-vs-autista-privato.html"><strong>noleggiare un'auto in Marocco o assumere un autista privato</strong></a> ed esamina la nostra trasparente ripartizione dei prezzi su <a href="/it/blog/morocco-private-driver-cost.html"><strong>Costi autista privato Marocco</strong></a>.</p>
+      </div>
+
+      <h2>Giorno 4: Ait Benhaddou e le Mille Kasbah</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/tour_cinema_ait_benhaddou.jpg" alt="UNESCO World Heritage earthen Ksar of Ait Benhaddou fortress in Morocco">
+        <figcaption>Patrimonio mondiale dell'UNESCO: l'antico ksar d'argilla di Aït Benhaddou, ambientazione del Gladiatore e del Trono di Spade.</figcaption>
+      </figure>
+
+      
+      <p>Scendi dalle montagne per esplorare un vero <strong>sito patrimonio mondiale dell'UNESCO</strong>: l'antico Ksar di Ait Benhaddou. I viaggiatori alla ricerca di circuiti dedicati ai set cinematografici possono prenotare il nostro <a href="/it/tour-heritage-cinema.html"><strong>tour delle location cinematografiche e del cinema in Marocco</strong></a>. Questo antico villaggio fortificato era una tappa cruciale sull'antica via carovaniera tra il Sahara e Marrakech.</p>
+      <p>Gli amanti del cinema lo riconosceranno immediatamente. Se hai mai guardato <em>Il Gladiatore</em>, <em>Il Trono di Spade</em> o <em>Lawrence d'Arabia</em>, hai visto questa splendida fortezza di mattoni di fango. Da qui, prosegui il breve viaggio verso Ouarzazate per visitare gli enormi <strong>Atlas Studios</strong> (la Hollywood dell'Africa) e la storica Taourirt Kasbah, un tempo dimora della potente famiglia Glaoui.</p>
+
+      <h2>Giorno 5: Gole del Dades e del Todra</h2>
+      <p>Mentre guidi lungo la "Strada delle 1000 Kasbah", il paesaggio cambia radicalmente. Attraverserai la lussureggiante <strong>Valle del Draa</strong>, ricca di palme, prima di arrivare agli imponenti canyon calcarei del fiume <strong>Gola del Todra</strong>. Queste imponenti pareti rocciose raggiungono i 300 metri di altezza. Trascorri la notte vicino alla <strong>gola del Dades</strong>, dove le strade tortuose (formazioni rocciose "dita di scimmia") offrono incredibili viste del tramonto.</p>
+
+      <h2>Giorni 6-7: deserto del Sahara e dune di sabbia dell'Erg Chebbi</h2>
+      <p>Nessun <strong>itinerario in Marocco (7, 10 e 14 giorni)</strong> è completo senza il <strong>deserto del Sahara</strong>. Il viaggio verso Merzouga attraverso la valle dello Ziz, circondata da palme, vale ogni chilometro percorso.</p>
+      <p>Una volta arrivato ai margini delle dune di sabbia dell'<strong>Erg Chebbi</strong>, lascia il mondo motorizzato alle spalle e intraprendi un tradizionale trekking in cammello o un trasferimento privato in 4x4 nelle profonde dune. Guarda il tramonto trasformare la sabbia dall'oro al cremisi intenso. Trascorri la notte in un lussuoso accampamento nel deserto sotto una coltre di stelle, mangiando la tradizionale cucina berbera e ascoltando i ritmi dei tamburi attorno al fuoco di tamerici.</p>
+      <p><em>Nota di pianificazione:</em> Se stai discutendo tra i diversi campi di dune del Marocco, leggi il nostro confronto completo sui <a href="/it/blog/sahara-desert-tour-merzouga-vs-zagora.html"><strong>Tour Merzouga vs Zagora Sahara</strong></a>. Assicurati di controllare il <a href="/it/blog/best-time-to-visit-sahara-morocco.html"><strong>periodo migliore per visitare il Sahara</strong></a> per pianificare il caldo estivo o le gelate notturne invernali, oppure esplora il nostro <a href="/it/tour-premium-explorer.html"><strong>tour di 3 giorni Sahara Luxury Explorer</strong></a> artigianale.</p>
+
+      <h2>Giorni 8-9: Arrivo a Fes e nella Medina Medievale</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/morocco-fes-medina-architecture.jpg" alt="Ornate Islamic zellige tilework and carved cedarwood in historic Fes el-Bali medina">
+        <figcaption>Fes el-Bali: il quartiere urbano medievale pedonale più grande del mondo, decorato con mosaici zellige secolari.</figcaption>
+      </figure>
+
+      
+      <p>Dopo una partenza anticipata per osservare l'alba nel deserto, inizia il viaggio verso nord verso la città imperiale di Fes. Il paesaggio cambia nuovamente, passando attraverso le foreste di cedri del Medio Atlante (attenzione alle bertucce).</p>
+      <p>Fes è il cuore spirituale e culturale del Marocco. La sua medina medievale (Fes el-Bali) senza auto è un labirinto di oltre 9.000 vicoli stretti. Ti consigliamo vivamente di assumere una guida locale ufficiale qui, poiché Google Maps non può navigare nei passaggi coperti. Visita le famose concerie Chouara a Fes, la splendida Madrasa Bou Inania e acquista squisiti articoli in pelle e ceramiche locali lungo gli antichi sentieri della medina.</p>
+      <p><em>Intuizione del curatore:</em> per capire perché Fes è così profondamente diversa dalla vivace energia del sud, esplora la nostra guida comparativa su <a href="/it/blog/marrakech-vs-fes.html"><strong>Marrakech vs Fes: quale città imperiale marocchina dovresti visitare?</strong></a>.</p>
+
+      <h2>Giorno 10: Casablanca o Ritorno a Marrakech</h2>
+      <p>A seconda di dove parte il tuo volo di partenza, il giorno 10 è il giorno di transito. Se voli da Casablanca, un itinerario di 10 giorni in Marocco di solito prevede di prendere il treno veloce o il tuo trasferimento privato da Fes. Se passi da Casablanca, assicurati di visitare la monumentale <strong>Moschea di Hassan II</strong>, una delle poche moschee del Marocco aperta ai non musulmani. Se il tuo volo parte da Marrakech, dovrai percorrere un rettilineo in autostrada per concludere il tuo viaggio.</p>
+      <p><em>Suggerimento per i voli:</em> se stai ancora prenotando voli, controlla la nostra suddivisione su <a href="/it/blog/cheap-flights-to-morocco.html"><strong>per trovare voli economici per il Marocco</strong></a>, comprese le rotte dirette non-stop dal Nord America. Quando sarai pronto a trasformare questo percorso in un viaggio privato senza soluzione di continuità, il nostro team potrà personalizzare ogni riad e ogni tappa panoramica attraverso il nostro <a href="/it/custom-morocco-tour.html"><strong>servizio di tour privato personalizzato in Marocco</strong></a>.</p>
+
+      <!-- Roam Morocco Reusable Tour CTA Box Component -->
+      <div class="roam-tour-cta-box">
+        <span class="roam-tour-cta-kicker">★ SIGNATURE 10-DAY GRAND CIRCUIT</span>
+        <h3 class="roam-tour-cta-title">Trasforma questo itinerario da sogno di 10 giorni in realtà</h3>
+        <p class="roam-tour-cta-desc">Evita gli orari degli autobus pubblici, la navigazione stressante e i problemi con i bagagli. Roam Morocco gestisce tutta la logistica con un autista berbero autorizzato di lingua inglese, un lussuoso Prado 4×4, riad boutique selezionati con cura e glamping reale nel deserto.</p>
+        <div class="roam-tour-cta-actions">
+          <a href="/it/custom-morocco-tour.html" class="roam-btn-white">Customize Your 10-Day Tour &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%2010-day%20private%20Morocco%20tour." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
+
+      <h2>Domande frequenti</h2>
+      
+      <h3>Qual è un fantastico itinerario di 4-5 giorni per la prima volta che visiti il ​​Marocco?</h3>
+      <p>Se hai solo 4-5 giorni concentrati esclusivamente su Marrakech e gli immediati dintorni. Puoi trascorrere 2 giorni in città e prendere il nostro <strong>Premium Explorer di 3 giorni</strong> per visitare il deserto di Agafay, la valle dell'Ourika e la costa di Essaouira senza perdere tempo in lunghi viaggi in autobus.</p>
+
+      <h3>10 giorni in Marocco sono sufficienti?</h3>
+      <p>Sì, 10 giorni sono il "punto ideale" per una vacanza marocchina. Ti dà abbastanza tempo per visitare comodamente le città imperiali (Marrakech e Fes), attraversare le montagne dell'Alto Atlante e trascorrere una notte nel profondo deserto del Sahara senza sentirti completamente esausto.</p>
+
+            <!-- Roam Morocco E-E-A-T Curator Bio Card -->
+      <div class="roam-author-card" itemscope itemtype="https://schema.org/Person">
+        <div class="roam-author-avatar">RM</div>
+        <div class="roam-author-content">
+          <span class="roam-author-kicker">Written &amp; Curated by Local Experts</span>
+          <h4 class="roam-author-title"><span itemprop="name">Hamza e Abdelhakim</span> <span itemprop="jobTitle">— Cofondatori, Roam Morocco Tours</span></h4>
+          <p class="roam-author-bio" itemprop="description">Cresciuti a Marrakech con radici familiari che abbracciano da sempre l'Alto Atlante e il Sahara, Hamza e Abdelhakim hanno fondato Roam Morocco per rifiutare il turismo commerciale di massa. Insieme ai curatori di percorsi nativi, progettano spedizioni private al 100%, senza fretta, concentrandosi su un'autentica immersione culturale, prezzi trasparenti e supporto diretto alle comunità artigiane locali.</p>
+          <div class="roam-author-badges">
+            <span><span class="badge-check">✓</span> Ministry Licensed Tour Operators</span>
+            <span><span class="badge-check">✓</span> Based in Marrakech Medina (40000)</span>
+            <a href="/it/about.html" class="roam-author-link" itemprop="url">Meet Our Team &amp; Philosophy &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+        </div>
+  </article>  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

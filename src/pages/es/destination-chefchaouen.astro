@@ -1,0 +1,458 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Tours privados en Chefchaouen | Fez y Tánger a la ciudad azul";
+const description = "Descubre Marruecos";
+const canonical = "https://roammorocco.tours/es/destination-chefchaouen.html";
+const ogImage = "https://roammorocco.tours/img/dest-chefchaouen.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "Chefchaouen (The Blue Pearl)",
+      "description": "Nestled in Morocco's northern Rif Mountains, Chefchaouen is famed worldwide for its dreamy cobalt-blue alleyways, Andalusian heritage, and crisp mountain atmosphere.",
+      "url": "https://roammorocco.tours/destination-chefchaouen.html",
+      "touristType": [
+        "Photographers",
+        "Couples",
+        "Honeymooners",
+        "Independent Explorers"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.1714,
+        "longitude": -5.2697
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "Private Chefchaouen Tour & Excursion from Fes / Tangier",
+      "description": "A tailored private tour through the Rif Mountains to Chefchaouen, including private transfers, guided medina walks, and flexible sunset pacing.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long is the drive from Fes to Chefchaouen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The drive from Fes to Chefchaouen takes approximately 3.5 to 4 hours in our comfortable, private air-conditioned vehicle. We take the scenic route through the Rif mountain valleys and pause whenever you wish for coffee, photos, or panoramic views."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a day trip to Chefchaouen enough time, or should we stay overnight?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A day trip gives you about 4 to 5 relaxed hours to explore the blue alleys, photograph the famous doorways, have lunch in Outa El Hammam square, and browse artisan weaving. However, staying overnight allows you to experience the magical sunset from the Spanish Mosque and walk the quiet blue streets in the morning before day-trippers arrive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we take a private tour from Tangier to Chefchaouen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Tangier is even closer to Chefchaouen than Fes (approx. 2 hours and 15 minutes drive). We frequently pick up guests directly from Tangier Ville Port (ferries from Spain) or Tangier Ibn Battouta Airport."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/es/index.html">Home</a> &nbsp;/&nbsp; <a href="/es/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>Chefchaouen</span>
+        </div>
+        <span class="dest-badge-tag">THE BLUE PEARL</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/dest-chefchaouen.jpg" alt="Chefchaouen Blue Streets in the Rif Mountains" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Tours Privados a Chefchaouen: La Perla Azul de Marruecos</h1>
+          <p class="dest-hero-subtitle">Pasee por tranquilas callejuelas de color cobalto, descubra la herencia andaluza, beba té de menta junto a manantiales de montaña y observe la puesta de sol desde la Mezquita Española con un chofer privado.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> Full Day Excursion or 2 Days Overnight</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> Private Executive 4x4 &amp; Chauffeur</span>
+        <span class="dest-metric-item">📍 <strong>Departures:</strong> Fes, Tangier, or Casablanca</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- 2-Column Core Layout -->
+            <!-- GEO & AEO Destination Fast Facts (BLUF) -->
+      <aside class="ai-quick-summary-card" aria-label="Chefchaouen Travel Fast Facts">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ CHEFCHAOUEN AT A GLANCE (QUICK SUMMARY)</span>
+          <span class="ai-summary-badge">The Blue Pearl</span>
+        </div>
+        <p class="ai-summary-text"><strong>Chefchaouen</strong> (la famosa Perla Azul de Marruecos) está ubicada en las espectaculares montañas Rif del norte de Marruecos, famosa por sus paredes de medina pintadas de azul pálido, las vistas del atardecer de la Mezquita Española y su tranquila cultura artesanal de tejido de lana. La duración recomendada de la visita es de <strong>1 a 2 días</strong>, fácilmente accesible a través de un chofer privado desde Tánger (2h 15m) o Fez (3h 30m) con paradas para tomar fotografías panorámicas de la montaña incluidas.</p>
+      </aside>
+
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Aspectos destacados de Chefchaouen y ventajas privadas</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>Los icónicos callejones azul cobalto:</strong> Pasee sin prisas por fotogénicas escaleras lavadas de azul, fachadas con macetas y puertas de madera ornamentadas.</li>
+              <li><strong>Mirador del atardecer en la Mezquita Española:</strong> Una suave caminata panorámica de 20 minutos con vistas a todo el pueblo azul mientras el atardecer ilumina los picos del Rif.</li>
+              <li><strong>Plaza Uta el-Hammam y Kasbah:</strong> Relájese en los cafés al aire libre con sombra junto a la fortaleza Kasbah de paredes rojas del siglo XV y la Gran Mezquita.</li>
+              <li><strong>Manantial de la montaña Ras El Maa:</strong> observe cómo el agua fría de la montaña fluye desde los picos del Rif, donde las mujeres locales se reúnen para lavar lana y alfombras.</li>
+              <li><strong>Tejido artesanal a medida:</strong> Descubra artesanías autóctonas de la montaña del Rif, mantas tejidas, chilabas de lana y queso de cabra.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>El santuario de montaña más sereno de Marruecos</h2>
+            <p>Encaramada entre dos picos montañosos con forma de cuerno en la cordillera norte del Rif (de donde deriva la palabra bereber <em>Chefchaouen</em>: "cuidado con los cuernos"), la Perla Azul es un sueño estético. Fundada en 1471 por Moulay Ali Ben Moussa Ben Rached El Alami como fortaleza secreta contra las invasiones portuguesas, la ciudad acogió a refugiados judíos y musulmanes que huían de la Reconquista española.</p>
+            <p>Pintaron sus casas en relajantes tonos de azul, una tradición con profundas raíces espirituales, que refleja el cielo y el cielo de Dios, al tiempo que prácticamente mantiene las casas frescas y repele los mosquitos.</p>
+            
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"A diferencia de la energía frenética de las medinas de las grandes ciudades, Chefchaouen se mueve a un ritmo montañoso lento y pacífico. Cada giro es una pintura al óleo de índigo, turquesa y cobalto".</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO FIELD REPORT</span>
+            </div>
+            
+            <p>Viajar con nuestro chofer privado significa evitar los autobuses turísticos lentos y abarrotados. Planificamos tu salida para que llegues antes que las multitudes de autobuses, explores los mejores rincones secretos y regreses con absoluta comodidad.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Muestra de excursión privada de un día desde Fez/Tánger</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">RITMO A MEDIDA</span></h3>
+
+            <!-- Timeline -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">08:00 AM // SCENIC RIF MOUNTAIN ROAD TRIP</span>
+              <h4 class="dest-day-title">Salida de Fez o Tánger → Estribaciones del Rif</h4>
+              <p class="dest-day-desc">Su conductor privado le recogerá directamente en la puerta de su riad en un vehículo ejecutivo con aire acondicionado. Disfrute de un paseo tranquilo por olivares, colinas cubiertas de cedros y la cordillera del Rif. Haga una parada para tomar un café recién hecho de montaña y disfrutar de miradores fotográficos panorámicos con vistas a la presa de Sidi Chahed.</p>
+              <div class="dest-day-tags">
+                <span>Scenic 4x4 Chauffeur</span>
+                <span>Flexible Photo Stops</span>
+                <span>Water &amp; Wi-Fi Onboard</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">11:30 AM // BLUE MEDINA EXPLORATION &amp; LUNCH</span>
+              <h4 class="dest-day-title">Outa El Hammam → Tejedores artesanales → Ras El Maa</h4>
+              <p class="dest-day-desc">Llegada a Chefchaouen. Camine por el laberinto azul con su guía o a su propio ritmo. Descubra los rincones fotográficos escondidos, los artículos de cuero y las famosas babuchas de cuero. Saboree el almuerzo en un encantador restaurante con terraza con vistas a la plaza y pruebe tajines de queso de cabra locales y ensaladas de higos frescos.</p>
+              <div class="dest-day-tags">
+                <span>4–5 Hours on Ground</span>
+                <span>Artisan Cooperatives</span>
+                <span>Authentic Rif Cuisine</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">04:30 PM // SPANISH MOSQUE HIKE &amp; RETURN DRIVE</span>
+              <h4 class="dest-day-title">Mirador panorámico → Traslado nocturno relajante</h4>
+              <p class="dest-day-desc">Antes de regresar, tome el sendero panorámico hacia la histórica Mezquita Española ubicada en la colina sobre la ciudad para disfrutar del panorama clásico de la ciudad azul frente a las montañas. Su chofer le dará la bienvenida a su vehículo para un paseo nocturno relajado y le dejará directamente en su alojamiento.</p>
+              <div class="dest-day-tags">
+                <span>Optional Sunset Hike</span>
+                <span>Door-to-Door Riad Drop-Off</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">¿Qué está incluido en su recorrido por Chefchaouen?</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUIDO</h4>
+                <ul class="dest-inc-list">
+                  <li>Vehículo privado exclusivo con aire acondicionado, combustible y peajes.</li>
+                  <li>Chofer bereber profesional de habla inglesa.</li>
+                  <li>Recogida y regreso al hotel/riad puerta a puerta (Fez o Tánger)</li>
+                  <li>Horarios flexibles en Chefchaouen (sin horarios apresurados)</li>
+                  <li>Agua mineral embotellada fría en el vehículo.</li>
+                  <li>Asistencia para paseo panorámico por la Mezquita Española.</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NO INCLUIDO</h4>
+                <ul class="dest-exc-list">
+                  <li>Almuerzo en Chefchaouen (se proporcionan muchas recomendaciones)</li>
+                  <li>Boleto de entrada opcional al Museo Kasbah (~60 MAD)</li>
+                  <li>Propina discrecional para el conductor</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Preguntas frecuentes: Tours en Chefchaouen</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Podemos hacer este tour empezando en Tánger y terminando en Fez?</h4>
+              <div class="dest-faq-a">
+                <p>¡Sí! Este es uno de nuestros traslados de ida más populares. Lo recogemos en Tánger (aeropuerto, hotel o puerto de ferry desde España), lo llevamos a Chefchaouen para 4 a 5 horas de exploración con su equipaje guardado de manera segura en nuestro vehículo y luego nos dirigimos hacia el sur para dejarlo en su riad en Fez.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Hay muchas escaleras en Chefchaouen?</h4>
+              <div class="dest-faq-a">
+                <p>Sí, Chefchaouen está construido en la ladera y cuenta con muchos escalones y pendientes de adoquines. Recomendamos llevar calzado cómodo para caminar y con buena tracción. Podemos adaptar fácilmente la ruta a pie para que sea tan suave y accesible como sea necesario.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="Chefchaouen Blue City Private Day Tour"
+               data-price-1-4="180"
+               data-price-5-7="230"
+               data-price-8-12="310"
+               data-tour-sub="Door-to-door private Mercedes van · Rif Mountains panoramic route">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Tour privado de un día por la ciudad azul de Chefchaouen</h3>
+            <p class="dest-prelocked-sub">Furgoneta Mercedes privada puerta a puerta · Ruta panorámica de las montañas del Rif</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCityChefchaouen">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityChefchaouen">
+                  <option value="Fes (Hotel or Riad)" data-surcharge="0" selected>Fes (Hotel or Riad)</option>
+                  <option value="Tangier (Port / Hotel)" data-surcharge="-50">Tangier (Port / Hotel) (-50€)</option>
+                  <option value="Tetouan" data-surcharge="-70">Tetouan (-70€)</option>
+                  <option value="Casablanca (Airport or Hotel)" data-surcharge="120">Casablanca (Airport or Hotel) (+120€)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateChefchaouen">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateChefchaouen">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">180€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Incluye chofer exclusivo, combustible, paradas panorámicas en las montañas Rif y tiempo libre en la Medina Azul.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 180€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const dep = (document.getElementById('departureCity')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName + (dep ? ` (${dep})` : ''),
+        pickup: dep || tourName,
+        date: dates,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about the ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (dep ? `🚗 Route / Departure: ${dep}\n` : '') +
+        (dates ? `📅 Travel Date: ${dates}\n` : '') +
+        (notes ? `📝 Notes: ${notes}\n` : '') +
+        `\nCan you please confirm driver availability and send a quote?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our team. We will check route and driver availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Chefchaouen Blue City Tour</div>
+      <div class="smt-price">From <span class="smt-price-num">180€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Chefchaouen%20Blue%20City%20Private%20Day%20Tour." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

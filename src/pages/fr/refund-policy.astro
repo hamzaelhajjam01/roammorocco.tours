@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Politique de remboursement - RoamMaroc";
+const description = "Consultez la politique officielle de remboursement et d’annulation de Roam Morocco Tours. Des directives claires sur les dépôts de réservation, les changements de date et les remboursements des visites.";
+const canonical = "https://roammorocco.tours/fr/refund-policy.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = [];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${canonical}#webpage`,
+  "url": canonical,
+  "name": title,
+  "description": description,
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/"
+  },
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+    }
+  }
+};
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+        body {
+            background-color: #060605;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        h1 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #C8A45C;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #C8A45C;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    
+  </style>
+
+  <div class="container">
+        <a href="/fr/" class="back-link">← Back to Home</a>
+        <h1>Politique de remboursement</h1>
+        <p>Ceci est un espace réservé pour la politique de remboursement de RoamMorocco. Veuillez mettre à jour cette page avec vos conditions juridiques officielles.</p>
+        <h2>1. Annulations</h2>
+        <p>Si vous devez annuler votre voyage privé au Maroc, veuillez nous en informer le plus tôt possible.</p>
+        <h2>2. Remboursements</h2>
+        <p>Les remboursements sont soumis à notre délai d'annulation et à tout dépôt non remboursable effectué pour garantir l'hébergement ou le transport local.</p>
+        <h2>3. Contactez-nous</h2>
+        <p>Pour les demandes de remboursement ou les demandes de renseignements, veuillez nous contacter à <a href="mailto:contact@roammorocco.tours">contact@roammorocco.tours</a> ou via WhatsApp au <a href="https://wa.me/212653506441">+212 653 506 441</a>.</p>
+    </div>
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+</Layout>

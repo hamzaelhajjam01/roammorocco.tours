@@ -1,0 +1,95 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Términos y condiciones - RoamMorocco";
+const description = "Términos y condiciones oficiales de Roam Marruecos Tours. Revise los acuerdos de reserva, las condiciones de pago, las responsabilidades del viajero y las políticas de viajes privados.";
+const canonical = "https://roammorocco.tours/es/terms-conditions.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = [];
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${canonical}#webpage`,
+  "url": canonical,
+  "name": title,
+  "description": description,
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/"
+  },
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+    }
+  }
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+        body {
+            background-color: #060605;
+            color: rgba(255, 255, 255, 0.7);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+        h1 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        h2 {
+            color: #C8A45C;
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            color: #C8A45C;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+    
+  </style>
+
+  <div class="container">
+        <a href="/es/" class="back-link">← Back to Home</a>
+        <h1>Términos y condiciones</h1>
+        <p>Este es un marcador de posición para los Términos y condiciones de RoamMorocco. Actualice esta página con sus términos legales oficiales.</p>
+        <h2>1. Introducción</h2>
+        <p>Bienvenido a RoamMorocco. Al reservar un tour con nosotros, acepta estos Términos y condiciones.</p>
+        <h2>2. Reservas y Pagos</h2>
+        <p>Todas las reservas están sujetas a disponibilidad. Las condiciones de pago y la programación se acordarán durante el proceso de reserva.</p>
+        <h2>3. Contáctenos</h2>
+        <p>Si tiene alguna pregunta, comuníquese con nosotros a <a href="mailto:contact@roammorocco.tours">contact@roammorocco.tours</a> o vía WhatsApp al <a href="https://wa.me/212653506441">+212 653 506 441</a>.</p>
+    </div>
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+</Layout>

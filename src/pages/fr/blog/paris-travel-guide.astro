@@ -1,0 +1,1269 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "Où séjourner à Paris (2026) : meilleurs arrondissements pour les nouveaux arrivants, hôtels de charme et guide des transports en commun | RoamMaroc";
+const description = "Le guide définitif 2026 sur les endroits où séjourner à Paris pour les nouveaux arrivants : Le Marais contre Saint-Germain, 7e arrondissement, des hôtels-boutiques sélectionnés, des hacks de transit à l'aéroport CDG, France Airalo eSIM et des offres de vols.";
+const canonical = "https://roammorocco.tours/fr/blog/paris-travel-guide.html";
+const ogImage = "https://roammorocco.tours/images/paris-skyline-hero.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-toc.css?v=20260928_gold2", "/css/roam-blog.css?v=20260928_b"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://roammorocco.tours/blog/paris-travel-guide.html#article",
+      "headline": "Where to Stay in Paris (2026): Best Arrondissements for First-Timers, Boutique Hotels & Transit Guide",
+      "description": "An exhaustive, insider Paris travel guide covering optimal hotel locations (Le Marais vs Saint-Germain vs 7th Arrondissement), Metro Line transit access, airport flat-rate hacks, France Airalo eSIM, and trans-Mediterranean flight connections.",
+      "image": "https://roammorocco.tours/images/paris-skyline-hero.jpg",
+      "datePublished": "2026-09-29",
+      "dateModified": "2026-09-29",
+      "author": {
+        "@type": "Organization",
+        "name": "Roam Morocco Global Travel Editors",
+        "url": "https://roammorocco.tours/about.html"
+      },
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://roammorocco.tours/blog/paris-travel-guide.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://roammorocco.tours/blog/paris-travel-guide.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Where to Stay in Paris (2026)",
+          "item": "https://roammorocco.tours/blog/paris-travel-guide.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roammorocco.tours/blog/paris-travel-guide.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is the best area to stay in Paris for first-time visitors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For first-timers, the 4th Arrondissement (Le Marais) and the 6th Arrondissement (Saint-Germain-des-Pr\u00e9s) are the undisputed premier bases. Le Marais offers pedestrian-friendly medieval alleys, stellar bistros, and easy walking distance to Notre-Dame and the Louvre. Saint-Germain provides classic Parisian charm, literary caf\u00e9s, Luxembourg Gardens, and high safety."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it better to stay on the Left Bank (Rive Gauche) or Right Bank (Rive Droite)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Right Bank (Rive Droite, including Le Marais, 1st, 2nd, and 8th) is trendier, busier, and home to grand boulevards, world-class shopping, and cutting-edge dining. The Left Bank (Rive Gauche, including Saint-Germain 6th, Latin Quarter 5th, and Eiffel Tower 7th) is quieter, intellectually aristocratic, more romantic, and traditionally classic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best way to get from CDG Airport to central Paris in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The RER B train (\u20ac11.80) connects Charles de Gaulle (CDG) to Ch\u00e2telet-Les Halles, Gare du Nord, and Saint-Michel in 35\u201345 minutes. If traveling with heavy luggage or family, official taxis have legally mandated flat rates: \u20ac56 to the Right Bank and \u20ac65 to the Left Bank. Never accept rides from illegal solicitations inside the arrivals hall."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an eSIM for Paris and France in 2026?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, an instant travel eSIM like Airalo's Mamezi France or Eurolink regional package is essential. It lets you download high-speed 4G/5G data before takeoff, avoiding exorbitant carrier roaming fees and eliminating the line at CDG airport telecom counters. Prices start at just $4.50 USD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I easily combine a Paris vacation with a tour of Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Paris is Europe's premier springboard to Morocco, with daily nonstop flights from Paris Charles de Gaulle (CDG) and Paris Orly (ORY) to Marrakech (RAK) and Casablanca (CMN) in just 3 hours and 10 minutes. Many travelers spend 4\u20135 days exploring Paris before flying directly to Marrakech for a chauffeured desert and mountain expedition with Roam Morocco."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    :root {
+      --bg: #fbfbf9;
+      --card-bg: #ffffff;
+      --text: #111111;
+      --text-muted: rgba(0, 0, 0, 0.72);
+      --border: rgba(0, 0, 0, 0.12);
+      --gold: #C8A45C;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    /* Luxury rounded corners system active */
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Main Article Container */
+    .article-wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 130px 24px 80px;
+    }
+
+    /* Breadcrumbs */
+    .roam-breadcrumbs {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .roam-breadcrumbs a {
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Hero Typography */
+    .article-header {
+      margin-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 32px;
+    }
+
+    .category-badge {
+      display: inline-block;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      padding: 4px 12px;
+      margin-bottom: 18px;
+    }
+
+    .article-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(32px, 5vw, 54px);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 20px 0;
+      color: #000000;
+    }
+
+    .article-subtitle {
+      font-size: clamp(18px, 2.2vw, 22px);
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0 0 24px 0;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      letter-spacing: .02em;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+
+    .meta-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .gold-accent {
+      color: var(--gold);
+      font-weight: bold;
+    }
+
+    /* Hero Image */
+    .article-hero-fig {
+      margin: 0 0 48px 0;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      padding: 10px;
+    }
+
+    .article-hero-fig img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      max-height: 520px;
+    }
+
+    .article-hero-fig figcaption {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding-top: 10px;
+      font-style: italic;
+    }
+
+    /* Content Styling */
+    .article-body h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 3.8vw, 36px);
+      line-height: 1.25;
+      margin: 54px 0 20px 0;
+      padding-top: 24px;
+      border-top: 2px solid #000000;
+      color: #000000;
+    }
+
+    .article-body h3 {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 36px 0 14px 0;
+      color: #000000;
+    }
+
+    .article-body p {
+      margin: 0 0 24px 0;
+    }
+
+    .article-body ul, .article-body ol {
+      margin: 0 0 24px 0;
+      padding-left: 24px;
+    }
+
+    .article-body li {
+      margin-bottom: 8px;
+    }
+
+    /* Quick Verdict Box */
+    .verdict-box {
+      background: #ffffff;
+      border: 2px solid #000000;
+      padding: 30px;
+      margin: 40px 0;
+      box-shadow: 6px 6px 0px rgba(0,0,0,0.08);
+    }
+
+    .verdict-box h3 {
+      margin-top: 0;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .verdict-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .verdict-card {
+      background: #faf8f5;
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .verdict-card .tag {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 3px 10px;
+      border-radius: 999px;
+      display: inline-block;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .verdict-card .title {
+      font-weight: 800;
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .verdict-card .desc {
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* Comparison Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 36px 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      background: #ffffff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    th, td {
+      padding: 14px 18px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    th {
+      background: #18181B;
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Area Card Box */
+    .roam-area-card {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 36px 0;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-area-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      padding-bottom: 12px;
+    }
+
+    .roam-area-header h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .roam-area-badge {
+      background: rgba(200, 164, 92, 0.12);
+      color: #8A6A23;
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .roam-area-vibe {
+      font-size: 14px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      font-weight: 500;
+    }
+
+    .roam-hotel-list {
+      margin-top: 20px;
+      background: #faf8f5;
+      padding: 18px 22px;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .roam-hotel-list h4 {
+      margin: 0 0 12px 0;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--gold);
+    }
+
+    .hotel-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px dashed var(--border);
+      font-size: 15px;
+    }
+
+    .hotel-item:last-child {
+      border-bottom: none;
+    }
+
+    .hotel-link {
+      color: #000000;
+      font-weight: 700;
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hotel-link:hover {
+      color: var(--gold);
+    }
+
+    /* Travel Toolkit Box - CRISP CONTRAST */
+    .roam-toolkit-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      padding: 36px;
+      margin: 48px 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-toolkit-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: #000000;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+        .roam-toolkit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .roam-toolkit-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px 20px;
+      background: #fdfcf9;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--gold, #C8A45C);
+      border-radius: 6px;
+      color: #000000 !important;
+      text-decoration: none !important;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      transition: all .25s ease;
+    }
+
+    .roam-toolkit-link:hover {
+      background: #ffffff;
+      border-color: rgba(0, 0, 0, 0.25);
+      border-left-color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .roam-toolkit-link span:first-child {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #111111;
+      flex: 1 1 auto;
+    }
+
+    .roam-toolkit-link span:last-child:not(:only-child) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: #000000;
+      color: #ffffff !important;
+      border: 1px solid #000000;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .roam-toolkit-link:hover span:last-child:not(:only-child) {
+      background: var(--gold, #C8A45C);
+      border-color: var(--gold, #C8A45C);
+      color: #000000 !important;
+      box-shadow: 0 4px 12px rgba(200, 164, 92, 0.35);
+    }
+
+    @media (max-width: 580px) {
+      .roam-toolkit-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .roam-toolkit-link {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 16px 18px;
+      }
+      .roam-toolkit-link span:last-child:not(:only-child) {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 14px;
+      }
+    }
+
+    /* Callout & Field Note */
+    .roam-callout-ai {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      border-left: 4px solid var(--gold, #C8A45C) !important;
+      padding: 24px;
+      margin: 36px 0;
+      font-size: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-field-note {
+      background: #faf8f5;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      padding: 28px;
+      margin: 40px 0;
+      position: relative;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .roam-field-note-quote {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 19px;
+      font-style: italic;
+      line-height: 1.6;
+      margin: 0 0 12px 0;
+      color: #000000;
+    }
+
+    .roam-field-note-author {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #8A6A23;
+      font-weight: 700;
+    }
+
+    /* FAQ Section */
+    .faq-accordion {
+      margin-top: 30px;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    .faq-question {
+      padding: 18px 22px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+    }
+
+    .faq-question::after {
+      content: "+";
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--gold);
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item.active .faq-question::after {
+      content: "−";
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 22px 22px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* Bridge Box to Morocco Expeditions */
+    .roam-morocco-bridge {
+      background: #000000;
+      color: #ffffff;
+      padding: 40px 32px;
+      margin: 50px 0;
+      border-radius: 20px;
+      border: 1px solid rgba(200, 164, 92, 0.45);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+    }
+
+    .roam-morocco-bridge h3 {
+      color: #ffffff;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(22px, 3vw, 30px);
+      margin: 0 0 14px 0;
+    }
+
+    .roam-morocco-bridge p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .bridge-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--gold, #C8A45C);
+      color: #000000 !important;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none !important;
+      transition: all 0.2s ease;
+      font-family: 'Inter', -apple-system, sans-serif;
+    }
+
+    .bridge-cta-btn:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+    }
+  
+  </style>
+
+  <!-- Main Article -->
+  <article class="article-wrap">
+
+    <!-- Breadcrumbs -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/fr/index.html">Home</a> &gt; <a href="/fr/blog.html">Blog</a> &gt; <span>Where to Stay in Paris (2026)</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">GLOBAL INTELLIGENCE &amp; CITY GUIDES</span>
+      <h1 class="article-title">Où séjourner à Paris (2026) : meilleurs arrondissements pour les nouveaux arrivants, hôtels de charme et astuces de transport en commun</h1>
+      <p class="article-subtitle">Une répartition détaillée, rue par rue, des 20 arrondissements de Paris. Du charme médiéval du Marais à la romance littéraire de Saint-Germain, découvrez votre base idéale, les conseils essentiels pour le transit aéroportuaire et la configuration eSIM haut débit.</p>
+      
+      <div class="meta-bar">
+        <span>🗓️ UPDATED: <strong class="gold-accent">OCTOBER 2026</strong></span>
+        <span>⏱️ 17 MIN READ</span>
+        <span>✍️ ROAM MOROCCO EDITORS</span>
+        <span>📍 PARIS, FRANCE</span>
+      </div>
+    </header>
+
+    <!-- Hero Figure -->
+    <figure class="article-hero-fig">
+      <img src="/images/paris-skyline-hero.jpg" alt="Golden sunset panoramic view over the Seine river, Haussmannian balconies, and Eiffel Tower in Paris" width="1280" height="720">
+      <figcaption>Heure d'or sur la Seine : balcons haussmanniens classiques aux toits de zinc encadrant la Tour Eiffel au cœur de Paris.</figcaption>
+    </figure>
+
+    <!-- Article Content -->
+        <!-- GEO & AEO Key Takeaways Box (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Where to Stay in Paris Quick Answer">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ QUICK ANSWER: WHERE TO STAY IN PARIS (2026)</span>
+        <span class="ai-summary-badge">Arrondissement Guide</span>
+      </div>
+      <p class="ai-summary-text"><strong>Idéal pour les nouveaux arrivants :</strong> Les 1er et 2e arrondissements (Louvre/Palais Royal) ou le 4e (Le Marais) pour un accès à pied aux monuments emblématiques, à l'architecture parisienne et aux boulangeries de classe mondiale. <strong>Idéal pour la romance et la culture des cafés :</strong> Le 6e (Saint-Germain-des-Prés). <strong>Le meilleur pour le charme bohème et les vues :</strong> Le 18e (Montmartre). Pour un transport en commun fluide, assurez-vous que votre hôtel se trouve à moins de 3 minutes à pied d'une grande ligne de métro.</p>
+    </aside>
+
+    <div class="article-body">
+
+      <p>Décider où séjourner à Paris peut sembler simple jusqu'à ce que vous ouvriez une carte. Contrairement aux villes à grille compacte comme Manhattan ou Barcelone, la capitale française est une spirale complexe de <strong>20 districts administratifs numérotés (arrondissements)</strong>, enroulés vers l'extérieur comme une coquille d'escargot (<em>l'escargot</em>) le long des deux rives de la sinueuse Seine.</p>
+
+      <p>Choisissez le mauvais arrondissement et vous passerez chaque matin quarante minutes coincé dans des échangeurs souterrains étouffants ou confronté à une vie nocturne animée sous votre fenêtre alors que tout ce que vous vouliez était un café tranquille sur un balcon en fer forgé. Cependant, choisissez la bonne base et Paris se dévoile sans effort : des croissants frais d'une boulangerie du quartier au coin de la rue, des promenades romantiques en soirée le long des berges et des monuments emblématiques accessibles en une agréable promenade de quinze minutes.</p>
+
+      <p>Que vous planifiiez un premier itinéraire plein d'énergie, une escapade d'anniversaire romantique ou que vous utilisiez Paris comme prélude européen glamour à votre <a href="/fr/blog/morocco-10-day-itinerary.html">expédition à travers le Maroc</a>, ce guide complet 2026 détaille les nuances de chaque quartier de premier plan, les adresses d'hôtel sélectionnées et la logistique de transit aéroportuaire.</p>
+
+      <!-- Quick Verdict Box -->
+      <div class="verdict-box">
+        <h3>⚡ Verdict rapide : où séjourner à Paris par style de voyage</h3>
+        <div class="verdict-grid">
+          <div class="verdict-card">
+            <span class="tag">#1 Overall for First-Timers</span>
+            <div class="title">Le Marais (3rd &amp; 4th Arr.)</div>
+            <p class="desc">Rues piétonnes médiévales, boutiques de créateurs chics, boulangeries de classe mondiale et proximité immédiate à pied de Notre-Dame, de la Seine et du Louvre.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Romance &amp; Classic Heritage</span>
+            <div class="title">Saint-Germain-des-Prés (6th Arr.)</div>
+            <p class="desc">L'élégance aristocratique de la Rive Gauche, le jardin du Luxembourg, les cafés littéraires légendaires (Café de Flore, Les Deux Magots) et une sécurité sans égal.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Iconic Eiffel Tower Views</span>
+            <div class="title">7th Arrondissement</div>
+            <p class="desc">Charme résidentiel calme, décors de tours de fer de carte postale, rue du marché gastronomique rue Cler et musée d'Orsay.</p>
+          </div>
+          <div class="verdict-card">
+            <span class="tag">Foodies &amp; Modern Pulse</span>
+            <div class="title">10th &amp; 11th Arrondissements</div>
+            <p class="desc">Canal Saint-Martin et Oberkampf. Il abrite les meilleurs bars à vins naturels de Paris, une bistronomie de pointe et une scène locale dynamique, exempte de pièges à touristes de masse.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Essential Paris Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ The 2026 Paris Travel Toolkit (Verified Direct Booking Deals)</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-paris/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Paris Flights (CDG &amp; ORY)</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/city/fr/paris.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Curated Paris Hotels</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/france-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 France 5G eSIM (Airalo)</span>
+            <span class="roam-toolkit-btn">Airalo from $4.50 &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 France Countryside Car Rental</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Heading 1: Understanding Paris Geography -->
+      <h2>1. Comprendre « l’Escargot » parisien : Rive Gauche vs Rive Droite</h2>
+
+      <p>Avant de choisir un hôtel, chaque voyageur doit saisir la division fondamentale qui définit la culture parisienne depuis un millénaire : <strong>La Seine</strong>, qui divise la ville entre la <strong>Rive Droite (Rive Droite)</strong> au nord et la <strong>Rive Gauche (Rive Gauche)</strong> au sud.</p>
+
+      <ul>
+        <li><strong>La Rive Droite (Rive Droite) :</strong> Le domaine historique du commerce, de la haute finance, du théâtre, du shopping de luxe et des palais royaux. Les arrondissements comprennent le 1er (Louvre), le 2e (Bourse), les 3e et 4e (Le Marais), le 8e (Champs-Élysées), le 9e (Opéra Garnier) et le branché 10e/11e. Il est énergique, dynamique, avant-gardiste et regorge de restaurants et de boutiques.</li>
+        <li><strong>La Rive Gauche (Rive Gauche) :</strong> Le cœur intellectuel et bohème de Paris, dominé par les académies universitaires (Sorbonne), les maisons d'édition historiques, les ateliers d'artistes et les hôtels particuliers aristocratiques (<em>hôtels particuliers</em>). Les arrondissements comprennent le 5e (Quartier Latin), le 6e (Saint-Germain) et le 7e (Tour Eiffel). C'est un Paris plus calme, plus romantique, exceptionnellement sûr et par excellence du « vieux monde ».</li>
+      </ul>
+
+      <div class="roam-callout-ai">
+        <strong>💡 First-Timer Rule of Thumb:</strong> If you love vibrant nightlife, browsing fashion boutiques, visiting contemporary art galleries, and eating late in lively wine bistros, book the <strong>Right Bank</strong>. If you dream of sitting in a quiet café courtyard with a novel, walking through manicured palace gardens, and enjoying romantic quiet streets at night, book the <strong>Left Bank</strong>.
+      </div>
+
+      <!-- Heading 2: The Top Arrondissements Ranked -->
+      <h2>2. Les meilleurs arrondissements où loger à Paris (en face-à-face)</h2>
+
+      <!-- Area 1: Le Marais -->
+      <div class="roam-area-card" id="area-marais">
+        <div class="roam-area-header">
+          <div>
+            <h3>1. Le Marais (3e et 4e arrondissements)</h3>
+            <div class="roam-area-vibe">Right Bank • Medieval Architecture • Concept Stores • Unmatched Centrality</div>
+          </div>
+          <span class="roam-area-badge">Best Overall for First-Timers</span>
+        </div>
+
+        <p>Épargné par les vastes démolitions du baron Haussmann au XIXe siècle, Le Marais est l'un des rares quartiers de Paris où l'on peut encore flâner dans d'étroites ruelles médiévales pavées bordées de cours aristocratiques du XVIIe siècle. Aujourd'hui, il constitue le centre culturel animé de la capitale, regorgeant de salles d'exposition de créateurs, de torréfacteurs de troisième vague, de galeries d'art contemporain et de quartiers historiques juifs et LGBTQ+.</p>
+
+        <p><strong>Pourquoi c'est parfait pour les nouveaux arrivants :</strong> Vous pouvez sortir de votre hôtel-boutique et rejoindre à pied le Louvre, le Centre Pompidou, la cathédrale Notre-Dame de l'Île de la Cité et la majestueuse Place des Vosges en 10 à 15 minutes. Même tard dans la nuit, les rues semblent animées, sûres et délicieusement sociales.</p>
+
+        <p><strong>Le seul inconvénient :</strong> En raison de la préservation médiévale, les chambres d'hôtel ici sont notoirement intimes et les bâtiments historiques manquent souvent d'ascenseurs. Réservez longtemps à l'avance pour réserver des chambres aux étages inférieurs si les escaliers vous posent problème.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés dans le Marais :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Le+Marais" target="_blank" rel="noopener" class="hotel-link">Cour des Vosges</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — 5-Star Luxury directly overlooking historic Place des Vosges.</span>
+            </div>
+            <strong>From €580/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Le+Marais" target="_blank" rel="noopener" class="hotel-link">Hôtel Dupond-Smith</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Discreet 5-star townhouse sanctuary tucked in the heart of Marais alleys.</span>
+            </div>
+            <strong>From €420/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Le+Marais" target="_blank" rel="noopener" class="hotel-link">Hôtel Caron de Beaumarchais</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — 3-Star poetic boutique gem with 18th-century antique French decor.</span>
+            </div>
+            <strong>From €210/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 2: Saint-Germain -->
+      <div class="roam-area-card" id="area-st-germain">
+        <div class="roam-area-header">
+          <div>
+            <h3>2. Saint-Germain-des-Prés (6e arrondissement)</h3>
+            <div class="roam-area-vibe">Left Bank • Literary Heritage • Timeless Glamour • Garden Walks</div>
+          </div>
+          <span class="roam-area-badge">Best for Romance &amp; Classic Charm</span>
+        </div>
+
+        <p>Si vous fermez les yeux et imaginez l'archétype du Paris cinématographique – bistros-terrasses aux auvents émeraude où Jean-Paul Sartre et Simone de Beauvoir débattaient de philosophie, façades en pierre calcaire polie et boutiques d'imprimeries anciennes – vous imaginez Saint-Germain-des-Prés. Centré autour de la plus ancienne église romane de Paris (Église Saint-Germain), ce quartier dégage un luxe cultivé et sans effort.</p>
+
+        <p><strong>Points forts et ambiance :</strong> Saint-Germain borde le <strong>Jardin du Luxembourg</strong>, sans doute le parc public le plus enchanteur d'Europe, où vous pourrez lire à côté de la fontaine Médicis ou regarder les enfants naviguer sur des bateaux en bois sur le grand bassin. Les restaurants ici vont des brasseries historiques emblématiques comme la <em>Brasserie Lipp</em> aux restaurants étoilés Michelin de la rue du Pré-aux-Clercs.</p>
+
+        <p><strong>Idéal pour :</strong> Les couples, les jeunes mariés et les voyageurs qui apprécient les soirées paisibles, la sécurité impeccable et le raffinement parisien classique malgré le chahut nocturne.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels à Saint-Germain :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Saint+Germain+des+Pres" target="_blank" rel="noopener" class="hotel-link">Relais Christine</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — 5-Star Relais &amp; Châteaux manor hidden behind a private cobblestone courtyard.</span>
+            </div>
+            <strong>From €550/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Saint+Germain+des+Pres" target="_blank" rel="noopener" class="hotel-link">Hôtel Recamier</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Peaceful 4-star townhouse directly on Place Saint-Sulpice.</span>
+            </div>
+            <strong>From €340/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Saint+Germain+des+Pres" target="_blank" rel="noopener" class="hotel-link">Hôtel des Deux Continents</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Charming, friendly 3-star stay on quiet Rue Jacob, steps from the Seine.</span>
+            </div>
+            <strong>From €195/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 3: 7th Arrondissement -->
+      <div class="roam-area-card" id="area-7th">
+        <div class="roam-area-header">
+          <div>
+            <h3>3. 7e arrondissement (Tour Eiffel et Invalides)</h3>
+            <div class="roam-area-vibe">Left Bank • Postcard Monument Views • Prestigious Residential • Market Streets</div>
+          </div>
+          <span class="roam-area-badge">Best for Postcard Eiffel Views</span>
+        </div>
+
+        <p>Abritant des ambassades étrangères, des ministères et la Dame de fer elle-même, le 7e arrondissement représente le summum du prestige aristocratique français. De larges avenues ombragées offrent un aperçu spectaculaire et soudain de la Tour Eiffel s'élevant au-dessus des toits d'ardoise haussmanniens.</p>
+
+        <p><strong>L'ambiance locale :</strong> Bien qu'elles abritent le monument le plus célèbre du monde, les rues résidentielles derrière le Champ-de-Mars ressemblent étonnamment à un village. La <strong>rue Cler</strong>, piétonne, est largement considérée comme la plus belle rue de marché en plein air de Paris, bordée de fromageries générationnelles, de rôtisseries, d'étals de fleuristes et de fournisseurs de vins spécialisés.</p>
+
+        <p><strong>Conseil de pro :</strong> Pour éviter de vous sentir isolé du centre historique, choisissez un hôtel à l'est du 7e (plus proche du métro Rue du Bac ou du Musée d'Orsay), qui permet de rejoindre Saint-Germain et le Louvre à pied en 10 à 15 minutes.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés dans le 7e :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+7th+arrondissement" target="_blank" rel="noopener" class="hotel-link">Le Cinq Codet</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Sleek 5-star design hotel in a former 1930s telephone exchange near Invalides.</span>
+            </div>
+            <strong>From €460/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+7th+arrondissement" target="_blank" rel="noopener" class="hotel-link">Hôtel Muguet</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Highly reviewed 3-star family-run boutique offering rooms with direct Eiffel Tower views.</span>
+            </div>
+            <strong>From €230/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 4: 1st Arrondissement -->
+      <div class="roam-area-card" id="area-1st">
+        <div class="roam-area-header">
+          <div>
+            <h3>4. 1er arrondissement (Louvre, Tuileries et Palais-Royal)</h3>
+            <div class="roam-area-vibe">Right Bank • Imperial Grandeur • Maximum Walkability • Palace Hotels</div>
+          </div>
+          <span class="roam-area-badge">Best for Ultimate Walkability &amp; Luxury</span>
+        </div>
+
+        <p>Le 1er arrondissement est le centre géographique de Paris (Kilomètre Zéro). C'est un écrin impérial d'une majesté soignée : les arcades de la rue de Rivoli, les jardins de sculptures du Palais-Royal, le jardin des Tuileries et le gargantuesque musée du Louvre. Si vous choisissez de rester ici, vous n'aurez pratiquement jamais besoin de prendre le métro ; presque toutes les attractions emblématiques sont accessibles à pied.</p>
+
+        <p><strong>Le compromis :</strong> Parce qu'il s'agit du point zéro historique du tourisme international, le 1er compte moins d'épiceries de quartier résidentielles authentiques et des prix plus élevés pour les restaurants. Cependant, pour un séjour éclair en ville de 3 ou 4 jours où le temps est votre atout le plus précieux, l'efficacité est imbattable.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés dans le 1er :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+1st+arrondissement" target="_blank" rel="noopener" class="hotel-link">Hôtel Regina Louvre</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Historic 5-star Belle Époque institution directly facing Tuileries Gardens.</span>
+            </div>
+            <strong>From €520/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+1st+arrondissement" target="_blank" rel="noopener" class="hotel-link">Hôtel Thérèse</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Elegant, warm 4-star townhouse boutique tucked near Palais-Royal.</span>
+            </div>
+            <strong>From €290/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 5: 10th & 11th Arrondissements -->
+      <div class="roam-area-card" id="area-10th-11th">
+        <div class="roam-area-header">
+          <div>
+            <h3>5. 10e et 11e arrondissements (Canal Saint-Martin et Oberkampf)</h3>
+            <div class="roam-area-vibe">Right Bank • Creative Energy • World-Renowned Bistronomy • Natural Wine</div>
+          </div>
+          <span class="roam-area-badge">Best for Foodies &amp; Contemporary Local Vibe</span>
+        </div>
+
+        <p>Si vous souhaitez découvrir les endroits où les Parisiens modernes mangent, boivent et socialisent loin des bus touristiques, dirigez-vous vers le nord-est, vers les 10e et 11e. Centré autour des voies navigables sereines aux passerelles en fer du <strong>Canal Saint-Martin</strong> et des avenues animées d'Oberkampf, c'est l'épicentre mondial du célèbre mouvement parisien de la <em>bistronomie</em>, où de jeunes chefs formés au Michelin ont ouvert des temples gastronomiques décontractés et abordables servant des menus sans prétention de la ferme à la table.</p>
+
+        <p><strong>Proposition de valeur :</strong> les tarifs des hôtels ici sont généralement de 25 % à 40 % inférieurs à ceux de Saint-Germain ou du Marais, ce qui vous permet d'étendre votre budget vers de meilleures chambres ou des menus dégustation mémorables. L'excellente connectivité du métro (lignes 3, 5, 8, 9, 11) vous amène au Louvre ou à l'Opéra en 12 minutes.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels sélectionnés dans les 10e et 11e :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Canal+Saint+Martin" target="_blank" rel="noopener" class="hotel-link">Hôtel Providence</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Velvety, atmospheric 4-star boutique townhouse near Canal Saint-Martin.</span>
+            </div>
+            <strong>From €280/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+11th+arrondissement" target="_blank" rel="noopener" class="hotel-link">Hôtel Fabric</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Converted textile factory transformed into stylish 4-star industrial boutique.</span>
+            </div>
+            <strong>From €210/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Area 6: 18th Arrondissement (Montmartre) -->
+      <div class="roam-area-card" id="area-montmartre">
+        <div class="roam-area-header">
+          <div>
+            <h3>6. Montmartre (18ème arrondissement - Haut Village)</h3>
+            <div class="roam-area-vibe">Right Bank Hilltop • Cobblestone Romance • Sacré-Cœur Views • Village Life</div>
+          </div>
+          <span class="roam-area-badge">Best for Bohemian Charm on a Budget</span>
+        </div>
+
+        <p>Perché au-dessus de la ville sur sa célèbre colline nord (<em>la butte</em>), Montmartre était autrefois un village rural indépendant hors des murs de la ville, apprécié par des peintres comme Renoir, Picasso et Van Gogh pour son vin bon marché et ses vues panoramiques sur le ciel. Alors que la place située juste en face du Sacré-Cœur regorge d'artistes caricaturistes, les ruelles tranquilles derrière la basilique (autour de la rue Cortot, de la rue Lepic et du métro Lamarck-Caulaincourt) préservent une romance vintage enivrante.</p>
+
+        <p><strong>Attention importante :</strong> Montmartre nécessite de monter des escaliers et de marcher sérieusement. Il se situe également plus au nord des grands musées (comptez 25 minutes en métro jusqu'au Louvre ou à la Tour Eiffel). Évitez le boulevard qui longe directement le boulevard de Clichy/Pigalle si vous n'aimez pas les magasins bruyants pour adultes et la circulation nocturne.</p>
+
+        <div class="roam-hotel-list">
+          <h4>Sélection d'hôtels à Montmartre :</h4>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Montmartre" target="_blank" rel="noopener" class="hotel-link">Hôtel Particulier Montmartre</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — Five intimate suites nestled in a secret walled country garden on the butte.</span>
+            </div>
+            <strong>From €490/nt</strong>
+          </div>
+          <div class="hotel-item">
+            <div>
+              <a href="https://www.booking.com/searchresults.html?ss=Paris+Montmartre" target="_blank" rel="noopener" class="hotel-link">Terrass'' Hôtel</a>
+              <span style="color:var(--text-muted);font-size:13px;"> — 4-Star rooftop institution boasting jaw-dropping panoramic views across all of Paris.</span>
+            </div>
+            <strong>From €240/nt</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heading 3: Comparison Matrix Table -->
+      <h2>3. Matrice de comparaison des arrondissements de Paris (2026)</h2>
+
+      <p>Utilisez ce guide côte à côte pour évaluer le potentiel piétonnier, la sécurité, les coûts moyens d'hôtel par nuit et les points forts à proximité dans les six principaux districts :</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Arrondissement</th>
+              <th>Ambiance de quartier privilégiée</th>
+              <th>Score de potentiel piétonnier</th>
+              <th>Tarif moyen / Nuit</th>
+              <th>Monument emblématique le plus proche</th>
+              <th>Ligne de métro clé</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>4ème (Le Marais)</strong></td>
+              <td>Ruelles médiévales, boutiques et restaurants</td>
+              <td>10 / 10</td>
+              <td>220 € – 480 €</td>
+              <td>Place des Vosges et Notre-Dame</td>
+              <td>Ligne 1, Ligne 4</td>
+            </tr>
+            <tr>
+              <td><strong>6e (Saint-Germain)</strong></td>
+              <td>Luxe intellectuel et romance tranquille</td>
+              <td>9.5 / 10</td>
+              <td>250 € – 550 €</td>
+              <td>Jardin du Luxembourg</td>
+              <td>Ligne 4, Ligne 10</td>
+            </tr>
+            <tr>
+              <td><strong>7ème (Eiffel / Invalides)</strong></td>
+              <td>Rues résidentielles et commerciales prestigieuses</td>
+              <td>8.5 / 10</td>
+              <td>230 € – 500 €</td>
+              <td>Tour Eiffel et musée d'Orsay</td>
+              <td>Ligne 8, Ligne 12, RER C</td>
+            </tr>
+            <tr>
+              <td><strong>1er (Louvre)</strong></td>
+              <td>Grandeur monumentale et jardins royaux</td>
+              <td>10 / 10</td>
+              <td>300 € – 650 €</td>
+              <td>Musée du Louvre et Tuileries</td>
+              <td>Ligne 1, Ligne 7, Ligne 14</td>
+            </tr>
+            <tr>
+              <td><strong>10e et 11e (Canal)</strong></td>
+              <td>Bistronomie branchée et vins naturels</td>
+              <td>8.0 / 10</td>
+              <td>150 € – 280 €</td>
+              <td>Canal Saint-Martin</td>
+              <td>Ligne 3, Ligne 5, Ligne 9</td>
+            </tr>
+            <tr>
+              <td><strong>18e (Montmartre)</strong></td>
+              <td>Village pavé bohème et vue</td>
+              <td>7.0 / 10</td>
+              <td>140 € – 260 €</td>
+              <td>Basilique du Sacré-Cœur</td>
+              <td>Ligne 2, Ligne 12</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Heading 4: 4-Day Paris First-Timer Itinerary -->
+      <h2>4. L'itinéraire parfait de 4 jours à Paris pour les débutants</h2>
+
+      <p>Maximiser Paris revient à faire du rythme. Trop de visiteurs s'épuisent à parcourir la ville en sillonnant la ville. En regroupant vos explorations par banque et par quartier, vous passez plus de temps à siroter un expresso au soleil et moins de temps sous terre.</p>
+
+      <!-- Day 1 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 01</span>
+          Le berceau médiéval et la grandeur royale</h3>
+        <p><strong>Matin :</strong> Départ du berceau historique de Paris sur l'Île de la Cité. Admirez la façade et la flèche récemment restaurées de la cathédrale Notre-Dame, puis marchez deux pâtés de maisons pour admirer les époustouflants vitraux du XIIIe siècle à l'intérieur de la <em>Sainte-Chapelle</em> (réservez vos billets à entrée horaire tôt le matin).</p>
+        <p><strong>Après-midi :</strong> Traversez le Pont Neuf jusqu'au 1er arrondissement. Promenez-vous dans les arcades tranquilles à colonnes du Palais-Royal avant de parcourir les allées de gravier bien entretenues du jardin des Tuileries.</p>
+        <p><strong>Soirée :</strong> Entrez dans le Musée du Louvre pour une visite en soirée (ouvert jusqu'à 21h45 les mercredis et vendredis pour moins de monde). Regardez la pyramide de verre s'illuminer sur le ciel crépusculaire.</p>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 02</span>
+          Chefs-d'œuvre romantiques et impressionnistes de la Rive Gauche</h3>
+        <p><strong>Matin :</strong> Petit-déjeuner sur une table traditionnelle sur le trottoir du boulevard Saint-Germain, suivi d'une promenade dans le jardin du Luxembourg. Regardez les maîtres d'échecs locaux s'affronter sous les châtaigniers.</p>
+        <p><strong>Après-midi :</strong> Visitez le magnifique <strong>Musée d'Orsay</strong> dans le 7e arrondissement, situé dans une opulente gare des Beaux-Arts de 1900, pour admirer Monet, Van Gogh, Degas et Cézanne.</p>
+        <p><strong>Soirée :</strong> Promenez-vous dans le Champ-de-Mars pour pique-niquer ou admirez la Tour Eiffel au coucher du soleil. Restez pour regarder l'éclairage scintillant de cinq minutes qui se produit toutes les heures chaque soir après le crépuscule.</p>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 03</span>
+          Montmartre bohème et coucher de soleil sur le canal Saint-Martin</h3>
+        <p><strong>Matin :</strong> Prenez le Métro Ligne 12 jusqu'à Lamarck-Caulaincourt. Montez les marches tranquilles de Montmartre pour atteindre la basilique du Sacré-Cœur avant l'arrivée des bus touristiques. Promenez-vous dans la pittoresque rue de l’Abreuvoir devant La Maison Rose.</p>
+        <p><strong>Après-midi :</strong> prenez la ligne 2 du métro jusqu'au canal Saint-Martin dans le 10e arrondissement. Parcourez les librairies indépendantes, sirotez un expresso artisanal chez Ten Belles et regardez les bateaux passer les écluses en fer historiques.</p>
+        <p><strong>Soirée :</strong> Installez-vous pour dîner dans un néo-bistro décontracté du 11e arrondissement (comme <em>Clamato</em> ou <em>Le Chateaubriand</em>) en associant de petites assiettes de saison à des vins français biodynamiques.</p>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="roam-day-card" style="background:#ffffff;border:1px solid rgba(0,0,0,0.08);border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.03);padding:24px;margin-bottom:20px;">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:10px;"><span style="background:rgba(200,164,92,0.12);color:#8A6A23;border:1px solid rgba(200,164,92,0.28);font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;font-family:'Inter',sans-serif;letter-spacing:0.06em;text-transform:majuscule;">JOUR 04</span>
+          Cours cachées du Marais et croisière sur la Seine</h3>
+        <p><strong>Matin :</strong> Explorez le dédale des boutiques du Marais. Procurez-vous des pâtisseries fraîches chez Du Pain et des Idées ou Poilâne, puis asseyez-vous sous les arcades du XVIIe siècle de la place des Vosges, la plus ancienne place planifiée de Paris.</p>
+        <p><strong>Après-midi :</strong> Parcourez les expositions contemporaines du Centre Pompidou ou du Musée Picasso, puis dégustez des falafels rue des Rosiers.</p>
+        <p><strong>Soirée :</strong> Terminez votre séjour par une croisière tranquille au coucher du soleil le long de la Seine (Vedettes du Pont Neuf), en regardant les monuments de calcaire doré dériver sous les ponts historiques romantiques de Paris.</p>
+      </div>
+
+      <!-- Heading 5: Airport Transit & Logistics -->
+      <h2>5. Paris Airport Transit Hacks (CDG & ORY dans la ville)</h2>
+
+      <p>Arriver à Paris peut être fluide ou extrêmement frustrant selon la façon dont vous vous préparez au transit aéroportuaire. La ville est desservie par deux principaux aéroports internationaux :</p>
+
+      <h3>Aéroport Charles de Gaulle (CDG) — 25 km au nord-est</h3>
+      <ul>
+        <li><strong>RER B (le plus rapide et le plus économique) :</strong> se connecte directement du terminal 2 et du terminal 1/3 de CDG à la Gare du Nord, Châtelet-Les Halles et Saint-Michel en 35 à 45 minutes. Le coût est de 11,80 € pour un aller simple. Idéal pour les voyageurs solitaires et les voyageurs légers.</li>
+        <li><strong>Taxis officiels à tarif forfaitaire (idéal pour les bagages et les groupes) :</strong> Selon la loi française, les taxis officiels opérant depuis les aéroports facturent des tarifs forfaitaires fixes et non négociables : <strong>56 € pour la rive droite</strong> et <strong>65 € pour la rive gauche</strong>.</li>
+        <li><strong style="color:var(--gold);">⚠️ Avertissement aux arnaqueurs :</strong> Ne suivez jamais quiconque à l'intérieur du terminal d'arrivée proposant un « service de taxi » ou une « voiture privée ». Marchez toujours directement à l'extérieur jusqu'à la file d'attente officielle désignée pour les taxis, composée de répartiteurs en uniforme. Les conducteurs non autorisés escroquent régulièrement les touristes sans méfiance pour 150 à 200 €.</li>
+      </ul>
+
+      <h3>Aéroport de Paris Orly (ORY) — 13 km au Sud (La Révolution du Transit 2026)</h3>
+      <p>Historiquement considérée comme moins pratique en transport en commun, Orly a fait l'objet d'une modernisation massive avec le <strong>prolongement sud de la ligne 14 du métro</strong>. Aujourd'hui, vous pouvez descendre de votre vol à Orly et emprunter la ligne 14 du métro sans conducteur directement jusqu'à Châtelet ou Gare de Lyon en seulement <strong>25 minutes</strong> pour 10,30 €. Il est plus rapide, plus propre et plus fiable que n’importe quel train d’aéroport en Europe.</p>
+
+      <!-- Pre-Booked Airport Shuttle Widget (Kiwitaxi) -->
+      <div class="roam-toolkit-box" style="margin-top:28px;">
+        <div class="roam-toolkit-title">🚖 Pre-Book Private Paris Airport Shuttle (CDG &amp; ORY to Central Paris)</div>
+        <p style="margin-bottom:14px;">Vous préférez un chauffeur dédié qui attend avec une carte nominative personnalisée à l'intérieur des arrivées, un temps d'attente gratuit de 60 minutes, un suivi des retards de vol et une assistance pour les bagages directement à la porte de votre hôtel ? Pré-réservez un transfert privé forfaitaire vérifié :</p>
+        <div style="background:#ffffff;padding:12px;border:1px solid rgba(0,0,0,0.08);overflow-x:auto;">
+          <script is:inline async src="https://tpwdg.com/content?currency=usd&trs=578287&shmarker=782223&language=en&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
+        </div>
+      </div>
+
+      <!-- Heading 6: eSIM Connectivity -->
+      <h2>6. Rester connecté : Le guide eSIM France & Europe 2026</h2>
+
+      <p>Naviguer dans le réseau du métro parisien, vérifier les horaires d'ouverture du Louvre, réserver des restaurants et appeler Ubers nécessite des données mobiles constantes et fiables. Faire la queue aux kiosques de l'aéroport après un vol transatlantique de 9 heures pour acheter une carte SIM physique en plastique est un problème dépassé et stressant.</p>
+
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">📱 Recommended Travel Data: Airalo France eSIM</div>
+        <p style="margin-bottom:16px;">En 2026, plus de 80 % des voyageurs internationaux avertis utilisent une eSIM instantanée. Airalo propose les forfaits <strong>Mamezi France</strong> et <strong>Eurolink Régional</strong> qui se téléchargent directement sur votre smartphone via QR code avant le départ.</p>
+        <ul style="margin-bottom:20px;">
+          <li><strong>Activation instantanée :</strong> Se connecte à Orange ou Bouygues Telecom 5G à la seconde exacte où votre avion atterrit à CDG ou ORY.</li>
+          <li><strong>Conservez votre WhatsApp et votre numéro :</strong> la carte SIM de votre opérateur d'origine reste active pour les SMS d'authentification à 2 facteurs tandis que toutes les données mobiles transitent via le profil français local haut débit.</li>
+          <li><strong>Abordable</strong> : 1 Go à partir de 4,50 $, jusqu'à 20 Go pour 36 $ (une fraction des 10 $/jour des modules complémentaires d'itinérance internationale de l'opérateur américain).</li>
+        </ul>
+        <a href="https://www.airalo.com/france-esim" target="_blank" rel="noopener" class="roam-toolkit-link" style="display:inline-flex;width:auto;">
+          <span>Get Your Airalo France eSIM Before Flying &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Heading 7: The Trans-Mediterranean Bridge to Morocco -->
+      <h2>7. Le pont transméditerranéen : combiner Paris et le Maroc</h2>
+
+      <p>Pendant des siècles, Paris a servi de porte d'entrée romantique vers l'Afrique du Nord et l'Orient. En raison de ses liens historiques profonds et de sa fréquence aérienne élevée, <strong>Paris est la plaque tournante européenne la plus simple à partir de laquelle voler directement vers le Maroc</strong>.</p>
+
+      <div class="roam-morocco-bridge">
+        <h3>De la Seine au Sahara en 3 heures</h3>
+        <p>Des vols directs quotidiens partent de Paris Charles de Gaulle (CDG) et de Paris Orly (ORY) directement vers Marrakech Menara (RAK) et Casablanca Mohammed V (CMN) sur Royal Air Maroc, Air France et Transavia. En seulement <strong>3 heures et 10 minutes</strong>, vous pouvez passer d'un expresso l'après-midi sur la rive gauche à une dégustation de thé à la menthe fraîche sur la terrasse d'un riad éclairé aux chandelles à Marrakech.</p>
+        <p>Beaucoup de nos clients combinent des vacances cosmopolites de 4 jours à Paris avec une visite privée avec chauffeur de 7 à 10 jours à travers les montagnes de l'Atlas et les dunes du désert de l'Erg Chebbi avec Roam Morocco.</p>
+        <a href="/fr/custom-morocco-tour.html" class="bridge-cta-btn">
+          <span>Design Your Custom Morocco Tour</span> &rarr;
+        </a>
+      </div>
+
+      <div class="roam-field-note">
+        <p class="roam-field-note-quote">"Il y a quelque chose de profondément exaltant à prendre son petit-déjeuner sur un balcon haussmannien à Paris, à embarquer sur un vol à 11h00 à Orly et à arriver à Marrakech à temps pour regarder le soleil se coucher sur la mosquée Koutoubia tandis que le parfum du cèdre et des épices emplit l'air de la médina."</p>
+        <div class="roam-field-note-author">— Roam Morocco Expedition Directors</div>
+      </div>
+
+      <!-- Heading 8: Curated FAQ Section -->
+      <h2>8. Foire aux questions sur le séjour à Paris</h2>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <h3 class="faq-question">Quel est le quartier le plus sûr où séjourner à Paris ?</h3>
+          <div class="faq-answer">
+            <p>Paris est généralement une métropole mondiale très sûre, mais le <strong>6e arrondissement (Saint-Germain)</strong>, le <strong>7e arrondissement (Eiffel/Invalides)</strong> et le <strong>16e arrondissement (Passy/Trocadéro)</strong> comptent parmi les quartiers résidentiels les plus sûrs et les plus riches d'Europe. Les crimes violents sont rares dans le centre de Paris ; les vols à la tire dans les stations de métro bondées et les pôles touristiques (autour de la Tour Eiffel, du Sacré-Cœur et de la Gare du Nord) constituent la principale préoccupation en matière de sécurité.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Combien coûte un hôtel dans le centre de Paris en 2026 ?</h3>
+          <div class="faq-answer">
+            <p>En moyenne pour les arrondissements centraux (du 1er au 8e) : les hôtels-boutiques 3 étoiles propres coûtent entre <strong>160 € et 260 € la nuit</strong> ; Les boutique-hôtels de charme 4 étoiles varient entre <strong>280 et 450 € la nuit</strong> ; tandis que les hôtels palace 5 étoiles (comme Le Meurice, l'Hôtel de Crillon ou le Plaza Athénée) commencent généralement à <strong>1 100 €+ par nuit</strong>. Pour un meilleur rapport qualité-prix, regardez les hôtels haut de gamme des 10e et 11e arrondissements (140 à 220 €/nuit).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Combien de jours sont idéaux pour un premier voyage à Paris ?</h3>
+          <div class="faq-answer">
+            <p>Nous recommandons un minimum de <strong>4 à 5 jours complets</strong>. Cela offre suffisamment de répit pour voir les monuments majeurs (Louvre, Tour Eiffel, Notre-Dame, Orsay) sans se presser, tout en laissant des après-midi non structurés pour profiter de la culture des cafés-terrasses, des boutiques et des promenades dans les jardins.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Est-il nécessaire de parler français pour séjourner à Paris ?</h3>
+          <div class="faq-answer">
+            <p>Non, l'anglais est largement parlé dans les hôtels, les restaurants, les magasins et les centres de transport. Cependant, le rituel culturel de la salutation est essentiel : commencez toujours toute interaction par un chaleureux <em>"Bonjour, Madame/Monsieur"</em> avant de poser une question ou de commander. Cette simple courtoisie transforme radicalement votre expérience de service client partout en France.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Comment voyager de Paris au Maroc ?</h3>
+          <div class="faq-answer">
+            <p>Plusieurs compagnies aériennes opèrent des vols directs et sans escale entre Paris (CDG et ORY) et le Maroc (Marrakech RAK, Casablanca CMN, Fes FEZ et Tanger TNG). La durée du vol est d'environ 3 heures et 10 minutes. Transavia, Air France et Royal Air Maroc proposent plusieurs vols quotidiennement, avec des tarifs aller simple souvent disponibles entre 60 € et 180 € selon la saison.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <!-- Scripts -->
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

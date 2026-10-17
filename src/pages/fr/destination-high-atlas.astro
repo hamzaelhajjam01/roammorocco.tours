@@ -1,0 +1,458 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Visites privées des montagnes du Haut Atlas : Imlil et le mont Toubkal";
+const description = "Excursions privées d'une journée de Marrakech aux montagnes du Haut Atlas. Explorez Imlil et les vallées du mont Toubkal et savourez un déjeuner berbère traditionnel avec un guide local.";
+const canonical = "https://roammorocco.tours/fr/destination-high-atlas.html";
+const ogImage = "https://roammorocco.tours/img/tour_active_atlas_toubkal.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "High Atlas Mountains & Imlil Valley",
+      "description": "North Africa's highest mountain range, crowned by Mount Toubkal (4,167m), featuring historic Berber villages, alpine streams, and majestic terraced valleys just 90 minutes from Marrakech.",
+      "url": "https://roammorocco.tours/destination-high-atlas.html",
+      "touristType": [
+        "Hikers",
+        "Nature Lovers",
+        "Culture Enthusiasts",
+        "Families"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.1364,
+        "longitude": -7.9197
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "Private High Atlas & Imlil Berber Valley Day Tour",
+      "description": "A private day excursion from Marrakech into the heart of the High Atlas with dedicated 4x4 transport, licensed local Berber mountain guide, and traditional rooftop lunch.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How far is Imlil and the Atlas Mountains from Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Imlil is approximately 65 km south of Marrakech, which takes around 1 hour and 30 minutes in our comfortable private vehicle. The drive winds scenic mountain passes past Asni, Moulay Brahim, and Apple orchards."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is hiking experience required for the High Atlas day trip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No! Our private walks are 100% customized to your fitness level. You can choose a gentle 1-hour stroll through terraced walnut groves and Berber villages, a moderate hike to Armed village, or relax on a panoramic riad terrace with mint tea."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I wear for a day trip to the Atlas Mountains?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We recommend sturdy walking shoes or sneakers with good grip, comfortable layered clothing (as mountain temperatures are 5\u00b0C to 10\u00b0C cooler than Marrakech), sunglasses, and sun protection."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="fr" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/fr/index.html">Home</a> &nbsp;/&nbsp; <a href="/fr/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>High Atlas Mountains</span>
+        </div>
+        <span class="dest-badge-tag">ROOF OF NORTH AFRICA</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/tour_active_atlas_toubkal.jpg" alt="High Atlas Mountains and Mount Toubkal Trail" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Visites privées des montagnes de l'Atlas : Imlil, Toubkal et vallées berbères</h1>
+          <p class="dest-hero-subtitle">Respirez l'air pur des Alpes sous le mont Toubkal. Vergers de noyers en terrasses, anciens villages en pierre de terre et déjeuners traditionnels faits maison avec des hôtes amazighs autochtones.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> Full Day Excursion (or 2-Day Trek)</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> Private 4x4 Chauffeur &amp; Mountain Guide</span>
+        <span class="dest-metric-item">📍 <strong>Departure:</strong> Marrakech (90 Min Drive)</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- 2-Column Core Layout -->
+            <!-- GEO & AEO Destination Fast Facts (BLUF) -->
+      <aside class="ai-quick-summary-card" aria-label="High Atlas Mountains Fast Facts">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ HIGH ATLAS MOUNTAINS AT A GLANCE (QUICK SUMMARY)</span>
+          <span class="ai-summary-badge">Alpine Morocco</span>
+        </div>
+        <p class="ai-summary-text">Les <strong>montagnes du Haut Atlas</strong> forment la plus haute chaîne de montagnes d'Afrique du Nord, couronnée par le <strong>Mont Toubkal (4 167 m)</strong>. Situés à seulement 60 à 90 minutes au sud de Marrakech, les principaux points d'accès incluent <strong>Imlil</strong> (le principal point de départ du sentier de randonnée et du sommet) et la luxuriante <strong>Vallée de l'Ourika</strong> (célèbre pour ses ruisseaux glaciaires en bordure de route et ses cascades de Setti Fatma). Roam Morocco organise des guides de montagne berbères certifiés UIAGM, des transports privés en 4x4 et d'authentiques visites de thé en famille.</p>
+      </aside>
+
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Points forts du Haut Atlas et exclusivités privées</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>Imlil et vallée armée :</strong> Explorez le début du sentier de montagne emblématique sous le mont Toubkal (4 167 mètres), le plus haut sommet d'Afrique du Nord.</li>
+              <li><strong>Déjeuner berbère authentique sur le toit :</strong> Savourez un agneau de montagne mijoté ou un tajine de légumes sur une terrasse panoramique surplombant les sommets enneigés.</li>
+              <li><strong>Trekking en montagne sur mesure</strong> : personnalisé, allant d'une marche douce et facile d'une heure et demie à une randonnée vigoureuse sur les crêtes de 4 heures dirigée par un guide berbère local certifié.</li>
+              <li><strong>Gorges pittoresques de Moulay Brahim :</strong> falaises calcaires spectaculaires, ruisseaux de montagne tumultueux et coopératives d'huile d'argan en bordure de route.</li>
+              <li><strong>Villages traditionnels préservés :</strong> Promenez-vous dans des villages de pierre et de boue vieux de plusieurs siècles, inchangés par la modernité.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>Échappez-vous de la ville rouge et entrez dans la pure majesté des montagnes</h2>
+            <p>À seulement 90 minutes au sud de la médina animée de Marrakech se trouve un monde complètement différent. Les montagnes du Haut Atlas s’élèvent comme un mur de granit impénétrable, abritant d’anciennes communautés berbères (amazighes) dont l’hospitalité est légendaire dans toute l’Afrique du Nord.</p>
+            <p>Notre excursion privée dans la vallée d'Imlil offre le contraste parfait avec la vie urbaine. Vous quittez la ville dans un 4x4 exécutif, en montant à travers les vallées verdoyantes d'Asni. À Imlil, vous êtes accueilli par votre guide de montagne natif dévoué, quelqu'un dont la famille vit sur ces sommets depuis des générations.</p>
+            
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"Assis sur un simple toit berbère, en sirotant un thé à la menthe chaud tout en écoutant l'eau de fonte du mont Toubkal, c'est là que la vraie paix du Maroc s'enfonce dans votre âme."</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO MOUNTAIN LOG</span>
+            </div>
+            
+            <p>Vous pouvez vous promener le long d'anciens canaux d'irrigation à travers des noyers centenaires, visiter le haut village d'Armed ou simplement vous détendre et savourer un festin de pain fraîchement sorti du four, d'huile d'olive pressée à froid et de tajines de montagne biologiques.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Itinéraire d'une journée complète vers le Haut Atlas et Imlil</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">VISITE PRIVÉE PORTE-À-PORTE</span></h3>
+
+            <!-- Timeline -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">09:00 AM // SCENIC ASCENT FROM MARRAKECH</span>
+              <h4 class="dest-day-title">Marrakech → Gorges de Moulay Brahim → Vallée d'Asni</h4>
+              <p class="dest-day-desc">Votre chauffeur privé vous attend à votre riad de Marrakech à 09h00. Voyagez vers le sud à travers la plaine du Haouz avant de monter dans le canyon de Moulay Brahim. Profitez des arrêts photographiques panoramiques sur les montagnes et admirez la poterie berbère traditionnelle le long de la route. Le samedi, visitez le souk hebdomadaire animé de montagne à Asni.</p>
+              <div class="dest-day-tags">
+                <span>Distance: 65 km</span>
+                <span>Executive 4x4 Transport</span>
+                <span>Scenic Valley Views</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">10:45 AM // IMLIL VALLEY TREK &amp; BERBER VILLAGES</span>
+              <h4 class="dest-day-title">Imlil (1 740 m) → Village armé → Début du sentier Toubkal</h4>
+              <p class="dest-day-desc">Rencontrez votre guide de montagne berbère local certifié à Imlil. Embarquez pour une promenade personnalisée le long de sentiers pavés à travers les vergers de pommiers et les noyers. Passez devant des cascades de montagne jaillissantes et visitez le village d’Armed à flanc de falaise, offrant une vue à couper le souffle sur le sommet enneigé déchiqueté du mont Toubkal.</p>
+              <div class="dest-day-tags">
+                <span>Licensed Mountain Guide</span>
+                <span>Pacing Tailored to You</span>
+                <span>Mule Support for Children/Seniors</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">01:30 PM // AUTHENTIC BERBER ROOFTOP LUNCH</span>
+              <h4 class="dest-day-title">Festin de montagne fait maison et retour relaxant</h4>
+              <p class="dest-day-desc">Soyez accueilli dans une authentique maison berbère locale ou dans une kasbah de montagne pour un déjeuner composé de plusieurs plats : salades marocaines fraîchement préparées, tendre tajine de montagne, couscous, fruits de saison et thé à la menthe parfumé sur un toit-terrasse panoramique. Détendez-vous dans la brise pure de la montagne avant un retour facile en fin d'après-midi à Marrakech vers 17h30.</p>
+              <div class="dest-day-tags">
+                <span>Multi-Course Lunch Included</span>
+                <span>Panoramic Rooftop Views</span>
+                <span>Back in Marrakech for Dinner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">Ce qui est inclus dans votre visite des montagnes de l'Atlas</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUS</h4>
+                <ul class="dest-inc-list">
+                  <li>Transfert aller-retour privé en 4x4 ou minibus exécutif climatisé</li>
+                  <li>Chauffeur berbère anglophone professionnel</li>
+                  <li>Guide de montagne local certifié dans la vallée d'Imlil</li>
+                  <li>Déjeuner berbère traditionnel à 3 plats sur une terrasse panoramique sur la montagne</li>
+                  <li>Eau fraîche en bouteille toute la journée</li>
+                  <li>Prise en charge et retour porte-à-porte au riad à Marrakech</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NON INCLUS</h4>
+                <ul class="dest-exc-list">
+                  <li>Pourboires discrétionnaires pour chauffeur et accompagnateur en montagne</li>
+                  <li>Assurance voyage personnelle</li>
+                  <li>Location de balade muletière en option pour les non-randonneurs (~100 MAD)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Questions fréquemment posées : Tours du Haut Atlas</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Pouvons-nous faire cette visite si un membre de notre groupe a une mobilité réduite ?</h4>
+              <div class="dest-faq-a">
+                <p>Oui! Nous pouvons organiser une douce promenade à dos de mule avec un maître expérimenté afin que les invités de tous âges (ou les jeunes enfants) puissent profiter des sentiers panoramiques sans effort physique. Alternativement, nous pouvons nous rendre directement aux lodges de montagne panoramiques comme la Kasbah Toubkal où vous pourrez vous détendre sur de confortables salons en terrasse.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Est-ce qu'il neige dans les montagnes de l'Atlas ?</h4>
+              <div class="dest-faq-a">
+                <p>Oui. Les sommets les plus élevés autour du mont Toubkal sont couverts de neige de novembre à avril. Les routes menant à Imlil restent ouvertes et accessibles toute l'année, et les vues enneigées depuis la vallée en hiver et au printemps sont vraiment spectaculaires.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="High Atlas Mountains & Imlil Valley Trek"
+               data-price-1-4="110"
+               data-price-5-7="150"
+               data-price-8-12="210"
+               data-tour-sub="Toubkal National Park · Local Berber guide &amp; traditional rooftop lunch">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Trek dans les montagnes du Haut Atlas et dans la vallée d'Imlil</h3>
+            <p class="dest-prelocked-sub">Parc national du Toubkal · Guide berbère local et déjeuner traditionnel sur le toit</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCityAtlas">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityAtlas">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateAtlas">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateAtlas">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">110€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Comprend un véhicule et un chauffeur privés, un guide de montagne certifié, un déjeuner berbère à 3 plats et un accompagnement avec des mules.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 110€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const guests = (document.getElementById('groupSize')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName,
+        pickup: tourName,
+        date: dates,
+        passengers: guests,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about the ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (dates ? `📅 Travel Date: ${dates}\n` : '') +
+        (guests ? `👥 Group Size: ${guests}\n` : '') +
+        (notes ? `📝 Notes: ${notes}\n` : '') +
+        `\nCan you please confirm guide & 4x4 availability and send a detailed proposal?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our Marrakech team. We will review vehicle and guide availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">High Atlas &amp; Imlil Trek</div>
+      <div class="smt-price">From <span class="smt-price-num">110€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20High%20Atlas%20Mountains%20&%20Imlil%20Valley%20Trek." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

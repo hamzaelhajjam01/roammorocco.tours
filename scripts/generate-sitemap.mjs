@@ -22,40 +22,41 @@ function getFilesRecursively(dir, baseDir = dir) {
 }
 
 function getPriorityAndFreq(relPath) {
-  if (relPath === 'index.html') {
+  const clean = relPath.replace(/^(fr|es|de|it)\//, '');
+  if (clean === 'index.html') {
     return { priority: '1.0', changefreq: 'weekly' };
   }
   if (
-    relPath === 'transfers.html' ||
-    relPath === 'tours.html' ||
-    relPath === 'morocco-private-driver.html' ||
-    relPath === 'destinations.html' ||
-    relPath === 'custom-morocco-tour.html'
+    clean === 'transfers.html' ||
+    clean === 'tours.html' ||
+    clean === 'morocco-private-driver.html' ||
+    clean === 'destinations.html' ||
+    clean === 'custom-morocco-tour.html'
   ) {
     return { priority: '0.95', changefreq: 'weekly' };
   }
   if (
-    relPath.startsWith('destination-') ||
-    relPath.startsWith('tour-') ||
-    relPath.startsWith('marrakech-') ||
-    relPath === 'morocco-trip-cost-calculator.html'
+    clean.startsWith('destination-') ||
+    clean.startsWith('tour-') ||
+    clean.startsWith('marrakech-') ||
+    clean === 'morocco-trip-cost-calculator.html'
   ) {
     return { priority: '0.90', changefreq: 'weekly' };
   }
-  if (relPath.startsWith('transfers/')) {
+  if (clean.startsWith('transfers/')) {
     return { priority: '0.85', changefreq: 'weekly' };
   }
-  if (relPath === 'blog.html') {
+  if (clean === 'blog.html') {
     return { priority: '0.85', changefreq: 'weekly' };
   }
-  if (relPath.startsWith('blog/')) {
+  if (clean.startsWith('blog/')) {
     return { priority: '0.80', changefreq: 'monthly' };
   }
   if (
-    relPath === 'privacy-policy.html' ||
-    relPath === 'refund-policy.html' ||
-    relPath === 'terms-conditions.html' ||
-    relPath === 'travel-policy.html'
+    clean === 'privacy-policy.html' ||
+    clean === 'refund-policy.html' ||
+    clean === 'terms-conditions.html' ||
+    clean === 'travel-policy.html'
   ) {
     return { priority: '0.50', changefreq: 'monthly' };
   }
@@ -63,16 +64,17 @@ function getPriorityAndFreq(relPath) {
 }
 
 function categorizeFile(file) {
-  if (file === 'tours.html' || file.startsWith('tour-') || file.includes('free-tour') || file.includes('walking-tour')) {
+  const clean = file.replace(/^(fr|es|de|it)\//, '');
+  if (clean === 'tours.html' || clean.startsWith('tour-') || clean.includes('free-tour') || clean.includes('walking-tour')) {
     return 'tours';
   }
-  if (file === 'destinations.html' || file.startsWith('destination-')) {
+  if (clean === 'destinations.html' || clean.startsWith('destination-')) {
     return 'destinations';
   }
-  if (file === 'transfers.html' || file.startsWith('transfers/')) {
+  if (clean === 'transfers.html' || clean.startsWith('transfers/')) {
     return 'transfers';
   }
-  if (file === 'blog.html' || file.startsWith('blog/')) {
+  if (clean === 'blog.html' || clean.startsWith('blog/')) {
     return 'blog';
   }
   return 'main';
@@ -84,7 +86,12 @@ function buildUrlsetXml(files, today) {
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
   for (const file of files) {
-    const loc = file === 'index.html' ? `${SITE_URL}/` : `${SITE_URL}/${file}`;
+    let loc = `${SITE_URL}/${file}`;
+    if (file === 'index.html') {
+      loc = `${SITE_URL}/`;
+    } else if (file.endsWith('/index.html')) {
+      loc = `${SITE_URL}/${file.replace(/index\.html$/, '')}`;
+    }
     const { priority, changefreq } = getPriorityAndFreq(file);
 
     xml += '  <url>\n';
@@ -119,6 +126,20 @@ function generateCategorizedSitemaps() {
   if (!fs.existsSync(DIST_DIR)) {
     console.error('Error: dist directory does not exist. Run astro build first.');
     process.exit(1);
+  }
+
+  // Normalize localized homepages: Astro build with format: 'file' generates dist/{lang}.html
+  // Copy to dist/{lang}/index.html so web servers serve {lang}/ directly and sitemap generates canonical URLs
+  const locales = ['fr', 'es', 'de', 'it'];
+  for (const loc of locales) {
+    const langHtml = path.join(DIST_DIR, `${loc}.html`);
+    const langDir = path.join(DIST_DIR, loc);
+    const langIndex = path.join(langDir, 'index.html');
+    if (fs.existsSync(langHtml)) {
+      if (!fs.existsSync(langDir)) fs.mkdirSync(langDir, { recursive: true });
+      fs.copyFileSync(langHtml, langIndex);
+      fs.unlinkSync(langHtml);
+    }
   }
 
   const rawFiles = getFilesRecursively(DIST_DIR);

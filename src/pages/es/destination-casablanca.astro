@@ -1,0 +1,473 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Tours Privados desde Casablanca: Circuitos y Traslados en Marruecos";
+const description = "Comience su viaje privado a Marruecos desde Casablanca (CMN). Circuitos personalizados a Chefchaouen, Fez, el desierto del Sahara y Marrakech con conductor privado.";
+const canonical = "https://roammorocco.tours/es/destination-casablanca.html";
+const ogImage = "https://roammorocco.tours/img/dest-casablanca.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "Casablanca & Mohammed V International Hub",
+      "description": "Morocco's economic capital and main intercontinental gateway, celebrated for the monumental Hassan II Mosque, Atlantic Corniche, and Art Deco architecture.",
+      "url": "https://roammorocco.tours/destination-casablanca.html",
+      "touristType": [
+        "International Travelers",
+        "Families",
+        "Luxury Vacationers",
+        "First-Time Visitors"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.5731,
+        "longitude": -7.5898
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "Grand Morocco Private Circuit from Casablanca (7 to 12 Days)",
+      "description": "An all-inclusive private expedition departing from Casablanca airport covering Rabat, Chefchaouen, Fes, Merzouga Desert, and Marrakech.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you meet us directly at Casablanca Airport (CMN)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Our private English-speaking chauffeur will track your flight status and wait for you in the arrivals hall with a personalized Roam Morocco name board. We assist with your luggage and immediately escort you to your executive air-conditioned 4x4 or minivan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can non-Muslims visit the Hassan II Mosque in Casablanca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Hassan II Mosque is one of the very few active mosques in Morocco open to non-Muslim visitors through official guided tours. We organize priority entry so you can witness its staggering ocean-perched prayer hall, titanium retractable roof, and hand-carved cedar ceilings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many days is ideal for a tour starting in Casablanca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a complete circuit that includes the Imperial Cities (Rabat, Fes, Meknes), the Blue City of Chefchaouen, the Sahara Desert, and Marrakech, 8 to 12 days is ideal. For shorter trips (4 to 5 days), we can take you on a direct Casablanca to Marrakech route via the coast or interior."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/es/index.html">Home</a> &nbsp;/&nbsp; <a href="/es/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>Casablanca</span>
+        </div>
+        <span class="dest-badge-tag">INTERNATIONAL ARRIVAL HUB</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/dest-casablanca.jpg" alt="Hassan II Mosque in Casablanca over the Atlantic Ocean" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Tours Privados desde Casablanca: Grandes Circuitos Marroquíes</h1>
+          <p class="dest-hero-subtitle">Aterrice en Marruecos y disfrute de un viaje VIP perfecto. Recogida en el aeropuerto, la impresionante Mezquita Hassan II y Grand Tours personalizados que conectan Fez, el Sahara y Marrakech.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> 7 to 12 Days (Customizable)</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> Dedicated 4x4 Chauffeur Throughout</span>
+        <span class="dest-metric-item">📍 <strong>Arrival Hub:</strong> Mohammed V International (CMN)</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- 2-Column Core Layout -->
+            <!-- GEO & AEO Destination Fast Facts (BLUF) -->
+    <aside class="ai-quick-summary-card" aria-label="Casablanca Travel Fast Facts">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ CASABLANCA AT A GLANCE (QUICK SUMMARY)</span>
+        <span class="ai-summary-badge">Economic Gateway</span>
+      </div>
+      <p class="ai-summary-text"><strong>Casablanca</strong> es la moderna potencia comercial de Marruecos y la principal puerta de entrada de vuelos transatlánticos (Aeropuerto Mohamed V - CMN). La joya de la corona de la ciudad es la monumental <strong>Mezquita de Hassan II</strong>, una de las mezquitas más grandes del mundo, construida directamente sobre el Océano Atlántico con un minarete de 210 metros. La estancia recomendada es <strong>1 día / 1 noche</strong> antes de conectar directamente a Marrakech (2h 45m) o Fez (3h 30m) a través de los traslados con chófer privados de Roam Marruecos.</p>
+    </aside>
+
+    <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Lo más destacado de Casablanca y el Gran Circuito</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>Visita VIP a la Mezquita Hassan II:</strong> recorra la mezquita más grande del norte de África, que cuenta con un minarete de 210 metros y un piso construido directamente sobre el oleaje del océano Atlántico.</li>
+              <li><strong>Recogida perfecta en el aeropuerto CMN:</strong> Evite las colas de taxis en el aeropuerto; su chofer lo recibirá en el momento en que salga de la aduana con su vehículo privado.</li>
+              <li><strong>Patrimonio capital en Rabat:</strong> Explore la Kasbah de los Oudayas frente al mar, la Torre Hassan y el Mausoleo Real de Mohammed V.</li>
+              <li><strong>Circuito marroquí completo:</strong> enlace sin esfuerzo Casablanca → Rabat → Chefchaouen → Fez → Merzouga Sahara → Marrakech sin retroceso.</li>
+              <li><strong>Experiencia Rick's Café:</strong> Disfrute de un cóctel atmosférico por la noche en la legendaria recreación del bar de películas de Humphrey Bogart.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>Tu puerta de entrada al Reino de Marruecos</h2>
+            <p>Casablanca es donde aterrizan la mayoría de los vuelos de larga distancia procedentes de América del Norte, Europa y Australia. Si bien muchas agencias de viajes apuran a los viajeros con horarios genéricos, comenzar su viaje en Casablanca con un chofer privado ofrece una flexibilidad incomparable.</p>
+            <p>Comienza con la maravilla de la arquitectura islámica moderna: la Mezquita de Hassan II, donde el mármol y la madera de cedro tallados a mano honran siglos de maestría artesanal. Desde allí, su vehículo privado tomará un rumbo pausado hacia el norte hasta la capital real de Rabat y las calles azules de Chefchaouen, antes de aventurarse hacia el sur hacia las medinas imperiales y las dunas del Sahara.</p>
+            
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"Comenzar en Casablanca ofrece a los viajeros el verdadero arco narrativo de Marruecos: comenzando en la moderna costa atlántica, viajando hacia las antiguas medinas medievales y culminando en el silencio de las arenas del Sahara".</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO ITINERARY DIRECTORY</span>
+            </div>
+            
+            <p>Debido a que su vehículo y su conductor permanecen exclusivamente con usted durante toda la ruta, usted disfruta de seguridad en el equipaje, total flexibilidad en la ruta y cero estrés durante el tránsito.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Muestra del Gran Circuito de 8 días desde Casablanca</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">POPULAR PARA VIAJEROS DE EE. UU. Y EL REINO UNIDO</span></h3>
+
+            <!-- Timeline -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 01 // WELCOME TO MOROCCO</span>
+              <h4 class="dest-day-title">Llegada al aeropuerto CMN → Mezquita Hassan II → Imperial Rabat</h4>
+              <p class="dest-day-desc">Conozca a su chofer privado en el aeropuerto de Casablanca. Visite la monumental Mezquita Hassan II junto al mar. Continúe 1 hora hacia el norte hasta Rabat, la capital diplomática. Explore la Kasbah Oudayas blanca y azul y la Torre Hassan inacabada del siglo XII antes de relajarse en su riad de lujo.</p>
+              <div class="dest-day-tags">
+                <span>Airport Pickup Included</span>
+                <span>Hassan II Mosque Tour</span>
+                <span>Overnight in Rabat</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 02–03 // THE BLUE CITY &amp; SPIRITUAL FES</span>
+              <h4 class="dest-day-title">Rabat → Chefchaouen (Montañas del Rif) → Fez el-Bali</h4>
+              <p class="dest-day-desc">Conduzca a través de las pintorescas montañas del Rif hacia Chefchaouen. Pase la tarde fotografiando los callejones azules y las tiendas artesanales. El día 3, continúe hacia el sur pasando las ruinas romanas de Volubilis para llegar a Fez y disfrutar de un día guiado completo explorando la antigua medina, las madrasas y las curtidurías de Chouara.</p>
+              <div class="dest-day-tags">
+                <span>Chefchaouen Blue Alleys</span>
+                <span>UNESCO Roman Volubilis</span>
+                <span>Licensed Fes Scholar Guide</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 04–06 // MIDDLE ATLAS TO SAHARA DUNES</span>
+              <h4 class="dest-day-title">Fez → Valle del Ziz → Erg Chebbi Glamping → Valle del Dades</h4>
+              <p class="dest-day-desc">Cruza los bosques de cedros del Medio Atlas y saluda a los simios salvajes de Berbería en Azrou. Desciende por el espectacular desfiladero de Ziz hacia las dunas de Erg Chebbi. Experimente paseos en camello al atardecer y duerma en una lujosa tienda de campaña en el desierto. Continúe por Todra Gorge hacia los espectaculares cañones Kasbah del valle del Dades.</p>
+              <div class="dest-day-tags">
+                <span>Luxury Sahara Glamping</span>
+                <span>Camel Trek &amp; Campfire Drumming</span>
+                <span>Todra &amp; Dades Gorges</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 07–08 // THE OCHRE CITY &amp; DEPARTURE</span>
+              <h4 class="dest-day-title">Aït Benhaddou → Alto Atlas → Marrakech (o CMN Volver)</h4>
+              <p class="dest-day-desc">Visite la fortaleza de Ksar Aït Benhaddou, declarada Patrimonio de la Humanidad por la UNESCO, cruce el pintoresco paso de Tizi n'Tichka y pase los dos últimos días explorando los palacios de Marrakech, los jardines Majorelle y los vibrantes zocos. Traslado de salida de regreso al aeropuerto de Marrakech (RAK) o Casablanca (CMN).</p>
+              <div class="dest-day-tags">
+                <span>UNESCO Ksar Aït Benhaddou</span>
+                <span>Marrakech Medina Exploration</span>
+                <span>Seamless Airport Drop-off</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">Qué está incluido en su Gran Tour de Casablanca</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUIDO</h4>
+                <ul class="dest-inc-list">
+                  <li>Vehículo privado exclusivo con aire acondicionado durante todo el recorrido.</li>
+                  <li>Chofer bereber profesional de habla inglesa.</li>
+                  <li>Todo el combustible de los vehículos, peajes de autopistas y tarifas de estacionamiento.</li>
+                  <li>Alojamiento en hotel y riad de lujo cuidadosamente seleccionado con desayuno</li>
+                  <li>Campamento de lujo en el desierto del Sahara con tienda de campaña privada con baño y cena</li>
+                  <li>Guías locales privados con licencia en Fez y Marrakech.</li>
+                  <li>Paseo en camello al atardecer en Erg Chebbi</li>
+                  <li>Recogida en el aeropuerto (CMN) y traslado de salida.</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NO INCLUIDO</h4>
+                <ul class="dest-exc-list">
+                  <li>Vuelos internacionales</li>
+                  <li>Almuerzos de mediodía y bebidas alcohólicas.</li>
+                  <li>Propinas discrecionales para guías y chofer.</li>
+                  <li>Seguro de viaje personal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Preguntas frecuentes: Tours desde Casablanca</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Puede nuestro recorrido terminar en Marrakech en lugar de Casablanca?</h4>
+              <div class="dest-faq-a">
+                <p>¡Sí! Muchos viajeros internacionales reservan vuelos abiertos: llegan a Casablanca (CMN) y salen del aeropuerto de Marrakech Menara (RAK). Diseñamos su itinerario para terminar directamente en el aeropuerto de Marrakech sin retroceso.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Qué tan flexible es el horario diario durante el recorrido?</h4>
+              <div class="dest-faq-a">
+                <p>Como tu recorrido es 100% privado, tú controlas el ritmo. Si desea dormir una hora más, detenerse en los cafés de la carretera o pasar más tiempo tomando fotos, su chófer está totalmente a su disposición.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="Casablanca to Marrakech Chauffeur & City Highlights"
+               data-price-1-4="145"
+               data-price-5-7="185"
+               data-price-8-12="260"
+               data-tour-sub="Hassan II Mosque priority access · Direct VIP highway transfer">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Casablanca a Marrakech Chofer y aspectos destacados de la ciudad</h3>
+            <p class="dest-prelocked-sub">Acceso prioritario a la Mezquita Hassan II · Traslado directo VIP por autopista</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCityCasablanca">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityCasablanca">
+                  <option value="Casablanca (CMN Airport)" selected>Casablanca (CMN Airport)</option>
+                  <option value="Casablanca (City / Hotel)">Casablanca (City / Hotel)</option>
+                  <option value="Marrakech (To Casablanca)">Marrakech (To Casablanca)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateCasablanca">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateCasablanca">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">145€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Incluye chófer Mercedes privado, recogida en el aeropuerto CMN o en el hotel, peajes en las autopistas y entrega en puerta de Marrakech.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 145€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const dur = (document.getElementById('tourDuration')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName + (dur ? ` - ${dur}` : ''),
+        pickup: 'Casablanca (CMN Airport / City)',
+        duration: dur,
+        date: dates,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about a ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (dur ? `⏱ Circuit Duration: ${dur}\n` : '') +
+        (dates ? `📅 Arrival Date: ${dates}\n` : '') +
+        (notes ? `📝 Notes: ${notes}\n` : '') +
+        `\nCan you please confirm itinerary availability and send a detailed proposal?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our team. We will review route and driver availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Casablanca to Marrakech Transfer</div>
+      <div class="smt-price">From <span class="smt-price-num">145€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Casablanca%20to%20Marrakech%20Chauffeur%20&%20City%20Highlights." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

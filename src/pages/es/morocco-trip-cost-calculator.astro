@@ -1,0 +1,555 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Calculadora de costos de viaje a Marruecos: Estimador de presupuesto para 2026";
+const description = "Calcule el costo de su viaje a Marruecos en 2026 en segundos. Estimador de presupuestos en tiempo real para conductores privados, riads de lujo, campamentos en el desierto del Sahara y circuitos personalizados.";
+const canonical = "https://roammorocco.tours/es/morocco-trip-cost-calculator.html";
+const ogImage = "https://roammorocco.tours/images/hero-desert.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/trip-estimator.css?v=20260929"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://roammorocco.tours/#website",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/"
+    },
+    {
+      "@type": "TravelAgency",
+      "@id": "https://roammorocco.tours/#agency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
+        "addressLocality": "Marrakech",
+        "postalCode": "40000",
+        "addressCountry": "MA"
+      },
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Hamza",
+          "jobTitle": "Co-Founder & Expedition Curator"
+        },
+        {
+          "@type": "Person",
+          "name": "Abdelhakim",
+          "jobTitle": "Co-Founder & Operations Lead"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://roammorocco.tours/morocco-trip-cost-calculator.html#app",
+      "name": "Morocco Trip Cost & Route Estimator",
+      "url": "https://roammorocco.tours/morocco-trip-cost-calculator.html",
+      "applicationCategory": "TravelApplication",
+      "operatingSystem": "All",
+      "description": "Interactive travel cost and driving route calculator for planning custom trips across Morocco, private chauffeurs, luxury riads, and Sahara desert expeditions.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "985",
+        "reviewCount": "985"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://roammorocco.tours/morocco-trip-cost-calculator.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a 10-day trip to Morocco typically cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A mid-range to luxury 10-day private trip to Morocco typically costs between \u20ac1,100 and \u20ac1,750 ($1,200 to $1,900 USD) per person based on two travelers sharing a room. This includes a dedicated English-speaking private driver with an executive Prado 4x4 or Mercedes minivan, authentic boutique riad accommodations with breakfast, a luxury private tent in Erg Chebbi with camel trekking, licensed medina guides, fuel, and highway tolls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Morocco expensive for tourists?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Morocco offers exceptional value compared to Western Europe or North America. High-quality dining costs \u20ac8 to \u20ac20 per person, magnificent historic riads range from \u20ac50 to \u20ac140 per night, and private chauffeurs cost \u20ac135 to \u20ac180 per day all-inclusive. You can experience 5-star level hospitality and private logistics at a fraction of European prices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the biggest cost factor in a Moroccan vacation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Private transportation and accommodation tier are the two primary drivers of cost. Because Morocco is geographically vast\u2014spanning mountain ranges and desert expanses\u2014hiring a private 4x4 with a licensed chauffeur represents the core investment in comfort, safety, and flexible scheduling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are credit cards widely accepted, or do I need cash?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While luxury riads, high-end restaurants, and tour agencies accept Visa and Mastercard, Morocco remains largely a cash-driven economy. Cash (Moroccan Dirham - MAD) is essential for souk shopping, tipping, roadside cafes, and local artisan stalls. ATMs are readily available in all major towns."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+
+    body {
+      background-color: #f2eee6;
+      color: #000000;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Hero */
+    .calc-hero {
+      text-align: center;
+      padding: 130px 24px 60px;
+      background: #f2eee6;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .calc-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 16px;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      border-radius: 999px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: #8A6A23;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 24px;
+    }
+
+    .calc-kicker::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C8A45C;
+    }
+
+    .calc-hero h1 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(34px, 5.5vw, 62px);
+      line-height: 1.0;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+      max-width: 980px;
+      margin: 0 auto 20px;
+      color: #000000;
+    }
+
+    .calc-hero-sub {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: clamp(17px, 2.2vw, 21px);
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.72);
+      max-width: 760px;
+      margin: 0 auto 32px;
+    }
+
+    .calc-trust-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .calc-pill {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      padding: 7px 16px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    }
+
+    .calc-pill span {
+      color: #C8A45C;
+      font-weight: 900;
+    }
+
+    /* FAQ Section */
+    .faq-wrap {
+      max-width: 980px;
+      margin: 60px auto 40px;
+      padding: 0 24px;
+    }
+
+
+    /* Bourdain Quote */
+    .field-note-box {
+      background: #faf8f5;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-left: 4px solid #C8A45C;
+      border-radius: 16px;
+      padding: 32px 28px;
+      margin: 40px 0;
+    }
+  
+  </style>
+
+  <!-- Hero Header -->
+  <header class="calc-hero">
+    <div class="calc-kicker">INTERACTIVE BUDGET CALCULATOR • 2026 EDITION</div>
+    <h1>Estimador de rutas y costos de viaje a Marruecos</h1>
+    <p class="calc-hero-sub">Calcule su presupuesto de viaje realista a Marruecos en segundos. Elija su circuito preferido, ajuste la duración, seleccione el nivel de comodidad de su alojamiento y obtenga un desglose inmediato de los costos detallados con los tiempos de conducción.</p>
+
+    <div class="calc-trust-strip">
+      <div class="calc-pill"><span>✓</span> 100% Real Pricing Benchmarks</div>
+      <div class="calc-pill"><span>✓</span> Fuel, Tolls &amp; Chauffeur Lodging Included</div>
+      <div class="calc-pill"><span>✓</span> Verified Boutique Riads &amp; Luxury Camps</div>
+      <div class="calc-pill"><span>✓</span> No Forced Tourist Stops</div>
+    </div>
+  </header>
+
+  <main style="max-width: 1140px; margin: 0 auto; padding: 0 20px;">
+
+    <!-- THE INTERACTIVE ESTIMATOR WIDGET -->
+    <div id="roamEstimator" class="estimator-container">
+      <div class="estimator-grid">
+
+        <!-- Left Controls Column -->
+        <div class="estimator-controls">
+          
+          <!-- STEP 1: ROUTE SELECTION -->
+          <div class="est-step-block">
+            <div class="est-step-head">
+              <h3 class="est-step-title"><span class="est-step-num">1</span> Elige tu ruta</h3>
+              <span class="est-current-val" id="estRouteVal">Signature Desert Circuit</span>
+            </div>
+            <div class="est-route-cards">
+              <!-- Route 1 -->
+              <div class="est-route-card selected" data-route="marrakech-desert-fes">
+                <h4 class="est-route-name">Marrakech a Fez vía Sahara</h4>
+                <p class="est-route-desc">Alto Atlas, Ait Benhaddou, gargantas del Dades, dunas de Erg Chebbi y medina de Fez. (1.050 kilómetros)</p>
+              </div>
+              <!-- Route 2 -->
+              <div class="est-route-card" data-route="imperial-cities-north">
+                <h4 class="est-route-name">Ciudades Imperiales y Perla Azul</h4>
+                <p class="est-route-desc">Casablanca, Rabat, callejones azules de Chefchaouen, ruinas de Volubilis y Fez. (950 kilómetros)</p>
+              </div>
+              <!-- Route 3 -->
+              <div class="est-route-card" data-route="marrakech-coast-atlas">
+                <h4 class="est-route-name">Marrakech, Costa y Atlas</h4>
+                <p class="est-route-desc">Base de Marrakech con excursiones de un día: costa de Essaouira, río Ourika y puesta de sol de Agafay. (480 kilómetros)</p>
+              </div>
+              <!-- Route 4 -->
+              <div class="est-route-card" data-route="grand-morocco-loop">
+                <h4 class="est-route-name">Gran Circuito de Marruecos</h4>
+                <p class="est-route-desc">Casablanca, Chefchaouen, Fez, Merzouga Sahara, Marrakech y costa atlántica. (2.250 kilómetros)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2: TRIP DURATION SLIDER -->
+          <div class="est-step-block">
+            <div class="est-step-head">
+              <h3 class="est-step-title"><span class="est-step-num">2</span> Duración del viaje</h3>
+              <span class="est-current-val" id="estDaysVal">4 Days</span>
+            </div>
+            <div class="est-slider-wrap">
+              <input type="range" id="estSliderDays" class="est-range-slider" min="3" max="7" value="4">
+              <div class="est-slider-ticks">
+                <span id="estSliderMin">3 Days</span>
+                <span>Paced Comfortably</span>
+                <span id="estSliderMax">7 Days</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: TRAVEL COMFORT TIER -->
+          <div class="est-step-block">
+            <div class="est-step-head">
+              <h3 class="est-step-title"><span class="est-step-num">3</span> Alojamiento y estilo</h3>
+            </div>
+            <div class="est-pills-row">
+              <div class="est-pill" data-est-style="boutique">
+                <span class="est-pill-label">Authentic Boutique</span>
+                <span class="est-pill-sub">Charming 3★ Riads &amp; Standard Camp</span>
+              </div>
+              <div class="est-pill selected" data-est-style="luxury">
+                <span class="est-pill-label">Curated Luxury</span>
+                <span class="est-pill-sub">Premium 4/5★ Riads &amp; Royal Camp</span>
+              </div>
+              <div class="est-pill" data-est-style="palace">
+                <span class="est-pill-label">Royal Palace / VIP</span>
+                <span class="est-pill-sub">5★ Palace Stays &amp; Presidential Suite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4: PARTY SIZE -->
+          <div class="est-step-block">
+            <div class="est-step-head">
+              <h3 class="est-step-title"><span class="est-step-num">4</span> Número de viajeros</h3>
+            </div>
+            <div class="est-pills-row">
+              <div class="est-pill" data-est-group="solo">
+                <span class="est-pill-label">Solo Traveler</span>
+                <span class="est-pill-sub">1 Person / 1 Room</span>
+              </div>
+              <div class="est-pill selected" data-est-group="couple">
+                <span class="est-pill-label">Couple</span>
+                <span class="est-pill-sub">2 People / 1 Double</span>
+              </div>
+              <div class="est-pill" data-est-group="family">
+                <span class="est-pill-label">Family (3–4)</span>
+                <span class="est-pill-sub">3–4 People / 2 Rooms</span>
+              </div>
+              <div class="est-pill" data-est-group="group">
+                <span class="est-pill-label">Small Group (5–8)</span>
+                <span class="est-pill-sub">Executive VIP Minivan</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Summary Sticky Column -->
+        <div class="estimator-summary-card">
+          <!-- Currency Switcher -->
+          <div class="est-curr-toggle">
+            <button type="button" class="curr-btn active" data-curr="EUR">EUR (€)</button>
+            <button type="button" class="curr-btn" data-curr="USD">USD ($)</button>
+          </div>
+
+          <span class="est-total-kicker">Estimated Total Trip Range</span>
+          <div class="est-total-amount" id="estTotalAmount">€1,230 – €1,360</div>
+          
+          <div class="est-per-person" id="estPerPersonVal">
+            <span class="badge">~€162 / person / day</span> based on Couple
+          </div>
+
+          <!-- Category Breakdown -->
+          <div class="est-breakdown-list">
+            <!-- Transport -->
+            <div class="est-cat-row">
+              <div class="est-cat-meta">
+                <span class="name">🚗 Private Chauffeur &amp; 4x4 / Van</span>
+                <span class="price" id="estValTransport">€620</span>
+              </div>
+              <div class="est-meter-track"><div class="est-meter-bar" id="estMeterTransport" style="width: 48%;"></div></div>
+            </div>
+
+            <!-- Lodging -->
+            <div class="est-cat-row">
+              <div class="est-cat-meta">
+                <span class="name">🏨 Boutique Riads &amp; Desert Camp</span>
+                <span class="price" id="estValLodging">€345</span>
+              </div>
+              <div class="est-meter-track"><div class="est-meter-bar" id="estMeterLodging" style="width: 27%;"></div></div>
+            </div>
+
+            <!-- Experiences -->
+            <div class="est-cat-row">
+              <div class="est-cat-meta">
+                <span class="name">🐫 Desert Trek &amp; Guided Excursions</span>
+                <span class="price" id="estValExp">€130</span>
+              </div>
+              <div class="est-meter-track"><div class="est-meter-bar" id="estMeterExp" style="width: 10%;"></div></div>
+            </div>
+
+            <!-- Food -->
+            <div class="est-cat-row">
+              <div class="est-cat-meta">
+                <span class="name">🍽️ Meals, Fresh Juices &amp; Per Diem</span>
+                <span class="price" id="estValFood">€200</span>
+              </div>
+              <div class="est-meter-track"><div class="est-meter-bar" id="estMeterFood" style="width: 15%;"></div></div>
+            </div>
+          </div>
+
+          <!-- Route Driving Schedule Intel -->
+          <div class="est-route-intel">
+            <div class="est-intel-title">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="#C8A45C"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span id="estIntelRouteName">Marrakech to Fes via Merzouga Sahara</span>
+            </div>
+            <div id="estIntelDist" style="margin-bottom: 3px; font-weight:700;">Route Distance: 1,050 km</div>
+            <div id="estIntelTime" style="margin-bottom: 6px;">Driving Schedule: 16–18 hours total driving over 3–5 days</div>
+            <div id="estIntelHighlight" style="color: #666; font-style: italic;">Crosses 2,260m Tizi n'Tichka pass. Sunset camel trek over 150m golden dunes.</div>
+          </div>
+
+          <!-- CTA Lock In -->
+          <div class="est-action-area">
+            <button type="button" class="btn-lock-quote" id="estTriggerLeadBtn">
+              Lock In This Estimate &amp; Get Itinerary &rarr;
+            </button>
+          </div>
+
+          <!-- Lead Capture Inline Form -->
+          <div class="est-lead-modal" id="estLeadModal">
+            <h4 style="margin:0 0 6px; font-size:16px; font-family:Helvetica, Arial, sans-serif; font-weight:800;">Reciba su cotización detallada</h4>
+            <p style="margin:0 0 16px; font-size:13px; color:#666;">Comprobaremos la disponibilidad del riad para sus fechas y le enviaremos un correo electrónico en un plazo de 30 minutos.</p>
+
+            <form id="estLeadForm" class="est-lead-form">
+              <input type="text" name="name" placeholder="Your Full Name *" required>
+              <input type="email" name="email" placeholder="Your Email Address *" required>
+              <input type="tel" name="phone" placeholder="WhatsApp / Phone Number *" required>
+              <textarea name="notes" rows="2" placeholder="Approximate travel month, flight status, or specific wishes..."></textarea>
+              <button type="submit" id="estSubmitLeadBtn" class="btn-lock-quote" style="background:#C8A45C; color:#000; font-weight:900;">
+                Send Itinerary Request &rarr;
+              </button>
+              <div id="estLeadMsg" class="est-lead-msg"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- BUDGETING INSIGHTS SECTION -->
+    <section style="margin: 60px 0; background: #ffffff; border: 1px solid rgba(0,0,0,0.08); border-radius: 16px; padding: 48px 36px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+      <span style="font-family:'Inter', -apple-system, sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#8A6A23;">Transparent Cost Factors</span>
+      <h2 style="font-family:Helvetica, Arial, sans-serif; font-size:clamp(22px, 3.5vw, 34px); font-weight:800; text-transform:uppercase; margin:8px 0 20px;">¿A dónde va su dinero en Marruecos?</h2>
+      
+      <p style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size:16px; line-height:1.7; color:#333;">Marruecos ofrece a los viajeros una de las mejores relaciones precio-lujo en los viajes mundiales. Sin embargo, debido a que la logística turística en Marruecos difiere significativamente de la Europa centrada en el ferrocarril, comprender cómo se dividen los presupuestos diarios ayuda a evitar sorpresas costosas:</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:24px; margin-top:28px;">
+        <div style="background:#faf8f5; padding:22px; border:1px solid rgba(0,0,0,0.06); border-radius:12px;">
+          <h4 style="margin:0 0 8px; font-size:16px; font-weight:800;">1. Transporte privado (35-45%)</h4>
+          <p style="font-size:13.5px; line-height:1.6; color:#555; margin:0;">Con largas distancias, curvas de montaña (paso de Tizi n'Tichka) y pistas desérticas, un chofer con licencia exclusivo y un 4x4 Prado o Mercedes representa la inversión más importante en comodidad y tranquilidad.</p>
+        </div>
+
+        <div style="background:#faf8f5; padding:22px; border:1px solid rgba(0,0,0,0.06); border-radius:12px;">
+          <h4 style="margin:0 0 8px; font-size:16px; font-weight:800;">2. Estancias en Riad (30-40%)</h4>
+          <p style="font-size:13.5px; line-height:1.6; color:#555; margin:0;">Los históricos riads marroquíes con patios interiores, jardines con fuentes y terrazas en la azotea ofrecen lujo a precios accesibles. El desayuno está incluido casi siempre y consta de bollería recién hecha y zumo de naranja.</p>
+        </div>
+
+        <div style="background:#faf8f5; padding:22px; border:1px solid rgba(0,0,0,0.06); border-radius:12px;">
+          <h4 style="margin:0 0 8px; font-size:16px; font-weight:800;">3. Comedor y comida (15-20%)</h4>
+          <p style="font-size:13.5px; line-height:1.6; color:#555; margin:0;">Los tajines frescos, las pastillas, las ensaladas y el té de menta cuestan entre 8 y 20 euros por persona en los restaurantes de calidad de la medina. Las cenas de lujo en un palacio cuestan entre 40 y 80 €.</p>
+        </div>
+
+        <div style="background:#faf8f5; padding:22px; border:1px solid rgba(0,0,0,0.06); border-radius:12px;">
+          <h4 style="margin:0 0 8px; font-size:16px; font-weight:800;">4. Guías y consejos (5-10%)</h4>
+          <p style="font-size:13.5px; line-height:1.6; color:#555; margin:0;">Los guías oficiales de las medinas locales de Fez y Marrakech cuestan entre 30 y 50 € por medio día. Las propinas a los conductores oscilan entre 100 y 150 MAD (entre 10 y 15 euros) al día para una pareja.</p>
+        </div>
+      </div>
+
+      <div class="field-note-box">
+        <span style="font-family:'Inter', -apple-system, sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#8A6A23;">Anthony Bourdain Travel Philosophy</span>
+        <blockquote style="font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-style:italic; font-size:16px; line-height:1.65; color:#222; margin:8px 0 10px;">"Viajar no siempre es bonito. No siempre es cómodo. A veces duele, incluso te rompe el corazón. Pero está bien. El viaje te cambia; debería cambiarte. Deja marcas en tu memoria, en tu conciencia, en tu corazón y en tu cuerpo".</blockquote>
+        <div style="font-family:'Inter', -apple-system, sans-serif; font-size:12px; font-weight:600; color:#666;">— Roam Morocco Curators: Hamza &amp; Abdelhakim</div>
+      </div>
+    </section>
+
+    <!-- FAQS SECTION -->
+    <div class="faq-wrap">
+      <div style="text-align:center; margin-bottom:30px;">
+        <span style="font-family:'Inter', -apple-system, sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:#8A6A23;">Travel Budgeting Intelligence</span>
+        <h2 style="font-family:Helvetica, Arial, sans-serif; font-size:28px; font-weight:800; text-transform:uppercase; margin:8px 0;">Preguntas frecuentes</h2>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <h4 class="faq-question">¿Cuánto cuesta normalmente un viaje de 10 días a Marruecos?</h4>
+          <div class="faq-answer">
+            <p>Un viaje privado de 10 días a Marruecos, de gama media a lujo, suele costar entre <strong>€1100 y €1750 ($1200 a $1900 USD) por persona</strong> si dos viajeros comparten una habitación. Esto incluye un conductor privado dedicado de habla inglesa con un Prado ejecutivo 4x4 o minivan Mercedes, alojamiento auténtico en un riad boutique con desayuno, una carpa privada de lujo en Erg Chebbi con paseos en camello, guías autorizados de la medina, combustible y peajes de autopista.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-question">¿Es Marruecos caro para los turistas?</h4>
+          <div class="faq-answer">
+            <p>Marruecos ofrece un valor excepcional en comparación con Europa occidental o América del Norte. Una cena de alta calidad cuesta entre 8 y 20 € por persona, los magníficos riads históricos oscilan entre 50 y 140 € por noche y los chóferes privados cuestan entre 135 y 180 € por día con todo incluido. Puede experimentar hospitalidad de 5 estrellas y logística privada a una fracción de los precios europeos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-question">¿Cuál es el factor de coste más importante en unas vacaciones en Marruecos?</h4>
+          <div class="faq-answer">
+            <p>El transporte privado y el nivel de alojamiento son los dos principales factores que influyen en los costos. Debido a que Marruecos es geográficamente vasto (que abarca cadenas montañosas y extensiones desérticas), alquilar un 4x4 privado con un chofer autorizado representa la inversión principal en comodidad, seguridad y horarios flexibles.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h4 class="faq-question">¿Se aceptan ampliamente las tarjetas de crédito o necesito efectivo?</h4>
+          <div class="faq-answer">
+            <p>Si bien los riads de lujo, los restaurantes de lujo y las agencias de viajes aceptan Visa y Mastercard, Marruecos sigue siendo en gran medida una economía impulsada por el efectivo. El efectivo (Dirham marroquí - MAD) es esencial para comprar en los zocos, dar propinas, tomar cafés al borde de la carretera y puestos de artesanos locales. Los cajeros automáticos están disponibles en todas las ciudades importantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- E-E-A-T Curator Bio Card -->
+    <div class="roam-author-card" style="background:#ffffff; border:1px solid rgba(0,0,0,0.08); border-left:4px solid #C8A45C; border-radius:16px; padding:32px 28px; margin:48px 0; display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; box-shadow:0 4px 20px rgba(0,0,0,0.03);">
+      <div style="flex-shrink:0;">
+        <div style="width:72px; height:72px; border-radius:50%; background:#1a1a1a; display:flex; align-items:center; justify-content:center; color:#C8A45C; font-family:'Playfair Display', Georgia, serif; font-size:24px; font-weight:700; border:2px solid #C8A45C;">RM</div>
+      </div>
+      <div style="flex:1; min-width:260px;">
+        <span style="font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#8A6A23; font-family:'Inter', -apple-system, sans-serif; display:block; margin-bottom:6px;">Written &amp; Curated by Local Experts</span>
+        <h4 style="margin:0 0 8px; font-size:19px; font-weight:800; color:#000; font-family:Helvetica, Arial, sans-serif;">Hamza y Abdelhakim <span style="font-weight:400; font-size:14px; color:#666;">— Cofundadores de Roam Marruecos Tours</span></h4>
+        <p style="margin:0 0 12px; font-size:14px; line-height:1.65; color:#444; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">Criados en Marrakech con raíces familiares de toda la vida que abarcaban el Alto Atlas y el Sahara, Hamza y Abdelhakim fundaron Roam Marruecos para rechazar el turismo comercial de masas. Junto con curadores de rutas nativos, diseñan expediciones 100% privadas y sin prisas que se centran en una auténtica inmersión cultural, precios transparentes y apoyo directo a las comunidades artesanales locales.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:16px; font-size:12px; font-weight:700; color:#000;">
+          <span><span style="color:#C8A45C;">✓</span> Ministry Licensed Tour Operators</span>
+          <span><span style="color:#C8A45C;">✓</span> Based in Marrakech Medina (40000)</span>
+          <a href="/es/about.html" style="color:#C8A45C; text-decoration:underline; font-weight:700;">Meet Our Team &amp; Philosophy &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Travel Toolkit -->
+    <div class="roam-toolkit-box">
+      <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+      <div class="roam-toolkit-grid">
+        <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+          <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+          <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+        </a>
+        <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+          <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+          <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+        </a>
+        <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+          <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+          <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+        </a>
+        <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+          <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+          <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
+    <!-- Signature Footer -->
+
+  <!-- Scripts -->
+  <script is:inline src="/js/trip-estimator.js?v=20260929" defer></script>
+</Layout>

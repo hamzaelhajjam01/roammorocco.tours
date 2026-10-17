@@ -1,0 +1,469 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Private Touren durch Marrakesch: Geführte Spaziergänge und Tagesausflüge durch die Medina";
+const description = "Erleben Sie Marrakesch im Luxus: private geführte Medina-Rundgänge, geheime Paläste, Majorelle-Gärten, Glamping in der Agafay-Wüste und Atlas-Tagesausflüge.";
+const canonical = "https://roammorocco.tours/de/destination-marrakech.html";
+const ogImage = "https://roammorocco.tours/img/dest-marrakech.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "Marrakech Medina & The Red City",
+      "description": "Morocco's vibrant imperial metropolis famous for Jemaa el-Fnaa square, opulent riads, artisan souks, and stunning backdrop of the snow-capped Atlas Mountains.",
+      "url": "https://roammorocco.tours/destination-marrakech.html",
+      "touristType": [
+        "Cultural Travelers",
+        "Luxury Vacationers",
+        "Couples",
+        "Culinary Explorers"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.6295,
+        "longitude": -7.9811
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "3-Day Curated Marrakech & Agafay Private Experience",
+      "description": "A tailored private experience featuring insider Medina walking tours, private chauffeur excursions to the Agafay stone desert, and lush High Atlas valleys.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do I need a private guide in the Marrakech Medina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The ancient Medina of Marrakech has over 9,000 alleys and a bustling souk culture. A licensed private guide shields you from aggressive street touts, takes you to authentic master artisans away from tourist shops, and reveals hidden historical riads and courtyards you would never find on your own."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far is the Agafay Desert from Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The Agafay stone desert is just 45 minutes south of Marrakech. It offers sweeping lunar hills, luxury desert camps, sunset camel rides, and fine dining under the stars without requiring a multi-day journey to the Sahara."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best day trips starting from Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The top private day trips from Marrakech are: (1) The High Atlas Mountains & Imlil Berber villages, (2) Essaouira on the Atlantic coast, (3) The Agafay Desert for sunset dinners, and (4) The cinematic UNESCO fortress of A\u00eft Benhaddou."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="de" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/de/index.html">Home</a> &nbsp;/&nbsp; <a href="/de/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>Marrakech</span>
+        </div>
+        <span class="dest-badge-tag">THE OCHRE CITY</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/dest-marrakech.jpg" alt="Marrakech Medina and Koutoubia Mosque" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Private Marrakesch-Touren: Geheimnisse der Medina, Paläste und darüber hinaus</h1>
+          <p class="dest-hero-subtitle">Gehen Sie an den Touristenmassen vorbei in ruhige, versteckte Riads, Meisterwerkstätten, botanische Gärten und die Mondwüste von Agafay mit einem erfahrenen privaten Gastgeber.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> 2 to 4 Days (Customizable)</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> Private Licensed Historian &amp; Chauffeur</span>
+        <span class="dest-metric-item">📍 <strong>Base:</strong> Handpicked Luxury Medina Riad</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- GEO & AEO Destination Fast Facts (BLUF) -->
+      <aside class="ai-quick-summary-card" aria-label="Marrakech Travel Fast Facts">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ MARRAKECH AT A GLANCE (QUICK SUMMARY)</span>
+          <span class="ai-summary-badge">The Ochre City Guide</span>
+        </div>
+        <p class="ai-summary-text"><strong>Marrakesch</strong> ist Marokkos lebendige Kulturhauptstadt, berühmt für seine Medina aus dem 12. Jahrhundert, die zum UNESCO-Weltkulturerbe gehört, den Bahia-Palast, die Saadier-Gräber und den Platz Djemaa el-Fna. Die ideale Besuchsdauer beträgt <strong>3 bis 4 Tage</strong> und kombiniert Spaziergänge durch die historische Medina mit kurzen Ausflügen in das Hohe Atlasgebirge (Ourika-Tal, 45 Min.) oder in die Agafay-Wüste (40 Min.). Roam Morocco bietet private, lizenzierte lokale Historikerführer, Riad-Transfers von Tür zu Tür und Tagesausflüge mit Mercedes-Chauffeur ohne Gruppentouristenfallen.</p>
+      </aside>
+
+      <!-- 2-Column Core Layout -->
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Marrakesch-Highlights und private Exklusivangebote</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>Insider-Rundgang durch die Medina:</strong> Entdecken Sie jahrhundertealte Geheimhöfe, den Bahia-Palast aus dem 19. Jahrhundert und die Saadier-Gräber mit einem lizenzierten Historiker.</li>
+              <li><strong>Meisterhandwerks-Souk-Begegnungen:</strong> Treffen Sie echte Holzarbeiter, Ledergerber und Kupferhandwerker ohne übermäßige Verkaufstaktiken.</li>
+              <li><strong>Jardin Majorelle & YSL Museum:</strong> VIP-Zugang ohne Anstehen zum Kobalt-Botanischen Garten von Jacques Majorelle und zum Haute-Couture-Archiv von Yves Saint Laurent.</li>
+              <li><strong>Abendessen bei Sonnenuntergang in der Agafay-Wüste:</strong> Private 45-minütige Fahrt in die Steinwüste für Dromedar-Kamelritte bei Sonnenuntergang und ein Nomadenfest bei Kerzenschein.</li>
+              <li><strong>Tagesausflüge in den Hohen Atlas:</strong> Optionaler Tagesausflug ins malerische Ourika-Tal oder nach Imlil für frische Bergluft und traditionelle Berber-Hausmannskost.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>Erleben Sie Marrakesch ohne Stress</h2>
+            <p>Marrakesch ist eine berauschende Sinnesexplosion: der Duft von Zedernholz und Orangenblüten, der Ruf zum Gebet, der vom Koutoubia-Minarett aus dem 12. Jahrhundert widerhallt, und das mitreißende Theater auf dem Platz Djemaa el-Fnaa. Doch für viele Erstreisende kann die alleinige Navigation durch die Medina überwältigend sein.</p>
+            <p>Unser Ansatz verwandelt Ihren Aufenthalt in Marrakesch von chaotisch in mühelos. Wir bringen Sie mit einem wortgewandten, lizenzierten lokalen Gastgeber zusammen, der innerhalb der Medina-Mauern aufgewachsen ist. Sie gehen in Ihrem persönlichen Rhythmus und lernen die tiefgreifende islamische Architektur und das jüdische Mellah-Erbe kennen, die den meisten Touristen völlig entgehen.</p>
+            
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">„Marrakesch ist eine Stadt mit verborgenen Innenräumen. Die rauen Lehmwände an der Außenseite lassen nichts von den atemberaubenden Marmorbrunnen und duftenden Zellige-Innenhöfen erahnen, die sich direkt hinter den Türen aus Zedernholz verstecken.“</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO MEDINA JOURNAL</span>
+            </div>
+            
+            <p>Hinter den alten Mauern steht Ihnen unser privater Chauffeur in einem klimatisierten Executive-Fahrzeug zur Verfügung, um Sie zu den Palmeraie, den Kunststiftungen von Gueliz oder den mondähnlichen Dünen der Agafay-Wüste zu bringen, wo Sie Cocktails bei Sonnenuntergang genießen können.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Beispiel für eine dreitägige kuratierte Rundreise durch Marrakesch</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">KEINE HOTELVERPACKUNG</span></h3>
+
+            <!-- Day 1 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 01 // PALACES, MEDINA ALLEYS &amp; JEMAA EL-FNAA</span>
+              <h4 class="dest-day-title">Das kaiserliche Erbe und geheime Souks</h4>
+              <p class="dest-day-desc">Treffen Sie Ihren privaten, lizenzierten Reiseführer nach einem Frühstück auf dem Dach Ihres Riads. Erkunden Sie die atemberaubenden Zellige-Fliesen des Bahia-Palastes, die Saadier-Gräber aus dem 16. Jahrhundert und die historische jüdische Mellah. Schlendern Sie tiefer in die spezialisierten Handwerkerviertel – vom Färber-Souk bis zum Gewürzmarkt von Rahba Kedima. Genießen Sie Ihr Mittagessen auf einer exklusiven Terrasse im Innenhof, bevor Sie den Sonnenuntergang über dem Djemaa el-Fna genießen.</p>
+              <div class="dest-day-tags">
+                <span>Walking Tour: 4–5 Hours</span>
+                <span>Licensed Private Guide</span>
+                <span>Skip-the-Line Monument Entry</span>
+              </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 02 // BOTANICAL GARDENS &amp; AGAFAY DESERT SUNSET</span>
+              <h4 class="dest-day-title">Majorelle-Gärten → YSL-Museum → Agafay Luxury Camp</h4>
+              <p class="dest-day-desc">Ihr Chauffeur holt Sie um 09:30 Uhr zu einem morgendlichen Besuch des Jardin Majorelle und des Yves Saint Laurent Museums ab. Genießen Sie am Nachmittag Ihre Freizeit am Pool Ihres Riads oder in einem traditionellen marokkanischen Hamam. Um 16:00 Uhr fahren Sie 45 Minuten in die Mondwüste Agafay. Machen Sie einen Kamelritt bei Sonnenuntergang über Steindünen, gefolgt von feinem Essen und akustischer Live-Berbermusik unter dem Sternbild Sahara.</p>
+              <div class="dest-day-tags">
+                <span>Private Mercedes Chauffeur</span>
+                <span>Agafay Desert 4x4 Excursion</span>
+                <span>Sunset Dinner Included</span>
+              </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">DAY 03 // HIGH ATLAS FOOTHILLS &amp; BERBER CULTURE</span>
+              <h4 class="dest-day-title">Ourika-Tal und Setti-Fatma-Wasserfälle ODER Abreise</h4>
+              <p class="dest-day-desc">Entfliehen Sie der Hitze der Stadt auf einer malerischen einstündigen Fahrt in die Ausläufer des Hohen Atlas. Folgen Sie dem rauschenden Fluss Ourika, erkunden Sie terrassenförmig angelegte Walnussplantagen und besuchen Sie ein traditionelles Berberfamilienhaus, um frischen Minztee und hausgemachtes Brot mit Olivenöl und Honig zu genießen. Am späten Nachmittag kehren Sie nach Marrakesch zurück, um in den Boutiquen einzukaufen oder einen reibungslosen Transfer zum Flughafen zu genießen.</p>
+              <div class="dest-day-tags">
+                <span>Scenic Mountain Drive: 1 Hour</span>
+                <span>Traditional Berber Tea Experience</span>
+                <span>Airport Drop-Off Ready</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">Was in Ihrem privaten Marrakesch-Paket enthalten ist</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INKLUSIVE</h4>
+                <ul class="dest-inc-list">
+                  <li>Lizenzierter englischsprachiger historischer Reiseführer für Marrakesch</li>
+                  <li>Eigener privater, klimatisierter Transport und Fahrer</li>
+                  <li>Einlass ohne Anstehen zu Denkmälern (Bahia, Saadier-Gräber)</li>
+                  <li>Privater Hin- und Rücktransfer zur Agafay-Wüste und Abendessen bei Sonnenuntergang</li>
+                  <li>Kostenlose Abholung vom Flughafen und Riad-Gepäckunterstützung</li>
+                  <li>Insider-Empfehlungen für geprüfte Riads und Restaurants</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NICHT ENTHALTEN</h4>
+                <ul class="dest-exc-list">
+                  <li>Zeitgesteuerte Eintrittskarten für den Jardin Majorelle (auf Anfrage im Voraus buchbar)</li>
+                  <li>Mittagsessen und persönlicher Alkohol</li>
+                  <li>Ermessensbezogene Trinkgelder für Reiseleiter, Fahrer und Riad-Mitarbeiter</li>
+                  <li>Persönliche Spa-/Hammam-Behandlungen</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Häufig gestellte Fragen: Private Touren durch Marrakesch</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Wie viele Tage sollte ich in Marrakesch verbringen?</h4>
+              <div class="dest-faq-a">
+                <p>Wir empfehlen mindestens 3 volle Tage. Dies ermöglicht einen ganzen Tag für die antike Medina und die historischen Paläste, einen Tag für das moderne Marrakesch (Majorelle, Gueliz) und den Sonnenuntergang in der Agafay-Wüste sowie einen Tag für einen erfrischenden Tagesausflug in das Hohe Atlasgebirge oder nach Essaouira.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Ist es sicher, nachts durch Marrakesch zu laufen?</h4>
+              <div class="dest-faq-a">
+                <p>Ja. Marrakesch ist im Allgemeinen sehr sicher und Djemaa el-Fnaa erwacht nach Einbruch der Dunkelheit mit Familien, Musikern und Essensständen zum Leben. Die Hauptverkehrsstraßen sind gut beleuchtet und stark bewacht. Wie an jedem größeren Reiseziel sollten Sie Ihre Sachen in überfüllten Gegenden griffbereit aufbewahren.</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">Können wir diese Tour so anpassen, dass sie Kochkurse oder einen Hamam beinhaltet?</h4>
+              <div class="dest-faq-a">
+                <p>Absolut. Jede von uns zusammengestellte Reiseroute ist zu 100 % maßgeschneidert. Wir können problemlos einen authentischen kulinarischen Riad-Meisterkurs, ein luxuriöses königliches Hamam-Ritual oder frühmorgendliche Fahrten mit dem Heißluftballon über die Wüstenebenen arrangieren.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="Marrakech & Agafay Desert Private Tour"
+               data-price-1-4="140"
+               data-price-5-7="180"
+               data-price-8-12="240"
+               data-tour-sub="Private luxury chauffeur · Sunset camel ride &amp; Berber dinner">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Private Tour durch Marrakesch und die Agafay-Wüste</h3>
+            <p class="dest-prelocked-sub">Privater Luxus-Chauffeur · Kamelritt bei Sonnenuntergang und Berber-Abendessen</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCityMarrakech">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityMarrakech">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
+                  <option value="Marrakech (Gueliz / City)">Marrakech (Gueliz / City)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateMarrakech">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateMarrakech">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">140€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Inklusive engagiertem Chauffeur, Treibstoff, Kamelritt bei Sonnenuntergang, marokkanischem Tajine-Abendessen und Lagerfeuer.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 140€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const guests = (document.getElementById('groupSize')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName,
+        pickup: tourName,
+        date: dates,
+        passengers: guests,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about the ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (dates ? `📅 Travel Dates: ${dates}\n` : '') +
+        (guests ? `👥 Group Size: ${guests}\n` : '') +
+        (notes ? `📝 Special Requests: ${notes}\n` : '') +
+        `\nCan you please confirm availability and send a detailed itinerary proposal?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our Marrakech team. We will review riad and route availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Marrakech &amp; Agafay Private Tour</div>
+      <div class="smt-price">From <span class="smt-price-num">140€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Marrakech%20&%20Agafay%20Desert%20Private%20Tour." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

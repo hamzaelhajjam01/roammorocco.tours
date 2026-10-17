@@ -1,0 +1,458 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Visitas privadas a Ait Benhaddou: Kasbah de la UNESCO y estudios Atlas";
+const description = "Excursiones privadas de un día desde Marrakech a los estudios de cine Ksar Ait Benhaddou y Ouarzazate de la UNESCO. cruz tizi n";
+const canonical = "https://roammorocco.tours/es/destination-ait-benhaddou.html";
+const ogImage = "https://roammorocco.tours/img/tour_cinema_ait_benhaddou.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css?v=20261012_sticky2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "TouristDestination",
+      "name": "Ksar of A\u00eft Benhaddou & Ouarzazate",
+      "description": "Morocco's most celebrated UNESCO World Heritage earthen clay fortress and the cinema capital of North Africa, located along the historic caravan route between the Sahara and Marrakech.",
+      "url": "https://roammorocco.tours/destination-ait-benhaddou.html",
+      "touristType": [
+        "Film Fans",
+        "History Enthusiasts",
+        "Photographers",
+        "Architecture Lovers"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 31.047,
+        "longitude": -7.1318
+      }
+    },
+    {
+      "@type": "TouristTrip",
+      "name": "Private A\u00eft Benhaddou & Ouarzazate Day Excursion from Marrakech",
+      "description": "A full-day private journey over the Tizi n'Tichka pass to tour Ksar A\u00eft Benhaddou with a certified local guide, explore Atlas Film Studios, and visit Telouet Kasbah.",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "telephone": "+212653506441"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you visit A\u00eft Benhaddou as a day trip from Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! The drive takes approximately 3.5 to 4 hours each way across the High Atlas Mountains via the scenic Tizi n'Tichka pass. Departing Marrakech at 08:00 AM gives you ample time to explore the Ksar with a certified local guide, enjoy lunch with fortress views, and visit Ouarzazate or Telouet before returning by evening."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What movies were filmed at A\u00eft Benhaddou and Ouarzazate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A\u00eft Benhaddou and the nearby Atlas Film Studios have served as the backdrop for iconic films including Gladiator, Game of Thrones (Yunkai), Lawrence of Arabia, The Mummy, Babel, Kingdom of Heaven, and Prince of Persia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the road through Tizi n'Tichka safe and paved?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The national highway (N9) through the Tizi n'Tichka pass has been completely widened and modernized with safety barriers. Our professional Berber chauffeurs are intimately familiar with every mountain curve, ensuring a smooth and scenic ride."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout lang="es" title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <main class="dest-itinerary-main">
+    <div class="dest-container">
+
+      <!-- Breadcrumbs & Badge -->
+      <div class="dest-kicker-bar">
+        <div class="dest-breadcrumb">
+          <a href="/es/index.html">Home</a> &nbsp;/&nbsp; <a href="/es/destinations.html">Destinations</a> &nbsp;/&nbsp; <span>Aït Benhaddou</span>
+        </div>
+        <span class="dest-badge-tag">UNESCO WORLD HERITAGE</span>
+      </div>
+
+      <!-- Hero Banner -->
+      <div class="dest-hero">
+        <img src="/img/tour_cinema_ait_benhaddou.jpg" alt="Ksar Aït Benhaddou Ancient Fortress and Ounila Valley" class="dest-hero-img">
+        <div class="dest-hero-overlay">
+          <h1 class="dest-hero-title">Tours privados a Aït Benhaddou y Ouarzazate</h1>
+          <p class="dest-hero-subtitle">Cruce los picos del Alto Atlas a través de Tizi n'Tichka para explorar las antiguas torres de tierra de Ksar Aït Benhaddou, el palacio Glaoui de Telouet y los escenarios de películas de Hollywood de Ouarzazate.</p>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="dest-metrics-bar">
+        <span class="dest-metric-item">⏱ <strong>Duration:</strong> Full Day Excursion or 2-Day Overnight</span>
+        <span class="dest-metric-item">🛡 <strong>Style:</strong> Private Executive 4x4 Chauffeur &amp; Guide</span>
+        <span class="dest-metric-item">📍 <strong>Departure:</strong> Marrakech (Door-to-Door Riad Pickup)</span>
+        <span class="dest-metric-item">⭐ <strong>Rating:</strong> 5.0 / 5.0 (985 Verified Reviews)</span>
+      </div>
+
+      <!-- 2-Column Core Layout -->
+            <!-- GEO & AEO Destination Fast Facts (BLUF) -->
+      <aside class="ai-quick-summary-card" aria-label="Ait Benhaddou Fast Facts">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ AÏT BENHADDOU AT A GLANCE (QUICK SUMMARY)</span>
+          <span class="ai-summary-badge">UNESCO World Heritage</span>
+        </div>
+        <p class="ai-summary-text"><strong>Aït Benhaddou</strong> es el pueblo fortificado de tierra (Ksar) más emblemático de Marruecos, reconocido por la UNESCO desde 1987. Situado a lo largo de la histórica ruta de caravanas del valle de Ounila, a 3,5 horas al sur de Marrakech a través del paso de Tizi n'Tichka, ha servido como escenario cinematográfico viviente para <em>Gladiador</em>, <em>Juego de Tronos</em> y <em>Lawrence de Arabia</em>. Se explora mejor en una excursión privada de un día o como la Noche 1 de una expedición privada de varios días al desierto del Sahara.</p>
+      </aside>
+
+      <div class="dest-layout-grid">
+
+        <!-- Left Main Column -->
+        <div class="dest-content-col">
+
+          <!-- Highlights Callout Box -->
+          <div class="dest-highlights-box">
+            <h2 class="dest-highlights-title">⚡ Aspectos destacados de Aït Benhaddou y ventajas privadas</h2>
+            <ul class="dest-highlights-list">
+              <li><strong>UNESCO Ksar Aït Benhaddou:</strong> Exploración guiada privada de la fortaleza de arcilla del siglo XI con un residente auténtico que creció dentro de las murallas.</li>
+              <li><strong>Paso alto de Tizi n'Tichka (2260 m):</strong> Espectacular y sinuosa carretera de montaña que atraviesa el paso más alto del norte de África con paradas panorámicas privadas.</li>
+              <li><strong>Atlas Film Studios:</strong> recorra escenarios de películas a gran escala de palacios egipcios, arenas romanas y ciudades bíblicas en el Hollywood de África.</li>
+              <li><strong>Kasbah Telouet escondida:</strong> Descubra el decadente pero opulento palacio de Thami El Glaoui escondido en el escondido valle de Ounila.</li>
+              <li><strong>Azafrán y cerámica artesanal:</strong> deténgase en auténticas cooperativas rurales de mujeres bereberes, lejos de las trampas comerciales de souvenirs.</li>
+            </ul>
+          </div>
+
+          <!-- Deep Narrative Overview -->
+          <div class="dest-narrative">
+            <h2>La puerta cinematográfica al Sahara</h2>
+            <p>El Ksar de Aït Benhaddou, que se eleva como un monumental castillo de arena a orillas del río Ounila, es posiblemente la maravilla arquitectónica más espectacular de Marruecos. Construidas a lo largo de la ruta de las caravanas transaharianas que transportaban oro, marfil y sal desde Tombuctú a Marrakech, sus torres de vigilancia de arcilla roja y sus graneros fortificados han estado en pie durante casi mil años.</p>
+            <p>Debido a su impecable conservación, los directores de Hollywood se enamoraron de él hace décadas. Cuando cruzas las piedras del río hacia sus callejones laberínticos con nuestro guía local, caminas por los caminos exactos donde Russell Crowe luchó en <em>Gladiator</em> y Daenerys Targaryen liberó a Yunkai en <em>Juego de Tronos</em>.</p>
+            
+            <div style="background:#faf8f5;border:1px solid rgba(0,0,0,0.06);border-left:4px solid var(--gold,#C8A45C);border-radius:16px;padding:24px;margin:24px 0;">
+              <p style="font-style:italic;margin:0 0 8px;font-size:15px;color:#333;">"Estar en lo alto de la antigua torre del granero de Aït Benhaddou con las colinas rojas del desierto que se alejan hacia el Sahara es un encuentro con la historia cinematográfica pura."</p>
+              <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#8A6A23;">— ROAM MOROCCO CINEMA EXPEDITIONS</span>
+            </div>
+            
+            <p>Nuestro 4x4 privado le permitirá evitar la ruta estándar de autobús y tomar la espectacular y secreta carretera de montaña que atraviesa el valle de Ounila, visitando el ruinoso palacio de Telouet antes de que llegue la multitud.</p>
+          </div>
+
+          <!-- Day-by-Day Detailed Itinerary -->
+          <div class="dest-itinerary-timeline">
+            <h3 class="dest-itinerary-header"><span>Itinerario de día completo en Aït Benhaddou y cine</span>
+              <span style="font-size:11px;font-family:'Inter',sans-serif;font-weight:700;letter-spacing:0.06em;color:#8A6A23;background:rgba(200,164,92,0.12);border:1px solid rgba(200,164,92,0.28);padding:4px 12px;border-radius:999px;">VIAJE PRIVADO DE UN DÍA A MARRAKECH</span></h3>
+
+            <!-- Timeline -->
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">08:00 AM // OVER THE TIZI N'TICHKA PASS</span>
+              <h4 class="dest-day-title">Marrakech → Cumbre del Alto Atlas → Valle de Ounila</h4>
+              <p class="dest-day-desc">Su chófer privado le recibirá en su riad en un 4x4 ejecutivo. Ascienda al Alto Atlas por la autopista Tizi n'Tichka recientemente renovada. Haga una pausa a 2260 metros para ver fotografías impresionantes de asentamientos bereberes en terrazas aferrados a los bordes de los acantilados. Dirígete a la pintoresca carretera del cañón del valle de Ounila.</p>
+              <div class="dest-day-tags">
+                <span>Distance: 180 km</span>
+                <span>Scenic High Pass (2,260m)</span>
+                <span>Air-Conditioned Executive 4x4</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">11:30 AM // GUIDED EXPLORATION OF THE KSAR</span>
+              <h4 class="dest-day-title">Visita a pie por Ksar Aït Benhaddou y almuerzo en el valle</h4>
+              <p class="dest-day-desc">Conozca a su guía local certificado en Aït Benhaddou. Cruce el sendero del río y ascienda pasando por los tradicionales pintores de azafrán hasta la cima de la colina Agadir (granero comunitario fortificado). Aprenda sobre las técnicas de construcción de adobe presahariana. Luego, disfrute del almuerzo en una terraza panorámica con vista a las torres de arcilla.</p>
+              <div class="dest-day-tags">
+                <span>Certified Local Guide</span>
+                <span>UNESCO World Heritage Site</span>
+                <span>Panoramic Kasbah Lunch</span>
+              </div>
+            </div>
+
+            <div class="dest-day-card">
+              <span class="dest-day-kicker">02:30 PM // OUARZAZATE CINEMA STUDIOS &amp; RETURN</span>
+              <h4 class="dest-day-title">Atlas Film Studios O Palacio Telouet → Marrakech</h4>
+              <p class="dest-day-desc">Conduzca 25 minutos hasta Ouarzazate para recorrer los amplios escenarios de cine de CLA y Atlas Studios, o explore las ornamentadas salas zellige de Telouet Kasbah. Comience un cómodo viaje de regreso a través del Atlas y llegue a su riad en Marrakech a tiempo para la cena.</p>
+              <div class="dest-day-tags">
+                <span>Movie Sets &amp; Filming Locations</span>
+                <span>Telouet Palace Alternative</span>
+                <span>Drop-off by 18:30</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusions & Exclusions Checklist -->
+          <div class="dest-inclusions-card">
+            <h3 style="font-family:Helvetica,Arial,sans-serif;font-size:22px;font-weight:800;text-transform:uppercase;margin:0 0 20px;">Qué está incluido en su recorrido por Aït Benhaddou</h3>
+            <div class="dest-inclusions-grid">
+              <div class="dest-inc-col">
+                <h4 style="color:#25D366;">✔ INCLUIDO</h4>
+                <ul class="dest-inc-list">
+                  <li>Ejecutivo privado con aire acondicionado 4x4 o minivan con chofer.</li>
+                  <li>Todo el combustible, peajes y estacionamiento en autopistas de montaña.</li>
+                  <li>Guía local certificado de habla inglesa dentro de Aït Benhaddou</li>
+                  <li>Paradas fotográficas panorámicas flexibles en el paso de Tizi n'Tichka</li>
+                  <li>Recogida y regreso al riad puerta a puerta en Marrakech.</li>
+                  <li>Agua embotellada fría en el vehículo.</li>
+                </ul>
+              </div>
+              <div class="dest-inc-col">
+                <h4 style="color:#f10b18;">✕ NO INCLUIDO</h4>
+                <ul class="dest-exc-list">
+                  <li>Almuerzo (te llevamos a restaurantes con terraza panorámica examinados)</li>
+                  <li>Boleto de entrada a Atlas Film Studio (~80 MAD)</li>
+                  <li>Propinas discrecionales para conductor y guía local.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion -->
+          <div class="dest-faq-box">
+            <h3 class="dest-faq-title">Preguntas frecuentes: Tours en Aït Ben Haddou</h3>
+            
+            <div class="dest-faq-item active">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Está Aït Benhaddou de camino al desierto del Sahara?</h4>
+              <div class="dest-faq-a">
+                <p>¡Sí! Cada excursión de 3 o 4 días al desierto del Sahara desde Marrakech para en Aït Benhaddou el día 1. Si ya estás reservando nuestra Expedición al Desierto del Sahara, ¡esta visita se incluye automáticamente en tu ruta!</p>
+              </div>
+            </div>
+
+            <div class="dest-faq-item">
+              <h4 class="dest-faq-q" onclick="toggleFaq(this)">¿Podemos pasar la noche en Aït Benhaddou?</h4>
+              <div class="dest-faq-a">
+                <p>Sí. Pasar la noche en un riad boutique de barro con vistas a la fortaleza es una experiencia inolvidable. Puedes fotografiar la Kasbah al amanecer antes de que lleguen turistas o excursiones de un día desde Marrakech.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sticky Sidebar -->
+                <!-- Right Sticky Sidebar: Pre-Locked Route Card -->
+        <aside class="dest-sidebar-col">
+          <div class="dest-prelocked-widget"
+               data-tour-name="Ait Ben Haddou & Ouarzazate Kasbah Expedition"
+               data-price-1-4="150"
+               data-price-5-7="195"
+               data-price-8-12="260"
+               data-tour-sub="Tizi n'Tichka Atlas pass · UNESCO Ksar &amp; Atlas Film Studios">
+            
+            <div class="dest-prelocked-badge"><span>●</span> INSTANT DIRECT BOOKING</div>
+            <h3 class="dest-prelocked-title">Expedición a Ait Ben Haddou y Ouarzazate Kasbah</h3>
+            <p class="dest-prelocked-sub">Pase Tizi n'Tichka Atlas · Ksar de la UNESCO y Estudios de Cine Atlas</p>
+
+            <label class="dest-form-label" style="margin-bottom:6px;display:block;">Group Size &amp; Vehicle</label>
+            <div class="dest-tier-grid">
+              <button type="button" class="dest-tier-btn active" data-tier="1_4">
+                <span class="dest-tier-pax">1–4 Pax</span>
+                <span class="dest-tier-veh">Sedan / 4x4</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="5_7">
+                <span class="dest-tier-pax">5–7 Pax</span>
+                <span class="dest-tier-veh">VIP Van</span>
+              </button>
+              <button type="button" class="dest-tier-btn" data-tier="8_12">
+                <span class="dest-tier-pax">8–12 Pax</span>
+                <span class="dest-tier-veh">Minibus</span>
+              </button>
+            </div>
+
+            <div class="dest-prelocked-fields">
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="pickupCityAitBenhaddou">Departure City</label>
+                <select class="dest-form-select dest-prelocked-city" id="pickupCityAitBenhaddou">
+                  <option value="Marrakech (Medina / Riad)" selected>Marrakech (Medina / Riad)</option>
+                  <option value="Marrakech (Palmeraie)">Marrakech (Palmeraie)</option>
+                </select>
+              </div>
+
+              <div class="dest-form-field">
+                <label class="dest-form-label" for="travelDateAitBenhaddou">Approx. Travel Date</label>
+                <input class="dest-form-input dest-prelocked-date" type="date" id="travelDateAitBenhaddou">
+              </div>
+            </div>
+
+            <div class="dest-prelocked-price-box">
+              <div class="dest-prelocked-price-num">150€</div>
+              <span class="dest-prelocked-price-sub">Total private group price (not per person)</span>
+              <p class="dest-prelocked-price-note">Incluye vehículo privado y chofer, cruce del paso Tizi n'Tichka, visita a la Kasbah de la UNESCO y estudios de cine.</p>
+            </div>
+
+            <a href="#" class="dest-prelocked-wa-btn">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+              <span>Book via WhatsApp <span class="dest-prelocked-btn-price">— 150€</span></span>
+            </a>
+
+            <div class="dest-prelocked-trust">
+              <span>🛡 <strong>100% Private:</strong> Dedicated vehicle &amp; local Berber driver.</span>
+              <span>⚡ <strong>Fast Confirmation:</strong> Operations team replies &lt; 10 mins.</span>
+              <span>🇲🇦 <strong>Zero Deposit:</strong> No upfront deposit needed to check dates.</span>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+    <!-- Signature Footer -->
+
+  <script is:inline>
+    
+    function scrollToBookingForm(e) {
+      if (e) e.preventDefault();
+      const formBox = document.querySelector('.dest-booking-widget') || document.querySelector('.dest-sidebar-col');
+      if (formBox) {
+        const yOffset = -80;
+        const y = formBox.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+        setTimeout(() => {
+          const input = document.getElementById('clientName');
+          if (input) input.focus();
+        }, 500);
+      }
+    }
+
+    function scrollToTop(e){ if(e) e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+
+    function onScroll(){
+      const currentY = window.scrollY;
+      const topEl = document.querySelector(".top");
+      if(topEl){
+        if(currentY < 70){
+          topEl.classList.add("at-top");
+          topEl.classList.remove("at-bottom");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-dark-bg.png';
+        } else {
+          topEl.classList.add("at-bottom");
+          topEl.classList.remove("at-top");
+          const logo = document.getElementById('navLogo');
+          if(logo) logo.src = 'img/logo-for-light-bg.png';
+        }
+      }
+    }
+    addEventListener("scroll", onScroll, {passive: true});
+    onScroll();
+
+    function toggleFaq(btn){
+      const item = btn.closest('.dest-faq-item');
+      if(item) item.classList.toggle('active');
+    }
+
+    const burgerBtn = document.getElementById('burgerBtn');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    if(burgerBtn && mobileDrawer){
+      burgerBtn.addEventListener('click', function(e){
+        e.stopPropagation();
+        mobileDrawer.classList.toggle('open');
+      });
+      document.addEventListener('click', function(e){
+        if(!mobileDrawer.contains(e.target) && !burgerBtn.contains(e.target)){
+          mobileDrawer.classList.remove('open');
+        }
+      });
+    }
+    function closeDrawer(){
+      if(mobileDrawer) mobileDrawer.classList.remove('open');
+    }
+
+    async function handleInquirySubmit(e, tourName){
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]') || form.querySelector('.dest-submit-btn');
+      
+      const name = (document.getElementById('clientName')?.value || '').trim();
+      const email = (document.getElementById('clientEmail')?.value || '').trim();
+      const phone = (document.getElementById('clientPhone')?.value || '').trim();
+      const dates = (document.getElementById('travelDates')?.value || '').trim();
+      const style = (document.getElementById('tourStyle')?.value || '').trim();
+      const notes = (document.getElementById('notes')?.value || '').trim();
+
+      const payload = {
+        name: name,
+        email: email,
+        phone: phone,
+        service: tourName + (style ? ` (${style})` : ''),
+        pickup: 'Marrakech / Ouarzazate',
+        vehicle: style,
+        date: dates,
+        notes: notes,
+        source: window.location.pathname
+      };
+
+      const waMsg = `Salam Roam Morocco! I would like to inquire about an ${tourName}:\n\n` +
+        `👤 Name: ${name}\n` +
+        `✉️ Email: ${email}\n` +
+        `📱 WhatsApp: ${phone}\n` +
+        (style ? `🏛 Tour Format: ${style}\n` : '') +
+        (dates ? `📅 Travel Date: ${dates}\n` : '') +
+        (notes ? `📝 Notes: ${notes}\n` : '') +
+        `\nCan you please confirm guide availability and send a detailed proposal?`;
+      
+      const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Submitting Request...';
+      }
+
+      let statusBox = document.getElementById('destFormStatus');
+      if (!statusBox) {
+        statusBox = document.createElement('div');
+        statusBox.id = 'destFormStatus';
+        statusBox.className = 'dest-form-status';
+        form.appendChild(statusBox);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          event_category: 'conversion',
+          event_label: tourName,
+          value: 200,
+          currency: 'EUR'
+        });
+      }
+
+      try {
+        await fetch('send-quote.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `<strong>✓ Proposal Request Dispatched!</strong>Thank you, ${name}. Your inquiry for <strong>${tourName}</strong> has been sent to our team. We will check guide and vehicle availability and email you at <strong>${email}</strong> within 30 minutes.<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Chat with Local Specialist on WhatsApp &rarr;</a>`;
+
+        if (submitBtn) {
+          submitBtn.textContent = '✓ REQUEST SENT TO OPERATIONS';
+          submitBtn.style.background = '#16a34a';
+          submitBtn.style.borderColor = '#16a34a';
+        }
+
+        setTimeout(() => {
+          window.open(waUrl, '_blank');
+        }, 1000);
+
+      } catch (err) {
+        statusBox.style.display = 'block';
+        statusBox.innerHTML = `Connecting directly to our Marrakech WhatsApp desk...<br><a href="${waUrl}" target="_blank" rel="noopener" class="dest-status-wa"><img src="/img/whatsapp-logo.png" alt="WhatsApp"> Open WhatsApp &rarr;</a>`;
+        window.open(waUrl, '_blank');
+      }
+    }
+  </script>
+
+  <!-- Sticky Mobile Tour Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Ait Ben Haddou &amp; Kasbahs</div>
+      <div class="smt-price">From <span class="smt-price-num">150€</span> <span>per vehicle</span></div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%20Ait%20Ben%20Haddou%20&%20Ouarzazate%20Kasbah%20Expedition." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Book on WhatsApp</span>
+    </a>
+  </div>
+</Layout>

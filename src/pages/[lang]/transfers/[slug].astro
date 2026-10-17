@@ -1,0 +1,1345 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import routesFr from '../../../data/routes-fr.json';
+import routesEs from '../../../data/routes-es.json';
+import routesDe from '../../../data/routes-de.json';
+import routesIt from '../../../data/routes-it.json';
+
+export async function getStaticPaths() {
+  const dataset = {
+    fr: routesFr,
+    es: routesEs,
+    de: routesDe,
+    it: routesIt
+  };
+
+  const paths = [];
+  for (const [lang, routes] of Object.entries(dataset)) {
+    for (const route of routes) {
+      paths.push({
+        params: { lang, slug: route.slug },
+        props: { lang, route }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { lang, route } = Astro.props;
+
+const canonical = `https://roammorocco.tours/${lang}/transfers/${route.slug}.html`;
+const ogImage = "https://roammorocco.tours/images/morocco_private_driver.webp";
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": route.h1,
+    "description": route.seoDescription,
+    "url": canonical,
+    "inLanguage": lang,
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".quick-answer-text", ".route-hero-title", ".faq-a"]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": lang === 'fr' ? 'Accueil' : lang === 'es' ? 'Inicio' : lang === 'de' ? 'Startseite' : 'Home',
+        "item": `https://roammorocco.tours/${lang}/`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": lang === 'fr' ? 'Transferts' : lang === 'es' ? 'Traslados' : lang === 'de' ? 'Transfers' : 'Trasferimenti',
+        "item": `https://roammorocco.tours/${lang}/transfers.html`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": `${route.from} → ${route.to}`,
+        "item": canonical
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": ["Service", "Product"],
+    "name": `${route.h1}`,
+    "description": route.seoDescription,
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441"
+    },
+    "brand": {
+      "@type": "Brand",
+      "name": "Roam Morocco Tours"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": route.price_sedan.toString(),
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01",
+      "priceValidUntil": "2027-12-31",
+      "url": canonical
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "985",
+      "reviewCount": "985"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": route.faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.a
+      }
+    }))
+  }
+];
+
+// Localized UI dictionary
+const i18n = {
+  fr: {
+    home: "ACCUEIL",
+    transfers: "TRANSFERTS",
+    badge: "TRANSPORT TOURISTIQUE AGRÉÉ · TARIFS FIXES",
+    subtitle: `Service de chauffeur privé direct porte-à-porte entre ${route.from} et ${route.to}. Profitez d'un trajet confortable, sans précipitation, avec un chauffeur professionnel, une flotte climatisée et sans frais cachés de péage ou de bagages.`,
+    driveTime: "TEMPS DE TRAJET",
+    distance: "DISTANCE",
+    startingAt: "À PARTIR DE",
+    corridor: "AXE ROUTIER",
+    bookWa: `Réserver via WhatsApp (€${route.price_sedan})`,
+    viewFleet: "Voir les Véhicules & Tarifs ↓",
+    glanceTag: "⚡ APERÇU DE L'ITINÉRAIRE",
+    verifiedPricing: "Tarifs Officiels",
+    bluf: `Un transfert privé de ${route.from} à ${route.to} s'étend sur environ ${route.distance} via ${route.highway} avec une durée estimée à ${route.duration}. Tarifs fixes avec chauffeur privé à partir de €${route.price_sedan} pour une berline confort (1–4 passagers) et €${route.price_van} pour un minivan exécutif (5–7 passagers). Chaque réservation inclut un chauffeur agréé, tous les péages autoroutiers, le carburant, l'assurance passagers, sièges auto gratuits et accueil personnalisé porte-à-porte.`,
+    ratesKicker: "TARIFS TRANSPARENTS GARANTIS",
+    chooseVehicle: "Choisissez Votre Véhicule Privé",
+    ratesDesc: "Tarif fixe par véhicule (non par personne). Inclut carburant, péages autoroutiers, parking et bagages.",
+    tier1Badge: "IDÉAL POUR LES COUPLES",
+    tier1Title: "Berline Confort",
+    tier1Desc: "Parfait pour voyageurs solos, couples ou petites familles avec bagages standards.",
+    cashToDriver: "total · paiement au chauffeur",
+    tier1Features: [
+      "1 à 4 Passagers",
+      "Jusqu'à 3 grandes valises",
+      "Climatisation bi-zone",
+      "Chauffeur professionnel agréé",
+      "Prise en charge porte-à-porte hôtel/riad",
+      "Sièges bébé ou rehausseurs gratuits"
+    ],
+    bookSedan: `Réserver Berline (€${route.price_sedan})`,
+    tier2Badge: "LE PLUS DEMANDÉ · GRAND CONFORT",
+    tier2Title: "Minivan Mercedes-Benz",
+    tier2Desc: "Minivan spacieux exécutif (Vito / Classe V) pour familles et petits groupes.",
+    tier2Features: [
+      "5 à 7 Passagers",
+      "Jusqu'à 7 grandes valises",
+      "Sièges cuir exécutifs & vitres teintées",
+      "Suspension confortable pour longs trajets",
+      "Bouteilles d'eau minérale & chargeurs",
+      "Suivi de vol en direct inclus"
+    ],
+    bookVan: `Réserver Minivan (€${route.price_van})`,
+    tier3Badge: "GROUPES & SÉMINAIRES",
+    tier3Title: "Minibus Privé (Mercedes Sprinter)",
+    tier3Desc: "Grand confort de groupe avec soute à bagages panoramique séparée.",
+    tier3Features: [
+      "8 à 12+ Passagers",
+      "12+ grandes valises + bagages cabine",
+      "Cabine haute avec allée centrale",
+      "Climatisation dédiée pour chaque rangée",
+      "Idéal pour réunions de famille ou retraites",
+      "Chauffeur ponctuel et attentionné"
+    ],
+    bookMinibus: `Réserver Minibus (€${route.price_minibus})`,
+    expectKicker: "EXPÉRIENCE DU VOYAGE",
+    expectTitle: `Votre Trajet Privé de ${route.from} à ${route.to}`,
+    expectDesc: `En réservant votre transfert privé avec Roam Morocco, vous évitez le stress des gares routières et des taxis partagés. Votre chauffeur agréé vous accueille directement à la porte de votre riad, à l'hôtel ou au terminal de l'aéroport avec une pancarte personnalisée.`,
+    highlightsTitle: "Points Forts & Inclusions du Trajet",
+    trust1Title: "01. Zéro Prépaiement",
+    trust1Desc: "Payez en espèces à votre chauffeur à l'arrivée.",
+    trust2Title: "02. Annulation Gratuite",
+    trust2Desc: "Modifiez ou annulez sans frais jusqu'à 24h avant.",
+    trust3Title: "03. Suivi des Vols en Direct",
+    trust3Desc: "Votre chauffeur attend sans aucun supplément de retard.",
+    conciergeTitle: "Besoin d'un itinéraire sur mesure ou aller-retour ?",
+    conciergeDesc: "Échangez directement avec notre équipe locale à Marrakech. Réponse en moins de 10 minutes sur WhatsApp.",
+    avgResponse: "Temps de réponse moyen",
+    avgResponseSub: "Moins de 10 minutes sur WhatsApp",
+    licensedAgency: "Agence & Transport Touristique Agréé",
+    licensedAgencySub: "100% légal, assuré et professionnel",
+    ratingTitle: "Note Moyenne 5.0 / 5.0",
+    ratingSub: "985+ avis vérifiés dans le monde",
+    messageWa: "Discuter sur WhatsApp",
+    faqKicker: "RÉPONSES & CONSEILS",
+    faqTitle: "Questions Fréquentes",
+    faqDesc: `Tout ce que vous devez savoir pour votre transfert privé entre ${route.from} et ${route.to}.`,
+    readyKicker: "PRÊT À PARTIR ?",
+    readyTitle: `Réservez Votre Chauffeur Privé ${route.from} → ${route.to}`,
+    readyDesc: `Tarif fixe garanti de €${route.price_sedan}. Aucune carte bancaire requise aujourd'hui — payez votre chauffeur à bord.`,
+    instantWa: `Réservation Instantanée WhatsApp (€${route.price_sedan}) →`,
+    waGreeting: `Salam Roam Morocco! Je souhaite réserver un transfert privé de ${route.from} à ${route.to} (${route.price_sedan}€).`
+  },
+  es: {
+    home: "INICIO",
+    transfers: "TRASLADOS",
+    badge: "TRANSPORTE TURÍSTICO AUTORIZADO · TARIFAS FIJAS",
+    subtitle: `Servicio de chófer privado directo puerta a puerta entre ${route.from} y ${route.to}. Disfrute de un viaje cómodo con un conductor profesional de habla hispana/inglesa, vehículos con aire acondicionado y sin cargos ocultos.`,
+    driveTime: "TIEMPO DE VIAJE",
+    distance: "DISTANCIA",
+    startingAt: "A PARTIR DE",
+    corridor: "ITINERARIO",
+    bookWa: `Reservar por WhatsApp (€${route.price_sedan})`,
+    viewFleet: "Ver Vehículos y Tarifas ↓",
+    glanceTag: "⚡ RESUMEN DE LA RUTA",
+    verifiedPricing: "Tarifas Verificadas",
+    bluf: `Un traslado privado de ${route.from} a ${route.to} abarca aproximadamente ${route.distance} por ${route.highway} con un tiempo estimado de ${route.duration}. Tarifas fijas con chófer privado desde €${route.price_sedan} en sedán confort (1–4 pasajeros) y €${route.price_van} en minivan ejecutiva (5–7 pasajeros). Incluye conductor autorizado, peajes, combustible, seguro de pasajeros, sillas infantiles gratuitas y recogida puerta a puerta.`,
+    ratesKicker: "TARIFAS TRANSPARENTES GARANTIZADAS",
+    chooseVehicle: "Elija Su Vehículo Privado",
+    ratesDesc: "Precio fijo por vehículo (no por persona). Incluye combustible, peajes, estacionamiento y maletero.",
+    tier1Badge: "IDEAL PARA PAREJAS",
+    tier1Title: "Sedán Confort",
+    tier1Desc: "Ideal para viajeros solos, parejas o familias pequeñas con equipaje estándar.",
+    cashToDriver: "total · pago al conductor",
+    tier1Features: [
+      "1 a 4 Pasajeros",
+      "Hasta 3 maletas grandes",
+      "Climatización bizona",
+      "Chófer profesional autorizado",
+      "Recogida puerta a puerta en riad u hotel",
+      "Sillas de bebé o elevadores gratuitos"
+    ],
+    bookSedan: `Reservar Sedán (€${route.price_sedan})`,
+    tier2Badge: "MÁS POPULAR · MÁXIMO CONFORT",
+    tier2Title: "Minivan Mercedes-Benz",
+    tier2Desc: "Minivan ejecutiva espaciosa (Vito / Clase V) para familias y pequeños grupos.",
+    tier2Features: [
+      "5 a 7 Pasajeros",
+      "Hasta 7 maletas grandes",
+      "Asientos de piel ejecutivos y cristales tintados",
+      "Suspensión suave para viajes de larga distancia",
+      "Agua mineral embotellada y cargadores",
+      "Seguimiento de vuelo en tiempo real incluido"
+    ],
+    bookVan: `Reservar Minivan (€${route.price_van})`,
+    tier3Badge: "GRUPOS Y RETIROS",
+    tier3Title: "Minibús Privado (Mercedes Sprinter)",
+    tier3Desc: "Confort total para grupos con maletero panorámico independiente.",
+    tier3Features: [
+      "8 a 12+ Pasajeros",
+      "12+ maletas grandes + equipaje de mano",
+      "Cabina alta con pasillo central",
+      "Salidas de aire acondicionado en cada fila",
+      "Ideal para reuniones familiares o retiros",
+      "Conductor puntual y cortés"
+    ],
+    bookMinibus: `Reservar Minibús (€${route.price_minibus})`,
+    expectKicker: "EXPERIENCIA DEL VIAJE",
+    expectTitle: `Viaje Privado entre ${route.from} y ${route.to}`,
+    expectDesc: `Al reservar su traslado privado con Roam Morocco, evita las complicaciones de estaciones de autobuses y taxis colectivos. Su chófer autorizado le esperará directamente en la puerta de su riad, hotel o terminal del aeropuerto con un cartel a su nombre.`,
+    highlightsTitle: "Puntos Destacados e Inclusiones",
+    trust1Title: "01. Sin Pago por Adelantado",
+    trust1Desc: "Pague en efectivo a su llegada a su conductor.",
+    trust2Title: "02. Cancelación Gratuita",
+    trust2Desc: "Cambie fechas o cancele sin cargo con 24h de aviso.",
+    trust3Title: "03. Seguimiento de Vuelo en Directo",
+    trust3Desc: "Su conductor espera sin suplementos por retraso.",
+    conciergeTitle: "¿Necesita un viaje a medida o de ida y vuelta?",
+    conciergeDesc: "Hable directamente con nuestro equipo en Marrakech. Respondemos en menos de 10 minutos por WhatsApp.",
+    avgResponse: "Tiempo medio de respuesta",
+    avgResponseSub: "Menos de 10 minutos por WhatsApp",
+    licensedAgency: "Agencia y Transporte Turístico Autorizado",
+    licensedAgencySub: "100% legal, asegurado y profesional",
+    ratingTitle: "Calificación 5.0 / 5.0",
+    ratingSub: "Más de 985 reseñas verificadas",
+    messageWa: "Contactar por WhatsApp",
+    faqKicker: "RESPUESTAS Y CONSEJOS",
+    faqTitle: "Preguntas Frecuentes",
+    faqDesc: `Todo lo que necesita saber sobre su traslado privado entre ${route.from} y ${route.to}.`,
+    readyKicker: "¿LISTO PARA VIAJAR?",
+    readyTitle: `Reserve su Chófer Privado ${route.from} → ${route.to}`,
+    readyDesc: `Tarifa fija garantizada desde €${route.price_sedan}. Sin necesidad de tarjeta hoy — pague directamente al conductor el día del viaje.`,
+    instantWa: `Reserva Instantánea WhatsApp (€${route.price_sedan}) →`,
+    waGreeting: `Salam Roam Morocco! Quisiera reservar un traslado privado de ${route.from} a ${route.to} (${route.price_sedan}€).`
+  },
+  de: {
+    home: "STARTSEITE",
+    transfers: "TRANSFERS",
+    badge: "LIZENZIERTER TOURISTENTRANSPORT · FESTPREISE",
+    subtitle: `Direkter privater Chauffeurservice von Tür zu Tür zwischen ${route.from} und ${route.to}. Genießen Sie eine komfortable Fahrt mit einem professionellen Fahrer, einer klimatisierten Flotte und ohne versteckte Maut- oder Gepäckgebühren.`,
+    driveTime: "FAHRZEIT",
+    distance: "DISTANZ",
+    startingAt: "AB",
+    corridor: "ROUTENKORRIDOR",
+    bookWa: `Über WhatsApp buchen (€${route.price_sedan})`,
+    viewFleet: "Fahrzeugflotte & Tarife ansehen ↓",
+    glanceTag: "⚡ ROUTE AUF EINEN BLICK",
+    verifiedPricing: "Geprüfte Festpreise",
+    bluf: `Ein privater Transfer von ${route.from} nach ${route.to} umfasst ca. ${route.distance} über ${route.highway} mit einer geschätzten Fahrzeit von ${route.duration}. All-inclusive Festpreise ab €${route.price_sedan} pro Fahrzeug für eine Komfort-Limousine (1–4 Fahrgäste) und €${route.price_van} für einen Executive Minivan (5–7 Fahrgäste). Inklusive lizenziertem Chauffeur, Autobahnmaut, Kraftstoff, Versicherung, kostenlosen Kindersitzen und persönlicher Tür-zu-Tür-Abholung.`,
+    ratesKicker: "GARANTIERTE TRANSPARENTE PREISE",
+    chooseVehicle: "Wählen Sie Ihr Privates Fahrzeug",
+    ratesDesc: "Festpreis pro Fahrzeug (nicht pro Person). Inklusive Kraftstoff, Maut, Parkgebühren und Gepäckservice.",
+    tier1Badge: "BELIEBT BEI PAAREN",
+    tier1Title: "Komfort-Limousine",
+    tier1Desc: "Ideal für Alleinreisende, Paare oder kleine Familien mit Standardgepäck.",
+    cashToDriver: "Gesamtpreis · Barzahlung beim Fahrer",
+    tier1Features: [
+      "1 bis 4 Fahrgäste",
+      "Bis zu 3 große Koffer",
+      "Zwei-Zonen-Klimaanlage",
+      "Professioneller, lizenzierter Chauffeur",
+      "Tür-zu-Tür-Abholung am Riad oder Hotel",
+      "Kostenlose Kindersitze auf Anfrage"
+    ],
+    bookSedan: `Limousine buchen (€${route.price_sedan})`,
+    tier2Badge: "SEHR BELIEBT · EXTRA KOMFORT",
+    tier2Title: "Mercedes-Benz Minivan",
+    tier2Desc: "Geräumiger Van (Vito / V-Klasse) für Familien und kleine Reisegruppen.",
+    tier2Features: [
+      "5 bis 7 Fahrgäste",
+      "Bis zu 7 große Koffer",
+      "Exklusive Ledersitze & getönte Scheiben",
+      "Komfortfahrwerk für Langstrecken",
+      "Mineralwasser & Smartphone-Ladekabel",
+      "Live-Flugverfolgung ohne Zusatzkosten"
+    ],
+    bookVan: `Mercedes Van buchen (€${route.price_van})`,
+    tier3Badge: "GRUPPEN & RETREATS",
+    tier3Title: "Privater Minibus (Mercedes Sprinter)",
+    tier3Desc: "Höchster Gruppenkomfort mit separatem großem Gepäckraum.",
+    tier3Features: [
+      "8 bis 12+ Fahrgäste",
+      "12+ große Koffer + Handgepäck",
+      "Stehhöhe mit Mittelgang",
+      "Klimadüsen für jede Sitzreihe",
+      "Perfekt für Familien oder Seminargruppen",
+      "Pünktlicher, zuvorkommender Chauffeur"
+    ],
+    bookMinibus: `Minibus buchen (€${route.price_minibus})`,
+    expectKicker: "REISEERLEBNIS",
+    expectTitle: `Ihre Private Fahrt von ${route.from} nach ${route.to}`,
+    expectDesc: `Mit Roam Morocco reisen Sie entspannt und ohne den Trubel öffentlicher Busbahnhöfe. Ihr Chauffeur empfängt Sie persönlich am Eingang Ihres Riads, Hotels oder am Flughafenterminal mit Namensschild.`,
+    highlightsTitle: "Routen-Highlights & Inklusivleistungen",
+    trust1Title: "01. Keine Vorauszahlung",
+    trust1Desc: "Zahlen Sie bequem bar beim Fahrer am Zielort.",
+    trust2Title: "02. Kostenlose Stornierung",
+    trust2Desc: "Kostenfrei umbuchen oder stornieren bis 24h vor Abfahrt.",
+    trust3Title: "03. Live-Flugverfolgung",
+    trust3Desc: "Fahrer wartet bei Verspätung ohne Zusatzgebühren.",
+    conciergeTitle: "Individuelle Route oder Hin- und Rückfahrt?",
+    conciergeDesc: "Schreiben Sie direkt unserem Team in Marrakesch. Antwort in unter 10 Minuten via WhatsApp.",
+    avgResponse: "Durchschnittliche Antwortzeit",
+    avgResponseSub: "Unter 10 Minuten auf WhatsApp",
+    licensedAgency: "Lizenzierte Reiseagentur & Transport",
+    licensedAgencySub: "100% legal, versichert und lizenziert",
+    ratingTitle: "5.0 / 5.0 Spitzenbewertung",
+    ratingSub: "Über 985 verifizierte Bewertungen weltweit",
+    messageWa: "Per WhatsApp schreiben",
+    faqKicker: "ANTWORTEN & HINWEISE",
+    faqTitle: "Häufig Gestellte Fragen",
+    faqDesc: `Wichtige Details zu Ihrem privaten Transfer zwischen ${route.from} und ${route.to}.`,
+    readyKicker: "BEREIT ZUR ABFAHRT?",
+    readyTitle: `Buchen Sie Ihren Chauffeur von ${route.from} nach ${route.to}`,
+    readyDesc: `Garantierter Festpreis ab €${route.price_sedan}. Keine Kreditkarte heute erforderlich — zahlen Sie bar am Reisetag.`,
+    instantWa: `Sofort via WhatsApp buchen (€${route.price_sedan}) →`,
+    waGreeting: `Salam Roam Morocco! Ich möchte einen privaten Transfer von ${route.from} nach ${route.to} buchen (${route.price_sedan}€).`
+  },
+  it: {
+    home: "HOME",
+    transfers: "TRASFERIMENTI",
+    badge: "TRASPORTO TURISTICO AUTORIZZATO · TARIFFE FISSE",
+    subtitle: `Servizio di autista privato diretto porta a porta tra ${route.from} e ${route.to}. Goditi un viaggio confortevole con un autista professionale, veicoli con aria condizionata e zero costi nascosti di pedaggi o bagagli.`,
+    driveTime: "TEMPO DI VIAGGIO",
+    distance: "DISTANZA",
+    startingAt: "A PARTIRE DA",
+    corridor: "CORRIDOIO STRADALE",
+    bookWa: `Prenota su WhatsApp (€${route.price_sedan})`,
+    viewFleet: "Vedi Flotta e Tariffe ↓",
+    glanceTag: "⚡ ITINERARIO IN SINTESI",
+    verifiedPricing: "Tariffe Garantite",
+    bluf: `Un transfer privato da ${route.from} a ${route.to} copre circa ${route.distance} su ${route.highway} con un tempo stimato di ${route.duration}. Tariffe fisse tutto incluso da €${route.price_sedan} per una berlina comfort (1–4 passeggeri) e €${route.price_van} per un minivan executive (5–7 passeggeri). Include autista autorizzato, pedaggi, carburante, assicurazione passeggeri, seggiolini per bambini gratuiti e accoglienza porta a porta.`,
+    ratesKicker: "TARIFFE TRASPARENTI GARANTITE",
+    chooseVehicle: "Scegli il Tuo Veicolo Privato",
+    ratesDesc: "Tariffa fissa per veicolo (non a persona). Include carburante, pedaggi, parcheggi e assistenza bagagli.",
+    tier1Badge: "IDEALE PER COPPIE",
+    tier1Title: "Berlina Comfort",
+    tier1Desc: "Perfetto per viaggiatori singoli, coppie o piccole famiglie con bagaglio standard.",
+    cashToDriver: "totale · pagamento all'autista",
+    tier1Features: [
+      "Da 1 a 4 Passeggeri",
+      "Fino a 3 valigie grandi",
+      "Aria condizionata bi-zona",
+      "Autista professionista autorizzato",
+      "Prelievo porta a porta in riad o hotel",
+      "Seggiolini per bambini gratuiti"
+    ],
+    bookSedan: `Prenota Berlina (€${route.price_sedan})`,
+    tier2Badge: "PIÙ RICHIESTO · EXTRA COMFORT",
+    tier2Title: "Minivan Mercedes-Benz",
+    tier2Desc: "Spazioso van executive (Vito / Classe V) per famiglie e piccoli gruppi.",
+    tier2Features: [
+      "Da 5 a 7 Passeggeri",
+      "Fino a 7 valigie grandi",
+      "Sedili in pelle executive e vetri oscurati",
+      "Assetto confortevole per lunghi percorsi",
+      "Acqua minerale & prese ricarica smartphone",
+      "Monitoraggio del volo in tempo reale incluso"
+    ],
+    bookVan: `Prenota Minivan (€${route.price_van})`,
+    tier3Badge: "GRUPPI & RITIRI",
+    tier3Title: "Minibus Privato (Mercedes Sprinter)",
+    tier3Desc: "Massimo comfort di gruppo con ampio bagagliaio separato.",
+    tier3Features: [
+      "Da 8 a 12+ Passeggeri",
+      "12+ valigie grandi + bagagli a mano",
+      "Cabina alta con corridoio centrale",
+      "Bocchette aria condizionata per ogni fila",
+      "Ideale per riunioni di famiglia o ritiri yoga",
+      "Autista puntuale e cortese"
+    ],
+    bookMinibus: `Prenota Minibus (€${route.price_minibus})`,
+    expectKicker: "ESPERIENZA DI VIAGGIO",
+    expectTitle: `Il Tuo Viaggio Privato da ${route.from} a ${route.to}`,
+    expectDesc: `Prenotando il tuo transfer privato con Roam Morocco, viaggi senza lo stress di stazioni o taxi collettivi. Il tuo autista autorizzato ti aspetta direttamente alla porta del riad, in hotel o all'uscita dell'aeroporto con cartello personalizzato.`,
+    highlightsTitle: "Punti di Forza e Servizi Inclusi",
+    trust1Title: "01. Zero Anticipo",
+    trust1Desc: "Paga in contanti al tuo autista all'arrivo.",
+    trust2Title: "02. Cancellazione Gratuita",
+    trust2Desc: "Modifica o cancella senza penali fino a 24 ore prima.",
+    trust3Title: "03. Monitoraggio Voli in Tempo Reale",
+    trust3Desc: "L'autista ti aspetta anche in caso di ritardo senza costi extra.",
+    conciergeTitle: "Hai bisogno di un itinerario su misura o andata e ritorno?",
+    conciergeDesc: "Contatta direttamente il nostro team a Marrakech. Risposta in meno di 10 minuti su WhatsApp.",
+    avgResponse: "Tempo medio di risposta",
+    avgResponseSub: "Meno di 10 minuti su WhatsApp",
+    licensedAgency: "Agenzia e Trasporto Turistico Autorizzato",
+    licensedAgencySub: "100% legale, assicurato e professionale",
+    ratingTitle: "Valutazione 5.0 / 5.0",
+    ratingSub: "Oltre 985 recensioni verificate",
+    messageWa: "Invia messaggio su WhatsApp",
+    faqKicker: "RISPOSTE E CONSIGLI",
+    faqTitle: "Domande Frequenti",
+    faqDesc: `Tutto quello che c'è da sapere sul tuo transfer privato da ${route.from} a ${route.to}.`,
+    readyKicker: "PRONTO A PARTIRE?",
+    readyTitle: `Prenota il Tuo Autista Privato da ${route.from} a ${route.to}`,
+    readyDesc: `Prezzo fisso garantito da €${route.price_sedan}. Nessuna carta di credito richiesta oggi — paga direttamente l'autista a bordo.`,
+    instantWa: `Prenota Subito su WhatsApp (€${route.price_sedan}) →`,
+    waGreeting: `Salam Roam Morocco! Vorrei prenotare un transfer privato da ${route.from} a ${route.to} (${route.price_sedan}€).`
+  }
+};
+
+const t = i18n[lang] || i18n.fr;
+
+const waMessage = encodeURIComponent(t.waGreeting);
+const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
+---
+
+<Layout
+  lang={lang}
+  title={route.seoTitle}
+  description={route.seoDescription}
+  canonical={canonical}
+  ogImage={ogImage}
+  schema={schema}
+>
+  <main class="route-page-main">
+    
+    <!-- 1. BREADCRUMBS & HERO SECTION -->
+    <section class="route-hero">
+      <div class="route-container">
+        
+        <nav class="dest-breadcrumb" aria-label="Breadcrumb">
+          <a href={`/${lang}/index.html`}>{t.home}</a> &nbsp;/&nbsp; <a href={`/${lang}/transfers.html`}>{t.transfers}</a> &nbsp;/&nbsp; <span>{route.from.toUpperCase()} → {route.to.toUpperCase()}</span>
+        </nav>
+
+        <div class="route-hero-badge">
+          <span class="gold-dot"></span>
+          <span>{t.badge}</span>
+        </div>
+
+        <h1 class="route-hero-title">{route.h1}</h1>
+        <p class="route-hero-subtitle">{t.subtitle}</p>
+
+        <!-- Route Metrics Summary Bar -->
+        <div class="route-metrics-bar">
+          <div class="metric-pill">
+            <span class="metric-label">{t.driveTime}</span>
+            <strong class="metric-value">{route.duration}</strong>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-pill">
+            <span class="metric-label">{t.distance}</span>
+            <strong class="metric-value">{route.distance}</strong>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-pill">
+            <span class="metric-label">{t.startingAt}</span>
+            <strong class="metric-value gold-text">€{route.price_sedan}</strong>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-pill">
+            <span class="metric-label">{t.corridor}</span>
+            <strong class="metric-value">{route.highway}</strong>
+          </div>
+        </div>
+
+        <!-- Quick Action CTAs -->
+        <div class="route-hero-actions">
+          <a href={waUrl} target="_blank" rel="noopener" class="primary-wa-cta">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="20" height="20" class="wa-btn-icon">
+            <span>{t.bookWa}</span>
+          </a>
+          <a href="#pricing-tiers" class="secondary-calc-cta">
+            <span>{t.viewFleet}</span>
+          </a>
+        </div>
+
+        <!-- GEO & AEO Quick Answer Summary Box (BLUF) -->
+        <aside class="route-quick-answer-card" aria-label="Route Overview and Fast Facts">
+          <div class="quick-answer-header">
+            <span class="quick-answer-tag">{t.glanceTag}</span>
+            <span class="quick-answer-badge">{t.verifiedPricing}</span>
+          </div>
+          <p class="quick-answer-text">{t.bluf}</p>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- 2. TRANSPARENT VEHICLE PRICING TIERS -->
+    <section class="route-pricing-section" id="pricing-tiers">
+      <div class="route-container">
+        
+        <div class="section-head">
+          <span class="section-kicker">{t.ratesKicker}</span>
+          <h2>{t.chooseVehicle}</h2>
+          <p>{t.ratesDesc}</p>
+        </div>
+
+        <div class="pricing-tiers-grid">
+          
+          <!-- Tier 1: Comfort Sedan -->
+          <div class="tier-card">
+            <div class="tier-badge">{t.tier1Badge}</div>
+            <div class="tier-head">
+              <h3>{t.tier1Title}</h3>
+              <p class="tier-desc">{t.tier1Desc}</p>
+            </div>
+            <div class="tier-price-row">
+              <span class="tier-price">€{route.price_sedan}</span>
+              <span class="tier-price-unit">{t.cashToDriver}</span>
+            </div>
+            <ul class="tier-features">
+              {t.tier1Features.map((f) => (
+                <li>✓ {f}</li>
+              ))}
+            </ul>
+            <a href={`https://wa.me/212653506441?text=${encodeURIComponent(`${t.waGreeting} (Sedan - €${route.price_sedan})`)}`} target="_blank" rel="noopener" class="tier-book-btn">
+              <span>{t.bookSedan}</span>
+            </a>
+          </div>
+
+          <!-- Tier 2: Executive Minivan -->
+          <div class="tier-card featured-tier">
+            <div class="tier-badge gold-badge">{t.tier2Badge}</div>
+            <div class="tier-head">
+              <h3>{t.tier2Title}</h3>
+              <p class="tier-desc">{t.tier2Desc}</p>
+            </div>
+            <div class="tier-price-row">
+              <span class="tier-price gold-text">€{route.price_van}</span>
+              <span class="tier-price-unit">{t.cashToDriver}</span>
+            </div>
+            <ul class="tier-features">
+              {t.tier2Features.map((f) => (
+                <li>✓ {f}</li>
+              ))}
+            </ul>
+            <a href={`https://wa.me/212653506441?text=${encodeURIComponent(`${t.waGreeting} (Van - €${route.price_van})`)}`} target="_blank" rel="noopener" class="tier-book-btn featured-btn">
+              <span>{t.bookVan}</span>
+            </a>
+          </div>
+
+          <!-- Tier 3: Minibus -->
+          <div class="tier-card">
+            <div class="tier-badge">{t.tier3Badge}</div>
+            <div class="tier-head">
+              <h3>{t.tier3Title}</h3>
+              <p class="tier-desc">{t.tier3Desc}</p>
+            </div>
+            <div class="tier-price-row">
+              <span class="tier-price">€{route.price_minibus}</span>
+              <span class="tier-price-unit">{t.cashToDriver}</span>
+            </div>
+            <ul class="tier-features">
+              {t.tier3Features.map((f) => (
+                <li>✓ {f}</li>
+              ))}
+            </ul>
+            <a href={`https://wa.me/212653506441?text=${encodeURIComponent(`${t.waGreeting} (Minibus - €${route.price_minibus})`)}`} target="_blank" rel="noopener" class="tier-book-btn">
+              <span>{t.bookMinibus}</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. ROUTE HIGHLIGHTS & ITINERARY EXPERIENCE -->
+    <section class="route-details-section">
+      <div class="route-container">
+        
+        <div class="details-grid">
+          
+          <div class="details-content">
+            <span class="section-kicker">{t.expectKicker}</span>
+            <h2>{t.expectTitle}</h2>
+            <p>{t.expectDesc}</p>
+
+            <div class="highlights-box">
+              <h3>{t.highlightsTitle}</h3>
+              <ul class="highlights-list">
+                {route.highlights.map((h) => (
+                  <li>
+                    <span class="hl-check">✓</span>
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div class="trust-banner">
+              <div class="trust-pill">
+                <strong>{t.trust1Title}</strong>
+                <span>{t.trust1Desc}</span>
+              </div>
+              <div class="trust-pill">
+                <strong>{t.trust2Title}</strong>
+                <span>{t.trust2Desc}</span>
+              </div>
+              <div class="trust-pill">
+                <strong>{t.trust3Title}</strong>
+                <span>{t.trust3Desc}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Booking Concierge Card -->
+          <div class="details-card-wrap">
+            <div class="concierge-card">
+              <h3>{t.conciergeTitle}</h3>
+              <p>{t.conciergeDesc}</p>
+              
+              <div class="concierge-features">
+                <div class="cf-item">
+                  <span class="cf-icon">⏱</span>
+                  <div>
+                    <strong>{t.avgResponse}</strong>
+                    <span>{t.avgResponseSub}</span>
+                  </div>
+                </div>
+                <div class="cf-item">
+                  <span class="cf-icon">🛡️</span>
+                  <div>
+                    <strong>{t.licensedAgency}</strong>
+                    <span>{t.licensedAgencySub}</span>
+                  </div>
+                </div>
+                <div class="cf-item">
+                  <span class="cf-icon">⭐</span>
+                  <div>
+                    <strong>{t.ratingTitle}</strong>
+                    <span>{t.ratingSub}</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href={waUrl} target="_blank" rel="noopener" class="concierge-wa-btn">
+                <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="18" height="18" class="wa-btn-icon">
+                <span>{t.messageWa}</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. FREQUENTLY ASKED QUESTIONS -->
+    <section class="route-faq-section">
+      <div class="route-container">
+        
+        <div class="section-head">
+          <span class="section-kicker">{t.faqKicker}</span>
+          <h2>{t.faqTitle}</h2>
+          <p>{t.faqDesc}</p>
+        </div>
+
+        <div class="faq-list">
+          {route.faqs.map((faq, idx) => (
+            <div class="faq-card">
+              <h3 class="faq-q">
+                <span class="faq-num">0{idx + 1}.</span>
+                <span>{faq.q}</span>
+              </h3>
+              <p class="faq-a">{faq.a}</p>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. FINAL BOOKING CTA BANNER -->
+    <section class="route-cta-banner">
+      <div class="route-container">
+        <div class="cta-inner">
+          <span class="cta-kicker">{t.readyKicker}</span>
+          <h2>{t.readyTitle}</h2>
+          <p>{t.readyDesc}</p>
+          <a href={waUrl} target="_blank" rel="noopener" class="cta-button">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="22" height="22" class="wa-btn-icon">
+            <span>{t.instantWa}</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</Layout>
+
+<style is:global>
+  /* ── ROUTE PAGE MODERN DESIGN SYSTEM ── */
+  .route-page-main {
+    padding-top: 100px;
+    background: #fbf9f5;
+    color: #111111;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .route-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ── 1. HERO & BREADCRUMBS ── */
+  .route-hero {
+    padding: 40px 0 60px;
+    background: linear-gradient(180deg, #f5f0e6 0%, #fbf9f5 100%);
+    border-bottom: 1px solid #ebdcc5;
+  }
+  .dest-breadcrumb {
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #7a6f5d;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+  }
+  .dest-breadcrumb a {
+    color: #8b6b23;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+  }
+  .dest-breadcrumb a:hover {
+    color: #5c430e;
+  }
+  .dest-breadcrumb span {
+    color: #2b261f;
+  }
+  .route-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: #ffffff;
+    border: 1px solid #e0d0b8;
+    border-radius: 999px;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #634b17;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+  .gold-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #C8A45C;
+  }
+  .route-hero-title {
+    font-size: clamp(30px, 4.4vw, 48px);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #111111;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    max-width: 960px;
+  }
+  .route-hero-subtitle {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #555555;
+    max-width: 840px;
+    margin-bottom: 36px;
+  }
+
+  /* Route Metrics Summary Bar */
+  .route-metrics-bar {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #e8decb;
+    border-radius: 16px;
+    padding: 14px 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    margin-bottom: 32px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .metric-pill {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .metric-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #888888;
+  }
+  .metric-value {
+    font-size: 17px;
+    font-weight: 800;
+    color: #111111;
+  }
+  .metric-divider {
+    width: 1px;
+    height: 32px;
+    background: #e8decb;
+  }
+  .gold-text {
+    color: #9b722b !important;
+  }
+
+  /* CTAs */
+  .route-hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+  .primary-wa-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25D366;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  }
+  .primary-wa-cta:hover {
+    background: #20ba59;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  }
+  .secondary-calc-cta {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #d4c4aa;
+    color: #2b261f;
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .secondary-calc-cta:hover {
+    background: #f7f1e6;
+    border-color: #baa483;
+  }
+
+  /* Quick Answer Card (BLUF) */
+  .route-quick-answer-card {
+    background: #ffffff;
+    border: 1px solid #e5d8be;
+    border-left: 5px solid #C8A45C;
+    border-radius: 14px;
+    padding: 22px 26px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    max-width: 960px;
+  }
+  .quick-answer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .quick-answer-tag {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #8c681f;
+  }
+  .quick-answer-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background: #f5ede0;
+    color: #634b17;
+  }
+  .quick-answer-text {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: #333333;
+    margin: 0;
+  }
+
+  /* ── 2. PRICING TIERS ── */
+  .route-pricing-section {
+    padding: 70px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #eee5d8;
+  }
+  .section-head {
+    text-align: center;
+    max-width: 680px;
+    margin: 0 auto 50px;
+  }
+  .section-kicker {
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: #9b722b;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .section-head h2 {
+    font-size: clamp(26px, 3.2vw, 36px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #111111;
+    margin-bottom: 10px;
+  }
+  .section-head p {
+    font-size: 15.5px;
+    color: #666666;
+    margin: 0;
+  }
+  .pricing-tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+  }
+  .tier-card {
+    background: #fcfbfa;
+    border: 1px solid #e8decb;
+    border-radius: 18px;
+    padding: 32px 26px 28px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .tier-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  }
+  .featured-tier {
+    background: #ffffff;
+    border: 2px solid #C8A45C;
+    box-shadow: 0 8px 30px rgba(200, 164, 92, 0.15);
+    transform: scale(1.02);
+  }
+  .featured-tier:hover {
+    transform: scale(1.02) translateY(-4px);
+  }
+  .tier-badge {
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background: #2b261f;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    padding: 4px 12px;
+    border-radius: 999px;
+  }
+  .gold-badge {
+    background: linear-gradient(135deg, #C8A45C 0%, #aa853a 100%) !important;
+    color: #ffffff !important;
+  }
+  .tier-head h3 {
+    font-size: 21px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 6px;
+  }
+  .tier-desc {
+    font-size: 13.5px;
+    color: #666666;
+    min-height: 40px;
+    margin-bottom: 20px;
+  }
+  .tier-price-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebdcc5;
+  }
+  .tier-price {
+    font-size: 38px;
+    font-weight: 900;
+    color: #111111;
+    letter-spacing: -0.02em;
+  }
+  .tier-price-unit {
+    font-size: 12.5px;
+    color: #888888;
+    font-weight: 600;
+  }
+  .tier-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+  }
+  .tier-features li {
+    font-size: 13.5px;
+    color: #333333;
+    line-height: 1.4;
+  }
+  .tier-book-btn {
+    display: block;
+    text-align: center;
+    background: #111111;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 13px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  .tier-book-btn:hover {
+    background: #333333;
+  }
+  .featured-btn {
+    background: linear-gradient(135deg, #C8A45C 0%, #aa853a 100%) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(200, 164, 92, 0.35);
+  }
+  .featured-btn:hover {
+    filter: brightness(1.08);
+  }
+
+  /* ── 3. ROUTE HIGHLIGHTS ── */
+  .route-details-section {
+    padding: 70px 0;
+    background: #fbf9f5;
+  }
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .details-content h2 {
+    font-size: clamp(24px, 3vw, 32px);
+    font-weight: 800;
+    color: #111111;
+    letter-spacing: -0.02em;
+    margin-bottom: 14px;
+  }
+  .details-content p {
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: #555555;
+    margin-bottom: 28px;
+  }
+  .highlights-box {
+    background: #ffffff;
+    border: 1px solid #e8decb;
+    border-radius: 16px;
+    padding: 26px 28px;
+    margin-bottom: 28px;
+  }
+  .highlights-box h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 16px;
+  }
+  .highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .highlights-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 14.5px;
+    color: #333333;
+    line-height: 1.5;
+  }
+  .hl-check {
+    color: #9b722b;
+    font-weight: 800;
+  }
+  .trust-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  .trust-pill {
+    background: #ffffff;
+    border: 1px solid #e8decb;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .trust-pill strong {
+    font-size: 12.5px;
+    color: #111111;
+  }
+  .trust-pill span {
+    font-size: 11.5px;
+    color: #666666;
+    line-height: 1.35;
+  }
+
+  /* Concierge Card */
+  .concierge-card {
+    background: #1a1714;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 34px 30px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+  }
+  .concierge-card h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .concierge-card p {
+    font-size: 14px;
+    color: #bbbbbb;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .concierge-features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .cf-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .cf-icon {
+    font-size: 22px;
+  }
+  .cf-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .cf-item strong {
+    font-size: 13.5px;
+    color: #ffffff;
+  }
+  .cf-item span {
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+  .concierge-wa-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #25D366;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 700;
+    padding: 13px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+  }
+  .concierge-wa-btn:hover {
+    background: #20ba59;
+  }
+
+  /* ── 4. FAQS ── */
+  .route-faq-section {
+    padding: 70px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #eee5d8;
+  }
+  .faq-list {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .faq-card {
+    background: #fbf9f5;
+    border: 1px solid #e8decb;
+    border-radius: 16px;
+    padding: 24px 28px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+  }
+  .faq-q {
+    font-size: 16.5px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .faq-num {
+    color: #C8A45C;
+    font-size: 14px;
+  }
+  .faq-a {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: #444444;
+    margin: 0;
+  }
+
+  /* ── 5. FINAL CTA BANNER ── */
+  .route-cta-banner {
+    padding: 70px 0 90px;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f1e6 100%);
+  }
+  .cta-inner {
+    background: #1a1714;
+    border-radius: 24px;
+    padding: 56px 40px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.12);
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .cta-kicker {
+    font-size: 11.5px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    color: #C8A45C;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .cta-inner h2 {
+    font-size: clamp(26px, 3.4vw, 38px);
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .cta-inner p {
+    font-size: 16px;
+    color: #cccccc;
+    max-width: 620px;
+    margin: 0 auto 30px;
+  }
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: #25D366;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 16px 36px;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+  }
+  .cta-button:hover {
+    background: #20ba59;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+    .pricing-tiers-grid {
+      grid-template-columns: 1fr;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .featured-tier {
+      transform: none;
+    }
+    .featured-tier:hover {
+      transform: translateY(-4px);
+    }
+    .details-grid {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+    .trust-banner {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
