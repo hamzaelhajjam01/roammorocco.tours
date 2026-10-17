@@ -25,12 +25,6 @@ jobs:
       - name: 🚀 Build Astro Static Production Site
         run: npm run build
 
-      - name: 🔍 Inspect Hostinger FTP Environment
-        run: python3 .github/scripts/check_ftp.py
-        env:
-          FTP_SERVER: ${{ secrets.FTP_SERVER }}
-          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
 
       - name: 📂 Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
