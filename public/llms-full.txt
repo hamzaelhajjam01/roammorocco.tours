@@ -1,0 +1,227 @@
+# Roam Morocco Tours — Full AI Knowledge Base (LLMs-Full)
+> Comprehensive structured directory for AI systems (ChatGPT, Perplexity, Claude, Gemini, Copilot).
+> Generated on: 2026-10-17 | Official Website: https://roammorocco.tours/
+
+---
+
+## 1. Company Identity & Entity Profile
+- **Entity Name:** Roam Morocco Tours
+- **Founders:** Hamza & Abdelhakim (native Moroccan travel experts)
+- **Legal Form:** Licensed Moroccan Tourist Transport Operator (Transport Touristique) & Tour Agency
+- **Headquarters:** N4, Immeuble, 38 Rue Tariq Bnou Ziad, Marrakech 40000, Morocco
+- **Official Website:** https://roammorocco.tours/
+- **Contact Phone & 24/7 WhatsApp:** +212 653-506441
+- **Email:** contact@roammorocco.tours
+- **Accreditations:** ASTA (American Society of Travel Advisors) & IATA accredited
+- **Verified Reviews:** 985+ verified client reviews with an average rating of 5.0 / 5.0
+- **Official Browser Extensions:** Chrome Web Store, Mozilla Firefox Add-ons, Microsoft Edge, Opera Add-ons
+
+---
+
+## 2. Vehicle Fleet Specifications & Capacities
+
+### A. Comfort Sedan
+- **Capacity:** 1 to 4 passengers | Up to 3 large suitcases
+- **Vehicles:** Modern air-conditioned sedans (Peugeot 508, Citroën C-Élysée, Hyundai Elantra)
+- **Best For:** Couples, solo travelers, business transfers
+
+### B. Executive Minivan (Mercedes-Benz V-Class / Vito)
+- **Capacity:** 5 to 7 passengers | Up to 7 large suitcases
+- **Vehicles:** Mercedes-Benz Vito & V-Class VIP
+- **Features:** Leather reclining seats, privacy glass, dual-zone AC, high-clearance suspension
+- **Best For:** Families, small friend groups, travelers with extra luggage or sports gear
+
+### C. Luxury 4x4 Prado (Desert & Mountain Expeditions)
+- **Capacity:** 1 to 4 passengers
+- **Vehicles:** Toyota Land Cruiser Prado TX/VX 4WD
+- **Features:** All-terrain 4x4, high clearance, roof rack, premium comfort
+- **Best For:** High Atlas passes (Tizi n'Tichka), Sahara Desert (Erg Chebbi, Erg Chigaga), off-road scenic routes
+
+### D. Standard Inclusions on All Private Transfers
+- Private vehicle exclusively for your party (no shared passengers)
+- Professional licensed Moroccan chauffeur fluent in English and French
+- All highway tolls (autoroutes), fuel, and city parking fees included
+- Free child seats and infant booster seats on request
+- Flight arrival monitoring with 60 minutes free wait time
+- Airport meet-and-greet inside terminal with personalized name sign
+- Door-to-door riad or hotel luggage drop-off
+
+---
+
+## 3. Complete Private Transfer Routes Database (127 Verified Routes)
+
+| Origin | Destination | Distance | Driving Time | Sedan Rate | Minivan Rate | Direct Page Link |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Agadir | Agadir Airport | 25 km | 30 min | €25 | €35 | [View Route](https://roammorocco.tours/transfers/agadir-to-agadir-airport.html) |
+| Agadir | Essaouira | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/agadir-to-essaouira.html) |
+| Agadir | Essaouira Airport (ESU) | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/agadir-to-essaouira-airport-esu.html) |
+| Agadir | Marrakech | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/agadir-to-marrakech.html) |
+| Agadir | Marrakech Airport | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/agadir-to-marrakech-airport.html) |
+| Agadir | Taghazout | 20 km | 30 min | €40 | €55 | [View Route](https://roammorocco.tours/transfers/agadir-to-taghazout.html) |
+| Agadir Airport | Agadir | 25 km | 30 min | €25 | €35 | [View Route](https://roammorocco.tours/transfers/agadir-airport-to-agadir.html) |
+| Agadir Airport | Essaouira | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/agadir-airport-to-essaouira.html) |
+| Agadir Airport | Essaouira Airport (ESU) | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/agadir-airport-to-essaouira-airport-esu.html) |
+| Agadir Airport | Marrakech | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/agadir-airport-to-marrakech.html) |
+| Agadir Airport | Marrakech Airport | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/agadir-airport-to-marrakech-airport.html) |
+| Agadir Airport | Taghazout | 45 km | 45 min | €45 | €60 | [View Route](https://roammorocco.tours/transfers/agadir-airport-to-taghazout.html) |
+| Agafay Desert | Essaouira | 200 km | 2h30 | €150 | €195 | [View Route](https://roammorocco.tours/transfers/agafay-desert-to-essaouira.html) |
+| Agafay Desert | Essaouira Airport (ESU) | 200 km | 2h30 | €150 | €195 | [View Route](https://roammorocco.tours/transfers/agafay-desert-to-essaouira-airport-esu.html) |
+| Agafay Desert | Marrakech | 30 km | 45 min | €75 | €95 | [View Route](https://roammorocco.tours/transfers/agafay-desert-to-marrakech.html) |
+| Agafay Desert | Marrakech Airport | 35 km | 50 min | €75 | €95 | [View Route](https://roammorocco.tours/transfers/agafay-desert-to-marrakech-airport.html) |
+| Ait Ben Haddou | Marrakech | 200 km | 4h | €135 | €170 | [View Route](https://roammorocco.tours/transfers/ait-ben-haddou-to-marrakech.html) |
+| Ait Ben Haddou | Marrakech Airport | 205 km | 4h | €135 | €170 | [View Route](https://roammorocco.tours/transfers/ait-ben-haddou-to-marrakech-airport.html) |
+| Casablanca | Chefchaouen | 340 km | 5h | €220 | €275 | [View Route](https://roammorocco.tours/transfers/casablanca-to-chefchaouen.html) |
+| Casablanca | Essaouira | 380 km | 4h15 | €190 | €240 | [View Route](https://roammorocco.tours/transfers/casablanca-to-essaouira.html) |
+| Casablanca | Fes | 290 km | 3h | €180 | €230 | [View Route](https://roammorocco.tours/transfers/casablanca-to-fes.html) |
+| Casablanca | Marrakech | 240 km | 3h | €145 | €165 | [View Route](https://roammorocco.tours/transfers/casablanca-to-marrakech.html) |
+| Casablanca | Marrakech Airport | 240 km | 3h | €145 | €165 | [View Route](https://roammorocco.tours/transfers/casablanca-to-marrakech-airport.html) |
+| Casablanca | Rabat | 90 km | 1h15 | €65 | €90 | [View Route](https://roammorocco.tours/transfers/casablanca-to-rabat.html) |
+| Casablanca Airport | Essaouira | 370 km | 4h | €190 | €240 | [View Route](https://roammorocco.tours/transfers/casablanca-airport-to-essaouira.html) |
+| Casablanca Airport | Fes | 290 km | 3h | €180 | €230 | [View Route](https://roammorocco.tours/transfers/casablanca-airport-to-fes.html) |
+| Casablanca Airport | Marrakech | 220 km | 2h45 | €145 | €165 | [View Route](https://roammorocco.tours/transfers/casablanca-airport-to-marrakech.html) |
+| Casablanca Airport | Marrakech Airport | 220 km | 2h45 | €145 | €165 | [View Route](https://roammorocco.tours/transfers/casablanca-airport-to-marrakech-airport.html) |
+| Casablanca Airport | Oualidia | 190 km | 2h30 | €140 | €200 | [View Route](https://roammorocco.tours/transfers/casablanca-airport-to-oualidia.html) |
+| Casablanca Airport | Rabat | 90 km | 1h | €75 | €100 | [View Route](https://roammorocco.tours/transfers/casablanca-airport-to-rabat.html) |
+| Casablanca Airport | Tangier | 340 km | 3h30 | €240 | €300 | [View Route](https://roammorocco.tours/transfers/casablanca-airport-to-tangier.html) |
+| Chefchaouen | Casablanca | 340 km | 5h | €220 | €275 | [View Route](https://roammorocco.tours/transfers/chefchaouen-to-casablanca.html) |
+| Chefchaouen | Fes | 200 km | 3h30 | €190 | €240 | [View Route](https://roammorocco.tours/transfers/chefchaouen-to-fes.html) |
+| Chefchaouen | Tangier | 115 km | 2h | €109 | €145 | [View Route](https://roammorocco.tours/transfers/chefchaouen-to-tangier.html) |
+| Essaouira | Agadir | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/essaouira-to-agadir.html) |
+| Essaouira | Agadir Airport | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/essaouira-to-agadir-airport.html) |
+| Essaouira | Agafay Desert | 200 km | 2h30 | €150 | €195 | [View Route](https://roammorocco.tours/transfers/essaouira-to-agafay-desert.html) |
+| Essaouira | Casablanca | 380 km | 4h15 | €190 | €240 | [View Route](https://roammorocco.tours/transfers/essaouira-to-casablanca.html) |
+| Essaouira | Casablanca Airport | 370 km | 4h | €190 | €240 | [View Route](https://roammorocco.tours/transfers/essaouira-to-casablanca-airport.html) |
+| Essaouira | Essaouira Airport (ESU) | 15 km | 20 min | €17 | €29 | [View Route](https://roammorocco.tours/transfers/essaouira-to-essaouira-airport-esu.html) |
+| Essaouira | Imlil | 250 km | 3h30 | €170 | €220 | [View Route](https://roammorocco.tours/transfers/essaouira-to-imlil.html) |
+| Essaouira | Imsouane | 95 km | 1h30 | €90 | €120 | [View Route](https://roammorocco.tours/transfers/essaouira-to-imsouane.html) |
+| Essaouira | Marrakech | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/essaouira-to-marrakech.html) |
+| Essaouira | Marrakech Airport | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/essaouira-to-marrakech-airport.html) |
+| Essaouira | Ourika Valley | 220 km | 3h15 | €150 | €195 | [View Route](https://roammorocco.tours/transfers/essaouira-to-ourika-valley.html) |
+| Essaouira | Rabat | 450 km | 5h30 | €240 | €300 | [View Route](https://roammorocco.tours/transfers/essaouira-to-rabat.html) |
+| Essaouira | Sidi Kaouki | 25 km | 30 min | €35 | €45 | [View Route](https://roammorocco.tours/transfers/essaouira-to-sidi-kaouki.html) |
+| Essaouira | Taghazout | 175 km | 2h30 | €115 | €150 | [View Route](https://roammorocco.tours/transfers/essaouira-to-taghazout.html) |
+| Essaouira Airport (ESU) | Agadir | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-agadir.html) |
+| Essaouira Airport (ESU) | Agadir Airport | 175 km | 3h | €105 | €138 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-agadir-airport.html) |
+| Essaouira Airport (ESU) | Agafay Desert | 200 km | 2h30 | €150 | €195 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-agafay-desert.html) |
+| Essaouira Airport (ESU) | Essaouira | 15 km | 20 min | €17 | €29 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-essaouira.html) |
+| Essaouira Airport (ESU) | Imlil | 250 km | 3h30 | €170 | €220 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-imlil.html) |
+| Essaouira Airport (ESU) | Marrakech | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-marrakech.html) |
+| Essaouira Airport (ESU) | Marrakech Airport | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-marrakech-airport.html) |
+| Essaouira Airport (ESU) | Taghazout | 185 km | 2h40 | €120 | €155 | [View Route](https://roammorocco.tours/transfers/essaouira-airport-esu-to-taghazout.html) |
+| Fes | Casablanca | 290 km | 3h | €180 | €230 | [View Route](https://roammorocco.tours/transfers/fes-to-casablanca.html) |
+| Fes | Casablanca Airport | 290 km | 3h | €180 | €230 | [View Route](https://roammorocco.tours/transfers/fes-to-casablanca-airport.html) |
+| Fes | Chefchaouen | 200 km | 3h30 | €190 | €240 | [View Route](https://roammorocco.tours/transfers/fes-to-chefchaouen.html) |
+| Fes | Marrakech | 530 km | 6h30 | €259 | €320 | [View Route](https://roammorocco.tours/transfers/fes-to-marrakech.html) |
+| Imlil | Essaouira | 250 km | 3h30 | €170 | €220 | [View Route](https://roammorocco.tours/transfers/imlil-to-essaouira.html) |
+| Imlil | Essaouira Airport (ESU) | 250 km | 3h30 | €170 | €220 | [View Route](https://roammorocco.tours/transfers/imlil-to-essaouira-airport-esu.html) |
+| Imlil | Marrakech | 65 km | 1h30 | €69 | €98 | [View Route](https://roammorocco.tours/transfers/imlil-to-marrakech.html) |
+| Imlil | Marrakech Airport | 65 km | 1h30 | €69 | €98 | [View Route](https://roammorocco.tours/transfers/imlil-to-marrakech-airport.html) |
+| Imsouane | Essaouira | 95 km | 1h30 | €90 | €120 | [View Route](https://roammorocco.tours/transfers/imsouane-to-essaouira.html) |
+| Imsouane | Marrakech | 250 km | 3h30 | €160 | €210 | [View Route](https://roammorocco.tours/transfers/imsouane-to-marrakech.html) |
+| Marrakech | Agadir | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/marrakech-to-agadir.html) |
+| Marrakech | Agadir Airport | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/marrakech-to-agadir-airport.html) |
+| Marrakech | Agafay Desert | 30 km | 45 min | €75 | €95 | [View Route](https://roammorocco.tours/transfers/marrakech-to-agafay-desert.html) |
+| Marrakech | Ait Ben Haddou | 200 km | 4h | €135 | €170 | [View Route](https://roammorocco.tours/transfers/marrakech-to-ait-ben-haddou.html) |
+| Marrakech | Casablanca | 240 km | 3h | €145 | €165 | [View Route](https://roammorocco.tours/transfers/marrakech-to-casablanca.html) |
+| Marrakech | Casablanca Airport | 220 km | 2h45 | €145 | €165 | [View Route](https://roammorocco.tours/transfers/marrakech-to-casablanca-airport.html) |
+| Marrakech | Essaouira | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/marrakech-to-essaouira.html) |
+| Marrakech | Essaouira Airport (ESU) | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/marrakech-to-essaouira-airport-esu.html) |
+| Marrakech | Fes | 530 km | 6h30 | €259 | €320 | [View Route](https://roammorocco.tours/transfers/marrakech-to-fes.html) |
+| Marrakech | Imlil | 65 km | 1h30 | €69 | €98 | [View Route](https://roammorocco.tours/transfers/marrakech-to-imlil.html) |
+| Marrakech | Imsouane | 250 km | 3h30 | €160 | €210 | [View Route](https://roammorocco.tours/transfers/marrakech-to-imsouane.html) |
+| Marrakech | Marrakech | 10 km | 20 min | €25 | €35 | [View Route](https://roammorocco.tours/transfers/marrakech-to-marrakech.html) |
+| Marrakech | Marrakech Airport | 6 km | 15 min | €25 | €35 | [View Route](https://roammorocco.tours/transfers/marrakech-to-marrakech-airport.html) |
+| Marrakech | Moulay Bouzerktoune | 190 km | 2h45 | €100 | €145 | [View Route](https://roammorocco.tours/transfers/marrakech-to-moulay-bouzerktoune.html) |
+| Marrakech | Oualidia | 200 km | 3h | €130 | €190 | [View Route](https://roammorocco.tours/transfers/marrakech-to-oualidia.html) |
+| Marrakech | Ouarzazate | 200 km | 4h | €129 | €165 | [View Route](https://roammorocco.tours/transfers/marrakech-to-ouarzazate.html) |
+| Marrakech | Oukaimeden (ski resort) | 75 km | 1h30 | €90 | €120 | [View Route](https://roammorocco.tours/transfers/marrakech-to-oukaimeden-ski-resort.html) |
+| Marrakech | Ourika Valley | 45 km | 1h | €75 | €95 | [View Route](https://roammorocco.tours/transfers/marrakech-to-ourika-valley.html) |
+| Marrakech | Palmeraie (Marrakech) | 10 km | 20 min | €25 | €35 | [View Route](https://roammorocco.tours/transfers/marrakech-to-palmeraie-marrakech.html) |
+| Marrakech | Rabat | 320 km | 4h | €190 | €240 | [View Route](https://roammorocco.tours/transfers/marrakech-to-rabat.html) |
+| Marrakech | Setti Fatma | 70 km | 1h15 | €70 | €95 | [View Route](https://roammorocco.tours/transfers/marrakech-to-setti-fatma.html) |
+| Marrakech | Taghazout | 260 km | 3h15 | €145 | €170 | [View Route](https://roammorocco.tours/transfers/marrakech-to-taghazout.html) |
+| Marrakech Airport | Agadir | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-agadir.html) |
+| Marrakech Airport | Agadir Airport | 240 km | 3h | €125 | €145 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-agadir-airport.html) |
+| Marrakech Airport | Agafay Desert | 35 km | 50 min | €75 | €95 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-agafay-desert.html) |
+| Marrakech Airport | Ait Ben Haddou | 205 km | 4h | €135 | €170 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-ait-ben-haddou.html) |
+| Marrakech Airport | Casablanca | 240 km | 3h | €145 | €165 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-casablanca.html) |
+| Marrakech Airport | Casablanca Airport | 220 km | 2h45 | €145 | €165 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-casablanca-airport.html) |
+| Marrakech Airport | Essaouira | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-essaouira.html) |
+| Marrakech Airport | Essaouira Airport (ESU) | 180 km | 2h30 | €85 | €130 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-essaouira-airport-esu.html) |
+| Marrakech Airport | Imlil | 65 km | 1h30 | €69 | €98 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-imlil.html) |
+| Marrakech Airport | Marrakech | 6 km | 15 min | €25 | €35 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-marrakech.html) |
+| Marrakech Airport | Ourika Valley | 50 km | 1h05 | €80 | €100 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-ourika-valley.html) |
+| Marrakech Airport | Palmeraie (Marrakech) | 12 km | 25 min | €35 | €40 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-palmeraie-marrakech.html) |
+| Marrakech Airport | Rabat | 320 km | 4h | €190 | €240 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-rabat.html) |
+| Marrakech Airport | Taghazout | 260 km | 3h15 | €145 | €170 | [View Route](https://roammorocco.tours/transfers/marrakech-airport-to-taghazout.html) |
+| Moulay Bouzerktoune | Marrakech | 190 km | 2h45 | €100 | €145 | [View Route](https://roammorocco.tours/transfers/moulay-bouzerktoune-to-marrakech.html) |
+| Oualidia | Casablanca Airport | 190 km | 2h30 | €140 | €200 | [View Route](https://roammorocco.tours/transfers/oualidia-to-casablanca-airport.html) |
+| Oualidia | Marrakech | 200 km | 3h | €130 | €190 | [View Route](https://roammorocco.tours/transfers/oualidia-to-marrakech.html) |
+| Ouarzazate | Marrakech | 200 km | 4h | €129 | €165 | [View Route](https://roammorocco.tours/transfers/ouarzazate-to-marrakech.html) |
+| Oukaimeden (ski resort) | Marrakech | 75 km | 1h30 | €90 | €120 | [View Route](https://roammorocco.tours/transfers/oukaimeden-ski-resort-to-marrakech.html) |
+| Ourika Valley | Essaouira | 220 km | 3h15 | €150 | €195 | [View Route](https://roammorocco.tours/transfers/ourika-valley-to-essaouira.html) |
+| Ourika Valley | Marrakech | 45 km | 1h | €75 | €95 | [View Route](https://roammorocco.tours/transfers/ourika-valley-to-marrakech.html) |
+| Ourika Valley | Marrakech Airport | 50 km | 1h05 | €80 | €100 | [View Route](https://roammorocco.tours/transfers/ourika-valley-to-marrakech-airport.html) |
+| Palmeraie (Marrakech) | Marrakech | 10 km | 20 min | €25 | €35 | [View Route](https://roammorocco.tours/transfers/palmeraie-marrakech-to-marrakech.html) |
+| Palmeraie (Marrakech) | Marrakech Airport | 12 km | 25 min | €35 | €40 | [View Route](https://roammorocco.tours/transfers/palmeraie-marrakech-to-marrakech-airport.html) |
+| Rabat | Casablanca | 90 km | 1h15 | €65 | €90 | [View Route](https://roammorocco.tours/transfers/rabat-to-casablanca.html) |
+| Rabat | Casablanca Airport | 90 km | 1h | €75 | €100 | [View Route](https://roammorocco.tours/transfers/rabat-to-casablanca-airport.html) |
+| Rabat | Essaouira | 450 km | 5h30 | €240 | €300 | [View Route](https://roammorocco.tours/transfers/rabat-to-essaouira.html) |
+| Rabat | Marrakech | 320 km | 4h | €190 | €240 | [View Route](https://roammorocco.tours/transfers/rabat-to-marrakech.html) |
+| Rabat | Marrakech Airport | 320 km | 4h | €190 | €240 | [View Route](https://roammorocco.tours/transfers/rabat-to-marrakech-airport.html) |
+| Setti Fatma | Marrakech | 70 km | 1h15 | €70 | €95 | [View Route](https://roammorocco.tours/transfers/setti-fatma-to-marrakech.html) |
+| Sidi Kaouki | Essaouira | 25 km | 30 min | €35 | €45 | [View Route](https://roammorocco.tours/transfers/sidi-kaouki-to-essaouira.html) |
+| Taghazout | Agadir | 20 km | 30 min | €40 | €55 | [View Route](https://roammorocco.tours/transfers/taghazout-to-agadir.html) |
+| Taghazout | Agadir Airport | 45 km | 45 min | €45 | €60 | [View Route](https://roammorocco.tours/transfers/taghazout-to-agadir-airport.html) |
+| Taghazout | Essaouira | 175 km | 2h30 | €115 | €150 | [View Route](https://roammorocco.tours/transfers/taghazout-to-essaouira.html) |
+| Taghazout | Essaouira Airport (ESU) | 185 km | 2h40 | €120 | €155 | [View Route](https://roammorocco.tours/transfers/taghazout-to-essaouira-airport-esu.html) |
+| Taghazout | Marrakech | 260 km | 3h15 | €145 | €170 | [View Route](https://roammorocco.tours/transfers/taghazout-to-marrakech.html) |
+| Taghazout | Marrakech Airport | 260 km | 3h15 | €145 | €170 | [View Route](https://roammorocco.tours/transfers/taghazout-to-marrakech-airport.html) |
+| Tangier | Casablanca Airport | 340 km | 3h30 | €240 | €300 | [View Route](https://roammorocco.tours/transfers/tangier-to-casablanca-airport.html) |
+| Tangier | Chefchaouen | 115 km | 2h | €109 | €145 | [View Route](https://roammorocco.tours/transfers/tangier-to-chefchaouen.html) |
+
+---
+
+## 4. Signature Guided Tours & Desert Itineraries
+
+### [3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay](https://roammorocco.tours/tour-premium-explorer.html)
+- **Duration:** 3 Days / 2 Nights
+- **Price:** Starting from $395 USD per person
+- **Format:** 3 curated day trips with **zero hotel changes**, based out of your Marrakech riad.
+- **Highlights:** Coastal Essaouira ramparts, Ourika Valley Atlas waterfall hike, sunset camel trek with boutique stargazing dinner in Agafay Desert.
+
+### [Heritage & Cinema Tour: Ait Benhaddou & Ouarzazate Kasbahs](https://roammorocco.tours/tour-heritage-cinema.html)
+- **Duration:** 1 to 2 Days
+- **Price:** Starting from $195 USD per person
+- **Format:** High Atlas Mountain crossing via Tizi n'Tichka Pass (2,260m).
+- **Highlights:** UNESCO World Heritage Kasbah Ait Benhaddou (Gladiator, Game of Thrones), Atlas Film Studios, Kasbah Taourirt.
+
+### [Active High Atlas Adventure: 3-Day Mount Toubkal Summit Trek](https://roammorocco.tours/tour-active-atlas.html)
+- **Duration:** 3 Days / 2 Nights
+- **Price:** Starting from $290 USD per person
+- **Format:** High-altitude mountain expedition to North Africa's highest summit (4,167m).
+- **Includes:** Licensed UIAGM mountain guide, mule support team, refuge accommodations, and all transfers.
+
+### [Custom Private Journeys Across Morocco](https://roammorocco.tours/custom-morocco-tour.html)
+- **Format:** 100% tailor-made multi-day private circuits connecting Casablanca, Rabat, Chefchaouen, Fes, Merzouga (Erg Chebbi), and Marrakech.
+- **Direct WhatsApp Custom Planning:** +212 653-506441
+
+---
+
+## 5. Frequently Asked Questions & Travel Policies
+
+### How does booking and payment work?
+- **Zero advance payment required:** You can reserve online or directly via WhatsApp without entering credit card details.
+- **Payment Method:** Pay in cash directly to your chauffeur at the end of the trip in EUR (€), USD ($), GBP (£), or Moroccan Dirham (MAD).
+
+### What is the cancellation policy?
+- **100% Free Cancellation:** Cancel or reschedule with zero fee up to 24 hours before your scheduled pickup time.
+
+### What happens if my flight is delayed?
+- All airport pickups include automated flight tracking. We monitor your flight number in real-time and adjust pickup times automatically at no extra charge.
+
+### Are rest stops and photo stops allowed?
+- Yes, 100%. Because all transfers are 100% private, you have full freedom to stop for coffee, restrooms, or scenic mountain panoramas whenever you wish.
+
+---
+© Roam Morocco Tours. All rights reserved. Direct inquiries: contact@roammorocco.tours | WhatsApp: +212 653-506441

@@ -17,8 +17,18 @@ const { route } = Astro.props;
 
 const canonical = `https://roammorocco.tours/transfers/${route.slug}.html`;
 const ogImage = "https://roammorocco.tours/images/morocco_private_driver.webp";
-
 const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": route.h1,
+    "description": route.seoDescription,
+    "url": canonical,
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".quick-answer-text", ".route-hero-title", ".faq-a"]
+    }
+  },
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -192,6 +202,17 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
             <span>View Vehicle Fleet &amp; Rates ↓</span>
           </a>
         </div>
+
+        <!-- GEO & AEO Quick Answer Summary Box (BLUF) -->
+        <aside class="route-quick-answer-card" aria-label="Route Overview and Fast Facts">
+          <div class="quick-answer-header">
+            <span class="quick-answer-tag">⚡ ROUTE AT A GLANCE</span>
+            <span class="quick-answer-badge">Verified Pricing</span>
+          </div>
+          <p class="quick-answer-text">
+            A private transfer from <strong>{route.from}</strong> to <strong>{route.to}</strong> spans approximately <strong>{route.distance}</strong> via {route.highway} with an estimated drive time of <strong>{route.duration}</strong>. Fixed all-inclusive private chauffeur rates start from <strong>€{route.price_sedan}</strong> per vehicle for a comfortable sedan (1–4 passengers) and <strong>€{route.price_van}</strong> for an executive Mercedes-Benz minivan (5–7 passengers). Every booking includes a licensed English-speaking chauffeur, all highway tolls, fuel, vehicle passenger insurance, free infant/child booster seats, and door-to-door riad or airport meet-and-greet.
+          </p>
+        </aside>
 
       </div>
     </section>
@@ -575,6 +596,51 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
   .secondary-calc-cta:hover {
     border-color: #C8A45C;
     background: rgba(200, 164, 92, 0.06);
+  }
+
+  /* ── GEO & AEO QUICK ANSWER CARD (BLUF) ── */
+  .route-quick-answer-card {
+    background: #ffffff;
+    border: 1px solid rgba(200, 164, 92, 0.35);
+    border-left: 4px solid #C8A45C;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  }
+  .quick-answer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 12px;
+  }
+  .quick-answer-tag {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: #9A7B38;
+    text-transform: uppercase;
+  }
+  .quick-answer-badge {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: rgba(37, 211, 102, 0.1);
+    color: #15803d;
+    padding: 3px 10px;
+    border-radius: 9999px;
+  }
+  .quick-answer-text {
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: #334155;
+    margin: 0;
+  }
+  .quick-answer-text strong {
+    color: #0f172a;
+    font-weight: 700;
   }
 
   /* Section Headings */

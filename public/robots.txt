@@ -1,4 +1,6 @@
-# robots.txt for Roam Morocco Tours (roammorocco.tours)
+# AI Context Files for LLMs (OpenAI, Anthropic, Perplexity, Google)
+# LLMs.txt: https://roammorocco.tours/llms.txt
+# LLMs-full.txt: https://roammorocco.tours/llms-full.txt
 
 # Standard Search Crawlers
 User-agent: Googlebot
