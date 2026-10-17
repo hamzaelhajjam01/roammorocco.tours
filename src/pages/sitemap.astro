@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { routesData } from '../data/routes';
+
+// Group transfer routes by departure city for clean navigation
+const originGroups = routesData.reduce<Record<string, typeof routesData>>((acc, route) => {
+  const origin = route.from.replace(/\sAirport.*$/, '');
+  if (!acc[origin]) acc[origin] = [];
+  acc[origin].push(route);
+  return acc;
+}, {});
+
+const sortedOrigins = Object.keys(originGroups).sort();
+
+const tours = [
+  { name: 'Morocco Tour Packages Catalogue', url: '/tours.html', desc: 'Browse all multi-day private circuits and desert expeditions' },
+  { name: '4-Day Heritage, Kasbahs & Cinema Expedition', url: '/tour-heritage-cinema.html', desc: 'Ouarzazate, Ait Benhaddou, Dades Gorges & Merzouga Dunes' },
+  { name: '3-Day Active High Atlas & Berber Valleys', url: '/tour-active-atlas.html', desc: 'Mount Toubkal base, Imlil walnut groves & mountain passes' },
+  { name: '5-Day Premium Imperial Explorer', url: '/tour-premium-explorer.html', desc: 'Marrakech, Fes, Meknes, Chefchaouen & Casablanca luxury circuit' },
+  { name: 'Custom Private Morocco Tour Builder', url: '/custom-morocco-tour.html', desc: 'Design your own bespoke itinerary with a dedicated private chauffeur' },
+  { name: 'Marrakech Medina Sunset Free Walking Tour', url: '/marrakech-medina-sunset-free-tour.html', desc: 'Daily guided sunset walk through artisan quarters to Jemaa el-Fna' },
+  { name: 'Marrakech Free Walking Tour', url: '/marrakech-free-walking-tour.html', desc: 'Historical cultural discovery tour of the old Medina' }
+];
+
+const destinations = [
+  { name: 'All Morocco Destinations Guide', url: '/destinations.html' },
+  { name: 'Sahara Desert (Merzouga & Erg Chebbi)', url: '/destination-sahara-desert.html' },
+  { name: 'Marrakech Medina & Palmeraie', url: '/destination-marrakech.html' },
+  { name: 'Fes el-Bali & Imperial Heritage', url: '/destination-fes.html' },
+  { name: 'Chefchaouen Blue Pearl', url: '/destination-chefchaouen.html' },
+  { name: 'High Atlas Mountains & Toubkal', url: '/destination-high-atlas.html' },
+  { name: 'Essaouira Atlantic Coast', url: '/destination-essaouira.html' },
+  { name: 'Casablanca & Hassan II Mosque', url: '/destination-casablanca.html' },
+  { name: 'Ait Benhaddou UNESCO Ksar', url: '/destination-ait-benhaddou.html' }
+];
+
+const blogGuides = [
+  { name: 'Morocco Travel Blog Home', url: '/blog.html' },
+  { name: 'Best Time to Visit the Sahara Desert', url: '/blog/best-time-to-visit-sahara-morocco.html' },
+  { name: 'Is Morocco Safe for Tourists? 2026 Guide', url: '/blog/is-morocco-safe-for-tourists.html' },
+  { name: 'Marrakech vs Fes: Which Imperial City to Visit?', url: '/blog/marrakech-vs-fes.html' },
+  { name: 'Ultimate 10-Day Morocco Itinerary', url: '/blog/morocco-10-day-itinerary.html' },
+  { name: 'What to Wear in Morocco: Cultural Packing Guide', url: '/blog/what-to-wear-in-morocco.html' },
+  { name: 'Morocco Private Driver Cost Breakdown', url: '/blog/morocco-private-driver-cost.html' },
+  { name: 'Renting a Car vs Private Chauffeur in Morocco', url: '/blog/renting-a-car-in-morocco-vs-private-driver.html' },
+  { name: 'Morocco Train System vs Private Driver', url: '/blog/morocco-train-and-private-driver.html' },
+  { name: 'Driving Times Between Major Cities in Morocco', url: '/blog/morocco-driving-times.html' },
+  { name: 'Merzouga vs Agafay Desert: Differences & Choice', url: '/blog/agafay-desert-vs-merzouga.html' },
+  { name: 'Merzouga vs Zagora Desert Tours Comparison', url: '/blog/sahara-desert-tour-merzouga-vs-zagora.html' },
+  { name: 'Gladiator 2 Filming Locations in Ouarzazate', url: '/blog/gladiator-2-morocco-filming-locations.html' },
+  { name: 'How to Take the Ferry from Spain to Morocco', url: '/blog/ferry-from-spain-to-morocco.html' },
+  { name: 'The Art of the Souk: Bargaining Etiquette', url: '/blog/the-art-of-the-souk-bargaining-etiquette.html' },
+  { name: 'Spain & Morocco Combined Travel Itinerary', url: '/blog/spain-morocco-itinerary.html' }
+];
+
+const mainPages = [
+  { name: 'Home', url: '/' },
+  { name: 'About Roam Morocco Tours', url: '/about.html' },
+  { name: 'Private Driver Morocco Fleet & Chauffeurs', url: '/morocco-private-driver.html' },
+  { name: 'Morocco Trip Cost & Route Estimator', url: '/morocco-trip-cost-calculator.html' },
+  { name: 'Experiences & Activities', url: '/experiences.html' },
+  { name: 'Travel Deals & Partner Discounts', url: '/travel-deals.html' },
+  { name: 'Privacy Policy', url: '/privacy-policy.html' },
+  { name: 'Refund & Cancellation Policy', url: '/refund-policy.html' },
+  { name: 'Terms & Conditions', url: '/terms-conditions.html' },
+  { name: 'Travel & Booking Policy', url: '/travel-policy.html' }
+];
+
+const xmlSitemaps = [
+  { name: 'Master Sitemap Index (sitemap.xml)', url: '/sitemap.xml', desc: '5 Categorized Sub-Sitemaps' },
+  { name: 'Transfers Sitemap (sitemap-transfers.xml)', url: '/sitemap-transfers.xml', desc: '128 Transfer Routes' },
+  { name: 'Tours Sitemap (sitemap-tours.xml)', url: '/sitemap-tours.xml', desc: '6 Tour Packages & Walks' },
+  { name: 'Destinations Sitemap (sitemap-destinations.xml)', url: '/sitemap-destinations.xml', desc: '9 Destination Hubs' },
+  { name: 'Blog Guides Sitemap (sitemap-blog.xml)', url: '/sitemap-blog.xml', desc: '22 In-Depth Guides' },
+  { name: 'Main Pages Sitemap (sitemap-main.xml)', url: '/sitemap-main.xml', desc: '11 Core Service Pages' }
+];
+---
+
+<Layout
+  title="Website Sitemap & Directory | Roam Morocco Tours"
+  description="Comprehensive HTML sitemap and directory of all 176 pages on Roam Morocco Tours, including private transfers, desert tours, destinations, and travel guides."
+  canonical="https://roammorocco.tours/sitemap.html"
+>
+  <main style="background: #FAF8F5; min-height: 100vh; padding: 48px 20px 80px;">
+    <div style="max-width: 1140px; margin: 0 auto;">
+      
+      <!-- Breadcrumbs -->
+      <nav style="font-size: 13px; color: #666; margin-bottom: 24px;">
+        <a href="/" style="color: #666; text-decoration: none;">Home</a> &rarr; 
+        <span style="color: #000; font-weight: 600;">Sitemap &amp; Directory</span>
+      </nav>
+
+      <!-- Header Card -->
+      <header style="background: #111827; color: #ffffff; border-radius: 16px; padding: 40px; margin-bottom: 40px; border-left: 6px solid #C8A45C; box-shadow: 0 10px 30px rgba(0,0,0,0.06);">
+        <span style="display: inline-block; background: rgba(200, 164, 92, 0.2); color: #E5C378; padding: 4px 12px; border-radius: 9999px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px;">
+          Website Directory
+        </span>
+        <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 12px; color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">
+          Complete Site Directory &amp; Sitemap
+        </h1>
+        <p style="color: #9CA3AF; font-size: 15px; max-width: 780px; line-height: 1.6; margin: 0;">
+          Explore all 176 published pages on Roam Morocco Tours. Browse dedicated city-to-city private transfers, custom desert expeditions, destination guides, and authentic travel advice.
+        </p>
+      </header>
+
+      <!-- XML Sitemaps Banner for SEO & Bots -->
+      <section style="background: #ffffff; border: 1px solid rgba(200, 164, 92, 0.4); border-radius: 14px; padding: 24px; margin-bottom: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.02);">
+        <h2 style="font-size: 18px; font-weight: 700; color: #111827; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #C8A45C;">📁</span> Raw XML Sitemaps (For Search Engines &amp; GSC)
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+          {xmlSitemaps.map((item) => (
+            <a href={item.url} target="_blank" rel="noopener" style="display: block; padding: 12px 16px; background: #F9FAFB; border: 1px solid #E5E7EB; border-radius: 8px; text-decoration: none; transition: all 0.15s ease;">
+              <strong style="color: #111827; font-size: 13.5px; display: block; margin-bottom: 2px;">{item.name}</strong>
+              <span style="color: #6B7280; font-size: 12px;">{item.desc}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Section 1: Main Core Pages & Services -->
+      <section style="background: #ffffff; border-radius: 14px; padding: 32px; margin-bottom: 32px; border: 1px solid #E5E7EB;">
+        <h2 style="font-size: 22px; font-weight: 800; color: #111827; margin-bottom: 20px; font-family: 'Playfair Display', Georgia, serif;">
+          🏛️ Main Services &amp; Company
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px;">
+          {mainPages.map((page) => (
+            <a href={page.url} style="color: #1F2937; text-decoration: none; font-size: 14px; padding: 8px 12px; border-radius: 6px; background: #F9FAFB; border: 1px solid #F3F4F6; transition: background 0.15s ease;" onmouseover="this.style.background='#F3F4F6'" onmouseout="this.style.background='#F9FAFB'">
+              &bull; {page.name}
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Section 2: Tours & Guided Circuits -->
+      <section style="background: #ffffff; border-radius: 14px; padding: 32px; margin-bottom: 32px; border: 1px solid #E5E7EB;">
+        <h2 style="font-size: 22px; font-weight: 800; color: #111827; margin-bottom: 20px; font-family: 'Playfair Display', Georgia, serif;">
+          🐪 Tours &amp; Desert Expeditions
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 14px;">
+          {tours.map((tour) => (
+            <a href={tour.url} style="display: block; padding: 16px; border-radius: 10px; border: 1px solid #E5E7EB; background: #ffffff; text-decoration: none; transition: border-color 0.15s ease;" onmouseover="this.style.borderColor='#C8A45C'" onmouseout="this.style.borderColor='#E5E7EB'">
+              <strong style="color: #111827; font-size: 15px; display: block; margin-bottom: 4px;">{tour.name}</strong>
+              <p style="color: #6B7280; font-size: 13px; margin: 0; line-height: 1.5;">{tour.desc}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Section 3: Destinations -->
+      <section style="background: #ffffff; border-radius: 14px; padding: 32px; margin-bottom: 32px; border: 1px solid #E5E7EB;">
+        <h2 style="font-size: 22px; font-weight: 800; color: #111827; margin-bottom: 20px; font-family: 'Playfair Display', Georgia, serif;">
+          📍 Destinations &amp; Regions
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px;">
+          {destinations.map((dest) => (
+            <a href={dest.url} style="color: #1F2937; text-decoration: none; font-size: 14px; padding: 10px 14px; border-radius: 8px; background: #F9FAFB; border: 1px solid #E5E7EB; font-weight: 500;">
+              📍 {dest.name}
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Section 4: Travel Blog Guides -->
+      <section style="background: #ffffff; border-radius: 14px; padding: 32px; margin-bottom: 32px; border: 1px solid #E5E7EB;">
+        <h2 style="font-size: 22px; font-weight: 800; color: #111827; margin-bottom: 20px; font-family: 'Playfair Display', Georgia, serif;">
+          📖 Travel Advice &amp; Culture Guides
+        </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px;">
+          {blogGuides.map((guide) => (
+            <a href={guide.url} style="color: #1F2937; text-decoration: none; font-size: 13.5px; padding: 8px 12px; border-radius: 6px; background: #F9FAFB; border: 1px solid #F3F4F6;">
+              &bull; {guide.name}
+            </a>
+          ))}
+        </div>
+      </section>
+
+      <!-- Section 5: All 127 Transfer Routes (Grouped by Origin) -->
+      <section style="background: #ffffff; border-radius: 14px; padding: 32px; margin-bottom: 32px; border: 1px solid #E5E7EB;">
+        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+          <h2 style="font-size: 22px; font-weight: 800; color: #111827; margin: 0; font-family: 'Playfair Display', Georgia, serif;">
+            🚗 Private City-to-City Transfers (127 Routes)
+          </h2>
+          <a href="/transfers.html" style="color: #C8A45C; font-weight: 700; font-size: 13.5px; text-decoration: underline;">
+            View Full Transfer Directory &rarr;
+          </a>
+        </div>
+
+        <p style="color: #6B7280; font-size: 14px; margin-bottom: 24px;">
+          Direct, private chauffeur door-to-door transfers connecting all airports, imperial cities, coastal medinas, and mountain villages:
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          {sortedOrigins.map((origin) => (
+            <div style="background: #FAFAFA; border: 1px solid #E5E7EB; border-radius: 10px; padding: 18px;">
+              <h3 style="font-size: 15px; font-weight: 800; color: #111827; margin-bottom: 12px; border-bottom: 2px solid #C8A45C; padding-bottom: 6px;">
+                Departing from {origin} ({originGroups[origin].length})
+              </h3>
+              <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;">
+                {originGroups[origin].map((r) => (
+                  <li>
+                    <a href={`/transfers/${r.slug}.html`} style="color: #374151; font-size: 12.5px; text-decoration: none; display: block; padding: 2px 0;">
+                      &rarr; {r.from} to {r.to}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    </div>
+  </main>
+</Layout>

@@ -80,7 +80,6 @@ function categorizeFile(file) {
 
 function buildUrlsetXml(files, today) {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
   for (const file of files) {
@@ -101,7 +100,6 @@ function buildUrlsetXml(files, today) {
 
 function buildSitemapIndexXml(sitemaps, today) {
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
-  xml += '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n';
   xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 
   for (const sitemapName of sitemaps) {
