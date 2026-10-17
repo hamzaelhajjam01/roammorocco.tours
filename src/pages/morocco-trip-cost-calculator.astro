@@ -30,13 +30,6 @@ const schema = {
         "postalCode": "40000",
         "addressCountry": "MA"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "985"
-      },
       "founder": [
         {
           "@type": "Person",
@@ -58,10 +51,19 @@ const schema = {
       "applicationCategory": "TravelApplication",
       "operatingSystem": "All",
       "description": "Interactive travel cost and driving route calculator for planning custom trips across Morocco, private chauffeurs, luxury riads, and Sahara desert expeditions.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "985",
+        "reviewCount": "985"
+      },
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31"
       }
     },
     {

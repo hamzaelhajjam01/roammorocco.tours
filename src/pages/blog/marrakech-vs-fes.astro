@@ -7,114 +7,72 @@ const canonical = "https://roammorocco.tours/blog/marrakech-vs-fes.html";
 const ogImage = "https://roammorocco.tours/images/marrakech_vs_fes_hero.jpg";
 const bodyClass = "roam-light-theme";
 const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
-const schema = [
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Roam Morocco Tours",
-    "url": "https://roammorocco.tours/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://roammorocco.tours/?s={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Roam Morocco Tours",
-    "url": "https://roammorocco.tours/",
-    "description": "Premier Morocco travel agency offering custom tours across the Sahara Desert, ancient medinas, and Atlas Mountains.",
-    "image": [
-      "https://roammorocco.tours/images/marrakech_vs_fes_hero.jpg",
-      "https://roammorocco.tours/images/hero-desert.jpg"
-    ],
-    "logo": "https://roammorocco.tours/images/Logos/roammorocco-favicon.png",
-    "telephone": "+212 653-506441",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/roammorocco",
-      "https://www.instagram.com/roammorocco"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
-      "addressLocality": "Marrakech",
-      "postalCode": "40000",
-      "addressCountry": "MA"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "worstRating": "1",
-      "reviewCount": "985"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": {
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": `${canonical}#article`,
+      "headline": title,
+      "description": description,
+      "image": ogImage,
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-03-01",
+      "author": [
+        {
           "@type": "Person",
-          "name": "Sarah M."
+          "name": "Hamza",
+          "jobTitle": "Co-Founder & Expedition Curator",
+          "url": "https://roammorocco.tours/about.html"
         },
-        "datePublished": "2026-03-15",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
+        {
+          "@type": "Person",
+          "name": "Abdelhakim",
+          "jobTitle": "Co-Founder & Operations Lead",
+          "url": "https://roammorocco.tours/about.html"
+        }
+      ],
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
       },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "James T."
-        },
-        "datePublished": "2026-05-22",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "RoamMorocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Elena R."
-        },
-        "datePublished": "2026-06-10",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonical
       }
-    ],
-    "founder": [
-      {
-        "@type": "Person",
-        "name": "Hamza",
-        "jobTitle": "Co-Founder & Expedition Curator"
-      },
-      {
-        "@type": "Person",
-        "name": "Abdelhakim",
-        "jobTitle": "Co-Founder & Operations Lead"
-      }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "url": "https://roammorocco.tours/",
-      "availability": "https://schema.org/InStock",
-      "priceCurrency": "USD",
-      "price": "100.00",
-      "priceValidUntil": "2027-12-31"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonical}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title,
+          "item": canonical
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonical}#faq`,
     "mainEntity": [
       {
         "@type": "Question",
@@ -190,7 +148,8 @@ const schema = [
       }
     ]
   }
-];
+  ]
+};
 ---
 <Layout title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
 

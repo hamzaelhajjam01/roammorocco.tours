@@ -9,31 +9,24 @@ const bodyClass = "roam-light-theme";
 const extraStyles = [];
 const schema = {
   "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  "name": "RoamMorocco",
-  "image": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
-  "telephone": "+212 653-506441",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
-    "addressLocality": "Marrakech",
-    "postalCode": "40000",
-    "addressCountry": "MA"
+  "@type": "WebPage",
+  "@id": `${canonical}#webpage`,
+  "url": canonical,
+  "name": title,
+  "description": description,
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "bestRating": "5",
-    "worstRating": "1",
-    "reviewCount": "985"
-  },
-  "offers": {
-    "@type": "Offer",
+  "publisher": {
+    "@type": "TravelAgency",
+    "name": "Roam Morocco Tours",
     "url": "https://roammorocco.tours/",
-    "availability": "https://schema.org/InStock",
-    "priceCurrency": "USD",
-    "price": "100.00",
-    "priceValidUntil": "2027-12-31"
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+    }
   }
 };
 ---

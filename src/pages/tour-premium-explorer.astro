@@ -11,102 +11,12 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "RoamMorocco",
+    "name": "Roam Morocco Tours",
     "url": "https://roammorocco.tours/",
     "potentialAction": {
       "@type": "SearchAction",
       "target": "https://roammorocco.tours/?s={search_term_string}",
       "query-input": "required name=search_term_string"
-    }
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "RoamMorocco",
-    "url": "https://roammorocco.tours/",
-    "description": "Premier Morocco travel agency offering custom tours across the Sahara Desert, ancient medinas, and Atlas Mountains.",
-    "image": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
-    "logo": "https://roammorocco.tours/images/Logos/roammorocco-favicon.png",
-    "telephone": "+212 653-506441",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/roammorocco",
-      "https://www.instagram.com/roammorocco"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
-      "addressLocality": "Marrakech",
-      "postalCode": "40000",
-      "addressCountry": "MA"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "worstRating": "1",
-      "reviewCount": "985"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Sarah M."
-        },
-        "datePublished": "2026-03-15",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "James T."
-        },
-        "datePublished": "2026-05-22",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "RoamMorocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Elena R."
-        },
-        "datePublished": "2026-06-10",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        },
-        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
-      }
-    ],
-    "founder": [
-      {
-        "@type": "Person",
-        "name": "Hamza",
-        "jobTitle": "Co-Founder & Expedition Curator"
-      },
-      {
-        "@type": "Person",
-        "name": "Abdelhakim",
-        "jobTitle": "Co-Founder & Operations Lead"
-      }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "url": "https://roammorocco.tours/",
-      "availability": "https://schema.org/InStock",
-      "priceCurrency": "USD",
-      "price": "100.00",
-      "priceValidUntil": "2027-12-31"
     }
   },
   {
@@ -157,7 +67,10 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "TouristTrip",
+    "@type": [
+      "TouristTrip",
+      "Product"
+    ],
     "@id": "https://roammorocco.tours/tour-premium-explorer.html#trip",
     "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
     "description": "3 iconic day-trips from Marrakech with zero hotel changes: Atlantic coast in Essaouira, Atlas Mountains trekking in Ourika Valley, and luxury sunset dinner in Agafay Desert.",
@@ -170,9 +83,13 @@ const schema = [
       "Culture Seekers"
     ],
     "duration": "P3D",
+    "brand": {
+      "@type": "Brand",
+      "name": "Roam Morocco Tours"
+    },
     "provider": {
       "@type": "TravelAgency",
-      "name": "RoamMorocco",
+      "name": "Roam Morocco Tours",
       "url": "https://roammorocco.tours/",
       "telephone": "+212 653-506441"
     },
@@ -182,8 +99,114 @@ const schema = [
       "priceCurrency": "USD",
       "price": "395.00",
       "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2027-12-31"
+      "validFrom": "2026-01-01",
+      "priceValidUntil": "2027-12-31",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "MA",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 2,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "MA"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          }
+        }
+      }
     },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "985",
+      "reviewCount": "985"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Sarah Miller"
+        },
+        "datePublished": "2026-03-15",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "James Thorne"
+        },
+        "datePublished": "2026-05-22",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Roam Morocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
+      },
+      {
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Elena Rossi"
+        },
+        "datePublished": "2026-06-10",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
+      }
+    ],
     "itinerary": {
       "@type": "ItemList",
       "numberOfItems": 3,

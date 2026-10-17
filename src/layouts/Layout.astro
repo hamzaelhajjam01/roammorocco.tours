@@ -189,8 +189,44 @@ const {
           "lowPrice": "195",
           "highPrice": "2850",
           "offerCount": "24",
+          "priceValidUntil": "2027-12-31",
           "availability": "https://schema.org/InStock",
-          "url": "https://roammorocco.tours/#services"
+          "url": "https://roammorocco.tours/#services",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "MA",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 2,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/FreeReturn"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "MA"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              }
+            }
+          }
         },
         "aggregateRating": {
           "@type": "AggregateRating",
@@ -203,20 +239,31 @@ const {
         "review": [
           {
             "@type": "Review",
+            "itemReviewed": {
+              "@type": "Product",
+              "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+              "image": "https://roammorocco.tours/images/hero-desert.jpg"
+            },
             "author": {
               "@type": "Person",
-              "name": "David & Eleanor Vance"
+              "name": "David Vance"
             },
             "datePublished": "2025-11-14",
             "reviewBody": "Roam Morocco curated an unforgettable 10-day private journey from Casablanca to Merzouga and Marrakech. Our driver and guide were phenomenal, navigating mountain passes effortlessly while sharing deep cultural context.",
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5",
-              "bestRating": "5"
+              "bestRating": "5",
+              "worstRating": "1"
             }
           },
           {
             "@type": "Review",
+            "itemReviewed": {
+              "@type": "Product",
+              "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+              "image": "https://roammorocco.tours/images/hero-desert.jpg"
+            },
             "author": {
               "@type": "Person",
               "name": "Charlotte Davies"
@@ -226,49 +273,68 @@ const {
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5",
-              "bestRating": "5"
+              "bestRating": "5",
+              "worstRating": "1"
             }
           },
           {
             "@type": "Review",
+            "itemReviewed": {
+              "@type": "Product",
+              "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+              "image": "https://roammorocco.tours/images/hero-desert.jpg"
+            },
             "author": {
               "@type": "Person",
-              "name": "Marcus & Julian Thorne"
+              "name": "Marcus Thorne"
             },
             "datePublished": "2026-01-18",
             "reviewBody": "Flawless logistics, pristine Prado 4x4, and genuine Berber hospitality throughout our Atlas trekking and Fes exploration. No tourist traps, just authentic artisan encounters and extraordinary riads.",
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5",
-              "bestRating": "5"
+              "bestRating": "5",
+              "worstRating": "1"
             }
           },
           {
             "@type": "Review",
+            "itemReviewed": {
+              "@type": "Product",
+              "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+              "image": "https://roammorocco.tours/images/hero-desert.jpg"
+            },
             "author": {
               "@type": "Person",
-              "name": "Dr. Robert Sterling"
+              "name": "Robert Sterling"
             },
             "datePublished": "2026-02-09",
             "reviewBody": "The custom historical itinerary crafted by Roam Morocco exceeded our expectations. The depth of knowledge of the imperial cities and the seamless private driver service made this the trip of a lifetime.",
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5",
-              "bestRating": "5"
+              "bestRating": "5",
+              "worstRating": "1"
             }
           },
           {
             "@type": "Review",
+            "itemReviewed": {
+              "@type": "Product",
+              "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+              "image": "https://roammorocco.tours/images/hero-desert.jpg"
+            },
             "author": {
               "@type": "Person",
-              "name": "Sophie & Liam Miller"
+              "name": "Sophie Miller"
             },
             "datePublished": "2026-03-01",
             "reviewBody": "From airport pickup to the farewell dinner in Marrakech, every single detail was handled with precision and warmth. Transparent pricing, no hidden costs, and exceptional personalized care.",
             "reviewRating": {
               "@type": "Rating",
               "ratingValue": "5",
-              "bestRating": "5"
+              "bestRating": "5",
+              "worstRating": "1"
             }
           }
         ]

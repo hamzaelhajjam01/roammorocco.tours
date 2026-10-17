@@ -10,44 +10,6 @@ const extraStyles = ["/css/destination-itinerary.css", "/css/roam-toc.css?v=2026
 const schema = [
   {
     "@context": "https://schema.org",
-    "@type": [
-      "TouristTrip",
-      "Product"
-    ],
-    "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
-    "description": "Private guided day excursion through Morocco's cinematic heritage. Walk UNESCO Kasbah Ait Benhaddou, explore Atlas Film Studios sets from Gladiator, Lawrence of Arabia, and Game of Thrones, crossing the High Atlas Mountains.",
-    "touristType": [
-      "Film Enthusiast",
-      "Cultural Explorer",
-      "History Buff"
-    ],
-    "image": [
-      "https://roammorocco.tours/images/hero-desert.jpg",
-      "https://roammorocco.tours/img/wall-camp.jpg"
-    ],
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Roam Morocco Tours",
-      "url": "https://roammorocco.tours/"
-    },
-    "offers": {
-      "@type": "Offer",
-      "price": "145",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://roammorocco.tours/tour-heritage-cinema.html"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "985",
-      "reviewCount": "985"
-    }
-  },
-  {
-    "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Roam Morocco Tours",
     "url": "https://roammorocco.tours/",
@@ -59,95 +21,167 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Roam Morocco Tours",
-    "url": "https://roammorocco.tours/",
-    "description": "Premier Morocco travel agency offering custom tours across the Sahara Desert, ancient medinas, and Atlas Mountains.",
+    "@type": [
+      "TouristTrip",
+      "Product"
+    ],
+    "@id": "https://roammorocco.tours/tour-heritage-cinema.html#trip",
+    "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+    "description": "Private guided day excursion through Morocco's cinematic heritage. Walk UNESCO Kasbah Ait Benhaddou, explore Atlas Film Studios sets from Gladiator, Lawrence of Arabia, and Game of Thrones, crossing the High Atlas Mountains.",
+    "touristType": [
+      "Film Enthusiast",
+      "Cultural Explorer",
+      "History Buff"
+    ],
+    "duration": "P1D",
     "image": [
       "https://roammorocco.tours/images/hero-desert.jpg",
       "https://roammorocco.tours/img/wall-camp.jpg"
     ],
-    "logo": "https://roammorocco.tours/images/Logos/roammorocco-favicon.png",
-    "telephone": "+212 653-506441",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/roammorocco",
-      "https://www.instagram.com/roammorocco"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
-      "addressLocality": "Marrakech",
-      "postalCode": "40000",
-      "addressCountry": "MA"
+    "brand": {
+      "@type": "Brand",
+      "name": "Roam Morocco Tours"
+    },
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "145.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01",
+      "priceValidUntil": "2027-12-31",
+      "url": "https://roammorocco.tours/tour-heritage-cinema.html",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "MA",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 2,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "MA"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          }
+        }
+      }
     },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
       "bestRating": "5",
       "worstRating": "1",
+      "ratingCount": "985",
       "reviewCount": "985"
     },
     "review": [
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
         "author": {
           "@type": "Person",
-          "name": "Sarah M."
+          "name": "Sarah Miller"
         },
         "datePublished": "2026-03-15",
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": "5"
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
         "author": {
           "@type": "Person",
-          "name": "James T."
+          "name": "James Thorne"
         },
         "datePublished": "2026-05-22",
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": "5"
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
         },
-        "reviewBody": "RoamMorocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
+        "reviewBody": "Roam Morocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Morocco Film Location Tours: Ait Benhaddou & Atlas Studios",
+          "image": "https://roammorocco.tours/images/hero-desert.jpg"
+        },
         "author": {
           "@type": "Person",
-          "name": "Elena R."
+          "name": "Elena Rossi"
         },
         "datePublished": "2026-06-10",
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": "5"
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
         },
         "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
       }
     ],
-    "founder": [
-      {
-        "@type": "Person",
-        "name": "Hamza",
-        "jobTitle": "Co-Founder & Expedition Curator"
-      },
-      {
-        "@type": "Person",
-        "name": "Abdelhakim",
-        "jobTitle": "Co-Founder & Operations Lead"
-      }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "url": "https://roammorocco.tours/",
-      "availability": "https://schema.org/InStock",
-      "priceCurrency": "USD",
-      "price": "100.00",
-      "priceValidUntil": "2027-12-31"
+    "itinerary": {
+      "@type": "ItemList",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "High Atlas Crossing via Tizi n'Tichka Pass (2,260m)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guided Walking Tour of UNESCO Kasbah Ait Benhaddou"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Behind-the-Scenes at Atlas Film Studios & Kasbah Taourirt"
+        }
+      ]
     }
   },
   {
@@ -195,57 +229,6 @@ const schema = [
         }
       }
     ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "@id": "https://roammorocco.tours/tour-heritage-cinema.html#trip",
-    "name": "Heritage & Cinema Tour: Ait Benhaddou & Ouarzazate Film Studios",
-    "description": "Cross the High Atlas Mountains via Tizi n'Tichka to explore the UNESCO World Heritage Kasbah of Ait Benhaddou and the famous Atlas Film Studios in Ouarzazate.",
-    "url": "https://roammorocco.tours/tour-heritage-cinema.html",
-    "image": "https://roammorocco.tours/images/hero-desert.jpg",
-    "touristType": [
-      "Cultural Tourists",
-      "Film Buffs",
-      "History Lovers",
-      "Families"
-    ],
-    "duration": "P1D",
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "RoamMorocco",
-      "url": "https://roammorocco.tours/",
-      "telephone": "+212 653-506441"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://roammorocco.tours/tour-heritage-cinema.html",
-      "priceCurrency": "USD",
-      "price": "195.00",
-      "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2027-12-31"
-    },
-    "itinerary": {
-      "@type": "ItemList",
-      "numberOfItems": 3,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "High Atlas Crossing via Tizi n'Tichka Pass (2,260m)"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Guided Walking Tour of UNESCO Kasbah Ait Benhaddou"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Behind-the-Scenes at Atlas Film Studios & Kasbah Taourirt"
-        }
-      ]
-    }
   }
 ];
 ---

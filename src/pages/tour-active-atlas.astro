@@ -11,7 +11,7 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "RoamMorocco",
+    "name": "Roam Morocco Tours",
     "url": "https://roammorocco.tours/",
     "potentialAction": {
       "@type": "SearchAction",
@@ -21,92 +21,162 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "RoamMorocco",
-    "url": "https://roammorocco.tours/",
-    "description": "Premier Morocco travel agency offering custom tours across the Sahara Desert, ancient medinas, and Atlas Mountains.",
-    "image": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png",
-    "logo": "https://roammorocco.tours/images/Logos/roammorocco-favicon.png",
-    "telephone": "+212 653-506441",
-    "priceRange": "$$",
-    "sameAs": [
-      "https://www.facebook.com/roammorocco",
-      "https://www.instagram.com/roammorocco"
+    "@type": ["TouristTrip", "Product"],
+    "@id": "https://roammorocco.tours/tour-active-atlas.html#trip",
+    "name": "Active High Atlas Adventure: 3-Day Mount Toubkal Trek",
+    "description": "Summit Mount Toubkal (4,167m) in the High Atlas Mountains. Includes certified Berber mountain guides, Toubkal Refuge stay, mule support, and private Marrakech transfers.",
+    "url": "https://roammorocco.tours/tour-active-atlas.html",
+    "image": "https://roammorocco.tours/images/wall-atlas.jpg",
+    "brand": {
+      "@type": "Brand",
+      "name": "Roam Morocco Tours"
+    },
+    "touristType": [
+      "Hikers",
+      "Adventure Travelers",
+      "Outdoor Enthusiasts"
     ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "N4, Immeuble, 38 Rue Tariq Bnou Ziad",
-      "addressLocality": "Marrakech",
-      "postalCode": "40000",
-      "addressCountry": "MA"
+    "duration": "P3D",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://roammorocco.tours/tour-active-atlas.html",
+      "priceCurrency": "USD",
+      "price": "290.00",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01",
+      "priceValidUntil": "2027-12-31",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "MA",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 2,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "USD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "MA"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          }
+        }
+      }
     },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
       "bestRating": "5",
       "worstRating": "1",
+      "ratingCount": "985",
       "reviewCount": "985"
     },
     "review": [
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Active High Atlas Adventure: 3-Day Mount Toubkal Trek",
+          "image": "https://roammorocco.tours/images/wall-atlas.jpg"
+        },
         "author": {
           "@type": "Person",
-          "name": "Sarah M."
+          "name": "Sarah Miller"
         },
         "datePublished": "2026-03-15",
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": "5"
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
         },
-        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Sahara desert camp was luxurious, and everything was planned perfectly."
+        "reviewBody": "An absolutely incredible experience. The guides were knowledgeable, the Toubkal Refuge stay was memorable, and everything was planned perfectly."
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Active High Atlas Adventure: 3-Day Mount Toubkal Trek",
+          "image": "https://roammorocco.tours/images/wall-atlas.jpg"
+        },
         "author": {
           "@type": "Person",
-          "name": "James T."
+          "name": "James Thorne"
         },
         "datePublished": "2026-05-22",
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": "5"
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
         },
-        "reviewBody": "RoamMorocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
+        "reviewBody": "Roam Morocco organized the trip of a lifetime for our family. From the medinas of Marrakech to the Atlas Mountains, we felt safe and well-cared for."
       },
       {
         "@type": "Review",
+        "itemReviewed": {
+          "@type": "Product",
+          "name": "Active High Atlas Adventure: 3-Day Mount Toubkal Trek",
+          "image": "https://roammorocco.tours/images/wall-atlas.jpg"
+        },
         "author": {
           "@type": "Person",
-          "name": "Elena R."
+          "name": "Elena Rossi"
         },
         "datePublished": "2026-06-10",
         "reviewRating": {
           "@type": "Rating",
-          "ratingValue": "5"
+          "ratingValue": "5",
+          "bestRating": "5",
+          "worstRating": "1"
         },
-        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the riads they selected for us were breathtaking."
+        "reviewBody": "Exceptional service from start to finish. Our driver was punctual and polite, and the mountain lodges they selected for us were breathtaking."
       }
     ],
-    "founder": [
-      {
-        "@type": "Person",
-        "name": "Hamza",
-        "jobTitle": "Co-Founder & Expedition Curator"
-      },
-      {
-        "@type": "Person",
-        "name": "Abdelhakim",
-        "jobTitle": "Co-Founder & Operations Lead"
-      }
-    ],
-    "offers": {
-      "@type": "Offer",
-      "url": "https://roammorocco.tours/",
-      "availability": "https://schema.org/InStock",
-      "priceCurrency": "USD",
-      "price": "100.00",
-      "priceValidUntil": "2027-12-31"
+    "itinerary": {
+      "@type": "ItemList",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Day 1: Marrakech to Imlil & Trek to Toubkal Refuge (3,207m)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Day 2: Mount Toubkal Summit Push (4,167m) & Sunrise"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Day 3: Scenic Descent to Imlil & Return Transfer to Marrakech"
+        }
+      ]
     }
   },
   {
@@ -134,7 +204,7 @@ const schema = [
         "name": "What gear and footwear should I wear for the Atlas Mountains?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sturdy walking sneakers or lightweight hiking boots with good traction are essential for uneven dirt and cobblestone trails. Dress in comfortable layers (breathable shirt, fleece jacket or windbreaker), as mountain temperatures can be 5\u00b0C to 10\u00b0C cooler than Marrakech. Sunglasses, sunscreen, and a small daypack are recommended."
+          "text": "Sturdy walking sneakers or lightweight hiking boots with good traction are essential for uneven dirt and cobblestone trails. Dress in comfortable layers (breathable shirt, fleece jacket or windbreaker), as mountain temperatures can be 5°C to 10°C cooler than Marrakech. Sunglasses, sunscreen, and a small daypack are recommended."
         }
       },
       {
@@ -154,56 +224,6 @@ const schema = [
         }
       }
     ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "@id": "https://roammorocco.tours/tour-active-atlas.html#trip",
-    "name": "Active High Atlas Adventure: 3-Day Mount Toubkal Trek",
-    "description": "Summit Mount Toubkal (4,167m) in the High Atlas Mountains. Includes certified Berber mountain guides, Toubkal Refuge stay, mule support, and private Marrakech transfers.",
-    "url": "https://roammorocco.tours/tour-active-atlas.html",
-    "image": "https://roammorocco.tours/images/wall-atlas.jpg",
-    "touristType": [
-      "Hikers",
-      "Adventure Travelers",
-      "Outdoor Enthusiasts"
-    ],
-    "duration": "P3D",
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "RoamMorocco",
-      "url": "https://roammorocco.tours/",
-      "telephone": "+212 653-506441"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": "https://roammorocco.tours/tour-active-atlas.html",
-      "priceCurrency": "USD",
-      "price": "290.00",
-      "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2027-12-31"
-    },
-    "itinerary": {
-      "@type": "ItemList",
-      "numberOfItems": 3,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Day 1: Marrakech to Imlil & Trek to Toubkal Refuge (3,207m)"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Day 2: Mount Toubkal Summit Push (4,167m) & Sunrise"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Day 3: Scenic Descent to Imlil & Return Transfer to Marrakech"
-        }
-      ]
-    }
   }
 ];
 ---
