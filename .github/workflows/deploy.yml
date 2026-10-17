@@ -25,6 +25,70 @@ jobs:
       - name: 🚀 Build Astro Static Production Site
         run: npm run build
 
+      - name: 🔍 Inspect Hostinger FTP Environment
+        run: |
+          python3 -c "
+          import os, socket, ftplib
+
+          server = os.environ.get('FTP_SERVER', '')
+          user = os.environ.get('FTP_USERNAME', '')
+          passwd = os.environ.get('FTP_PASSWORD', '')
+
+          try:
+              ip = socket.gethostbyname(server)
+              print(f'FTP Server IP: {ip}')
+          except Exception as e:
+              print(f'DNS error: {e}')
+
+          ftp = None
+          try:
+              ftp = ftplib.FTP_TLS(server, timeout=30)
+              ftp.login(user, passwd)
+              ftp.prot_p()
+              print('Connected with FTP_TLS')
+          except Exception as e:
+              print(f'FTP_TLS error ({e}), falling back to plain FTP...')
+              try:
+                  ftp = ftplib.FTP(server, timeout=30)
+                  ftp.login(user, passwd)
+                  print('Connected with plain FTP')
+              except Exception as e2:
+                  print(f'Plain FTP error: {e2}')
+
+          if ftp:
+              print('Current working directory (PWD):', ftp.pwd())
+              print('\n--- Listing initial directory ---')
+              ftp.dir()
+
+              test_paths = [
+                  'public_html',
+                  '/public_html',
+                  'domains',
+                  '/domains',
+                  'domains/roammorocco.tours',
+                  '/domains/roammorocco.tours',
+                  '/domains/roammorocco.tours/public_html',
+                  'domains/roammorocco.tours/public_html'
+              ]
+              for p in test_paths:
+                  try:
+                      ftp.cwd(p)
+                      print(f'\n--- CWD successful: {p} (PWD: {ftp.pwd()}) ---')
+                      items = []
+                      ftp.retrlines('LIST', items.append)
+                      for it in items[:15]:
+                          print('  ', it)
+                      if len(items) > 15:
+                          print(f'   ... ({len(items)} items total)')
+                  except Exception as err:
+                      print(f'Cannot CWD to {p}: {err}')
+              ftp.quit()
+          "
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+
       - name: 📂 Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
