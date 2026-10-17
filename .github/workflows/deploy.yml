@@ -26,57 +26,7 @@ jobs:
         run: npm run build
 
       - name: 🔍 Inspect Hostinger FTP Environment
-        run: |
-          python3 -c "
-          import os, socket, ftplib
-
-          server = os.environ.get('FTP_SERVER', '')
-          user = os.environ.get('FTP_USERNAME', '')
-          passwd = os.environ.get('FTP_PASSWORD', '')
-
-          try:
-              ip = socket.gethostbyname(server)
-              print(f'Is FTP_SERVER IP 82.197.80.225?: {ip == "82.197.80.225"}')
-              print(f'FTP Server IP octets: {[int(x) for x in ip.split(".")]}')
-          except Exception as e:
-              print(f'DNS error: {e}')
-
-          print('\n--- Testing login on LIVE WEB SERVER 82.197.80.225 ---')
-          for target_host in [server, '82.197.80.225']:
-              print(f'\n=== Connecting to {target_host} ===')
-              ftp_inst = None
-              try:
-                  ftp_inst = ftplib.FTP_TLS(target_host, timeout=20)
-                  ftp_inst.login(user, passwd)
-                  ftp_inst.prot_p()
-                  print(f'Successfully connected with FTP_TLS to {target_host}')
-              except Exception as e1:
-                  print(f'FTP_TLS error on {target_host}: {e1}, trying plain FTP...')
-                  try:
-                      ftp_inst = ftplib.FTP(target_host, timeout=20)
-                      ftp_inst.login(user, passwd)
-                      print(f'Successfully connected with plain FTP to {target_host}')
-                  except Exception as e2:
-                      print(f'Plain FTP error on {target_host}: {e2}')
-
-              if ftp_inst:
-                  print(f'PWD on {target_host}:', ftp_inst.pwd())
-                  print(f'Root listing on {target_host}:')
-                  ftp_inst.dir()
-                  for cand in ['/public_html', '/domains/roammorocco.tours/public_html']:
-                      try:
-                          ftp_inst.cwd(cand)
-                          print(f'CWD {cand} succeeded on {target_host}. Listing:')
-                          lines = []
-                          ftp_inst.retrlines('LIST', lines.append)
-                          for l in lines[:10]:
-                              print('  ', l)
-                          if len(lines) > 10:
-                              print(f'   ... ({len(lines)} total)')
-                      except Exception as err:
-                          print(f'CWD {cand} failed on {target_host}: {err}')
-                  ftp_inst.quit()
-          "
+        run: python3 .github/scripts/check_ftp.py
         env:
           FTP_SERVER: ${{ secrets.FTP_SERVER }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
