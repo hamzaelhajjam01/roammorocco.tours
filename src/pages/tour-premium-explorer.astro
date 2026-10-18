@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "3-Day Premium Explorer Tour | RoamMorocco";
 const description = "Discover the best of Morocco with our 3-Day Premium Explorer. Experience Essaouira, the Ourika Valley, and the Agafay Desert from Marrakech.";
@@ -602,6 +603,16 @@ const schema = [
       </div>
 
       <h2>3-Day Detailed Itinerary</h2>
+
+      <RouteGoogleMapCard
+        origin="Marrakech"
+        destination="Essaouira"
+        distance="191 km"
+        duration="2h 45m"
+        highway="R207 via Chichaoua & Argan Valley"
+        price={240}
+        waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%203-Day%20Premium%20Explorer%20Tour."
+      />
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">DAY 01 // 07:30 AM DEPARTURE</span>

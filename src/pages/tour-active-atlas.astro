@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Active High Atlas Trekking Tour | RoamMorocco";
 const description = "Embark on an adventure in the High Atlas Mountains. Trek through Imlil, visit remote Berber villages, and experience authentic Moroccan hospitality.";
@@ -602,6 +603,16 @@ const schema = [
       <p>However, the <strong>altitude of Mont Toubkal</strong> means that acclimatization and steady pacing are paramount. Our 3-day itinerary is purposefully paced with an overnight stay at 3,207m before the summit assault to minimize altitude fatigue and maximize summit success rates.</p>
 
       <h2>3-Day Jebel Toubkal Trek Itinerary</h2>
+
+      <RouteGoogleMapCard
+        origin="Marrakech"
+        destination="Imlil"
+        distance="67 km"
+        duration="1h 30m"
+        highway="R203 via Asni & Mizane Valley"
+        price={290}
+        waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%20Mount%20Toubkal%20Trek."
+      />
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">DAY 01 // VALLEY ASCENT</span>

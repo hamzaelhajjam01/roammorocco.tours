@@ -1,0 +1,416 @@
+---
+// RouteGoogleMapCard.astro - Interactive Google Maps Route & Itinerary Card
+// Replicates Google Maps Drive Directions preview with live Google Maps Embed API
+export interface Props {
+  origin: string;
+  destination: string;
+  distance?: string;
+  duration?: string;
+  highway?: string;
+  price?: number;
+  waUrl?: string;
+  lang?: string;
+  class?: string;
+}
+
+const {
+  origin,
+  destination,
+  distance,
+  duration,
+  highway,
+  price,
+  waUrl,
+  lang = 'en',
+  class: className = ''
+} = Astro.props;
+
+// Google Maps Platform API Key
+const GOOGLE_MAPS_KEY = "AIzaSyDxeEbSYiwVG8v8XTozfV95_oPlmJS909w";
+
+// Format location queries for Google Maps in Morocco
+const formatLoc = (loc: string) => {
+  const clean = loc.trim();
+  if (/morocco/i.test(clean)) return clean;
+  return `${clean}, Morocco`;
+};
+
+const originQuery = formatLoc(origin);
+const destQuery = formatLoc(destination);
+
+const embedSrc = `https://www.google.com/maps/embed/v1/directions?key=${GOOGLE_MAPS_KEY}&origin=${encodeURIComponent(originQuery)}&destination=${encodeURIComponent(destQuery)}&mode=driving`;
+const directionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(originQuery)}&destination=${encodeURIComponent(destQuery)}&travelmode=driving`;
+
+// Localized labels
+const i18nLabels: Record<string, { drive: string; directions: string; book: string; via: string; swap: string }> = {
+  en: { drive: 'Drive', directions: 'Directions', book: 'Book Private Driver', via: 'via', swap: 'Swap route direction' },
+  fr: { drive: 'En voiture', directions: 'Itinéraire', book: 'Réserver Chauffeur', via: 'via', swap: 'Inverser le trajet' },
+  es: { drive: 'En coche', directions: 'Cómo llegar', book: 'Reservar Conductor', via: 'por', swap: 'Invertir trayecto' },
+  de: { drive: 'Route', directions: 'Wegbeschreibung', book: 'Fahrer buchen', via: 'über', swap: 'Richtung umkehren' },
+  it: { drive: 'In auto', directions: 'Indicazioni', book: 'Prenota Autista', via: 'tramite', swap: 'Inverti percorso' }
+};
+
+const labels = i18nLabels[lang] || i18nLabels.en;
+---
+
+<div class={`google-route-card ${className}`} id="googleRouteCard" data-origin={originQuery} data-dest={destQuery} data-key={GOOGLE_MAPS_KEY}>
+  
+  <!-- 1. TOP HEADER: Travel Mode & Route Search Inputs -->
+  <div class="grc-top-bar">
+    <div class="grc-mode-label">
+      <svg class="grc-car-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+        <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+      </svg>
+      <span class="grc-mode-text">{labels.drive}</span>
+      <span class="grc-dots-menu" aria-hidden="true">⋮</span>
+    </div>
+
+    <!-- Dual Location Pills with Interactive Swap Button -->
+    <div class="grc-inputs-row">
+      <!-- Origin Pill -->
+      <div class="grc-input-pill grc-origin-pill" id="grcOriginBox">
+        <span class="grc-pill-marker grc-circle-marker" aria-hidden="true">○</span>
+        <span class="grc-pill-text" id="grcOriginText">{origin}</span>
+      </div>
+
+      <!-- Swap Button -->
+      <button type="button" class="grc-swap-btn" id="grcSwapBtn" title={labels.swap} aria-label={labels.swap}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+          <path d="m7 16-4-4m0 0 4-4m-4 4h18m-4 8 4 4m0 0-4 4m4-4H3"/>
+        </svg>
+      </button>
+
+      <!-- Destination Pill -->
+      <div class="grc-input-pill grc-dest-pill" id="grcDestBox">
+        <span class="grc-pill-marker grc-pin-marker" aria-hidden="true">📍</span>
+        <span class="grc-pill-text" id="grcDestText">{destination}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. INTERACTIVE GOOGLE MAPS EMBED -->
+  <div class="grc-map-viewport">
+    <iframe
+      id="grcMapIframe"
+      class="grc-iframe"
+      src={embedSrc}
+      width="100%"
+      height="360"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title={`Live route map between ${origin} and ${destination}`}
+    ></iframe>
+  </div>
+
+  <!-- 3. BOTTOM METRICS & ACTIONS BAR -->
+  <div class="grc-bottom-bar">
+    <div class="grc-stats">
+      {(duration || distance) && (
+        <div class="grc-stat-main">
+          {duration && <strong class="grc-duration">{duration}</strong>}
+          {distance && <span class="grc-distance">({distance})</span>}
+        </div>
+      )}
+      {highway && (
+        <div class="grc-stat-sub">
+          {labels.via} <span class="grc-highway-name">{highway}</span>
+        </div>
+      )}
+    </div>
+
+    <div class="grc-actions">
+      <!-- Direct Google Maps Navigation Link -->
+      <a
+        href={directionsUrl}
+        target="_blank"
+        rel="noopener"
+        class="grc-directions-btn"
+        id="grcDirectionsLink"
+      >
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+          <path d="M22.43 10.59l-9.01-9.01c-.75-.75-2.07-.75-2.83 0l-9 9c-.78.78-.78 2.04 0 2.82l9 9c.39.39.9.58 1.41.58.51 0 1.02-.2 1.41-.59l9.01-9.01c.8-.8.8-2.04.01-2.79zM13 14.5V12h-4v3H7v-4c0-.55.45-1 1-1h5V7.5l3.5 3.5-3.5 3.5z"/>
+        </svg>
+        <span>{labels.directions}</span>
+      </a>
+
+      <!-- WhatsApp Booking CTA -->
+      {waUrl && (
+        <a href={waUrl} target="_blank" rel="noopener" class="grc-book-btn">
+          <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="16" height="16" class="grc-wa-icon" />
+          <span>{labels.book} {price ? `(€${price})` : ''}</span>
+        </a>
+      )}
+    </div>
+  </div>
+
+</div>
+
+<style>
+  /* ── GOOGLE ROUTE CARD (DARK MODERN UX) ── */
+  .google-route-card {
+    background: #18181b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 16px;
+    color: #ffffff;
+    box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.45);
+    margin: 28px 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* 1. Header */
+  .grc-top-bar {
+    margin-bottom: 12px;
+  }
+  .grc-mode-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #e4e4e7;
+    margin-bottom: 12px;
+    padding: 0 4px;
+  }
+  .grc-car-icon {
+    color: #a1a1aa;
+  }
+  .grc-dots-menu {
+    margin-left: 6px;
+    color: #71717a;
+    font-size: 16px;
+    user-select: none;
+  }
+
+  /* Inputs Row */
+  .grc-inputs-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #202024;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 6px 12px;
+  }
+  .grc-input-pill {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+  }
+  .grc-pill-marker {
+    font-size: 14px;
+    line-height: 1;
+  }
+  .grc-circle-marker {
+    color: #a1a1aa;
+    font-weight: bold;
+  }
+  .grc-pin-marker {
+    font-size: 13px;
+  }
+  .grc-pill-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #f4f4f5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Swap Button */
+  .grc-swap-btn {
+    background: transparent;
+    border: none;
+    color: #a1a1aa;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: color 0.2s, background-color 0.2s, transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .grc-swap-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .grc-swap-btn:active {
+    transform: rotate(180deg);
+  }
+
+  /* 2. Map Viewport */
+  .grc-map-viewport {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #0f0f11;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .grc-iframe {
+    display: block;
+    width: 100%;
+    height: 360px;
+    border: 0;
+  }
+
+  /* 3. Bottom Bar */
+  .grc-bottom-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 14px;
+    padding: 4px 4px 0;
+    flex-wrap: wrap;
+  }
+  .grc-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .grc-stat-main {
+    font-size: 17px;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .grc-duration {
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .grc-distance {
+    color: #a1a1aa;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .grc-stat-sub {
+    font-size: 13px;
+    color: #71717a;
+  }
+  .grc-highway-name {
+    color: #a1a1aa;
+    font-weight: 500;
+  }
+
+  /* Action Buttons */
+  .grc-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .grc-directions-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1a73e8;
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(26, 115, 232, 0.35);
+    transition: background 0.2s, transform 0.15s;
+  }
+  .grc-directions-btn:hover {
+    background: #1765cc;
+    transform: translateY(-1px);
+  }
+  .grc-book-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25D366;
+    color: #ffffff !important;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(37, 211, 102, 0.35);
+    transition: background 0.2s, transform 0.15s;
+  }
+  .grc-book-btn:hover {
+    background: #20bd5a;
+    transform: translateY(-1px);
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 640px) {
+    .google-route-card {
+      padding: 12px;
+      margin: 20px 0;
+    }
+    .grc-iframe {
+      height: 280px;
+    }
+    .grc-inputs-row {
+      padding: 6px 10px;
+      gap: 4px;
+    }
+    .grc-pill-text {
+      font-size: 13px;
+    }
+    .grc-bottom-bar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 12px;
+    }
+    .grc-actions {
+      justify-content: stretch;
+    }
+    .grc-directions-btn,
+    .grc-book-btn {
+      flex: 1;
+      justify-content: center;
+    }
+  }
+</style>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const card = document.getElementById('googleRouteCard');
+    if (!card) return;
+
+    const swapBtn = document.getElementById('grcSwapBtn');
+    const originText = document.getElementById('grcOriginText');
+    const destText = document.getElementById('grcDestText');
+    const iframe = document.getElementById('grcMapIframe');
+    const directionsLink = document.getElementById('grcDirectionsLink');
+
+    if (!swapBtn || !originText || !destText || !iframe) return;
+
+    let isSwapped = false;
+    const initialOrigin = card.getAttribute('data-origin') || '';
+    const initialDest = card.getAttribute('data-dest') || '';
+    const key = card.getAttribute('data-key') || '';
+
+    swapBtn.addEventListener('click', () => {
+      isSwapped = !isSwapped;
+      swapBtn.style.transform = isSwapped ? 'rotate(180deg)' : 'rotate(0deg)';
+
+      // Swap text
+      const tempText = originText.textContent;
+      originText.textContent = destText.textContent;
+      destText.textContent = tempText;
+
+      const currentOrigin = isSwapped ? initialDest : initialOrigin;
+      const currentDest = isSwapped ? initialOrigin : initialDest;
+
+      // Update iframe embed URL
+      const newEmbedSrc = `https://www.google.com/maps/embed/v1/directions?key=${key}&origin=${encodeURIComponent(currentOrigin)}&destination=${encodeURIComponent(currentDest)}&mode=driving`;
+      iframe.src = newEmbedSrc;
+
+      // Update directions link
+      if (directionsLink) {
+        directionsLink.href = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(currentOrigin)}&destination=${encodeURIComponent(currentDest)}&travelmode=driving`;
+      }
+    });
+  });
+</script>

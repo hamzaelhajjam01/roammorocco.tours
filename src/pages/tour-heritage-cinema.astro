@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Morocco Film Location Tours: Ait Benhaddou &amp; Atlas Studios";
 const description = "Explore legendary movie sets with private Morocco film location tours. Walk Kasbah Ait Benhaddou, visit Atlas Film Studios, Gladiator II sets & Ouarzazate.";
@@ -603,6 +604,16 @@ const schema = [
       </div>
 
       <h2>Detailed Day-Trip Itinerary</h2>
+
+      <RouteGoogleMapCard
+        origin="Marrakech"
+        destination="Ait Ben Haddou"
+        distance="185 km"
+        duration="3h 45m"
+        highway="N9 via Tizi n'Tichka Pass (2,260m)"
+        price={145}
+        waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%20Morocco%20Film%20Location%20Tour%20(Ait%20Benhaddou%20%26%20Ouarzazate)."
+      />
 
       <div class="roam-itinerary-card">
         <span class="roam-day-badge">LEG 01 // 07:30 AM DEPARTURE</span>

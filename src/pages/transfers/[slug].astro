@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import RouteGoogleMapCard from '../../components/RouteGoogleMapCard.astro';
 import { routesData, type RouteItem } from '../../data/routes';
 
 export async function getStaticPaths() {
@@ -191,6 +192,17 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
             <strong class="metric-value">{route.highway}</strong>
           </div>
         </div>
+
+        <!-- Interactive Google Maps Route & Directions Card -->
+        <RouteGoogleMapCard
+          origin={route.from}
+          destination={route.to}
+          distance={route.distance}
+          duration={route.duration}
+          highway={route.highway}
+          price={route.price_sedan}
+          waUrl={waUrl}
+        />
 
         <!-- Quick Action CTAs -->
         <div class="route-hero-actions">
