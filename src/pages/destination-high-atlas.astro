@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "High Atlas Mountains Private Tours: Imlil &amp; Mount Toubkal";
 const description = "Private day trips from Marrakech to the High Atlas Mountains. Explore Imlil, Mount Toubkal valleys, and enjoy a traditional Berber lunch with a local guide.";
@@ -142,6 +143,18 @@ const schema = {
             
             <p>You can walk along ancient irrigation channels through ancient walnut trees, visit the high village of Armed, or simply unwind and enjoy a feast of freshly baked bread, cold-pressed olive oil, and organic mountain tagines.</p>
           </div>
+
+          
+          <!-- Featured Mountain Route: Marrakech to Imlil & Mount Toubkal -->
+          <RouteGoogleMapCard
+            origin="Marrakech"
+            destination="Imlil"
+            distance="67 km"
+            duration="1h 30m"
+            highway="R203 via Asni & Mizane Gorge"
+            price={65}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20a%20private%20day%20trip%20to%20Imlil%20in%20the%20High%20Atlas."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">

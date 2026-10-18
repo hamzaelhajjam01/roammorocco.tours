@@ -10,6 +10,7 @@ export interface Props {
   price?: number;
   waUrl?: string;
   lang?: string;
+  allowSwap?: boolean;
   class?: string;
 }
 
@@ -22,6 +23,7 @@ const {
   price,
   waUrl,
   lang = 'en',
+  allowSwap = false,
   class: className = ''
 } = Astro.props;
 
@@ -73,12 +75,20 @@ const labels = i18nLabels[lang] || i18nLabels.en;
         <span class="grc-pill-text" id="grcOriginText">{origin}</span>
       </div>
 
-      <!-- Swap Button -->
-      <button type="button" class="grc-swap-btn" id="grcSwapBtn" title={labels.swap} aria-label={labels.swap}>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
-          <path d="m7 16-4-4m0 0 4-4m-4 4h18m-4 8 4 4m0 0-4 4m4-4H3"/>
-        </svg>
-      </button>
+      <!-- Direction Connector (Locked by default, or Swap Button if allowed) -->
+      {allowSwap ? (
+        <button type="button" class="grc-swap-btn" id="grcSwapBtn" title={labels.swap} aria-label={labels.swap}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+            <path d="m7 16-4-4m0 0 4-4m-4 4h18m-4 8 4 4m0 0-4 4m4-4H3"/>
+          </svg>
+        </button>
+      ) : (
+        <div class="grc-route-arrow" aria-hidden="true" title="Direct Route">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+            <path d="M5 12h14m-4-4 4 4-4 4"/>
+          </svg>
+        </div>
+      )}
 
       <!-- Destination Pill -->
       <div class="grc-input-pill grc-dest-pill" id="grcDestBox">
@@ -240,6 +250,15 @@ const labels = i18nLabels[lang] || i18nLabels.en;
   }
   .grc-swap-btn:active {
     transform: rotate(180deg);
+  }
+  .grc-route-arrow {
+    color: #C8A45C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    opacity: 0.95;
+    flex-shrink: 0;
   }
 
   /* 2. Map Viewport */

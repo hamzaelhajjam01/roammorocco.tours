@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 import { routesData } from '../data/routes';
 
 const title = "Morocco Private Transfers: Fixed Rates & 4x4 Chauffeur Fleet | Roam Morocco";
@@ -89,6 +90,18 @@ const hubs = [
           <div class="principle-item"><span>03</span><strong>Licensed Chauffeurs</strong></div>
         </div>
       </div>
+
+      
+      <!-- Featured Route Navigator: Marrakech Airport to Medina -->
+      <RouteGoogleMapCard
+        origin="Marrakech Airport"
+        destination="Marrakech"
+        distance="6 km"
+        duration="15 min"
+        highway="Avenue Guemassa Corridor"
+        price={25}
+        waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20a%20private%20transfer%20from%20Marrakech%20Airport%20to%20Marrakech%20(25%E2%82%AC)."
+      />
 
       <!-- Filter Bar & Search Controls matching destinations.astro -->
       <div class="catalog-controls-wrap">

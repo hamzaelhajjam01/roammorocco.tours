@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Essaouira Day Trip from Marrakech: Private Atlantic Tour";
 const description = "Day trip from Marrakech to Essaouira with a private chauffeur. Discover Portuguese sea ramparts, fresh seafood, and argan cooperatives on the coast.";
@@ -142,6 +143,18 @@ const schema = {
             
             <p>You have total freedom: linger over lunch at an oceanfront terrace, wander the artisan galleries, or stroll the wide crescent beach before a relaxed late-afternoon return to Marrakech.</p>
           </div>
+
+          
+          <!-- Featured Excursion Route: Marrakech to Essaouira Atlantic Coast -->
+          <RouteGoogleMapCard
+            origin="Marrakech"
+            destination="Essaouira"
+            distance="180 km"
+            duration="2h 30m"
+            highway="R207 via Chichaoua & Argan Groves"
+            price={85}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20a%20private%20transfer%20from%20Marrakech%20to%20Essaouira."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">

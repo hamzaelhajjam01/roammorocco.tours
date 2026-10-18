@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Private Chefchaouen Tours | Fes & Tangier to the Blue City";
 const description = "Discover Morocco";
@@ -142,6 +143,18 @@ const schema = {
             
             <p>Traveling with our private chauffeur means you bypass slow, crowded tour buses. We plan your departure so you arrive before the bus crowds, explore the best secret corners, and return in absolute comfort.</p>
           </div>
+
+          
+          <!-- Featured Gateway Route: Tangier to Chefchaouen -->
+          <RouteGoogleMapCard
+            origin="Tangier"
+            destination="Chefchaouen"
+            distance="114 km"
+            duration="2h 15m"
+            highway="N2 via Tetouan & Rif Mountains"
+            price={85}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20a%20private%20transfer%20from%20Tangier%20to%20Chefchaouen."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">

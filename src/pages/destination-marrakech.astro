@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Marrakech Private Tours: Guided Medina Walks &amp; Day Trips";
 const description = "Experience Marrakech in luxury: private guided Medina walking tours, secret palaces, Majorelle Gardens, Agafay desert glamping, and Atlas day trips.";
@@ -142,6 +143,17 @@ const schema = {
             
             <p>Beyond the ancient walls, our private chauffeur stands by in an executive air-conditioned vehicle to whisk you away to the Palmeraie, the art foundations of Gueliz, or the moon-like dunes of the Agafay Desert for sunset cocktails.</p>
           </div>
+
+          <!-- Featured Excursion Route: Marrakech to Agafay Desert & Atlas -->
+          <RouteGoogleMapCard
+            origin="Marrakech"
+            destination="Agafay Desert"
+            distance="35 km"
+            duration="40 min"
+            highway="R212 via Agafay Stone Dunes"
+            price={45}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20inquire%20about%20a%20private%20day%20trip%20from%20Marrakech%20to%20Agafay%20Desert."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">

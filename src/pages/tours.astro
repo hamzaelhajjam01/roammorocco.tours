@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Morocco Private Tours & Day Trips Catalog: Sahara, Atlas & Coastal Circuits | Roam Morocco";
 const description = "Explore Roam Morocco's complete private tours catalog: 3-day Sahara desert expeditions, Agafay sunset dinners, Essaouira day trips, and High Atlas hikes. 100% private with Prado 4x4 or Mercedes van.";
@@ -234,6 +235,18 @@ const schema = [
       </div>
 
     </div>
+
+    
+      <!-- Flagship Tour Route Navigator: Marrakech to Merzouga Sahara Circuit -->
+      <RouteGoogleMapCard
+        origin="Marrakech"
+        destination="Merzouga"
+        distance="558 km"
+        duration="8h 45m"
+        highway="N9 via Tizi n'Tichka & Dades Valley"
+        price={390}
+        waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%203-Day%20Premium%20Sahara%20Desert%20Explorer."
+      />
 
     <!-- Tours Grid Section -->
     <section class="tours-grid-section">

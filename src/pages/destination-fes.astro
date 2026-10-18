@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Fes Private Tours: Medina, Chouara Tanneries &amp; Volubilis";
 const description = "Explore Fes el-Bali with a private guide: Chouara Tanneries, ancient madrasas, and private day trips to Roman Volubilis and Meknes.";
@@ -150,6 +151,18 @@ const schema = {
             
             <p>Beyond the Medina, our private chauffeur service connects Fes effortlessly to the Roman ruins of Volubilis, the holy town of Moulay Idriss, and the dramatic mountain passes leading toward the Sahara Desert.</p>
           </div>
+
+          
+          <!-- Featured Route: Fes to Chefchaouen Blue City -->
+          <RouteGoogleMapCard
+            origin="Fes"
+            destination="Chefchaouen"
+            distance="198 km"
+            duration="3h 30m"
+            highway="N13 & R419 via Rif Mountains"
+            price={110}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20a%20private%20day%20trip%20from%20Fes%20to%20Chefchaouen."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">

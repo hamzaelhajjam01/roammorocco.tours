@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Private Sahara Desert Tours Morocco: Erg Chebbi Luxury Camps";
 const description = "Custom private Sahara desert tours from Marrakech or Fes to Erg Chebbi. Enjoy luxury tented camps, sunset camel rides, and private 4x4 transport.";
@@ -173,6 +174,17 @@ const schema = {
             
             <p>Whether you choose our classic <strong>3-Day Marrakech-to-Merzouga circuit</strong> or our grand <strong>Marrakech-to-Fes crossing</strong>, you will avoid tourist traps and experience the authentic pulse of southern Morocco.</p>
           </div>
+
+          <!-- Featured Route: Marrakech to Merzouga Sahara Dunes -->
+          <RouteGoogleMapCard
+            origin="Marrakech"
+            destination="Merzouga"
+            distance="558 km"
+            duration="8h 45m"
+            highway="N9 & N10 via Ouarzazate, Dades & Tinghir"
+            price={390}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%20Sahara%20Desert%20Expedition%20to%20Merzouga."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">

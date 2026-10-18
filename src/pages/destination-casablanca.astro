@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Private Tours from Casablanca: Morocco Circuits &amp; Transfers";
 const description = "Begin your private Morocco journey from Casablanca (CMN). Customized circuits to Chefchaouen, Fes, the Sahara Desert, and Marrakech with a private driver.";
@@ -142,6 +143,18 @@ const schema = {
             
             <p>Because your vehicle and driver remain exclusively with you throughout the entire route, you enjoy luggage security, total route flexibility, and zero transit stress.</p>
           </div>
+
+          
+          <!-- Featured Route: Casablanca to Marrakech Imperial Corridor -->
+          <RouteGoogleMapCard
+            origin="Casablanca"
+            destination="Marrakech"
+            distance="240 km"
+            duration="2h 45m"
+            highway="A3 Autoroute Trans-Maroc"
+            price={135}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20a%20private%20transfer%20from%20Casablanca%20to%20Marrakech."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">

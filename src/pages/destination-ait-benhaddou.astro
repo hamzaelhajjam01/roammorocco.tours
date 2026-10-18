@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Ait Benhaddou Private Tours: UNESCO Kasbah &amp; Atlas Studios";
 const description = "Private day trips from Marrakech to UNESCO Ksar Ait Benhaddou and Ouarzazate film studios. Cross Tizi n";
@@ -142,6 +143,18 @@ const schema = {
             
             <p>Our private 4x4 allows you to bypass the standard bus route and take the secret, dramatic mountain road through the Ounila Valley, visiting the crumbling palace of Telouet before the crowds arrive.</p>
           </div>
+
+          
+          <!-- Featured Route: Marrakech to Kasbah Ait Benhaddou -->
+          <RouteGoogleMapCard
+            origin="Marrakech"
+            destination="Ait Ben Haddou"
+            distance="185 km"
+            duration="3h 45m"
+            highway="N9 via Tizi n'Tichka Pass (2,260m)"
+            price={125}
+            waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20a%20private%20day%20trip%20to%20Kasbah%20Ait%20Benhaddou."
+          />
 
           <!-- Day-by-Day Detailed Itinerary -->
           <div class="dest-itinerary-timeline">
