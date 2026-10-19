@@ -43,8 +43,19 @@ The repository is equipped with 25 specialized SEO skills in `.agents/skills/` a
    - NAP consistency, local Schema, and tourism-specific location attributes.
 
 ### Execution Guidelines
-- Python scripts are located at `.agents/skills/claude-seo/scripts/`.
+- Python scripts are located at `.agents/skills/claude-seo/scripts/` and `scripts/`.
 - Run commands using the existing Python environment:
   - `python .agents/skills/claude-seo/scripts/parse_html.py <file-or-url>`
   - `python .agents/skills/claude-seo/scripts/content_quality.py <file-or-url>`
   - `python .agents/skills/claude-seo/scripts/schema_generate.py <args>`
+
+---
+
+## 📸 Automated Image Curation Policy (Pexels API)
+For all current and future blog posts, guides, and landing pages:
+1. **Mandatory Sourcing via Pexels Pipeline:** Whenever a new blog post or landing page is created or expanded, use `scripts/pexels-curator.py` to search and curate high-resolution visuals.
+2. **Brand Visual Standard:** Always apply the Roam Morocco luxury warm-gold filter (`#C8A45C` desert warmth) by default to maintain visual cohesion across third-party photography.
+3. **Responsive WebP Sets:** Always generate responsive variants (`1200w`, `800w`, `400w`) with WebP compression (target < 120KB) to ensure perfect Core Web Vitals (LCP) and zero layout shift.
+4. **Metadata & Entity Signals:** All images must have kebab-case descriptive filenames, descriptive contextual alt text, and embedded EXIF copyright/attribution metadata.
+5. **Markup Standard:** Use `<picture>` with `type="image/webp"`, responsive `srcset`, `sizes`, explicit `width` and `height`, `loading="lazy"`, and `decoding="async"`.
+

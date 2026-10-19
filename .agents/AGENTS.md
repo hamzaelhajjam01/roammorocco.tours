@@ -26,3 +26,8 @@ This workspace contains the static website for **RoamMorocco** (https://roammoro
 - Canonical URL set to https://roammorocco.tours/
 - OG + Twitter cards implemented
 - Primary keywords: Morocco tours, Sahara desert tours, Marrakech tours
+
+### Image & Media Standard (Pexels API Automation)
+- Script: `scripts/pexels-curator.py`
+- All blog posts and landing pages must use WebP responsive sets (`1200w`, `800w`, `400w`) with warm-gold luxury filter applied.
+- All new blog generation must invoke `scripts/pexels-curator.py` to source, brand-grade, and embed responsive `<picture>` tags.
