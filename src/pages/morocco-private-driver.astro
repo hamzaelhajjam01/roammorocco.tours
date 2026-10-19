@@ -1252,6 +1252,49 @@ const schema = {
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
     }
 
+    .fleet-image-wrap {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 22px;
+      aspect-ratio: 16 / 10;
+      background: #faf8f5;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .fleet-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fleet-card:hover .fleet-img {
+      transform: scale(1.05);
+    }
+
+    .fleet-img-overlay {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 2;
+    }
+
+    .fleet-img-tag {
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
     .fleet-header {
       margin-bottom: 20px;
     }
@@ -2358,6 +2401,12 @@ const schema = {
       <div class="fleet-grid">
         <!-- Vehicle 1: Toyota Land Cruiser Prado -->
         <div class="fleet-card">
+          <div class="fleet-image-wrap">
+            <img src="/images/fleet-toyota-prado-4x4.webp" alt="Toyota Land Cruiser Prado TXL 4x4 Private Chauffeur Morocco" class="fleet-img" width="600" height="375" loading="lazy">
+            <div class="fleet-img-overlay">
+              <span class="fleet-img-tag">Guaranteed 2024 Model</span>
+            </div>
+          </div>
           <div class="fleet-header">
             <span class="fleet-type-badge">GUARANTEED EXACT 4X4 • NO "OR SIMILAR"</span>
             <h3 class="fleet-title">Toyota Land Cruiser Prado TXL 4x4</h3>
@@ -2388,6 +2437,12 @@ const schema = {
 
         <!-- Vehicle 2: Mercedes-Benz V-Class -->
         <div class="fleet-card">
+          <div class="fleet-image-wrap">
+            <img src="/images/fleet-mercedes-v-class.webp" alt="Mercedes-Benz V-Class VIP Executive Minivan Morocco Private Driver" class="fleet-img" width="600" height="375" loading="lazy">
+            <div class="fleet-img-overlay">
+              <span class="fleet-img-tag">VIP Captain Seating</span>
+            </div>
+          </div>
           <div class="fleet-header">
             <span class="fleet-type-badge">EXECUTIVE CHAUFFEUR • DUAL SLIDING DOORS</span>
             <h3 class="fleet-title">Mercedes-Benz V-Class / Vito VIP</h3>
@@ -2417,6 +2472,12 @@ const schema = {
 
         <!-- Vehicle 3: Mercedes-Benz Sprinter VIP -->
         <div class="fleet-card">
+          <div class="fleet-image-wrap">
+            <img src="/images/fleet-mercedes-sprinter-vip.webp" alt="Mercedes-Benz Sprinter VIP Luxury Minibus Morocco Private Tours" class="fleet-img" width="600" height="375" loading="lazy">
+            <div class="fleet-img-overlay">
+              <span class="fleet-img-tag">Executive Minibus</span>
+            </div>
+          </div>
           <div class="fleet-header">
             <span class="fleet-type-badge">LUXURY PRIVATE MINIBUS</span>
             <h3 class="fleet-title">Mercedes-Benz Sprinter VIP Coach</h3>
