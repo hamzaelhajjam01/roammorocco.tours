@@ -2297,71 +2297,7 @@ import HeroBookingWizard from '../components/HeroBookingWizard.astro';
     renderDayTabs();
     renderJourneyCard();
 
-    /* ── PAGE LOADER CONTROLLER — STICKER SLAP (INITIAL VISIT ONLY) ── */
-    (function(){
-      const loader = document.getElementById('page-loader');
-      if(!loader) return;
 
-      if(sessionStorage.getItem('hasLoadedBefore')){
-        loader.remove();
-        return;
-      }
-      sessionStorage.setItem('hasLoadedBefore', 'true');
-
-      const baseSlapMs   = 320;   // base animation-duration of stickerSlap
-      const baseHoldMs   = 380;   // base hold duration before peeling
-      const basePeelMs   = 180;   // base animation-duration of stickerPeel
-      const stickers     = Array.from(document.querySelectorAll('.loader-item'));
-      const logo         = document.getElementById('loader-final-logo');
-
-      function rnd(min,max){ return (Math.random()*(max-min)+min).toFixed(1); }
-
-      function slap(idx){
-        const currentSpeed = 1 + idx * 0.2; // increase speed per sticker
-        const slapMs = baseSlapMs / currentSpeed;
-        const holdMs = baseHoldMs / currentSpeed;
-        const peelMs = basePeelMs / currentSpeed;
-        if(idx >= stickers.length){
-          logo.classList.add('stamp');
-          setTimeout(() => {
-            loader.classList.add('done');
-            setTimeout(() => loader.remove(), 3000);
-          }, 1500);
-          return;
-        }
-
-        const s = stickers[idx];
-        const r1   = rnd(-10, 10);
-        const r0   = (+r1 + parseFloat(rnd(20,35)) * (Math.random()>.5?1:-1)).toFixed(1);
-        const tx   = rnd(-60, 60);
-        const ty   = rnd(-80, -30);
-        const rp   = rnd(15, 30) * (Math.random()>.5?1:-1);
-        const px   = rnd(-50, 50);
-        const py   = rnd(20, 60);
-
-        s.style.setProperty('--r0',  `${r0}deg`);
-        s.style.setProperty('--r1',  `${r1}deg`);
-        s.style.setProperty('--tx',  `${tx}px`);
-        s.style.setProperty('--ty',  `${ty}px`);
-        s.style.setProperty('--rp',  `${rp}deg`);
-        s.style.setProperty('--px',  `${px}px`);
-        s.style.setProperty('--py',  `${py}px`);
-        s.style.setProperty('--dur', `${slapMs}ms`);
-
-        s.classList.remove('peel-off');
-        void s.offsetWidth;
-        s.classList.add('slap-in');
-
-        setTimeout(()=>{
-          s.classList.remove('slap-in');
-          void s.offsetWidth;
-          s.classList.add('peel-off');
-          setTimeout(()=>{ s.classList.remove('peel-off'); slap(idx+1); }, peelMs);
-        }, slapMs + holdMs);
-      }
-
-      slap(0);
-    })();
 
     /* ── CLICK & TAP STICKER POPUP (DESKTOP & MOBILE) ── */
     (function(){
