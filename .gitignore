@@ -22,3 +22,9 @@ dist/
 astro-roam/node_modules/
 astro-roam/.astro/
 astro-roam/dist/
+
+# Environment Files
+.env
+.env.*
+!.env.example
+
