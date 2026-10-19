@@ -1523,15 +1523,17 @@ const schema = {
     /* Tables & Horizontal Scroll */
     .table-container {
       width: 100%;
-      overflow-x: auto;
+      max-width: 100%;
+      overflow-x: auto !important;
       -webkit-overflow-scrolling: touch;
       margin: 32px 0 40px;
       background: #ffffff;
       border: 1px solid rgba(0, 0, 0, 0.08);
       border-radius: 16px;
-      overflow: hidden;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+      box-sizing: border-box;
     }
+
 
     table.driver-rates-table {
       width: 100%;
@@ -2499,27 +2501,54 @@ const schema = {
     /* Mobile Tweaks */
     @media (max-width: 768px) {
       .driver-hero {
-        padding: 100px 16px 50px;
+        padding: 90px 16px 40px;
       }
       .driver-section-wrap {
-        padding: 50px 16px;
+        padding: 40px 16px !important;
       }
       .inquiry-card {
-        padding: 28px 20px;
+        padding: 24px 16px;
       }
       .faq-accordion {
-        padding: 24px 18px;
+        padding: 20px 16px;
       }
       .fleet-card {
-        padding: 28px 20px;
+        padding: 24px 16px;
       }
       .inclusions-banner {
-        padding: 24px 20px;
+        padding: 20px 16px;
       }
       .legal-card, .checkpoint-box, .circuit-card, .safety-card, .booking-step-card, .review-card {
-        padding: 24px 18px;
+        padding: 20px 16px;
+      }
+
+      /* Medina Guarantee & Protocol Section Mobile Optimization */
+      .medina-guarantee-wrap {
+        padding: 24px 16px !important;
+        margin: 28px 0 !important;
+        border-radius: 16px !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+      }
+      .medina-steps-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        margin-top: 20px !important;
+        width: 100% !important;
+      }
+      .medina-step-card {
+        padding: 20px 16px !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        min-width: 0 !important;
+      }
+      .table-container {
+        margin: 20px 0 28px !important;
       }
     }
+
   
   </style>
 
@@ -2717,8 +2746,8 @@ const schema = {
     </section>
 
     <!-- SECTION 2: TRANSPARENT PRICING & INCLUSIONS -->
-    <section style="background: #faf8f5; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 80px 24px;">
-      <div style="max-width: 1080px; margin: 0 auto;">
+    <section class="driver-section-wrap" style="background: #faf8f5; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+      <div style="max-width: 1080px; margin: 0 auto; width: 100%; box-sizing: border-box;">
         <div class="driver-section-head">
           <span class="driver-sec-kicker">UPFRONT &amp; HONEST</span>
           <h2 class="driver-sec-title">2026 Transparent Rate Card</h2>
@@ -3298,8 +3327,8 @@ const schema = {
     </section>
 
     <!-- SECTION 3B: CURATED MULTI-DAY PRIVATE DRIVER CIRCUITS -->
-    <section style="background: #faf8f5; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 80px 24px;" id="circuits">
-      <div style="max-width: 1080px; margin: 0 auto;">
+    <section class="driver-section-wrap" style="background: #faf8f5; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);" id="circuits">
+      <div style="max-width: 1080px; margin: 0 auto; width: 100%; box-sizing: border-box;">
         <div class="driver-section-head">
           <span class="driver-sec-kicker">TURNKEY KINGDOM EXPEDITIONS</span>
           <h2 class="driver-sec-title">Curated Multi-Day Private Driver Circuits</h2>
@@ -3605,8 +3634,8 @@ const schema = {
     </section>
 
     <!-- SECTION 3D: 4-STEP BOOKING PROCESS -->
-    <section style="background: #ffffff; border-top: 1px solid var(--border-subtle); padding: 70px 24px 20px;" id="how-to-book">
-      <div style="max-width: 1080px; margin: 0 auto;">
+    <section class="driver-section-wrap" style="background: #ffffff; border-top: 1px solid var(--border-subtle); padding-bottom: 20px;" id="how-to-book">
+      <div style="max-width: 1080px; margin: 0 auto; width: 100%; box-sizing: border-box;">
         <div class="driver-section-head" style="margin-bottom: 36px;">
           <span class="driver-sec-kicker">TRANSPARENT &amp; STRESS-FREE</span>
           <h2 class="driver-sec-title">How Booking Your Private Chauffeur Works</h2>
@@ -3656,8 +3685,8 @@ const schema = {
     </section>
 
     <!-- SECTION 4: INQUIRY & BOOKING FORM -->
-    <section style="background: #ffffff; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle); padding: 80px 24px;" id="inquireForm">
-      <div style="max-width: 920px; margin: 0 auto;">
+    <section class="driver-section-wrap" style="background: #ffffff; border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);" id="inquireForm">
+      <div style="max-width: 920px; margin: 0 auto; width: 100%; box-sizing: border-box;">
         <div class="driver-section-head">
           <span class="driver-sec-kicker">RESERVE YOUR CHAUFFEUR</span>
           <h2 class="driver-sec-title">Request a Private Driver Quote</h2>
