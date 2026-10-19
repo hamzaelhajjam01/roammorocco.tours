@@ -1226,20 +1226,124 @@ const schema = {
       line-height: 1.65;
     }
 
-    /* Fleet Cards Grid */
+    /* ===================================================
+       SHARED LUXURY CAROUSEL CONTROLS & WRAPPER
+       =================================================== */
+    .carousel-wrapper {
+      position: relative;
+      width: 100%;
+      margin: 32px 0 20px;
+    }
+
+    .carousel-top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .carousel-indicator-text {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #555555;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .carousel-dot-live {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      display: inline-block;
+      box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
+    }
+
+    .carousel-nav-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+    }
+
+    .carousel-nav-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 1.5px solid rgba(0, 0, 0, 0.12);
+      color: #18181B;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      padding: 0;
+      outline: none;
+    }
+
+    .carousel-nav-btn:hover:not(:disabled) {
+      background: #18181B;
+      color: var(--gold);
+      border-color: #18181B;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .carousel-nav-btn:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    .carousel-nav-btn:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+      border-color: rgba(0, 0, 0, 0.06);
+      box-shadow: none;
+    }
+
+    .carousel-nav-btn svg {
+      width: 18px;
+      height: 18px;
+      stroke: currentColor;
+    }
+
+    /* Fleet Cards Carousel (2.5 Cards Visible on Desktop) */
     .fleet-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 32px;
-      margin-bottom: 40px;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      gap: 24px;
+      padding: 10px 4px 32px;
+      margin: 0 -4px 16px;
+      scrollbar-width: none;
+      cursor: grab;
+    }
+
+    .fleet-grid:active {
+      cursor: grabbing;
+    }
+
+    .fleet-grid::-webkit-scrollbar {
+      display: none;
     }
 
     .fleet-card {
+      flex: 0 0 calc((100% - 48px) / 2.5);
+      min-width: 0;
+      box-sizing: border-box;
+      scroll-snap-align: start;
       background: #ffffff;
       border: 1px solid rgba(0, 0, 0, 0.08);
       border-top: 4px solid var(--gold);
       border-radius: 16px;
-      padding: 36px 30px;
+      padding: 34px 28px;
       box-shadow: 0 6px 24px rgba(0, 0, 0, 0.03);
       display: flex;
       flex-direction: column;
@@ -1250,6 +1354,19 @@ const schema = {
     .fleet-card:hover {
       transform: translateY(-4px);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (max-width: 1023px) and (min-width: 641px) {
+      .fleet-card {
+        flex: 0 0 calc((100% - 24px) / 1.75);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .fleet-card {
+        flex: 0 0 86%;
+        padding: 26px 20px;
+      }
     }
 
     .fleet-image-wrap {
@@ -1486,15 +1603,33 @@ const schema = {
       font-weight: 900;
     }
 
-    /* Route Cards Grid */
+    /* Route Cards Carousel (3 Cards Visible on Desktop) */
     .routes-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
       gap: 24px;
-      margin-top: 36px;
+      padding: 10px 4px 32px;
+      margin: 0 -4px 16px;
+      scrollbar-width: none;
+      cursor: grab;
+    }
+
+    .routes-grid:active {
+      cursor: grabbing;
+    }
+
+    .routes-grid::-webkit-scrollbar {
+      display: none;
     }
 
     .route-card {
+      flex: 0 0 calc((100% - 48px) / 3);
+      min-width: 0;
+      box-sizing: border-box;
+      scroll-snap-align: start;
       background: #ffffff;
       border: 1px solid rgba(0, 0, 0, 0.08);
       border-radius: 16px;
@@ -1510,6 +1645,19 @@ const schema = {
       border-color: #000000;
       transform: translateY(-3px);
       box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (max-width: 1023px) and (min-width: 641px) {
+      .route-card {
+        flex: 0 0 calc((100% - 24px) / 2.1);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .route-card {
+        flex: 0 0 86%;
+        padding: 22px 18px;
+      }
     }
 
     .route-tag {
@@ -1997,20 +2145,38 @@ const schema = {
       margin: 0;
     }
 
-    /* Curated Multi-Day Circuits */
+    /* Curated Multi-Day Circuits Carousel (3 Cards Visible on Desktop) */
     .circuits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 28px;
-      margin-top: 36px;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      gap: 24px;
+      padding: 10px 4px 32px;
+      margin: 0 -4px 16px;
+      scrollbar-width: none;
+      cursor: grab;
+    }
+
+    .circuits-grid:active {
+      cursor: grabbing;
+    }
+
+    .circuits-grid::-webkit-scrollbar {
+      display: none;
     }
 
     .circuit-card {
+      flex: 0 0 calc((100% - 48px) / 3);
+      min-width: 0;
+      box-sizing: border-box;
+      scroll-snap-align: start;
       background: #ffffff;
       border: 1px solid rgba(0, 0, 0, 0.08);
       border-top: 4px solid var(--gold);
       border-radius: 16px;
-      padding: 32px 28px;
+      padding: 32px 26px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
       display: flex;
       flex-direction: column;
@@ -2022,6 +2188,19 @@ const schema = {
       transform: translateY(-4px);
       box-shadow: 0 16px 36px rgba(0, 0, 0, 0.06);
       border-color: #000000;
+    }
+
+    @media (max-width: 1023px) and (min-width: 641px) {
+      .circuit-card {
+        flex: 0 0 calc((100% - 24px) / 2.1);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .circuit-card {
+        flex: 0 0 86%;
+        padding: 24px 18px;
+      }
     }
 
     .circuit-badge {
@@ -2398,7 +2577,23 @@ const schema = {
         </p>
       </div>
 
-      <div class="fleet-grid">
+      <div class="carousel-wrapper" id="fleetCarouselWrap">
+        <div class="carousel-top-bar">
+          <div class="carousel-indicator-text">
+            <span class="carousel-dot-live"></span>
+            <span><strong>2.5 Executive Classes Preview</strong> • Swipe or Use Arrows</span>
+          </div>
+          <div class="carousel-nav-group">
+            <button type="button" class="carousel-nav-btn" id="fleetPrevBtn" aria-label="Previous Vehicle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="carousel-nav-btn" id="fleetNextBtn" aria-label="Next Vehicle">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="fleet-grid" id="fleetTrack">
         <!-- Vehicle 1: Toyota Land Cruiser Prado -->
         <div class="fleet-card">
           <div class="fleet-image-wrap">
@@ -2503,6 +2698,7 @@ const schema = {
             <div class="fleet-price">€280 – €380 <span>/ day</span></div>
           </div>
         </div>
+      </div>
       </div>
 
       <!-- Strict Fleet Integrity Guarantee -->
@@ -2777,7 +2973,23 @@ const schema = {
         </p>
       </div>
 
-      <div class="routes-grid">
+      <div class="carousel-wrapper" id="routesCarouselWrap">
+        <div class="carousel-top-bar">
+          <div class="carousel-indicator-text">
+            <span class="carousel-dot-live"></span>
+            <span><strong>10 Popular Corridors</strong> • Swipe or Use Arrows</span>
+          </div>
+          <div class="carousel-nav-group">
+            <button type="button" class="carousel-nav-btn" id="routesPrevBtn" aria-label="Previous Route">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button type="button" class="carousel-nav-btn" id="routesNextBtn" aria-label="Next Route">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="routes-grid" id="routesTrack">
         <!-- Route 1 -->
         <div class="route-card">
           <div>
@@ -2968,6 +3180,7 @@ const schema = {
           </div>
         </div>
       </div>
+      </div>
 
       <!-- Intercity Transfer Rates & Route Distance Matrix -->
       <div style="margin-top: 56px;">
@@ -3089,7 +3302,23 @@ const schema = {
           </p>
         </div>
 
-        <div class="circuits-grid">
+        <div class="carousel-wrapper" id="circuitsCarouselWrap">
+          <div class="carousel-top-bar">
+            <div class="carousel-indicator-text">
+              <span class="carousel-dot-live"></span>
+              <span><strong>4 Flagship Circuits</strong> • Swipe or Use Arrows</span>
+            </div>
+            <div class="carousel-nav-group">
+              <button type="button" class="carousel-nav-btn" id="circuitsPrevBtn" aria-label="Previous Circuit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button type="button" class="carousel-nav-btn" id="circuitsNextBtn" aria-label="Next Circuit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="circuits-grid" id="circuitsTrack">
           <!-- Circuit 0: 6-Day Fes to Marrakech Flagship -->
           <div class="circuit-card" style="border-top-color: #18181B; position: relative;">
             <div style="position: absolute; top: -14px; right: 24px; background: #18181B; color: var(--gold); font-size: 10px; font-weight: 800; padding: 4px 12px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.06em;">Most Popular Route</div>
@@ -3202,6 +3431,7 @@ const schema = {
               <a href="#inquireForm" class="route-btn">Inquire Circuit &rarr;</a>
             </div>
           </div>
+        </div>
         </div>
 
         <!-- Custom En-Route Stops, Wineries & Tastings Banner -->
@@ -3906,6 +4136,84 @@ const schema = {
           }
         });
       });
+
+      // Interactive Carousel Controller for Fleet (2.5), Routes (3), and Circuits (3)
+      function initCarousel(trackId, prevBtnId, nextBtnId) {
+        var track = document.getElementById(trackId);
+        var prevBtn = document.getElementById(prevBtnId);
+        var nextBtn = document.getElementById(nextBtnId);
+        if (!track || !prevBtn || !nextBtn) return;
+
+        function getStep() {
+          var card = track.firstElementChild;
+          if (!card) return 320;
+          var style = window.getComputedStyle(track);
+          var gap = parseFloat(style.gap) || 24;
+          return card.offsetWidth + gap;
+        }
+
+        function updateButtons() {
+          var maxScroll = track.scrollWidth - track.clientWidth - 4;
+          var atStart = track.scrollLeft <= 4;
+          var atEnd = track.scrollLeft >= maxScroll;
+          prevBtn.disabled = atStart;
+          nextBtn.disabled = atEnd;
+        }
+
+        prevBtn.addEventListener('click', function() {
+          track.scrollBy({ left: -getStep(), behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', function() {
+          track.scrollBy({ left: getStep(), behavior: 'smooth' });
+        });
+
+        track.addEventListener('scroll', updateButtons, { passive: true });
+        window.addEventListener('resize', updateButtons, { passive: true });
+        updateButtons();
+
+        // Smooth Mouse Drag-to-Scroll for Desktop
+        var isDown = false;
+        var startX = 0;
+        var scrollLeft = 0;
+        var dragged = false;
+
+        track.addEventListener('mousedown', function(e) {
+          if (e.target.closest('a, button, select, input, textarea')) return;
+          isDown = true;
+          dragged = false;
+          startX = e.pageX - track.offsetLeft;
+          scrollLeft = track.scrollLeft;
+        });
+
+        window.addEventListener('mouseup', function() {
+          if (!isDown) return;
+          isDown = false;
+          setTimeout(function() { dragged = false; }, 40);
+        });
+
+        window.addEventListener('mousemove', function(e) {
+          if (!isDown) return;
+          var x = e.pageX - track.offsetLeft;
+          var walk = (x - startX);
+          if (Math.abs(walk) > 6) {
+            dragged = true;
+            e.preventDefault();
+            track.scrollLeft = scrollLeft - walk;
+          }
+        });
+
+        track.addEventListener('click', function(e) {
+          if (dragged) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        }, true);
+      }
+
+      initCarousel('fleetTrack', 'fleetPrevBtn', 'fleetNextBtn');
+      initCarousel('routesTrack', 'routesPrevBtn', 'routesNextBtn');
+      initCarousel('circuitsTrack', 'circuitsPrevBtn', 'circuitsNextBtn');
     });
   </script>
 
