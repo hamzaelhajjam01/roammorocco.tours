@@ -1,12 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 
-const title = "Marrakech vs Fes (2026 Comparison): Which City is Better? | Roam Morocco";
-const description = "Marrakech vs Fes: which imperial city should you visit? Honest 2026 comparison of medinas, food, safety, riad costs, artisan souks, and travel between them.";
+const title = "Marrakech vs Fes (2026 Comparison): Which Imperial City Should You Visit? | Roam Morocco";
+const description = "Marrakech vs Fes: which Moroccan imperial city is better? Comprehensive 2026 comparison of medinas, food, riad costs, safety, day trips, and overland transit.";
 const canonical = "https://roammorocco.tours/blog/marrakech-vs-fes.html";
-const ogImage = "https://roammorocco.tours/images/marrakech_vs_fes_hero.jpg";
+const ogImage = "https://roammorocco.tours/images/marrakech_vs_fes_hero.webp";
 const bodyClass = "roam-light-theme";
 const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+
 const schema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -17,7 +18,7 @@ const schema = {
       "description": description,
       "image": ogImage,
       "datePublished": "2026-03-01",
-      "dateModified": "2026-03-01",
+      "dateModified": "2026-10-20",
       "author": [
         {
           "@type": "Person",
@@ -65,7 +66,7 @@ const schema = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": title,
+          "name": "Marrakech vs Fes Comparison",
           "item": canonical
         }
       ]
@@ -73,81 +74,65 @@ const schema = {
     {
       "@type": "FAQPage",
       "@id": `${canonical}#faq`,
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the best time to visit Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The best time to visit Morocco is during the spring (mid-March to May) or fall (September to October). The weather is warm but pleasant, unlike the extreme heat of summer."
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Fes or Marrakech better for first-time visitors to Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For first-time visitors seeking accessible logistics, vibrant evening energy, boutique riads, and luxury dining, Marrakech is the better choice. Its medina streets are wider, navigation is easier with mobile maps, and international flight connections are abundant. Fes is better suited for travelers seeking unvarnished medieval preservation, deep Islamic scholarship, and fewer commercial crowds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Fes cheaper than Marrakech?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Fes is roughly 30% to 40% cheaper than Marrakech across boutique riads, restaurant dining, and artisanal handicrafts. A luxury restored riad in Fes typically costs $80 to $200 per night, whereas a comparable luxury property in Marrakech ranges from $180 to $450+. Local tagines and cafe meals in Fes rarely exceed 60 to 90 MAD ($6–$9 USD)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many days do you need in Marrakech vs Fes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plan 3 to 4 days for Marrakech to explore the medina souks, Ben Youssef Madrasa, Bahia Palace, Majorelle Gardens, plus an excursion into the High Atlas Mountains or Agafay Desert. For Fes, 2 to 3 days is ideal to experience the 9,000 alleys of Fes el-Bali, Chouara Tannery, Al Quaraouiyine Mosque, and take a day trip to the Roman ruins of Volubilis or the blue town of Chefchaouen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which medina is more authentic: Marrakech or Fes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fes el-Bali is universally recognized as the more authentic medina. Founded in the 9th century, it is the world's largest contiguous car-free urban zone with over 9,000 narrow alleys where goods are still transported by donkeys and handcarts. Marrakech's medina is highly energetic and beautifully restored, but heavily commercialized around tourism, motorbikes, and souvenir shops."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you travel from Marrakech to Fes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You have three options: The direct ONCF train takes about 6.5 hours through Casablanca for around $25–$35 USD. A domestic flight with Royal Air Maroc takes 3 hours with a Casablanca layover. However, the premier travel option is a 3-day or 4-day private overland tour across the High Atlas Mountains, Ait Benhaddou, Dades Valley, and Erg Chebbi (Merzouga) dunes before arriving in Fes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Fes safer than Marrakech for tourists and solo travelers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both imperial cities have exceptionally low rates of violent crime and heavy tourist police protection. However, navigation scams differ: in Fes, the extreme maze-like alleys make travelers susceptible to unlicensed faux guides and tannery touts. In Marrakech, you face fast-moving motorbikes in narrow alleys, aggressive spice vendors, and street performers demanding payment in Jemaa el-Fnaa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you visit both Marrakech and Fes in one week?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. An open-jaw itinerary flying into Marrakech Menara Airport (RAK) and departing from Fes-Saïss Airport (FEZ) allows you to experience both imperial capitals and cross the Sahara Desert in 7 days without doubling back. Spending 2 nights in Marrakech, 2 nights traversing the desert via private chauffeur, and 2 nights in Fes delivers the ultimate balanced Moroccan holiday."
+          }
         }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need a visa to visit Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Citizens of the US, UK, Canada, Australia, and most of Europe do not need a visa for tourist visits up to 90 days. Always check with your local embassy before traveling."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Morocco safe for tourists?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Morocco is generally very safe for tourists. The government places a high priority on tourist safety. Like any destination, practice common sense, especially in crowded medinas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What should female travelers wear in Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Morocco is a conservative country. While tourists aren't expected to wear traditional clothing, dressing modestly (covering shoulders and knees) is highly recommended out of respect for local culture."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can you drink alcohol in Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, alcohol is available in Morocco, primarily in licensed hotels, bars, and tourist restaurants. However, drinking in public outside of these venues is strictly prohibited."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What language do they speak in Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The official languages are Arabic and Amazigh (Berber). French is widely spoken and serves as the language of commerce. English is increasingly common in tourist areas."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is the currency in Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The currency is the Moroccan Dirham (MAD). While major hotels and large restaurants accept credit cards, cash is essential for souks, taxis, and small shops."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How many days do you need in Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "To see the highlights (Marrakech, Fes, and the Sahara Desert), we recommend at least 7 to 10 days. A two-week trip allows for a more relaxed pace and exploring the coast."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is tap water safe to drink in Morocco?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It is generally recommended for tourists to stick to bottled water to avoid stomach upsets, as the tap water contains different minerals than you might be used to."
-        }
-      }
-    ]
-  }
+      ]
+    }
   ]
 };
 ---
@@ -163,139 +148,326 @@ const schema = {
     <!-- Header -->
     <header class="article-header">
       <span class="category-badge">DESTINATION SHOWDOWN • 2026 AUTHORITY GUIDE</span>
-      <h1 class="article-title">Marrakech vs Fes: Which Moroccan Imperial City Should You Visit?</h1>
+      <h1 class="article-title">Marrakech vs Fes (2026 Comparison): Which Imperial City Should You Visit?</h1>
       <p class="article-subtitle">
-        An unvarnished cultural comparison: vibrant modern sensory energy vs 1,200 years of preserved medieval labyrinth, cuisine, architecture, and craftsmanship.
+        An unvarnished comparison between Morocco's two imperial titans: cosmopolitan sensory energy vs 1,200 years of living medieval history, culinary heritage, and master craftsmanship.
       </p>
       <div class="article-meta">
-        <span>Published: <strong>September 28, 2026</strong></span>
-        <span>Author: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
-        <span>Reading Time: <strong>10 Minutes (2,100 Words)</strong></span>
-        <span>Focus: <strong>Imperial City Comparison</strong></span>
+        <span>Published: <strong>October 2026 Edition</strong></span>
+        <span>Curators: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>11 Minutes (2,400 Words)</strong></span>
+        <span>Route Focus: <strong>Imperial Cities &amp; Overland Crossing</strong></span>
       </div>
     </header>
 
     <!-- Featured Visual Frame -->
     <figure class="featured-image-box">
-      <img src="/images/marrakech_vs_fes_hero.webp" alt="Marrakech vs Fes: Which Moroccan Imperial City Should You Visit?">
-      <figcaption>Comparative perspectives: the animated twilight of Marrakech's Jemaa el-Fnaa and the timeless leather tanneries of Fes el-Bali.</figcaption>
+      <img src="/images/marrakech_vs_fes_hero.webp" alt="Marrakech vs Fes: Which Moroccan Imperial City Should You Visit?" width="1200" height="675">
+      <figcaption>Comparative perspectives: twilight over the dynamic rooftop terraces of Marrakech vs the 9th-century minarets and cedar rooftops of Fes el-Bali.</figcaption>
     </figure>
 
     <!-- Editorial Prose -->
     <div class="article-content">
+
       <!-- Quick Answer Snapshot for AI Overviews / Answer Engines -->
       <aside class="ai-quick-summary-card" aria-label="Marrakech vs Fes Comparison Quick Answer">
         <div class="ai-summary-header">
-          <span class="ai-summary-kicker">⚡ QUICK ANSWER: MARRAKECH VS FES</span>
-          <span class="ai-summary-badge">City Comparison</span>
+          <span class="ai-summary-kicker">⚡ THE 30-SECOND VERDICT: MARRAKECH OR FES?</span>
+          <span class="ai-summary-badge">Direct Decision Guide</span>
         </div>
         <p class="ai-summary-text">
-          Choose <strong>Marrakech</strong> if you want vibrant evening energy (Jemaa el-Fnaa), luxury rooftop dining, boutique design riads, and easy day trips to Agafay glamping or the High Atlas Mountains. Choose <strong>Fes</strong> if you want authentic medieval history, the world's largest car-free pedestrian medina (Fes el-Bali with 9,000+ alleys), living leather tanneries (Chouara), and an unhurried artisan culture. If your schedule allows 7+ days, connecting both via a private Sahara desert circuit offers the definitive Moroccan journey.
+          Choose <strong>Marrakech</strong> if you want vibrant evening energy (Jemaa el-Fnaa), modern fusion dining, chic designer riads, and easy day trips to the Agafay Desert or snow-capped High Atlas Mountains. Choose <strong>Fes</strong> if you want authentic medieval history, the world's largest car-free urban pedestrian zone (Fes el-Bali with 9,000+ alleys), the ancient Chouara leather tanneries, and 30–40% lower lodging costs. If you have 7 or more days, the premier solution is not choosing between them, but connecting both via a <a href="/blog/morocco-7-day-itinerary.html"><strong>7-day overland desert crossing</strong></a> with a private driver.
         </p>
       </aside>
 
-      <p style="font-size: 1.25rem;">It is the ultimate debate for travelers heading to North Africa with limited time: <em>"Marrakech vs Fes which city should you visit?"</em> If you scour the <strong>fez vs marrakech reddit</strong> threads, you will find passionate defenders for both sides. They are the two most famous <strong>cities in Morocco</strong>, but they offer wildly different experiences.</p>
+      <p style="font-size: 1.25rem;">
+        It is the most fiercely debated itinerary dilemma for anyone planning a journey to North Africa: <em>"Marrakech vs Fes which city is better?"</em> Scour any travel forum or Reddit thread, and you will find passionate champions on both sides. Both are celebrated <strong>UNESCO World Heritage cities</strong>, both have served as dynastic imperial capitals, yet they feel as different as modern Paris and medieval Florence.
+      </p>
   
-      <p>Should you plunge into the chaotic, vibrant energy of Marrakech, or get lost in the medieval, authentic alleyways of Fes? Is it possible to visit both? (Spoiler: The Fes to Marrakech train connects them directly, but the ultimate way to experience both imperial gems is via the dramatic desert crossing featured in our <a href="/blog/morocco-10-day-itinerary.html"><strong>10-Day Morocco road trip itinerary</strong></a>). In this guide, we break down the great <strong>Fes vs Marrakech</strong> debate.</p>
+      <p>
+        Should you dive headfirst into the pulsating, terracotta energy of Marrakech, or lose yourself in the labyrinthine, untouched medieval alleyways of Fes? Is it realistic to visit both on a single holiday? (Yes—via our curated <a href="/blog/morocco-7-day-itinerary.html"><strong>Morocco 7-day itinerary</strong></a> or comprehensive <a href="/blog/morocco-10-day-itinerary.html"><strong>10-day circuit</strong></a>). In this authoritative 2026 guide, we compare both cities across every practical dimension: medinas, food, lodging prices, safety, day excursions, and travel logistics between them.
+      </p>
 
-      <h2>The Vibe: Vibrant Energy vs. Ancient Authenticity</h2>
-      
-      <h3>Marrakech: The Vibrant Red City</h3>
-      <p>Often people ask, <em>"Should I skip Marrakech?"</em> The answer is a resounding no. Marrakech is built for tourism. It is heavily restored, luxurious, and pulses with undeniable energy. The heart of the city is <strong>Jemaa el Fnaa</strong>, a massive square filled with snake charmers, storytellers, and food stalls that comes alive at night. If you want luxury riads, world-class restaurants, and incredible shopping, Marrakech is the clear winner. It is also significantly <strong>easier to navigate</strong> for first-time visitors compared to Fes.</p>
+      <!-- Head-to-Head Comparison Scorecard Table -->
+      <h2>At a Glance: Marrakech vs Fes Comparison Matrix</h2>
+      <p>Here is how Morocco's two imperial heavyweights compare head-to-head across core travel categories:</p>
 
-      <h3>Fes: The Medieval Time Capsule</h3>
-      <p>If you are asking, <em>"Is Fes worth visiting?"</em>, understand that Fes is the spiritual and cultural heart of Morocco. It is one of the <strong>oldest cities</strong> in the Arab world. The vibe here is deeply traditional and utterly authentic. It is less polished than Marrakech, which is exactly its charm. When you step into Fes, you truly feel like you have traveled 1,000 years back in time.</p>
-
-      <!-- Comparison Table Matrix for AI Citations & Searchers -->
-      <div style="overflow-x: auto; margin: 32px 0; border: 1px solid rgba(0,0,0,0.12); background: #ffffff;">
-        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+      <div style="overflow-x: auto; margin: 32px 0; border: 1px solid rgba(0,0,0,0.12); border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); background: #ffffff;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px;">
           <thead>
             <tr style="background: #faf8f5; border-bottom: 2px solid #000000;">
-              <th style="padding: 14px 18px; font-weight: 800; text-transform: uppercase;">Category</th>
-              <th style="padding: 14px 18px; font-weight: 800; text-transform: uppercase;">Marrakech (The Red City)</th>
-              <th style="padding: 14px 18px; font-weight: 800; text-transform: uppercase;">Fes (The Spiritual Heart)</th>
+              <th style="padding: 16px 20px; font-weight: 800; text-transform: uppercase; color: #111;">Category</th>
+              <th style="padding: 16px 20px; font-weight: 800; text-transform: uppercase; color: #8A6A23;">Marrakech (The Red City)</th>
+              <th style="padding: 16px 20px; font-weight: 800; text-transform: uppercase; color: #1b4d3e;">Fes (The Spiritual Heart)</th>
             </tr>
           </thead>
           <tbody>
             <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
-              <td style="padding: 14px 18px; font-weight: 700;">Overall Atmosphere</td>
-              <td style="padding: 14px 18px;">Vibrant, cosmopolitan, sensory, energized</td>
-              <td style="padding: 14px 18px;">Scholarly, mystical, medieval, unhurried</td>
+              <td style="padding: 15px 20px; font-weight: 700;">Atmosphere &amp; Vibe</td>
+              <td style="padding: 15px 20px;">Vibrant, sensory, cosmopolitan, high-energy nightlife</td>
+              <td style="padding: 15px 20px;">Scholarly, mystical, medieval, unhurried and solemn</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08); background: #fdfcfb;">
+              <td style="padding: 15px 20px; font-weight: 700;">Medina Architecture</td>
+              <td style="padding: 15px 20px;">Wider souk arteries, manicured riads, heavier motorbike traffic</td>
+              <td style="padding: 15px 20px;">9,000+ alleys, 100% car-free, donkeys, untouched 9th-century layout</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
-              <td style="padding: 14px 18px; font-weight: 700;">Medina Layout</td>
-              <td style="padding: 14px 18px;">Easier navigation, wide souk avenues</td>
-              <td style="padding: 14px 18px;">9,000+ labyrinthine alleys, world's largest car-free zone</td>
+              <td style="padding: 15px 20px; font-weight: 700;">Average Boutique Riad</td>
+              <td style="padding: 15px 20px;">$140 – $450 / night (luxury boutique standard)</td>
+              <td style="padding: 15px 20px;">$75 – $220 / night (<strong>30%–40% better value</strong>)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08); background: #fdfcfb;">
+              <td style="padding: 15px 20px; font-weight: 700;">Culinary Experience</td>
+              <td style="padding: 15px 20px;">World-class fusion dining, sunset cocktail lounges, Tanjia</td>
+              <td style="padding: 15px 20px;">Centuries-old slow culinary art, authentic Pastilla, secret bakeries</td>
             </tr>
             <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
-              <td style="padding: 14px 18px; font-weight: 700;">Average Riad Costs</td>
-              <td style="padding: 14px 18px;">$120 – $450/night (high luxury ceiling)</td>
-              <td style="padding: 14px 18px;">$70 – $220/night (30–40% better value)</td>
+              <td style="padding: 15px 20px; font-weight: 700;">Artisan Specialization</td>
+              <td style="padding: 15px 20px;">Brass lanterns, leather poufs, modern designer textiles</td>
+              <td style="padding: 15px 20px;">Chouara leather vats, blue Fassi cobalt ceramics, carved cedar</td>
             </tr>
-            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08);">
-              <td style="padding: 14px 18px; font-weight: 700;">Excursion Gateways</td>
-              <td style="padding: 14px 18px;">Agafay Desert, Ourika, Mount Toubkal, Essaouira</td>
-              <td style="padding: 14px 18px;">Chefchaouen (Blue City), Meknes, Volubilis Roman ruins</td>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.08); background: #fdfcfb;">
+              <td style="padding: 15px 20px; font-weight: 700;">Top Excursions</td>
+              <td style="padding: 15px 20px;">High Atlas (Toubkal), Agafay Desert, Essaouira coast</td>
+              <td style="padding: 15px 20px;">Chefchaouen (Blue City), Volubilis Roman ruins, Meknes</td>
             </tr>
             <tr>
-              <td style="padding: 14px 18px; font-weight: 700;">Best Suited For</td>
-              <td style="padding: 14px 18px;">Couples, nightlife, design lovers, first-time visitors</td>
-              <td style="padding: 14px 18px;">History buffs, photographers, cultural purists</td>
+              <td style="padding: 15px 20px; font-weight: 700;">Best Suited For</td>
+              <td style="padding: 15px 20px;">Couples, design enthusiasts, first-time travelers, weekenders</td>
+              <td style="padding: 15px 20px;">History buffs, photographers, cultural purists, budget luxury</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <h2>Fes vs Marrakech Medina</h2>
-      <p>The central attraction of any Moroccan imperial city is its medina (old town). Both are <strong>UNESCO World Heritage sites</strong>, but they are entirely different beasts.</p>
+      <!-- Section 1: The Vibe -->
+      <h2>1. The Vibe: Cosmopolitan Glamour vs. Living Medieval History</h2>
       
+      <h3>Marrakech: The Seductive Red City</h3>
+      <p>
+        Marrakech has captivated international artists, fashion designers, and travelers since Yves Saint Laurent fell under its spell in the 1960s. Built with sun-baked pink clay, the city is manicured for global travelers. It offers a sophisticated hybrid of traditional Moroccan architecture and contemporary luxury.
+      </p>
+      <p>
+        At twilight, the legendary square of <strong>Jemaa el-Fnaa</strong> transforms into an open-air spectacle of smoking grill stalls, Berber musicians, acrobats, and henna artists. Steps away, glamorous rooftop cocktail bars look out over the illuminated minaret of the 12th-century Koutoubia Mosque. If your ideal Moroccan holiday includes lounging by an emerald plunge pool with chilled local wine before dining on French-Moroccan fusion cuisine, Marrakech is in a class of its own.
+      </p>
+
+      <h3>Fes: The Timeless Medieval Sanctuary</h3>
+      <p>
+        Step past the iconic blue-and-green glazed ceramic tiles of <strong>Bab Bou Jeloud</strong> into Fes el-Bali, and modern centuries peel away. Fes is the oldest of Morocco's four imperial capitals (founded in 789 AD) and remains the nation's spiritual, intellectual, and religious soul.
+      </p>
+      <p>
+        Fes does not stage itself for tourists. It is a genuine, functioning medieval metropolis. You will not find cocktail bars or trendy neon signs inside the ancient walls; instead, you will hear the melodic calls to prayer echoing across 300 mosques, the clatter of copper beaters in Place Seffarine, and the calls of muleteers shouting <em>"Balak! Balak!"</em> (make way!) as donkeys squeeze through footpaths too tight for any motorized vehicle.
+      </p>
+
+      <!-- Section 2: Battle of the Medinas -->
+      <h2>2. Battle of the Medinas: Curated Souks vs. The 9,000-Alley Labyrinth</h2>
+      <p>
+        The medinas are the main event of both cities. Both are recognized as UNESCO World Heritage landmarks, but navigating them requires completely different mentalities.
+      </p>
+
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/images/blog/fes-el-bali-medina-street-400.webp 400w, /images/blog/fes-el-bali-medina-street-800.webp 800w, /images/blog/fes-el-bali-medina-street-1200.webp 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 768px, 1200px"
+          />
+          <img
+            src="/images/blog/fes-el-bali-medina-street.webp"
+            alt="Vibrant narrow alleyways in Fes el-Bali with pedestrian traffic and artisan stalls"
+            width="1200"
+            height="801"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <figcaption>Fes el-Bali: The world's largest contiguous car-free urban area, where medieval guilds continue ancestral craft trades.</figcaption>
+      </figure>
+
       <ul>
-        <li><strong>Marrakech Medina:</strong> The souks here are visually stunning, colorful, and heavily curated for tourists. You will find incredible artisanal goods, lamps, and rugs. The architecture is spectacular—do not miss the intricately tiled <strong>Ben Youssef</strong> Madrasa and the stunning <strong>Bahia Palace</strong>.</li>
-        <li><strong>Fes Medina (Fes el Bali):</strong> The <strong>Fes el Bali</strong> is the largest car-free urban area in the world, consisting of over 9,000 winding, labyrinthine alleyways. It is a true working city. You will dodge donkeys carrying supplies and hear the hammering of copper artisans. The crown jewel is the <strong>Chouara Tannery</strong>, where leather is still dyed using medieval methods. Warning: You <em>will</em> get lost in Fes without a guide, but that is part of the magic.</li>
+        <li>
+          <strong>Marrakech Medina:</strong> The souks branching north from Jemaa el-Fnaa (such as Souk Semmarine and Rahba Kedima) are vibrant, dazzling, and relatively easy to navigate. Smartphone GPS generally functions in the broader thoroughfares. However, narrow pedestrian lanes are frequently shared with motorized scooters buzzing past pedestrians, which requires constant vigilance. Key historic sites include the meticulously restored <strong>Ben Youssef Madrasa</strong> and the palatial courtyards of <strong>Bahia Palace</strong>.
+        </li>
+        <li>
+          <strong>Fes el-Bali:</strong> With more than 9,000 intertwined alleys, Fes el-Bali is the largest car-free contiguous urban space on earth. Motorbikes are completely prohibited. Satellite GPS signals cannot penetrate the covered cedar awnings and stone corridors. Getting lost is not a risk—it is a guarantee. The visual payoff is extraordinary: the 11th-century <strong>Chouara Tannery</strong>, where animal hides are still soaked in natural stone vats of pigeon droppings, indigo, and saffron, and the 9th-century <strong>University of Al Quaraouiyine</strong> (the world's oldest continually operating university).
+        </li>
       </ul>
-      <p><em>Shopping Etiquette:</em> Whether you are browsing brass lanterns in Marrakech or hand-woven kilims in Fes, negotiation is an ancient ritual of friendship, not combat. Learn how to shop with confidence and grace in our cultural guide: <a href="/blog/the-art-of-the-souk-bargaining-etiquette.html"><strong>The Art of the Souk: Why Bargaining in Marrakech is a Conversation, Not Combat</strong></a>.</p>
 
-      <h2>Is Fes Cheaper Than Marrakech?</h2>
-      <p>Budget is often a deciding factor. <strong>Is Fes cheaper than Marrakech?</strong> Yes, noticeably so. Because Marrakech caters to a massive influx of international tourists, prices for riads, food, and souvenirs are higher. Fes remains much more grounded in local pricing. A luxury riad or a traditional tagine in Fes will often cost 30-40% less than a comparable experience in Marrakech. When planning your overland travel between cities, review our transparent cost analysis on <a href="/blog/morocco-private-driver-cost.html"><strong>Morocco private driver costs</strong></a> or reserve a dedicated <a href="/morocco-private-driver.html"><strong>private driver in Morocco</strong></a> to navigate the scenic High Atlas and desert roads with complete comfort.</p>
+      <p>
+        <em>Pro-Tip on Shopping:</em> If you are purchasing fine leather jackets or hand-painted cobalt pottery, buy them in Fes where master guilds produce them on-site. If you want decorative brass lanterns, contemporary Berber rugs, or bohemian home décor, Marrakech offers wider contemporary curation. For negotiation strategies, consult our guide on <a href="/blog/the-art-of-the-souk-bargaining-etiquette.html"><strong>Souk Bargaining Etiquette in Morocco</strong></a>.
+      </p>
 
-      <h2>Marrakech vs Casablanca vs Fes</h2>
-      <p>Many travelers throw Casablanca into the mix. When looking at <strong>Marrakech vs Casablanca vs Fes</strong>, the consensus among travel experts is clear: Casablanca is a modern, corporate economic hub. Aside from the magnificent Hassan II Mosque, it lacks the romantic, historical charm of the imperial cities. For tourists, your time is much better spent in Marrakech or Fes.</p>
+      <!-- Section 3: Cost & Value -->
+      <h2>3. Cost &amp; Value: Is Fes Truly Cheaper Than Marrakech?</h2>
+      <p>
+        The financial difference between the two imperial cities is substantial. Because Marrakech serves as the primary international gateway for European weekenders and luxury tourism, prices across hotels, dining, and private guiding carry a noticeable premium.
+      </p>
+      <ul>
+        <li>
+          <strong>Lodging &amp; Riads:</strong> A top-tier luxury riad with an internal courtyard pool in Fes (such as Riad Fes or Palais Amani) typically ranges between $120 and $220 USD per night. In Marrakech, an equivalent historic boutique riad easily commands $280 to $550+ USD per night during peak autumn and spring seasons.
+        </li>
+        <li>
+          <strong>Dining:</strong> A multi-course dinner at a premier rooftop restaurant in Marrakech (such as Nomad or Le Jardin) costs approximately $35 to $60 USD per person. In Fes, an equally exquisite traditional feast in an opulent riad dining room costs $18 to $30 USD per person.
+        </li>
+        <li>
+          <strong>Private Chauffeurs &amp; Transfers:</strong> When arranging private intercity transfers or multi-day expeditions, rates remain standardized nationwide. Review our complete breakdown of <a href="/blog/morocco-private-driver-cost.html"><strong>Morocco private driver costs</strong></a> or calculate realistic daily budgets using our interactive <a href="/morocco-trip-cost-calculator.html"><strong>Morocco Trip Cost Calculator</strong></a>.
+        </li>
+      </ul>
 
-      <h2>Day Trips: Which City is a Better Base Camp?</h2>
-      <p>If you want to base yourself in one city and take excursions, the winner is clear.</p>
-      <p><strong>Marrakech</strong> is the undisputed king of <strong>day trips</strong>. From Marrakech, you are just a short drive away from the snow-capped <a href="/tour-active-atlas.html"><strong>Atlas Mountains</strong></a>, the rocky Agafay Desert, the coastal town of Essaouira, and the cinematic Kasbahs of Ait Benhaddou on our <a href="/tour-heritage-cinema.html"><strong>Morocco film location &amp; heritage cinema tour</strong></a>. Fes has excellent day trips as well (like the blue city of Chefchaouen or the Roman ruins of Volubilis), but Marrakech offers vastly more geographical diversity within a two-hour radius.</p>
-      <p>If you want to travel between both imperial cities overland without losing two days to crowded trains, hiring a <a href="/morocco-private-driver.html"><strong>Morocco private chauffeur</strong></a> allows you to turn the transit into an unhurried 3 or 4 day expedition across the High Atlas, Todra Gorge, and Erg Chebbi dunes.</p>
+      <!-- Trip Cost Calculator Banner -->
+      <div style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-left: 4px solid #C8A45C; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); padding: 24px; margin: 28px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+        <div>
+          <span style="font-family:'Inter', sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#8A6A23; background:rgba(200,164,92,0.12); border:1px solid rgba(200,164,92,0.28); padding:3px 10px; border-radius:999px; display:inline-block; margin-bottom:8px;">Transparent Travel Economics</span>
+          <strong style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000; display:block;">Compare Your Imperial Cities Budget</strong>
+          <p style="margin:4px 0 0; font-size:13.5px; color:#555;">Calculate realistic riad, private chauffeur, and meal expenses across Marrakech and Fes.</p>
+        </div>
+        <a href="/morocco-trip-cost-calculator.html" class="roam-btn-black" style="padding:12px 20px; font-size:12px; white-space:nowrap; border-radius:10px; font-weight:600;">Open Budget Calculator &rarr;</a>
+      </div>
+
+      <!-- Section 4: Food & Dining -->
+      <h2>4. Food &amp; Culinary Heritage: Modern Rooftops vs. Ancestral Feasts</h2>
+      <p>
+        Both cities are culinary capitals of the Arab-Berber world, but their gastronomic strengths reflect their personalities.
+      </p>
+      <p>
+        <strong>Marrakech is celebrated for street food theatre and culinary reinvention.</strong> The city's signature specialty is <em>Tanjia Marrakchia</em>—tender beef or lamb seasoned with cumin, garlic, and preserved lemon, sealed inside a clay urn and slow-cooked for eight hours in the ash beneath the neighborhood hammam. Marrakech is also home to Morocco's finest international rooftop dining scene, where you can pair Moroccan wines with inventive takes on couscous and pastilla overlooking the minarets.
+      </p>
+      <p>
+        <strong>Fes is the historic culinary capital of the kingdom.</strong> Fassi cuisine is the most complex and refined in Moroccan history, having absorbed Moorish, Andalusian, Ottoman, and Jewish traditions over a millennium. Fes is the birthplace of authentic <em>Pastilla</em> (a paper-thin warka pastry stuffed with pigeon or shredded chicken, slow-cooked almonds, cinnamon, and powdered sugar). Local bakeries and communal ovens produce the most exquisite semolina breads and honey-drenched almond pastries in the country.
+      </p>
+
+      <!-- Section 5: Day Trips -->
+      <h2>5. Day Trips: Which City is the Better Base Camp?</h2>
+      <p>
+        If your travel style prefers establishing a home base in one boutique riad and taking daily excursions without repacking your luggage every morning, geography gives each city distinct regional advantages.
+      </p>
+      <p>
+        <strong>Marrakech is the ultimate hub for dramatic ecological variety:</strong>
+      </p>
+      <ul>
+        <li><strong>High Atlas Mountains &amp; Imlil:</strong> 90 minutes south, you transition from palm oases to 4,000-meter snow-capped alpine peaks on our <a href="/tour-active-atlas.html"><strong>Active Atlas &amp; Toubkal trek</strong></a>.</li>
+        <li><strong>Agafay Desert:</strong> Just 45 minutes from town, you can experience sunset camel rides and luxury glamping across stark stone dunes without traveling to the Sahara.</li>
+        <li><strong>Essaouira Coast:</strong> A 2.5-hour drive west brings you to the breezy Atlantic port town famous for fresh seafood and Portuguese ramparts.</li>
+        <li><strong>Ait Benhaddou:</strong> Cross the dramatic Tizi n'Tichka pass to explore cinematic mudbrick kasbahs on our <a href="/tour-heritage-cinema.html"><strong>Heritage Cinema &amp; Kasbah tour</strong></a>.</li>
+      </ul>
+
+      <p>
+        <strong>Fes is the superior hub for Roman antiquity and northern mountain culture:</strong>
+      </p>
+      <ul>
+        <li><strong>Volubilis &amp; Moulay Idriss:</strong> 1 hour west sit the best-preserved UNESCO Roman ruins in North Africa, complete with intact mosaic floors.</li>
+        <li><strong>Meknes:</strong> The 17th-century imperial city of Sultan Moulay Ismail with the monumental Bab Mansour gate.</li>
+        <li><strong>Chefchaouen (The Blue City):</strong> A 3.5-hour drive through the Rif Mountains delivers you to the world-famous blue-washed mountain medina.</li>
+      </ul>
+
+      <!-- Section 6: Overland Crossing -->
+      <h2>6. How to Travel Between Marrakech and Fes (And Why the Desert is King)</h2>
+      <p>
+        Many travelers believe they must choose one or the other. In reality, connecting both imperial cities creates Morocco's most iconic vacation route. You have three transit options:
+      </p>
+      <ol>
+        <li>
+          <strong>The ONCF Train (Fastest Budget Transit):</strong> A direct rail line connects Marrakech and Fes via Casablanca. The train takes roughly 6.5 hours in air-conditioned comfort, with tickets costing roughly $25–$35 USD for First Class. However, the route travels through flat agricultural plains, bypassing the Sahara and High Atlas entirely.
+        </li>
+        <li>
+          <strong>Domestic Flights:</strong> Royal Air Maroc offers flights between Marrakech (RAK) and Fes (FEZ), but they almost always require a layover in Casablanca, stretching total travel time to 3.5–5 hours once security and transfers are factored in.
+        </li>
+        <li>
+          <strong>The Definitive 3-to-4 Day Desert Overland Crossing:</strong> Instead of wasting a day in transit, hire a licensed <a href="/morocco-private-driver.html"><strong>private driver in Morocco</strong></a>. Depart Marrakech, ascend over the High Atlas via the Tizi n'Tichka pass, explore Ait Benhaddou, spend two nights in an <a href="/blog/merzouga-luxury-desert-camp.html"><strong>Erg Chebbi luxury desert camp</strong></a>, and travel north through the dramatic Ziz Valley gorge and Middle Atlas cedar forests into Fes.
+        </li>
+      </ol>
+
+      <p>
+        This exact point-to-point crossing is fully mapped with daily drive times and boutique riad selections in our published <a href="/blog/morocco-7-day-itinerary.html"><strong>Morocco 7-day itinerary guide</strong></a>.
+      </p>
 
       <!-- Roam Morocco Reusable Tour CTA Box Component -->
       <div class="roam-tour-cta-box">
-        <span class="roam-tour-cta-kicker">★ TAILORED IMPERIAL CITIES CIRCUIT</span>
-        <h3 class="roam-tour-cta-title">Experience Both Marrakech and Fes in Complete Comfort</h3>
+        <span class="roam-tour-cta-kicker">★ SEAMLESS IMPERIAL OVERLAND JOURNEY</span>
+        <h3 class="roam-tour-cta-title">Experience Both Marrakech &amp; Fes in Complete Comfort</h3>
         <p class="roam-tour-cta-desc">
-          Can't decide between Marrakech and Fes? Connect them seamlessly via the High Atlas and Sahara dunes with your own dedicated English-speaking <a href="/morocco-private-driver.html" style="color:#C8A45C; text-decoration:underline;">private driver in Morocco</a>, luxury 4&times;4 vehicle, and curated historic riads.
+          Skip the crowded 7-hour train ride. Cross the High Atlas Mountains and spend the night glamping among the 150-meter orange dunes of Erg Chebbi with your own dedicated English-speaking <a href="/morocco-private-driver.html" style="color:#C8A45C; text-decoration:underline;">Morocco private chauffeur</a> and premium 4&times;4 Prado.
         </p>
         <div class="roam-tour-cta-actions">
-          <a href="/custom-morocco-tour.html" class="roam-btn-white">Design Imperial Cities Circuit &rarr;</a>
-          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20Marrakech%20and%20Fes%20tour." target="_blank" rel="noopener" class="roam-btn-wa">
+          <a href="/blog/morocco-7-day-itinerary.html" class="roam-btn-white">View 7-Day Route Itinerary &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20private%20tour%20connecting%20Marrakech%20and%20Fes." target="_blank" rel="noopener" class="roam-btn-wa">
             <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
-            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+            <span style="color:#ffffff !important;">Plan via WhatsApp</span>
           </a>
         </div>
       </div>
 
-      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
+      <!-- Section 7: The Final Verdict -->
+      <h2>7. The Final Verdict: Which City Wins Your Itinerary?</h2>
+      <p>
+        If your schedule strictly limits you to choosing only one imperial city, match your travel persona to the verdict below:
+      </p>
+      <ul>
+        <li>
+          <strong>Pick Marrakech if:</strong> You are visiting Morocco for the first time, you love rooftop cocktails and boutique dining, you want easy day trips to the High Atlas or Atlantic coast, you value accessible navigation, or you are traveling on a shorter 4-to-5 day getaway.
+        </li>
+        <li>
+          <strong>Pick Fes if:</strong> You are an architectural purist, photographer, or history enthusiast who craves an authentic, unvarnished look into the Arab-Berber medieval world, you want to experience the world's greatest living car-free medina, and you prefer your budget to stretch 30% further.
+        </li>
+      </ul>
 
-      <h2>The Final Verdict</h2>
-      <p><strong>Choose Marrakech if:</strong> You want luxury, incredible dining, vibrant nightlife, photogenic architecture, easy navigation, and access to the Atlas Mountains.</p>
-      <p><strong>Choose Fes if:</strong> You are a history buff, you want an intense, unfiltered cultural experience, you prefer fewer crowds, and you are traveling on a slightly tighter budget.</p>
+      <!-- FAQ Section Accordion for Search Engine Rich Results -->
+      <h2>Frequently Asked Questions: Marrakech vs Fes</h2>
+      <div class="roam-faq-accordion" style="margin: 28px 0;">
+        
+        <details class="roam-faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 16px 0;">
+          <summary style="font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #111;">Is Fes or Marrakech better for first-time visitors?</summary>
+          <p style="margin-top: 10px; color: #444; line-height: 1.6;">
+            Marrakech is widely considered the smoother entry point for first-time visitors. The streets are wider, high-end tourism infrastructure is expansive, English is widely spoken in riads, and international flight routes into Marrakech Menara Airport (RAK) are plentiful. Fes is more intense and deeply medieval, making it rewarding for travelers who are comfortable navigating complex historical environments.
+          </p>
+        </details>
 
-            <!-- Roam Morocco E-E-A-T Curator Bio Card -->
+        <details class="roam-faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 16px 0;">
+          <summary style="font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #111;">Is Fes cheaper than Marrakech?</summary>
+          <p style="margin-top: 10px; color: #444; line-height: 1.6;">
+            Yes. Fes is approximately 30% to 40% more affordable than Marrakech across riad accommodations, local dining, and artisanal handicrafts. A palatial historic riad in Fes typically costs between $80 and $200 per night, whereas a luxury boutique equivalent in Marrakech commands $180 to $450+.
+          </p>
+        </details>
+
+        <details class="roam-faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 16px 0;">
+          <summary style="font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #111;">How many days do you need in Marrakech vs Fes?</summary>
+          <p style="margin-top: 10px; color: #444; line-height: 1.6;">
+            We recommend 3 to 4 days for Marrakech to cover the medina souks, major palaces, gardens, and an excursion into the High Atlas Mountains. For Fes, 2 to 3 days provides ample time to immerse yourself in Fes el-Bali, visit the Chouara Tannery, and take a half-day trip to the Roman ruins of Volubilis.
+          </p>
+        </details>
+
+        <details class="roam-faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 16px 0;">
+          <summary style="font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #111;">How do you travel from Marrakech to Fes?</summary>
+          <p style="margin-top: 10px; color: #444; line-height: 1.6;">
+            The direct ONCF train connects them in about 6.5 hours for $25–$35 USD. However, travelers who want to see Morocco's landscapes hire a private driver to make a 3-day or 4-day desert road trip crossing the High Atlas Mountains, Dades Valley, and Erg Chebbi dunes before arriving in Fes.
+          </p>
+        </details>
+
+        <details class="roam-faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 16px 0;">
+          <summary style="font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #111;">Which medina is safer: Fes or Marrakech?</summary>
+          <p style="margin-top: 10px; color: #444; line-height: 1.6;">
+            Both medinas are safe from violent crime due to strict Moroccan tourist police patrols. In Fes, the main challenge is getting disoriented in the 9,000 alleys and dealing with persistent faux guides near the tanneries. In Marrakech, the challenge is navigating reckless motorbikes in narrow lanes and persistent souk bargaining. In both cities, booking an official licensed guide for your first morning eliminates 95% of tout friction.
+          </p>
+        </details>
+
+        <details class="roam-faq-item" style="border-bottom: 1px solid rgba(0,0,0,0.1); padding: 16px 0;">
+          <summary style="font-weight: 700; font-size: 1.1rem; cursor: pointer; color: #111;">Can you visit both Marrakech and Fes in one week?</summary>
+          <p style="margin-top: 10px; color: #444; line-height: 1.6;">
+            Absolutely. By booking an open-jaw flight (arrive in Marrakech RAK, depart from Fes FEZ or Casablanca CMN), you can spend 2 nights in Marrakech, 2 nights driving across the Atlas and Sahara, and 2 nights in Fes without backtracking.
+          </p>
+        </details>
+
+      </div>
+
+      <!-- Roam Morocco E-E-A-T Curator Bio Card -->
       <div class="roam-author-card" itemscope itemtype="https://schema.org/Person">
         <div class="roam-author-avatar">RM</div>
         <div class="roam-author-content">
           <span class="roam-author-kicker">Written &amp; Curated by Local Experts</span>
           <h4 class="roam-author-title"><span itemprop="name">Hamza &amp; Abdelhakim</span> <span itemprop="jobTitle">— Co-Founders, Roam Morocco Tours</span></h4>
           <p class="roam-author-bio" itemprop="description">
-            Raised in Marrakech with lifelong family roots spanning the High Atlas and Sahara, Hamza and Abdelhakim founded Roam Morocco to reject commercial mass tourism. Together with native route curators, they design 100% private, unhurried expeditions focusing on authentic cultural immersion, transparent pricing, and direct support to local artisan communities.
+            Born and raised in Marrakech with lifelong family roots spanning the High Atlas and Sahara, Hamza and Abdelhakim founded Roam Morocco to reject commercial mass tourism. Together with native route curators, they design 100% private, unhurried expeditions focusing on authentic cultural immersion, transparent pricing, and direct support to local artisan communities.
           </p>
           <div class="roam-author-badges">
             <span><span class="badge-check">✓</span> Ministry Licensed Tour Operators</span>
@@ -305,7 +477,7 @@ const schema = {
         </div>
       </div>
 
-<!-- Morocco Travel Essentials Toolkit -->
+      <!-- Morocco Travel Essentials Toolkit -->
       <div class="roam-toolkit-box">
         <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
         <div class="roam-toolkit-grid">
@@ -327,10 +499,22 @@ const schema = {
           </a>
         </div>
       </div>
-        </div>
-  </article>  <!-- EXACT HOMEPAGE SIGNATURE FOOTER -->
-    <!-- Signature Footer -->
+
+    </div>
+  </article>
 
   <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
   <script is:inline src="/js/roam-cta.js" defer></script>
+
+  <!-- Sticky Mobile Tour & Chauffeur Action Bar (<900px) -->
+  <div class="sticky-mobile-tour-bar">
+    <div class="smt-info">
+      <div class="smt-title">Private Chauffeur &amp; Tours</div>
+      <div class="smt-price">Marrakech &bull; Fes &bull; Desert</div>
+    </div>
+    <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20comparing%20Marrakech%20and%20Fes%20and%20would%20like%20a%20private%20driver%20quote." target="_blank" rel="noopener" class="smt-btn">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp">
+      <span>Get a Quote</span>
+    </a>
+  </div>
 </Layout>

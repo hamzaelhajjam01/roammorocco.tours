@@ -1,0 +1,27 @@
+# Google Disavow Links for roammorocco.tours
+# Generated: October 20, 2026
+# Reason: Low-quality PBN, gambling, and automated link blast domains detected via DataForSEO audit (Spam Score 60)
+
+domain:archive-hu.com
+domain:bestnz-poker-casinoslot.com
+domain:betulcrime.com
+domain:betwinnermirror.com
+domain:bureatag.com
+domain:clifflisting.com
+domain:cvillico.com
+domain:dbike-us.com
+domain:dupurgeniefr.com
+domain:fashionclothingnews.com
+domain:ggmap.us.com
+domain:homesforsaleoldgreenwichct.com
+domain:kernelpanicpodcast.com
+domain:mediaboooster.com
+domain:mybeautifuladventures.com
+domain:onvaxs.com
+domain:quotesblom.com
+domain:sahammurah.com
+domain:techbumppy.com
+domain:thcradar.com
+domain:thedocmag.com
+domain:theforbestimes.com
+domain:uncledspizza.com

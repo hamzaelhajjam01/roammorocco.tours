@@ -960,3 +960,103 @@ figure.featured-image-box {
   }
 }
 
+
+
+/* ── STICKY MOBILE BLOG/TOUR ACTION BAR (<900px) ── */
+.sticky-mobile-tour-bar {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .sticky-mobile-tour-bar {
+    position: fixed;
+    bottom: calc(74px + env(safe-area-inset-bottom, 0px));
+    left: 16px;
+    right: 16px;
+    z-index: 8900;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 22px;
+    box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    transform: translateY(140%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    box-sizing: border-box;
+  }
+  .sticky-mobile-tour-bar.visible {
+    transform: translateY(0);
+  }
+  body.mobile-drawer-open .sticky-mobile-tour-bar,
+  .sticky-mobile-tour-bar.smt-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateY(140%) !important;
+  }
+  @media (max-width: 360px) {
+    .sticky-mobile-tour-bar {
+      left: 10px;
+      right: 10px;
+      padding: 8px 12px;
+    }
+  }
+  .smt-info {
+    min-width: 0;
+    flex: 1;
+  }
+  .smt-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.25;
+  }
+  .smt-price {
+    font-size: 12px;
+    font-weight: 800;
+    color: #8A6A23;
+    line-height: 1.2;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .smt-price span {
+    font-size: 10px;
+    font-weight: 500;
+    color: #64748b;
+  }
+  .smt-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #25D366 0%, #1ea952 100%);
+    color: #ffffff !important;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 10px 16px;
+    border-radius: 9999px;
+    text-decoration: none;
+    flex-shrink: 0;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+    white-space: nowrap;
+    transition: all 0.2s ease;
+  }
+  .smt-btn:hover {
+    background: linear-gradient(135deg, #20BA59 0%, #169345 100%);
+  }
+  .smt-btn img,
+  .smt-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+}
