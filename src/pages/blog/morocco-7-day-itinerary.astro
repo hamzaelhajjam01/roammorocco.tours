@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 const title = "Morocco 7-Day Itinerary: Marrakech, Sahara & Fes (2026 Guide) | Roam Morocco";
 const description = "The ultimate Morocco 7-day itinerary: Marrakech, High Atlas, Ait Benhaddou, Erg Chebbi Sahara glamping, and medieval Fes with realistic drive times and costs.";
 const canonical = "https://roammorocco.tours/blog/morocco-7-day-itinerary.html";
-const ogImage = "https://roammorocco.tours/images/morocco-sahara-dunes-sunset.jpg";
+const ogImage = "https://roammorocco.tours/images/blog/merzouga-erg-chebbi-golden-dunes-1200.webp";
 const bodyClass = "roam-light-theme";
 const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
 const schema = {
@@ -145,7 +145,21 @@ const schema = {
 
     <!-- Featured Visual Frame -->
     <figure class="featured-image-box">
-      <img src="/images/morocco-sahara-dunes-sunset.jpg" alt="Sunset over golden sand dunes in Merzouga Erg Chebbi Morocco" width="1200" height="675">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="/images/blog/merzouga-erg-chebbi-golden-dunes-400.webp 400w, /images/blog/merzouga-erg-chebbi-golden-dunes-800.webp 800w, /images/blog/merzouga-erg-chebbi-golden-dunes-1200.webp 1200w"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 768px, 1200px"
+        />
+        <img
+          src="/images/blog/merzouga-erg-chebbi-golden-dunes.webp"
+          alt="Expansive golden sand dunes in Merzouga Erg Chebbi Moroccan Sahara"
+          width="1200"
+          height="800"
+          loading="eager"
+          decoding="async"
+        />
+      </picture>
       <figcaption>Erg Chebbi dunes outside Merzouga, where 150-meter orange sand ridges meet clear desert skies.</figcaption>
     </figure>
 
