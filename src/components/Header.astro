@@ -130,13 +130,20 @@ const t = getTranslations(lang);
       const loader = document.getElementById('page-loader');
       if(!loader) return;
 
-      // Fail-safe timeout: Dismiss loader after 7s max in case of any network delay
+      // Run loader only on initial visit per session
+      if (sessionStorage.getItem('hasLoadedBefore')) {
+        loader.remove();
+        return;
+      }
+      sessionStorage.setItem('hasLoadedBefore', 'true');
+
+      // Fail-safe timeout: Dismiss loader after 3s max under any condition
       const failSafe = setTimeout(() => {
         if(loader && loader.parentNode) {
           loader.classList.add('done');
-          setTimeout(() => { if(loader && loader.parentNode) loader.remove(); }, 500);
+          setTimeout(() => { if(loader && loader.parentNode) loader.remove(); }, 400);
         }
-      }, 7000);
+      }, 3000);
 
       const baseSlapMs = 280;
       const baseHoldMs = 200;
