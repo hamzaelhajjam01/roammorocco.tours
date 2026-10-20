@@ -322,7 +322,21 @@ const schema = {
 
       <h2>Day 6: Deep Dive into Medieval Fes el-Bali</h2>
       <figure class="featured-image-box" style="margin: 32px 0;">
-        <img src="/images/morocco-fes-medina-architecture.jpg" alt="Historic Islamic architecture and carved cedar wood in the medina of Fes el Bali" width="1200" height="675">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="/images/blog/fes-el-bali-medina-street-400.webp 400w, /images/blog/fes-el-bali-medina-street-800.webp 800w, /images/blog/fes-el-bali-medina-street-1200.webp 1200w"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 768px, 1200px"
+          />
+          <img
+            src="/images/blog/fes-el-bali-medina-street.webp"
+            alt="Vibrant car-free alleyways and market stalls inside the medieval medina of Fes el-Bali Morocco"
+            width="1200"
+            height="801"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
         <figcaption>Fes el-Bali: The world's largest contiguous car-free urban area, dating back to the 9th century.</figcaption>
       </figure>
 
