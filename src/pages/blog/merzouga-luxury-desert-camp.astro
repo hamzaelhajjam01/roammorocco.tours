@@ -1,0 +1,416 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Merzouga Luxury Desert Camp: The 2026 Erg Chebbi Glamping Guide | Roam Morocco";
+const description = "Everything you need to know about booking a Merzouga luxury camp in Erg Chebbi: private en-suite bathrooms, 4x4 transfers, honest pricing, and avoiding tourist traps.";
+const canonical = "https://roammorocco.tours/blog/merzouga-luxury-desert-camp.html";
+const ogImage = "https://roammorocco.tours/images/sahara_camp.webp";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": `${canonical}#article`,
+      "headline": title,
+      "description": description,
+      "image": ogImage,
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hamza",
+          "jobTitle": "Co-Founder & Expedition Curator",
+          "url": "https://roammorocco.tours/about.html"
+        },
+        {
+          "@type": "Person",
+          "name": "Abdelhakim",
+          "jobTitle": "Co-Founder & Operations Lead",
+          "url": "https://roammorocco.tours/about.html"
+        }
+      ],
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonical
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonical}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title,
+          "item": canonical
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonical}#faq`,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between a standard camp and a luxury camp in Merzouga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard desert camp uses basic canvas tents with shared outdoor pit toilets, cold water buckets, and thin foam mattresses on the ground. A genuine luxury desert camp features heavy insulated Berber canvas tents, real king-sized wooden beds, 220V solar power, and private en-suite bathrooms with ceramic flush toilets and hot running showers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Merzouga luxury desert camps have heat or air conditioning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Top-tier luxury camps in Erg Chebbi provide electric space heaters or wood stoves alongside heavy camel-wool blankets during winter months (December to February) when temperatures drop near freezing. Some premium camps also feature mini-split air conditioning units running on daytime solar and battery banks, though desert nights cool down considerably."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you reach a luxury desert camp in Erg Chebbi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Guests typically arrive by private 4x4 vehicle at a staging riad in Hassilabied or Merzouga village. From there, you can choose between a 45-minute sunset camel trek into the dunes or a direct 15-minute 4x4 dune transfer. Your main luggage is transported separately in the support 4x4 so you only need a small daypack on the camel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a night in a Merzouga luxury camp cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A high-end luxury desert camp in Merzouga generally costs between $180 and $450 per night for two guests. This rate includes private luxury tent lodging, 4x4 dune transfers, sunset camel excursion, multi-course Moroccan dinner, and cooked breakfast."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it safe to sleep in the Sahara desert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, sleeping in the Merzouga desert is very safe. Luxury camps are staffed 24/7 by local Amazigh (Berber) hosts who know the dunes intimately. Camps have illuminated walkways, fire extinguishers, satellite emergency communications, and perimeter supervision."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <article class="article-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/index.html">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; <span>Merzouga Luxury Desert Camp Guide</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">SAHARA GLAMPING • 2026 EXPERT GUIDE</span>
+      <h1 class="article-title">Merzouga Luxury Desert Camp: The Complete Erg Chebbi Glamping Guide</h1>
+      <p class="article-subtitle">
+        What genuine Sahara luxury really looks like, how to avoid noisy perimeter camps, and why en-suite hot water changes everything.
+      </p>
+      <div class="article-meta">
+        <span>Published: <strong>October 2026</strong></span>
+        <span>Curators: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>11 Minutes (2,300 Words)</strong></span>
+        <span>Focus: <strong>Erg Chebbi Glamping &amp; Sahara Camps</strong></span>
+      </div>
+    </header>
+
+    <!-- Featured Visual Frame -->
+    <figure class="featured-image-box">
+      <img src="/images/sahara_camp.webp" alt="Merzouga luxury desert camp tents nestled under the high orange dunes of Erg Chebbi" width="1200" height="675">
+      <figcaption>Erg Chebbi, Merzouga: Insulated Berber glamping tents surrounded by golden sand crests.</figcaption>
+    </figure>
+
+    <!-- Executive Summary / BLUF -->
+    <aside class="ai-quick-summary-card" aria-label="Merzouga Luxury Desert Camp Summary">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ GLAMPING AT A GLANCE (QUICK SUMMARY)</span>
+        <span class="ai-summary-badge">Erg Chebbi Standard</span>
+      </div>
+      <p class="ai-summary-text">
+        Not every camp labeled "luxury" in Merzouga delivers genuine comfort. A legitimate <strong>Merzouga luxury camp</strong> requires three non-negotiables: private en-suite ceramic flush toilets with high-pressure hot rainfall showers inside your tent, placement deep within the <strong>Erg Chebbi</strong> dune sea rather than beside the asphalt road, and silent solar battery power rather than noisy diesel generators humming outside your door all night.
+      </p>
+    </aside>
+
+    <!-- Editorial Content -->
+    <div class="article-content">
+      <p style="font-size: 1.25rem;">
+        Spending a night under the stars in the Sahara Desert is the highlight of most Moroccan trips. Yet travelers often arrive with two very different expectations. Some picture freezing in a damp nylon tent and stumbling across dark dunes to share a communal outhouse. Others expect a five-star hotel room miraculously dropped into a sand dune.
+      </p>
+
+      <p>
+        The reality of modern Moroccan glamping sits somewhere in between. Over the past decade, high-end camp operators in <strong>Erg Chebbi</strong> (the towering orange dunes outside Merzouga) have solved the logistics of desert comfort. Today, you can sleep in a hand-crafted Berber tent with a king-sized mattress, plug your phone into a 220V wall outlet, take a steaming shower, and enjoy a slow-roasted tagine while local musicians play around a tamarisk wood fire.
+      </p>
+
+      <p>
+        However, the word "luxury" is used loosely in Moroccan travel listings. Here is our honest, on-the-ground breakdown of what separates an authentic desert oasis from an overcrowded tourist bivouac.
+      </p>
+
+      <!-- Interactive Trip Cost Calculator Banner -->
+      <div style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-left: 4px solid #C8A45C; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); padding: 24px; margin: 28px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+        <div>
+          <span style="font-family:'Inter', sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#8A6A23; background:rgba(200,164,92,0.12); border:1px solid rgba(200,164,92,0.28); padding:3px 10px; border-radius:999px; display:inline-block; margin-bottom:8px;">Sahara Route Planning</span>
+          <strong style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000; display:block;">Curious how much a desert safari costs?</strong>
+          <p style="margin:4px 0 0; font-size:13.5px; color:#555;">Estimate private 4x4 transfers, luxury camp stays, and High Atlas driver rates.</p>
+        </div>
+        <a href="/morocco-trip-cost-calculator.html" class="roam-btn-black" style="padding:12px 20px; font-size:12px; white-space:nowrap; border-radius:10px; font-weight:600;">Open Budget Calculator &rarr;</a>
+      </div>
+
+      <h2>The Anatomy of a True Luxury Tent</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/pol-tent.jpg" alt="Interior of a luxury desert camp tent with comfortable double bed and Moroccan handwoven rugs" width="1200" height="675">
+        <figcaption>Interior comfort: Real wooden beds, hand-woven tribal rugs, and solid flooring.</figcaption>
+      </figure>
+
+      <p>
+        If you are paying for luxury glamping, you should not be "roughing it." Here are the exact architectural and amenity standards you should expect:
+      </p>
+
+      <ul>
+        <li><strong>Private En-Suite Bathroom:</strong> The tent interior is divided by an insulated partition wall. Behind it sits a private washroom equipped with a modern ceramic flush toilet, a stone vanity basin with running tap water, and a separate walk-in shower stall with reliable hot water.</li>
+        <li><strong>Solid Raised Flooring:</strong> Cheaper camps lay carpets directly on loose sand, which means every step kicks up fine dust into your bedsheets. True luxury camps build wood or composite decking platforms under every tent, covered with authentic Beni Ourain and Boucherouite wool rugs.</li>
+        <li><strong>Heavy-Duty Weather Canvas:</strong> Authentic desert tents are constructed with multi-layered canvas lined with dense camel-hair or sheep-wool felt. This insulation keeps the tent cooler during blazing afternoon sun and retains heat during chilly desert nights.</li>
+        <li><strong>Solar Electricity (220V Outlets):</strong> You will have real reading lamps, ceiling illumination, and standard Moroccan two-pin electrical outlets to charge cameras, phones, and drone batteries without relying on noisy combustion engines.</li>
+        <li><strong>Quality Bedding:</strong> Expect proper hotel-grade mattresses with high-thread-count Egyptian cotton sheets, fluffy pillows, and heavy wool blankets.</li>
+      </ul>
+
+      <h2>Deep Dunes vs. Roadside Camps: The Location Trap</h2>
+      <p>
+        This is the single biggest trap in Merzouga tourism. Online booking platforms show identical photos of sand dunes, but they rarely disclose where the camp is actually situated.
+      </p>
+
+      <p>
+        <strong>Perimeter (Roadside) Camps:</strong> Dozens of low-cost camps sit only 200 to 400 meters from the paved N13 highway. While they have sand behind them, you will hear truck traffic throughout the night, see headlights sweeping across your tent canvas, and smell exhaust from rental quad bikes tearing across the flats.
+      </p>
+
+      <p>
+        <strong>Deep Dune Camps:</strong> Legitimate luxury camps are nestled deep inside the <strong>Erg Chebbi</strong> dune sea, often a 20 to 30-minute 4x4 drive off-road from the nearest village (Hassilabied or Merzouga). High 150-meter sand walls surround the camp on all sides, blocking artificial light and road noise entirely. When you step outside your tent at midnight, you experience absolute silence and a Bortle Class 1 dark sky with the Milky Way visible to the naked eye.
+      </p>
+
+      <!-- Camp Types Comparison Table -->
+      <h2>Camp Categories Compared: Basic vs. Standard vs. Royal Luxury</h2>
+      <div style="overflow-x: auto; margin: 28px 0; border: 1px solid rgba(0,0,0,0.1); background: #fff;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+          <thead>
+            <tr style="background: #faf8f5; border-bottom: 2px solid #000;">
+              <th style="padding: 12px 16px; font-weight: 800;">Feature</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Budget Bivouac</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Standard Camp</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Royal Luxury Glamping</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Average Rate / Night</td>
+              <td style="padding: 12px 16px;">$40 – $70 (per person)</td>
+              <td style="padding: 12px 16px;">$100 – $160 (per tent)</td>
+              <td style="padding: 12px 16px;">$220 – $450 (per tent)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Bathroom Facilities</td>
+              <td style="padding: 12px 16px;">Shared outdoor pit / cold bucket</td>
+              <td style="padding: 12px 16px;">Shared block with warm showers</td>
+              <td style="padding: 12px 16px;">Private en-suite, hot rainfall shower, flush toilet</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Power &amp; Lighting</td>
+              <td style="padding: 12px 16px;">Candles or faint 12V bulb</td>
+              <td style="padding: 12px 16px;">Central charging tent only</td>
+              <td style="padding: 12px 16px;">24/7 in-tent solar 220V outlets &amp; lamps</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Location in Dunes</td>
+              <td style="padding: 12px 16px;">Perimeter flats near asphalt</td>
+              <td style="padding: 12px 16px;">Outer dune edge</td>
+              <td style="padding: 12px 16px;">Deep dunes, zero light pollution</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Dinner Experience</td>
+              <td style="padding: 12px 16px;">Basic group vegetable tagine</td>
+              <td style="padding: 12px 16px;">Buffet dinner in main tent</td>
+              <td style="padding: 12px 16px;">Plated 3-course dinner, wine glassware, campfire show</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 16px; font-weight: 700;">Luggage Transfer</td>
+              <td style="padding: 12px 16px;">Carried on camel saddle</td>
+              <td style="padding: 12px 16px;">Shared truck transport</td>
+              <td style="padding: 12px 16px;">Dedicated private 4x4 luggage transfer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>A Typical Evening at Camp: What to Expect</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/pol-twilight.jpg" alt="Warm twilight glow over desert camp with lanterns and glowing campfire" width="1200" height="675">
+        <figcaption>Twilight in the Sahara: Lantern-lit walkways and the central campfire.</figcaption>
+      </figure>
+
+      <p>
+        Your desert experience usually begins around 4:30 PM. After a scenic journey through the Atlas Mountains with your <a href="/morocco-private-driver.html"><strong>private driver</strong></a>, you arrive at a base riad in Merzouga to freshen up and leave heavy suitcases.
+      </p>
+
+      <p>
+        From here, you mount your camel for a peaceful trek into Erg Chebbi. As the sun sinks below the horizon, the sand changes from bright mustard yellow to deep rust red. You arrive at camp just as the dusk lanterns are lit along the sand paths.
+      </p>
+
+      <p>
+        After settling into your tent, dinner is served in a decorated restaurant tent. A traditional luxury desert meal includes:
+      </p>
+      <ul>
+        <li>Warm bowls of spiced Moroccan <em>harira</em> soup with dates and sweet chebakia pastries.</li>
+        <li>Fresh Moroccan salads with diced tomatoes, cucumbers, roasted peppers, and cumin.</li>
+        <li>Slow-cooked beef or lamb tagine with caramelised prunes, toasted almonds, and sesame seeds, served with freshly baked khobz bread.</li>
+        <li>Dessert of fresh seasonal melons or orange slices dusted with cinnamon.</li>
+      </ul>
+
+      <p>
+        After dinner, guests gather around a central tamarisk campfire. Camp staff, who are native Amazigh men from the surrounding valley, play traditional hand drums (derboukas) and sing desert nomadic songs. Many guests lay blankets on the sand dunes away from the fire to gaze at the stars before retiring to their heated tents.
+      </p>
+
+      <h2>Seasonal Realities: Weather, Freezes &amp; Furnace Heat</h2>
+      <p>
+        The Sahara Desert has an extreme climate. Understanding the seasons is critical before booking:
+      </p>
+
+      <ul>
+        <li><strong>Spring (March to May):</strong> The most popular season. Daytime temperatures average 25°C to 30°C (77°F to 86°F), and evenings are comfortably mild (14°C to 18°C). Occasional spring dust storms can occur, making a cotton <em>cheche</em> (turban) essential.</li>
+        <li><strong>Autumn (September to November):</strong> Excellent travel window. Warm days and comfortable nights with very low wind. The date harvest in the nearby Tafilalet oasis is in full swing.</li>
+        <li><strong>Winter (December to February):</strong> Clear blue skies during the day with temperatures around 18°C to 20°C (65°F to 68°F). However, nighttime temperatures drop rapidly once the sun sets, frequently reaching 2°C to 5°C (35°F to 41°F). If you travel in winter, a camp with electric heaters and thick blankets is mandatory.</li>
+        <li><strong>Summer (July and August):</strong> Extreme heat. Daytime temperatures regularly exceed 42°C to 46°C (108°F to 115°F). We advise travelers to avoid desert camping during these two months, opting instead for mountain trekking in the High Atlas or coastal stays in Essaouira.</li>
+      </ul>
+
+      <p>
+        For a month-by-month temperature breakdown, check our guide on the <a href="/blog/best-time-to-visit-sahara-morocco.html"><strong>best time to visit the Sahara</strong></a>.
+      </p>
+
+      <h2>What to Pack for an Overnight in Erg Chebbi</h2>
+      <p>
+        Keep your packing for the camp contained in one small backpack or weekend duffel. Your main hard-shell suitcases remain secured in your private driver's vehicle or at the staging riad.
+      </p>
+      <ul>
+        <li><strong>Cotton Tuareg Cheche (Turban):</strong> A 4-meter cotton scarf wrapped around your head and face protects your eyes, nose, and mouth from windblown sand far better than any baseball cap. Your driver or camel guide can help you tie it properly.</li>
+        <li><strong>Sunglasses with UV400 Protection:</strong> The glare from white-gold sand under desert sun is intense. Wrap-around sunglasses prevent sand from blowing in behind the lenses.</li>
+        <li><strong>Warm Evening Layer:</strong> Even during warm months, desert breezes feel brisk after dark. Pack a fleece, wool pullover, or light down jacket.</li>
+        <li><strong>Slip-on Footwear:</strong> Running shoes fill with sand within minutes. Bring slip-on sandals or canvas shoes that you can easily shake out before stepping into your tent.</li>
+        <li><strong>Eye Drops &amp; Moisturizer:</strong> Sahara air is exceptionally dry. Saline eye drops and lip balm prevent irritation after hours in the wind.</li>
+      </ul>
+
+      <!-- Transport and Circuit Integration -->
+      <h2>Connecting Merzouga to Your Morocco Itinerary</h2>
+      <p>
+        Merzouga is located in southeastern Morocco, roughly 560 kilometers from Marrakech and 460 kilometers from Fes. Because the drive crosses mountain ranges, you should never attempt to drive directly from Marrakech to the Sahara in a single day.
+      </p>
+      <p>
+        The most enjoyable way to experience the desert is as part of a multi-day point-to-point journey. Our <a href="/blog/morocco-7-day-itinerary.html"><strong>7-day Morocco itinerary</strong></a> breaks the crossing with an overnight stay in the dramatic Dades Gorge, allowing you to visit UNESCO Ait Benhaddou and Todra Gorge along the way. If you have more time, our <a href="/blog/morocco-10-day-itinerary.html"><strong>10-day Grand Circuit</strong></a> adds the imperial history of Rabat and Casablanca.
+      </p>
+
+      <!-- Roam Morocco Reusable Tour CTA Box Component -->
+      <div class="roam-tour-cta-box">
+        <span class="roam-tour-cta-kicker">★ PRIVATE SAHARA EXPEDITIONS</span>
+        <h3 class="roam-tour-cta-title">Experience the Real Sahara with Local Amazigh Curators</h3>
+        <p class="roam-tour-cta-desc">
+          Leave the logistics to us. Roam Morocco organizes your private 4x4 transport from Marrakech or Fes with a dedicated English-speaking chauffeur, hand-selected luxury dune camp in Erg Chebbi, sunset camel treks, and tailored cultural stops.
+        </p>
+        <div class="roam-tour-cta-actions">
+          <a href="/custom-morocco-tour.html" class="roam-btn-white">Design Your Desert Journey &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20private%20Sahara%20luxury%20camp%20trip." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>Can children and seniors visit a luxury desert camp?</h3>
+      <p>
+        Yes. Because our luxury camps offer 4x4 dune transfers directly to the tent entrance, guests who prefer not to ride camels can easily arrive in comfort. Private bathrooms and real beds make the experience suitable for multi-generational families and travelers of all ages.
+      </p>
+
+      <h3>Is there mobile phone reception and Wi-Fi in the dunes?</h3>
+      <p>
+        Most top camps have 4G cellular coverage via Maroc Telecom, and several feature satellite Wi-Fi in the main dining tent. However, signals can fluctuate depending on dune topography and wind conditions. We encourage travelers to embrace the remote environment and disconnect for the night.
+      </p>
+
+      <h3>Can I take a private 4x4 instead of riding a camel?</h3>
+      <p>
+        Yes. Every guest has the choice between a camel caravan trek across the dune ridges or a direct private 4x4 transfer across the sand tracks. If you have mobility concerns or simply prefer vehicles, your chauffeur will drive you straight to camp.
+      </p>
+
+      <!-- Roam Morocco E-E-A-T Curator Bio Card -->
+      <div class="roam-author-card" itemscope itemtype="https://schema.org/Person">
+        <div class="roam-author-avatar">RM</div>
+        <div class="roam-author-content">
+          <span class="roam-author-kicker">Written &amp; Curated by Local Experts</span>
+          <h4 class="roam-author-title"><span itemprop="name">Hamza &amp; Abdelhakim</span>, <span itemprop="jobTitle">Co-Founders, Roam Morocco Tours</span></h4>
+          <p class="roam-author-bio" itemprop="description">
+            Raised in Marrakech with lifelong family roots spanning the High Atlas and Sahara, Hamza and Abdelhakim founded Roam Morocco to reject commercial mass tourism. Together with native route curators, they design 100% private, unhurried expeditions focusing on authentic cultural immersion, transparent pricing, and direct support to local artisan communities.
+          </p>
+          <div class="roam-author-badges">
+            <span><span class="badge-check">✓</span> Ministry Licensed Tour Operators</span>
+            <span><span class="badge-check">✓</span> Based in Marrakech Medina (40000)</span>
+            <a href="/about.html" class="roam-author-link" itemprop="url">Meet Our Team &amp; Philosophy &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>

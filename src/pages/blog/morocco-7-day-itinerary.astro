@@ -1,0 +1,474 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const title = "Morocco 7-Day Itinerary: Marrakech, Sahara & Fes (2026 Guide) | Roam Morocco";
+const description = "The ultimate Morocco 7-day itinerary: Marrakech, High Atlas, Ait Benhaddou, Erg Chebbi Sahara glamping, and medieval Fes with realistic drive times and costs.";
+const canonical = "https://roammorocco.tours/blog/morocco-7-day-itinerary.html";
+const ogImage = "https://roammorocco.tours/images/morocco-sahara-dunes-sunset.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/roam-blog.css?v=20260928_b", "/css/roam-toc.css?v=20260928_gold2"];
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": `${canonical}#article`,
+      "headline": title,
+      "description": description,
+      "image": ogImage,
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-20",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Hamza",
+          "jobTitle": "Co-Founder & Expedition Curator",
+          "url": "https://roammorocco.tours/about.html"
+        },
+        {
+          "@type": "Person",
+          "name": "Abdelhakim",
+          "jobTitle": "Co-Founder & Operations Lead",
+          "url": "https://roammorocco.tours/about.html"
+        }
+      ],
+      "publisher": {
+        "@type": "TravelAgency",
+        "name": "Roam Morocco Tours",
+        "url": "https://roammorocco.tours/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://roammorocco.tours/images/Logos/newlogo-roammorocco.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonical
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": `${canonical}#breadcrumb`,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://roammorocco.tours/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://roammorocco.tours/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": title,
+          "item": canonical
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${canonical}#faq`,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is 7 days enough for a trip to Morocco?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A 7-day itinerary gives you enough time to experience Marrakech, cross the High Atlas Mountains, sleep in an Erg Chebbi desert camp, and explore the medieval medina of Fes. The key to making one week work without exhaustion is booking an open-jaw route (fly into Marrakech and out of Fes or Casablanca) rather than driving in a closed loop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best route for a 7-day Morocco itinerary?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The classic point-to-point route runs from Marrakech to Fes via the south. Day 1: Marrakech medina. Day 2: High Atlas and Ait Benhaddou to Dades Valley. Day 3: Todra Gorge to Erg Chebbi (Merzouga). Day 4: Full desert immersion. Day 5: Ziz Valley and Middle Atlas to Fes. Day 6: Fes el-Bali walking tour. Day 7: Departure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should you self-drive or hire a private driver for a 7-day trip?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a 7-day itinerary covering over 1,000 kilometers of mountain and desert roads, hiring a private driver is strongly recommended. The N9 mountain pass over Tizi n'Tichka has heavy truck traffic and winding switchbacks. A dedicated local driver handles navigation, police checkpoints, mountain driving, and medina luggage handoffs so you can rest between destinations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a 7-day private tour in Morocco cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A mid-range to luxury 7-day private journey for two people typically ranges between $1,400 and $2,400 per person. This covers a dedicated 4x4 Prado with fuel and English-speaking chauffeur, boutique riad stays with breakfast, a luxury glamping camp in Merzouga with private en-suite bathrooms, and certified local guides in Marrakech and Fes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best time of year to do this 7-day route?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Spring (mid-March through May) and Autumn (September through November) offer the best road trip weather. Daytime temperatures hover between 22°C and 28°C (72°F to 82°F) across both the imperial cities and the Sahara. Summer months (July and August) frequently surpass 42°C (108°F) in the desert, while winter nights can drop to near freezing."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+<Layout title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+
+  <article class="article-wrap">
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="roam-breadcrumbs" aria-label="Breadcrumbs">
+      <a href="/index.html">Home</a> &gt; <a href="/blog.html">Blog</a> &gt; <span>Morocco 7-Day Itinerary</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="article-header">
+      <span class="category-badge">ITINERARY PLANNING • 2026 CURATOR ROUTE</span>
+      <h1 class="article-title">The Complete Morocco 7-Day Itinerary: Marrakech, Sahara & Fes</h1>
+      <p class="article-subtitle">
+        How to connect Morocco's two iconic imperial cities with the golden dunes of Erg Chebbi in one week without wasting entire days stuck in traffic.
+      </p>
+      <div class="article-meta">
+        <span>Published: <strong>October 2026</strong></span>
+        <span>Curators: <strong>Hamza &amp; Abdelhakim (Roam Morocco Co-Founders)</strong></span>
+        <span>Reading Time: <strong>12 Minutes (2,400 Words)</strong></span>
+        <span>Route: <strong>Marrakech &rarr; Atlas &rarr; Merzouga &rarr; Fes</strong></span>
+      </div>
+    </header>
+
+    <!-- Featured Visual Frame -->
+    <figure class="featured-image-box">
+      <img src="/images/morocco-sahara-dunes-sunset.jpg" alt="Sunset over golden sand dunes in Merzouga Erg Chebbi Morocco" width="1200" height="675">
+      <figcaption>Erg Chebbi dunes outside Merzouga, where 150-meter orange sand ridges meet clear desert skies.</figcaption>
+    </figure>
+
+    <!-- Executive Summary / BLUF -->
+    <aside class="ai-quick-summary-card" aria-label="7-Day Morocco Itinerary Summary">
+      <div class="ai-summary-header">
+        <span class="ai-summary-kicker">⚡ 7-DAY ITINERARY AT A GLANCE (QUICK SUMMARY)</span>
+        <span class="ai-summary-badge">Open-Jaw Route</span>
+      </div>
+      <p class="ai-summary-text">
+        If you only have one week in Morocco, avoid round-trip loops that force you to backtrack over the High Atlas. The most efficient route flies into <strong>Marrakech Menara Airport (RAK)</strong> and departs from <strong>Fes-Saïss Airport (FEZ)</strong> or Casablanca. Over seven days, you will spend one night in Marrakech, one night in the Dades Valley, two nights in an Erg Chebbi luxury desert camp, and two nights in medieval Fes. Total road distance is roughly 1,050 km.
+      </p>
+    </aside>
+
+    <!-- Editorial Content -->
+    <div class="article-content">
+      <p style="font-size: 1.25rem;">
+        Planning a trip to Morocco with only seven days can feel overwhelming. Many travelers try to cram Marrakech, Chefchaouen, the Sahara, Fes, and Essaouira into a single week, only to spend 40 hours staring through bus windows. 
+      </p>
+
+      <p>
+        Seven days is enough time for an exceptional trip, provided you respect the geography. Morocco's mountain passes and desert roads demand honest transit pacing. By structuring your trip as an open-jaw crossing from Marrakech to Fes via the south, you see the country's most dramatic changes in landscape without doubling back.
+      </p>
+
+      <!-- Trip Cost Calculator Banner -->
+      <div style="background: #faf8f5; border: 1px solid rgba(0,0,0,0.08); border-left: 4px solid #C8A45C; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.03); padding: 24px; margin: 28px 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;">
+        <div>
+          <span style="font-family:'Inter', sans-serif; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#8A6A23; background:rgba(200,164,92,0.12); border:1px solid rgba(200,164,92,0.28); padding:3px 10px; border-radius:999px; display:inline-block; margin-bottom:8px;">Interactive Cost Estimator</span>
+          <strong style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000; display:block;">Planning your 7-day budget?</strong>
+          <p style="margin:4px 0 0; font-size:13.5px; color:#555;">Calculate realistic vehicle, luxury riad, and desert glamping costs in seconds.</p>
+        </div>
+        <a href="/morocco-trip-cost-calculator.html" class="roam-btn-black" style="padding:12px 20px; font-size:12px; white-space:nowrap; border-radius:10px; font-weight:600;">Open Budget Calculator &rarr;</a>
+      </div>
+
+      <h2>The Route Overview: Day-by-Day Schedule</h2>
+
+      <div style="overflow-x: auto; margin: 28px 0; border: 1px solid rgba(0,0,0,0.1); background: #fff;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+          <thead>
+            <tr style="background: #faf8f5; border-bottom: 2px solid #000;">
+              <th style="padding: 12px 16px; font-weight: 800;">Day</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Primary Destination</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Drive Time</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Highlight Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Day 1</td>
+              <td style="padding: 12px 16px;">Marrakech Arrival</td>
+              <td style="padding: 12px 16px;">Airport transfer (25 min)</td>
+              <td style="padding: 12px 16px;">Jemaa el-Fna sunset &amp; Medina orientation</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Day 2</td>
+              <td style="padding: 12px 16px;">Marrakech &rarr; Dades Valley</td>
+              <td style="padding: 12px 16px;">6.5 hours (310 km)</td>
+              <td style="padding: 12px 16px;">Tizi n'Tichka pass &amp; UNESCO Ait Benhaddou</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Day 3</td>
+              <td style="padding: 12px 16px;">Dades &rarr; Merzouga Sahara</td>
+              <td style="padding: 12px 16px;">4.5 hours (260 km)</td>
+              <td style="padding: 12px 16px;">Todra Gorge &amp; sunset camel ride into dunes</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Day 4</td>
+              <td style="padding: 12px 16px;">Erg Chebbi Full Day</td>
+              <td style="padding: 12px 16px;">Local 4x4 transfers</td>
+              <td style="padding: 12px 16px;">Khamlia Gnawa music &amp; nomadic desert tea</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Day 5</td>
+              <td style="padding: 12px 16px;">Merzouga &rarr; Fes</td>
+              <td style="padding: 12px 16px;">7.5 to 8.5 hours (460 km)</td>
+              <td style="padding: 12px 16px;">Ziz Valley palm canyon &amp; Azrou cedar woods</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Day 6</td>
+              <td style="padding: 12px 16px;">Fes el-Bali Exploration</td>
+              <td style="padding: 12px 16px;">Walking (no vehicles)</td>
+              <td style="padding: 12px 16px;">Chouara Tanneries &amp; Al-Qarawiyyin</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 16px; font-weight: 700;">Day 7</td>
+              <td style="padding: 12px 16px;">Fes Departure</td>
+              <td style="padding: 12px 16px;">Airport transfer (30 min)</td>
+              <td style="padding: 12px 16px;">Souk shopping before departure flight</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Day 1: Arrive in Marrakech &amp; The Historic Medina</h2>
+      <p>
+        Fly into Marrakech Menara Airport (RAK). After clearing customs and getting dirhams from an official bank ATM inside the terminal, head to your riad in the old medina. We recommend staying near Bab Doukkala or Mouassine, which allows vehicle access close to your door without forcing you to carry heavy luggage deep into narrow alleys.
+      </p>
+      <p>
+        Spend your afternoon visiting the 14th-century <strong>Ben Youssef Madrasa</strong>, admiring its carved stucco, cedar ceilings, and intricate zellige mosaic tilework. As late afternoon approaches, walk toward Jemaa el-Fna. Find a seat on an elevated terrace like Cafe de France or Glacier to watch the smoke from spice grills drift across the square against the silhouette of the 12th-century Koutoubia minaret.
+      </p>
+
+      <h2>Day 2: Crossing the High Atlas to Ait Benhaddou &amp; Dades</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/tour_cinema_ait_benhaddou.jpg" alt="Mudbrick ksar of Ait Benhaddou in southern Morocco" width="1200" height="675">
+        <figcaption>Aït Benhaddou: An earthen fortified ksar along the historic trans-Saharan salt trade road.</figcaption>
+      </figure>
+
+      <p>
+        Depart your riad early at 8:00 AM. Today you cross the High Atlas Mountains along the N9 national road via the <strong>Tizi n'Tichka pass</strong>, which peaks at 2,260 meters (7,415 feet). The road climbs through red clay canyons and terraced walnut groves before opening into panoramic views of stone Berber hamlets.
+      </p>
+      <p>
+        Just over the pass, take the secondary road toward the UNESCO World Heritage ksar of <strong>Ait Benhaddou</strong>. This clay fortress has stood for centuries as a vital trading post along the trans-Saharan salt and gold routes. Film buffs will recognize it from <em>Gladiator</em>, <em>Lawrence of Arabia</em>, and <em>Game of Thrones</em>. Cross the shallow riverbed on stone steps to climb to the hilltop granary (agadir) for sweeping views across the Ounila Valley.
+      </p>
+      <p>
+        After lunch, continue through the palm-filled Skoura oasis and the Valley of the Roses into the <strong>Dades Gorge</strong>. Spend the night in a traditional valley kasbah hotel built against the red limestone cliffs.
+      </p>
+
+      <h2>Day 3: Todra Gorge to the Erg Chebbi Sand Dunes</h2>
+      <p>
+        Following breakfast on the terrace, head down the valley toward Tinghir and enter the <strong>Todra Gorge</strong>. Here, sheer limestone canyon walls climb 300 meters straight up from the riverbed. Take a 30-minute walk through the narrowest section where rock climbers from around the world tackle vertical limestone pitches.
+      </p>
+      <p>
+        Continue east through Tinjdad and Erfoud, known for its date palm plantations and marine fossil quarries. By mid-afternoon, the black gravel desert abruptly gives way to the golden walls of <strong>Erg Chebbi</strong>, Morocco's highest sand dunes.
+      </p>
+      <p>
+        Leave your heavy luggage in your private 4x4 and meet your camel guide at the desert edge. Mount your camel for an unhurried 50-minute trek across the dunes as the sun drops and the sand shifts from gold to burnt orange. Arrive at your camp in time for mint tea, settle into your private canvas tent with en-suite shower, and enjoy a warm tagine dinner by the campfire under thousands of desert stars.
+      </p>
+
+      <h2>Day 4: Full Day Sahara Desert Immersion</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/wall-camp.jpg" alt="Luxury desert camp tent setup with Berber rugs and lanterns under the dunes" width="1200" height="675">
+        <figcaption>Erg Chebbi luxury glamping: Private canvas tents with real beds, power, and hot showers.</figcaption>
+      </figure>
+
+      <p>
+        Most budget tours rush out of the desert after only one night, spending 10 grueling hours on the road back to Marrakech. Having a second night in Erg Chebbi turns a tiring drive into a memorable journey.
+      </p>
+      <p>
+        Wake up for sunrise over the high dunes. After a leisurely breakfast of fresh msemen pancakes and fresh orange juice, set out in your 4x4 to explore the desert perimeter:
+      </p>
+      <ul>
+        <li><strong>Khamlia Village:</strong> Meet the resident musicians whose ancestors traveled the trans-Saharan caravan routes from Mali and Sudan. Listen to their hypnotic spiritual Gnawa polyrhythms played with iron castanets (qraqeb) and the three-stringed guembri.</li>
+        <li><strong>Nomadic Berber Families:</strong> Visit seasonal nomad camps living in hand-woven goat-hair tents across the black hammada stone desert. Share a cup of sweet mint tea and learn about desert well networks and goat herding.</li>
+        <li><strong>Sandboarding &amp; Dune Walking:</strong> Take a sandboard up the crests behind camp or relax in shaded outdoor lounges with a book while the midday heat passes.</li>
+      </ul>
+      <p>
+        For detailed tent amenities, heating options, and seasonal packing tips, read our comprehensive guide on choosing a <a href="/blog/merzouga-luxury-desert-camp.html"><strong>Merzouga luxury desert camp</strong></a>.
+      </p>
+
+      <h2>Day 5: Merzouga to Fes via Ziz Gorge &amp; Middle Atlas</h2>
+      <p>
+        Depart Erg Chebbi after breakfast for the longest driving day of the itinerary (460 km, about 8 hours with stops). The road north follows the dramatic <strong>Ziz Valley</strong>, where millions of date palms fill a deep canyon carved into limestone tablelands. Stop at the Hassan Addakhil reservoir viewpoint for photographs of turquoise water framed by arid peaks.
+      </p>
+      <p>
+        Stop for lunch in Midelt, known for its mineral mines and apple orchards nestled between the High and Middle Atlas chains. In the afternoon, the terrain changes dramatically from desert scrub to cool pine and cedar forests near Azrou. Look for wild Barbary macaques living in the cedar canopy along the roadside.
+      </p>
+      <p>
+        Pass through Ifrane, an alpine town built during the French protectorate era with steeply pitched red-tile roofs and manicured gardens, before descending into the fertile Saïss plain. You will arrive at the historic gates of Fes (Bab Bou Jeloud) by early evening.
+      </p>
+
+      <h2>Day 6: Deep Dive into Medieval Fes el-Bali</h2>
+      <figure class="featured-image-box" style="margin: 32px 0;">
+        <img src="/images/morocco-fes-medina-architecture.jpg" alt="Historic Islamic architecture and carved cedar wood in the medina of Fes el Bali" width="1200" height="675">
+        <figcaption>Fes el-Bali: The world's largest contiguous car-free urban area, dating back to the 9th century.</figcaption>
+      </figure>
+
+      <p>
+        Fes is Morocco's intellectual, spiritual, and artisanal capital. Unlike Marrakech, which has adapted heavily to modern tourism, <strong>Fes el-Bali</strong> remains a living, working medieval city of more than 9,000 narrow alleys where donkeys still haul supplies.
+      </p>
+      <p>
+        Because satellite GPS signals fail inside the covered alleys, hire an official licensed local guide for your morning tour. Key landmarks include:
+      </p>
+      <ul>
+        <li><strong>Chouara Tannery:</strong> View the stone dyeing vats from overlooking leather shop terraces. Men still work skins by hand using pigeon droppings and natural pigments like saffron, poppy, and indigo.</li>
+        <li><strong>University of Al-Qarawiyyin:</strong> Founded in 859 AD by Fatima al-Fihri, recognized by UNESCO as the oldest continuously operating university in the world.</li>
+        <li><strong>Bou Inania Madrasa:</strong> One of the few religious buildings in Morocco open to non-Muslim visitors, featuring cedar carvings and green roof tiles.</li>
+        <li><strong>Place Seffarine:</strong> Watch copper coppersmiths hammer cauldrons and tea trays by hand on iron anvils.</li>
+      </ul>
+      <p>
+        Curious how Fes compares to the southern imperial capital? Compare both cities in our in-depth analysis: <a href="/blog/marrakech-vs-fes.html"><strong>Marrakech vs Fes: Which City Should You Visit?</strong></a>.
+      </p>
+
+      <h2>Day 7: Departure from Fes or Casablanca</h2>
+      <p>
+        Depending on your flight schedule, spend your final morning shopping for glazed blue ceramics, hand-stamped leather slippers (babouches), or argan oil in the quieter upper medina.
+      </p>
+      <p>
+        If your flight leaves from <strong>Fes-Saïss Airport (FEZ)</strong>, the drive from the medina takes just 30 minutes. If your return flight leaves from <strong>Casablanca Mohammed V Airport (CMN)</strong>, you can take Morocco's Al Boraq high-speed train or book a direct highway transfer with your chauffeur (3.5 hours).
+      </p>
+
+      <!-- Why Hire a Driver Section -->
+      <h2>Why Hire a Private Driver for a 7-Day Route?</h2>
+      <p>
+        A 7-day Morocco itinerary covers more than 1,000 kilometers over mountain switchbacks and rural highways. Attempting to drive this route in a rental car often means dealing with unfamiliar road markings, aggressive commercial trucks on the Tizi n'Tichka pass, and frequent police radar checkpoints.
+      </p>
+      <p>
+        Hiring a licensed <a href="/morocco-private-driver.html"><strong>private driver in Morocco</strong></a> eliminates that stress. A professional local chauffeur handles all navigation, monitors pass closures, coordinates luggage handoffs with riads at pedestrian medina gates, and knows reliable scenic cafes along the road. Read our detailed breakdown of daily rates, vehicle classes, and inclusions in our <a href="/blog/morocco-private-driver-cost.html"><strong>Morocco private driver cost guide</strong></a>.
+      </p>
+
+      <!-- Estimated 7-Day Trip Cost Table -->
+      <h2>Realistic 7-Day Morocco Trip Budget (2026 Estimates)</h2>
+      <div style="overflow-x: auto; margin: 28px 0; border: 1px solid rgba(0,0,0,0.1); background: #fff;">
+        <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+          <thead>
+            <tr style="background: #faf8f5; border-bottom: 2px solid #000;">
+              <th style="padding: 12px 16px; font-weight: 800;">Expense Category</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Mid-Range (Per Couple)</th>
+              <th style="padding: 12px 16px; font-weight: 800;">Luxury Private (Per Couple)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Private 4x4 Driver &amp; Fuel (7 Days)</td>
+              <td style="padding: 12px 16px;">$1,300 – $1,600</td>
+              <td style="padding: 12px 16px;">$1,800 – $2,400 (VIP Prado / V-Class)</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Boutique Riads (4 Nights total)</td>
+              <td style="padding: 12px 16px;">$480 – $750</td>
+              <td style="padding: 12px 16px;">$1,100 – $2,200</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Erg Chebbi Luxury Camp (2 Nights)</td>
+              <td style="padding: 12px 16px;">$400 – $600</td>
+              <td style="padding: 12px 16px;">$800 – $1,200</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Certified City Guides (Marrakech &amp; Fes)</td>
+              <td style="padding: 12px 16px;">$120 – $160</td>
+              <td style="padding: 12px 16px;">$200 – $300</td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(0,0,0,0.06);">
+              <td style="padding: 12px 16px; font-weight: 700;">Meals, Tips &amp; Monument Entries</td>
+              <td style="padding: 12px 16px;">$350 – $500</td>
+              <td style="padding: 12px 16px;">$600 – $900</td>
+            </tr>
+            <tr style="background: #faf8f5;">
+              <td style="padding: 12px 16px; font-weight: 800;">Estimated Total (2 Travelers)</td>
+              <td style="padding: 12px 16px; font-weight: 800;">$2,650 – $3,610</td>
+              <td style="padding: 12px 16px; font-weight: 800;">$4,500 – $7,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Roam Morocco Reusable Tour CTA Box Component -->
+      <div class="roam-tour-cta-box">
+        <span class="roam-tour-cta-kicker">★ SIGNATURE 7-DAY ITINERARY EXPEDITION</span>
+        <h3 class="roam-tour-cta-title">Turn This 7-Day Route Into a Private Experience</h3>
+        <p class="roam-tour-cta-desc">
+          Skip rigid group bus schedules and vehicle rental headaches. Roam Morocco designs your complete 7-day crossing with a licensed English-speaking Berber chauffeur, private luxury 4&times;4 Prado, verified boutique riads, and royal desert glamping.
+        </p>
+        <div class="roam-tour-cta-actions">
+          <a href="/custom-morocco-tour.html" class="roam-btn-white">Request Custom 7-Day Itinerary &rarr;</a>
+          <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%207-day%20private%20Morocco%20itinerary." target="_blank" rel="noopener" class="roam-btn-wa">
+            <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20" style="vertical-align:middle; margin-right:8px;">
+            <span style="color:#ffffff !important;">Plan on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(0,0,0,0.12); margin: 56px 0;" />
+
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>Can I do this 7-day itinerary in reverse (Fes to Marrakech)?</h3>
+      <p>
+        Yes. Running the route from Fes to Marrakech works just as well. The driving times and scenic stops remain the same. Starting in Fes allows you to begin in Morocco's quietest imperial medina and end with the lively rooftop restaurant scene in Marrakech.
+      </p>
+
+      <h3>Is it better to spend two nights in the desert or two nights in Marrakech?</h3>
+      <p>
+        For a 7-day trip, we strongly recommend two nights in the desert. Driving 8 to 10 hours out to Merzouga for a single 14-hour overnight visit is physically exhausting. Spending two full nights allows you to actually relax, see nomadic culture in Khamlia, and enjoy the silence of Erg Chebbi without rushing back into a vehicle the next morning. If you have 10 days, explore our <a href="/blog/morocco-10-day-itinerary.html"><strong>ultimate 10-day Morocco itinerary</strong></a> which gives you two full nights in both Marrakech and Fes.
+      </p>
+
+      <h3>What should I pack for this road trip?</h3>
+      <p>
+        Layers are essential. Because you travel from the warm Marrakech plains up over high mountain passes (2,260m) and out into desert flats, temperatures vary widely in a single day. Pack comfortable walking shoes for medina cobbles, light breathable cotton clothing for the day, a fleece or down jacket for cold desert evenings, sunglasses, and a wide-brim hat. Review our full guide on <a href="/blog/what-to-wear-in-morocco.html"><strong>what to wear in Morocco</strong></a>.
+      </p>
+
+      <!-- Roam Morocco E-E-A-T Curator Bio Card -->
+      <div class="roam-author-card" itemscope itemtype="https://schema.org/Person">
+        <div class="roam-author-avatar">RM</div>
+        <div class="roam-author-content">
+          <span class="roam-author-kicker">Written &amp; Curated by Local Experts</span>
+          <h4 class="roam-author-title"><span itemprop="name">Hamza &amp; Abdelhakim</span> <span itemprop="jobTitle">,  Co-Founders, Roam Morocco Tours</span></h4>
+          <p class="roam-author-bio" itemprop="description">
+            Raised in Marrakech with lifelong family roots spanning the High Atlas and Sahara, Hamza and Abdelhakim founded Roam Morocco to reject commercial mass tourism. Together with native route curators, they design 100% private, unhurried expeditions focusing on authentic cultural immersion, transparent pricing, and direct support to local artisan communities.
+          </p>
+          <div class="roam-author-badges">
+            <span><span class="badge-check">✓</span> Ministry Licensed Tour Operators</span>
+            <span><span class="badge-check">✓</span> Based in Marrakech Medina (40000)</span>
+            <a href="/about.html" class="roam-author-link" itemprop="url">Meet Our Team &amp; Philosophy &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Morocco Travel Essentials Toolkit -->
+      <div class="roam-toolkit-box">
+        <div class="roam-toolkit-title">✈️ Essential Morocco Travel Deals &amp; Resources</div>
+        <div class="roam-toolkit-grid">
+          <a href="https://www.trip.com/flights/to-marrakech/" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">✈️ Cheap Flights to Marrakech</span>
+            <span class="roam-toolkit-btn">Trip.com &rarr;</span>
+          </a>
+          <a href="https://www.airalo.com/morocco-esim" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">📱 Morocco 4G/5G eSIM</span>
+            <span class="roam-toolkit-btn">Airalo from $8 &rarr;</span>
+          </a>
+          <a href="https://www.booking.com/country/ma.html" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🏨 Best Riad Deals</span>
+            <span class="roam-toolkit-btn">Booking.com &rarr;</span>
+          </a>
+          <a href="https://www.discovercars.com/?a_aid=578287" target="_blank" rel="noopener" class="roam-toolkit-link">
+            <span class="roam-toolkit-label">🚗 Compare Car Rentals</span>
+            <span class="roam-toolkit-btn">DiscoverCars &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <script is:inline src="/js/roam-toc.js?v=20260928_gold2" defer></script>
+  <script is:inline src="/js/roam-cta.js" defer></script>
+</Layout>
