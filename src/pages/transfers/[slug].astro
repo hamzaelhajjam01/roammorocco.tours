@@ -59,6 +59,12 @@ const schema = [
     "@type": ["Service", "Product"],
     "name": `Private Transfer from ${route.from} to ${route.to}`,
     "description": route.seoDescription,
+    "image": [
+      "https://roammorocco.tours/images/fleet-mercedes-v-class.webp",
+      "https://roammorocco.tours/images/fleet-toyota-prado-4x4.webp"
+    ],
+    "sku": `RM-TR-${route.id}`,
+    "mpn": `RM-TR-${route.id}`,
     "provider": {
       "@type": "TravelAgency",
       "name": "Roam Morocco Tours",
