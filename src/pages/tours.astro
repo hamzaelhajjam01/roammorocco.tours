@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import RouteGoogleMapCard from '../components/RouteGoogleMapCard.astro';
 
 const title = "Morocco Private Tours & Day Trips Catalog: Sahara, Atlas & Coastal Circuits | Roam Morocco";
 const description = "Explore Roam Morocco's complete private tours catalog: 3-day Sahara desert expeditions, Agafay sunset dinners, Essaouira day trips, and High Atlas hikes. 100% private with Prado 4x4 or Mercedes van.";
@@ -230,17 +229,6 @@ const schema = [
         </div>
       </div>
 
-      <!-- GEO & AEO Catalog Quick Overview (BLUF) -->
-      <aside class="ai-quick-summary-card" aria-label="Curated Private Tours Overview">
-        <div class="ai-summary-header">
-          <span class="ai-summary-kicker">⚡ PRIVATE TOURS AT A GLANCE (QUICK SUMMARY)</span>
-          <span class="ai-summary-badge">100% Private Experiences</span>
-        </div>
-        <p class="ai-summary-text">
-          Roam Morocco offers three signature private tour formats: <strong>Multi-Day Sahara Desert Circuits</strong> (3-Day and 4-Day luxury Erg Chebbi glamping from €380/vehicle), <strong>Curated Day Trips from Marrakech</strong> (Essaouira coast from €120, Ourika Atlas waterfalls from €110, Ait Benhaddou kasbahs from €150), and <strong>High Atlas Alpine Treks</strong> (Mount Toubkal 4,167m summit trek from €390). All packages are strictly 100% private per party, including licensed English-speaking chauffeurs, modern 4x4 or Mercedes vans, fuel, highway tolls, and direct hotel/riad pickup.
-        </p>
-      </aside>
-
       <!-- Category Filter Tabs matching destinations.astro -->
       <div class="filter-bar" role="tablist" aria-label="Filter tours by style">
         <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Experiences ({toursList.length})</button>
@@ -250,18 +238,6 @@ const schema = [
       </div>
 
     </div>
-
-    
-      <!-- Flagship Tour Route Navigator: Marrakech to Merzouga Sahara Circuit -->
-      <RouteGoogleMapCard
-        origin="Marrakech"
-        destination="Merzouga"
-        distance="558 km"
-        duration="8h 45m"
-        highway="N9 via Tizi n'Tichka & Dades Valley"
-        price={390}
-        waUrl="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%203-Day%20Premium%20Sahara%20Desert%20Explorer."
-      />
 
     <!-- Tours Grid Section -->
     <section class="tours-grid-section">
