@@ -246,8 +246,8 @@ const t = getTranslations(lang);
 
   <header class="top at-top">
     <div class="navbox">
-      <a class="wordmark" href={lLink('/#top')} aria-label="Roam Morocco Home">
-        <img id="navLogo" src="/img/logo-for-dark-bg.png" alt="Roam Morocco Tours">
+      <a class="wordmark notranslate" translate="no" href={lLink('/#top')} aria-label="Roam Morocco Home">
+        <img id="navLogo" class="notranslate" translate="no" src="/img/logo-for-dark-bg.png" alt="Roam Morocco Tours">
       </a>
       <button class="burger-btn" id="burgerBtn" aria-label="Toggle navigation menu">
         <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
@@ -433,8 +433,8 @@ const t = getTranslations(lang);
     </div>
 
     <!-- WHATSAPP CTA BUTTON -->
-    <a class="latest nav-wa-btn" href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-      <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
+    <a class="latest nav-wa-btn notranslate" translate="no" href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon notranslate" translate="no" width="20" height="20">
       <span>{t.nav.chatWhatsApp}</span>
     </a>
 
@@ -447,6 +447,12 @@ const t = getTranslations(lang);
   <!-- MOBILE NAV DRAWER WITH ACCORDIONS -->
   <div class="mobile-nav-drawer" id="mobileDrawer">
     <div class="mobile-drawer-inner">
+      <div class="mobile-drawer-header notranslate" translate="no">
+        <a href={lLink('/#top')} onclick="closeDrawer()" aria-label="Roam Morocco Home">
+          <img src="/img/logo-for-light-bg.png" alt="Roam Morocco Tours" class="mob-drawer-logo notranslate" translate="no" width="130" height="26">
+        </a>
+        <button type="button" class="mob-drawer-close" onclick="closeDrawer()" aria-label="Close navigation menu">✕</button>
+      </div>
       
       <!-- Mobile Transfers Accordion -->
       <div class="mob-accordion-group">
@@ -539,8 +545,8 @@ const t = getTranslations(lang);
         </div>
       </div>
 
-      <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." class="mobile-wa-cta" target="_blank" rel="noopener" onclick="closeDrawer()">
-        <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon" width="20" height="20">
+      <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20custom%20tour%20in%20Morocco." class="mobile-wa-cta notranslate" translate="no" target="_blank" rel="noopener" onclick="closeDrawer()">
+        <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon notranslate" translate="no" width="20" height="20">
         <span>{t.nav.chatWhatsApp}</span>
       </a>
     </div>

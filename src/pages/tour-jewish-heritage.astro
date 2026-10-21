@@ -1,0 +1,813 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Moroccan Jewish Heritage & Mellahs Tour: 8, 10 & 12 Days | Roam Morocco";
+const description = "Private Jewish heritage tour across Morocco. Casablanca Jewish Museum, Fes Ibn Danan Synagogue, Sefrou, Marrakech Mellah & Essaouira with a licensed chauffeur.";
+const canonical = "https://roammorocco.tours/tour-jewish-heritage.html";
+const ogImage = "https://roammorocco.tours/images/morocco-fes-medina-architecture.jpg";
+const bodyClass = "roam-light-theme";
+const extraStyles = ["/css/destination-itinerary.css", "/css/roam-toc.css?v=20260928_gold2"];
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Roam Morocco Tours",
+    "url": "https://roammorocco.tours/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://roammorocco.tours/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does Roam Morocco accommodate Shabbat observance during the tour?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "All our Jewish heritage itineraries are structured around Shabbat. On Friday afternoon, your chauffeur ensures you are settled at your luxury riad or hotel well before candle-lighting time. The vehicle remains parked and off the road throughout Shabbat until Havdalah on Saturday night. We select accommodations within easy walking distance of active synagogues such as Temple Beth-El in Casablanca or Slat Al Azama in Marrakech."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are kosher meals available during the private tour in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Certified kosher restaurants and catering kitchens operate in Casablanca (such as Cercle de l'Union and Chabad Lubavitch) and Marrakech (Kosher Club and local community caterers). For rural and travel days between cities, we equip your private vehicle with a chilled cooler box, assist you with picking up prepared meals in advance, or reserve vetted pescatarian, vegetarian, and fresh-baked local dining options."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do we access locked synagogues and historic Jewish cemeteries in Morocco?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many historic synagogues and Mellah cemeteries across Morocco (including Ibn Danan in Fes, Rabbi Chaim Pinto in Essaouira, and Sefrou) are locked and tended by hereditary Muslim or Jewish guardians. Your Roam Morocco chauffeur maintains direct contact with these caretakers, coordinating visits in advance so doors are unlocked promptly upon your arrival."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in the flat vehicle price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our vehicle pricing is 100% transparent and flat per vehicle for up to 4–6 passengers. It includes your dedicated English-speaking licensed chauffeur, 2024 Toyota Prado TXL 4x4 or Mercedes-Benz V-Class VIP minivan, all fuel, highway tolls, chauffeur lodging and meals throughout the circuit, airport meet-and-greet, and full commercial passenger insurance. You book your preferred hotels directly with complete flexibility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can we visit specific family ancestral towns or rabbinic shrines (Hiloulot)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, roots travel and pilgrimage (Hiloula) requests are welcomed. We frequently tailor routes to include Rabbi Amram Ben Diwan in Asjen (Ouezzane), Rabbi David Ben Barroukh in Taroudant, the historic Jewish enclave of Debdou in eastern Morocco, or the High Atlas Mellahs of Demnate and Imi n'Ifri."
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": [
+      "TouristTrip",
+      "Product"
+    ],
+    "@id": "https://roammorocco.tours/tour-jewish-heritage.html#trip",
+    "name": "Moroccan Jewish Heritage & Mellahs Private Tour (8 to 12 Days)",
+    "description": "Comprehensive private Jewish heritage circuit across Morocco. Explore Casablanca, Rabat, Volubilis, Meknes, Fes, Sefrou, Marrakech, and Essaouira with a dedicated licensed chauffeur.",
+    "url": "https://roammorocco.tours/tour-jewish-heritage.html",
+    "image": "https://roammorocco.tours/images/morocco-fes-medina-architecture.jpg",
+    "touristType": [
+      "Jewish Heritage Travelers",
+      "Roots & Ancestry Travelers",
+      "Families",
+      "Private Small Groups"
+    ],
+    "duration": "P10D",
+    "brand": {
+      "@type": "Brand",
+      "name": "Roam Morocco Tours"
+    },
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Roam Morocco Tours",
+      "url": "https://roammorocco.tours/",
+      "telephone": "+212 653-506441"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://roammorocco.tours/tour-jewish-heritage.html",
+      "priceCurrency": "EUR",
+      "price": "1450.00",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-01-01",
+      "priceValidUntil": "2027-12-31"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "985",
+      "reviewCount": "985"
+    }
+  }
+];
+---
+
+<Layout title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
+  <style is:inline slot="head">
+    :root {
+      --bg-cream: #f2eee6;
+      --card-bg: #ffffff;
+      --border-subtle: rgba(0, 0, 0, 0.12);
+      --border-strong: rgba(0, 0, 0, 0.22);
+      --text-main: #000000;
+      --text-muted: rgba(0, 0, 0, 0.72);
+      --gold-accent: #8A6A23;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main.roam-tour-main {
+      background: #f2eee6 !important;
+      color: #000000 !important;
+      padding: 120px 24px 80px !important;
+    }
+
+    .roam-tour-wrapper {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .roam-tour-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #8A6A23;
+      background: rgba(200, 164, 92, 0.12);
+      border: 1px solid rgba(200, 164, 92, 0.28);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    .roam-tour-badge::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #C8A45C;
+    }
+
+    .roam-tour-title {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: clamp(32px, 5vw, 56px) !important;
+      font-weight: 800 !important;
+      letter-spacing: -.04em !important;
+      line-height: 1.08 !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 20px !important;
+    }
+
+    .roam-tour-meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 36px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .02em;
+      color: rgba(0, 0, 0, 0.65);
+    }
+
+    .roam-tour-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      padding: 6px 16px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+
+    .ai-quick-summary-card {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-left: 4px solid #8A6A23;
+      padding: 24px 28px;
+      border-radius: 14px;
+      margin-bottom: 36px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+    .ai-summary-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .ai-summary-kicker {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #8A6A23;
+    }
+    .ai-summary-badge {
+      font-size: 11px;
+      font-weight: 700;
+      background: rgba(37, 211, 102, 0.12);
+      color: #1a9c4b;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .ai-summary-text {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(0,0,0,0.85);
+      margin: 0;
+    }
+
+    .roam-pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 36px 0;
+    }
+    .roam-price-tier-card {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.03);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .roam-price-tier-card.featured {
+      border: 2px solid #8A6A23;
+      background: #fdfbf7;
+    }
+    .tier-badge {
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: #8A6A23;
+      margin-bottom: 8px;
+    }
+    .tier-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+    .tier-rate {
+      font-size: 32px;
+      font-weight: 800;
+      color: #000000;
+      margin-bottom: 4px;
+    }
+    .tier-unit {
+      font-size: 12px;
+      color: rgba(0,0,0,0.6);
+      margin-bottom: 18px;
+    }
+    .tier-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(0,0,0,0.8);
+      display: grid;
+      gap: 10px;
+    }
+    .tier-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .roam-itinerary-card {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-radius: 16px !important;
+      padding: 32px 36px !important;
+      margin-bottom: 24px !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+    }
+    .roam-day-badge {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      color: #8A6A23 !important;
+      margin-bottom: 8px !important;
+      display: block !important;
+    }
+    .roam-itinerary-title {
+      font-family: Helvetica, Arial, sans-serif !important;
+      font-size: 22px !important;
+      font-weight: 800 !important;
+      letter-spacing: -.03em !important;
+      text-transform: uppercase !important;
+      color: #000000 !important;
+      margin: 0 0 14px !important;
+    }
+    .roam-itinerary-desc {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-size: 16.5px !important;
+      line-height: 1.75 !important;
+      color: rgba(0, 0, 0, 0.82) !important;
+      margin: 0 !important;
+    }
+
+    .roam-field-note {
+      background: #faf8f5 !important;
+      border: 1px solid rgba(200, 164, 92, 0.25) !important;
+      border-left: 3px solid #C8A45C !important;
+      border-radius: 12px !important;
+      padding: 22px 26px !important;
+      margin: 20px 0 10px !important;
+    }
+    .roam-field-note-kicker {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: #8A6A23 !important;
+      text-transform: uppercase !important;
+      letter-spacing: .08em !important;
+      margin-bottom: 6px !important;
+      display: block !important;
+    }
+    .roam-field-note-quote {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+      font-style: italic !important;
+      font-size: 15px !important;
+      line-height: 1.65 !important;
+      color: rgba(0, 0, 0, 0.8) !important;
+      margin: 0 0 8px !important;
+    }
+    .roam-field-note-author {
+      font-family: 'Inter', -apple-system, sans-serif !important;
+      font-size: 11px !important;
+      font-weight: 700 !important;
+      color: rgba(0, 0, 0, 0.55) !important;
+      text-transform: uppercase !important;
+      letter-spacing: .06em !important;
+      margin: 0 !important;
+    }
+
+    .roam-highlights-box {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 16px;
+      padding: 32px 36px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    }
+    .roam-highlights-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -.03em;
+      color: #000000;
+      margin: 0 0 20px;
+    }
+    .roam-highlight-list {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      display: grid;
+      gap: 14px;
+    }
+    .roam-highlight-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 16px;
+      line-height: 1.6;
+      color: rgba(0, 0, 0, 0.84);
+    }
+    .roam-highlight-bullet {
+      color: #8A6A23;
+      font-weight: 900;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .roam-btn-black {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #000000 !important;
+      color: #ffffff !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      transition: all .25s ease !important;
+    }
+    .roam-btn-black:hover {
+      background: #262626 !important;
+      transform: translateY(-2px) !important;
+    }
+    .roam-btn-wa {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      background: #25D366 !important;
+      color: #ffffff !important;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+      text-transform: uppercase !important;
+      letter-spacing: .05em !important;
+      padding: 14px 28px !important;
+      border-radius: 9999px !important;
+      text-decoration: none !important;
+      transition: all .25s ease !important;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35) !important;
+    }
+    .roam-btn-wa:hover {
+      background: #20BA59 !important;
+      transform: translateY(-2px) !important;
+    }
+
+    .fleet-showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin: 36px 0;
+    }
+    .fleet-card {
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    }
+    .fleet-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .fleet-card-body {
+      padding: 20px 22px;
+    }
+    .fleet-card-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0 0 6px;
+    }
+    .fleet-card-meta {
+      font-size: 13px;
+      color: rgba(0,0,0,0.6);
+      margin-bottom: 12px;
+    }
+    .fleet-card-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(0,0,0,0.8);
+      margin: 0;
+    }
+  </style>
+
+  <main class="roam-tour-main">
+    <div class="roam-tour-wrapper">
+      <div class="roam-tour-badge">8–12 DAY PRIVATE HERITAGE EXPEDITION // 100% SHABBAT-FRIENDLY</div>
+      <h1 class="roam-tour-title">Moroccan Jewish Heritage &amp; Mellahs Tour</h1>
+      
+      <div class="roam-tour-meta-bar">
+        <span class="roam-tour-meta-item">📍 ROUTE: CASABLANCA · FES · MARRAKECH · ESSAOUIRA</span>
+        <span class="roam-tour-meta-item">⏱ DURATION: 8, 10 OR 12 DAYS</span>
+        <span class="roam-tour-meta-item">🕊 100% SHABBAT-OBSERVANT LOGISTICS</span>
+        <span class="roam-tour-meta-item">🛡 DEDICATED LICENSED CHAUFFEUR &amp; 4X4</span>
+      </div>
+
+      <!-- Quick Summary / BLUF -->
+      <aside class="ai-quick-summary-card" aria-label="Tour Fast Facts and Summary">
+        <div class="ai-summary-header">
+          <span class="ai-summary-kicker">⚡ EXPEDITION AT A GLANCE (EXECUTIVE SUMMARY)</span>
+          <span class="ai-summary-badge">Guaranteed Private Departure</span>
+        </div>
+        <p class="ai-summary-text">
+          The <strong>Moroccan Jewish Heritage &amp; Mellahs Tour</strong> traces over two millennia of Sephardic and Berber Jewish culture in North Africa. Traveling in a dedicated private vehicle with a licensed English-speaking Moroccan chauffeur, you explore the only Museum of Moroccan Judaism in the Arab world, the 15th-century Mellah of Fes, historic synagogues (Ibn Danan, Slat Al Azama, Rabbi Chaim Pinto), the craft enclave of Sefrou, and sacred pilgrimage shrines. Available in <strong>8, 10, or 12-day circuits</strong> with transparent flat vehicle pricing from <strong>€1,450 per vehicle</strong> (covering up to 4–6 passengers combined with all fuel, tolls, and chauffeur expenses included). 100% Shabbat-compliant scheduling with zero travel between Friday afternoon and Saturday Havdalah.
+        </p>
+      </aside>
+
+      <div style="margin-bottom: 40px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(0,0,0,0.12);">
+        <img src="/images/morocco-fes-medina-architecture.jpg" alt="Historic Moroccan Synagogue and Mellah Architecture in Fes" style="width: 100%; height: auto; max-height: 520px; object-fit: cover; display: block;">
+      </div>
+
+      <div class="roam-article-body">
+        <p style="font-size: 1.25rem; font-weight: 500; line-height: 1.7; margin-bottom: 28px;">
+          For more than two thousand years—from before the destruction of the Second Temple through the 1492 expulsion from Spain—Morocco was home to the largest Jewish community in the Islamic world. At its peak, over 300,000 Moroccan Jews lived in urban <em>Mellahs</em>, Atlas mountain villages, and desert trading outposts.
+        </p>
+        <p>
+          Today, Morocco remains the only Arab country with a constitution explicitly celebrating its Hebraic tributary, protected Jewish cemeteries, active synagogues, and state-subsidized restorations of historic Mellahs. Our private heritage tours are curated for diaspora families, roots researchers, and travelers who want deep historic immersion without rigid group bus schedules.
+        </p>
+
+        <!-- Highlights Box -->
+        <div class="roam-highlights-box">
+          <h3 class="roam-highlights-title">Core Pillars of Our Jewish Heritage Circuits</h3>
+          <ul class="roam-highlight-list">
+            <li>
+              <span class="roam-highlight-bullet">✦</span>
+              <div><strong>Hereditary Keyholder Access:</strong> Many locked synagogues and historic cemeteries rely on multi-generational Muslim and Jewish caretakers. Your chauffeur liaises ahead with local guardians in Fes, Sefrou, and Essaouira so gates are open upon arrival.</div>
+            </li>
+            <li>
+              <span class="roam-highlight-bullet">✦</span>
+              <div><strong>Strict Shabbat Compliance:</strong> On Friday afternoon, we ensure you arrive at your riad or hotel well before sundown. The vehicle is parked throughout Shabbat, and accommodations are situated within comfortable walking distance of active synagogues.</div>
+            </li>
+            <li>
+              <span class="roam-highlight-bullet">✦</span>
+              <div><strong>Kosher Provisions &amp; Dining Guidance:</strong> Our vehicles feature a chilled cooler box for fresh foods. In Casablanca and Marrakech, your driver assists with pickups from certified kosher kitchens (Chabad Casablanca, Cercle de l'Union, Kosher Club Marrakech).</div>
+            </li>
+            <li>
+              <span class="roam-highlight-bullet">✦</span>
+              <div><strong>Roots &amp; Ancestral Research:</strong> Have family roots in Meknes, Debdou, Demnate, or Ouezzane? We adjust itineraries to locate ancestral family residences, communal archives, and ancestral cemetery plots.</div>
+            </li>
+          </ul>
+        </div>
+
+        <h2>Transparent Flat Vehicle Pricing (Clients Book Own Hotels)</h2>
+        <p>
+          Unlike group tour operators who mark up hotel rooms by 40%, we operate on a transparent <strong>flat vehicle rate</strong>. You choose and book your preferred riads or luxury hotels directly, while our all-inclusive vehicle fee covers your entire transportation infrastructure: dedicated licensed chauffeur, 2024 luxury vehicle, all fuel, highway tolls, chauffeur lodging &amp; meals, and airport transfers.
+        </p>
+
+        <div class="roam-pricing-grid">
+          <!-- 8-Day Tier -->
+          <div class="roam-price-tier-card">
+            <div>
+              <div class="tier-badge">8 DAYS // IMPERIAL MELLAHS</div>
+              <h3 class="tier-title">Essential Heritage</h3>
+              <div class="tier-rate">€1,450</div>
+              <div class="tier-unit">Flat rate for entire vehicle (Prado 4x4) · or €1,680 (Mercedes V-Class)</div>
+              <ul class="tier-features">
+                <li>✓ Casablanca (Museum &amp; Beth-El)</li>
+                <li>✓ Rabat &amp; Tomb of Rabbi Raphael Encaoua</li>
+                <li>✓ Volubilis Hebrew ruins &amp; Meknes Mellah</li>
+                <li>✓ Fes el-Bali (Ibn Danan &amp; Jewish Cemetery)</li>
+                <li>✓ Marrakech Mellah &amp; Slat Al Azama</li>
+                <li>✓ 100% Shabbat logistics included</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%208-Day%20Jewish%20Heritage%20Tour%20(%E2%82%AC1,450)." class="roam-btn-black" target="_blank" rel="noopener">Inquire 8-Day Tour</a>
+          </div>
+
+          <!-- 10-Day Tier -->
+          <div class="roam-price-tier-card featured">
+            <div>
+              <div class="tier-badge">10 DAYS // MOST POPULAR</div>
+              <h3 class="tier-title">Grand Heritage &amp; Shrines</h3>
+              <div class="tier-rate">€1,850</div>
+              <div class="tier-unit">Flat rate for entire vehicle (Prado 4x4) · or €2,150 (Mercedes V-Class)</div>
+              <ul class="tier-features">
+                <li>✓ All 8-Day destinations included</li>
+                <li>✓ Sefrou ("Little Jerusalem") &amp; artisan quarter</li>
+                <li>✓ Middle Atlas cedar crossing</li>
+                <li>✓ Atlantic Coastal excursion to Essaouira (Mogador)</li>
+                <li>✓ Rabbi Chaim Pinto Synagogue &amp; Mausoleum</li>
+                <li>✓ Full Shabbat rest day in Marrakech luxury riad</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20book%20the%2010-Day%20Grand%20Jewish%20Heritage%20Tour%20(%E2%82%AC1,850)." class="roam-btn-wa" target="_blank" rel="noopener">Book 10-Day Tour on WhatsApp</a>
+          </div>
+
+          <!-- 12-Day Tier -->
+          <div class="roam-price-tier-card">
+            <div>
+              <div class="tier-badge">12 DAYS // DEEP ROOTS</div>
+              <h3 class="tier-title">All-Morocco Pilgrimage</h3>
+              <div class="tier-rate">€2,250</div>
+              <div class="tier-unit">Flat rate for entire vehicle (Prado 4x4) · or €2,590 (Mercedes V-Class)</div>
+              <ul class="tier-features">
+                <li>✓ All 10-Day destinations included</li>
+                <li>✓ Ouezzane shrine of Rabbi Amram Ben Diwan</li>
+                <li>✓ High Atlas Jewish villages (Demnate &amp; Ourika)</li>
+                <li>✓ Southern Souss or Taroudant heritage add-on</li>
+                <li>✓ Two full Shabbat rest observances</li>
+                <li>✓ Dedicated assistance with ancestral site searches</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'm%20interested%20in%20the%2012-Day%20All-Morocco%20Heritage%20Pilgrimage%20(%E2%82%AC2,250)." class="roam-btn-black" target="_blank" rel="noopener">Inquire 12-Day Tour</a>
+          </div>
+        </div>
+
+        <h2>10-Day Grand Heritage Itinerary (Day-by-Day)</h2>
+
+        <!-- Day 1 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 01 // CASABLANCA</span>
+          <h3 class="roam-itinerary-title">Casablanca Arrival, Museum of Moroccan Judaism &amp; Temple Beth-El</h3>
+          <p class="roam-itinerary-desc">
+            Your private chauffeur meets you at Casablanca Mohammed V Airport (CMN) with a personalized greeting inside arrivals. Begin your immersion in the upscale residential Oasis neighborhood at the <strong>Museum of Moroccan Judaism</strong>—the only dedicated Jewish museum in the Arab world. Curated with historic Torah scrolls, traditional Moroccan bridal caftans embroidered in gold thread, silver Hanukkiot, and restored bimahs from rural Atlas Mellahs. Later, visit the grand <strong>Temple Beth-El</strong>, the vibrant spiritual heart of Casablanca's active 2,500-member community. Check into your hotel with dinner recommendations at certified kosher establishments.
+          </p>
+          <div class="roam-field-note">
+            <span class="roam-field-note-kicker">Field Note // Museum of Moroccan Judaism</span>
+            <p class="roam-field-note-quote">&ldquo;Standing in the courtyard in Oasis with a Jewish curator and a Muslim guardian discussing the restoration of an 18th-century Torah scroll from Taroudant is the moment travelers realize Morocco’s Jewish heritage isn’t an artifact of the past—it’s an living chapter of Moroccan national identity.&rdquo;</p>
+            <p class="roam-field-note-author">&mdash; Hamza, Roam Morocco Co-Founder</p>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 02 // CASABLANCA &rarr; RABAT &rarr; SALÉ</span>
+          <h3 class="roam-itinerary-title">Imperial Capital Rabat &amp; Shrine of Rabbi Raphael Encaoua in Salé</h3>
+          <p class="roam-itinerary-desc">
+            Depart north along the modern Atlantic coastal highway to Rabat. Visit the historic Mellah of Rabat, established in 1808 by Sultan Moulay Slimane, and stroll along Rue David Cohen with its distinctive Andalusian-style wrought iron balconies. Cross the Bouregreg River to Salé to pay respects at the venerated mausoleum of <strong>Rabbi Raphael Encaoua</strong> (the "Malach Raphael"), the revered Chief Rabbi of Morocco and President of the High Rabbinical Court. Continue to the Roman-Islamic ruins of Chellah before relaxing at your hotel.
+          </p>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 03 // RABAT &rarr; VOLUBILIS &rarr; MEKNES &rarr; FES</span>
+          <h3 class="roam-itinerary-title">Roman Volubilis Hebrew Inscriptions &amp; The Two Mellahs of Meknes</h3>
+          <p class="roam-itinerary-desc">
+            Drive east into the fertile Saïss plain. Stop at the UNESCO World Heritage site of <strong>Volubilis (Walili)</strong>, where 3rd-century bronze menorahs and gravestones inscribed in Hebrew and Greek prove Jewish presence in Morocco predates the Arab conquest by centuries. Continue to Meknes, the 17th-century Ismaili imperial capital, home to both the Old Mellah (near Bab Mansour) and the New Mellah, alongside the historic Jewish cemetery where Rabbi David Benmidan rests. Arrive in Fes by evening.
+          </p>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 04 // FES EL-BALI</span>
+          <h3 class="roam-itinerary-title">The Cradle of Moroccan Jewry: Fes Mellah, Ibn Danan &amp; Lalla Solica</h3>
+          <p class="roam-itinerary-desc">
+            Fes is the spiritual crown of Moroccan Jewish history. Established in 1438 adjacent to the Royal Palace, the Fes Mellah is the oldest in Morocco. Accompanied by a licensed heritage guide, enter the painstakingly restored 17th-century <strong>Ibn Danan Synagogue</strong>, descending to its ancient underground mikveh. Walk through the whitewashed Jewish Cemetery of Fes, honoring the tomb of <strong>Sol Hachuel (Lalla Solica)</strong>, the 17-year-old Jewish martyr revered by both Jews and Muslims for her steadfast faith. Visit the former stone home of philosopher Moses Maimonides near the Bou Inania water clock.
+          </p>
+          <div class="roam-field-note">
+            <span class="roam-field-note-kicker">Field Note // Fes Mellah Guardians</span>
+            <p class="roam-field-note-quote">&ldquo;At Ibn Danan, the heavy wooden door is locked from the inside. When Abdelhakim taps the brass knocker three times, Haj Mohammed, whose father watched over the synagogue before him, draws the bolt with a smile: 'Marhaban bikum, welcome to your home.' The scent of aged cedar and olive oil lamps hasn't changed since 1686.&rdquo;</p>
+            <p class="roam-field-note-author">&mdash; Abdelhakim, Roam Morocco Operations Lead</p>
+          </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 05 // FES &rarr; SEFROU &rarr; MIDDLE ATLAS</span>
+          <h3 class="roam-itinerary-title">Sefrou ("Little Jerusalem") &amp; Middle Atlas Cedar Forests</h3>
+          <p class="roam-itinerary-desc">
+            Drive 30 minutes south to <strong>Sefrou</strong>, historically nicknamed "Little Jerusalem." In the 19th century, Jewish residents constituted nearly half of Sefrou's total population, living in seamless communal harmony with the local Amazigh (Berber) tribes as master weavers, silversmiths, and caravan traders. Explore the compact walled Mellah, the Jewish cemetery on the cliffside, and the nearby cave shrine of Kaf el-Mounmen. Continue into the scenic Middle Atlas cedar forests of Ifrane and Azrou, relaxing for the evening in mountain tranquility.
+          </p>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 06 // MIDDLE ATLAS &rarr; MARRAKECH</span>
+          <h3 class="roam-itinerary-title">Scenic Atlas Foothills Drive &amp; Early Friday Arrival in Marrakech</h3>
+          <p class="roam-itinerary-desc">
+            Travel across the rolling plains of the Beni Mellal agricultural basin toward Marrakech. Your chauffeur times the drive so you arrive at your luxury riad in Marrakech by early afternoon (well before Friday sunset), allowing ample unhurried time to unpack, prepare, and walk to <strong>Slat Al Azama Synagogue</strong> or your chosen Shabbat service before candle-lighting.
+          </p>
+        </div>
+
+        <!-- Day 7 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 07 // MARRAKECH</span>
+          <h3 class="roam-itinerary-title">Shabbat Rest &amp; Reflection (Zero Driving // Peaceful Day in the Medina)</h3>
+          <p class="roam-itinerary-desc">
+            A peaceful day of rest and spiritual observance. The private vehicle is parked for the entire duration of Shabbat. Enjoy the tranquil courtyards and private pools of your riad, participate in morning and afternoon services at Slat Al Azama, or take quiet unguided walks through the pedestrian-only alleys of the historic medina. Havdalah marks the conclusion of Shabbat on Saturday evening.
+          </p>
+        </div>
+
+        <!-- Day 8 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 08 // MARRAKECH</span>
+          <h3 class="roam-itinerary-title">Marrakech Mellah, 500-Year-Old Slat Al Azama &amp; Miara Cemetery</h3>
+          <p class="roam-itinerary-desc">
+            Spend the day exploring Marrakech's rich Jewish history. Established in 1558 by the Saadian Sultan Moulay Abdallah, the Marrakech Mellah (officially Hay Essalam) was a center of jewelry crafting, spices, and trade. Tour the 500-year-old <strong>Slat Al Azama (Synagogue of the Expelled)</strong>, founded by Megorashim exiles from Toledo in 1492. Visit the vast <strong>Miara Jewish Cemetery</strong>, the largest Jewish burial ground in Morocco, with over 20,000 graves spanning half a millennium, including prominent Tzadikim (saints) such as Rabbi Hanania Cohen and Rabbi Pinhas Cohen.
+          </p>
+        </div>
+
+        <!-- Day 9 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 09 // MARRAKECH &rarr; ESSAOUIRA (MOGADOR) &rarr; MARRAKECH</span>
+          <h3 class="roam-itinerary-title">Coastal Essaouira: Rabbi Chaim Pinto Synagogue, Slat Lkahal &amp; Ramparts</h3>
+          <p class="roam-itinerary-desc">
+            Take a scenic morning drive across the Argan plains to the breezy Atlantic coast of <strong>Essaouira (ancient Mogador)</strong>. Under Sultan Mohammed ben Abdallah in the 18th century, Jewish merchants known as <em>Toujjar al-Sultan</em> (King's Merchants) formed the majority of the city's population, controlling sea trade with Europe. Visit the restored <strong>Rabbi Chaim Pinto Synagogue and Mausoleum</strong>, where thousands gather each September for the annual Hiloula. Explore <strong>Slat Lkahal</strong> (Synagogue of the Poor) and walk the ocean ramparts where the Atlantic breezes carry the scent of sea salt and cedar thuya wood. Return to Marrakech in the evening.
+          </p>
+        </div>
+
+        <!-- Day 10 -->
+        <div class="roam-itinerary-card">
+          <span class="roam-day-badge">DAY 10 // MARRAKECH OR CASABLANCA</span>
+          <h3 class="roam-itinerary-title">Departure Transfer to Marrakech (RAK) or Casablanca (CMN)</h3>
+          <p class="roam-itinerary-desc">
+            Enjoy breakfast in your riad garden. Your private chauffeur provides seamless private airport transfer to Marrakech Menara Airport (RAK) or chauffeurs you comfortably north to Casablanca Mohammed V Airport (CMN) in time for your return transatlantic or European flight.
+          </p>
+        </div>
+
+        <!-- Fleet Vehicles -->
+        <h2>Our Executive Chauffeur Fleet</h2>
+        <p>All private heritage expeditions are operated in modern, company-owned vehicles licensed under Morocco's strict Série T tourist transport regulations.</p>
+
+        <div class="fleet-showcase-grid">
+          <div class="fleet-card">
+            <img src="/images/fleet-toyota-prado-4x4.webp" alt="Toyota Land Cruiser Prado TXL 4x4 Chauffeur Vehicle">
+            <div class="fleet-card-body">
+              <h4 class="fleet-card-title">Toyota Land Cruiser Prado TXL</h4>
+              <div class="fleet-card-meta">1–4 Passengers · Luxury 4WD All-Terrain</div>
+              <p class="fleet-card-desc">Modern leather interior, high suspension for mountain Mellah roads, chilled cooler box, tinted privacy glass, and USB charging at every seat.</p>
+            </div>
+          </div>
+
+          <div class="fleet-card">
+            <img src="/images/fleet-mercedes-v-class.webp" alt="Mercedes-Benz V-Class VIP Executive Minivan">
+            <div class="fleet-card-body">
+              <h4 class="fleet-card-title">Mercedes-Benz V-Class VIP</h4>
+              <div class="fleet-card-meta">3–6 Passengers · Executive Captain Chairs</div>
+              <p class="fleet-card-desc">Conference seating configuration, generous luggage capacity for family roots trips, dual-zone climate control, and whisper-quiet highway ride.</p>
+            </div>
+          </div>
+
+          <div class="fleet-card">
+            <img src="/images/fleet-mercedes-sprinter-vip.webp" alt="Mercedes-Benz Sprinter VIP Coach">
+            <div class="fleet-card-body">
+              <h4 class="fleet-card-title">Mercedes-Benz Sprinter VIP</h4>
+              <div class="fleet-card-meta">7–15 Passengers · Extended Family &amp; Delegations</div>
+              <p class="fleet-card-desc">Panoramic viewing windows, high roof for walk-in comfort, extended rear cargo bay, and dedicated PA audio system for family historians.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inclusions & Exclusions -->
+        <h2>What Is Included &amp; Excluded</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 24px 0 36px;">
+          <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.1); border-radius: 14px; padding: 24px;">
+            <h4 style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; text-transform: uppercase; color: #1a9c4b; margin: 0 0 14px;">✓ 100% Included in Vehicle Rate</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; line-height: 1.8; color: rgba(0,0,0,0.85);">
+              <li>✓ Dedicated English-speaking licensed Moroccan chauffeur</li>
+              <li>✓ 2024 Toyota Prado TXL 4x4 or Mercedes-Benz V-Class VIP</li>
+              <li>✓ All fuel, highway tolls, and parking fees throughout Morocco</li>
+              <li>✓ Chauffeur lodging, meals, and per-diem expenses</li>
+              <li>✓ On-board chilled cooler box for kosher provisions</li>
+              <li>✓ Full commercial passenger vehicle liability insurance</li>
+              <li>✓ Airport meet-and-greet at Casablanca (CMN) or Marrakech (RAK)</li>
+              <li>✓ Keyholder liaison for locked synagogues and cemeteries</li>
+            </ul>
+          </div>
+          <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.1); border-radius: 14px; padding: 24px;">
+            <h4 style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 800; text-transform: uppercase; color: rgba(0,0,0,0.6); margin: 0 0 14px;">✕ Excluded (Client Freedom)</h4>
+            <ul style="list-style: none; padding: 0; margin: 0; font-size: 14px; line-height: 1.8; color: rgba(0,0,0,0.75);">
+              <li>✕ Client hotel and riad accommodations (book directly)</li>
+              <li>✕ Client daily meals and kosher catering fees</li>
+              <li>✕ Synagogue caretaker donations and tips (recommended 20–50 MAD)</li>
+              <li>✕ Local city step-on Medina guide fees (optional add-on)</li>
+              <li>✕ International airline tickets</li>
+              <li>✕ Personal travel medical insurance</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CTA Box -->
+        <div style="background: #ffffff; border: 1px solid rgba(0,0,0,0.14); border-radius: 20px; padding: 40px 32px; text-align: center; margin: 48px 0; box-shadow: 0 12px 32px rgba(0,0,0,0.05);">
+          <h3 style="font-family: Helvetica, Arial, sans-serif; font-size: 26px; font-weight: 800; text-transform: uppercase; margin: 0 0 12px;">Plan Your Custom Jewish Heritage Expedition</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: rgba(0,0,0,0.75); max-width: 640px; margin: 0 auto 24px;">
+            Have ancestral cities you wish to trace? Need help synchronizing flight arrivals with Shabbat? Reach out directly to our operations founders on WhatsApp for an unhurried route consultation and instant flat quote.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px;">
+            <a href="https://wa.me/212653506441?text=Salam%20Roam%20Morocco!%20I'd%20like%20to%20plan%20a%20private%20Jewish%20Heritage%20Tour%20in%20Morocco." class="roam-btn-wa" target="_blank" rel="noopener">
+              <img src="/img/whatsapp-logo.png" alt="WhatsApp" class="wa-btn-icon notranslate" translate="no" width="20" height="20">
+              <span>Chat with Founder on WhatsApp</span>
+            </a>
+            <a href="/morocco-jewish-heritage-private-driver.html" class="roam-btn-black">
+              View Private Chauffeur Specs
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</Layout>

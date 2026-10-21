@@ -361,8 +361,9 @@
   .top.at-top .navbox .wordmark {
     display: flex !important;
     align-items: center !important;
-    flex: 0 1 auto !important;
-    min-width: 0 !important;
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+    min-width: 110px !important;
   }
 
   .top.at-top .navbox .wordmark img {
@@ -371,6 +372,8 @@
     width: auto !important;
     max-width: 140px !important;
     object-fit: contain !important;
+    flex-shrink: 0 !important;
+    display: block !important;
   }
 
   .top.at-bottom {
@@ -421,7 +424,9 @@
     height: 48px !important;
     min-height: 48px !important;
     max-height: 48px !important;
-    padding: 0 16px !important;
+    padding: 0 14px !important;
+    max-width: 165px !important;
+    overflow: hidden !important;
     font-size: 13px !important;
     font-weight: 700 !important;
     letter-spacing: 0.02em !important;
@@ -435,6 +440,13 @@
     white-space: nowrap !important;
     box-sizing: border-box !important;
     pointer-events: auto !important;
+  }
+
+  .top.at-top .latest span,
+  .top.at-top .nav-wa-btn span {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
   }
 
   .top.at-top .latest:hover,
@@ -660,6 +672,38 @@
 .mobile-nav-drawer.open {
   opacity: 1 !important;
   pointer-events: auto !important;
+}
+.mobile-drawer-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 4px 6px 14px 6px !important;
+  margin-bottom: 6px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+.mob-drawer-logo {
+  height: 24px !important;
+  width: auto !important;
+  max-width: 130px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+.mob-drawer-close {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  transition: all .2s ease !important;
+}
+.mob-drawer-close:hover {
+  background: rgba(255, 255, 255, 0.22) !important;
 }
 .mobile-drawer-inner {
   display: flex;

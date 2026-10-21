@@ -124,7 +124,7 @@
 
     const isSubfolder = window.location.pathname.includes('/blog/') || window.location.pathname.includes('/transfers/');
     const waLogoSrc = '/img/whatsapp-logo.png';
-    const WA_IMG = `<img src="${waLogoSrc}" alt="WhatsApp" width="20" height="20" class="wa-btn-icon">`;
+    const WA_IMG = `<img src="${waLogoSrc}" alt="WhatsApp" width="20" height="20" class="wa-btn-icon notranslate" translate="no">`;
     
     function getContextWhatsAppMessage() {
       const path = (window.location.pathname || '').toLowerCase();
@@ -158,12 +158,15 @@
 
     const topLatest = document.querySelector(".top .latest");
     if (topLatest) {
-      topLatest.classList.add("nav-wa-btn");
+      topLatest.classList.add("nav-wa-btn", "notranslate");
+      topLatest.setAttribute("translate", "no");
       topLatest.href = waUrl;
       topLatest.target = "_blank";
       topLatest.rel = "noopener";
       topLatest.setAttribute("aria-label", "Chat on WhatsApp");
-      topLatest.innerHTML = `${WA_IMG}<span>WhatsApp</span>`;
+      const existingSpan = topLatest.querySelector("span");
+      const label = existingSpan ? existingSpan.textContent.trim() : "WhatsApp";
+      topLatest.innerHTML = `${WA_IMG}<span>${label || 'WhatsApp'}</span>`;
     }
 
     if (mDraw) {
@@ -179,7 +182,11 @@
           drawerInner.appendChild(mobWa);
         }
         mobWa.href = waUrl;
-        mobWa.innerHTML = `${WA_IMG}<span>Chat on WhatsApp</span>`;
+        mobWa.classList.add("notranslate");
+        mobWa.setAttribute("translate", "no");
+        const existingMobSpan = mobWa.querySelector("span");
+        const mobLabel = existingMobSpan ? existingMobSpan.textContent.trim() : "WhatsApp";
+        mobWa.innerHTML = `${WA_IMG}<span>${mobLabel || 'WhatsApp'}</span>`;
       }
     }
 
@@ -232,8 +239,8 @@
       btn.style.setProperty('text-decoration', 'none', 'important');
     });
 
-    const darkLogo = '/img/logo-for-dark-bg.png?v=20261015_v2';
-    const lightLogo = '/img/logo-for-light-bg.png?v=20261015_v2';
+    const darkLogo = '/img/logo-for-dark-bg.png';
+    const lightLogo = '/img/logo-for-light-bg.png';
 
     function onScroll() {
       const currentY = window.scrollY;
