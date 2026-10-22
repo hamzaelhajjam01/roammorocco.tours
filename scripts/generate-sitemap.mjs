@@ -15,6 +15,13 @@ function getFilesRecursively(dir, baseDir = dir) {
       results = results.concat(getFilesRecursively(fullPath, baseDir));
     } else if (file.endsWith('.html') && file !== '404.html') {
       const relPath = path.relative(baseDir, fullPath).replace(/\\/g, '/');
+      if (
+        relPath === 'transfers/index.html' ||
+        relPath === 'blog/index.html' ||
+        /^(fr|es|de|it)\/(transfers|blog)\/index\.html$/.test(relPath)
+      ) {
+        continue;
+      }
       results.push(relPath);
     }
   }

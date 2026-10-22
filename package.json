@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev --port 4321",
     "start": "astro dev --port 4321",
-    "build": "astro build && node scripts/generate-sitemap.mjs && node scripts/generate-llms-full.mjs",
+    "build": "astro build && node scripts/postbuild-fix-redirects.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-llms-full.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
     "llms": "node scripts/generate-llms-full.mjs",
     "indexnow": "node scripts/submit-indexnow.mjs",

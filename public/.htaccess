@@ -14,6 +14,28 @@
   # Redirect /fr.html -> /fr/, /es.html -> /es/, /de.html -> /de/, /it.html -> /it/
   RewriteRule ^(fr|es|de|it)\.html$ /$1/ [L,R=301]
 
+  # Directory Hubs & Clean URLs Rewrite Rules (Fixes 403 Forbidden on directory paths)
+  RewriteRule ^transfers/?$ /transfers.html [L]
+  RewriteRule ^blog/?$ /blog.html [L]
+  RewriteRule ^destinations/?$ /destinations.html [L]
+  RewriteRule ^tours/?$ /tours.html [L]
+  RewriteRule ^experiences/?$ /experiences.html [L]
+  RewriteRule ^about/?$ /about.html [L]
+
+  # Localized directory rewrites
+  RewriteRule ^(fr|es|de|it)/transfers/?$ /$1/transfers.html [L]
+  RewriteRule ^(fr|es|de|it)/blog/?$ /$1/blog.html [L]
+  RewriteRule ^(fr|es|de|it)/destinations/?$ /$1/destinations.html [L]
+  RewriteRule ^(fr|es|de|it)/tours/?$ /$1/tours.html [L]
+  RewriteRule ^(fr|es|de|it)/experiences/?$ /$1/experiences.html [L]
+  RewriteRule ^(fr|es|de|it)/about/?$ /$1/about.html [L]
+
+  # Clean URLs: Serve .html file if requested path without .html exists
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+
   # 3. Blog Slug Permalinks (Legacy & Direct Link Redirects to /blog/)
   RewriteRule ^agafay-desert-vs-merzouga\.html$ /blog/agafay-desert-vs-merzouga.html [L,R=301]
   RewriteRule ^agafay-desert-vs-merzouga$ /blog/agafay-desert-vs-merzouga.html [L,R=301]

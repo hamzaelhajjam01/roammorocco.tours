@@ -41,7 +41,7 @@ const schema = [
     "inLanguage": lang,
     "speakable": {
       "@type": "SpeakableSpecification",
-      "cssSelector": [".quick-answer-text", ".route-hero-title", ".faq-a"]
+      "cssSelector": [".route-hero-title", ".faq-a"]
     }
   },
   {
@@ -553,15 +553,6 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
             <span>{t.viewFleet}</span>
           </a>
         </div>
-
-        <!-- GEO & AEO Quick Answer Summary Box (BLUF) -->
-        <aside class="route-quick-answer-card" aria-label="Route Overview and Fast Facts">
-          <div class="quick-answer-header">
-            <span class="quick-answer-tag">{t.glanceTag}</span>
-            <span class="quick-answer-badge">{t.verifiedPricing}</span>
-          </div>
-          <p class="quick-answer-text">{t.bluf}</p>
-        </aside>
 
       </div>
     </section>

@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import RouteGoogleMapCard from '../../components/RouteGoogleMapCard.astro';
 import { routesData, type RouteItem } from '../../data/routes';
+import { getRouteCorridorDetails } from '../../data/corridorDetails';
 
 export async function getStaticPaths() {
   return routesData.map((route) => ({
@@ -15,6 +15,7 @@ interface Props {
 }
 
 const { route } = Astro.props;
+const corridor = getRouteCorridorDetails(route);
 
 const canonical = `https://roammorocco.tours/transfers/${route.slug}.html`;
 const ogImage = "https://roammorocco.tours/images/morocco_private_driver.webp";
@@ -27,7 +28,7 @@ const schema = [
     "url": canonical,
     "speakable": {
       "@type": "SpeakableSpecification",
-      "cssSelector": [".quick-answer-text", ".route-hero-title", ".faq-a"]
+      "cssSelector": [".route-hero-title", ".faq-a"]
     }
   },
   {
@@ -131,7 +132,7 @@ const schema = [
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": route.faqs.map((faq) => ({
+    "mainEntity": corridor.faqs.map((faq) => ({
       "@type": "Question",
       "name": faq.q,
       "acceptedAnswer": {
@@ -166,7 +167,7 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
 
         <div class="route-hero-badge">
           <span class="gold-dot"></span>
-          <span>LICENSED TOURIST TRANSPORT · FIXED FLAT RATES</span>
+          <span>{corridor.badge}</span>
         </div>
 
         <h1 class="route-hero-title">{route.h1}</h1>
@@ -199,17 +200,6 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
           </div>
         </div>
 
-        <!-- Interactive Google Maps Route & Directions Card -->
-        <RouteGoogleMapCard
-          origin={route.from}
-          destination={route.to}
-          distance={route.distance}
-          duration={route.duration}
-          highway={route.highway}
-          price={route.price_sedan}
-          waUrl={waUrl}
-        />
-
         <!-- Quick Action CTAs -->
         <div class="route-hero-actions">
           <a href={waUrl} target="_blank" rel="noopener" class="primary-wa-cta">
@@ -220,17 +210,6 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
             <span>View Vehicle Fleet &amp; Rates ↓</span>
           </a>
         </div>
-
-        <!-- GEO & AEO Quick Answer Summary Box (BLUF) -->
-        <aside class="route-quick-answer-card" aria-label="Route Overview and Fast Facts">
-          <div class="quick-answer-header">
-            <span class="quick-answer-tag">⚡ ROUTE AT A GLANCE</span>
-            <span class="quick-answer-badge">Verified Pricing</span>
-          </div>
-          <p class="quick-answer-text">
-            A private transfer from <strong>{route.from}</strong> to <strong>{route.to}</strong> spans approximately <strong>{route.distance}</strong> via {route.highway} with an estimated drive time of <strong>{route.duration}</strong>. Fixed all-inclusive private chauffeur rates start from <strong>€{route.price_sedan}</strong> per vehicle for a comfortable sedan (1–4 passengers) and <strong>€{route.price_van}</strong> for an executive Mercedes-Benz minivan (5–7 passengers). Every booking includes a licensed English-speaking chauffeur, all highway tolls, fuel, vehicle passenger insurance, free infant/child booster seats, and door-to-door riad or airport meet-and-greet.
-          </p>
-        </aside>
 
       </div>
     </section>
@@ -331,16 +310,48 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
         <div class="details-grid">
           
           <div class="details-content">
-            <span class="section-kicker">WHAT TO EXPECT</span>
-            <h2>Travel Experience on the {route.from} to {route.to} Route</h2>
-            <p>
-              When booking your private transfer with Roam Morocco, you eliminate the stress of crowded bus stations, 
-              unmetered grand taxis, and confusing connections. Your dedicated licensed chauffeur greets you directly 
-              at your riad doorstep, hotel lobby, or airport terminal exit with a personalized name board.
+            <span class="section-kicker">{corridor.terrainKicker}</span>
+            <h2>{corridor.terrainTitle}</h2>
+            <p class="terrain-overview-text">
+              {corridor.terrainOverview}
             </p>
 
+            <!-- Medina Gate & Baggage Logistics -->
+            <div class="medina-logistics-box">
+              <div class="ml-header">
+                <span class="ml-icon">🚪</span>
+                <h3>{corridor.medinaLogistics.title}</h3>
+              </div>
+              <p>{corridor.medinaLogistics.description}</p>
+              <ul class="ml-tips-list">
+                {corridor.medinaLogistics.tips.map((tip) => (
+                  <li>
+                    <span class="ml-bullet">✦</span>
+                    <span>{tip}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <!-- Scenic Waypoints & Recommended Stops -->
+            <div class="scenic-waypoints-block">
+              <h3>Recommended Waypoints &amp; Scenic Rest Stops</h3>
+              <div class="scenic-stops-list">
+                {corridor.scenicStops.map((stop, idx) => (
+                  <div class="scenic-stop-item">
+                    <div class="stop-num">0{idx + 1}</div>
+                    <div class="stop-text">
+                      <h4>{stop.title}</h4>
+                      <p>{stop.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <!-- Inclusions -->
             <div class="highlights-box">
-              <h3>Route Highlights &amp; Inclusions</h3>
+              <h3>Route Highlights &amp; Standard Inclusions</h3>
               <ul class="highlights-list">
                 {route.highlights.map((h) => (
                   <li>
@@ -420,7 +431,7 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
         </div>
 
         <div class="faq-list">
-          {route.faqs.map((faq, idx) => (
+          {corridor.faqs.map((faq, idx) => (
             <div class="faq-card">
               <h3 class="faq-q">
                 <span class="faq-num">0{idx + 1}.</span>
@@ -829,6 +840,112 @@ const waUrl = `https://wa.me/212653506441?text=${waMessage}`;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.65);
     margin: 0 0 24px;
+  }
+  .terrain-overview-text {
+    font-size: 15.5px !important;
+    line-height: 1.7 !important;
+    color: rgba(0, 0, 0, 0.75) !important;
+    margin-bottom: 28px !important;
+  }
+
+  /* Medina Gate & Baggage Logistics */
+  .medina-logistics-box {
+    background: #ffffff;
+    border: 1px solid rgba(200, 164, 92, 0.35);
+    border-left: 4px solid #C8A45C;
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  }
+  .ml-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .ml-icon {
+    font-size: 20px;
+  }
+  .ml-header h3 {
+    font-size: 17px;
+    font-weight: 800;
+    margin: 0;
+    color: #111;
+  }
+  .medina-logistics-box p {
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+    color: rgba(0, 0, 0, 0.7) !important;
+    margin: 0 0 16px !important;
+  }
+  .ml-tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ml-tips-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 13.5px;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 1.45;
+  }
+  .ml-bullet {
+    color: #C8A45C;
+    font-size: 12px;
+  }
+
+  /* Scenic Stops & Waypoints */
+  .scenic-waypoints-block {
+    margin-bottom: 28px;
+  }
+  .scenic-waypoints-block h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 16px;
+    color: #111;
+  }
+  .scenic-stops-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .scenic-stop-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    border-radius: 14px;
+    padding: 16px 20px;
+  }
+  .stop-num {
+    font-size: 13px;
+    font-weight: 800;
+    color: #C8A45C;
+    background: rgba(200, 164, 92, 0.12);
+    padding: 4px 8px;
+    border-radius: 8px;
+    line-height: 1;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+  .stop-text h4 {
+    font-size: 14.5px;
+    font-weight: 800;
+    margin: 0 0 4px;
+    color: #111;
+  }
+  .stop-text p {
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+    color: rgba(0, 0, 0, 0.65) !important;
+    margin: 0 !important;
   }
 
   .highlights-box {
