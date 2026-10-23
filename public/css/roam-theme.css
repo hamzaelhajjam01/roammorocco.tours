@@ -1594,13 +1594,32 @@ a.roam-toolkit-link:hover span:last-child:not(:only-child) {
 .roam-article-body table,
 .roam-tour-main table,
 .table-container table,
-.roam-table-wrapper table {
+.roam-table-wrapper table,
+.vs-table-wrap table,
+.vs-table-scroll table,
+.vs-table {
   width: 100% !important;
   min-width: 580px !important;
   border-collapse: collapse !important;
   margin: 0 !important;
   background: #ffffff !important;
   border: none !important;
+}
+
+.vs-table-wrap {
+  padding: 0 !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+.vs-table th,
+.vs-table td {
+  padding: 13px 18px !important;
+}
+
+.vs-table tbody tr:last-child td {
+  border-bottom: none !important;
 }
 
 /* Fallback if a table has no wrapper container */

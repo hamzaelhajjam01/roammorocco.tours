@@ -102,6 +102,223 @@ const schema = {
 ---
 <Layout title={title} description={description} canonical={canonical} ogImage={ogImage} bodyClass={bodyClass} extraStyles={extraStyles} schema={schema}>
 
+  <style>
+    /* Flush Comparison Table - Zero awkward padding top/bottom */
+    .vs-table-wrap {
+      background: #ffffff !important;
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-radius: 16px !important;
+      overflow: hidden !important;
+      margin: 28px 0 !important;
+      padding: 0 !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .vs-table-scroll {
+      width: 100% !important;
+      overflow-x: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .vs-table {
+      width: 100% !important;
+      min-width: 580px !important;
+      border-collapse: collapse !important;
+      border-spacing: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      background: #ffffff !important;
+      text-align: left !important;
+      font-size: 13.5px !important;
+    }
+    .vs-table thead {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .vs-table th, .vs-table td {
+      padding: 13px 18px !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
+      border-top: none !important;
+      border-left: none !important;
+      border-right: none !important;
+      vertical-align: middle !important;
+    }
+    .vs-table th {
+      background: #faf8f5 !important;
+      color: #000000 !important;
+      font-size: 11.5px !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.07em !important;
+      text-transform: uppercase !important;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.08) !important;
+    }
+    .vs-table th.col-roam {
+      background: #C8A45C !important;
+      color: #000000 !important;
+    }
+    .vs-table tbody tr:last-child td {
+      border-bottom: none !important;
+    }
+    .vs-check { color: #25D366; font-weight: bold; margin-right: 6px; }
+    .vs-cross { color: #dc2626; font-weight: bold; margin-right: 6px; }
+
+    /* Route Map Box & Google Maps Embed */
+    .dest-map-box {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      padding: 32px 36px;
+      margin-bottom: 40px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .dest-map-kicker {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: #C8A45C;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .dest-map-title {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin: 0 0 10px;
+      color: #000000;
+    }
+    .dest-map-desc {
+      font-size: 14.5px;
+      color: rgba(0, 0, 0, 0.72);
+      line-height: 1.55;
+      margin: 0 0 20px;
+    }
+    .dest-map-embed-wrap {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+      background: #f4f1ea;
+      margin-bottom: 22px;
+    }
+    .dest-map-iframe {
+      display: block;
+      width: 100%;
+      height: 420px;
+      border: 0;
+    }
+    .dest-map-milestones {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      background: #faf8f5;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 20px;
+    }
+    .dest-milestone-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 130px;
+    }
+    .dest-milestone-num {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #111111;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .dest-milestone-item.highlight-desert .dest-milestone-num {
+      background: #C8A45C;
+      color: #000000;
+    }
+    .dest-milestone-item div {
+      display: flex;
+      flex-direction: column;
+    }
+    .dest-milestone-item strong {
+      font-size: 13px;
+      color: #000000;
+      line-height: 1.2;
+    }
+    .dest-milestone-item span {
+      font-size: 11px;
+      color: rgba(0, 0, 0, 0.55);
+      line-height: 1.2;
+    }
+    .dest-milestone-arrow {
+      color: #C8A45C;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .dest-map-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-top: 14px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .dest-map-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+    .dest-map-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #111111;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+    .dest-map-btn:hover {
+      background: #C8A45C;
+      color: #000000;
+    }
+    @media (max-width: 768px) {
+      .dest-map-box {
+        padding: 22px 18px;
+      }
+      .dest-map-iframe {
+        height: 320px;
+      }
+      .dest-map-milestones {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .dest-milestone-arrow {
+        display: none;
+      }
+    }
+  </style>
+
   <main class="dest-itinerary-main">
     <div class="dest-container">
 
@@ -148,6 +365,53 @@ const schema = {
               </div>
               <a href="/marrakech-to-fes-desert-tour-3-days.html" style="background:#111111;color:#ffffff;font-size:13px;font-weight:700;padding:12px 20px;border-radius:10px;text-decoration:none;white-space:nowrap;">View Marrakech → Fes Tour →</a>
             </div>
+
+                    <!-- Private 4x4 Tour vs Generic Shared Bus Tours Comparison -->
+          <div class="vs-table-wrap">
+            <div class="vs-table-scroll">
+              <table class="vs-table">
+                <thead>
+                  <tr>
+                    <th>Trip Feature</th>
+                    <th class="col-roam">Roam Morocco Private Tour</th>
+                    <th>Generic Shared Bus Tours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Vehicle Comfort</strong></td>
+                    <td><span class="vs-check">✔</span> Dedicated Toyota Prado 4x4 or Mercedes Minivan</td>
+                    <td><span class="vs-cross">✖</span> Crowded 17-seat minibus with 16 strangers</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Travel Pacing</strong></td>
+                    <td><span class="vs-check">✔</span> 100% Flexible — stop whenever you want for photos &amp; tea</td>
+                    <td><span class="vs-cross">✖</span> Rigid schedule with forced commercial pottery/carpet shops</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Desert Camp Standards</strong></td>
+                    <td><span class="vs-check">✔</span> VIP Luxury Camp: King bed, private ensuite hot shower &amp; flushing toilet</td>
+                    <td><span class="vs-cross">✖</span> Basic shared camp: Shared cold-water outdoor toilets</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Camel Trek &amp; 4x4 Dune Access</strong></td>
+                    <td><span class="vs-check">✔</span> Private sunset camel trek + optional 4x4 dune transfer</td>
+                    <td><span class="vs-cross">✖</span> Packed group camel caravan, no vehicle backup</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Marrakech Drop-Off</strong></td>
+                    <td><span class="vs-check">✔</span> Door-to-door at your Riad gate with luggage assistance</td>
+                    <td><span class="vs-cross">✖</span> Dropped at an unfamiliar petrol station or taxi rank</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Booking &amp; Payment</strong></td>
+                    <td><span class="vs-check">✔</span> €0 Prepayment — pay cash to driver on arrival</td>
+                    <td><span class="vs-cross">✖</span> 100% upfront non-refundable card payment</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
           <!-- Tour Highlights Callout Box -->
           <div class="dest-highlights-box">
@@ -224,11 +488,98 @@ const schema = {
             </div>
           </div>
 
-          <!-- Morocco Route Map Illustration -->
+          <!-- Morocco Route Map & Driving Itinerary -->
           <div class="dest-map-box">
-            <h3 class="dest-map-title">🗺️ The Journey on the Map</h3>
-            <p style="font-size:14px;color:rgba(0,0,0,0.7);margin-bottom:16px;">This circuit cuts directly through the dramatic geographical spine of Morocco: from the imperial gardens of Marrakech over the snowcaps of the Atlas to the Sahara dunes.</p>
-            <img src="/img/morocco-map-new.png" alt="Morocco Desert Tour Route Map" class="dest-map-img">
+            <div class="dest-map-header">
+              <span class="dest-map-kicker">EXPEDITION ROUTE &amp; NAVIGATION</span>
+              <h3 class="dest-map-title">🗺️ The Journey on the Map</h3>
+              <p class="dest-map-desc">
+                This classic circuit cuts directly through the dramatic geographical spine of Morocco: from the imperial gardens of Marrakech over the snowcaps of the High Atlas to the golden dunes of Erg Chebbi in Merzouga.
+              </p>
+            </div>
+
+            <!-- Interactive Google Maps Route Embed -->
+            <div class="dest-map-embed-wrap">
+              <iframe
+                title="Marrakech to Merzouga Desert Tour Route Map"
+                src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDxeEbSYiwVG8v8XTozfV95_oPlmJS909w&origin=Marrakech,Morocco&destination=Merzouga,Morocco&waypoints=Ait+Benhaddou,Morocco|Boumalne+Dades,Morocco|Todra+Gorges,Morocco&mode=driving"
+                width="100%"
+                height="440"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                class="dest-map-iframe"
+              ></iframe>
+            </div>
+
+            <!-- Route Milestones & Corridor Badges -->
+            <div class="dest-map-milestones">
+              <div class="dest-milestone-item">
+                <span class="dest-milestone-num">01</span>
+                <div>
+                  <strong>Marrakech</strong>
+                  <span>Day 1 · 08:00 AM Riad Pickup</span>
+                </div>
+              </div>
+              <div class="dest-milestone-arrow">→</div>
+              <div class="dest-milestone-item">
+                <span class="dest-milestone-num">02</span>
+                <div>
+                  <strong>Tizi n'Tichka</strong>
+                  <span>2,260m Summit Pass</span>
+                </div>
+              </div>
+              <div class="dest-milestone-arrow">→</div>
+              <div class="dest-milestone-item">
+                <span class="dest-milestone-num">03</span>
+                <div>
+                  <strong>Aït Benhaddou</strong>
+                  <span>UNESCO Earthen Ksar</span>
+                </div>
+              </div>
+              <div class="dest-milestone-arrow">→</div>
+              <div class="dest-milestone-item">
+                <span class="dest-milestone-num">04</span>
+                <div>
+                  <strong>Dades Gorges</strong>
+                  <span>Night 1 · Boutique Kasbah</span>
+                </div>
+              </div>
+              <div class="dest-milestone-arrow">→</div>
+              <div class="dest-milestone-item">
+                <span class="dest-milestone-num">05</span>
+                <div>
+                  <strong>Todra Canyons</strong>
+                  <span>Day 2 · 300m Limestone Walls</span>
+                </div>
+              </div>
+              <div class="dest-milestone-arrow">→</div>
+              <div class="dest-milestone-item highlight-desert">
+                <span class="dest-milestone-num">06</span>
+                <div>
+                  <strong>Erg Chebbi Dunes</strong>
+                  <span>Night 2 · VIP Desert Glamping</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Route Action Footer -->
+            <div class="dest-map-footer">
+              <div class="dest-map-meta">
+                <span>📍 <strong>Total Distance:</strong> ~560 km each way (~1,020 km full circuit)</span>
+                <span>⏱️ <strong>Drive Time:</strong> ~9–10h total divided comfortably across 2 days</span>
+                <span>🚗 <strong>Vehicle:</strong> Dedicated Toyota Prado TXL 4x4 or Mercedes VIP Minivan</span>
+              </div>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&origin=Marrakech,Morocco&destination=Merzouga,Morocco&waypoints=Ait+Benhaddou,Morocco|Boumalne+Dades,Morocco|Todra+Gorges,Morocco&travelmode=driving"
+                target="_blank"
+                rel="noopener"
+                class="dest-map-btn"
+              >
+                <span>Open in Google Maps App ↗</span>
+              </a>
+            </div>
           </div>
 
           <!-- Inclusions & Exclusions Checklist -->
