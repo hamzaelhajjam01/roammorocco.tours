@@ -72,7 +72,7 @@ function getPriorityAndFreq(relPath) {
 
 function categorizeFile(file) {
   const clean = file.replace(/^(fr|es|de|it)\//, '');
-  if (clean === 'tours.html' || clean.startsWith('tour-') || clean.includes('free-tour') || clean.includes('walking-tour')) {
+  if (clean === 'tours.html' || clean.startsWith('tour-') || clean.includes('free-tour') || clean.includes('walking-tour') || clean.includes('-desert-tour-')) {
     return 'tours';
   }
   if (clean === 'destinations.html' || clean.startsWith('destination-')) {
