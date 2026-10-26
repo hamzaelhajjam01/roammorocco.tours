@@ -27,9 +27,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "6 km",
     "duration": "15 min",
-    "price_sedan": 25,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -40,7 +40,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Marrakech cost?",
-        "a": "A private transfer from Marrakech Airport to Marrakech starts at €25 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Marrakech starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Marrakech take?",
@@ -72,9 +72,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -85,7 +85,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Essaouira cost?",
-        "a": "A private transfer from Marrakech Airport to Essaouira starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Essaouira starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Essaouira take?",
@@ -117,9 +117,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -130,7 +130,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Casablanca cost?",
-        "a": "A private transfer from Marrakech Airport to Casablanca starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Casablanca starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Casablanca take?",
@@ -162,9 +162,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -175,7 +175,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Agadir cost?",
-        "a": "A private transfer from Marrakech Airport to Agadir starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Agadir starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Agadir take?",
@@ -207,9 +207,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 145,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -220,7 +220,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Taghazout cost?",
-        "a": "A private transfer from Marrakech Airport to Taghazout starts at €145 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Taghazout starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Taghazout take?",
@@ -252,9 +252,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 69,
-    "price_van": 98,
-    "price_minibus": 149,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -265,7 +265,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Imlil cost?",
-        "a": "A private transfer from Marrakech Airport to Imlil starts at €69 for a private comfort sedan (1–4 passengers) and €98 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Imlil starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Imlil take?",
@@ -297,9 +297,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "6 km",
     "duration": "15 min",
-    "price_sedan": 25,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -310,7 +310,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Marrakech Airport cost?",
-        "a": "A private transfer from Marrakech to Marrakech Airport starts at €25 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Marrakech Airport starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Marrakech Airport take?",
@@ -342,9 +342,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -355,7 +355,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Essaouira cost?",
-        "a": "A private transfer from Marrakech to Essaouira starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Essaouira starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Essaouira take?",
@@ -387,9 +387,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -400,7 +400,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Casablanca cost?",
-        "a": "A private transfer from Marrakech to Casablanca starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Casablanca starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Casablanca take?",
@@ -432,9 +432,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -445,7 +445,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Casablanca Airport cost?",
-        "a": "A private transfer from Marrakech to Casablanca Airport starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Casablanca Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Casablanca Airport take?",
@@ -477,9 +477,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -490,7 +490,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Agadir cost?",
-        "a": "A private transfer from Marrakech to Agadir starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Agadir starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Agadir take?",
@@ -522,9 +522,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -535,7 +535,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Agadir Airport cost?",
-        "a": "A private transfer from Marrakech to Agadir Airport starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Agadir Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Agadir Airport take?",
@@ -567,9 +567,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 145,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -580,7 +580,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Taghazout cost?",
-        "a": "A private transfer from Marrakech to Taghazout starts at €145 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Taghazout starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Taghazout take?",
@@ -612,9 +612,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 69,
-    "price_van": 98,
-    "price_minibus": 149,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -625,7 +625,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Imlil cost?",
-        "a": "A private transfer from Marrakech to Imlil starts at €69 for a private comfort sedan (1–4 passengers) and €98 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Imlil starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Imlil take?",
@@ -657,9 +657,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -670,7 +670,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Marrakech to Essaouira Airport (ESU) starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Essaouira Airport (ESU) starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Essaouira Airport (ESU) take?",
@@ -702,9 +702,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -715,7 +715,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Marrakech cost?",
-        "a": "A private transfer from Essaouira to Marrakech starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Marrakech starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Marrakech take?",
@@ -747,9 +747,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -760,7 +760,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Marrakech Airport cost?",
-        "a": "A private transfer from Essaouira to Marrakech Airport starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Marrakech Airport starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Marrakech Airport take?",
@@ -792,9 +792,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -805,7 +805,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Agadir cost?",
-        "a": "A private transfer from Essaouira to Agadir starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Agadir starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Agadir take?",
@@ -837,9 +837,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -850,7 +850,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Agadir Airport cost?",
-        "a": "A private transfer from Essaouira to Agadir Airport starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Agadir Airport starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Agadir Airport take?",
@@ -882,9 +882,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "15 km",
     "duration": "20 min",
-    "price_sedan": 17,
-    "price_van": 29,
-    "price_minibus": 45,
+    "price_sedan": 20,
+    "price_van": 35,
+    "price_minibus": 55,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -895,7 +895,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Essaouira to Essaouira Airport (ESU) starts at €17 for a private comfort sedan (1–4 passengers) and €29 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Essaouira Airport (ESU) starts at €20 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Essaouira Airport (ESU) take?",
@@ -927,9 +927,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "15 km",
     "duration": "20 min",
-    "price_sedan": 17,
-    "price_van": 29,
-    "price_minibus": 45,
+    "price_sedan": 20,
+    "price_van": 35,
+    "price_minibus": 55,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -940,7 +940,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Essaouira cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Essaouira starts at €17 for a private comfort sedan (1–4 passengers) and €29 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Essaouira starts at €20 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Essaouira take?",
@@ -972,9 +972,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -985,7 +985,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Marrakech cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Marrakech take?",
@@ -1017,9 +1017,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1030,7 +1030,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Marrakech cost?",
-        "a": "A private transfer from Casablanca to Marrakech starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca and Marrakech take?",
@@ -1062,9 +1062,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1075,7 +1075,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Marrakech Airport cost?",
-        "a": "A private transfer from Casablanca to Marrakech Airport starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca and Marrakech Airport take?",
@@ -1107,9 +1107,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1120,7 +1120,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Marrakech cost?",
-        "a": "A private transfer from Casablanca Airport to Marrakech starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Marrakech take?",
@@ -1152,9 +1152,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1165,7 +1165,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Marrakech Airport cost?",
-        "a": "A private transfer from Casablanca Airport to Marrakech Airport starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Marrakech Airport take?",
@@ -1197,9 +1197,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1210,7 +1210,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Marrakech cost?",
-        "a": "A private transfer from Agadir to Marrakech starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir and Marrakech take?",
@@ -1242,9 +1242,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1255,7 +1255,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Marrakech Airport cost?",
-        "a": "A private transfer from Agadir to Marrakech Airport starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir and Marrakech Airport take?",
@@ -1287,9 +1287,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1300,7 +1300,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Essaouira cost?",
-        "a": "A private transfer from Agadir to Essaouira starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Essaouira starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir and Essaouira take?",
@@ -1332,9 +1332,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1345,7 +1345,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Marrakech cost?",
-        "a": "A private transfer from Agadir Airport to Marrakech starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir Airport and Marrakech take?",
@@ -1377,9 +1377,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 145,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1390,7 +1390,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Marrakech cost?",
-        "a": "A private transfer from Taghazout to Marrakech starts at €145 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Marrakech starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Taghazout and Marrakech take?",
@@ -1422,9 +1422,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 145,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1435,7 +1435,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Marrakech Airport cost?",
-        "a": "A private transfer from Taghazout to Marrakech Airport starts at €145 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Marrakech Airport starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Taghazout and Marrakech Airport take?",
@@ -1467,9 +1467,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 69,
-    "price_van": 98,
-    "price_minibus": 149,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -1480,7 +1480,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Marrakech cost?",
-        "a": "A private transfer from Imlil to Marrakech starts at €69 for a private comfort sedan (1–4 passengers) and €98 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Marrakech starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Imlil and Marrakech take?",
@@ -1512,9 +1512,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 69,
-    "price_van": 98,
-    "price_minibus": 149,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -1525,7 +1525,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Marrakech Airport cost?",
-        "a": "A private transfer from Imlil to Marrakech Airport starts at €69 for a private comfort sedan (1–4 passengers) and €98 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Marrakech Airport starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Imlil and Marrakech Airport take?",
@@ -1557,9 +1557,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 170,
-    "price_van": 220,
-    "price_minibus": 339,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1570,7 +1570,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Essaouira cost?",
-        "a": "A private transfer from Imlil to Essaouira starts at €170 for a private comfort sedan (1–4 passengers) and €220 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Essaouira starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Imlil and Essaouira take?",
@@ -1602,9 +1602,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "30 km",
     "duration": "45 min",
-    "price_sedan": 75,
-    "price_van": 95,
-    "price_minibus": 149,
+    "price_sedan": 55,
+    "price_van": 80,
+    "price_minibus": 125,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -1615,7 +1615,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Agafay Desert cost?",
-        "a": "A private transfer from Marrakech to Agafay Desert starts at €75 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Agafay Desert starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Agafay Desert take?",
@@ -1647,9 +1647,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "30 km",
     "duration": "45 min",
-    "price_sedan": 75,
-    "price_van": 95,
-    "price_minibus": 149,
+    "price_sedan": 55,
+    "price_van": 80,
+    "price_minibus": 125,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -1660,7 +1660,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Marrakech cost?",
-        "a": "A private transfer from Agafay Desert to Marrakech starts at €75 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Marrakech starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agafay Desert and Marrakech take?",
@@ -1692,9 +1692,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "35 km",
     "duration": "50 min",
-    "price_sedan": 75,
-    "price_van": 95,
-    "price_minibus": 149,
+    "price_sedan": 55,
+    "price_van": 80,
+    "price_minibus": 125,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -1705,7 +1705,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Marrakech Airport cost?",
-        "a": "A private transfer from Agafay Desert to Marrakech Airport starts at €75 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Marrakech Airport starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agafay Desert and Marrakech Airport take?",
@@ -1737,9 +1737,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 299,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1750,7 +1750,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Essaouira cost?",
-        "a": "A private transfer from Agafay Desert to Essaouira starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Essaouira starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agafay Desert and Essaouira take?",
@@ -1782,9 +1782,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 299,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1795,7 +1795,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Agafay Desert cost?",
-        "a": "A private transfer from Essaouira to Agafay Desert starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Agafay Desert starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Agafay Desert take?",
@@ -1827,9 +1827,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 170,
-    "price_van": 220,
-    "price_minibus": 339,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1840,7 +1840,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Imlil cost?",
-        "a": "A private transfer from Essaouira to Imlil starts at €170 for a private comfort sedan (1–4 passengers) and €220 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Imlil starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Imlil take?",
@@ -1872,9 +1872,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "175 km",
     "duration": "2h30",
-    "price_sedan": 115,
-    "price_van": 150,
-    "price_minibus": 233,
+    "price_sedan": 125,
+    "price_van": 165,
+    "price_minibus": 240,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1885,7 +1885,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Taghazout cost?",
-        "a": "A private transfer from Essaouira to Taghazout starts at €115 for a private comfort sedan (1–4 passengers) and €150 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Taghazout starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Taghazout take?",
@@ -1917,9 +1917,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "175 km",
     "duration": "2h30",
-    "price_sedan": 115,
-    "price_van": 150,
-    "price_minibus": 233,
+    "price_sedan": 125,
+    "price_van": 165,
+    "price_minibus": 240,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1930,7 +1930,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Essaouira cost?",
-        "a": "A private transfer from Taghazout to Essaouira starts at €115 for a private comfort sedan (1–4 passengers) and €150 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Essaouira starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Taghazout and Essaouira take?",
@@ -1962,9 +1962,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "20 km",
     "duration": "30 min",
-    "price_sedan": 40,
-    "price_van": 55,
-    "price_minibus": 85,
+    "price_sedan": 45,
+    "price_van": 65,
+    "price_minibus": 95,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1975,7 +1975,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Taghazout cost?",
-        "a": "A private transfer from Agadir to Taghazout starts at €40 for a private comfort sedan (1–4 passengers) and €55 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Taghazout starts at €45 for a private comfort sedan (1–4 passengers) and €65 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir and Taghazout take?",
@@ -2007,9 +2007,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "20 km",
     "duration": "30 min",
-    "price_sedan": 40,
-    "price_van": 55,
-    "price_minibus": 85,
+    "price_sedan": 45,
+    "price_van": 65,
+    "price_minibus": 95,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -2020,7 +2020,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Agadir cost?",
-        "a": "A private transfer from Taghazout to Agadir starts at €40 for a private comfort sedan (1–4 passengers) and €55 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Agadir starts at €45 for a private comfort sedan (1–4 passengers) and €65 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Taghazout and Agadir take?",
@@ -2052,9 +2052,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "45 km",
     "duration": "45 min",
-    "price_sedan": 45,
-    "price_van": 60,
-    "price_minibus": 93,
+    "price_sedan": 55,
+    "price_van": 75,
+    "price_minibus": 110,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -2065,7 +2065,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Taghazout cost?",
-        "a": "A private transfer from Agadir Airport to Taghazout starts at €45 for a private comfort sedan (1–4 passengers) and €60 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Taghazout starts at €55 for a private comfort sedan (1–4 passengers) and €75 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir Airport and Taghazout take?",
@@ -2097,9 +2097,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "45 km",
     "duration": "45 min",
-    "price_sedan": 45,
-    "price_van": 60,
-    "price_minibus": 93,
+    "price_sedan": 55,
+    "price_van": 75,
+    "price_minibus": 110,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -2110,7 +2110,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Agadir Airport cost?",
-        "a": "A private transfer from Taghazout to Agadir Airport starts at €45 for a private comfort sedan (1–4 passengers) and €60 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Agadir Airport starts at €55 for a private comfort sedan (1–4 passengers) and €75 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Taghazout and Agadir Airport take?",
@@ -2142,8 +2142,8 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "185 km",
     "duration": "2h40",
-    "price_sedan": 120,
-    "price_van": 155,
+    "price_sedan": 125,
+    "price_van": 165,
     "price_minibus": 240,
     "highway": "Highway R207 & N8",
     "highlights": [
@@ -2155,7 +2155,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Taghazout cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Taghazout starts at €120 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Taghazout starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Taghazout take?",
@@ -2187,8 +2187,8 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "185 km",
     "duration": "2h40",
-    "price_sedan": 120,
-    "price_van": 155,
+    "price_sedan": 125,
+    "price_van": 165,
     "price_minibus": 240,
     "highway": "Highway R207 & N8",
     "highlights": [
@@ -2200,7 +2200,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Taghazout to Essaouira Airport (ESU) starts at €120 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Essaouira Airport (ESU) starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Taghazout and Essaouira Airport (ESU) take?",
@@ -2232,9 +2232,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imsouane",
     "distance": "95 km",
     "duration": "1h30",
-    "price_sedan": 90,
-    "price_van": 120,
-    "price_minibus": 186,
+    "price_sedan": 95,
+    "price_van": 135,
+    "price_minibus": 195,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2245,7 +2245,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Imsouane cost?",
-        "a": "A private transfer from Essaouira to Imsouane starts at €90 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Imsouane starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Imsouane take?",
@@ -2277,9 +2277,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "95 km",
     "duration": "1h30",
-    "price_sedan": 90,
-    "price_van": 120,
-    "price_minibus": 186,
+    "price_sedan": 95,
+    "price_van": 135,
+    "price_minibus": 195,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2290,7 +2290,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imsouane to Essaouira cost?",
-        "a": "A private transfer from Imsouane to Essaouira starts at €90 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imsouane to Essaouira starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Imsouane and Essaouira take?",
@@ -2323,8 +2323,8 @@ export const routesData: RouteItem[] = [
     "distance": "25 km",
     "duration": "30 min",
     "price_sedan": 35,
-    "price_van": 45,
-    "price_minibus": 70,
+    "price_van": 55,
+    "price_minibus": 80,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2335,7 +2335,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Sidi Kaouki cost?",
-        "a": "A private transfer from Essaouira to Sidi Kaouki starts at €35 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Sidi Kaouki starts at €35 for a private comfort sedan (1–4 passengers) and €55 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Sidi Kaouki take?",
@@ -2368,8 +2368,8 @@ export const routesData: RouteItem[] = [
     "distance": "25 km",
     "duration": "30 min",
     "price_sedan": 35,
-    "price_van": 45,
-    "price_minibus": 70,
+    "price_van": 55,
+    "price_minibus": 80,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2380,7 +2380,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Sidi Kaouki to Essaouira cost?",
-        "a": "A private transfer from Sidi Kaouki to Essaouira starts at €35 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Sidi Kaouki to Essaouira starts at €35 for a private comfort sedan (1–4 passengers) and €55 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Sidi Kaouki and Essaouira take?",
@@ -2412,9 +2412,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "370 km",
     "duration": "4h",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 210,
+    "price_van": 265,
+    "price_minibus": 395,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2425,7 +2425,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Essaouira cost?",
-        "a": "A private transfer from Casablanca Airport to Essaouira starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Essaouira starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Essaouira take?",
@@ -2457,9 +2457,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "370 km",
     "duration": "4h",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 210,
+    "price_van": 265,
+    "price_minibus": 395,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2470,7 +2470,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Casablanca Airport cost?",
-        "a": "A private transfer from Essaouira to Casablanca Airport starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Casablanca Airport starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Casablanca Airport take?",
@@ -2502,9 +2502,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "380 km",
     "duration": "4h15",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 210,
+    "price_van": 265,
+    "price_minibus": 395,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2515,7 +2515,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Essaouira cost?",
-        "a": "A private transfer from Casablanca to Essaouira starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Essaouira starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca and Essaouira take?",
@@ -2547,9 +2547,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "380 km",
     "duration": "4h15",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 210,
+    "price_van": 265,
+    "price_minibus": 395,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2560,7 +2560,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Casablanca cost?",
-        "a": "A private transfer from Essaouira to Casablanca starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Casablanca starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Casablanca take?",
@@ -2592,9 +2592,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Tangier",
     "distance": "340 km",
     "duration": "3h30",
-    "price_sedan": 240,
-    "price_van": 300,
-    "price_minibus": 465,
+    "price_sedan": 265,
+    "price_van": 330,
+    "price_minibus": 495,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2605,7 +2605,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Tangier cost?",
-        "a": "A private transfer from Casablanca Airport to Tangier starts at €240 for a private comfort sedan (1–4 passengers) and €300 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Tangier starts at €265 for a private comfort sedan (1–4 passengers) and €330 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Tangier take?",
@@ -2637,9 +2637,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "340 km",
     "duration": "3h30",
-    "price_sedan": 240,
-    "price_van": 300,
-    "price_minibus": 465,
+    "price_sedan": 265,
+    "price_van": 330,
+    "price_minibus": 495,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2650,7 +2650,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Tangier to Casablanca Airport cost?",
-        "a": "A private transfer from Tangier to Casablanca Airport starts at €240 for a private comfort sedan (1–4 passengers) and €300 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Tangier to Casablanca Airport starts at €265 for a private comfort sedan (1–4 passengers) and €330 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Tangier and Casablanca Airport take?",
@@ -2682,9 +2682,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 180,
-    "price_van": 230,
-    "price_minibus": 357,
+    "price_sedan": 195,
+    "price_van": 250,
+    "price_minibus": 375,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2695,7 +2695,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Casablanca Airport cost?",
-        "a": "A private transfer from Fes to Casablanca Airport starts at €180 for a private comfort sedan (1–4 passengers) and €230 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Casablanca Airport starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Fes and Casablanca Airport take?",
@@ -2727,9 +2727,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 180,
-    "price_van": 230,
-    "price_minibus": 357,
+    "price_sedan": 195,
+    "price_van": 250,
+    "price_minibus": 375,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2740,7 +2740,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Fes cost?",
-        "a": "A private transfer from Casablanca Airport to Fes starts at €180 for a private comfort sedan (1–4 passengers) and €230 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Fes starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Fes take?",
@@ -2772,9 +2772,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ourika Valley",
     "distance": "45 km",
     "duration": "1h",
-    "price_sedan": 75,
-    "price_van": 95,
-    "price_minibus": 149,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2785,7 +2785,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Ourika Valley cost?",
-        "a": "A private transfer from Marrakech to Ourika Valley starts at €75 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Ourika Valley starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Ourika Valley take?",
@@ -2817,9 +2817,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "45 km",
     "duration": "1h",
-    "price_sedan": 75,
-    "price_van": 95,
-    "price_minibus": 149,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2830,7 +2830,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ourika Valley to Marrakech cost?",
-        "a": "A private transfer from Ourika Valley to Marrakech starts at €75 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ourika Valley to Marrakech starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Ourika Valley and Marrakech take?",
@@ -2862,9 +2862,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ourika Valley",
     "distance": "50 km",
     "duration": "1h05",
-    "price_sedan": 80,
-    "price_van": 100,
-    "price_minibus": 155,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2875,7 +2875,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Ourika Valley cost?",
-        "a": "A private transfer from Marrakech Airport to Ourika Valley starts at €80 for a private comfort sedan (1–4 passengers) and €100 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Ourika Valley starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Ourika Valley take?",
@@ -2907,9 +2907,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "50 km",
     "duration": "1h05",
-    "price_sedan": 80,
-    "price_van": 100,
-    "price_minibus": 155,
+    "price_sedan": 85,
+    "price_van": 120,
+    "price_minibus": 175,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2920,7 +2920,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ourika Valley to Marrakech Airport cost?",
-        "a": "A private transfer from Ourika Valley to Marrakech Airport starts at €80 for a private comfort sedan (1–4 passengers) and €100 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ourika Valley to Marrakech Airport starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Ourika Valley and Marrakech Airport take?",
@@ -2952,9 +2952,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Oukaimeden (ski resort)",
     "distance": "75 km",
     "duration": "1h30",
-    "price_sedan": 90,
-    "price_van": 120,
-    "price_minibus": 186,
+    "price_sedan": 95,
+    "price_van": 135,
+    "price_minibus": 195,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2965,7 +2965,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Oukaimeden (ski resort) cost?",
-        "a": "A private transfer from Marrakech to Oukaimeden (ski resort) starts at €90 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Oukaimeden (ski resort) starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Oukaimeden (ski resort) take?",
@@ -2997,9 +2997,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "75 km",
     "duration": "1h30",
-    "price_sedan": 90,
-    "price_van": 120,
-    "price_minibus": 186,
+    "price_sedan": 95,
+    "price_van": 135,
+    "price_minibus": 195,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3010,7 +3010,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Oukaimeden (ski resort) to Marrakech cost?",
-        "a": "A private transfer from Oukaimeden (ski resort) to Marrakech starts at €90 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Oukaimeden (ski resort) to Marrakech starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Oukaimeden (ski resort) and Marrakech take?",
@@ -3042,9 +3042,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Setti Fatma",
     "distance": "70 km",
     "duration": "1h15",
-    "price_sedan": 70,
-    "price_van": 95,
-    "price_minibus": 147,
+    "price_sedan": 80,
+    "price_van": 115,
+    "price_minibus": 165,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3055,7 +3055,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Setti Fatma cost?",
-        "a": "A private transfer from Marrakech to Setti Fatma starts at €70 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Setti Fatma starts at €80 for a private comfort sedan (1–4 passengers) and €115 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Setti Fatma take?",
@@ -3087,9 +3087,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "70 km",
     "duration": "1h15",
-    "price_sedan": 70,
-    "price_van": 95,
-    "price_minibus": 147,
+    "price_sedan": 80,
+    "price_van": 115,
+    "price_minibus": 165,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3100,7 +3100,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Setti Fatma to Marrakech cost?",
-        "a": "A private transfer from Setti Fatma to Marrakech starts at €70 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Setti Fatma to Marrakech starts at €80 for a private comfort sedan (1–4 passengers) and €115 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Setti Fatma and Marrakech take?",
@@ -3132,9 +3132,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Chefchaouen",
     "distance": "115 km",
     "duration": "2h",
-    "price_sedan": 109,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 125,
+    "price_van": 165,
+    "price_minibus": 250,
     "highway": "National Route N2",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3145,7 +3145,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Tangier to Chefchaouen cost?",
-        "a": "A private transfer from Tangier to Chefchaouen starts at €109 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Tangier to Chefchaouen starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Tangier and Chefchaouen take?",
@@ -3177,9 +3177,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Tangier",
     "distance": "115 km",
     "duration": "2h",
-    "price_sedan": 109,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 125,
+    "price_van": 165,
+    "price_minibus": 250,
     "highway": "National Route N2",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3190,7 +3190,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Chefchaouen to Tangier cost?",
-        "a": "A private transfer from Chefchaouen to Tangier starts at €109 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Chefchaouen to Tangier starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Chefchaouen and Tangier take?",
@@ -3222,9 +3222,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "200 km",
     "duration": "3h30",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 145,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "National Route N13 & N2 (Rif Mountains)",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3235,7 +3235,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Chefchaouen to Fes cost?",
-        "a": "A private transfer from Chefchaouen to Fes starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Chefchaouen to Fes starts at €145 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Chefchaouen and Fes take?",
@@ -3267,9 +3267,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Chefchaouen",
     "distance": "200 km",
     "duration": "3h30",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 145,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "National Route N13 & N2 (Rif Mountains)",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3280,7 +3280,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Chefchaouen cost?",
-        "a": "A private transfer from Fes to Chefchaouen starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Chefchaouen starts at €145 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Fes and Chefchaouen take?",
@@ -3312,9 +3312,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "340 km",
     "duration": "5h",
-    "price_sedan": 220,
-    "price_van": 275,
-    "price_minibus": 426,
+    "price_sedan": 235,
+    "price_van": 295,
+    "price_minibus": 440,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3325,7 +3325,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Chefchaouen to Casablanca cost?",
-        "a": "A private transfer from Chefchaouen to Casablanca starts at €220 for a private comfort sedan (1–4 passengers) and €275 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Chefchaouen to Casablanca starts at €235 for a private comfort sedan (1–4 passengers) and €295 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Chefchaouen and Casablanca take?",
@@ -3357,9 +3357,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Chefchaouen",
     "distance": "340 km",
     "duration": "5h",
-    "price_sedan": 220,
-    "price_van": 275,
-    "price_minibus": 426,
+    "price_sedan": 235,
+    "price_van": 295,
+    "price_minibus": 440,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3370,7 +3370,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Chefchaouen cost?",
-        "a": "A private transfer from Casablanca to Chefchaouen starts at €220 for a private comfort sedan (1–4 passengers) and €275 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Chefchaouen starts at €235 for a private comfort sedan (1–4 passengers) and €295 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca and Chefchaouen take?",
@@ -3402,9 +3402,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "530 km",
     "duration": "6h30",
-    "price_sedan": 259,
-    "price_van": 320,
-    "price_minibus": 496,
+    "price_sedan": 295,
+    "price_van": 370,
+    "price_minibus": 540,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3415,7 +3415,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Fes cost?",
-        "a": "A private transfer from Marrakech to Fes starts at €259 for a private comfort sedan (1–4 passengers) and €320 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Fes starts at €295 for a private comfort sedan (1–4 passengers) and €370 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Fes take?",
@@ -3447,9 +3447,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "530 km",
     "duration": "6h30",
-    "price_sedan": 259,
-    "price_van": 320,
-    "price_minibus": 496,
+    "price_sedan": 295,
+    "price_van": 370,
+    "price_minibus": 540,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3460,7 +3460,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Marrakech cost?",
-        "a": "A private transfer from Fes to Marrakech starts at €259 for a private comfort sedan (1–4 passengers) and €320 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Marrakech starts at €295 for a private comfort sedan (1–4 passengers) and €370 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Fes and Marrakech take?",
@@ -3492,9 +3492,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 180,
-    "price_van": 230,
-    "price_minibus": 357,
+    "price_sedan": 195,
+    "price_van": 250,
+    "price_minibus": 375,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3505,7 +3505,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Casablanca cost?",
-        "a": "A private transfer from Fes to Casablanca starts at €180 for a private comfort sedan (1–4 passengers) and €230 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Casablanca starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Fes and Casablanca take?",
@@ -3537,9 +3537,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 180,
-    "price_van": 230,
-    "price_minibus": 357,
+    "price_sedan": 195,
+    "price_van": 250,
+    "price_minibus": 375,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3550,7 +3550,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Fes cost?",
-        "a": "A private transfer from Casablanca to Fes starts at €180 for a private comfort sedan (1–4 passengers) and €230 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Fes starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca and Fes take?",
@@ -3582,9 +3582,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "90 km",
     "duration": "1h15",
-    "price_sedan": 65,
-    "price_van": 90,
-    "price_minibus": 140,
+    "price_sedan": 90,
+    "price_van": 130,
+    "price_minibus": 195,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3595,7 +3595,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Rabat cost?",
-        "a": "A private transfer from Casablanca to Rabat starts at €65 for a private comfort sedan (1–4 passengers) and €90 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Rabat starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca and Rabat take?",
@@ -3627,9 +3627,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "90 km",
     "duration": "1h15",
-    "price_sedan": 65,
-    "price_van": 90,
-    "price_minibus": 140,
+    "price_sedan": 90,
+    "price_van": 130,
+    "price_minibus": 195,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3640,7 +3640,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Casablanca cost?",
-        "a": "A private transfer from Rabat to Casablanca starts at €65 for a private comfort sedan (1–4 passengers) and €90 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Casablanca starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Rabat and Casablanca take?",
@@ -3672,9 +3672,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "90 km",
     "duration": "1h",
-    "price_sedan": 75,
-    "price_van": 100,
-    "price_minibus": 155,
+    "price_sedan": 90,
+    "price_van": 130,
+    "price_minibus": 195,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3685,7 +3685,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Rabat cost?",
-        "a": "A private transfer from Casablanca Airport to Rabat starts at €75 for a private comfort sedan (1–4 passengers) and €100 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Rabat starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Rabat take?",
@@ -3717,9 +3717,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "90 km",
     "duration": "1h",
-    "price_sedan": 75,
-    "price_van": 100,
-    "price_minibus": 155,
+    "price_sedan": 90,
+    "price_van": 130,
+    "price_minibus": 195,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3730,7 +3730,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Casablanca Airport cost?",
-        "a": "A private transfer from Rabat to Casablanca Airport starts at €75 for a private comfort sedan (1–4 passengers) and €100 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Casablanca Airport starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Rabat and Casablanca Airport take?",
@@ -3762,9 +3762,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "450 km",
     "duration": "5h30",
-    "price_sedan": 240,
-    "price_van": 300,
-    "price_minibus": 465,
+    "price_sedan": 260,
+    "price_van": 325,
+    "price_minibus": 480,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -3775,7 +3775,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Rabat cost?",
-        "a": "A private transfer from Essaouira to Rabat starts at €240 for a private comfort sedan (1–4 passengers) and €300 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Rabat starts at €260 for a private comfort sedan (1–4 passengers) and €325 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Rabat take?",
@@ -3807,9 +3807,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "450 km",
     "duration": "5h30",
-    "price_sedan": 240,
-    "price_van": 300,
-    "price_minibus": 465,
+    "price_sedan": 260,
+    "price_van": 325,
+    "price_minibus": 480,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -3820,7 +3820,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Essaouira cost?",
-        "a": "A private transfer from Rabat to Essaouira starts at €240 for a private comfort sedan (1–4 passengers) and €300 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Essaouira starts at €260 for a private comfort sedan (1–4 passengers) and €325 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Rabat and Essaouira take?",
@@ -3852,9 +3852,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 215,
+    "price_van": 270,
+    "price_minibus": 395,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3865,7 +3865,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Rabat cost?",
-        "a": "A private transfer from Marrakech to Rabat starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Rabat starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Rabat take?",
@@ -3897,9 +3897,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 215,
+    "price_van": 270,
+    "price_minibus": 395,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3910,7 +3910,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Marrakech cost?",
-        "a": "A private transfer from Rabat to Marrakech starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Marrakech starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Rabat and Marrakech take?",
@@ -3942,9 +3942,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 215,
+    "price_van": 270,
+    "price_minibus": 395,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3955,7 +3955,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Rabat cost?",
-        "a": "A private transfer from Marrakech Airport to Rabat starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Rabat starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Rabat take?",
@@ -3987,9 +3987,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 190,
-    "price_van": 240,
-    "price_minibus": 372,
+    "price_sedan": 215,
+    "price_van": 270,
+    "price_minibus": 395,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4000,7 +4000,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Marrakech Airport cost?",
-        "a": "A private transfer from Rabat to Marrakech Airport starts at €190 for a private comfort sedan (1–4 passengers) and €240 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Marrakech Airport starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Rabat and Marrakech Airport take?",
@@ -4032,9 +4032,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ouarzazate",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 129,
-    "price_van": 165,
-    "price_minibus": 256,
+    "price_sedan": 155,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "National Route N9 (Tizi n'Tichka Pass)",
     "highlights": [
       "Crossing the legendary Tizi n'Tichka mountain pass at 2,260 meters elevation",
@@ -4045,7 +4045,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Ouarzazate cost?",
-        "a": "A private transfer from Marrakech to Ouarzazate starts at €129 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Ouarzazate starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Ouarzazate take?",
@@ -4077,9 +4077,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 129,
-    "price_van": 165,
-    "price_minibus": 256,
+    "price_sedan": 155,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "National Route N9 (Tizi n'Tichka Pass)",
     "highlights": [
       "Crossing the legendary Tizi n'Tichka mountain pass at 2,260 meters elevation",
@@ -4090,7 +4090,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ouarzazate to Marrakech cost?",
-        "a": "A private transfer from Ouarzazate to Marrakech starts at €129 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ouarzazate to Marrakech starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Ouarzazate and Marrakech take?",
@@ -4122,9 +4122,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ait Ben Haddou",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 135,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 155,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4135,7 +4135,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Ait Ben Haddou cost?",
-        "a": "A private transfer from Marrakech to Ait Ben Haddou starts at €135 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Ait Ben Haddou starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Ait Ben Haddou take?",
@@ -4167,9 +4167,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 135,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 155,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4180,7 +4180,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ait Ben Haddou to Marrakech cost?",
-        "a": "A private transfer from Ait Ben Haddou to Marrakech starts at €135 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ait Ben Haddou to Marrakech starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Ait Ben Haddou and Marrakech take?",
@@ -4212,9 +4212,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ait Ben Haddou",
     "distance": "205 km",
     "duration": "4h",
-    "price_sedan": 135,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 155,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4225,7 +4225,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Ait Ben Haddou cost?",
-        "a": "A private transfer from Marrakech Airport to Ait Ben Haddou starts at €135 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Ait Ben Haddou starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Ait Ben Haddou take?",
@@ -4257,9 +4257,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "205 km",
     "duration": "4h",
-    "price_sedan": 135,
-    "price_van": 170,
-    "price_minibus": 265,
+    "price_sedan": 155,
+    "price_van": 195,
+    "price_minibus": 295,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4270,7 +4270,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ait Ben Haddou to Marrakech Airport cost?",
-        "a": "A private transfer from Ait Ben Haddou to Marrakech Airport starts at €135 for a private comfort sedan (1–4 passengers) and €170 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ait Ben Haddou to Marrakech Airport starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Ait Ben Haddou and Marrakech Airport take?",
@@ -4302,9 +4302,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Oualidia",
     "distance": "200 km",
     "duration": "3h",
-    "price_sedan": 130,
-    "price_van": 190,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 195,
+    "price_minibus": 290,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4315,7 +4315,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Oualidia cost?",
-        "a": "A private transfer from Marrakech to Oualidia starts at €130 for a private comfort sedan (1–4 passengers) and €190 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Oualidia starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Oualidia take?",
@@ -4347,9 +4347,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "200 km",
     "duration": "3h",
-    "price_sedan": 130,
-    "price_van": 190,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 195,
+    "price_minibus": 290,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4360,7 +4360,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Oualidia to Marrakech cost?",
-        "a": "A private transfer from Oualidia to Marrakech starts at €130 for a private comfort sedan (1–4 passengers) and €190 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Oualidia to Marrakech starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Oualidia and Marrakech take?",
@@ -4392,9 +4392,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Oualidia",
     "distance": "190 km",
     "duration": "2h30",
-    "price_sedan": 140,
-    "price_van": 200,
-    "price_minibus": 310,
+    "price_sedan": 150,
+    "price_van": 195,
+    "price_minibus": 290,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4405,7 +4405,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Oualidia cost?",
-        "a": "A private transfer from Casablanca Airport to Oualidia starts at €140 for a private comfort sedan (1–4 passengers) and €200 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Oualidia starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Oualidia take?",
@@ -4437,9 +4437,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "190 km",
     "duration": "2h30",
-    "price_sedan": 140,
-    "price_van": 200,
-    "price_minibus": 310,
+    "price_sedan": 150,
+    "price_van": 195,
+    "price_minibus": 290,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4450,7 +4450,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Oualidia to Casablanca Airport cost?",
-        "a": "A private transfer from Oualidia to Casablanca Airport starts at €140 for a private comfort sedan (1–4 passengers) and €200 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Oualidia to Casablanca Airport starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Oualidia and Casablanca Airport take?",
@@ -4482,9 +4482,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imsouane",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 160,
-    "price_van": 210,
-    "price_minibus": 325,
+    "price_sedan": 175,
+    "price_van": 225,
+    "price_minibus": 320,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4495,7 +4495,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Imsouane cost?",
-        "a": "A private transfer from Marrakech to Imsouane starts at €160 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Imsouane starts at €175 for a private comfort sedan (1–4 passengers) and €225 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Imsouane take?",
@@ -4527,9 +4527,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 160,
-    "price_van": 210,
-    "price_minibus": 325,
+    "price_sedan": 175,
+    "price_van": 225,
+    "price_minibus": 320,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4540,7 +4540,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imsouane to Marrakech cost?",
-        "a": "A private transfer from Imsouane to Marrakech starts at €160 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imsouane to Marrakech starts at €175 for a private comfort sedan (1–4 passengers) and €225 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Imsouane and Marrakech take?",
@@ -4572,9 +4572,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "25 km",
     "duration": "30 min",
-    "price_sedan": 25,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -4585,7 +4585,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Agadir cost?",
-        "a": "A private transfer from Agadir Airport to Agadir starts at €25 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Agadir starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir Airport and Agadir take?",
@@ -4617,9 +4617,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "25 km",
     "duration": "30 min",
-    "price_sedan": 25,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -4630,7 +4630,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Agadir Airport cost?",
-        "a": "A private transfer from Agadir to Agadir Airport starts at €25 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Agadir Airport starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir and Agadir Airport take?",
@@ -4662,9 +4662,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Moulay Bouzerktoune",
     "distance": "190 km",
     "duration": "2h45",
-    "price_sedan": 100,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 125,
+    "price_van": 175,
+    "price_minibus": 260,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4675,7 +4675,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Moulay Bouzerktoune cost?",
-        "a": "A private transfer from Marrakech to Moulay Bouzerktoune starts at €100 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Moulay Bouzerktoune starts at €125 for a private comfort sedan (1–4 passengers) and €175 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Moulay Bouzerktoune take?",
@@ -4707,9 +4707,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "190 km",
     "duration": "2h45",
-    "price_sedan": 100,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 125,
+    "price_van": 175,
+    "price_minibus": 260,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4720,7 +4720,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Moulay Bouzerktoune to Marrakech cost?",
-        "a": "A private transfer from Moulay Bouzerktoune to Marrakech starts at €100 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Moulay Bouzerktoune to Marrakech starts at €125 for a private comfort sedan (1–4 passengers) and €175 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Moulay Bouzerktoune and Marrakech take?",
@@ -4752,9 +4752,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "220 km",
     "duration": "3h15",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 299,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -4765,7 +4765,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ourika Valley to Essaouira cost?",
-        "a": "A private transfer from Ourika Valley to Essaouira starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ourika Valley to Essaouira starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Ourika Valley and Essaouira take?",
@@ -4797,9 +4797,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ourika Valley",
     "distance": "220 km",
     "duration": "3h15",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 299,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -4810,7 +4810,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Ourika Valley cost?",
-        "a": "A private transfer from Essaouira to Ourika Valley starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Ourika Valley starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira and Ourika Valley take?",
@@ -4842,9 +4842,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "10 km",
     "duration": "20 min",
-    "price_sedan": 25,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4855,7 +4855,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Marrakech cost?",
-        "a": "A private transfer from Marrakech to Marrakech starts at €25 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Marrakech starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Marrakech take?",
@@ -4887,9 +4887,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Palmeraie (Marrakech)",
     "distance": "10 km",
     "duration": "20 min",
-    "price_sedan": 25,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4900,7 +4900,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Palmeraie (Marrakech) cost?",
-        "a": "A private transfer from Marrakech to Palmeraie (Marrakech) starts at €25 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Palmeraie (Marrakech) starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech and Palmeraie (Marrakech) take?",
@@ -4932,9 +4932,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "10 km",
     "duration": "20 min",
-    "price_sedan": 25,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4945,7 +4945,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Palmeraie (Marrakech) to Marrakech cost?",
-        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech starts at €25 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Palmeraie (Marrakech) and Marrakech take?",
@@ -4977,9 +4977,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -4990,7 +4990,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Marrakech Airport to Essaouira Airport (ESU) starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Essaouira Airport (ESU) starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Essaouira Airport (ESU) take?",
@@ -5022,9 +5022,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 85,
-    "price_van": 130,
-    "price_minibus": 199,
+    "price_sedan": 95,
+    "price_van": 145,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5035,7 +5035,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Marrakech Airport cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech Airport starts at €85 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech Airport starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Marrakech Airport take?",
@@ -5067,9 +5067,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5080,7 +5080,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Essaouira cost?",
-        "a": "A private transfer from Agadir Airport to Essaouira starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Essaouira starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir Airport and Essaouira take?",
@@ -5112,9 +5112,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5125,7 +5125,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Agadir Airport to Essaouira Airport (ESU) starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Essaouira Airport (ESU) starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir Airport and Essaouira Airport (ESU) take?",
@@ -5157,9 +5157,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5170,7 +5170,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Agadir cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Agadir starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Agadir starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Agadir take?",
@@ -5202,9 +5202,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5215,7 +5215,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Agadir Airport cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Agadir Airport starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Agadir Airport starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Agadir Airport take?",
@@ -5247,9 +5247,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 105,
-    "price_van": 138,
-    "price_minibus": 215,
+    "price_sedan": 115,
+    "price_van": 155,
+    "price_minibus": 230,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5260,7 +5260,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Agadir to Essaouira Airport (ESU) starts at €105 for a private comfort sedan (1–4 passengers) and €138 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Essaouira Airport (ESU) starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir and Essaouira Airport (ESU) take?",
@@ -5292,9 +5292,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -5305,7 +5305,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Agadir Airport cost?",
-        "a": "A private transfer from Marrakech Airport to Agadir Airport starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Agadir Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Agadir Airport take?",
@@ -5337,9 +5337,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 125,
-    "price_van": 145,
-    "price_minibus": 225,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -5350,7 +5350,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Marrakech Airport cost?",
-        "a": "A private transfer from Agadir Airport to Marrakech Airport starts at €125 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agadir Airport and Marrakech Airport take?",
@@ -5382,9 +5382,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 145,
-    "price_van": 165,
-    "price_minibus": 255,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -5395,7 +5395,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Casablanca Airport cost?",
-        "a": "A private transfer from Marrakech Airport to Casablanca Airport starts at €145 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Casablanca Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Casablanca Airport take?",
@@ -5427,9 +5427,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "35 km",
     "duration": "50 min",
-    "price_sedan": 75,
-    "price_van": 95,
-    "price_minibus": 149,
+    "price_sedan": 55,
+    "price_van": 80,
+    "price_minibus": 125,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -5440,7 +5440,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Agafay Desert cost?",
-        "a": "A private transfer from Marrakech Airport to Agafay Desert starts at €75 for a private comfort sedan (1–4 passengers) and €95 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Agafay Desert starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Agafay Desert take?",
@@ -5472,9 +5472,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 299,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5485,7 +5485,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Agafay Desert cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Agafay Desert starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Agafay Desert starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Agafay Desert take?",
@@ -5517,9 +5517,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 299,
+    "price_sedan": 165,
+    "price_van": 210,
+    "price_minibus": 295,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5530,7 +5530,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Agafay Desert to Essaouira Airport (ESU) starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Essaouira Airport (ESU) starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Agafay Desert and Essaouira Airport (ESU) take?",
@@ -5562,9 +5562,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 170,
-    "price_van": 220,
-    "price_minibus": 339,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5575,7 +5575,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Imlil cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Imlil starts at €170 for a private comfort sedan (1–4 passengers) and €220 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Imlil starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Imlil take?",
@@ -5607,9 +5607,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 170,
-    "price_van": 220,
-    "price_minibus": 339,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 330,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5620,7 +5620,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Imlil to Essaouira Airport (ESU) starts at €170 for a private comfort sedan (1–4 passengers) and €220 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Essaouira Airport (ESU) starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Imlil and Essaouira Airport (ESU) take?",
@@ -5652,9 +5652,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Palmeraie (Marrakech)",
     "distance": "12 km",
     "duration": "25 min",
-    "price_sedan": 35,
-    "price_van": 40,
-    "price_minibus": 59,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -5665,7 +5665,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Palmeraie (Marrakech) cost?",
-        "a": "A private transfer from Marrakech Airport to Palmeraie (Marrakech) starts at €35 for a private comfort sedan (1–4 passengers) and €40 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Palmeraie (Marrakech) starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Palmeraie (Marrakech) take?",
@@ -5697,9 +5697,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "12 km",
     "duration": "25 min",
-    "price_sedan": 35,
-    "price_van": 40,
-    "price_minibus": 59,
+    "price_sedan": 30,
+    "price_van": 45,
+    "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -5710,7 +5710,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Palmeraie (Marrakech) to Marrakech Airport cost?",
-        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech Airport starts at €35 for a private comfort sedan (1–4 passengers) and €40 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech Airport starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
       },
       {
         "q": "How long does the drive between Palmeraie (Marrakech) and Marrakech Airport take?",
