@@ -332,7 +332,7 @@
       `📱 *Phone:* ${encodeURIComponent(phone)}%0A` +
       (notes ? `📝 *Notes:* ${encodeURIComponent(notes)}%0A` : '') +
       `%0ACan you please confirm availability and lock in this rate?`;
-    const waUrl = `https://wa.me/212653506441?text=${waText}`;
+    const waUrl = `https://wa.me/212760426269?text=${waText}`;
 
     try {
       await fetch('send-quote.php', {

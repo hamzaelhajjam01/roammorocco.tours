@@ -154,7 +154,7 @@
     }
 
     const waMsg = getContextWhatsAppMessage();
-    const waUrl = `https://wa.me/212653506441?text=${encodeURIComponent(waMsg)}`;
+    const waUrl = `https://wa.me/212760426269?text=${encodeURIComponent(waMsg)}`;
 
     const topLatest = document.querySelector(".top .latest");
     if (topLatest) {

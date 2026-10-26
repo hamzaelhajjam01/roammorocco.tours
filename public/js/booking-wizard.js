@@ -8,7 +8,7 @@
   'use strict';
 
   // WhatsApp Phone Number (International Format)
-  const RM_PHONE = '212653506441';
+  const RM_PHONE = '212760426269';
 
   // ── 1. TRANSFER & INTERCITY PRICING TABLE (PER VEHICLE, ALL-INCLUSIVE) ──
   const WIZARD_RATES = {

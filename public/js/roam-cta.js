@@ -7,7 +7,7 @@
  */
 
 (function () {
-  const WHATSAPP_NUMBER = "212653506441";
+  const WHATSAPP_NUMBER = "212760426269";
 
   const PRESETS = {
     sahara: {
