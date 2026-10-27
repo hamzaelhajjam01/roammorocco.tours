@@ -72,26 +72,114 @@ const ogLocale = currentLang === 'fr' ? 'fr_FR' :
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-G2EBSDKVZM');
 
-    // Auto-track WhatsApp, Contact & Booking Conversions
-    document.addEventListener('DOMContentLoaded', function() {
+    // Global WhatsApp Click Telemetry & Email Alert Dispatcher
+    (function() {
+      var lastTrackedUrl = '';
+      var lastTrackedTime = 0;
+
+      function parseWaMessage(url) {
+        try {
+          var u = new URL(url, window.location.origin);
+          var text = u.searchParams.get('text');
+          if (text) return decodeURIComponent(text);
+        } catch (e) {
+          var match = url.match(/[?&]text=([^&#]+)/);
+          if (match && match[1]) {
+            try { return decodeURIComponent(match[1].replace(/\+/g, ' ')); } catch (err) { return match[1]; }
+          }
+        }
+        return '';
+      }
+
+      window.notifyWhatsAppClick = function(waUrl, buttonLabel) {
+        if (!waUrl || typeof waUrl !== 'string') return;
+        if (!waUrl.includes('wa.me') && !waUrl.includes('whatsapp.com')) return;
+
+        var now = Date.now();
+        // Debounce 2.5s for same URL or click
+        if (waUrl === lastTrackedUrl && (now - lastTrackedTime) < 2500) {
+          return;
+        }
+        lastTrackedUrl = waUrl;
+        lastTrackedTime = now;
+
+        var payload = {
+          page: window.location.href,
+          title: document.title || 'Roam Morocco Tours',
+          button: (buttonLabel || 'WhatsApp CTA').trim().substring(0, 100),
+          waUrl: waUrl,
+          message: parseWaMessage(waUrl),
+          referrer: document.referrer || 'Direct',
+          device: window.innerWidth <= 768 ? 'Mobile' : (window.innerWidth <= 1024 ? 'Tablet' : 'Desktop'),
+          lang: document.documentElement.lang || 'en'
+        };
+
+        var json = JSON.stringify(payload);
+        var endpoint = '/track-whatsapp.php';
+
+        try {
+          if (navigator.sendBeacon) {
+            var blob = new Blob([json], { type: 'application/json' });
+            var sent = navigator.sendBeacon(endpoint, blob);
+            if (!sent && window.fetch) {
+              fetch(endpoint, { method: 'POST', body: json, headers: { 'Content-Type': 'application/json' }, keepalive: true }).catch(function(){});
+            }
+          } else if (window.fetch) {
+            fetch(endpoint, { method: 'POST', body: json, headers: { 'Content-Type': 'application/json' }, keepalive: true }).catch(function(){});
+          }
+        } catch (err) {
+          // Silent catch to ensure user experience is never interrupted
+        }
+      };
+
+      // Wrap window.open to catch programmatic redirects from wizards & interactive builders
+      var origOpen = window.open;
+      window.open = function(url, target, features) {
+        if (typeof url === 'string' && (url.includes('wa.me') || url.includes('whatsapp.com'))) {
+          window.notifyWhatsAppClick(url, 'Interactive Form / Wizard');
+        }
+        return origOpen ? origOpen.apply(window, arguments) : null;
+      };
+
+      // Global capture-phase click listener for all <a> tags and elements
       document.addEventListener('click', function(e) {
         var a = e.target.closest('a');
-        if (!a || !a.href) return;
-        if (a.href.includes('wa.me')) {
-          gtag('event', 'contact_whatsapp', { 'event_category': 'conversion', 'event_label': a.textContent.trim() || 'WhatsApp' });
-        } else if (a.href.startsWith('mailto:') || a.href.startsWith('tel:')) {
-          gtag('event', 'contact_direct', { 'event_category': 'engagement', 'event_label': a.href });
-        } else if (a.href.includes('airalo.com') || a.href.includes('discovercars.com') || a.href.includes('booking.com') || a.href.includes('trip.com')) {
-          gtag('event', 'affiliate_click', { 'event_category': 'outbound', 'event_label': a.href });
+        if (a && a.href && (a.href.includes('wa.me') || a.href.includes('whatsapp.com'))) {
+          var label = (a.innerText || a.getAttribute('aria-label') || a.getAttribute('title') || 'WhatsApp Link').trim();
+          window.notifyWhatsAppClick(a.href, label);
+          if (typeof gtag === 'function') {
+            gtag('event', 'contact_whatsapp', { 'event_category': 'conversion', 'event_label': label });
+          }
+          return;
+        }
+
+        // Also check buttons or elements with onclick or data-wa
+        var btn = e.target.closest('button, [data-wa], .c-wa-trigger-btn, .smt-btn');
+        if (btn) {
+          var rawWa = btn.getAttribute('data-wa-url') || btn.getAttribute('data-url');
+          if (rawWa && (rawWa.includes('wa.me') || rawWa.includes('whatsapp.com'))) {
+            var btnLabel = (btn.innerText || 'WhatsApp Button').trim();
+            window.notifyWhatsAppClick(rawWa, btnLabel);
+          }
+        }
+
+        if (a && a.href) {
+          if (a.href.startsWith('mailto:') || a.href.startsWith('tel:')) {
+            if (typeof gtag === 'function') gtag('event', 'contact_direct', { 'event_category': 'engagement', 'event_label': a.href });
+          } else if (a.href.includes('airalo.com') || a.href.includes('discovercars.com') || a.href.includes('booking.com') || a.href.includes('trip.com')) {
+            if (typeof gtag === 'function') gtag('event', 'affiliate_click', { 'event_category': 'outbound', 'event_label': a.href });
+          }
+        }
+      }, true);
+
+      document.addEventListener('submit', function(e) {
+        if (typeof gtag === 'function') {
+          gtag('event', 'generatelead', { 'event_category': 'conversion', 'event_label': e.target.id || 'booking_form' });
         }
       });
-      document.addEventListener('submit', function(e) {
-        gtag('event', 'generatelead', { 'event_category': 'conversion', 'event_label': e.target.id || 'booking_form' });
-      });
-    });
+    })();
   </script>
 
   <meta charset="utf-8">
