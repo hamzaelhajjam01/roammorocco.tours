@@ -68,10 +68,7 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
-    "@type": [
-      "TouristTrip",
-      "Product"
-    ],
+    "@type": "TouristTrip",
     "@id": "https://roammorocco.tours/tour-premium-explorer.html#trip",
     "name": "3-Day Premium Explorer: Marrakech, Essaouira, Ourika & Agafay",
     "description": "3 iconic day-trips from Marrakech with zero hotel changes: Atlantic coast in Essaouira, Atlas Mountains trekking in Ourika Valley, and luxury sunset dinner in Agafay Desert.",
@@ -101,42 +98,7 @@ const schema = [
       "price": "335.00",
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-01-01",
-      "priceValidUntil": "2027-12-31",
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "MA",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 2,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/FreeReturn"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "EUR"
-        },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "MA"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 0,
-            "maxValue": 0,
-            "unitCode": "DAY"
-          },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 0,
-            "maxValue": 0,
-            "unitCode": "DAY"
-          }
-        }
-      }
+      "priceValidUntil": "2027-12-31"
     },
     "aggregateRating": {
       "@type": "AggregateRating",

@@ -301,75 +301,7 @@ const ogLocale = currentLang === 'fr' ? 'fr_FR' :
           "Luxury Riads Morocco",
           "Morocco Travel Logistics",
           "ASTA Accredited Travel"
-        ]
-      },
-      {
-        "@type": ["TouristTrip", "Product"],
-        "@id": "https://roammorocco.tours/#privatetours",
-        "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
-        "description": "Bespoke private tours across Morocco, including luxury Sahara desert glamping in Merzouga, High Atlas Mountains trekking, and Imperial Cities heritage journeys.",
-        "provider": {
-          "@id": "https://roammorocco.tours/#agency"
-        },
-        "brand": {
-          "@id": "https://roammorocco.tours/#agency"
-        },
-        "touristType": [
-          "Luxury Traveler",
-          "Adventure Traveler",
-          "Cultural Traveler",
-          "Family Traveler"
         ],
-        "image": [
-          "https://roammorocco.tours/images/hero-desert.jpg",
-          "https://roammorocco.tours/img/wall-camp.jpg",
-          "https://roammorocco.tours/img/safari-sahara-fjlSCoiv_qM-unsplash.jpg"
-        ],
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "195",
-          "highPrice": "2850",
-          "offerCount": "24",
-          "priceValidUntil": "2027-12-31",
-          "availability": "https://schema.org/InStock",
-          "url": "https://roammorocco.tours/#services",
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "applicableCountry": "MA",
-            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-            "merchantReturnDays": 2,
-            "returnMethod": "https://schema.org/ReturnByMail",
-            "returnFees": "https://schema.org/FreeReturn"
-          },
-          "shippingDetails": {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              "value": "0",
-              "currency": "USD"
-            },
-            "shippingDestination": {
-              "@type": "DefinedRegion",
-              "addressCountry": "MA"
-            },
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              "handlingTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 0,
-                "unitCode": "DAY"
-              },
-              "transitTime": {
-                "@type": "QuantitativeValue",
-                "minValue": 0,
-                "maxValue": 0,
-                "unitCode": "DAY"
-              }
-            }
-          }
-        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5.0",
@@ -455,6 +387,39 @@ const ogLocale = currentLang === 'fr' ? 'fr_FR' :
             }
           }
         ]
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://roammorocco.tours/#privatetours",
+        "name": "Roam Morocco Private Tours & Sahara Desert Expeditions",
+        "description": "Bespoke private tours across Morocco, including luxury Sahara desert glamping in Merzouga, High Atlas Mountains trekking, and Imperial Cities heritage journeys.",
+        "provider": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "brand": {
+          "@id": "https://roammorocco.tours/#agency"
+        },
+        "touristType": [
+          "Luxury Traveler",
+          "Adventure Traveler",
+          "Cultural Traveler",
+          "Family Traveler"
+        ],
+        "image": [
+          "https://roammorocco.tours/images/hero-desert.jpg",
+          "https://roammorocco.tours/img/wall-camp.jpg",
+          "https://roammorocco.tours/img/safari-sahara-fjlSCoiv_qM-unsplash.jpg"
+        ],
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "195",
+          "highPrice": "2850",
+          "offerCount": "24",
+          "priceValidUntil": "2027-12-31",
+          "availability": "https://schema.org/InStock",
+          "url": "https://roammorocco.tours/#services"
+        }
       },
       {
         "@type": "FAQPage",

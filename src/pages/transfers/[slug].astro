@@ -57,15 +57,13 @@ const schema = [
   },
   {
     "@context": "https://schema.org",
-    "@type": ["Service", "Product"],
+    "@type": "Service",
     "name": `Private Transfer from ${route.from} to ${route.to}`,
     "description": route.seoDescription,
     "image": [
       "https://roammorocco.tours/images/fleet-mercedes-v-class.webp",
       "https://roammorocco.tours/images/fleet-toyota-prado-4x4.webp"
     ],
-    "sku": `RM-TR-${route.id}`,
-    "mpn": `RM-TR-${route.id}`,
     "provider": {
       "@type": "TravelAgency",
       "name": "Roam Morocco Tours",
@@ -83,50 +81,7 @@ const schema = [
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-01-01",
       "priceValidUntil": "2027-12-31",
-      "url": canonical,
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "MA",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 2,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/FreeReturn"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "EUR"
-        },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "MA"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 0,
-            "maxValue": 0,
-            "unitCode": "DAY"
-          },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 0,
-            "maxValue": 0,
-            "unitCode": "DAY"
-          }
-        }
-      }
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "985",
-      "reviewCount": "985"
+      "url": canonical
     }
   },
   {
