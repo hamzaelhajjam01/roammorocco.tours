@@ -81,7 +81,42 @@ const schema = [
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-01-01",
       "priceValidUntil": "2027-12-31",
-      "url": canonical
+      "url": canonical,
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "MA",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 2,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "MA"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          }
+        }
+      }
     }
   },
   {
@@ -98,13 +133,17 @@ const schema = [
   }
 ];
 
-const waMessage = encodeURIComponent(`Salam Roam Morocco! I'd like to book a private transfer from ${route.from} to ${route.to} (${route.price_sedan}€).`);
+
+const waMessage = encodeURIComponent(`Salam Roam Morocco! I'd like to book a private transfer from ${route.from} to ${route.to} (€${route.price_sedan}).`);
 const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
+
+const pageTitle = `Private Transfer from ${route.from} to ${route.to} (€${route.price_sedan}) | Roam Morocco`;
+const pageDescription = `Book a door-to-door private transfer from ${route.from} to ${route.to} for €${route.price_sedan}. Fixed rate, licensed chauffeur, air-conditioned vehicle, all highway tolls & luggage included.`;
 ---
 
 <Layout
-  title={route.seoTitle}
-  description={route.seoDescription}
+  title={pageTitle}
+  description={pageDescription}
   canonical={canonical}
   ogImage={ogImage}
   schema={schema}

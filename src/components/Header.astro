@@ -13,11 +13,31 @@ const pathWithoutLang = rawPath.replace(/^\/(fr|es|de|it)(\.html|\/|$)/, '/');
 const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang : `/${pathWithoutLang}`;
 const normPath = (cleanPath === '/index.html' || cleanPath === '/') ? '/' : cleanPath;
 
+// Known English-only routes that do NOT have /fr/, /es/, /de/, /it/ equivalents
+const ENGLISH_ONLY_ROUTES = new Set([
+  '/fes-to-marrakech-desert-tour-3-days.html',
+  '/fes-to-marrakech-desert-tour-3-days',
+  '/marrakech-to-fes-desert-tour-3-days.html',
+  '/marrakech-to-fes-desert-tour-3-days',
+  '/morocco-jewish-heritage-private-driver.html',
+  '/morocco-jewish-heritage-private-driver',
+  '/tour-jewish-heritage.html',
+  '/tour-jewish-heritage',
+  '/blog/merzouga-luxury-desert-camp.html',
+  '/blog/merzouga-luxury-desert-camp',
+  '/blog/morocco-7-day-itinerary.html',
+  '/blog/morocco-7-day-itinerary',
+  '/404.html',
+  '/404'
+]);
+
+const isEnglishOnly = ENGLISH_ONLY_ROUTES.has(normPath) || ENGLISH_ONLY_ROUTES.has(cleanPath);
+
 const enHref = normPath;
-const frHref = normPath === '/' ? '/fr/' : `/fr${normPath}`;
-const esHref = normPath === '/' ? '/es/' : `/es${normPath}`;
-const deHref = normPath === '/' ? '/de/' : `/de${normPath}`;
-const itHref = normPath === '/' ? '/it/' : `/it${normPath}`;
+const frHref = isEnglishOnly ? '/fr/' : (normPath === '/' ? '/fr/' : `/fr${normPath}`);
+const esHref = isEnglishOnly ? '/es/' : (normPath === '/' ? '/es/' : `/es${normPath}`);
+const deHref = isEnglishOnly ? '/de/' : (normPath === '/' ? '/de/' : `/de${normPath}`);
+const itHref = isEnglishOnly ? '/it/' : (normPath === '/' ? '/it/' : `/it${normPath}`);
 
 const langMeta: Record<string, { code: string; flag: string }> = {
   en: { code: 'EN', flag: '🇬🇧' },

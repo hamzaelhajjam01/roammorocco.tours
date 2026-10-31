@@ -94,7 +94,42 @@ const schema = [
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-01-01",
       "priceValidUntil": "2027-12-31",
-      "url": canonical
+      "url": canonical,
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "MA",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 2,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "MA"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "DAY"
+          }
+        }
+      }
     }
   },
   {
@@ -445,14 +480,31 @@ const i18n = {
 
 const t = i18n[lang] || i18n.fr;
 
+const localizedSeoTitles: Record<string, string> = {
+  fr: `Transfert Privé ${route.from} vers ${route.to} (${route.price_sedan}€) | Roam Morocco`,
+  es: `Traslado Privado de ${route.from} a ${route.to} (${route.price_sedan}€) | Roam Morocco`,
+  de: `Privattransfer von ${route.from} nach ${route.to} (${route.price_sedan}€) | Roam Morocco`,
+  it: `Trasferimento Privato da ${route.from} a ${route.to} (${route.price_sedan}€) | Roam Morocco`
+};
+
+const localizedSeoDescs: Record<string, string> = {
+  fr: `Réservez votre transfert privé de ${route.from} à ${route.to} dès ${route.price_sedan}€. Chauffeur agréé, véhicule climatisé tout confort, péages et bagages inclus.`,
+  es: `Reserva tu traslado privado de ${route.from} a ${route.to} desde ${route.price_sedan}€. Chofer profesional con licencia, vehículo con aire acondicionado y precio fijo.`,
+  de: `Buchen Sie Ihren privaten Transfer von ${route.from} nach ${route.to} ab ${route.price_sedan}€. Lizenzierter Chauffeur, vollklimatisiertes Fahrzeug, keine versteckten Kosten.`,
+  it: `Prenota il tuo trasferimento privato da ${route.from} a ${route.to} da ${route.price_sedan}€. Autista autorizzato, veicolo climatizzato e tariffa fissa tutto incluso.`
+};
+
+const pageTitle = localizedSeoTitles[lang] || route.seoTitle;
+const pageDescription = localizedSeoDescs[lang] || route.seoDescription;
+
 const waMessage = encodeURIComponent(t.waGreeting);
 const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
 ---
 
 <Layout
   lang={lang}
-  title={route.seoTitle}
-  description={route.seoDescription}
+  title={pageTitle}
+  description={pageDescription}
   canonical={canonical}
   ogImage={ogImage}
   schema={schema}
