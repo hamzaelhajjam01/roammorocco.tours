@@ -36,11 +36,31 @@ const {
 // Determine active language
 const currentLang = propLang || (Astro.url.pathname.match(/^\/(fr|es|de|it)(\.html|\/|$)/)?.[1]) || 'en';
 
+// Known English-only routes that do NOT have /fr/, /es/, /de/, /it/ equivalents
+const ENGLISH_ONLY_ROUTES = new Set([
+  '/fes-to-marrakech-desert-tour-3-days.html',
+  '/fes-to-marrakech-desert-tour-3-days',
+  '/marrakech-to-fes-desert-tour-3-days.html',
+  '/marrakech-to-fes-desert-tour-3-days',
+  '/morocco-jewish-heritage-private-driver.html',
+  '/morocco-jewish-heritage-private-driver',
+  '/tour-jewish-heritage.html',
+  '/tour-jewish-heritage',
+  '/blog/merzouga-luxury-desert-camp.html',
+  '/blog/merzouga-luxury-desert-camp',
+  '/blog/morocco-7-day-itinerary.html',
+  '/blog/morocco-7-day-itinerary',
+  '/404.html',
+  '/404'
+]);
+
 // Compute reciprocal alternate URLs for multi-language SEO
 const rawPath = Astro.url.pathname;
 const pathWithoutLang = rawPath.replace(/^\/(fr|es|de|it)(\.html|\/|$)/, '/');
 const cleanPath = pathWithoutLang.startsWith('/') ? pathWithoutLang : `/${pathWithoutLang}`;
 const normPath = (cleanPath === '/index.html' || cleanPath === '/') ? '/' : cleanPath;
+
+const isEnglishOnly = ENGLISH_ONLY_ROUTES.has(normPath) || ENGLISH_ONLY_ROUTES.has(cleanPath);
 
 const domain = "https://roammorocco.tours";
 const enUrl = normPath === '/' ? `${domain}/` : `${domain}${normPath}`;
@@ -188,10 +208,14 @@ const ogLocale = currentLang === 'fr' ? 'fr_FR' :
   <meta name="description" content={description}>
   <link rel="canonical" href={canonical}>
   <link rel="alternate" hreflang="en" href={enUrl}>
-  <link rel="alternate" hreflang="fr" href={frUrl}>
-  <link rel="alternate" hreflang="es" href={esUrl}>
-  <link rel="alternate" hreflang="de" href={deUrl}>
-  <link rel="alternate" hreflang="it" href={itUrl}>
+  {!isEnglishOnly && (
+    <>
+      <link rel="alternate" hreflang="fr" href={frUrl}>
+      <link rel="alternate" hreflang="es" href={esUrl}>
+      <link rel="alternate" hreflang="de" href={deUrl}>
+      <link rel="alternate" hreflang="it" href={itUrl}>
+    </>
+  )}
   <link rel="alternate" hreflang="x-default" href={enUrl}>
   <link rel="alternate" type="text/plain" href="https://roammorocco.tours/llms.txt" title="AI Model Context (LLMs.txt)">
   <link rel="alternate" type="text/plain" href="https://roammorocco.tours/llms-full.txt" title="Full AI Knowledge Base (LLMs-full.txt)">

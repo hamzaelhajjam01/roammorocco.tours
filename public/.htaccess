@@ -7,14 +7,62 @@
   RewriteEngine On
   RewriteBase /
 
-  # 0. Multilingual Canonical Routing & Legacy Double-Locale Cleanup
+  # --------------------------------------------------------------------------
+  # 1. Canonical Domain & HTTPS Enforcement (MUST EXECUTE FIRST)
+  # --------------------------------------------------------------------------
+  # Force HTTPS
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP:X-Forwarded-Proto} =http
+  RewriteRule ^ https://roammorocco.tours%{REQUEST_URI} [L,R=301]
+
+  # Enforce Canonical Domain (Redirect www.roammorocco.tours -> roammorocco.tours)
+  RewriteCond %{HTTP_HOST} ^www\.roammorocco\.tours$ [NC]
+  RewriteRule ^ https://roammorocco.tours%{REQUEST_URI} [L,R=301]
+
+  # --------------------------------------------------------------------------
+  # 2. GSC 404 & Indexing Fixes: 301 Redirects for Legacy / Unindexed Paths
+  # --------------------------------------------------------------------------
+  # A. Redirect legacy /en/ to root
+  RewriteRule ^en/?$ / [L,R=301]
+  RewriteRule ^en/(.*)$ /$1 [L,R=301]
+
+  # B. GSC 404 Fix: Redirect non-existent localized Jewish Heritage & 3-Day Desert routes to English
+  RewriteRule ^(fr|es|de|it)/morocco-jewish-heritage-private-driver(\.html)?$ /morocco-jewish-heritage-private-driver.html [L,R=301]
+  RewriteRule ^(fr|es|de|it)/tour-jewish-heritage(\.html)?$ /tour-jewish-heritage.html [L,R=301]
+  RewriteRule ^(fr|es|de|it)/marrakech-to-fes-desert-tour-3-days(\.html)?$ /marrakech-to-fes-desert-tour-3-days.html [L,R=301]
+  RewriteRule ^(fr|es|de|it)/fes-to-marrakech-desert-tour-3-days(\.html)?$ /fes-to-marrakech-desert-tour-3-days.html [L,R=301]
+
+  # C. GSC 404 Fix: Redirect non-existent localized blog posts to English
+  RewriteRule ^(fr|es|de|it)/blog/morocco-7-day-itinerary(\.html)?$ /blog/morocco-7-day-itinerary.html [L,R=301]
+  RewriteRule ^(fr|es|de|it)/blog/merzouga-luxury-desert-camp(\.html)?$ /blog/merzouga-luxury-desert-camp.html [L,R=301]
+
+  # D. 301 Redirect duplicate free walking tour to canonical sunset free tour
+  RewriteRule ^marrakech-free-walking-tour(\.html)?$ /marrakech-medina-sunset-free-tour.html [L,R=301]
+  RewriteRule ^(fr|es|de|it)/marrakech-free-walking-tour(\.html)?$ /$1/marrakech-medina-sunset-free-tour.html [L,R=301]
+
+  # E. Eliminate Crawl Trap: Redirect dummy search query strings (/?s=...) to root
+  RewriteCond %{QUERY_STRING} ^s=.*$ [NC]
+  RewriteRule ^$ /? [L,R=301]
+
+  # F. Normalize /index.html and /{lang}/index.html to directory slashes
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+  RewriteRule ^index\.html$ / [L,R=301]
+
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(fr|es|de|it)/index\.html\ HTTP/
+  RewriteRule ^(fr|es|de|it)/index\.html$ /$1/ [L,R=301]
+
+  # --------------------------------------------------------------------------
+  # 3. Multilingual Canonical Routing & Legacy Double-Locale Cleanup
+  # --------------------------------------------------------------------------
   # Redirect any legacy /es/fr.html or /fr/es.html directly to target locale homepage (e.g. /es/)
   RewriteRule ^(fr|es|de|it)/(fr|es|de|it)\.html$ /$1/ [L,R=301]
 
   # Redirect /fr.html -> /fr/, /es.html -> /es/, /de.html -> /de/, /it.html -> /it/
   RewriteRule ^(fr|es|de|it)\.html$ /$1/ [L,R=301]
 
-  # Directory Hubs & Clean URLs Rewrite Rules (Fixes 403 Forbidden on directory paths)
+  # --------------------------------------------------------------------------
+  # 4. Directory Hubs & Clean URLs Rewrite Rules (Fixes 403 Forbidden on directory paths)
+  # --------------------------------------------------------------------------
   RewriteRule ^transfers/?$ /transfers.html [L]
   RewriteRule ^blog/?$ /blog.html [L]
   RewriteRule ^destinations/?$ /destinations.html [L]
@@ -30,13 +78,9 @@
   RewriteRule ^(fr|es|de|it)/experiences/?$ /$1/experiences.html [L]
   RewriteRule ^(fr|es|de|it)/about/?$ /$1/about.html [L]
 
-  # Clean URLs: Serve .html file if requested path without .html exists
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-  RewriteRule ^(.*)$ $1.html [L]
-
-  # 3. Blog Slug Permalinks (Legacy & Direct Link Redirects to /blog/)
+  # --------------------------------------------------------------------------
+  # 5. Blog Slug Permalinks (Legacy & Direct Link Redirects to /blog/)
+  # --------------------------------------------------------------------------
   RewriteRule ^agafay-desert-vs-merzouga\.html$ /blog/agafay-desert-vs-merzouga.html [L,R=301]
   RewriteRule ^agafay-desert-vs-merzouga$ /blog/agafay-desert-vs-merzouga.html [L,R=301]
   RewriteRule ^bali-travel-guide\.html$ /blog/bali-travel-guide.html [L,R=301]
@@ -80,15 +124,13 @@
   RewriteRule ^what-to-wear-in-morocco\.html$ /blog/what-to-wear-in-morocco.html [L,R=301]
   RewriteRule ^what-to-wear-in-morocco$ /blog/what-to-wear-in-morocco.html [L,R=301]
 
-
-  # 1. Force HTTPS
-  RewriteCond %{HTTPS} !=on [OR]
-  RewriteCond %{HTTP:X-Forwarded-Proto} =http
-  RewriteRule ^ https://roammorocco.tours%{REQUEST_URI} [L,R=301]
-
-  # 2. Enforce Canonical Domain (Redirect www.roammorocco.tours -> roammorocco.tours)
-  RewriteCond %{HTTP_HOST} ^www\.roammorocco\.tours$ [NC]
-  RewriteRule ^ https://roammorocco.tours%{REQUEST_URI} [L,R=301]
+  # --------------------------------------------------------------------------
+  # 6. Clean URLs: Serve .html file if requested path without .html exists
+  # --------------------------------------------------------------------------
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.*)$ $1.html [L]
 </IfModule>
 
 # ==============================================================================

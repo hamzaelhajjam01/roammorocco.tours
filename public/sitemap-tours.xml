@@ -14,12 +14,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://roammorocco.tours/de/marrakech-free-walking-tour.html</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
     <loc>https://roammorocco.tours/de/marrakech-medina-sunset-free-tour.html</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -54,12 +48,6 @@
     <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://roammorocco.tours/es/marrakech-free-walking-tour.html</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://roammorocco.tours/es/marrakech-medina-sunset-free-tour.html</loc>
@@ -104,12 +92,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://roammorocco.tours/fr/marrakech-free-walking-tour.html</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
     <loc>https://roammorocco.tours/fr/marrakech-medina-sunset-free-tour.html</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -146,12 +128,6 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://roammorocco.tours/it/marrakech-free-walking-tour.html</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
     <loc>https://roammorocco.tours/it/marrakech-medina-sunset-free-tour.html</loc>
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -180,12 +156,6 @@
     <lastmod>2026-10-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://roammorocco.tours/marrakech-free-walking-tour.html</loc>
-    <lastmod>2026-10-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://roammorocco.tours/marrakech-medina-sunset-free-tour.html</loc>

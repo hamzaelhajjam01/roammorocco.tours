@@ -18,7 +18,8 @@ function getFilesRecursively(dir, baseDir = dir) {
       if (
         relPath === 'transfers/index.html' ||
         relPath === 'blog/index.html' ||
-        /^(fr|es|de|it)\/(transfers|blog)\/index\.html$/.test(relPath)
+        /^(fr|es|de|it)\/(transfers|blog)\/index\.html$/.test(relPath) ||
+        /^(fr\/|es\/|de\/|it\/)?marrakech-free-walking-tour\.html$/.test(relPath)
       ) {
         continue;
       }
