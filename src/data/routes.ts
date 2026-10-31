@@ -28,8 +28,8 @@ export const routesData: RouteItem[] = [
     "distance": "6 km",
     "duration": "15 min",
     "price_sedan": 30,
-    "price_van": 45,
-    "price_minibus": 65,
+    "price_van": 40,
+    "price_minibus": 60,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -40,7 +40,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Marrakech cost?",
-        "a": "A private transfer from Marrakech Airport to Marrakech starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Marrakech starts at €30 for a private comfort sedan (1–4 passengers), €40 for a spacious van (5–7 passengers), and €60 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Marrakech take?",
@@ -56,11 +56,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Marrakech | Fixed Price €25 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Marrakech with Roam Morocco. Fixed rate €25, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Marrakech | Fixed Price €30 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Marrakech with Roam Morocco. Fixed rate €30, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Marrakech",
     "popular": true
   },
@@ -72,9 +72,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -85,7 +85,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Essaouira cost?",
-        "a": "A private transfer from Marrakech Airport to Essaouira starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Essaouira starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Essaouira take?",
@@ -101,11 +101,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Essaouira | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Essaouira with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Essaouira | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Essaouira with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Essaouira",
     "popular": false
   },
@@ -117,9 +117,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -130,7 +130,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Casablanca cost?",
-        "a": "A private transfer from Marrakech Airport to Casablanca starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Casablanca starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Casablanca take?",
@@ -146,11 +146,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Casablanca | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Casablanca with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Casablanca | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Casablanca with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Casablanca",
     "popular": false
   },
@@ -162,9 +162,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -175,7 +175,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Agadir cost?",
-        "a": "A private transfer from Marrakech Airport to Agadir starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Agadir starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Agadir take?",
@@ -191,11 +191,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Agadir | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Agadir with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Agadir | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Agadir with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Agadir",
     "popular": false
   },
@@ -207,9 +207,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 155,
+    "price_van": 180,
+    "price_minibus": 265,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -220,7 +220,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Taghazout cost?",
-        "a": "A private transfer from Marrakech Airport to Taghazout starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Taghazout starts at €155 for a private comfort sedan (1–4 passengers), €180 for a spacious van (5–7 passengers), and €265 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Taghazout take?",
@@ -236,11 +236,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Taghazout | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Taghazout with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Taghazout | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Taghazout with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Taghazout",
     "popular": false
   },
@@ -252,9 +252,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_sedan": 72,
+    "price_van": 96,
+    "price_minibus": 146,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -265,7 +265,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Imlil cost?",
-        "a": "A private transfer from Marrakech Airport to Imlil starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Imlil starts at €72 for a private comfort sedan (1–4 passengers), €96 for a spacious van (5–7 passengers), and €146 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Imlil take?",
@@ -281,11 +281,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Imlil | Fixed Price €69 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Imlil with Roam Morocco. Fixed rate €69, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Imlil | Fixed Price €72 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Imlil with Roam Morocco. Fixed rate €72, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Imlil",
     "popular": false
   },
@@ -298,8 +298,8 @@ export const routesData: RouteItem[] = [
     "distance": "6 km",
     "duration": "15 min",
     "price_sedan": 30,
-    "price_van": 45,
-    "price_minibus": 65,
+    "price_van": 40,
+    "price_minibus": 60,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -310,7 +310,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Marrakech Airport cost?",
-        "a": "A private transfer from Marrakech to Marrakech Airport starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Marrakech Airport starts at €30 for a private comfort sedan (1–4 passengers), €40 for a spacious van (5–7 passengers), and €60 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Marrakech Airport take?",
@@ -326,11 +326,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Marrakech Airport | Fixed Price €25 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Marrakech Airport with Roam Morocco. Fixed rate €25, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Marrakech Airport | Fixed Price €30 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Marrakech Airport with Roam Morocco. Fixed rate €30, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Marrakech Airport",
     "popular": false
   },
@@ -342,9 +342,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -355,7 +355,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Essaouira cost?",
-        "a": "A private transfer from Marrakech to Essaouira starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Essaouira starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Essaouira take?",
@@ -371,11 +371,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Essaouira | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Essaouira with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Essaouira | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Essaouira with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Essaouira",
     "popular": true
   },
@@ -387,9 +387,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -400,7 +400,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Casablanca cost?",
-        "a": "A private transfer from Marrakech to Casablanca starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Casablanca starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Casablanca take?",
@@ -416,11 +416,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Casablanca | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Casablanca with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Casablanca | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Casablanca with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Casablanca",
     "popular": true
   },
@@ -432,9 +432,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -445,7 +445,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Casablanca Airport cost?",
-        "a": "A private transfer from Marrakech to Casablanca Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Casablanca Airport starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Casablanca Airport take?",
@@ -461,11 +461,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Casablanca Airport | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Casablanca Airport with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Casablanca Airport | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Casablanca Airport with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Casablanca Airport",
     "popular": false
   },
@@ -477,9 +477,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -490,7 +490,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Agadir cost?",
-        "a": "A private transfer from Marrakech to Agadir starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Agadir starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Agadir take?",
@@ -506,11 +506,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Agadir | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Agadir with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Agadir | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Agadir with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Agadir",
     "popular": true
   },
@@ -522,9 +522,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -535,7 +535,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Agadir Airport cost?",
-        "a": "A private transfer from Marrakech to Agadir Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Agadir Airport starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Agadir Airport take?",
@@ -551,11 +551,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Agadir Airport | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Agadir Airport with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Agadir Airport | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Agadir Airport with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Agadir Airport",
     "popular": false
   },
@@ -567,9 +567,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 155,
+    "price_van": 180,
+    "price_minibus": 265,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -580,7 +580,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Taghazout cost?",
-        "a": "A private transfer from Marrakech to Taghazout starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Taghazout starts at €155 for a private comfort sedan (1–4 passengers), €180 for a spacious van (5–7 passengers), and €265 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Taghazout take?",
@@ -596,11 +596,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Taghazout | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Taghazout with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Taghazout | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Taghazout with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Taghazout",
     "popular": true
   },
@@ -612,9 +612,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_sedan": 72,
+    "price_van": 96,
+    "price_minibus": 146,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -625,7 +625,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Imlil cost?",
-        "a": "A private transfer from Marrakech to Imlil starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Imlil starts at €72 for a private comfort sedan (1–4 passengers), €96 for a spacious van (5–7 passengers), and €146 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Imlil take?",
@@ -641,11 +641,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Imlil | Fixed Price €69 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Imlil with Roam Morocco. Fixed rate €69, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Imlil | Fixed Price €72 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Imlil with Roam Morocco. Fixed rate €72, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Imlil",
     "popular": false
   },
@@ -657,9 +657,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -670,7 +670,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Marrakech to Essaouira Airport (ESU) starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Essaouira Airport (ESU) starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Essaouira Airport (ESU) take?",
@@ -686,11 +686,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Essaouira Airport (ESU) | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Essaouira Airport (ESU) | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -702,9 +702,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -715,7 +715,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Marrakech cost?",
-        "a": "A private transfer from Essaouira to Marrakech starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Marrakech starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Marrakech take?",
@@ -731,11 +731,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Marrakech | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Marrakech with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Marrakech | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Marrakech with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Marrakech",
     "popular": false
   },
@@ -747,9 +747,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -760,7 +760,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Marrakech Airport cost?",
-        "a": "A private transfer from Essaouira to Marrakech Airport starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Marrakech Airport starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Marrakech Airport take?",
@@ -776,11 +776,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Marrakech Airport | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Marrakech Airport with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Marrakech Airport | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Marrakech Airport with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Marrakech Airport",
     "popular": false
   },
@@ -792,9 +792,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -805,7 +805,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Agadir cost?",
-        "a": "A private transfer from Essaouira to Agadir starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Agadir starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Agadir take?",
@@ -821,11 +821,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Agadir | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Agadir with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Agadir | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Agadir with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Agadir",
     "popular": false
   },
@@ -837,9 +837,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -850,7 +850,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Agadir Airport cost?",
-        "a": "A private transfer from Essaouira to Agadir Airport starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Agadir Airport starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Agadir Airport take?",
@@ -866,11 +866,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Agadir Airport | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Agadir Airport with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Agadir Airport | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Agadir Airport with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Agadir Airport",
     "popular": false
   },
@@ -882,9 +882,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "15 km",
     "duration": "20 min",
-    "price_sedan": 20,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 22,
+    "price_van": 34,
+    "price_minibus": 50,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -895,7 +895,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Essaouira to Essaouira Airport (ESU) starts at €20 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Essaouira Airport (ESU) starts at €22 for a private comfort sedan (1–4 passengers), €34 for a spacious van (5–7 passengers), and €50 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Essaouira Airport (ESU) take?",
@@ -911,11 +911,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Essaouira Airport (ESU) | Fixed Price €17 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €17, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Essaouira Airport (ESU) | Fixed Price €22 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €22, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -927,9 +927,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "15 km",
     "duration": "20 min",
-    "price_sedan": 20,
-    "price_van": 35,
-    "price_minibus": 55,
+    "price_sedan": 22,
+    "price_van": 34,
+    "price_minibus": 50,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -940,7 +940,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Essaouira cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Essaouira starts at €20 for a private comfort sedan (1–4 passengers) and €35 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Essaouira starts at €22 for a private comfort sedan (1–4 passengers), €34 for a spacious van (5–7 passengers), and €50 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Essaouira take?",
@@ -956,11 +956,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Essaouira | Fixed Price €17 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Essaouira with Roam Morocco. Fixed rate €17, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Essaouira | Fixed Price €22 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Essaouira with Roam Morocco. Fixed rate €22, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Essaouira",
     "popular": false
   },
@@ -972,9 +972,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -985,7 +985,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Marrakech cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Marrakech take?",
@@ -1001,11 +1001,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Marrakech | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Marrakech with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Marrakech | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Marrakech with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Marrakech",
     "popular": false
   },
@@ -1017,9 +1017,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1030,7 +1030,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Marrakech cost?",
-        "a": "A private transfer from Casablanca to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Marrakech starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca and Marrakech take?",
@@ -1046,11 +1046,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca to Marrakech | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca to Marrakech with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca to Marrakech | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca to Marrakech with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca to Marrakech",
     "popular": false
   },
@@ -1062,9 +1062,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1075,7 +1075,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Marrakech Airport cost?",
-        "a": "A private transfer from Casablanca to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Marrakech Airport starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca and Marrakech Airport take?",
@@ -1091,11 +1091,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca to Marrakech Airport | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca to Marrakech Airport with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca to Marrakech Airport | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca to Marrakech Airport with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca to Marrakech Airport",
     "popular": false
   },
@@ -1107,9 +1107,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1120,7 +1120,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Marrakech cost?",
-        "a": "A private transfer from Casablanca Airport to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Marrakech starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Marrakech take?",
@@ -1136,11 +1136,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca Airport to Marrakech | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca Airport to Marrakech with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca Airport to Marrakech | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca Airport to Marrakech with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca Airport to Marrakech",
     "popular": true
   },
@@ -1152,9 +1152,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -1165,7 +1165,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Marrakech Airport cost?",
-        "a": "A private transfer from Casablanca Airport to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Marrakech Airport starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Marrakech Airport take?",
@@ -1181,11 +1181,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca Airport to Marrakech Airport | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca Airport to Marrakech Airport with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca Airport to Marrakech Airport | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca Airport to Marrakech Airport with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca Airport to Marrakech Airport",
     "popular": false
   },
@@ -1197,9 +1197,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1210,7 +1210,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Marrakech cost?",
-        "a": "A private transfer from Agadir to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Marrakech starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir and Marrakech take?",
@@ -1226,11 +1226,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir to Marrakech | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir to Marrakech with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir to Marrakech | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir to Marrakech with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir to Marrakech",
     "popular": false
   },
@@ -1242,9 +1242,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1255,7 +1255,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Marrakech Airport cost?",
-        "a": "A private transfer from Agadir to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Marrakech Airport starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir and Marrakech Airport take?",
@@ -1271,11 +1271,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir to Marrakech Airport | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir to Marrakech Airport with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir to Marrakech Airport | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir to Marrakech Airport with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir to Marrakech Airport",
     "popular": false
   },
@@ -1287,9 +1287,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1300,7 +1300,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Essaouira cost?",
-        "a": "A private transfer from Agadir to Essaouira starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Essaouira starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir and Essaouira take?",
@@ -1316,11 +1316,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir to Essaouira | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir to Essaouira with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir to Essaouira | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir to Essaouira with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir to Essaouira",
     "popular": false
   },
@@ -1332,9 +1332,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1345,7 +1345,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Marrakech cost?",
-        "a": "A private transfer from Agadir Airport to Marrakech starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Marrakech starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir Airport and Marrakech take?",
@@ -1361,11 +1361,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir Airport to Marrakech | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir Airport to Marrakech with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir Airport to Marrakech | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir Airport to Marrakech with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir Airport to Marrakech",
     "popular": false
   },
@@ -1377,9 +1377,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 155,
+    "price_van": 180,
+    "price_minibus": 265,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1390,7 +1390,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Marrakech cost?",
-        "a": "A private transfer from Taghazout to Marrakech starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Marrakech starts at €155 for a private comfort sedan (1–4 passengers), €180 for a spacious van (5–7 passengers), and €265 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Taghazout and Marrakech take?",
@@ -1406,11 +1406,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Taghazout to Marrakech | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Taghazout to Marrakech with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Taghazout to Marrakech | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Taghazout to Marrakech with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Taghazout to Marrakech",
     "popular": false
   },
@@ -1422,9 +1422,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "260 km",
     "duration": "3h15",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 155,
+    "price_van": 180,
+    "price_minibus": 265,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1435,7 +1435,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Marrakech Airport cost?",
-        "a": "A private transfer from Taghazout to Marrakech Airport starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Marrakech Airport starts at €155 for a private comfort sedan (1–4 passengers), €180 for a spacious van (5–7 passengers), and €265 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Taghazout and Marrakech Airport take?",
@@ -1451,11 +1451,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Taghazout to Marrakech Airport | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Taghazout to Marrakech Airport with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Taghazout to Marrakech Airport | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Taghazout to Marrakech Airport with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Taghazout to Marrakech Airport",
     "popular": false
   },
@@ -1467,9 +1467,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_sedan": 72,
+    "price_van": 96,
+    "price_minibus": 146,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -1480,7 +1480,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Marrakech cost?",
-        "a": "A private transfer from Imlil to Marrakech starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Marrakech starts at €72 for a private comfort sedan (1–4 passengers), €96 for a spacious van (5–7 passengers), and €146 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Imlil and Marrakech take?",
@@ -1496,11 +1496,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Imlil to Marrakech | Fixed Price €69 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Imlil to Marrakech with Roam Morocco. Fixed rate €69, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Imlil to Marrakech | Fixed Price €72 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Imlil to Marrakech with Roam Morocco. Fixed rate €72, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Imlil to Marrakech",
     "popular": false
   },
@@ -1512,9 +1512,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "65 km",
     "duration": "1h30",
-    "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_sedan": 72,
+    "price_van": 96,
+    "price_minibus": 146,
     "highway": "Route R203 (High Atlas Valley)",
     "highlights": [
       "Breathtaking climb through the Asni valley and High Atlas Berber villages",
@@ -1525,7 +1525,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Marrakech Airport cost?",
-        "a": "A private transfer from Imlil to Marrakech Airport starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Marrakech Airport starts at €72 for a private comfort sedan (1–4 passengers), €96 for a spacious van (5–7 passengers), and €146 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Imlil and Marrakech Airport take?",
@@ -1541,11 +1541,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Imlil to Marrakech Airport | Fixed Price €69 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Imlil to Marrakech Airport with Roam Morocco. Fixed rate €69, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Imlil to Marrakech Airport | Fixed Price €72 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Imlil to Marrakech Airport with Roam Morocco. Fixed rate €72, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Imlil to Marrakech Airport",
     "popular": false
   },
@@ -1557,9 +1557,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 175,
+    "price_van": 225,
+    "price_minibus": 345,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1570,7 +1570,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Essaouira cost?",
-        "a": "A private transfer from Imlil to Essaouira starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Essaouira starts at €175 for a private comfort sedan (1–4 passengers), €225 for a spacious van (5–7 passengers), and €345 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Imlil and Essaouira take?",
@@ -1586,11 +1586,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Imlil to Essaouira | Fixed Price €170 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Imlil to Essaouira with Roam Morocco. Fixed rate €170, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Imlil to Essaouira | Fixed Price €175 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Imlil to Essaouira with Roam Morocco. Fixed rate €175, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Imlil to Essaouira",
     "popular": false
   },
@@ -1602,9 +1602,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "30 km",
     "duration": "45 min",
-    "price_sedan": 55,
-    "price_van": 80,
-    "price_minibus": 125,
+    "price_sedan": 80,
+    "price_van": 100,
+    "price_minibus": 155,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -1615,7 +1615,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Agafay Desert cost?",
-        "a": "A private transfer from Marrakech to Agafay Desert starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Agafay Desert starts at €80 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €155 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Agafay Desert take?",
@@ -1631,11 +1631,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Agafay Desert | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Agafay Desert with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Agafay Desert | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Agafay Desert with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Agafay Desert",
     "popular": false
   },
@@ -1647,9 +1647,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "30 km",
     "duration": "45 min",
-    "price_sedan": 55,
-    "price_van": 80,
-    "price_minibus": 125,
+    "price_sedan": 80,
+    "price_van": 100,
+    "price_minibus": 155,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -1660,7 +1660,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Marrakech cost?",
-        "a": "A private transfer from Agafay Desert to Marrakech starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Marrakech starts at €80 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €155 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agafay Desert and Marrakech take?",
@@ -1676,11 +1676,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agafay Desert to Marrakech | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agafay Desert to Marrakech with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agafay Desert to Marrakech | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agafay Desert to Marrakech with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agafay Desert to Marrakech",
     "popular": false
   },
@@ -1692,9 +1692,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "35 km",
     "duration": "50 min",
-    "price_sedan": 55,
-    "price_van": 80,
-    "price_minibus": 125,
+    "price_sedan": 80,
+    "price_van": 100,
+    "price_minibus": 155,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -1705,7 +1705,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Marrakech Airport cost?",
-        "a": "A private transfer from Agafay Desert to Marrakech Airport starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Marrakech Airport starts at €80 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €155 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agafay Desert and Marrakech Airport take?",
@@ -1721,11 +1721,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agafay Desert to Marrakech Airport | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agafay Desert to Marrakech Airport with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agafay Desert to Marrakech Airport | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agafay Desert to Marrakech Airport with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agafay Desert to Marrakech Airport",
     "popular": false
   },
@@ -1737,9 +1737,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 155,
+    "price_van": 200,
+    "price_minibus": 305,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1750,7 +1750,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Essaouira cost?",
-        "a": "A private transfer from Agafay Desert to Essaouira starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Essaouira starts at €155 for a private comfort sedan (1–4 passengers), €200 for a spacious van (5–7 passengers), and €305 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agafay Desert and Essaouira take?",
@@ -1766,11 +1766,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agafay Desert to Essaouira | Fixed Price €150 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agafay Desert to Essaouira with Roam Morocco. Fixed rate €150, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agafay Desert to Essaouira | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agafay Desert to Essaouira with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agafay Desert to Essaouira",
     "popular": false
   },
@@ -1782,9 +1782,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 155,
+    "price_van": 200,
+    "price_minibus": 305,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1795,7 +1795,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Agafay Desert cost?",
-        "a": "A private transfer from Essaouira to Agafay Desert starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Agafay Desert starts at €155 for a private comfort sedan (1–4 passengers), €200 for a spacious van (5–7 passengers), and €305 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Agafay Desert take?",
@@ -1811,11 +1811,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Agafay Desert | Fixed Price €150 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Agafay Desert with Roam Morocco. Fixed rate €150, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Agafay Desert | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Agafay Desert with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Agafay Desert",
     "popular": false
   },
@@ -1827,9 +1827,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 175,
+    "price_van": 225,
+    "price_minibus": 345,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1840,7 +1840,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Imlil cost?",
-        "a": "A private transfer from Essaouira to Imlil starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Imlil starts at €175 for a private comfort sedan (1–4 passengers), €225 for a spacious van (5–7 passengers), and €345 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Imlil take?",
@@ -1856,11 +1856,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Imlil | Fixed Price €170 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Imlil with Roam Morocco. Fixed rate €170, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Imlil | Fixed Price €175 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Imlil with Roam Morocco. Fixed rate €175, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Imlil",
     "popular": false
   },
@@ -1872,9 +1872,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "175 km",
     "duration": "2h30",
-    "price_sedan": 125,
-    "price_van": 165,
-    "price_minibus": 240,
+    "price_sedan": 120,
+    "price_van": 155,
+    "price_minibus": 238,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1885,7 +1885,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Taghazout cost?",
-        "a": "A private transfer from Essaouira to Taghazout starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Taghazout starts at €120 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €238 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Taghazout take?",
@@ -1901,11 +1901,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Taghazout | Fixed Price €115 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Taghazout with Roam Morocco. Fixed rate €115, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Taghazout | Fixed Price €120 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Taghazout with Roam Morocco. Fixed rate €120, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Taghazout",
     "popular": false
   },
@@ -1917,9 +1917,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "175 km",
     "duration": "2h30",
-    "price_sedan": 125,
-    "price_van": 165,
-    "price_minibus": 240,
+    "price_sedan": 120,
+    "price_van": 155,
+    "price_minibus": 238,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -1930,7 +1930,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Essaouira cost?",
-        "a": "A private transfer from Taghazout to Essaouira starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Essaouira starts at €120 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €238 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Taghazout and Essaouira take?",
@@ -1946,11 +1946,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Taghazout to Essaouira | Fixed Price €115 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Taghazout to Essaouira with Roam Morocco. Fixed rate €115, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Taghazout to Essaouira | Fixed Price €120 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Taghazout to Essaouira with Roam Morocco. Fixed rate €120, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Taghazout to Essaouira",
     "popular": false
   },
@@ -1963,8 +1963,8 @@ export const routesData: RouteItem[] = [
     "distance": "20 km",
     "duration": "30 min",
     "price_sedan": 45,
-    "price_van": 65,
-    "price_minibus": 95,
+    "price_van": 60,
+    "price_minibus": 90,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -1975,7 +1975,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Taghazout cost?",
-        "a": "A private transfer from Agadir to Taghazout starts at €45 for a private comfort sedan (1–4 passengers) and €65 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Taghazout starts at €45 for a private comfort sedan (1–4 passengers), €60 for a spacious van (5–7 passengers), and €90 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir and Taghazout take?",
@@ -1991,11 +1991,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir to Taghazout | Fixed Price €40 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir to Taghazout with Roam Morocco. Fixed rate €40, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir to Taghazout | Fixed Price €45 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir to Taghazout with Roam Morocco. Fixed rate €45, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir to Taghazout",
     "popular": false
   },
@@ -2008,8 +2008,8 @@ export const routesData: RouteItem[] = [
     "distance": "20 km",
     "duration": "30 min",
     "price_sedan": 45,
-    "price_van": 65,
-    "price_minibus": 95,
+    "price_van": 60,
+    "price_minibus": 90,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -2020,7 +2020,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Agadir cost?",
-        "a": "A private transfer from Taghazout to Agadir starts at €45 for a private comfort sedan (1–4 passengers) and €65 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Agadir starts at €45 for a private comfort sedan (1–4 passengers), €60 for a spacious van (5–7 passengers), and €90 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Taghazout and Agadir take?",
@@ -2036,11 +2036,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Taghazout to Agadir | Fixed Price €40 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Taghazout to Agadir with Roam Morocco. Fixed rate €40, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Taghazout to Agadir | Fixed Price €45 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Taghazout to Agadir with Roam Morocco. Fixed rate €45, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Taghazout to Agadir",
     "popular": false
   },
@@ -2052,9 +2052,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Taghazout",
     "distance": "45 km",
     "duration": "45 min",
-    "price_sedan": 55,
-    "price_van": 75,
-    "price_minibus": 110,
+    "price_sedan": 50,
+    "price_van": 65,
+    "price_minibus": 98,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -2065,7 +2065,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Taghazout cost?",
-        "a": "A private transfer from Agadir Airport to Taghazout starts at €55 for a private comfort sedan (1–4 passengers) and €75 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Taghazout starts at €50 for a private comfort sedan (1–4 passengers), €65 for a spacious van (5–7 passengers), and €98 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir Airport and Taghazout take?",
@@ -2081,11 +2081,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir Airport to Taghazout | Fixed Price €45 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir Airport to Taghazout with Roam Morocco. Fixed rate €45, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir Airport to Taghazout | Fixed Price €50 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir Airport to Taghazout with Roam Morocco. Fixed rate €50, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir Airport to Taghazout",
     "popular": false
   },
@@ -2097,9 +2097,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "45 km",
     "duration": "45 min",
-    "price_sedan": 55,
-    "price_van": 75,
-    "price_minibus": 110,
+    "price_sedan": 50,
+    "price_van": 65,
+    "price_minibus": 98,
     "highway": "Motorway A7 & Coastal Route N1",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -2110,7 +2110,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Agadir Airport cost?",
-        "a": "A private transfer from Taghazout to Agadir Airport starts at €55 for a private comfort sedan (1–4 passengers) and €75 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Agadir Airport starts at €50 for a private comfort sedan (1–4 passengers), €65 for a spacious van (5–7 passengers), and €98 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Taghazout and Agadir Airport take?",
@@ -2126,11 +2126,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Taghazout to Agadir Airport | Fixed Price €45 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Taghazout to Agadir Airport with Roam Morocco. Fixed rate €45, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Taghazout to Agadir Airport | Fixed Price €50 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Taghazout to Agadir Airport with Roam Morocco. Fixed rate €50, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Taghazout to Agadir Airport",
     "popular": false
   },
@@ -2143,8 +2143,8 @@ export const routesData: RouteItem[] = [
     "distance": "185 km",
     "duration": "2h40",
     "price_sedan": 125,
-    "price_van": 165,
-    "price_minibus": 240,
+    "price_van": 160,
+    "price_minibus": 245,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2155,7 +2155,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Taghazout cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Taghazout starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Taghazout starts at €125 for a private comfort sedan (1–4 passengers), €160 for a spacious van (5–7 passengers), and €245 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Taghazout take?",
@@ -2171,11 +2171,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Taghazout | Fixed Price €120 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Taghazout with Roam Morocco. Fixed rate €120, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Taghazout | Fixed Price €125 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Taghazout with Roam Morocco. Fixed rate €125, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Taghazout",
     "popular": false
   },
@@ -2188,8 +2188,8 @@ export const routesData: RouteItem[] = [
     "distance": "185 km",
     "duration": "2h40",
     "price_sedan": 125,
-    "price_van": 165,
-    "price_minibus": 240,
+    "price_van": 160,
+    "price_minibus": 245,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2200,7 +2200,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Taghazout to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Taghazout to Essaouira Airport (ESU) starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Taghazout to Essaouira Airport (ESU) starts at €125 for a private comfort sedan (1–4 passengers), €160 for a spacious van (5–7 passengers), and €245 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Taghazout and Essaouira Airport (ESU) take?",
@@ -2216,11 +2216,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Taghazout to Essaouira Airport (ESU) | Fixed Price €120 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Taghazout to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €120, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Taghazout to Essaouira Airport (ESU) | Fixed Price €125 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Taghazout to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €125, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Taghazout to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -2233,8 +2233,8 @@ export const routesData: RouteItem[] = [
     "distance": "95 km",
     "duration": "1h30",
     "price_sedan": 95,
-    "price_van": 135,
-    "price_minibus": 195,
+    "price_van": 125,
+    "price_minibus": 191,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2245,7 +2245,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Imsouane cost?",
-        "a": "A private transfer from Essaouira to Imsouane starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Imsouane starts at €95 for a private comfort sedan (1–4 passengers), €125 for a spacious van (5–7 passengers), and €191 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Imsouane take?",
@@ -2261,11 +2261,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Imsouane | Fixed Price €90 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Imsouane with Roam Morocco. Fixed rate €90, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Imsouane | Fixed Price €95 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Imsouane with Roam Morocco. Fixed rate €95, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Imsouane",
     "popular": false
   },
@@ -2278,8 +2278,8 @@ export const routesData: RouteItem[] = [
     "distance": "95 km",
     "duration": "1h30",
     "price_sedan": 95,
-    "price_van": 135,
-    "price_minibus": 195,
+    "price_van": 125,
+    "price_minibus": 191,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2290,7 +2290,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imsouane to Essaouira cost?",
-        "a": "A private transfer from Imsouane to Essaouira starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imsouane to Essaouira starts at €95 for a private comfort sedan (1–4 passengers), €125 for a spacious van (5–7 passengers), and €191 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Imsouane and Essaouira take?",
@@ -2306,11 +2306,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Imsouane to Essaouira | Fixed Price €90 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Imsouane to Essaouira with Roam Morocco. Fixed rate €90, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Imsouane to Essaouira | Fixed Price €95 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Imsouane to Essaouira with Roam Morocco. Fixed rate €95, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Imsouane to Essaouira",
     "popular": false
   },
@@ -2322,9 +2322,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Sidi Kaouki",
     "distance": "25 km",
     "duration": "30 min",
-    "price_sedan": 35,
-    "price_van": 55,
-    "price_minibus": 80,
+    "price_sedan": 40,
+    "price_van": 50,
+    "price_minibus": 75,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2335,7 +2335,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Sidi Kaouki cost?",
-        "a": "A private transfer from Essaouira to Sidi Kaouki starts at €35 for a private comfort sedan (1–4 passengers) and €55 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Sidi Kaouki starts at €40 for a private comfort sedan (1–4 passengers), €50 for a spacious van (5–7 passengers), and €75 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Sidi Kaouki take?",
@@ -2351,11 +2351,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Sidi Kaouki | Fixed Price €35 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Sidi Kaouki with Roam Morocco. Fixed rate €35, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Sidi Kaouki | Fixed Price €40 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Sidi Kaouki with Roam Morocco. Fixed rate €40, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Sidi Kaouki",
     "popular": false
   },
@@ -2367,9 +2367,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "25 km",
     "duration": "30 min",
-    "price_sedan": 35,
-    "price_van": 55,
-    "price_minibus": 80,
+    "price_sedan": 40,
+    "price_van": 50,
+    "price_minibus": 75,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2380,7 +2380,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Sidi Kaouki to Essaouira cost?",
-        "a": "A private transfer from Sidi Kaouki to Essaouira starts at €35 for a private comfort sedan (1–4 passengers) and €55 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Sidi Kaouki to Essaouira starts at €40 for a private comfort sedan (1–4 passengers), €50 for a spacious van (5–7 passengers), and €75 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Sidi Kaouki and Essaouira take?",
@@ -2396,11 +2396,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Sidi Kaouki to Essaouira | Fixed Price €35 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Sidi Kaouki to Essaouira with Roam Morocco. Fixed rate €35, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Sidi Kaouki to Essaouira | Fixed Price €40 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Sidi Kaouki to Essaouira with Roam Morocco. Fixed rate €40, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Sidi Kaouki to Essaouira",
     "popular": false
   },
@@ -2412,9 +2412,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "370 km",
     "duration": "4h",
-    "price_sedan": 210,
-    "price_van": 265,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2425,7 +2425,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Essaouira cost?",
-        "a": "A private transfer from Casablanca Airport to Essaouira starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Essaouira starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Essaouira take?",
@@ -2441,11 +2441,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca Airport to Essaouira | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca Airport to Essaouira with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca Airport to Essaouira | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca Airport to Essaouira with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca Airport to Essaouira",
     "popular": false
   },
@@ -2457,9 +2457,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "370 km",
     "duration": "4h",
-    "price_sedan": 210,
-    "price_van": 265,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2470,7 +2470,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Casablanca Airport cost?",
-        "a": "A private transfer from Essaouira to Casablanca Airport starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Casablanca Airport starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Casablanca Airport take?",
@@ -2486,11 +2486,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Casablanca Airport | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Casablanca Airport with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Casablanca Airport | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Casablanca Airport with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Casablanca Airport",
     "popular": false
   },
@@ -2502,9 +2502,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "380 km",
     "duration": "4h15",
-    "price_sedan": 210,
-    "price_van": 265,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2515,7 +2515,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Essaouira cost?",
-        "a": "A private transfer from Casablanca to Essaouira starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Essaouira starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca and Essaouira take?",
@@ -2531,11 +2531,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca to Essaouira | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca to Essaouira with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca to Essaouira | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca to Essaouira with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca to Essaouira",
     "popular": false
   },
@@ -2547,9 +2547,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "380 km",
     "duration": "4h15",
-    "price_sedan": 210,
-    "price_van": 265,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -2560,7 +2560,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Casablanca cost?",
-        "a": "A private transfer from Essaouira to Casablanca starts at €210 for a private comfort sedan (1–4 passengers) and €265 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Casablanca starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Casablanca take?",
@@ -2576,11 +2576,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Casablanca | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Casablanca with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Casablanca | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Casablanca with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Casablanca",
     "popular": false
   },
@@ -2592,9 +2592,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Tangier",
     "distance": "340 km",
     "duration": "3h30",
-    "price_sedan": 265,
-    "price_van": 330,
-    "price_minibus": 495,
+    "price_sedan": 245,
+    "price_van": 305,
+    "price_minibus": 470,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2605,7 +2605,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Tangier cost?",
-        "a": "A private transfer from Casablanca Airport to Tangier starts at €265 for a private comfort sedan (1–4 passengers) and €330 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Tangier starts at €245 for a private comfort sedan (1–4 passengers), €305 for a spacious van (5–7 passengers), and €470 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Tangier take?",
@@ -2621,11 +2621,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca Airport to Tangier | Fixed Price €240 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca Airport to Tangier with Roam Morocco. Fixed rate €240, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca Airport to Tangier | Fixed Price €245 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca Airport to Tangier with Roam Morocco. Fixed rate €245, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca Airport to Tangier",
     "popular": false
   },
@@ -2637,9 +2637,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "340 km",
     "duration": "3h30",
-    "price_sedan": 265,
-    "price_van": 330,
-    "price_minibus": 495,
+    "price_sedan": 245,
+    "price_van": 305,
+    "price_minibus": 470,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2650,7 +2650,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Tangier to Casablanca Airport cost?",
-        "a": "A private transfer from Tangier to Casablanca Airport starts at €265 for a private comfort sedan (1–4 passengers) and €330 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Tangier to Casablanca Airport starts at €245 for a private comfort sedan (1–4 passengers), €305 for a spacious van (5–7 passengers), and €470 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Tangier and Casablanca Airport take?",
@@ -2666,11 +2666,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Tangier to Casablanca Airport | Fixed Price €240 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Tangier to Casablanca Airport with Roam Morocco. Fixed rate €240, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Tangier to Casablanca Airport | Fixed Price €245 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Tangier to Casablanca Airport with Roam Morocco. Fixed rate €245, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Tangier to Casablanca Airport",
     "popular": false
   },
@@ -2682,9 +2682,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 195,
-    "price_van": 250,
-    "price_minibus": 375,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 362,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2695,7 +2695,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Casablanca Airport cost?",
-        "a": "A private transfer from Fes to Casablanca Airport starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Casablanca Airport starts at €185 for a private comfort sedan (1–4 passengers), €235 for a spacious van (5–7 passengers), and €362 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Fes and Casablanca Airport take?",
@@ -2711,11 +2711,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Fes to Casablanca Airport | Fixed Price €180 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Fes to Casablanca Airport with Roam Morocco. Fixed rate €180, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Fes to Casablanca Airport | Fixed Price €185 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Fes to Casablanca Airport with Roam Morocco. Fixed rate €185, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Fes to Casablanca Airport",
     "popular": false
   },
@@ -2727,9 +2727,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 195,
-    "price_van": 250,
-    "price_minibus": 375,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 362,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2740,7 +2740,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Fes cost?",
-        "a": "A private transfer from Casablanca Airport to Fes starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Fes starts at €185 for a private comfort sedan (1–4 passengers), €235 for a spacious van (5–7 passengers), and €362 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Fes take?",
@@ -2756,11 +2756,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca Airport to Fes | Fixed Price €180 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca Airport to Fes with Roam Morocco. Fixed rate €180, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca Airport to Fes | Fixed Price €185 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca Airport to Fes with Roam Morocco. Fixed rate €185, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca Airport to Fes",
     "popular": false
   },
@@ -2772,9 +2772,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ourika Valley",
     "distance": "45 km",
     "duration": "1h",
-    "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_sedan": 80,
+    "price_van": 100,
+    "price_minibus": 155,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2785,7 +2785,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Ourika Valley cost?",
-        "a": "A private transfer from Marrakech to Ourika Valley starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Ourika Valley starts at €80 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €155 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Ourika Valley take?",
@@ -2801,11 +2801,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Ourika Valley | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Ourika Valley with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Ourika Valley | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Ourika Valley with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Ourika Valley",
     "popular": false
   },
@@ -2817,9 +2817,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "45 km",
     "duration": "1h",
-    "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_sedan": 80,
+    "price_van": 100,
+    "price_minibus": 155,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2830,7 +2830,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ourika Valley to Marrakech cost?",
-        "a": "A private transfer from Ourika Valley to Marrakech starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ourika Valley to Marrakech starts at €80 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €155 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Ourika Valley and Marrakech take?",
@@ -2846,11 +2846,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Ourika Valley to Marrakech | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Ourika Valley to Marrakech with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Ourika Valley to Marrakech | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Ourika Valley to Marrakech with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Ourika Valley to Marrakech",
     "popular": false
   },
@@ -2863,8 +2863,8 @@ export const routesData: RouteItem[] = [
     "distance": "50 km",
     "duration": "1h05",
     "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_van": 105,
+    "price_minibus": 160,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2875,7 +2875,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Ourika Valley cost?",
-        "a": "A private transfer from Marrakech Airport to Ourika Valley starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Ourika Valley starts at €85 for a private comfort sedan (1–4 passengers), €105 for a spacious van (5–7 passengers), and €160 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Ourika Valley take?",
@@ -2891,11 +2891,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Ourika Valley | Fixed Price €80 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Ourika Valley with Roam Morocco. Fixed rate €80, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Ourika Valley | Fixed Price €85 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Ourika Valley with Roam Morocco. Fixed rate €85, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Ourika Valley",
     "popular": false
   },
@@ -2908,8 +2908,8 @@ export const routesData: RouteItem[] = [
     "distance": "50 km",
     "duration": "1h05",
     "price_sedan": 85,
-    "price_van": 120,
-    "price_minibus": 175,
+    "price_van": 105,
+    "price_minibus": 160,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2920,7 +2920,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ourika Valley to Marrakech Airport cost?",
-        "a": "A private transfer from Ourika Valley to Marrakech Airport starts at €85 for a private comfort sedan (1–4 passengers) and €120 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ourika Valley to Marrakech Airport starts at €85 for a private comfort sedan (1–4 passengers), €105 for a spacious van (5–7 passengers), and €160 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Ourika Valley and Marrakech Airport take?",
@@ -2936,11 +2936,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Ourika Valley to Marrakech Airport | Fixed Price €80 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Ourika Valley to Marrakech Airport with Roam Morocco. Fixed rate €80, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Ourika Valley to Marrakech Airport | Fixed Price €85 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Ourika Valley to Marrakech Airport with Roam Morocco. Fixed rate €85, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Ourika Valley to Marrakech Airport",
     "popular": false
   },
@@ -2953,8 +2953,8 @@ export const routesData: RouteItem[] = [
     "distance": "75 km",
     "duration": "1h30",
     "price_sedan": 95,
-    "price_van": 135,
-    "price_minibus": 195,
+    "price_van": 125,
+    "price_minibus": 191,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -2965,7 +2965,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Oukaimeden (ski resort) cost?",
-        "a": "A private transfer from Marrakech to Oukaimeden (ski resort) starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Oukaimeden (ski resort) starts at €95 for a private comfort sedan (1–4 passengers), €125 for a spacious van (5–7 passengers), and €191 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Oukaimeden (ski resort) take?",
@@ -2981,11 +2981,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Oukaimeden (ski resort) | Fixed Price €90 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Oukaimeden (ski resort) with Roam Morocco. Fixed rate €90, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Oukaimeden (ski resort) | Fixed Price €95 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Oukaimeden (ski resort) with Roam Morocco. Fixed rate €95, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Oukaimeden (ski resort)",
     "popular": false
   },
@@ -2998,8 +2998,8 @@ export const routesData: RouteItem[] = [
     "distance": "75 km",
     "duration": "1h30",
     "price_sedan": 95,
-    "price_van": 135,
-    "price_minibus": 195,
+    "price_van": 125,
+    "price_minibus": 191,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3010,7 +3010,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Oukaimeden (ski resort) to Marrakech cost?",
-        "a": "A private transfer from Oukaimeden (ski resort) to Marrakech starts at €95 for a private comfort sedan (1–4 passengers) and €135 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Oukaimeden (ski resort) to Marrakech starts at €95 for a private comfort sedan (1–4 passengers), €125 for a spacious van (5–7 passengers), and €191 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Oukaimeden (ski resort) and Marrakech take?",
@@ -3026,11 +3026,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Oukaimeden (ski resort) to Marrakech | Fixed Price €90 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Oukaimeden (ski resort) to Marrakech with Roam Morocco. Fixed rate €90, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Oukaimeden (ski resort) to Marrakech | Fixed Price €95 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Oukaimeden (ski resort) to Marrakech with Roam Morocco. Fixed rate €95, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Oukaimeden (ski resort) to Marrakech",
     "popular": false
   },
@@ -3042,9 +3042,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Setti Fatma",
     "distance": "70 km",
     "duration": "1h15",
-    "price_sedan": 80,
-    "price_van": 115,
-    "price_minibus": 165,
+    "price_sedan": 75,
+    "price_van": 100,
+    "price_minibus": 152,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3055,7 +3055,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Setti Fatma cost?",
-        "a": "A private transfer from Marrakech to Setti Fatma starts at €80 for a private comfort sedan (1–4 passengers) and €115 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Setti Fatma starts at €75 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €152 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Setti Fatma take?",
@@ -3071,11 +3071,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Setti Fatma | Fixed Price €70 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Setti Fatma with Roam Morocco. Fixed rate €70, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Setti Fatma | Fixed Price €75 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Setti Fatma with Roam Morocco. Fixed rate €75, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Setti Fatma",
     "popular": false
   },
@@ -3087,9 +3087,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "70 km",
     "duration": "1h15",
-    "price_sedan": 80,
-    "price_van": 115,
-    "price_minibus": 165,
+    "price_sedan": 75,
+    "price_van": 100,
+    "price_minibus": 152,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3100,7 +3100,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Setti Fatma to Marrakech cost?",
-        "a": "A private transfer from Setti Fatma to Marrakech starts at €80 for a private comfort sedan (1–4 passengers) and €115 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Setti Fatma to Marrakech starts at €75 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €152 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Setti Fatma and Marrakech take?",
@@ -3116,11 +3116,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Setti Fatma to Marrakech | Fixed Price €70 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Setti Fatma to Marrakech with Roam Morocco. Fixed rate €70, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Setti Fatma to Marrakech | Fixed Price €75 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Setti Fatma to Marrakech with Roam Morocco. Fixed rate €75, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Setti Fatma to Marrakech",
     "popular": false
   },
@@ -3132,9 +3132,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Chefchaouen",
     "distance": "115 km",
     "duration": "2h",
-    "price_sedan": 125,
-    "price_van": 165,
-    "price_minibus": 250,
+    "price_sedan": 114,
+    "price_van": 150,
+    "price_minibus": 230,
     "highway": "National Route N2",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3145,7 +3145,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Tangier to Chefchaouen cost?",
-        "a": "A private transfer from Tangier to Chefchaouen starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Tangier to Chefchaouen starts at €114 for a private comfort sedan (1–4 passengers), €150 for a spacious van (5–7 passengers), and €230 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Tangier and Chefchaouen take?",
@@ -3161,11 +3161,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Tangier to Chefchaouen | Fixed Price €109 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Tangier to Chefchaouen with Roam Morocco. Fixed rate €109, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Tangier to Chefchaouen | Fixed Price €114 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Tangier to Chefchaouen with Roam Morocco. Fixed rate €114, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Tangier to Chefchaouen",
     "popular": false
   },
@@ -3177,9 +3177,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Tangier",
     "distance": "115 km",
     "duration": "2h",
-    "price_sedan": 125,
-    "price_van": 165,
-    "price_minibus": 250,
+    "price_sedan": 114,
+    "price_van": 150,
+    "price_minibus": 230,
     "highway": "National Route N2",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3190,7 +3190,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Chefchaouen to Tangier cost?",
-        "a": "A private transfer from Chefchaouen to Tangier starts at €125 for a private comfort sedan (1–4 passengers) and €165 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Chefchaouen to Tangier starts at €114 for a private comfort sedan (1–4 passengers), €150 for a spacious van (5–7 passengers), and €230 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Chefchaouen and Tangier take?",
@@ -3206,11 +3206,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Chefchaouen to Tangier | Fixed Price €109 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Chefchaouen to Tangier with Roam Morocco. Fixed rate €109, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Chefchaouen to Tangier | Fixed Price €114 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Chefchaouen to Tangier with Roam Morocco. Fixed rate €114, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Chefchaouen to Tangier",
     "popular": false
   },
@@ -3222,9 +3222,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "200 km",
     "duration": "3h30",
-    "price_sedan": 145,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "National Route N13 & N2 (Rif Mountains)",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3235,7 +3235,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Chefchaouen to Fes cost?",
-        "a": "A private transfer from Chefchaouen to Fes starts at €145 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Chefchaouen to Fes starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Chefchaouen and Fes take?",
@@ -3251,11 +3251,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Chefchaouen to Fes | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Chefchaouen to Fes with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Chefchaouen to Fes | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Chefchaouen to Fes with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Chefchaouen to Fes",
     "popular": false
   },
@@ -3267,9 +3267,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Chefchaouen",
     "distance": "200 km",
     "duration": "3h30",
-    "price_sedan": 145,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "National Route N13 & N2 (Rif Mountains)",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3280,7 +3280,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Chefchaouen cost?",
-        "a": "A private transfer from Fes to Chefchaouen starts at €145 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Chefchaouen starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Fes and Chefchaouen take?",
@@ -3296,11 +3296,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Fes to Chefchaouen | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Fes to Chefchaouen with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Fes to Chefchaouen | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Fes to Chefchaouen with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Fes to Chefchaouen",
     "popular": false
   },
@@ -3312,9 +3312,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "340 km",
     "duration": "5h",
-    "price_sedan": 235,
-    "price_van": 295,
-    "price_minibus": 440,
+    "price_sedan": 225,
+    "price_van": 280,
+    "price_minibus": 431,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3325,7 +3325,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Chefchaouen to Casablanca cost?",
-        "a": "A private transfer from Chefchaouen to Casablanca starts at €235 for a private comfort sedan (1–4 passengers) and €295 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Chefchaouen to Casablanca starts at €225 for a private comfort sedan (1–4 passengers), €280 for a spacious van (5–7 passengers), and €431 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Chefchaouen and Casablanca take?",
@@ -3341,11 +3341,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Chefchaouen to Casablanca | Fixed Price €220 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Chefchaouen to Casablanca with Roam Morocco. Fixed rate €220, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Chefchaouen to Casablanca | Fixed Price €225 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Chefchaouen to Casablanca with Roam Morocco. Fixed rate €225, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Chefchaouen to Casablanca",
     "popular": false
   },
@@ -3357,9 +3357,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Chefchaouen",
     "distance": "340 km",
     "duration": "5h",
-    "price_sedan": 235,
-    "price_van": 295,
-    "price_minibus": 440,
+    "price_sedan": 225,
+    "price_van": 280,
+    "price_minibus": 431,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Winding through the lush green peaks and cedar forests of the Rif Mountains",
@@ -3370,7 +3370,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Chefchaouen cost?",
-        "a": "A private transfer from Casablanca to Chefchaouen starts at €235 for a private comfort sedan (1–4 passengers) and €295 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Chefchaouen starts at €225 for a private comfort sedan (1–4 passengers), €280 for a spacious van (5–7 passengers), and €431 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca and Chefchaouen take?",
@@ -3386,11 +3386,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca to Chefchaouen | Fixed Price €220 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca to Chefchaouen with Roam Morocco. Fixed rate €220, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca to Chefchaouen | Fixed Price €225 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca to Chefchaouen with Roam Morocco. Fixed rate €225, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca to Chefchaouen",
     "popular": false
   },
@@ -3402,9 +3402,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "530 km",
     "duration": "6h30",
-    "price_sedan": 295,
-    "price_van": 370,
-    "price_minibus": 540,
+    "price_sedan": 264,
+    "price_van": 325,
+    "price_minibus": 501,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3415,7 +3415,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Fes cost?",
-        "a": "A private transfer from Marrakech to Fes starts at €295 for a private comfort sedan (1–4 passengers) and €370 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Fes starts at €264 for a private comfort sedan (1–4 passengers), €325 for a spacious van (5–7 passengers), and €501 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Fes take?",
@@ -3431,11 +3431,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Fes | Fixed Price €259 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Fes with Roam Morocco. Fixed rate €259, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Fes | Fixed Price €264 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Fes with Roam Morocco. Fixed rate €264, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Fes",
     "popular": false
   },
@@ -3447,9 +3447,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "530 km",
     "duration": "6h30",
-    "price_sedan": 295,
-    "price_van": 370,
-    "price_minibus": 540,
+    "price_sedan": 264,
+    "price_van": 325,
+    "price_minibus": 501,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3460,7 +3460,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Marrakech cost?",
-        "a": "A private transfer from Fes to Marrakech starts at €295 for a private comfort sedan (1–4 passengers) and €370 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Marrakech starts at €264 for a private comfort sedan (1–4 passengers), €325 for a spacious van (5–7 passengers), and €501 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Fes and Marrakech take?",
@@ -3476,11 +3476,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Fes to Marrakech | Fixed Price €259 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Fes to Marrakech with Roam Morocco. Fixed rate €259, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Fes to Marrakech | Fixed Price €264 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Fes to Marrakech with Roam Morocco. Fixed rate €264, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Fes to Marrakech",
     "popular": false
   },
@@ -3492,9 +3492,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 195,
-    "price_van": 250,
-    "price_minibus": 375,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 362,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3505,7 +3505,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Fes to Casablanca cost?",
-        "a": "A private transfer from Fes to Casablanca starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Fes to Casablanca starts at €185 for a private comfort sedan (1–4 passengers), €235 for a spacious van (5–7 passengers), and €362 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Fes and Casablanca take?",
@@ -3521,11 +3521,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Fes to Casablanca | Fixed Price €180 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Fes to Casablanca with Roam Morocco. Fixed rate €180, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Fes to Casablanca | Fixed Price €185 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Fes to Casablanca with Roam Morocco. Fixed rate €185, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Fes to Casablanca",
     "popular": false
   },
@@ -3537,9 +3537,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Fes",
     "distance": "290 km",
     "duration": "3h",
-    "price_sedan": 195,
-    "price_van": 250,
-    "price_minibus": 375,
+    "price_sedan": 185,
+    "price_van": 235,
+    "price_minibus": 362,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3550,7 +3550,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Fes cost?",
-        "a": "A private transfer from Casablanca to Fes starts at €195 for a private comfort sedan (1–4 passengers) and €250 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Fes starts at €185 for a private comfort sedan (1–4 passengers), €235 for a spacious van (5–7 passengers), and €362 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca and Fes take?",
@@ -3566,11 +3566,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca to Fes | Fixed Price €180 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca to Fes with Roam Morocco. Fixed rate €180, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca to Fes | Fixed Price €185 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca to Fes with Roam Morocco. Fixed rate €185, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca to Fes",
     "popular": false
   },
@@ -3582,9 +3582,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "90 km",
     "duration": "1h15",
-    "price_sedan": 90,
-    "price_van": 130,
-    "price_minibus": 195,
+    "price_sedan": 70,
+    "price_van": 95,
+    "price_minibus": 145,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3595,7 +3595,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca to Rabat cost?",
-        "a": "A private transfer from Casablanca to Rabat starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca to Rabat starts at €70 for a private comfort sedan (1–4 passengers), €95 for a spacious van (5–7 passengers), and €145 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca and Rabat take?",
@@ -3611,11 +3611,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca to Rabat | Fixed Price €65 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca to Rabat with Roam Morocco. Fixed rate €65, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca to Rabat | Fixed Price €70 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca to Rabat with Roam Morocco. Fixed rate €70, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca to Rabat",
     "popular": false
   },
@@ -3627,9 +3627,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca",
     "distance": "90 km",
     "duration": "1h15",
-    "price_sedan": 90,
-    "price_van": 130,
-    "price_minibus": 195,
+    "price_sedan": 70,
+    "price_van": 95,
+    "price_minibus": 145,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3640,7 +3640,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Casablanca cost?",
-        "a": "A private transfer from Rabat to Casablanca starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Casablanca starts at €70 for a private comfort sedan (1–4 passengers), €95 for a spacious van (5–7 passengers), and €145 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Rabat and Casablanca take?",
@@ -3656,11 +3656,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Rabat to Casablanca | Fixed Price €65 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Rabat to Casablanca with Roam Morocco. Fixed rate €65, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Rabat to Casablanca | Fixed Price €70 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Rabat to Casablanca with Roam Morocco. Fixed rate €70, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Rabat to Casablanca",
     "popular": false
   },
@@ -3672,9 +3672,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "90 km",
     "duration": "1h",
-    "price_sedan": 90,
-    "price_van": 130,
-    "price_minibus": 195,
+    "price_sedan": 80,
+    "price_van": 105,
+    "price_minibus": 160,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3685,7 +3685,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Rabat cost?",
-        "a": "A private transfer from Casablanca Airport to Rabat starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Rabat starts at €80 for a private comfort sedan (1–4 passengers), €105 for a spacious van (5–7 passengers), and €160 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Rabat take?",
@@ -3701,11 +3701,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca Airport to Rabat | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca Airport to Rabat with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca Airport to Rabat | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca Airport to Rabat with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca Airport to Rabat",
     "popular": false
   },
@@ -3717,9 +3717,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "90 km",
     "duration": "1h",
-    "price_sedan": 90,
-    "price_van": 130,
-    "price_minibus": 195,
+    "price_sedan": 80,
+    "price_van": 105,
+    "price_minibus": 160,
     "highway": "Motorway A1",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3730,7 +3730,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Casablanca Airport cost?",
-        "a": "A private transfer from Rabat to Casablanca Airport starts at €90 for a private comfort sedan (1–4 passengers) and €130 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Casablanca Airport starts at €80 for a private comfort sedan (1–4 passengers), €105 for a spacious van (5–7 passengers), and €160 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Rabat and Casablanca Airport take?",
@@ -3746,11 +3746,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Rabat to Casablanca Airport | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Rabat to Casablanca Airport with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Rabat to Casablanca Airport | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Rabat to Casablanca Airport with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Rabat to Casablanca Airport",
     "popular": false
   },
@@ -3762,9 +3762,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "450 km",
     "duration": "5h30",
-    "price_sedan": 260,
-    "price_van": 325,
-    "price_minibus": 480,
+    "price_sedan": 245,
+    "price_van": 305,
+    "price_minibus": 470,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -3775,7 +3775,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Rabat cost?",
-        "a": "A private transfer from Essaouira to Rabat starts at €260 for a private comfort sedan (1–4 passengers) and €325 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Rabat starts at €245 for a private comfort sedan (1–4 passengers), €305 for a spacious van (5–7 passengers), and €470 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Rabat take?",
@@ -3791,11 +3791,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Rabat | Fixed Price €240 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Rabat with Roam Morocco. Fixed rate €240, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Rabat | Fixed Price €245 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Rabat with Roam Morocco. Fixed rate €245, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Rabat",
     "popular": false
   },
@@ -3807,9 +3807,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "450 km",
     "duration": "5h30",
-    "price_sedan": 260,
-    "price_van": 325,
-    "price_minibus": 480,
+    "price_sedan": 245,
+    "price_van": 305,
+    "price_minibus": 470,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -3820,7 +3820,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Essaouira cost?",
-        "a": "A private transfer from Rabat to Essaouira starts at €260 for a private comfort sedan (1–4 passengers) and €325 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Essaouira starts at €245 for a private comfort sedan (1–4 passengers), €305 for a spacious van (5–7 passengers), and €470 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Rabat and Essaouira take?",
@@ -3836,11 +3836,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Rabat to Essaouira | Fixed Price €240 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Rabat to Essaouira with Roam Morocco. Fixed rate €240, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Rabat to Essaouira | Fixed Price €245 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Rabat to Essaouira with Roam Morocco. Fixed rate €245, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Rabat to Essaouira",
     "popular": false
   },
@@ -3852,9 +3852,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 215,
-    "price_van": 270,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3865,7 +3865,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Rabat cost?",
-        "a": "A private transfer from Marrakech to Rabat starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Rabat starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Rabat take?",
@@ -3881,11 +3881,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Rabat | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Rabat with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Rabat | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Rabat with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Rabat",
     "popular": false
   },
@@ -3897,9 +3897,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 215,
-    "price_van": 270,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3910,7 +3910,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Marrakech cost?",
-        "a": "A private transfer from Rabat to Marrakech starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Marrakech starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Rabat and Marrakech take?",
@@ -3926,11 +3926,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Rabat to Marrakech | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Rabat to Marrakech with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Rabat to Marrakech | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Rabat to Marrakech with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Rabat to Marrakech",
     "popular": false
   },
@@ -3942,9 +3942,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Rabat",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 215,
-    "price_van": 270,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -3955,7 +3955,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Rabat cost?",
-        "a": "A private transfer from Marrakech Airport to Rabat starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Rabat starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Rabat take?",
@@ -3971,11 +3971,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Rabat | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Rabat with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Rabat | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Rabat with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Rabat",
     "popular": false
   },
@@ -3987,9 +3987,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "320 km",
     "duration": "4h",
-    "price_sedan": 215,
-    "price_van": 270,
-    "price_minibus": 395,
+    "price_sedan": 195,
+    "price_van": 245,
+    "price_minibus": 377,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4000,7 +4000,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Rabat to Marrakech Airport cost?",
-        "a": "A private transfer from Rabat to Marrakech Airport starts at €215 for a private comfort sedan (1–4 passengers) and €270 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Rabat to Marrakech Airport starts at €195 for a private comfort sedan (1–4 passengers), €245 for a spacious van (5–7 passengers), and €377 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Rabat and Marrakech Airport take?",
@@ -4016,11 +4016,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Rabat to Marrakech Airport | Fixed Price €190 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Rabat to Marrakech Airport with Roam Morocco. Fixed rate €190, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Rabat to Marrakech Airport | Fixed Price €195 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Rabat to Marrakech Airport with Roam Morocco. Fixed rate €195, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Rabat to Marrakech Airport",
     "popular": false
   },
@@ -4032,20 +4032,20 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ouarzazate",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 155,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 139,
+    "price_van": 175,
+    "price_minibus": 266,
     "highway": "National Route N9 (Tizi n'Tichka Pass)",
     "highlights": [
       "Crossing the legendary Tizi n'Tichka mountain pass at 2,260 meters elevation",
       "Panoramas of ancient red-clay kasbahs and fortified adobe ksour",
       "Flexible photo stops at scenic valley viewpoints and Berber roadside cafés",
-      "Heavy-duty Prado 4x4 or Mercedes van engineered for high-altitude comfort"
+      "Heavy-duty Prado 4x4 or comfort van engineered for high-altitude comfort"
     ],
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Ouarzazate cost?",
-        "a": "A private transfer from Marrakech to Ouarzazate starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Ouarzazate starts at €139 for a private comfort sedan (1–4 passengers), €175 for a spacious van (5–7 passengers), and €266 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Ouarzazate take?",
@@ -4061,11 +4061,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Ouarzazate | Fixed Price €129 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Ouarzazate with Roam Morocco. Fixed rate €129, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Ouarzazate | Fixed Price €139 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Ouarzazate with Roam Morocco. Fixed rate €139, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Ouarzazate",
     "popular": false
   },
@@ -4077,20 +4077,20 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 155,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 139,
+    "price_van": 175,
+    "price_minibus": 266,
     "highway": "National Route N9 (Tizi n'Tichka Pass)",
     "highlights": [
       "Crossing the legendary Tizi n'Tichka mountain pass at 2,260 meters elevation",
       "Panoramas of ancient red-clay kasbahs and fortified adobe ksour",
       "Flexible photo stops at scenic valley viewpoints and Berber roadside cafés",
-      "Heavy-duty Prado 4x4 or Mercedes van engineered for high-altitude comfort"
+      "Heavy-duty Prado 4x4 or comfort van engineered for high-altitude comfort"
     ],
     "faqs": [
       {
         "q": "How much does a private transfer from Ouarzazate to Marrakech cost?",
-        "a": "A private transfer from Ouarzazate to Marrakech starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ouarzazate to Marrakech starts at €139 for a private comfort sedan (1–4 passengers), €175 for a spacious van (5–7 passengers), and €266 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Ouarzazate and Marrakech take?",
@@ -4106,11 +4106,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Ouarzazate to Marrakech | Fixed Price €129 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Ouarzazate to Marrakech with Roam Morocco. Fixed rate €129, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Ouarzazate to Marrakech | Fixed Price €139 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Ouarzazate to Marrakech with Roam Morocco. Fixed rate €139, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Ouarzazate to Marrakech",
     "popular": false
   },
@@ -4122,9 +4122,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ait Ben Haddou",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 155,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 140,
+    "price_van": 175,
+    "price_minibus": 270,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4135,7 +4135,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Ait Ben Haddou cost?",
-        "a": "A private transfer from Marrakech to Ait Ben Haddou starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Ait Ben Haddou starts at €140 for a private comfort sedan (1–4 passengers), €175 for a spacious van (5–7 passengers), and €270 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Ait Ben Haddou take?",
@@ -4151,11 +4151,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Ait Ben Haddou | Fixed Price €135 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Ait Ben Haddou with Roam Morocco. Fixed rate €135, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Ait Ben Haddou | Fixed Price €140 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Ait Ben Haddou with Roam Morocco. Fixed rate €140, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Ait Ben Haddou",
     "popular": false
   },
@@ -4167,9 +4167,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "200 km",
     "duration": "4h",
-    "price_sedan": 155,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 140,
+    "price_van": 175,
+    "price_minibus": 270,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4180,7 +4180,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ait Ben Haddou to Marrakech cost?",
-        "a": "A private transfer from Ait Ben Haddou to Marrakech starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ait Ben Haddou to Marrakech starts at €140 for a private comfort sedan (1–4 passengers), €175 for a spacious van (5–7 passengers), and €270 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Ait Ben Haddou and Marrakech take?",
@@ -4196,11 +4196,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Ait Ben Haddou to Marrakech | Fixed Price €135 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Ait Ben Haddou to Marrakech with Roam Morocco. Fixed rate €135, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Ait Ben Haddou to Marrakech | Fixed Price €140 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Ait Ben Haddou to Marrakech with Roam Morocco. Fixed rate €140, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Ait Ben Haddou to Marrakech",
     "popular": false
   },
@@ -4212,9 +4212,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ait Ben Haddou",
     "distance": "205 km",
     "duration": "4h",
-    "price_sedan": 155,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 140,
+    "price_van": 175,
+    "price_minibus": 270,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4225,7 +4225,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Ait Ben Haddou cost?",
-        "a": "A private transfer from Marrakech Airport to Ait Ben Haddou starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Ait Ben Haddou starts at €140 for a private comfort sedan (1–4 passengers), €175 for a spacious van (5–7 passengers), and €270 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Ait Ben Haddou take?",
@@ -4241,11 +4241,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Ait Ben Haddou | Fixed Price €135 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Ait Ben Haddou with Roam Morocco. Fixed rate €135, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Ait Ben Haddou | Fixed Price €140 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Ait Ben Haddou with Roam Morocco. Fixed rate €140, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Ait Ben Haddou",
     "popular": false
   },
@@ -4257,9 +4257,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "205 km",
     "duration": "4h",
-    "price_sedan": 155,
-    "price_van": 195,
-    "price_minibus": 295,
+    "price_sedan": 140,
+    "price_van": 175,
+    "price_minibus": 270,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4270,7 +4270,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ait Ben Haddou to Marrakech Airport cost?",
-        "a": "A private transfer from Ait Ben Haddou to Marrakech Airport starts at €155 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ait Ben Haddou to Marrakech Airport starts at €140 for a private comfort sedan (1–4 passengers), €175 for a spacious van (5–7 passengers), and €270 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Ait Ben Haddou and Marrakech Airport take?",
@@ -4286,11 +4286,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Ait Ben Haddou to Marrakech Airport | Fixed Price €135 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Ait Ben Haddou to Marrakech Airport with Roam Morocco. Fixed rate €135, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Ait Ben Haddou to Marrakech Airport | Fixed Price €140 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Ait Ben Haddou to Marrakech Airport with Roam Morocco. Fixed rate €140, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Ait Ben Haddou to Marrakech Airport",
     "popular": false
   },
@@ -4302,9 +4302,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Oualidia",
     "distance": "200 km",
     "duration": "3h",
-    "price_sedan": 150,
+    "price_sedan": 135,
     "price_van": 195,
-    "price_minibus": 290,
+    "price_minibus": 300,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4315,7 +4315,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Oualidia cost?",
-        "a": "A private transfer from Marrakech to Oualidia starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Oualidia starts at €135 for a private comfort sedan (1–4 passengers), €195 for a spacious van (5–7 passengers), and €300 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Oualidia take?",
@@ -4331,11 +4331,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Oualidia | Fixed Price €130 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Oualidia with Roam Morocco. Fixed rate €130, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Oualidia | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Oualidia with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Oualidia",
     "popular": false
   },
@@ -4347,9 +4347,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "200 km",
     "duration": "3h",
-    "price_sedan": 150,
+    "price_sedan": 135,
     "price_van": 195,
-    "price_minibus": 290,
+    "price_minibus": 300,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4360,7 +4360,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Oualidia to Marrakech cost?",
-        "a": "A private transfer from Oualidia to Marrakech starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Oualidia to Marrakech starts at €135 for a private comfort sedan (1–4 passengers), €195 for a spacious van (5–7 passengers), and €300 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Oualidia and Marrakech take?",
@@ -4376,11 +4376,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Oualidia to Marrakech | Fixed Price €130 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Oualidia to Marrakech with Roam Morocco. Fixed rate €130, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Oualidia to Marrakech | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Oualidia to Marrakech with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Oualidia to Marrakech",
     "popular": false
   },
@@ -4392,9 +4392,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Oualidia",
     "distance": "190 km",
     "duration": "2h30",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 290,
+    "price_sedan": 145,
+    "price_van": 205,
+    "price_minibus": 315,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4405,7 +4405,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Casablanca Airport to Oualidia cost?",
-        "a": "A private transfer from Casablanca Airport to Oualidia starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Casablanca Airport to Oualidia starts at €145 for a private comfort sedan (1–4 passengers), €205 for a spacious van (5–7 passengers), and €315 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Casablanca Airport and Oualidia take?",
@@ -4421,11 +4421,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Casablanca Airport to Oualidia | Fixed Price €140 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Casablanca Airport to Oualidia with Roam Morocco. Fixed rate €140, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Casablanca Airport to Oualidia | Fixed Price €145 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Casablanca Airport to Oualidia with Roam Morocco. Fixed rate €145, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Casablanca Airport to Oualidia",
     "popular": false
   },
@@ -4437,9 +4437,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "190 km",
     "duration": "2h30",
-    "price_sedan": 150,
-    "price_van": 195,
-    "price_minibus": 290,
+    "price_sedan": 145,
+    "price_van": 205,
+    "price_minibus": 315,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4450,7 +4450,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Oualidia to Casablanca Airport cost?",
-        "a": "A private transfer from Oualidia to Casablanca Airport starts at €150 for a private comfort sedan (1–4 passengers) and €195 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Oualidia to Casablanca Airport starts at €145 for a private comfort sedan (1–4 passengers), €205 for a spacious van (5–7 passengers), and €315 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Oualidia and Casablanca Airport take?",
@@ -4466,11 +4466,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Oualidia to Casablanca Airport | Fixed Price €140 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Oualidia to Casablanca Airport with Roam Morocco. Fixed rate €140, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Oualidia to Casablanca Airport | Fixed Price €145 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Oualidia to Casablanca Airport with Roam Morocco. Fixed rate €145, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Oualidia to Casablanca Airport",
     "popular": false
   },
@@ -4482,9 +4482,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imsouane",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 175,
-    "price_van": 225,
-    "price_minibus": 320,
+    "price_sedan": 165,
+    "price_van": 215,
+    "price_minibus": 330,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4495,7 +4495,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Imsouane cost?",
-        "a": "A private transfer from Marrakech to Imsouane starts at €175 for a private comfort sedan (1–4 passengers) and €225 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Imsouane starts at €165 for a private comfort sedan (1–4 passengers), €215 for a spacious van (5–7 passengers), and €330 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Imsouane take?",
@@ -4511,11 +4511,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Imsouane | Fixed Price €160 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Imsouane with Roam Morocco. Fixed rate €160, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Imsouane | Fixed Price €165 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Imsouane with Roam Morocco. Fixed rate €165, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Imsouane",
     "popular": false
   },
@@ -4527,9 +4527,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 175,
-    "price_van": 225,
-    "price_minibus": 320,
+    "price_sedan": 165,
+    "price_van": 215,
+    "price_minibus": 330,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4540,7 +4540,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imsouane to Marrakech cost?",
-        "a": "A private transfer from Imsouane to Marrakech starts at €175 for a private comfort sedan (1–4 passengers) and €225 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imsouane to Marrakech starts at €165 for a private comfort sedan (1–4 passengers), €215 for a spacious van (5–7 passengers), and €330 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Imsouane and Marrakech take?",
@@ -4556,11 +4556,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Imsouane to Marrakech | Fixed Price €160 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Imsouane to Marrakech with Roam Morocco. Fixed rate €160, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Imsouane to Marrakech | Fixed Price €165 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Imsouane to Marrakech with Roam Morocco. Fixed rate €165, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Imsouane to Marrakech",
     "popular": false
   },
@@ -4573,8 +4573,8 @@ export const routesData: RouteItem[] = [
     "distance": "25 km",
     "duration": "30 min",
     "price_sedan": 30,
-    "price_van": 45,
-    "price_minibus": 65,
+    "price_van": 40,
+    "price_minibus": 60,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -4585,7 +4585,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Agadir cost?",
-        "a": "A private transfer from Agadir Airport to Agadir starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Agadir starts at €30 for a private comfort sedan (1–4 passengers), €40 for a spacious van (5–7 passengers), and €60 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir Airport and Agadir take?",
@@ -4601,11 +4601,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir Airport to Agadir | Fixed Price €25 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir Airport to Agadir with Roam Morocco. Fixed rate €25, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir Airport to Agadir | Fixed Price €30 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir Airport to Agadir with Roam Morocco. Fixed rate €30, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir Airport to Agadir",
     "popular": false
   },
@@ -4618,8 +4618,8 @@ export const routesData: RouteItem[] = [
     "distance": "25 km",
     "duration": "30 min",
     "price_sedan": 30,
-    "price_van": 45,
-    "price_minibus": 65,
+    "price_van": 40,
+    "price_minibus": 60,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -4630,7 +4630,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Agadir Airport cost?",
-        "a": "A private transfer from Agadir to Agadir Airport starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Agadir Airport starts at €30 for a private comfort sedan (1–4 passengers), €40 for a spacious van (5–7 passengers), and €60 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir and Agadir Airport take?",
@@ -4646,11 +4646,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir to Agadir Airport | Fixed Price €25 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir to Agadir Airport with Roam Morocco. Fixed rate €25, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir to Agadir Airport | Fixed Price €30 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir to Agadir Airport with Roam Morocco. Fixed rate €30, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir to Agadir Airport",
     "popular": false
   },
@@ -4662,9 +4662,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Moulay Bouzerktoune",
     "distance": "190 km",
     "duration": "2h45",
-    "price_sedan": 125,
-    "price_van": 175,
-    "price_minibus": 260,
+    "price_sedan": 105,
+    "price_van": 150,
+    "price_minibus": 230,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4675,7 +4675,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Moulay Bouzerktoune cost?",
-        "a": "A private transfer from Marrakech to Moulay Bouzerktoune starts at €125 for a private comfort sedan (1–4 passengers) and €175 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Moulay Bouzerktoune starts at €105 for a private comfort sedan (1–4 passengers), €150 for a spacious van (5–7 passengers), and €230 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Moulay Bouzerktoune take?",
@@ -4691,11 +4691,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Moulay Bouzerktoune | Fixed Price €100 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Moulay Bouzerktoune with Roam Morocco. Fixed rate €100, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Moulay Bouzerktoune | Fixed Price €105 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Moulay Bouzerktoune with Roam Morocco. Fixed rate €105, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Moulay Bouzerktoune",
     "popular": false
   },
@@ -4707,9 +4707,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech",
     "distance": "190 km",
     "duration": "2h45",
-    "price_sedan": 125,
-    "price_van": 175,
-    "price_minibus": 260,
+    "price_sedan": 105,
+    "price_van": 150,
+    "price_minibus": 230,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4720,7 +4720,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Moulay Bouzerktoune to Marrakech cost?",
-        "a": "A private transfer from Moulay Bouzerktoune to Marrakech starts at €125 for a private comfort sedan (1–4 passengers) and €175 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Moulay Bouzerktoune to Marrakech starts at €105 for a private comfort sedan (1–4 passengers), €150 for a spacious van (5–7 passengers), and €230 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Moulay Bouzerktoune and Marrakech take?",
@@ -4736,11 +4736,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Moulay Bouzerktoune to Marrakech | Fixed Price €100 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Moulay Bouzerktoune to Marrakech with Roam Morocco. Fixed rate €100, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Moulay Bouzerktoune to Marrakech | Fixed Price €105 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Moulay Bouzerktoune to Marrakech with Roam Morocco. Fixed rate €105, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Moulay Bouzerktoune to Marrakech",
     "popular": false
   },
@@ -4752,9 +4752,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "220 km",
     "duration": "3h15",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 155,
+    "price_van": 200,
+    "price_minibus": 305,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -4765,7 +4765,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Ourika Valley to Essaouira cost?",
-        "a": "A private transfer from Ourika Valley to Essaouira starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Ourika Valley to Essaouira starts at €155 for a private comfort sedan (1–4 passengers), €200 for a spacious van (5–7 passengers), and €305 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Ourika Valley and Essaouira take?",
@@ -4781,11 +4781,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Ourika Valley to Essaouira | Fixed Price €150 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Ourika Valley to Essaouira with Roam Morocco. Fixed rate €150, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Ourika Valley to Essaouira | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Ourika Valley to Essaouira with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Ourika Valley to Essaouira",
     "popular": false
   },
@@ -4797,9 +4797,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Ourika Valley",
     "distance": "220 km",
     "duration": "3h15",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 155,
+    "price_van": 200,
+    "price_minibus": 305,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -4810,7 +4810,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira to Ourika Valley cost?",
-        "a": "A private transfer from Essaouira to Ourika Valley starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira to Ourika Valley starts at €155 for a private comfort sedan (1–4 passengers), €200 for a spacious van (5–7 passengers), and €305 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira and Ourika Valley take?",
@@ -4826,11 +4826,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira to Ourika Valley | Fixed Price €150 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira to Ourika Valley with Roam Morocco. Fixed rate €150, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira to Ourika Valley | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira to Ourika Valley with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira to Ourika Valley",
     "popular": false
   },
@@ -4843,8 +4843,8 @@ export const routesData: RouteItem[] = [
     "distance": "10 km",
     "duration": "20 min",
     "price_sedan": 30,
-    "price_van": 45,
-    "price_minibus": 65,
+    "price_van": 40,
+    "price_minibus": 60,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4855,7 +4855,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Marrakech cost?",
-        "a": "A private transfer from Marrakech to Marrakech starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Marrakech starts at €30 for a private comfort sedan (1–4 passengers), €40 for a spacious van (5–7 passengers), and €60 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Marrakech take?",
@@ -4871,11 +4871,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Marrakech | Fixed Price €25 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Marrakech with Roam Morocco. Fixed rate €25, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Marrakech | Fixed Price €30 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Marrakech with Roam Morocco. Fixed rate €30, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Marrakech",
     "popular": false
   },
@@ -4888,8 +4888,8 @@ export const routesData: RouteItem[] = [
     "distance": "10 km",
     "duration": "20 min",
     "price_sedan": 30,
-    "price_van": 45,
-    "price_minibus": 65,
+    "price_van": 40,
+    "price_minibus": 60,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4900,7 +4900,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech to Palmeraie (Marrakech) cost?",
-        "a": "A private transfer from Marrakech to Palmeraie (Marrakech) starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech to Palmeraie (Marrakech) starts at €30 for a private comfort sedan (1–4 passengers), €40 for a spacious van (5–7 passengers), and €60 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech and Palmeraie (Marrakech) take?",
@@ -4916,11 +4916,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech to Palmeraie (Marrakech) | Fixed Price €25 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech to Palmeraie (Marrakech) with Roam Morocco. Fixed rate €25, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech to Palmeraie (Marrakech) | Fixed Price €30 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech to Palmeraie (Marrakech) with Roam Morocco. Fixed rate €30, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech to Palmeraie (Marrakech)",
     "popular": false
   },
@@ -4933,8 +4933,8 @@ export const routesData: RouteItem[] = [
     "distance": "10 km",
     "duration": "20 min",
     "price_sedan": 30,
-    "price_van": 45,
-    "price_minibus": 65,
+    "price_van": 40,
+    "price_minibus": 60,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -4945,7 +4945,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Palmeraie (Marrakech) to Marrakech cost?",
-        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech starts at €30 for a private comfort sedan (1–4 passengers), €40 for a spacious van (5–7 passengers), and €60 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Palmeraie (Marrakech) and Marrakech take?",
@@ -4961,11 +4961,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Palmeraie (Marrakech) to Marrakech | Fixed Price €25 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Palmeraie (Marrakech) to Marrakech with Roam Morocco. Fixed rate €25, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Palmeraie (Marrakech) to Marrakech | Fixed Price €30 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Palmeraie (Marrakech) to Marrakech with Roam Morocco. Fixed rate €30, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Palmeraie (Marrakech) to Marrakech",
     "popular": false
   },
@@ -4977,9 +4977,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -4990,7 +4990,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Marrakech Airport to Essaouira Airport (ESU) starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Essaouira Airport (ESU) starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Essaouira Airport (ESU) take?",
@@ -5006,11 +5006,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Essaouira Airport (ESU) | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Essaouira Airport (ESU) | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -5022,9 +5022,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "180 km",
     "duration": "2h30",
-    "price_sedan": 95,
-    "price_van": 145,
-    "price_minibus": 220,
+    "price_sedan": 90,
+    "price_van": 135,
+    "price_minibus": 205,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5035,7 +5035,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Marrakech Airport cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech Airport starts at €95 for a private comfort sedan (1–4 passengers) and €145 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Marrakech Airport starts at €90 for a private comfort sedan (1–4 passengers), €135 for a spacious van (5–7 passengers), and €205 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Marrakech Airport take?",
@@ -5051,11 +5051,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Marrakech Airport | Fixed Price €85 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Marrakech Airport with Roam Morocco. Fixed rate €85, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Marrakech Airport | Fixed Price €90 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Marrakech Airport with Roam Morocco. Fixed rate €90, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Marrakech Airport",
     "popular": false
   },
@@ -5067,9 +5067,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5080,7 +5080,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Essaouira cost?",
-        "a": "A private transfer from Agadir Airport to Essaouira starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Essaouira starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir Airport and Essaouira take?",
@@ -5096,11 +5096,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir Airport to Essaouira | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir Airport to Essaouira with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir Airport to Essaouira | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir Airport to Essaouira with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir Airport to Essaouira",
     "popular": false
   },
@@ -5112,9 +5112,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5125,7 +5125,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Agadir Airport to Essaouira Airport (ESU) starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Essaouira Airport (ESU) starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir Airport and Essaouira Airport (ESU) take?",
@@ -5141,11 +5141,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir Airport to Essaouira Airport (ESU) | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir Airport to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir Airport to Essaouira Airport (ESU) | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir Airport to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir Airport to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -5157,9 +5157,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5170,7 +5170,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Agadir cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Agadir starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Agadir starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Agadir take?",
@@ -5186,11 +5186,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agadir | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Agadir with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agadir | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Agadir with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Agadir",
     "popular": false
   },
@@ -5202,9 +5202,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5215,7 +5215,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Agadir Airport cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Agadir Airport starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Agadir Airport starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Agadir Airport take?",
@@ -5231,11 +5231,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agadir Airport | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Agadir Airport with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agadir Airport | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Agadir Airport with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Agadir Airport",
     "popular": false
   },
@@ -5247,9 +5247,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "175 km",
     "duration": "3h",
-    "price_sedan": 115,
-    "price_van": 155,
-    "price_minibus": 230,
+    "price_sedan": 110,
+    "price_van": 143,
+    "price_minibus": 220,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5260,7 +5260,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Agadir to Essaouira Airport (ESU) starts at €115 for a private comfort sedan (1–4 passengers) and €155 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir to Essaouira Airport (ESU) starts at €110 for a private comfort sedan (1–4 passengers), €143 for a spacious van (5–7 passengers), and €220 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir and Essaouira Airport (ESU) take?",
@@ -5276,11 +5276,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir to Essaouira Airport (ESU) | Fixed Price €105 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €105, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir to Essaouira Airport (ESU) | Fixed Price €110 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €110, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -5292,9 +5292,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agadir Airport (AGA)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -5305,7 +5305,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Agadir Airport cost?",
-        "a": "A private transfer from Marrakech Airport to Agadir Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Agadir Airport starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Agadir Airport take?",
@@ -5321,11 +5321,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Agadir Airport | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Agadir Airport with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Agadir Airport | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Agadir Airport with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Agadir Airport",
     "popular": false
   },
@@ -5337,9 +5337,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "240 km",
     "duration": "3h",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 135,
+    "price_van": 155,
+    "price_minibus": 235,
     "highway": "Motorway A7 (Atlas Mountain Route)",
     "highlights": [
       "Spectacular descent from the western High Atlas foothills to the Atlantic coast",
@@ -5350,7 +5350,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agadir Airport to Marrakech Airport cost?",
-        "a": "A private transfer from Agadir Airport to Marrakech Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agadir Airport to Marrakech Airport starts at €135 for a private comfort sedan (1–4 passengers), €155 for a spacious van (5–7 passengers), and €235 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agadir Airport and Marrakech Airport take?",
@@ -5366,11 +5366,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agadir Airport to Marrakech Airport | Fixed Price €125 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agadir Airport to Marrakech Airport with Roam Morocco. Fixed rate €125, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agadir Airport to Marrakech Airport | Fixed Price €135 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agadir Airport to Marrakech Airport with Roam Morocco. Fixed rate €135, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agadir Airport to Marrakech Airport",
     "popular": false
   },
@@ -5382,9 +5382,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Casablanca Airport (CMN)",
     "distance": "220 km",
     "duration": "2h45",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 150,
+    "price_van": 170,
+    "price_minibus": 260,
     "highway": "Motorway A7",
     "highlights": [
       "Direct nonstop travel along Morocco's modern A7 expressway",
@@ -5395,7 +5395,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Casablanca Airport cost?",
-        "a": "A private transfer from Marrakech Airport to Casablanca Airport starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Casablanca Airport starts at €150 for a private comfort sedan (1–4 passengers), €170 for a spacious van (5–7 passengers), and €260 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Casablanca Airport take?",
@@ -5411,11 +5411,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Casablanca Airport | Fixed Price €145 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Casablanca Airport with Roam Morocco. Fixed rate €145, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Casablanca Airport | Fixed Price €150 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Casablanca Airport with Roam Morocco. Fixed rate €150, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Casablanca Airport",
     "popular": false
   },
@@ -5427,9 +5427,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "35 km",
     "duration": "50 min",
-    "price_sedan": 55,
-    "price_van": 80,
-    "price_minibus": 125,
+    "price_sedan": 80,
+    "price_van": 100,
+    "price_minibus": 155,
     "highway": "Scenic Moroccan Highway",
     "highlights": [
       "Private door-to-door transfer in a dedicated, air-conditioned vehicle",
@@ -5440,7 +5440,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Agafay Desert cost?",
-        "a": "A private transfer from Marrakech Airport to Agafay Desert starts at €55 for a private comfort sedan (1–4 passengers) and €80 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Agafay Desert starts at €80 for a private comfort sedan (1–4 passengers), €100 for a spacious van (5–7 passengers), and €155 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Agafay Desert take?",
@@ -5456,11 +5456,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Agafay Desert | Fixed Price €75 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Agafay Desert with Roam Morocco. Fixed rate €75, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Agafay Desert | Fixed Price €80 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Agafay Desert with Roam Morocco. Fixed rate €80, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Agafay Desert",
     "popular": false
   },
@@ -5472,9 +5472,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Agafay Desert",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 155,
+    "price_van": 200,
+    "price_minibus": 305,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5485,7 +5485,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Agafay Desert cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Agafay Desert starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Agafay Desert starts at €155 for a private comfort sedan (1–4 passengers), €200 for a spacious van (5–7 passengers), and €305 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Agafay Desert take?",
@@ -5501,11 +5501,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agafay Desert | Fixed Price €150 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Agafay Desert with Roam Morocco. Fixed rate €150, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agafay Desert | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Agafay Desert with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Agafay Desert",
     "popular": false
   },
@@ -5517,9 +5517,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "200 km",
     "duration": "2h30",
-    "price_sedan": 165,
-    "price_van": 210,
-    "price_minibus": 295,
+    "price_sedan": 155,
+    "price_van": 200,
+    "price_minibus": 305,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5530,7 +5530,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Agafay Desert to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Agafay Desert to Essaouira Airport (ESU) starts at €165 for a private comfort sedan (1–4 passengers) and €210 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Agafay Desert to Essaouira Airport (ESU) starts at €155 for a private comfort sedan (1–4 passengers), €200 for a spacious van (5–7 passengers), and €305 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Agafay Desert and Essaouira Airport (ESU) take?",
@@ -5546,11 +5546,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Agafay Desert to Essaouira Airport (ESU) | Fixed Price €150 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Agafay Desert to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €150, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Agafay Desert to Essaouira Airport (ESU) | Fixed Price €155 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Agafay Desert to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €155, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Agafay Desert to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -5562,9 +5562,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Imlil (High Atlas)",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 175,
+    "price_van": 225,
+    "price_minibus": 345,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5575,7 +5575,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Essaouira Airport (ESU) to Imlil cost?",
-        "a": "A private transfer from Essaouira Airport (ESU) to Imlil starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Essaouira Airport (ESU) to Imlil starts at €175 for a private comfort sedan (1–4 passengers), €225 for a spacious van (5–7 passengers), and €345 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Essaouira Airport (ESU) and Imlil take?",
@@ -5591,11 +5591,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Imlil | Fixed Price €170 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Imlil with Roam Morocco. Fixed rate €170, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Essaouira Airport (ESU) to Imlil | Fixed Price €175 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Essaouira Airport (ESU) to Imlil with Roam Morocco. Fixed rate €175, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Essaouira Airport (ESU) to Imlil",
     "popular": false
   },
@@ -5607,9 +5607,9 @@ export const routesData: RouteItem[] = [
     "toRaw": "Essaouira Airport (ESU)",
     "distance": "250 km",
     "duration": "3h30",
-    "price_sedan": 185,
-    "price_van": 235,
-    "price_minibus": 330,
+    "price_sedan": 175,
+    "price_van": 225,
+    "price_minibus": 345,
     "highway": "Highway R207 & N8",
     "highlights": [
       "Scenic drive through the endemic Moroccan argan tree groves",
@@ -5620,7 +5620,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Imlil to Essaouira Airport (ESU) cost?",
-        "a": "A private transfer from Imlil to Essaouira Airport (ESU) starts at €185 for a private comfort sedan (1–4 passengers) and €235 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Imlil to Essaouira Airport (ESU) starts at €175 for a private comfort sedan (1–4 passengers), €225 for a spacious van (5–7 passengers), and €345 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Imlil and Essaouira Airport (ESU) take?",
@@ -5636,11 +5636,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Imlil to Essaouira Airport (ESU) | Fixed Price €170 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Imlil to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €170, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Imlil to Essaouira Airport (ESU) | Fixed Price €175 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Imlil to Essaouira Airport (ESU) with Roam Morocco. Fixed rate €175, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Imlil to Essaouira Airport (ESU)",
     "popular": false
   },
@@ -5652,7 +5652,7 @@ export const routesData: RouteItem[] = [
     "toRaw": "Palmeraie (Marrakech)",
     "distance": "12 km",
     "duration": "25 min",
-    "price_sedan": 30,
+    "price_sedan": 40,
     "price_van": 45,
     "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
@@ -5665,7 +5665,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Marrakech Airport to Palmeraie (Marrakech) cost?",
-        "a": "A private transfer from Marrakech Airport to Palmeraie (Marrakech) starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Marrakech Airport to Palmeraie (Marrakech) starts at €40 for a private comfort sedan (1–4 passengers), €45 for a spacious van (5–7 passengers), and €65 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Marrakech Airport and Palmeraie (Marrakech) take?",
@@ -5681,11 +5681,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Marrakech Airport to Palmeraie (Marrakech) | Fixed Price €35 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Marrakech Airport to Palmeraie (Marrakech) with Roam Morocco. Fixed rate €35, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Marrakech Airport to Palmeraie (Marrakech) | Fixed Price €40 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Marrakech Airport to Palmeraie (Marrakech) with Roam Morocco. Fixed rate €40, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Marrakech Airport to Palmeraie (Marrakech)",
     "popular": false
   },
@@ -5697,7 +5697,7 @@ export const routesData: RouteItem[] = [
     "toRaw": "Marrakech Airport (RAK)",
     "distance": "12 km",
     "duration": "25 min",
-    "price_sedan": 30,
+    "price_sedan": 40,
     "price_van": 45,
     "price_minibus": 65,
     "highway": "Scenic Moroccan Highway",
@@ -5710,7 +5710,7 @@ export const routesData: RouteItem[] = [
     "faqs": [
       {
         "q": "How much does a private transfer from Palmeraie (Marrakech) to Marrakech Airport cost?",
-        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech Airport starts at €30 for a private comfort sedan (1–4 passengers) and €45 for a luxury Mercedes-Benz minivan (5–7 passengers). All prices are flat and transparent per vehicle, including all highway tolls, fuel, and luggage assistance."
+        "a": "A private transfer from Palmeraie (Marrakech) to Marrakech Airport starts at €40 for a private comfort sedan (1–4 passengers), €45 for a spacious van (5–7 passengers), and €65 for a private minibus (8–14 passengers). All rates are flat per vehicle, including fuel, highway tolls, and luggage care."
       },
       {
         "q": "How long does the drive between Palmeraie (Marrakech) and Marrakech Airport take?",
@@ -5726,11 +5726,11 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment required. Your driver is confirmed immediately, and payment is made in cash (Euros or Moroccan Dirhams) directly to your driver at the end of your trip."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
-    "seoTitle": "Private Transfer Palmeraie (Marrakech) to Marrakech Airport | Fixed Price €35 | Roam Morocco",
-    "seoDescription": "Book a private transfer from Palmeraie (Marrakech) to Marrakech Airport with Roam Morocco. Fixed rate €35, licensed chauffeur, luxury Mercedes van or sedan, door-to-door service.",
+    "seoTitle": "Private Transfer Palmeraie (Marrakech) to Marrakech Airport | Fixed Price €40 | Roam Morocco",
+    "seoDescription": "Book a private transfer from Palmeraie (Marrakech) to Marrakech Airport with Roam Morocco. Fixed rate €40, licensed professional chauffeur, air-conditioned vehicle, door-to-door service.",
     "h1": "Private Transfer from Palmeraie (Marrakech) to Marrakech Airport",
     "popular": false
   }

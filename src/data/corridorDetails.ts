@@ -201,7 +201,7 @@ export function getRouteCorridorDetails(route: RouteItem): RouteCorridorDetails 
         badge: 'ATLANTIC COASTAL EXPRESS · SURF & EXPEDITION READY',
         terrainKicker: 'ARGAN BIOSPHERE & ATLANTIC HIGHWAYS',
         terrainTitle: `Atlantic Ocean Corridor Experience: ${route.from} to ${route.to}`,
-        terrainOverview: `Traveling between ${route.from} and ${route.to} follows ${route.highway}, crossing the UNESCO-protected Arganeraie Biosphere Reserve and the scenic Atlantic coastal plain. The route features smooth, well-maintained asphalt traversing open semi-arid plateaus dotted with endemic argan trees before descending toward coastal ocean bluffs. As you approach the Atlantic, the dry inland heat gives way to refreshing maritime breezes. Our spacious fleet of Mercedes-Benz minivans and Toyota Prado 4x4s is tailored for coastal travelers, with deep luggage holds capable of accommodating surfboards (up to 9'2"), kiteboards, golf bags, and family luggage without cramming passenger cabin space.`,
+        terrainOverview: `Traveling between ${route.from} and ${route.to} follows ${route.highway}, crossing the UNESCO-protected Arganeraie Biosphere Reserve and the scenic Atlantic coastal plain. The route features smooth, well-maintained asphalt traversing open semi-arid plateaus dotted with endemic argan trees before descending toward coastal ocean bluffs. As you approach the Atlantic, the dry inland heat gives way to refreshing maritime breezes. Our spacious fleet of comfort vans and 4WD vehicles is tailored for coastal travelers, with deep luggage holds capable of accommodating surfboards (up to 9'2"), kiteboards, golf bags, and family luggage without cramming passenger cabin space.`,
         scenicStops: [
           {
             title: 'Chichaoua Highway Oasis Rest Stop',
@@ -233,7 +233,7 @@ export function getRouteCorridorDetails(route: RouteItem): RouteCorridorDetails 
           },
           {
             q: `Can you transport surfboards, kite bags, or oversized luggage to ${route.to}?`,
-            a: `Yes! Our Mercedes-Benz minivans and Toyota Prado 4x4s easily accommodate surfboard travel bags up to 9ft, kite gear, golf clubs, and bulky sports equipment at no additional surcharge. Simply inform us of your board lengths when confirming on WhatsApp.`
+            a: `Yes! Our comfort vans and 4WD vehicles easily accommodate surfboard travel bags up to 9ft, kite gear, golf clubs, and bulky sports equipment at no additional surcharge. Simply inform us of your board lengths when confirming on WhatsApp.`
           },
           {
             q: `Can we visit a certified women's argan cooperative along the route?`,
@@ -331,7 +331,7 @@ export function getRouteCorridorDetails(route: RouteItem): RouteCorridorDetails 
           description: `Finding remote desert camps without local guidance can be stressful. Your Roam Morocco chauffeur communicates directly with camp managers prior to departure, confirming your tent reservation and arrival window. Our vehicles drive directly into the camp reception parking, where camp porters transfer your bags straight to your private canvas suite.`,
           tips: [
             'Chauffeurs experienced with off-road desert tracks and camp navigation',
-            'High-clearance Mercedes minivans and Toyota Prado 4x4s for smooth travel',
+            'High-clearance comfort vans and 4WD vehicles for smooth travel',
             'Sealed luggage compartments preventing desert dust infiltration',
             'Easy coordination for return pickups back to Marrakech or airport departures'
           ]
@@ -343,7 +343,7 @@ export function getRouteCorridorDetails(route: RouteItem): RouteCorridorDetails 
           },
           {
             q: `Can standard vehicles access luxury desert camps in Agafay or do we need a 4x4?`,
-            a: `Most luxury camps in Agafay are located 5 to 15 minutes down unpaved stone tracks. While standard low-clearance city cars struggle, our entire fleet—including our Mercedes-Benz minivans and Toyota Prado 4x4s—features high ground clearance and chauffeurs who know every camp track intimately.`
+            a: `Most luxury camps in Agafay are located 5 to 15 minutes down unpaved stone tracks. While standard low-clearance city cars struggle, our entire fleet—including our comfort vans and 4WD vehicles—features high ground clearance and chauffeurs who know every camp track intimately.`
           },
           {
             q: `What time should we depart to experience sunset at our Agafay camp?`,

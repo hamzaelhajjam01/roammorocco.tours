@@ -218,10 +218,14 @@ const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
     <section class="route-pricing-section" id="pricing-tiers">
       <div class="route-container">
         
-        <div class="section-head">
+                <div class="section-head">
           <span class="section-kicker">GUARANTEED TRANSPARENT RATES</span>
           <h2>Choose Your Private Vehicle</h2>
           <p>Flat rate per vehicle (not per person). Includes fuel, highway tolls, parking, and door-to-door luggage care.</p>
+          <div class="route-perks-pills">
+            <span class="perk-pill">🔄 <strong>Round-Trip Deal:</strong> 10% off return journey</span>
+            <span class="perk-pill">💳 <strong>Fair Deposit:</strong> 0% under €300 · 30% over €300</span>
+          </div>
         </div>
 
         <div class="pricing-tiers-grid">
@@ -254,8 +258,8 @@ const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
           <div class="tier-card featured-tier">
             <div class="tier-badge gold-badge">MOST POPULAR · EXTRA COMFORT</div>
             <div class="tier-head">
-              <h3>Mercedes-Benz Minivan</h3>
-              <p class="tier-desc">Spacious executive van (Vito / V-Class) for families and small groups.</p>
+              <h3>Comfort Van</h3>
+              <p class="tier-desc">Spacious executive van for families and small groups (5–7 passengers).</p>
             </div>
             <div class="tier-price-row">
               <span class="tier-price gold-text">€{route.price_van}</span>
@@ -269,8 +273,8 @@ const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
               <li>✓ Bottled mineral water &amp; phone chargers</li>
               <li>✓ Free flight delay tracking included</li>
             </ul>
-            <a href={`https://wa.me/212760426269?text=${encodeURIComponent(`Salam Roam Morocco! I'd like to book a Mercedes Minivan from ${route.from} to ${route.to} (${route.price_van}€).`)}`} target="_blank" rel="noopener" class="tier-book-btn featured-btn">
-              <span>Book Mercedes Van (€{route.price_van})</span>
+            <a href={`https://wa.me/212760426269?text=${encodeURIComponent(`Salam Roam Morocco! I'd like to book a Comfort Van from ${route.from} to ${route.to} (${route.price_van}€).`)}`} target="_blank" rel="noopener" class="tier-book-btn featured-btn">
+              <span>Book Comfort Van (€{route.price_van})</span>
             </a>
           </div>
 
@@ -278,15 +282,15 @@ const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
           <div class="tier-card">
             <div class="tier-badge">GROUPS &amp; RETREATS</div>
             <div class="tier-head">
-              <h3>Minibus (Mercedes Sprinter)</h3>
-              <p class="tier-desc">Private group comfort with separate panoramic luggage hold.</p>
+              <h3>Luxury Minibus</h3>
+              <p class="tier-desc">Private group comfort with generous luggage hold (8–14 passengers).</p>
             </div>
             <div class="tier-price-row">
               <span class="tier-price">€{route.price_minibus}</span>
               <span class="tier-price-unit">total · cash to driver</span>
             </div>
             <ul class="tier-features">
-              <li>✓ <strong>8 to 12+ Passengers</strong></li>
+              <li>✓ <strong>8 to 14 Passengers</strong></li>
               <li>✓ 12+ large suitcases + carry-ons</li>
               <li>✓ High-roof walkthrough cabin</li>
               <li>✓ Dedicated AC vents for every seat row</li>
@@ -451,7 +455,7 @@ const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
         <div class="cta-inner">
           <span class="cta-kicker">READY TO TRAVEL?</span>
           <h2>Reserve Your {route.from} to {route.to} Private Chauffeur</h2>
-          <p>Locked-in fixed rate of €{route.price_sedan}. Zero credit card needed today — pay your driver on the day.</p>
+          <p>Locked-in fixed rate of €{route.price_sedan}. 0% deposit for bookings ≤ €300 (pay cash on arrival). 30% deposit to confirm bookings > €300.</p>
           <a href={waUrl} target="_blank" rel="noopener" class="cta-button">
             <img src="/img/whatsapp-logo.png" alt="WhatsApp" width="22" height="22" class="wa-btn-icon">
             <span>Instant Booking on WhatsApp (€{route.price_sedan}) →</span>
@@ -465,6 +469,26 @@ const waUrl = `https://wa.me/212760426269?text=${waMessage}`;
 
 <style is:global>
   /* ── ROUTE PAGE MODERN DESIGN SYSTEM ── */
+  .route-perks-pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 14px;
+  }
+  .perk-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fdf8ed;
+    border: 1px solid #C8A45C;
+    color: #8A6A23;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 20px;
+  }
+
   .route-page-main {
     padding-top: 100px;
     background: #fbf9f5;
