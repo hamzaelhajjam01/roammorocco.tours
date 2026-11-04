@@ -93,6 +93,32 @@ const hubs = [
       
 
 
+            <!-- Interactive Fare Calculator Bridge Banner -->
+      <aside class="calculator-promo-banner" aria-label="Interactive Highway Transfer Fare Calculator">
+        <div class="calc-promo-content">
+          <div class="calc-promo-kicker-row">
+            <span class="calc-promo-badge">NEW &bull; 2026 FARE ESTIMATOR</span>
+            <span class="calc-promo-meta">Real-time drive times, highway tolls &amp; fleet rates</span>
+          </div>
+          <h2 class="calc-promo-title">Calculate Your Custom Route &amp; Instant Fare</h2>
+          <p class="calc-promo-desc">
+            Want to test custom pickup hubs, check exact driving durations through the Atlas passes, or download a printable 2026 PDF rate quote before reserving? Try our companion Morocco transit &amp; driver cost calculator.
+          </p>
+        </div>
+        <div class="calc-promo-action">
+          <a
+            href="https://morocco-private-driver.lovable.app/"
+            target="_blank"
+            rel="noopener"
+            class="calc-promo-btn"
+          >
+            <span>Launch Route Calculator</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </a>
+          <span class="calc-promo-sub">Opens in companion portal &bull; 100% Free</span>
+        </div>
+      </aside>
+
       <!-- Filter Bar & Search Controls matching destinations.astro -->
       <div class="catalog-controls-wrap">
         
@@ -853,4 +879,112 @@ const hubs = [
       gap: 20px;
     }
   }
+
+  /* ── INTERACTIVE CALCULATOR PROMO BANNER ── */
+  .calculator-promo-banner {
+    margin: 32px 0 36px;
+    background: linear-gradient(135deg, #0B131F 0%, #16243A 100%);
+    border: 1.5px solid #C8A45C;
+    border-radius: 16px;
+    padding: 26px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    box-shadow: 0 12px 36px rgba(11, 19, 31, 0.12);
+  }
+  .calc-promo-content {
+    flex: 1;
+    min-width: 280px;
+  }
+  .calc-promo-kicker-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .calc-promo-badge {
+    background: rgba(200, 164, 92, 0.2);
+    border: 1px solid #C8A45C;
+    color: #C8A45C;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.05em;
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+  .calc-promo-meta {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.65);
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+  .calc-promo-title {
+    font-size: clamp(18px, 2.2vw, 24px);
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px;
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+  .calc-promo-desc {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    font-family: 'Inter', -apple-system, sans-serif;
+    max-width: 680px;
+  }
+  .calc-promo-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .calc-promo-btn {
+    background: linear-gradient(135deg, #C8A45C 0%, #b38f46 100%);
+    color: #0B131F !important;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 18px rgba(200, 164, 92, 0.35);
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
+  .calc-promo-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(200, 164, 92, 0.5);
+    filter: brightness(1.08);
+  }
+  .calc-promo-sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+  @media (max-width: 768px) {
+    .calculator-promo-banner {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 22px 20px;
+      gap: 18px;
+    }
+    .calc-promo-action {
+      width: 100%;
+      align-items: flex-start;
+    }
+    .calc-promo-btn {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+
 </style>
