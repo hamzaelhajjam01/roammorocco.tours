@@ -1060,3 +1060,20 @@ figure.featured-image-box {
     flex-shrink: 0;
   }
 }
+
+/* Calculator Promo Banner Override */
+.calculator-promo-banner,
+aside.calculator-promo-banner {
+  background: linear-gradient(135deg, #0B131F 0%, #16243A 100%) !important;
+  border: 1.5px solid #C8A45C !important;
+}
+
+.calculator-promo-banner h3,
+.article-content .calculator-promo-banner h3,
+aside.calculator-promo-banner h3,
+.calculator-promo-banner h3 span,
+.article-content .calculator-promo-banner h3 span {
+  color: #C8A45C !important;
+  font-family: 'Cinzel', Georgia, serif !important;
+}
+
