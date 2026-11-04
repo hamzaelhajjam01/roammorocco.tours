@@ -16,6 +16,10 @@ This repository contains the static production website for **Roam Morocco** ([ht
   - `llms.txt` — AI Search context and site summary
   - `sitemap.xml`, `robots.txt`
 
+### Official Booking & Deposit Policy (Site-Wide Standard)
+- **Services ≤ $300 (or €300 / 3,000 MAD):** Zero upfront deposit required (0% deposit). Guests confirm via WhatsApp/Email and pay 100% cash directly to chauffeur upon arrival. Free cancellation up to 24 hours prior.
+- **Services > $300 (or €300 / 3,000 MAD):** Standard 30% confirmation deposit to secure dedicated vehicle, licensed chauffeur, and accommodations. Remaining 70% balance settled upon arrival in Morocco.
+
 ---
 
 ## 🛠️ Integrated SEO Skill Suite (`claude-seo` adapted for Antigravity)

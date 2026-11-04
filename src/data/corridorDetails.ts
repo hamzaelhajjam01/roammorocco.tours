@@ -190,7 +190,7 @@ export function getRouteCorridorDetails(route: RouteItem): RouteCorridorDetails 
           },
           {
             q: `How do we book and pay for this mountain transfer?`,
-            a: `You can reserve instantly on WhatsApp with zero deposit or prepayment required. Pay cash (Euros or Moroccan Dirhams) directly to your chauffeur upon arrival at your destination.`
+            a: `You can reserve instantly on WhatsApp with zero deposit or prepayment required for all transfers under $300 (€300). Pay cash (Euros or Moroccan Dirhams) directly to your chauffeur upon arrival at your destination.`
           }
         ]
       };

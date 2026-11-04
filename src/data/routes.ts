@@ -56,7 +56,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Marrakech | Fixed Price €30 | Roam Morocco",
@@ -101,7 +101,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Essaouira | Fixed Price €90 | Roam Morocco",
@@ -146,7 +146,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Casablanca | Fixed Price €150 | Roam Morocco",
@@ -191,7 +191,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Agadir | Fixed Price €135 | Roam Morocco",
@@ -236,7 +236,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Taghazout | Fixed Price €155 | Roam Morocco",
@@ -281,7 +281,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Imlil | Fixed Price €72 | Roam Morocco",
@@ -326,7 +326,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Marrakech Airport | Fixed Price €30 | Roam Morocco",
@@ -371,7 +371,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Essaouira | Fixed Price €90 | Roam Morocco",
@@ -416,7 +416,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Casablanca | Fixed Price €150 | Roam Morocco",
@@ -461,7 +461,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Casablanca Airport | Fixed Price €150 | Roam Morocco",
@@ -506,7 +506,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Agadir | Fixed Price €135 | Roam Morocco",
@@ -551,7 +551,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Agadir Airport | Fixed Price €135 | Roam Morocco",
@@ -596,7 +596,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Taghazout | Fixed Price €155 | Roam Morocco",
@@ -641,7 +641,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Imlil | Fixed Price €72 | Roam Morocco",
@@ -686,7 +686,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Essaouira Airport (ESU) | Fixed Price €90 | Roam Morocco",
@@ -731,7 +731,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Marrakech | Fixed Price €90 | Roam Morocco",
@@ -776,7 +776,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Marrakech Airport | Fixed Price €90 | Roam Morocco",
@@ -821,7 +821,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Agadir | Fixed Price €110 | Roam Morocco",
@@ -866,7 +866,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Agadir Airport | Fixed Price €110 | Roam Morocco",
@@ -911,7 +911,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Essaouira Airport (ESU) | Fixed Price €22 | Roam Morocco",
@@ -956,7 +956,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Essaouira | Fixed Price €22 | Roam Morocco",
@@ -1001,7 +1001,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Marrakech | Fixed Price €90 | Roam Morocco",
@@ -1046,7 +1046,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca to Marrakech | Fixed Price €150 | Roam Morocco",
@@ -1091,7 +1091,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca to Marrakech Airport | Fixed Price €150 | Roam Morocco",
@@ -1136,7 +1136,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca Airport to Marrakech | Fixed Price €150 | Roam Morocco",
@@ -1181,7 +1181,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca Airport to Marrakech Airport | Fixed Price €150 | Roam Morocco",
@@ -1226,7 +1226,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir to Marrakech | Fixed Price €135 | Roam Morocco",
@@ -1271,7 +1271,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir to Marrakech Airport | Fixed Price €135 | Roam Morocco",
@@ -1316,7 +1316,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir to Essaouira | Fixed Price €110 | Roam Morocco",
@@ -1361,7 +1361,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir Airport to Marrakech | Fixed Price €135 | Roam Morocco",
@@ -1406,7 +1406,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Taghazout to Marrakech | Fixed Price €155 | Roam Morocco",
@@ -1451,7 +1451,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Taghazout to Marrakech Airport | Fixed Price €155 | Roam Morocco",
@@ -1496,7 +1496,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Imlil to Marrakech | Fixed Price €72 | Roam Morocco",
@@ -1541,7 +1541,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Imlil to Marrakech Airport | Fixed Price €72 | Roam Morocco",
@@ -1586,7 +1586,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Imlil to Essaouira | Fixed Price €175 | Roam Morocco",
@@ -1631,7 +1631,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Agafay Desert | Fixed Price €80 | Roam Morocco",
@@ -1676,7 +1676,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agafay Desert to Marrakech | Fixed Price €80 | Roam Morocco",
@@ -1721,7 +1721,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agafay Desert to Marrakech Airport | Fixed Price €80 | Roam Morocco",
@@ -1766,7 +1766,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agafay Desert to Essaouira | Fixed Price €155 | Roam Morocco",
@@ -1811,7 +1811,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Agafay Desert | Fixed Price €155 | Roam Morocco",
@@ -1856,7 +1856,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Imlil | Fixed Price €175 | Roam Morocco",
@@ -1901,7 +1901,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Taghazout | Fixed Price €120 | Roam Morocco",
@@ -1946,7 +1946,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Taghazout to Essaouira | Fixed Price €120 | Roam Morocco",
@@ -1991,7 +1991,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir to Taghazout | Fixed Price €45 | Roam Morocco",
@@ -2036,7 +2036,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Taghazout to Agadir | Fixed Price €45 | Roam Morocco",
@@ -2081,7 +2081,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir Airport to Taghazout | Fixed Price €50 | Roam Morocco",
@@ -2126,7 +2126,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Taghazout to Agadir Airport | Fixed Price €50 | Roam Morocco",
@@ -2171,7 +2171,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Taghazout | Fixed Price €125 | Roam Morocco",
@@ -2216,7 +2216,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Taghazout to Essaouira Airport (ESU) | Fixed Price €125 | Roam Morocco",
@@ -2261,7 +2261,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Imsouane | Fixed Price €95 | Roam Morocco",
@@ -2306,7 +2306,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Imsouane to Essaouira | Fixed Price €95 | Roam Morocco",
@@ -2351,7 +2351,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Sidi Kaouki | Fixed Price €40 | Roam Morocco",
@@ -2396,7 +2396,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Sidi Kaouki to Essaouira | Fixed Price €40 | Roam Morocco",
@@ -2441,7 +2441,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca Airport to Essaouira | Fixed Price €195 | Roam Morocco",
@@ -2486,7 +2486,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Casablanca Airport | Fixed Price €195 | Roam Morocco",
@@ -2531,7 +2531,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca to Essaouira | Fixed Price €195 | Roam Morocco",
@@ -2576,7 +2576,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Casablanca | Fixed Price €195 | Roam Morocco",
@@ -2621,7 +2621,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca Airport to Tangier | Fixed Price €245 | Roam Morocco",
@@ -2666,7 +2666,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Tangier to Casablanca Airport | Fixed Price €245 | Roam Morocco",
@@ -2711,7 +2711,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Fes to Casablanca Airport | Fixed Price €185 | Roam Morocco",
@@ -2756,7 +2756,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca Airport to Fes | Fixed Price €185 | Roam Morocco",
@@ -2801,7 +2801,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Ourika Valley | Fixed Price €80 | Roam Morocco",
@@ -2846,7 +2846,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Ourika Valley to Marrakech | Fixed Price €80 | Roam Morocco",
@@ -2891,7 +2891,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Ourika Valley | Fixed Price €85 | Roam Morocco",
@@ -2936,7 +2936,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Ourika Valley to Marrakech Airport | Fixed Price €85 | Roam Morocco",
@@ -2981,7 +2981,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Oukaimeden (ski resort) | Fixed Price €95 | Roam Morocco",
@@ -3026,7 +3026,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Oukaimeden (ski resort) to Marrakech | Fixed Price €95 | Roam Morocco",
@@ -3071,7 +3071,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Setti Fatma | Fixed Price €75 | Roam Morocco",
@@ -3116,7 +3116,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Setti Fatma to Marrakech | Fixed Price €75 | Roam Morocco",
@@ -3161,7 +3161,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Tangier to Chefchaouen | Fixed Price €114 | Roam Morocco",
@@ -3206,7 +3206,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Chefchaouen to Tangier | Fixed Price €114 | Roam Morocco",
@@ -3251,7 +3251,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Chefchaouen to Fes | Fixed Price €195 | Roam Morocco",
@@ -3296,7 +3296,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Fes to Chefchaouen | Fixed Price €195 | Roam Morocco",
@@ -3341,7 +3341,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Chefchaouen to Casablanca | Fixed Price €225 | Roam Morocco",
@@ -3386,7 +3386,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca to Chefchaouen | Fixed Price €225 | Roam Morocco",
@@ -3431,7 +3431,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Fes | Fixed Price €264 | Roam Morocco",
@@ -3476,7 +3476,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Fes to Marrakech | Fixed Price €264 | Roam Morocco",
@@ -3521,7 +3521,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Fes to Casablanca | Fixed Price €185 | Roam Morocco",
@@ -3566,7 +3566,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca to Fes | Fixed Price €185 | Roam Morocco",
@@ -3611,7 +3611,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca to Rabat | Fixed Price €70 | Roam Morocco",
@@ -3656,7 +3656,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Rabat to Casablanca | Fixed Price €70 | Roam Morocco",
@@ -3701,7 +3701,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca Airport to Rabat | Fixed Price €80 | Roam Morocco",
@@ -3746,7 +3746,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Rabat to Casablanca Airport | Fixed Price €80 | Roam Morocco",
@@ -3791,7 +3791,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Rabat | Fixed Price €245 | Roam Morocco",
@@ -3836,7 +3836,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Rabat to Essaouira | Fixed Price €245 | Roam Morocco",
@@ -3881,7 +3881,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Rabat | Fixed Price €195 | Roam Morocco",
@@ -3926,7 +3926,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Rabat to Marrakech | Fixed Price €195 | Roam Morocco",
@@ -3971,7 +3971,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Rabat | Fixed Price €195 | Roam Morocco",
@@ -4016,7 +4016,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Rabat to Marrakech Airport | Fixed Price €195 | Roam Morocco",
@@ -4061,7 +4061,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Ouarzazate | Fixed Price €139 | Roam Morocco",
@@ -4106,7 +4106,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Ouarzazate to Marrakech | Fixed Price €139 | Roam Morocco",
@@ -4151,7 +4151,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Ait Ben Haddou | Fixed Price €140 | Roam Morocco",
@@ -4196,7 +4196,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Ait Ben Haddou to Marrakech | Fixed Price €140 | Roam Morocco",
@@ -4241,7 +4241,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Ait Ben Haddou | Fixed Price €140 | Roam Morocco",
@@ -4286,7 +4286,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Ait Ben Haddou to Marrakech Airport | Fixed Price €140 | Roam Morocco",
@@ -4331,7 +4331,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Oualidia | Fixed Price €135 | Roam Morocco",
@@ -4376,7 +4376,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Oualidia to Marrakech | Fixed Price €135 | Roam Morocco",
@@ -4421,7 +4421,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Casablanca Airport to Oualidia | Fixed Price €145 | Roam Morocco",
@@ -4466,7 +4466,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Oualidia to Casablanca Airport | Fixed Price €145 | Roam Morocco",
@@ -4511,7 +4511,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Imsouane | Fixed Price €165 | Roam Morocco",
@@ -4556,7 +4556,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Imsouane to Marrakech | Fixed Price €165 | Roam Morocco",
@@ -4601,7 +4601,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir Airport to Agadir | Fixed Price €30 | Roam Morocco",
@@ -4646,7 +4646,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir to Agadir Airport | Fixed Price €30 | Roam Morocco",
@@ -4691,7 +4691,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Moulay Bouzerktoune | Fixed Price €105 | Roam Morocco",
@@ -4736,7 +4736,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Moulay Bouzerktoune to Marrakech | Fixed Price €105 | Roam Morocco",
@@ -4781,7 +4781,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Ourika Valley to Essaouira | Fixed Price €155 | Roam Morocco",
@@ -4826,7 +4826,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira to Ourika Valley | Fixed Price €155 | Roam Morocco",
@@ -4871,7 +4871,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Marrakech | Fixed Price €30 | Roam Morocco",
@@ -4916,7 +4916,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech to Palmeraie (Marrakech) | Fixed Price €30 | Roam Morocco",
@@ -4961,7 +4961,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Palmeraie (Marrakech) to Marrakech | Fixed Price €30 | Roam Morocco",
@@ -5006,7 +5006,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Essaouira Airport (ESU) | Fixed Price €90 | Roam Morocco",
@@ -5051,7 +5051,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Marrakech Airport | Fixed Price €90 | Roam Morocco",
@@ -5096,7 +5096,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir Airport to Essaouira | Fixed Price €110 | Roam Morocco",
@@ -5141,7 +5141,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir Airport to Essaouira Airport (ESU) | Fixed Price €110 | Roam Morocco",
@@ -5186,7 +5186,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agadir | Fixed Price €110 | Roam Morocco",
@@ -5231,7 +5231,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agadir Airport | Fixed Price €110 | Roam Morocco",
@@ -5276,7 +5276,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir to Essaouira Airport (ESU) | Fixed Price €110 | Roam Morocco",
@@ -5321,7 +5321,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Agadir Airport | Fixed Price €135 | Roam Morocco",
@@ -5366,7 +5366,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agadir Airport to Marrakech Airport | Fixed Price €135 | Roam Morocco",
@@ -5411,7 +5411,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Casablanca Airport | Fixed Price €150 | Roam Morocco",
@@ -5456,7 +5456,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Agafay Desert | Fixed Price €80 | Roam Morocco",
@@ -5501,7 +5501,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Agafay Desert | Fixed Price €155 | Roam Morocco",
@@ -5546,7 +5546,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Agafay Desert to Essaouira Airport (ESU) | Fixed Price €155 | Roam Morocco",
@@ -5591,7 +5591,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Essaouira Airport (ESU) to Imlil | Fixed Price €175 | Roam Morocco",
@@ -5636,7 +5636,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Imlil to Essaouira Airport (ESU) | Fixed Price €175 | Roam Morocco",
@@ -5681,7 +5681,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Marrakech Airport to Palmeraie (Marrakech) | Fixed Price €40 | Roam Morocco",
@@ -5726,7 +5726,7 @@ export const routesData: RouteItem[] = [
       },
       {
         "q": "How do I book and pay for this transfer?",
-        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of €300 or less (pay in cash directly to your driver upon arrival). Bookings exceeding €300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
+        "a": "You can reserve instantly via WhatsApp with zero prepayment for bookings of $300 (€300) or less (pay in cash directly to your driver upon arrival). Bookings exceeding $300 require a 30% confirmation deposit. Plus, enjoy a 10% discount on your return trip when booking round-trip transfers."
       }
     ],
     "seoTitle": "Private Transfer Palmeraie (Marrakech) to Marrakech Airport | Fixed Price €40 | Roam Morocco",

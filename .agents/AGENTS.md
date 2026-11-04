@@ -26,6 +26,7 @@ This workspace contains the static website for **RoamMorocco** (https://roammoro
 - Canonical URL set to https://roammorocco.tours/
 - OG + Twitter cards implemented
 - Primary keywords: Morocco tours, Sahara desert tours, Marrakech tours
+- Booking & Deposit Policy: 0% deposit for services ≤ $300 (€300); 30% confirmation deposit only required for bookings exceeding $300 (€300).
 
 ### Image & Media Standard (Pexels API Automation)
 - Script: `scripts/pexels-curator.py`
