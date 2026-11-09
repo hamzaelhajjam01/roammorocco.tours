@@ -5,9 +5,17 @@
 # Standard Search Crawlers
 User-agent: Googlebot
 Allow: /
+Disallow: /track-whatsapp.php
+Disallow: /*.php$
+Disallow: /*?s=*
+Disallow: /*?search=*
 
 User-agent: Bingbot
 Allow: /
+Disallow: /track-whatsapp.php
+Disallow: /*.php$
+Disallow: /*?s=*
+Disallow: /*?search=*
 
 # AI Search & Answer Engines (Explicitly Allowed for GEO Citations)
 User-agent: GPTBot
@@ -40,6 +48,10 @@ Allow: /
 # Default Rule
 User-agent: *
 Allow: /
+Disallow: /track-whatsapp.php
+Disallow: /*.php$
+Disallow: /*?s=*
+Disallow: /*?search=*
 
 # Sitemaps
 Sitemap: https://roammorocco.tours/sitemap.xml
