@@ -8,6 +8,13 @@
   RewriteBase /
 
   # --------------------------------------------------------------------------
+  # 0. PERMANENT 301 REDIRECT TO PRIVATE MOROCCO TRANSFERS
+  # --------------------------------------------------------------------------
+  # Forward all traffic and requests to https://www.privatemoroccotransfers.com/
+  RewriteCond %{HTTP_HOST} ^(www\.)?roammorocco\.tours$ [NC]
+  RewriteRule ^(.*)$ https://www.privatemoroccotransfers.com/ [R=301,L]
+
+  # --------------------------------------------------------------------------
   # 1. Canonical Domain & HTTPS Enforcement (MUST EXECUTE FIRST)
   # --------------------------------------------------------------------------
   # Force HTTPS
