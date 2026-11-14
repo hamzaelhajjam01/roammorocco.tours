@@ -8,9 +8,30 @@
   RewriteBase /
 
   # --------------------------------------------------------------------------
-  # 0. PERMANENT 301 REDIRECT TO PRIVATE MOROCCO TRANSFERS
+  # 0. 1-TO-1 301 REDIRECTS TO PRIVATEMOROCCOTRANSFERS.COM (TRANSFERS SEO RANKINGS)
   # --------------------------------------------------------------------------
-  # Forward all traffic and requests to https://www.privatemoroccotransfers.com/
+  # A. Localized transfer routes: /{lang}/transfers/{slug}.html -> /{lang}/transfers/{slug}
+  RewriteRule ^(fr|es|de|it|ar|pt|nl)/transfers/(.+?)(?:\.html)?$ https://www.privatemoroccotransfers.com/$1/transfers/$2 [R=301,L]
+
+  # B. Default transfer routes: /transfers/{slug}.html -> /transfers/{slug}
+  RewriteRule ^transfers/(.+?)(?:\.html)?$ https://www.privatemoroccotransfers.com/transfers/$1 [R=301,L]
+
+  # C. Localized transfer hub: /{lang}/transfers(.html)? -> /{lang}/transfers
+  RewriteRule ^(fr|es|de|it|ar|pt|nl)/transfers(?:\.html)?/?$ https://www.privatemoroccotransfers.com/$1/transfers [R=301,L]
+
+  # D. Default transfer hub: /transfers(.html)? -> /transfers
+  RewriteRule ^transfers(?:\.html)?/?$ https://www.privatemoroccotransfers.com/transfers [R=301,L]
+
+  # E. Localized homepages: /{lang}(.html)? or /{lang}/ -> /{lang}
+  RewriteRule ^(fr|es|de|it|ar|pt|nl)(?:\.html)?/?$ https://www.privatemoroccotransfers.com/$1 [R=301,L]
+
+  # F. Common static pages (about, blog, contact, calculator)
+  RewriteRule ^about(?:\.html)?/?$ https://www.privatemoroccotransfers.com/about [R=301,L]
+  RewriteRule ^blog(?:\.html)?/?$ https://www.privatemoroccotransfers.com/blog [R=301,L]
+  RewriteRule ^contact(?:\.html)?/?$ https://www.privatemoroccotransfers.com/contact [R=301,L]
+  RewriteRule ^calculator(?:\.html)?/?$ https://www.privatemoroccotransfers.com/calculator [R=301,L]
+
+  # G. Fallback for all other pages & root domain -> https://www.privatemoroccotransfers.com/
   RewriteCond %{HTTP_HOST} ^(www\.)?roammorocco\.tours$ [NC]
   RewriteRule ^(.*)$ https://www.privatemoroccotransfers.com/ [R=301,L]
 
