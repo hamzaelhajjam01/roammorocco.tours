@@ -1,14 +1,20 @@
 # ==============================================================================
-# Roam Morocco Tours — Apache / LiteSpeed Production Configuration (.htaccess)
+# Roam Morocco Tours — Production Migration Configuration (.htaccess)
 # ==============================================================================
 
-# Enable Rewrite Engine
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
   # --------------------------------------------------------------------------
-  # 0. 1-TO-1 301 REDIRECTS TO PRIVATEMOROCCOTRANSFERS.COM (TRANSFERS SEO RANKINGS)
+  # 1. EXCLUSIONS (CRITICAL FOR GOOGLEBOT CRAWL & SSL)
+  # --------------------------------------------------------------------------
+  # Do not redirect robots.txt — Googlebot requires 200 OK on old domain
+  RewriteRule ^robots\.txt$ - [L]
+  RewriteRule ^\.well-known/ - [L]
+
+  # --------------------------------------------------------------------------
+  # 2. 1-TO-1 TRANSFER ROUTES (RETURN 200 OK ON PRIVATEMOROCCOTRANSFERS)
   # --------------------------------------------------------------------------
   # A. Localized transfer routes: /{lang}/transfers/{slug}.html -> /{lang}/transfers/{slug}
   RewriteRule ^(fr|es|de|it|ar|pt|nl)/transfers/(.+?)(?:\.html)?$ https://www.privatemoroccotransfers.com/$1/transfers/$2 [R=301,L]
@@ -16,198 +22,27 @@
   # B. Default transfer routes: /transfers/{slug}.html -> /transfers/{slug}
   RewriteRule ^transfers/(.+?)(?:\.html)?$ https://www.privatemoroccotransfers.com/transfers/$1 [R=301,L]
 
-  # C. Localized transfer hub: /{lang}/transfers(.html)? -> /{lang}/transfers
+  # C. Transfer hubs
   RewriteRule ^(fr|es|de|it|ar|pt|nl)/transfers(?:\.html)?/?$ https://www.privatemoroccotransfers.com/$1/transfers [R=301,L]
-
-  # D. Default transfer hub: /transfers(.html)? -> /transfers
   RewriteRule ^transfers(?:\.html)?/?$ https://www.privatemoroccotransfers.com/transfers [R=301,L]
 
-  # E. Localized homepages: /{lang}(.html)? or /{lang}/ -> /{lang}
-  RewriteRule ^(fr|es|de|it|ar|pt|nl)(?:\.html)?/?$ https://www.privatemoroccotransfers.com/$1 [R=301,L]
-
-  # F. Common static pages (about, blog, contact, calculator)
+  # --------------------------------------------------------------------------
+  # 3. VERIFIED PAGES (RETURN 200 OK ON PRIVATEMOROCCOTRANSFERS)
+  # --------------------------------------------------------------------------
   RewriteRule ^about(?:\.html)?/?$ https://www.privatemoroccotransfers.com/about [R=301,L]
-  RewriteRule ^blog(?:\.html)?/?$ https://www.privatemoroccotransfers.com/blog [R=301,L]
   RewriteRule ^contact(?:\.html)?/?$ https://www.privatemoroccotransfers.com/contact [R=301,L]
   RewriteRule ^calculator(?:\.html)?/?$ https://www.privatemoroccotransfers.com/calculator [R=301,L]
 
-  # G. Fallback for all other pages & root domain -> https://www.privatemoroccotransfers.com/
-  RewriteCond %{HTTP_HOST} ^(www\.)?roammorocco\.tours$ [NC]
+  # Blog sections -> redirect to active /blog hubs (avoids 404s on un-migrated posts)
+  RewriteRule ^(fr|es|de|it)/blog.*$ https://www.privatemoroccotransfers.com/$1/blog [R=301,L]
+  RewriteRule ^blog.*$ https://www.privatemoroccotransfers.com/blog [R=301,L]
+
+  # Localized language homepages
+  RewriteRule ^(fr|es|de|it|ar|pt|nl)(?:\.html)?/?$ https://www.privatemoroccotransfers.com/$1 [R=301,L]
+
+  # --------------------------------------------------------------------------
+  # 4. DIRECT 301 CATCH-ALL FOR ALL OTHER REQUESTS & HOMEPAGE
+  # --------------------------------------------------------------------------
+  # Direct single-hop 301 for HTTP, HTTPS, WWW, non-WWW, and all other paths
   RewriteRule ^(.*)$ https://www.privatemoroccotransfers.com/ [R=301,L]
-
-  # --------------------------------------------------------------------------
-  # 1. Canonical Domain & HTTPS Enforcement (MUST EXECUTE FIRST)
-  # --------------------------------------------------------------------------
-  # Force HTTPS
-  RewriteCond %{HTTPS} !=on [OR]
-  RewriteCond %{HTTP:X-Forwarded-Proto} =http
-  RewriteRule ^ https://roammorocco.tours%{REQUEST_URI} [L,R=301]
-
-  # Enforce Canonical Domain (Redirect www.roammorocco.tours -> roammorocco.tours)
-  RewriteCond %{HTTP_HOST} ^www\.roammorocco\.tours$ [NC]
-  RewriteRule ^ https://roammorocco.tours%{REQUEST_URI} [L,R=301]
-
-  # --------------------------------------------------------------------------
-  # 2. GSC 404 & Indexing Fixes: 301 Redirects for Legacy / Unindexed Paths
-  # --------------------------------------------------------------------------
-  # A. Redirect legacy /en/ to root
-  RewriteRule ^en/?$ / [L,R=301]
-  RewriteRule ^en/(.*)$ /$1 [L,R=301]
-
-  # B. GSC 404 Fix: Redirect non-existent localized Jewish Heritage & 3-Day Desert routes to English
-  RewriteRule ^(fr|es|de|it)/morocco-jewish-heritage-private-driver(\.html)?$ /morocco-jewish-heritage-private-driver.html [L,R=301]
-  RewriteRule ^(fr|es|de|it)/tour-jewish-heritage(\.html)?$ /tour-jewish-heritage.html [L,R=301]
-  RewriteRule ^(fr|es|de|it)/marrakech-to-fes-desert-tour-3-days(\.html)?$ /marrakech-to-fes-desert-tour-3-days.html [L,R=301]
-  RewriteRule ^(fr|es|de|it)/fes-to-marrakech-desert-tour-3-days(\.html)?$ /fes-to-marrakech-desert-tour-3-days.html [L,R=301]
-
-  # C. GSC 404 Fix: Redirect non-existent localized blog posts to English
-  RewriteRule ^(fr|es|de|it)/blog/morocco-7-day-itinerary(\.html)?$ /blog/morocco-7-day-itinerary.html [L,R=301]
-  RewriteRule ^(fr|es|de|it)/blog/merzouga-luxury-desert-camp(\.html)?$ /blog/merzouga-luxury-desert-camp.html [L,R=301]
-
-  # D. 301 Redirect duplicate free walking tour to canonical sunset free tour
-  RewriteRule ^marrakech-free-walking-tour(\.html)?$ /marrakech-medina-sunset-free-tour.html [L,R=301]
-  RewriteRule ^(fr|es|de|it)/marrakech-free-walking-tour(\.html)?$ /$1/marrakech-medina-sunset-free-tour.html [L,R=301]
-
-  # E. Eliminate Crawl Trap: Redirect dummy search query strings (/?s=...) to root
-  RewriteCond %{QUERY_STRING} ^s=.*$ [NC]
-  RewriteRule ^$ /? [L,R=301]
-
-  # F. Normalize /index.html and /{lang}/index.html to directory slashes
-  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
-  RewriteRule ^index\.html$ / [L,R=301]
-
-  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(fr|es|de|it)/index\.html\ HTTP/
-  RewriteRule ^(fr|es|de|it)/index\.html$ /$1/ [L,R=301]
-
-  # --------------------------------------------------------------------------
-  # 3. Multilingual Canonical Routing & Legacy Double-Locale Cleanup
-  # --------------------------------------------------------------------------
-  # Redirect any legacy /es/fr.html or /fr/es.html directly to target locale homepage (e.g. /es/)
-  RewriteRule ^(fr|es|de|it)/(fr|es|de|it)\.html$ /$1/ [L,R=301]
-
-  # Redirect /fr.html -> /fr/, /es.html -> /es/, /de.html -> /de/, /it.html -> /it/
-  RewriteRule ^(fr|es|de|it)\.html$ /$1/ [L,R=301]
-
-  # --------------------------------------------------------------------------
-  # 4. Directory Hubs & Clean URLs Rewrite Rules (Fixes 403 Forbidden on directory paths)
-  # --------------------------------------------------------------------------
-  RewriteRule ^transfers/?$ /transfers.html [L]
-  RewriteRule ^blog/?$ /blog.html [L]
-  RewriteRule ^destinations/?$ /destinations.html [L]
-  RewriteRule ^tours/?$ /tours.html [L]
-  RewriteRule ^experiences/?$ /experiences.html [L]
-  RewriteRule ^about/?$ /about.html [L]
-
-  # Localized directory rewrites
-  RewriteRule ^(fr|es|de|it)/transfers/?$ /$1/transfers.html [L]
-  RewriteRule ^(fr|es|de|it)/blog/?$ /$1/blog.html [L]
-  RewriteRule ^(fr|es|de|it)/destinations/?$ /$1/destinations.html [L]
-  RewriteRule ^(fr|es|de|it)/tours/?$ /$1/tours.html [L]
-  RewriteRule ^(fr|es|de|it)/experiences/?$ /$1/experiences.html [L]
-  RewriteRule ^(fr|es|de|it)/about/?$ /$1/about.html [L]
-
-  # --------------------------------------------------------------------------
-  # 5. Blog Slug Permalinks (Legacy & Direct Link Redirects to /blog/)
-  # --------------------------------------------------------------------------
-  RewriteRule ^agafay-desert-vs-merzouga\.html$ /blog/agafay-desert-vs-merzouga.html [L,R=301]
-  RewriteRule ^agafay-desert-vs-merzouga$ /blog/agafay-desert-vs-merzouga.html [L,R=301]
-  RewriteRule ^bali-travel-guide\.html$ /blog/bali-travel-guide.html [L,R=301]
-  RewriteRule ^bali-travel-guide$ /blog/bali-travel-guide.html [L,R=301]
-  RewriteRule ^best-time-to-visit-sahara-morocco\.html$ /blog/best-time-to-visit-sahara-morocco.html [L,R=301]
-  RewriteRule ^best-time-to-visit-sahara-morocco$ /blog/best-time-to-visit-sahara-morocco.html [L,R=301]
-  RewriteRule ^cheap-flights-to-morocco\.html$ /blog/cheap-flights-to-morocco.html [L,R=301]
-  RewriteRule ^cheap-flights-to-morocco$ /blog/cheap-flights-to-morocco.html [L,R=301]
-  RewriteRule ^dubai-travel-guide\.html$ /blog/dubai-travel-guide.html [L,R=301]
-  RewriteRule ^dubai-travel-guide$ /blog/dubai-travel-guide.html [L,R=301]
-  RewriteRule ^ferry-from-spain-to-morocco\.html$ /blog/ferry-from-spain-to-morocco.html [L,R=301]
-  RewriteRule ^ferry-from-spain-to-morocco$ /blog/ferry-from-spain-to-morocco.html [L,R=301]
-  RewriteRule ^gladiator-2-morocco-filming-locations\.html$ /blog/gladiator-2-morocco-filming-locations.html [L,R=301]
-  RewriteRule ^gladiator-2-morocco-filming-locations$ /blog/gladiator-2-morocco-filming-locations.html [L,R=301]
-  RewriteRule ^is-morocco-safe-for-tourists\.html$ /blog/is-morocco-safe-for-tourists.html [L,R=301]
-  RewriteRule ^is-morocco-safe-for-tourists$ /blog/is-morocco-safe-for-tourists.html [L,R=301]
-  RewriteRule ^istanbul-travel-guide\.html$ /blog/istanbul-travel-guide.html [L,R=301]
-  RewriteRule ^istanbul-travel-guide$ /blog/istanbul-travel-guide.html [L,R=301]
-  RewriteRule ^marrakech-vs-fes\.html$ /blog/marrakech-vs-fes.html [L,R=301]
-  RewriteRule ^marrakech-vs-fes$ /blog/marrakech-vs-fes.html [L,R=301]
-  RewriteRule ^morocco-10-day-itinerary\.html$ /blog/morocco-10-day-itinerary.html [L,R=301]
-  RewriteRule ^morocco-10-day-itinerary$ /blog/morocco-10-day-itinerary.html [L,R=301]
-  RewriteRule ^morocco-driving-times\.html$ /blog/morocco-driving-times.html [L,R=301]
-  RewriteRule ^morocco-driving-times$ /blog/morocco-driving-times.html [L,R=301]
-  RewriteRule ^morocco-private-driver-cost\.html$ /blog/morocco-private-driver-cost.html [L,R=301]
-  RewriteRule ^morocco-private-driver-cost$ /blog/morocco-private-driver-cost.html [L,R=301]
-  RewriteRule ^morocco-train-and-private-driver\.html$ /blog/morocco-train-and-private-driver.html [L,R=301]
-  RewriteRule ^morocco-train-and-private-driver$ /blog/morocco-train-and-private-driver.html [L,R=301]
-  RewriteRule ^paris-travel-guide\.html$ /blog/paris-travel-guide.html [L,R=301]
-  RewriteRule ^paris-travel-guide$ /blog/paris-travel-guide.html [L,R=301]
-  RewriteRule ^renting-a-car-in-morocco-vs-private-driver\.html$ /blog/renting-a-car-in-morocco-vs-private-driver.html [L,R=301]
-  RewriteRule ^renting-a-car-in-morocco-vs-private-driver$ /blog/renting-a-car-in-morocco-vs-private-driver.html [L,R=301]
-  RewriteRule ^sahara-desert-tour-merzouga-vs-zagora\.html$ /blog/sahara-desert-tour-merzouga-vs-zagora.html [L,R=301]
-  RewriteRule ^sahara-desert-tour-merzouga-vs-zagora$ /blog/sahara-desert-tour-merzouga-vs-zagora.html [L,R=301]
-  RewriteRule ^spain-morocco-itinerary\.html$ /blog/spain-morocco-itinerary.html [L,R=301]
-  RewriteRule ^spain-morocco-itinerary$ /blog/spain-morocco-itinerary.html [L,R=301]
-  RewriteRule ^the-art-of-the-souk-bargaining-etiquette\.html$ /blog/the-art-of-the-souk-bargaining-etiquette.html [L,R=301]
-  RewriteRule ^the-art-of-the-souk-bargaining-etiquette$ /blog/the-art-of-the-souk-bargaining-etiquette.html [L,R=301]
-  RewriteRule ^tokyo-travel-guide\.html$ /blog/tokyo-travel-guide.html [L,R=301]
-  RewriteRule ^tokyo-travel-guide$ /blog/tokyo-travel-guide.html [L,R=301]
-  RewriteRule ^what-to-wear-in-morocco\.html$ /blog/what-to-wear-in-morocco.html [L,R=301]
-  RewriteRule ^what-to-wear-in-morocco$ /blog/what-to-wear-in-morocco.html [L,R=301]
-
-  # --------------------------------------------------------------------------
-  # 6. Clean URLs: Serve .html file if requested path without .html exists
-  # --------------------------------------------------------------------------
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
-  RewriteRule ^(.*)$ $1.html [L]
-</IfModule>
-
-# ==============================================================================
-# Performance & Browser Caching (Core Web Vitals Optimization)
-# ==============================================================================
-<IfModule mod_expires.c>
-  ExpiresActive On
-  ExpiresDefault "access plus 1 month"
-
-  # HTML & Sitemaps (Fresh content check)
-  ExpiresByType text/html "access plus 1 hour"
-  ExpiresByType application/xml "access plus 1 hour"
-  ExpiresByType text/xml "access plus 1 hour"
-  ExpiresByType application/json "access plus 1 hour"
-
-  # Images & Media (Long-term cache)
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/jpg "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 year"
-  ExpiresByType video/mp4 "access plus 1 year"
-
-  # Fonts
-  ExpiresByType font/woff2 "access plus 1 year"
-  ExpiresByType font/woff "access plus 1 year"
-  ExpiresByType application/font-woff2 "access plus 1 year"
-
-  # CSS & JavaScript
-  ExpiresByType text/css "access plus 1 month"
-  ExpiresByType text/javascript "access plus 1 month"
-  ExpiresByType application/javascript "access plus 1 month"
-</IfModule>
-
-# Compression (Gzip / Deflate)
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
-  AddOutputFilterByType DEFLATE application/javascript text/javascript
-  AddOutputFilterByType DEFLATE application/json application/xml application/xhtml+xml
-  AddOutputFilterByType DEFLATE image/svg+xml
-</IfModule>
-
-# ==============================================================================
-# Security Headers
-# ==============================================================================
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set X-Frame-Options "SAMEORIGIN"
-  Header set Referrer-Policy "strict-origin-when-cross-origin"
-  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 </IfModule>
